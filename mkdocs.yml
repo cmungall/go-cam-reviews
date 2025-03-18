@@ -43,5 +43,6 @@ nav:
       - Overall: summaries/overall.md
       - Adapters: summaries/summary-adapters.md
       - Carriers: summaries/summary-carriers.md
+      - E3 Ubiquitin ligases: summaries/summary-e3.md
   - Reviews:
       - ...
