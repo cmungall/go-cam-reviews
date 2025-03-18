@@ -1,0 +1,38 @@
+[project]
+name = "go-cam-reviews"
+version = "0.1.0"
+description = "AI generated reviews of GO-CAMs"
+readme = "README.md"
+authors = [
+    { name = "Chris Mungall", email = "cjm@berkeleybop.org" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "mkdocs-awesome-pages-plugin>=2.10.1",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocs-literate-nav>=0.6.1",
+    "mkdocs-material>=9.6.7",
+    "mkdocs-mermaid2-plugin>=1.2.1",
+    "mkdocs-nav-enhancements>=0.9.1",
+    "mkdocstrings[python]>=0.29.0",
+    "numpy>=1.26.0",
+    "pandas>=2.2.3",
+    "pymdown-extensions>=10.14.3",
+    "pytest>=8.3.5",
+]
+
+[project.scripts]
+go-cam-reviews = "go-cam-reviews:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = ["go-cam-reviews_schema"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+
