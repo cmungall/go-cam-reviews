@@ -35,14 +35,17 @@ plugins:
   - search
   - mermaid2:
       version: 10.9.0
-  - awesome-pages      
+  - awesome-nav     
 
 nav:
   - Home: index.md
-  - Summaries:
-      - Overall: summaries/overall.md
-      - Adapters: summaries/summary-adapters.md
-      - Carriers: summaries/summary-carriers.md
-      - E3 Ubiquitin ligases: summaries/summary-e3.md
+  - Guidelines:
+      - guidelines/*
+  #- Summaries:
+  #    - Overall: summaries/overall.md
+  #    - Adapters: summaries/summary-adapters.md
+  #    - Carriers: summaries/summary-carriers.md
+  #    - E3 Ubiquitin ligases: summaries/summary-e3.md
   - Reviews:
-      - ...
+      - reviews/*
+  
