@@ -1,0 +1,117 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Compartments -->
+  <rect x="50" y="50" width="700" height="100" fill="#E6F7FF" stroke="#BBDDEE" stroke-width="2" rx="10" ry="10"/>
+  <rect x="50" y="150" width="700" height="60" fill="#C9E9FF" stroke="#99CCEE" stroke-width="3" rx="5" ry="5"/>
+  <rect x="50" y="210" width="700" height="390" fill="#F5F5F5" stroke="#DDDDDD" stroke-width="2" rx="10" ry="10"/>
+
+  <!-- Labels for compartments -->
+  <text x="60" y="70" font-family="Arial" font-size="16" font-weight="bold" fill="#555555">Extracellular Space (GO:0005615)</text>
+  <text x="60" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="#555555">Plasma Membrane (GO:0005886)</text>
+  <text x="60" y="230" font-family="Arial" font-size="16" font-weight="bold" fill="#555555">Cytosol (GO:0005829)</text>
+
+  <!-- Extracellular Proteins -->
+  <ellipse cx="150" cy="100" rx="40" ry="25" fill="#F6D2A9" stroke="#E69A49" stroke-width="2"/>
+  <text x="150" y="105" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Nrg1</text>
+  
+  <!-- Membrane Receptors -->
+  <rect x="220" y="150" width="50" height="60" fill="#A7C7E7" stroke="#6A93CB" stroke-width="2"/>
+  <text x="245" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">ERBB2</text>
+  
+  <rect x="280" y="150" width="50" height="60" fill="#A7C7E7" stroke="#6A93CB" stroke-width="2"/>
+  <text x="305" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">ERBB3</text>
+
+  <!-- Cortex Proteins -->
+  <rect x="260" y="250" width="50" height="30" fill="#B3DFB3" stroke="#72BB72" stroke-width="2" rx="5" ry="5"/>
+  <text x="285" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Grb2</text>
+  
+  <rect x="260" y="310" width="50" height="30" fill="#B3DFB3" stroke="#72BB72" stroke-width="2" rx="5" ry="5"/>
+  <text x="285" y="330" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Sos1</text>
+  
+  <!-- Cytosolic Proteins -->
+  <rect x="260" y="370" width="50" height="30" fill="#D5A6BD" stroke="#B47299" stroke-width="2" rx="5" ry="5"/>
+  <text x="285" y="390" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Hras</text>
+  
+  <rect x="260" y="430" width="50" height="30" fill="#D5A6BD" stroke="#B47299" stroke-width="2" rx="5" ry="5"/>
+  <text x="285" y="450" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Raf1</text>
+  
+  <rect x="260" y="490" width="60" height="30" fill="#D5A6BD" stroke="#B47299" stroke-width="2" rx="5" ry="5"/>
+  <text x="290" y="510" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold" fill="#333333">Map2k1/2</text>
+  
+  <rect x="260" y="550" width="60" height="30" fill="#D5A6BD" stroke="#B47299" stroke-width="2" rx="5" ry="5"/>
+  <text x="290" y="570" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold" fill="#333333">Mapk1/3</text>
+  
+  <!-- Arrows with activation markers -->
+  <line x1="160" y1="125" x2="220" y2="150" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="190" y="148" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">activates</text>
+  
+  <line x1="245" y1="210" x2="265" y2="250" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="240" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">activates</text>
+  
+  <line x1="285" y1="280" x2="285" y2="310" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="305" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">activates</text>
+  
+  <line x1="285" y1="340" x2="285" y2="370" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="305" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">activates</text>
+  
+  <line x1="285" y1="400" x2="285" y2="430" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="305" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">activates</text>
+  
+  <line x1="285" y1="460" x2="285" y2="490" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="305" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">activates</text>
+  
+  <line x1="285" y1="520" x2="285" y2="550" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="305" y="535" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">activates</text>
+  
+  <!-- Myelination outcome -->
+  <rect x="400" y="550" width="100" height="40" fill="#FFE8CC" stroke="#FFB347" stroke-width="2" rx="5" ry="5"/>
+  <text x="450" y="575" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Myelination</text>
+  
+  <!-- Connection to myelination -->
+  <line x1="320" y1="565" x2="400" y2="565" stroke="#333333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="360" y="555" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">leads to</text>
+  
+  <!-- Process label -->
+  <rect x="450" y="480" width="250" height="60" fill="#FFFFFF" stroke="#AAAAAA" stroke-width="1" rx="10" ry="10"/>
+  <text x="575" y="505" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333333">MAPK CASCADE (GO:0000165)</text>
+  <text x="575" y="525" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Leading to Myelination</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#333333">ERBB2-ERBB3 Receptor Signaling Pathway Involved in Myelination (Mouse)</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+  
+  <!-- Biological Process Label -->
+  <rect x="400" y="400" width="300" height="40" fill="#FBE5D6" stroke="#F4B183" stroke-width="1" rx="5" ry="5"/>
+  <text x="550" y="425" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">ERBB2-ERBB3 Signaling Pathway (GO:0038133)</text>
+  
+  <!-- Legend -->
+  <rect x="500" y="250" width="200" height="130" fill="#FFFFFF" stroke="#AAAAAA" stroke-width="1" rx="5" ry="5"/>
+  <text x="600" y="270" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333333">Legend</text>
+  
+  <rect x="520" y="280" width="20" height="20" fill="#F6D2A9" stroke="#E69A49" stroke-width="1"/>
+  <text x="550" y="295" font-family="Arial" font-size="14" fill="#333333">Ligand</text>
+  
+  <rect x="520" y="305" width="20" height="20" fill="#A7C7E7" stroke="#6A93CB" stroke-width="1"/>
+  <text x="550" y="320" font-family="Arial" font-size="14" fill="#333333">Receptor</text>
+  
+  <rect x="520" y="330" width="20" height="20" fill="#B3DFB3" stroke="#72BB72" stroke-width="1"/>
+  <text x="550" y="345" font-family="Arial" font-size="14" fill="#333333">Adaptor Protein</text>
+  
+  <rect x="520" y="355" width="20" height="20" fill="#D5A6BD" stroke="#B47299" stroke-width="1"/>
+  <text x="550" y="370" font-family="Arial" font-size="14" fill="#333333">Kinase</text>
+
+  <!-- Cell cortex label -->
+  <text x="100" y="260" font-family="Arial" font-size="14" font-style="italic" fill="#777777">Cell Cortex (GO:0005938)</text>
+  
+  <!-- Key and explanation -->
+  <rect x="50" y="610" width="700" height="80" fill="#FFFFFF" stroke="#AAAAAA" stroke-width="1" rx="5" ry="5"/>
+  <text x="60" y="630" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Pathway Description:</text>
+  <text x="60" y="650" font-family="Arial" font-size="12" fill="#333333">This pathway illustrates how Neuregulin-1 (Nrg1) binds to ERBB2-ERBB3 receptors in the plasma membrane, initiating a cascade</text>
+  <text x="60" y="670" font-family="Arial" font-size="12" fill="#333333">through adaptor proteins (Grb2, Sos1) and the MAPK signaling cascade (Hras, Raf1, Map2k1/2, Mapk1/3) that ultimately regulates</text>
+  <text x="60" y="690" font-family="Arial" font-size="12" fill="#333333">myelination in Schwann cells. This process is crucial for proper nerve insulation in the mouse peripheral nervous system.</text>
+</svg>

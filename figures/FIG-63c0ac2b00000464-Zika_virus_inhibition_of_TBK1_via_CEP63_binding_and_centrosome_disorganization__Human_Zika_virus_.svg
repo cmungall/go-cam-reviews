@@ -1,0 +1,107 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="none" stroke="#888" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="400" y="570" font-family="Arial" font-size="16" text-anchor="middle">Human Cell</text>
+  
+  <!-- Centrosome -->
+  <circle cx="300" cy="250" r="60" fill="#e6f7ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="300" y="250" font-family="Arial" font-size="14" text-anchor="middle">Centrosome</text>
+  <text x="300" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(GO:0005813)</text>
+  <text x="300" y="290" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">Site of centrosome</text>
+  <text x="300" y="305" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">disorganization</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="450" y="200" width="250" height="200" rx="20" ry="20" fill="#f9f9f9" stroke="#888" stroke-width="2"/>
+  <text x="575" y="220" font-family="Arial" font-size="14" text-anchor="middle">Cytoplasm</text>
+  <text x="575" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(GO:0005737)</text>
+  <text x="575" y="260" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">Site of immune signaling</text>
+  
+  <!-- Zika virus -->
+  <path d="M150,150 C160,140 170,160 180,150" stroke="#cc0000" stroke-width="3" fill="none" transform="scale(1.5)"/>
+  <circle cx="150" cy="100" r="40" fill="#ffcccc" stroke="#cc0000" stroke-width="2"/>
+  <text x="150" y="100" font-family="Arial" font-size="12" text-anchor="middle">Zika virus</text>
+  <text x="150" y="120" font-family="Arial" font-size="10" text-anchor="middle">protein</text>
+  <text x="150" y="133" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">(A0A024B7W1)</text>
+  
+  <!-- CEP63 -->
+  <rect x="250" y="200" width="65" height="30" rx="10" ry="10" fill="#ccffcc" stroke="#009900" stroke-width="2"/>
+  <text x="282" y="220" font-family="Arial" font-size="12" text-anchor="middle">CEP63</text>
+  
+  <!-- DTX4 -->
+  <rect x="330" y="280" width="65" height="30" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2"/>
+  <text x="362" y="300" font-family="Arial" font-size="12" text-anchor="middle">DTX4</text>
+  
+  <!-- TBK1 -->
+  <rect x="500" y="280" width="65" height="30" rx="10" ry="10" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="532" y="300" font-family="Arial" font-size="12" text-anchor="middle">TBK1</text>
+  
+  <!-- Innate Immune Response -->
+  <rect x="600" y="280" width="80" height="45" rx="10" ry="10" fill="#ffffcc" stroke="#cccc00" stroke-width="2"/>
+  <text x="640" y="295" font-family="Arial" font-size="10" text-anchor="middle">Innate Immune</text>
+  <text x="640" y="310" font-family="Arial" font-size="10" text-anchor="middle">Response</text>
+  <text x="640" y="320" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">(GO:0045087)</text>
+  
+  <!-- Interaction arrows -->
+  <!-- Zika to CEP63 -->
+  <line x1="180" y1="130" x2="245" y2="200" stroke="#800080" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="200" y="155" font-family="Arial" font-size="14" fill="#800080" text-anchor="middle" font-weight="bold">binds</text>
+  <text x="200" y="172" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(GO:0060090)</text>
+  
+  <!-- CEP63 to DTX4 -->
+  <line x1="315" y1="220" x2="345" y2="275" stroke="#009900" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="315" y="255" font-family="Arial" font-size="16" fill="#009900" text-anchor="middle" font-weight="bold">+</text>
+  <text x="335" y="255" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(RO:0002629)</text>
+  
+  <!-- DTX4 to TBK1 -->
+  <path d="M395,295 Q450,320 495,295" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead_red)"/>
+  <text x="445" y="330" font-family="Arial" font-size="16" fill="#cc0000" text-anchor="middle" font-weight="bold">-</text>
+  <text x="445" y="345" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(RO:0002630)</text>
+  <text x="445" y="360" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">(ubiquitination)</text>
+  
+  <!-- TBK1 to immune response -->
+  <line x1="565" y1="295" x2="595" y2="295" stroke="#009900" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="580" y="285" font-family="Arial" font-size="16" fill="#009900" text-anchor="middle" font-weight="bold">+</text>
+  
+  <!-- Proteasome (implied) -->
+  <rect x="425" y="380" width="80" height="30" rx="10" ry="10" fill="#f0f0f0" stroke="#888" stroke-dasharray="3,3" stroke-width="2"/>
+  <text x="465" y="400" font-family="Arial" font-size="12" text-anchor="middle">Proteasome</text>
+  <text x="465" y="415" font-family="Arial" font-size="8" text-anchor="middle" fill="#666" font-style="italic">* not in source</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#800080"/>
+    </marker>
+    <marker id="arrowhead_green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#009900"/>
+    </marker>
+    <marker id="arrowhead_red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="430" width="180" height="150" rx="10" ry="10" fill="white" stroke="#888" stroke-width="1"/>
+  <text x="140" y="450" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <rect x="70" y="460" width="20" height="15" rx="5" ry="5" fill="#ccffcc" stroke="#009900" stroke-width="1"/>
+  <text x="100" y="472" font-family="Arial" font-size="12" text-anchor="start">CEP63</text>
+  
+  <rect x="70" y="485" width="20" height="15" rx="5" ry="5" fill="#ccccff" stroke="#0000cc" stroke-width="1"/>
+  <text x="100" y="497" font-family="Arial" font-size="12" text-anchor="start">DTX4</text>
+  
+  <rect x="70" y="510" width="20" height="15" rx="5" ry="5" fill="#ffcc99" stroke="#ff6600" stroke-width="1"/>
+  <text x="100" y="522" font-family="Arial" font-size="12" text-anchor="start">TBK1</text>
+  
+  <circle cx="80" y="535" r="10" fill="#ffcccc" stroke="#cc0000" stroke-width="1"/>
+  <text x="100" y="540" font-family="Arial" font-size="12" text-anchor="start">Zika protein</text>
+  
+  <line x1="60" y1="555" x2="90" y2="555" stroke="#009900" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="100" y="560" font-family="Arial" font-size="12" text-anchor="start">Positive regulation</text>
+  
+  <line x1="60" y1="575" x2="90" y2="575" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead_red)"/>
+  <text x="100" y="580" font-family="Arial" font-size="12" text-anchor="start">Negative regulation</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Zika virus inhibition of TBK1 via CEP63 binding and centrosome disorganization</text>
+</svg>

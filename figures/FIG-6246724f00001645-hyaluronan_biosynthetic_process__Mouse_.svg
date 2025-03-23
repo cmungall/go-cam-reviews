@@ -1,0 +1,113 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell membrane -->
+  <rect width="800" height="600" fill="#f9f9f9"/>
+  <rect x="100" y="150" width="600" height="300" rx="10" fill="#e6f7ff" stroke="#a0a0a0" stroke-width="1"/>
+  
+  <!-- Plasma membrane -->
+  <path d="M50,250 C100,220 150,270 200,240 C250,210 300,260 350,230 C400,200 450,250 500,220 C550,190 600,240 650,210 C700,180 750,230 800,200" 
+    fill="none" stroke="#87CEFA" stroke-width="20"/>
+  <path d="M50,270 C100,240 150,290 200,260 C250,230 300,280 350,250 C400,220 450,270 500,240 C550,210 600,260 650,230 C700,200 750,250 800,220" 
+    fill="none" stroke="#4682B4" stroke-width="20"/>
+   
+  <!-- Extracellular space label -->
+  <text x="400" y="180" font-family="Arial" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="400" y="360" font-family="Arial" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Has1 enzyme -->
+  <rect x="120" y="230" width="80" height="30" rx="5" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="160" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">Has1</text>
+  <text x="160" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Hyaluronan synthase)</text>
+  
+  <!-- Has2 enzyme -->
+  <rect x="320" y="230" width="80" height="30" rx="5" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="360" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">Has2</text>
+  <text x="360" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Hyaluronan synthase)</text>
+  
+  <!-- Has3 enzyme -->
+  <rect x="520" y="230" width="80" height="30" rx="5" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="560" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">Has3</text>
+  <text x="560" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Hyaluronan synthase)</text>
+  
+  <!-- Abcc5 transporter -->
+  <rect x="650" y="230" width="80" height="30" rx="5" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="690" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">Abcc5</text>
+  <text x="690" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(ABC transporter)</text>
+  
+  <!-- Cemip enzyme -->
+  <rect x="400" y="130" width="80" height="30" rx="5" fill="#9ecc9e" stroke="#333" stroke-width="2"/>
+  <text x="440" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">Cemip</text>
+  <text x="440" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Hyaluronidase)</text>
+  
+  <!-- Molecules and reactions -->
+  <!-- Hyaluronan molecules being synthesized -->
+  <circle cx="160" y="200" r="15" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="160" y="204" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">HA</text>
+  
+  <circle cx="360" y="200" r="15" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="360" y="204" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">HA</text>
+  
+  <circle cx="560" y="200" r="15" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="560" y="204" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">HA</text>
+  
+  <!-- Hyaluronan export -->
+  <circle cx="690" y="170" r="15" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="690" y="174" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">HA</text>
+  
+  <!-- Degraded hyaluronan -->
+  <circle cx="490" y="130" r="8" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="490" y="133" font-family="Arial" font-size="9" text-anchor="middle" fill="#333" font-weight="bold">HA</text>
+  
+  <!-- Arrows -->
+  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+  </marker>
+  
+  <!-- Synthesis arrows (solid) -->
+  <line x1="160" y1="300" x2="160" y2="260" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="360" y1="300" x2="360" y2="260" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="560" y1="300" x2="560" y2="260" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Has to Abcc5 regulation arrows (dashed) -->
+  <path d="M200,230 Q300,280 650,240" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <path d="M400,230 Q450,260 650,240" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <path d="M600,230 Q620,240 650,240" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Export arrow (solid) -->
+  <line x1="690" y1="230" x2="690" y2="185" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Degradation arrow (solid) -->
+  <line x1="440" y1="130" x2="475" y2="130" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Abcc5 to Cemip (dotted) -->
+  <path d="M690,170 Q620,100 480,130" fill="none" stroke="#333" stroke-width="2.5" stroke-dasharray="2,2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Title -->
+  <text x="400" y="80" font-family="Arial" font-size="26" text-anchor="middle" font-weight="bold" fill="#333">Hyaluronan Biosynthetic Process (Mouse)</text>
+  
+  <!-- Process description -->
+  <text x="400" y="450" font-family="Arial" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">GO:0030213 - Hyaluronan Biosynthetic Process</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="480" width="180" height="140" rx="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="690" y="500" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Legend</text>
+  
+  <rect x="610" y="510" width="20" height="12" rx="3" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="688" y="521" font-family="Arial" font-size="14" fill="#333">Hyaluronan Synthase</text>
+  
+  <rect x="610" y="530" width="20" height="12" rx="3" fill="#99ccff" stroke="#333" stroke-width="1"/>
+  <text x="665" y="541" font-family="Arial" font-size="14" fill="#333">ABC Transporter</text>
+  
+  <rect x="610" y="550" width="20" height="12" rx="3" fill="#9ecc9e" stroke="#333" stroke-width="1"/>
+  <text x="655" y="561" font-family="Arial" font-size="14" fill="#333">Hyaluronidase</text>
+  
+  <circle cx="620" y="575" r="10" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="650" y="579" font-family="Arial" font-size="14" fill="#333">Hyaluronan</text>
+  
+  <line x1="610" y1="595" x2="630" y2="595" stroke="#333" stroke-width="3"/>
+  <text x="670" y="599" font-family="Arial" font-size="14" fill="#333">Synthesis</text>
+  
+  <line x1="610" y1="615" x2="630" y2="615" stroke="#333" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="670" y="619" font-family="Arial" font-size="14" fill="#333">Regulation</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="320" rx="380" ry="280" fill="#f9f9f9" stroke="#333" stroke-width="2" />
+  
+  <!-- Plasma membrane -->
+  <ellipse cx="400" cy="320" rx="360" ry="260" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="5,3" />
+  <text x="560" y="120" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Plasma Membrane</text>
+  
+  <!-- ZDHHC5 at plasma membrane -->
+  <rect x="620" y="200" width="80" height="40" rx="10" fill="#8ecae6" stroke="#333" stroke-width="2" />
+  <text x="632" y="225" font-family="Arial" font-size="14" font-weight="bold" fill="#333">ZDHHC5</text>
+  <text x="605" y="180" font-family="Arial" font-size="12" fill="#333">S-palmitoyltransferase</text>
+  
+  <!-- RIPosomes -->
+  <g transform="translate(200, 300)">
+    <circle cx="0" cy="0" r="70" fill="#ffb703" stroke="#333" stroke-width="2" />
+    <text x="-40" y="-50" font-family="Arial" font-size="16" font-weight="bold" fill="#333">RIPosomes</text>
+    
+    <!-- NOD1, NOD2, RIPK2 inside RIPosomes -->
+    <rect x="-50" y="-40" width="80" height="25" rx="5" fill="#fb8500" stroke="#333" stroke-width="1" />
+    <text x="-35" y="-23" font-family="Arial" font-size="14" fill="#333">NOD1</text>
+    
+    <rect x="-50" y="-10" width="80" height="25" rx="5" fill="#fb8500" stroke="#333" stroke-width="1" />
+    <text x="-35" y="7" font-family="Arial" font-size="14" fill="#333">NOD2</text>
+    
+    <rect x="-50" y="20" width="80" height="25" rx="5" fill="#fb8500" stroke="#333" stroke-width="1" />
+    <text x="-35" y="37" font-family="Arial" font-size="14" fill="#333">RIPK2</text>
+  </g>
+
+  <!-- Ubiquitin tags -->
+  <g transform="translate(270, 280)">
+    <circle cx="0" cy="0" r="12" fill="#e63946" stroke="#333" stroke-width="1" />
+    <text x="-5" y="5" font-family="Arial" font-size="14" font-weight="bold" fill="white">U</text>
+  </g>
+  <g transform="translate(290, 300)">
+    <circle cx="0" cy="0" r="12" fill="#e63946" stroke="#333" stroke-width="1" />
+    <text x="-5" y="5" font-family="Arial" font-size="14" font-weight="bold" fill="white">U</text>
+  </g>
+  <g transform="translate(260, 320)">
+    <circle cx="0" cy="0" r="12" fill="#e63946" stroke="#333" stroke-width="1" />
+    <text x="-5" y="5" font-family="Arial" font-size="14" font-weight="bold" fill="white">U</text>
+  </g>
+  
+  <!-- Autophagosome -->
+  <ellipse cx="500" cy="350" rx="150" ry="120" fill="#ecf8f8" stroke="#219ebc" stroke-width="3" />
+  <text x="480" y="240" font-family="Arial" font-size="16" font-weight="bold" fill="#219ebc">Autophagosome</text>
+  
+  <!-- IRGM on autophagosome membrane -->
+  <rect x="380" y="280" width="70" height="30" rx="15" fill="#4ecdc4" stroke="#333" stroke-width="2" />
+  <text x="392" y="300" font-family="Arial" font-size="14" font-weight="bold" fill="#333">IRGM</text>
+  <text x="335" y="270" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Autophagosome Membrane</text>
+  
+  <!-- SQSTM1 (p62) in autophagosome -->
+  <rect x="480" y="350" width="80" height="35" rx="15" fill="#8d99ae" stroke="#333" stroke-width="2" />
+  <text x="485" y="373" font-family="Arial" font-size="14" font-weight="bold" fill="#333">SQSTM1</text>
+  <text x="470" y="410" font-family="Arial" font-size="12" fill="#333">(p62 - ubiquitin reader)</text>
+  
+  <!-- Process arrows -->
+  <!-- IRGM positively regulates SQSTM1 -->
+  <path d="M450 295 Q465 325 480 350" stroke="#107E7D" stroke-width="3" fill="none" marker-end="url(#arrowhead-positive)" />
+  <text x="415" y="330" font-family="Arial" font-size="12" font-weight="bold" fill="#107E7D">Promotes</text>
+  
+  <!-- ZDHHC5 negatively affects SQSTM1 -->
+  <path d="M620 220 Q550 260 520 340" stroke="#d90429" stroke-width="3" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead-negative)" />
+  <text x="535" y="270" font-family="Arial" font-size="12" font-weight="bold" fill="#d90429">Negatively affects</text>
+  
+  <!-- SQSTM1 targets RIPosomes -->
+  <path d="M480 350 Q400 390 290 320" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <text x="330" y="405" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Targets for degradation</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+    <marker id="arrowhead-positive" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#107E7D" />
+    </marker>
+    <marker id="arrowhead-negative" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d90429" />
+    </marker>
+  </defs>
+  
+  <!-- Biological process labels -->
+  <rect x="20" y="20" width="300" height="30" rx="5" fill="#caf0f8" stroke="#333" stroke-width="1" />
+  <text x="25" y="40" font-family="Arial" font-size="16" fill="#333">Negative regulation of defense response to virus</text>
+  
+  <rect x="400" y="480" width="320" height="30" rx="5" fill="#caf0f8" stroke="#333" stroke-width="1" />
+  <text x="410" y="500" font-family="Arial" font-size="16" fill="#333">Protein targeting to vacuole involved in autophagy</text>
+  
+  <!-- Title of the pathway -->
+  <text x="60" y="570" font-family="Arial" font-size="20" font-weight="bold" fill="#333">IRGM promotes autophagy-dependent degradation of RIPosomes (NOD1, NOD2 and RIPK2)</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="590" width="740" height="50" rx="5" fill="#f8f9fa" stroke="#333" stroke-width="1" />
+  <text x="40" y="610" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Legend:</text>
+  
+  <!-- Legend items -->
+  <rect x="110" y="600" width="20" height="10" fill="#107E7D" />
+  <text x="135" y="610" font-family="Arial" font-size="12" fill="#333">Positive regulation</text>
+  
+  <rect x="290" y="600" width="20" height="10" fill="#d90429" />
+  <text x="315" y="610" font-family="Arial" font-size="12" fill="#333">Negative regulation</text>
+  
+  <circle cx="430" cy="605" r="10" fill="#ffb703" />
+  <text x="445" y="610" font-family="Arial" font-size="12" fill="#333">RIPosomes</text>
+  
+  <rect x="520" y="600" width="20" height="10" fill="#8ecae6" />
+  <text x="545" y="610" font-family="Arial" font-size="12" fill="#333">Membrane proteins</text>
+  
+  <circle cx="630" cy="605" r="10" fill="#e63946" />
+  <text x="645" y="610" font-family="Arial" font-size="12" fill="#333">Ubiquitin tag</text>
+  
+  <rect x="720" y="600" width="20" height="10" fill="#8d99ae" />
+  <text x="745" y="610" font-family="Arial" font-size="12" fill="#333">Adaptor proteins</text>
+</svg>

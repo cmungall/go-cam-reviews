@@ -1,0 +1,146 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and title -->
+  <rect width="800" height="650" fill="#ffffff"/>
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Fzd3 Function in Cranial Neural Crest Cells</text>
+  
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="350" rx="350" ry="240" fill="#f9f9f9" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="370" rx="100" ry="80" fill="#e6f2ff" stroke="#333333" stroke-width="2"/>
+  <text x="250" y="370" font-family="Arial" font-size="16" text-anchor="middle">Nucleus</text>
+  <text x="250" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0005634)</text>
+  
+  <!-- Extracellular space -->
+  <rect x="50" y="80" width="700" height="110" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="100" font-family="Arial" font-size="16" text-anchor="middle">Extracellular Region</text>
+  <text x="400" y="120" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0005576)</text>
+  
+  <!-- Cytosol label -->
+  <text x="550" y="320" font-family="Arial" font-size="16" text-anchor="middle">Cytosol</text>
+  <text x="550" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0005829)</text>
+  
+  <!-- Cranial neural crest label -->
+  <text x="400" y="560" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Cranial Neural Crest Cell</text>
+  <text x="400" y="580" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(XAO:0001001)</text>
+  
+  <!-- Wnt ligands -->
+  <circle cx="130" cy="140" r="25" fill="#ff9999" stroke="#333333" stroke-width="1.5"/>
+  <text x="130" y="145" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Wnt11</text>
+  
+  <circle cx="250" cy="140" r="25" fill="#ff9999" stroke="#333333" stroke-width="1.5"/>
+  <text x="250" y="145" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Wnt4</text>
+  
+  <!-- SDC4 in extracellular space -->
+  <rect x="380" y="120" width="70" height="35" fill="#99ccff" stroke="#333333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="415" y="143" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SDC4</text>
+  
+  <!-- Cell membrane -->
+  <path d="M 100,190 Q 400,210 700,190" stroke="#333333" stroke-width="2" fill="none"/>
+  <text x="400" y="170" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Cell Membrane</text>
+  
+  <!-- Cell membrane receptors -->
+  <rect x="130" y="210" width="60" height="35" fill="#99cc99" stroke="#333333" stroke-width="1.5" rx="15" ry="15"/>
+  <text x="160" y="232" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Fzd3</text>
+  
+  <rect x="250" y="210" width="60" height="35" fill="#99cc99" stroke="#333333" stroke-width="1.5" rx="15" ry="15"/>
+  <text x="280" y="232" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Fzd7</text>
+  
+  <rect x="415" y="210" width="60" height="35" fill="#99cc99" stroke="#333333" stroke-width="1.5" rx="15" ry="15"/>
+  <text x="445" y="232" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">PTK7</text>
+  
+  <!-- Binding/interaction arrows -->
+  <line x1="130" y1="165" x2="160" y2="210" stroke="#0066cc" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="120" y="190" font-family="Arial" font-size="10" text-anchor="middle">binds</text>
+  
+  <line x1="250" y1="165" x2="280" y2="210" stroke="#0066cc" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="240" y="190" font-family="Arial" font-size="10" text-anchor="middle">binds</text>
+  
+  <line x1="415" y1="155" x2="445" y2="210" stroke="#0066cc" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="405" y="185" font-family="Arial" font-size="10" text-anchor="middle">binds</text>
+  
+  <!-- Cytoplasmic proteins -->
+  <rect x="160" y="280" width="70" height="35" fill="#ffcc99" stroke="#333333" stroke-width="1.5"/>
+  <text x="195" y="303" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Dvl1</text>
+  
+  <rect x="350" y="280" width="70" height="35" fill="#ffcc99" stroke="#333333" stroke-width="1.5"/>
+  <text x="385" y="303" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">RhoA</text>
+  
+  <rect x="500" y="280" width="70" height="35" fill="#ffcc99" stroke="#333333" stroke-width="1.5"/>
+  <text x="535" y="303" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Rac1</text>
+  
+  <rect x="600" y="350" width="70" height="35" fill="#ffcc99" stroke="#333333" stroke-width="1.5"/>
+  <text x="635" y="373" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Chn1</text>
+  
+  <!-- Signaling pathways -->
+  <line x1="160" y1="245" x2="185" y2="280" stroke="#006600" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="280" y1="245" x2="195" y2="280" stroke="#006600" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <line x1="195" y1="315" x2="350" y2="297" stroke="#006600" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="270" y="290" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  
+  <line x1="195" y1="315" x2="500" y2="297" stroke="#006600" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="350" y="330" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  
+  <!-- RhoA to ROCK1 -->
+  <rect x="350" y="350" width="70" height="35" fill="#ffcc99" stroke="#333333" stroke-width="1.5"/>
+  <text x="385" y="373" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">ROCK1</text>
+  <line x1="385" y1="315" x2="385" y2="350" stroke="#006600" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Chn1 to Rac1 (inhibition) -->
+  <line x1="600" y1="367" x2="535" y2="315" stroke="#cc0000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="575" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#cc0000">inhibits</text>
+  
+  <!-- Rac1 to JNK -->
+  <rect x="500" y="350" width="70" height="35" fill="#ffcc99" stroke="#333333" stroke-width="1.5"/>
+  <text x="535" y="373" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">JNK</text>
+  <line x1="535" y1="315" x2="535" y2="350" stroke="#006600" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Nuclear proteins -->
+  <rect x="220" y="340" width="60" height="30" fill="#cc99cc" stroke="#333333" stroke-width="1.5"/>
+  <text x="250" y="360" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">tp53</text>
+  
+  <rect x="220" y="390" width="60" height="30" fill="#cc99cc" stroke="#333333" stroke-width="1.5"/>
+  <text x="250" y="410" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">pes1</text>
+  
+  <!-- Cellular processes -->
+  <rect x="300" y="450" width="120" height="40" fill="#ffffcc" stroke="#333333" stroke-width="1.5" rx="10" ry="10"/>
+  <text x="360" y="475" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Cell Migration</text>
+  
+  <rect x="500" y="450" width="140" height="40" fill="#ffffcc" stroke="#333333" stroke-width="1.5" rx="10" ry="10"/>
+  <text x="570" y="475" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PCP Pathway</text>
+  <text x="570" y="490" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0060071)</text>
+  
+  <!-- Process arrows -->
+  <line x1="385" y1="385" x2="360" y2="450" stroke="#006600" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="535" y1="385" x2="570" y2="450" stroke="#006600" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <rect x="600" y="450" width="180" height="180" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="690" y="470" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <circle cx="620" y="490" r="10" fill="#ff9999" stroke="#333333" stroke-width="1.5"/>
+  <text x="700" y="495" font-family="Arial" font-size="12" text-anchor="middle">Wnt Ligands</text>
+  
+  <rect x="610" y="510" width="20" height="15" fill="#99cc99" stroke="#333333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="700" y="520" font-family="Arial" font-size="12" text-anchor="middle">Receptors</text>
+  
+  <rect x="610" y="535" width="20" height="15" fill="#ffcc99" stroke="#333333" stroke-width="1.5"/>
+  <text x="700" y="545" font-family="Arial" font-size="12" text-anchor="middle">Cytoplasmic Proteins</text>
+  
+  <rect x="610" y="560" width="20" height="15" fill="#cc99cc" stroke="#333333" stroke-width="1.5"/>
+  <text x="700" y="570" font-family="Arial" font-size="12" text-anchor="middle">Nuclear Proteins</text>
+  
+  <rect x="610" y="585" width="20" height="15" fill="#ffffcc" stroke="#333333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="700" y="595" font-family="Arial" font-size="12" text-anchor="middle">Cellular Processes</text>
+  
+  <line x1="610" y1="610" x2="630" y2="610" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="700" y="615" font-family="Arial" font-size="12" text-anchor="middle">Inhibition</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>

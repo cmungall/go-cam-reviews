@@ -1,0 +1,186 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Non-canonical activity of the RQC complex and DesCEND pathway (Human)</text>
+  
+  <!-- Cytoplasm background -->
+  <rect x="50" y="60" width="700" height="570" fill="#f8f9fa" stroke="#cccccc" stroke-width="2" rx="20" ry="20" />
+  <text x="70" y="85" font-family="Arial" font-size="14" font-style="italic">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Stalled Ribosome -->
+  <g transform="translate(120, 150)">
+    <!-- Ribosome large subunit -->
+    <ellipse cx="60" cy="60" rx="60" ry="40" fill="#b3d9ff" stroke="#000000" stroke-width="2" />
+    <text x="60" y="65" font-family="Arial" font-size="12" text-anchor="middle">60S</text>
+    
+    <!-- Ribosome small subunit -->
+    <ellipse cx="20" cy="30" rx="40" ry="25" fill="#80bfff" stroke="#000000" stroke-width="2" />
+    <text x="20" y="35" font-family="Arial" font-size="12" text-anchor="middle">40S</text>
+    
+    <!-- Nascent peptide -->
+    <path d="M90,40 Q100,30 110,40 Q120,50 130,40 Q140,30 150,40" stroke="#ff6666" stroke-width="3" fill="none" />
+    
+    <!-- mRNA -->
+    <path d="M-30,30 Q0,20 30,30 Q60,40 90,30" stroke="#ffcc66" stroke-width="2" fill="none" />
+    <text x="30" y="15" font-family="Arial" font-size="10" text-anchor="middle">mRNA</text>
+    
+    <!-- Label -->
+    <text x="60" y="120" font-family="Arial" font-size="12" text-anchor="middle">Stalled Cytosolic Ribosome</text>
+    <text x="60" y="135" font-family="Arial" font-size="12" text-anchor="middle">(GO:0022626)</text>
+  </g>
+  
+  <!-- Step 1: Ribosome Rescue -->
+  <g transform="translate(300, 180)">
+    <!-- ASCC3 -->
+    <rect x="0" y="0" width="60" height="30" rx="5" ry="5" fill="#ff9966" stroke="#000000" stroke-width="2" />
+    <text x="30" y="20" font-family="Arial" font-size="12" text-anchor="middle">ASCC3</text>
+    
+    <!-- ABCE1 -->
+    <rect x="70" y="0" width="60" height="30" rx="5" ry="5" fill="#ff9966" stroke="#000000" stroke-width="2" />
+    <text x="100" y="20" font-family="Arial" font-size="12" text-anchor="middle">ABCE1</text>
+    
+    <!-- ATP symbol -->
+    <circle cx="115" cy="-10" r="8" fill="#ffff99" stroke="#000000" stroke-width="1" />
+    <text x="115" y="-7" font-family="Arial" font-size="8" text-anchor="middle">ATP</text>
+    
+    <!-- Label -->
+    <text x="65" y="50" font-family="Arial" font-size="12" text-anchor="middle">Ribosome rescue and disassembly</text>
+    <text x="65" y="65" font-family="Arial" font-size="10" text-anchor="middle">(GO:0072344, GO:0032790)</text>
+    
+    <!-- Molecular function labels -->
+    <text x="30" y="-15" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">ATP hydrolysis</text>
+    <text x="30" y="-5" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">(GO:0016887)</text>
+    
+    <text x="100" y="-15" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">NTPase activity</text>
+    <text x="100" y="-5" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">(GO:0017111)</text>
+  </g>
+  
+  <!-- Arrows Step 1 -->
+  <g>
+    <path d="M190,150 L290,180" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  </g>
+  
+  <!-- Step 2: NEMF Binding & CAT-tailing -->
+  <g transform="translate(520, 150)">
+    <!-- Ribosome large subunit -->
+    <ellipse cx="60" cy="60" rx="60" ry="40" fill="#b3d9ff" stroke="#000000" stroke-width="2" />
+    <text x="60" y="65" font-family="Arial" font-size="12" text-anchor="middle">60S</text>
+    
+    <!-- NEMF -->
+    <rect x="40" y="20" width="60" height="30" rx="5" ry="5" fill="#99cc99" stroke="#000000" stroke-width="2" />
+    <text x="70" y="40" font-family="Arial" font-size="12" text-anchor="middle">NEMF</text>
+    
+    <!-- Nascent peptide with CAT-tail -->
+    <path d="M90,40 Q100,30 110,40 Q120,50 130,40 Q140,30 150,40 Q160,50 170,40 Q180,30 190,40" stroke="#ff6666" stroke-width="3" fill="none" />
+    <path d="M150,40 Q160,50 170,40 Q180,30 190,40" stroke="#ff33cc" stroke-width="3" fill="none" />
+    
+    <!-- tRNA -->
+    <path d="M130,10 C140,5 140,15 150,10" stroke="#cc99ff" stroke-width="2" fill="none" />
+    <text x="140" y="5" font-family="Arial" font-size="8" text-anchor="middle">Ala-tRNA(Ala)</text>
+    <text x="140" y="15" font-family="Arial" font-size="8" text-anchor="middle">(CHEBI:17732)</text>
+    
+    <!-- Label -->
+    <text x="60" y="120" font-family="Arial" font-size="12" text-anchor="middle">CAT-tailing by NEMF</text>
+    <text x="60" y="135" font-family="Arial" font-size="10" text-anchor="middle">(GO:0140708)</text>
+    
+    <!-- Molecular function labels -->
+    <text x="70" y="0" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">ribosomal large subunit binding</text>
+    <text x="70" y="10" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">(GO:0043023)</text>
+    
+    <text x="180" y="10" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">α-aminoacyl-tRNA binding</text>
+    <text x="180" y="20" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">(GO:1904678)</text>
+  </g>
+  
+  <!-- Arrows Step 2 -->
+  <g>
+    <path d="M390,180 L510,180" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+    <text x="450" y="170" font-family="Arial" font-size="10" fill="#555555">Positively regulates</text>
+  </g>
+  
+  <!-- Step 3: KLHDC10-mediated degradation -->
+  <g transform="translate(400, 350)">
+    <!-- KLHDC10 -->
+    <rect x="0" y="0" width="80" height="30" rx="5" ry="5" fill="#cc99ff" stroke="#000000" stroke-width="2" />
+    <text x="40" y="20" font-family="Arial" font-size="12" text-anchor="middle">KLHDC10</text>
+    
+    <!-- E3 Ubiquitin Ligase complex -->
+    <rect x="0" y="40" width="80" height="30" rx="5" ry="5" fill="#ccccff" stroke="#000000" stroke-width="1.5" />
+    <text x="40" y="60" font-family="Arial" font-size="10" text-anchor="middle">E3 Ubiquitin Ligase</text>
+    <text x="40" y="72" font-family="Arial" font-size="8" text-anchor="middle" fill="#555555">(not in source model)</text>
+    
+    <!-- Ubiquitination arrows -->
+    <path d="M90,15 L115,15" stroke="#000000" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+    
+    <!-- Ubiquitin -->
+    <circle cx="100" cy="5" r="10" fill="#ffcc99" stroke="#000000" stroke-width="1.5" />
+    <text x="100" y="8" font-family="Arial" font-size="8" text-anchor="middle">Ub</text>
+    
+    <!-- Degradation symbol (proteasome) -->
+    <rect x="120" y="-5" width="50" height="40" rx="5" ry="5" fill="#ff9999" stroke="#000000" stroke-width="1.5" />
+    <rect x="130" y="0" width="30" height="30" rx="2" ry="2" fill="#ff6666" stroke="#000000" stroke-width="1" />
+    <line x1="135" y1="5" x2="155" y2="25" stroke="#ffffff" stroke-width="2" />
+    <line x1="135" y1="25" x2="155" y2="5" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Labeled CAT-tailed peptide -->
+    <path d="M-50,15 Q-40,5 -30,15 Q-20,25 -10,15" stroke="#ff6666" stroke-width="3" fill="none" />
+    <path d="M-30,15 Q-20,25 -10,15" stroke="#ff33cc" stroke-width="3" fill="none" />
+    
+    <!-- Label -->
+    <text x="40" y="100" font-family="Arial" font-size="12" text-anchor="middle">DesCEND pathway-mediated degradation</text>
+    <text x="40" y="115" font-family="Arial" font-size="10" text-anchor="middle">(GO:0140627)</text>
+    
+    <!-- Molecular function labels -->
+    <text x="40" y="-15" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">Ubiquitin-like ligase-substrate adaptor activity</text>
+    <text x="40" y="-5" font-family="Arial" font-size="9" text-anchor="middle" fill="#555555">(GO:1990756)</text>
+  </g>
+  
+  <!-- Arrows Step 3 -->
+  <g>
+    <path d="M580,210 L400,340" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+    <text x="510" y="290" font-family="Arial" font-size="10" fill="#555555">Positively regulates</text>
+  </g>
+  
+  <!-- Process Flow Description -->
+  <g transform="translate(50, 580)">
+    <rect x="0" y="0" width="700" height="40" fill="#e6f7ff" stroke="#0066cc" stroke-width="1" rx="5" ry="5" />
+    <text x="350" y="25" font-family="Arial" font-size="12" text-anchor="middle" fill="#003366">
+      Stalled ribosome rescue → Ribosome disassembly → CAT-tailing of nascent peptide → Ubiquitin-dependent degradation via DesCEND pathway
+    </text>
+  </g>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 500)">
+    <rect x="0" y="0" width="700" height="70" fill="#ffffff" stroke="#000000" stroke-width="1" rx="5" ry="5" />
+    <text x="350" y="15" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Legend</text>
+    
+    <!-- Proteins - Left Column -->
+    <rect x="10" y="25" width="40" height="20" rx="5" ry="5" fill="#ff9966" stroke="#000000" stroke-width="2" />
+    <text x="60" y="40" font-family="Arial" font-size="12">ASCC3, ABCE1 (Ribosome rescue factors)</text>
+    
+    <rect x="10" y="50" width="40" height="20" rx="5" ry="5" fill="#99cc99" stroke="#000000" stroke-width="2" />
+    <text x="60" y="65" font-family="Arial" font-size="12">NEMF (CAT-tailing enzyme)</text>
+    
+    <!-- Middle Column -->
+    <rect x="270" y="25" width="40" height="20" rx="5" ry="5" fill="#cc99ff" stroke="#000000" stroke-width="2" />
+    <text x="320" y="40" font-family="Arial" font-size="12">KLHDC10 (E3 ligase adaptor)</text>
+    
+    <ellipse cx="290" cy="60" rx="20" ry="12" fill="#b3d9ff" stroke="#000000" stroke-width="2" />
+    <text x="350" y="65" font-family="Arial" font-size="12">Ribosome (GO:0022626)</text>
+    
+    <!-- Right Column -->
+    <path d="M480,35 Q490,30 500,35" stroke="#ff33cc" stroke-width="3" fill="none" />
+    <text x="560" y="40" font-family="Arial" font-size="12">CAT-tail (alanine) addition</text>
+    
+    <path d="M480,60 Q490,55 500,60" stroke="#ff6666" stroke-width="3" fill="none" />
+    <text x="550" y="65" font-family="Arial" font-size="12">Nascent peptide</text>
+  </g>
+</svg>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="390" ry="290" fill="#f8f8f8" stroke="#888888" stroke-width="2"/>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="400" cy="350" rx="250" ry="180" fill="#ffeeee" stroke="#cc8888" stroke-width="3"/>
+  <path d="M200,300 Q400,450 600,300" fill="none" stroke="#cc8888" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="400" y="470" font-family="Arial" font-size="18" text-anchor="middle" fill="#333333">Mitochondrion</text>
+  
+  <!-- Mitochondrial matrix -->
+  <ellipse cx="400" cy="350" rx="220" ry="150" fill="#ffe0e0" stroke="#dd9999" stroke-width="2"/>
+  <text x="400" y="440" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Mitochondrial Matrix (GO:0005759)</text>
+  
+  <!-- Cytosol Label -->
+  <text x="400" y="130" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Cytosol (GO:0005829)</text>
+  
+  <!-- Molecules and Processes -->
+  
+  <!-- Cytosolic components -->
+  <!-- MMACHC and its activities -->
+  <rect x="150" y="160" width="110" height="40" rx="5" fill="#b3d9ff" stroke="#4d94ff" stroke-width="2"/>
+  <text x="205" y="185" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">MMACHC</text>
+  
+  <!-- MMACHC functions -->
+  <rect x="100" y="220" width="90" height="40" rx="5" fill="#cce6ff" stroke="#4d94ff" stroke-width="2"/>
+  <text x="145" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Oxidoreductase</text>
+  <text x="145" y="253" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Activity</text>
+  
+  <rect x="200" y="220" width="90" height="40" rx="5" fill="#cce6ff" stroke="#4d94ff" stroke-width="2"/>
+  <text x="245" y="240" font-family="Arial" font-size="11" text-anchor="middle" fill="#333333">Cyanocobalamin</text>
+  <text x="245" y="253" font-family="Arial" font-size="11" text-anchor="middle" fill="#333333">Reductase</text>
+  
+  <!-- MMADHC and its activities -->
+  <rect x="350" y="160" width="110" height="40" rx="5" fill="#b3d9ff" stroke="#4d94ff" stroke-width="2"/>
+  <text x="405" y="185" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">MMADHC</text>
+  
+  <rect x="350" y="220" width="110" height="40" rx="5" fill="#cce6ff" stroke="#4d94ff" stroke-width="2"/>
+  <text x="405" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Molecular Carrier</text>
+  <text x="405" y="253" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Activity</text>
+  
+  <!-- Mitochondrial components -->
+  <!-- MMAB and its activities -->
+  <rect x="250" y="300" width="110" height="40" rx="5" fill="#ffcccc" stroke="#ff8080" stroke-width="2"/>
+  <text x="305" y="325" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">MMAB</text>
+  
+  <rect x="250" y="350" width="110" height="40" rx="5" fill="#ffdddd" stroke="#ff8080" stroke-width="2"/>
+  <text x="305" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Corrinoid</text>
+  <text x="305" y="383" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Adenosyltransferase</text>
+  
+  <!-- MMAA and its activities -->
+  <rect x="450" y="300" width="110" height="40" rx="5" fill="#ffcccc" stroke="#ff8080" stroke-width="2"/>
+  <text x="505" y="325" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">MMAA</text>
+  
+  <rect x="450" y="350" width="110" height="40" rx="5" fill="#ffdddd" stroke="#ff8080" stroke-width="2"/>
+  <text x="505" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Molecular Carrier</text>
+  <text x="505" y="383" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Activity</text>
+  
+  <!-- MMUT and its activities -->
+  <rect x="350" y="380" width="110" height="40" rx="5" fill="#ffcccc" stroke="#ff8080" stroke-width="2"/>
+  <text x="405" y="405" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">MMUT</text>
+  
+  <rect x="350" y="330" width="110" height="40" rx="5" fill="#ffdddd" stroke="#ff8080" stroke-width="2"/>
+  <text x="405" y="343" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Methylmalonyl-CoA</text>
+  <text x="405" y="356" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Mutase Activity</text>
+  
+  <!-- Cobamamide molecule -->
+  <circle cx="600" y="320" r="25" fill="#ffffcc" stroke="#cccc00" stroke-width="2"/>
+  <text x="600" y="325" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Cobamamide</text>
+  
+  <!-- Connecting arrows -->
+  <!-- MMACHC to MMADHC -->
+  <path d="M260,180 L350,180" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Functions to proteins -->
+  <path d="M145,220 L175,200" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M245,220 L215,200" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M405,220 L405,200" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- MMADHC to MMAB -->
+  <path d="M405,200 L305,300" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MMAB to MMAA -->
+  <path d="M360,320 L450,320" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MMAA to Cobamamide -->
+  <path d="M560,320 L575,320" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cobamamide to MMUT -->
+  <path d="M580,335 L460,400" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Process labels -->
+  <rect x="80" y="50" width="640" height="30" rx="10" fill="#d9e9ff" stroke="#4d94ff" stroke-width="2"/>
+  <text x="400" y="70" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333333">Cobalamin Metabolic Process (GO:0009235): Adenosylation of Cobalamin</text>
+  
+  <rect x="310" y="520" width="180" height="25" rx="10" fill="#ffe6cc" stroke="#ff9933" stroke-width="2"/>
+  <text x="400" y="537" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Succinyl-CoA Biosynthesis</text>
+  
+  <!-- MMUT to Succinyl-CoA process -->
+  <path d="M405,420 L400,520" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <rect x="600" y="100" width="180" height="160" rx="5" fill="#ffffff" stroke="#888888" stroke-width="1"/>
+  <text x="690" y="120" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="610" y="130" width="20" height="20" fill="#b3d9ff" stroke="#4d94ff" stroke-width="1"/>
+  <text x="640" y="145" font-family="Arial" font-size="12" text-anchor="start" fill="#333333">Cytosolic Proteins</text>
+  
+  <rect x="610" y="155" width="20" height="20" fill="#cce6ff" stroke="#4d94ff" stroke-width="1"/>
+  <text x="640" y="170" font-family="Arial" font-size="12" text-anchor="start" fill="#333333">Cytosolic Activities</text>
+  
+  <rect x="610" y="180" width="20" height="20" fill="#ffcccc" stroke="#ff8080" stroke-width="1"/>
+  <text x="640" y="195" font-family="Arial" font-size="12" text-anchor="start" fill="#333333">Mitochondrial Proteins</text>
+  
+  <rect x="610" y="205" width="20" height="20" fill="#ffdddd" stroke="#ff8080" stroke-width="1"/>
+  <text x="640" y="220" font-family="Arial" font-size="12" text-anchor="start" fill="#333333">Mitochondrial Activities</text>
+  
+  <circle cx="620" y="235" r="10" fill="#ffffcc" stroke="#cccc00" stroke-width="1"/>
+  <text x="640" y="240" font-family="Arial" font-size="12" text-anchor="start" fill="#333333">Small Molecules</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>

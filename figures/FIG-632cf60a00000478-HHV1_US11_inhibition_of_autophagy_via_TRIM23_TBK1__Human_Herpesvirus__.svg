@@ -1,0 +1,96 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Cell -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f8ff" stroke="#666" stroke-width="2"/>
+  <text x="50" y="40" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Human Cell (Infected with HHV1)</text>
+  
+  <!-- Nucleus -->
+  <circle cx="200" cy="320" r="100" fill="#ddd" stroke="#666" stroke-width="2"/>
+  <text x="170" y="320" font-family="Arial" font-size="18" fill="#333">Nucleus</text>
+  
+  <!-- Cell membrane label -->
+  <text x="550" y="120" font-family="Arial" font-size="16" fill="#333">Cell Membrane</text>
+  <path d="M 530,125 L 500,150" stroke="#333" stroke-width="1" fill="none"/>
+
+  <!-- Host Cytoplasm label -->
+  <text x="320" y="190" font-family="Arial" font-size="16" fill="#333" font-style="italic">Host Cell Cytoplasm (GO:0030430)</text>
+  
+  <!-- Viral particles -->
+  <circle cx="650" cy="200" r="30" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <path d="M 650,200 L 660,185 M 650,200 L 640,185 M 650,200 L 665,205 M 650,200 L 635,205" stroke="#333" stroke-width="2"/>
+  <text x="630" y="250" font-family="Arial" font-size="16" fill="#333">HHV1</text>
+  
+  <!-- Pathway Elements -->
+  <!-- US11 -->
+  <rect x="500" y="300" width="90" height="50" rx="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="525" y="330" font-family="Arial" font-size="16" fill="white" font-weight="bold">US11</text>
+  <text x="515" y="365" font-family="Arial" font-size="12" fill="#333">(P04487)</text>
+  <text x="450" y="385" font-family="Arial" font-size="12" fill="#333" font-style="italic">molecular sequestering activity</text>
+  
+  <!-- TRIM23 -->
+  <rect x="400" y="410" width="90" height="50" rx="10" fill="#66ccff" stroke="#333" stroke-width="2"/>
+  <text x="410" y="440" font-family="Arial" font-size="16" fill="#333" font-weight="bold">TRIM23</text>
+  <text x="410" y="465" font-family="Arial" font-size="12" fill="#333">(P36406)</text>
+  <text x="370" y="485" font-family="Arial" font-size="12" fill="#333" font-style="italic">ubiquitin protein ligase activity</text>
+  
+  <!-- TBK1 -->
+  <rect x="270" y="300" width="90" height="50" rx="10" fill="#66ccff" stroke="#333" stroke-width="2"/>
+  <text x="290" y="330" font-family="Arial" font-size="16" fill="#333" font-weight="bold">TBK1</text>
+  <text x="280" y="365" font-family="Arial" font-size="12" fill="#333">(Q9UHD2)</text>
+  <text x="250" y="385" font-family="Arial" font-size="12" fill="#333" font-style="italic">protein serine/threonine kinase</text>
+  
+  <!-- SQSTM1 -->
+  <rect x="380" y="200" width="90" height="50" rx="10" fill="#66ccff" stroke="#333" stroke-width="2"/>
+  <text x="390" y="230" font-family="Arial" font-size="16" fill="#333" font-weight="bold">SQSTM1</text>
+  <text x="390" y="255" font-family="Arial" font-size="12" fill="#333">(Q13501)</text>
+  <text x="380" y="275" font-family="Arial" font-size="12" fill="#333" font-style="italic">signaling receptor activity</text>
+  
+  <!-- Autophagy process -->
+  <rect x="350" y="120" width="130" height="40" rx="5" fill="#99cc99" stroke="#333" stroke-width="2"/>
+  <text x="360" y="145" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Autophagy</text>
+  
+  <!-- Connections -->
+  <!-- US11 inhibits TRIM23 -->
+  <path d="M 500,325 L 470,410" stroke="#f00" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+  <text x="470" y="380" font-family="Arial" font-size="14" fill="#f00" font-weight="bold">inhibits</text>
+  
+  <!-- TRIM23 activates TBK1 -->
+  <path d="M 400,435 L 360,350" stroke="#090" stroke-width="3" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="360" y="400" font-family="Arial" font-size="14" fill="#090" font-weight="bold">activates</text>
+  
+  <!-- TBK1 activates SQSTM1 -->
+  <path d="M 350,300 L 390,250" stroke="#090" stroke-width="3" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="350" y="280" font-family="Arial" font-size="14" fill="#090" font-weight="bold">activates</text>
+  
+  <!-- SQSTM1 regulates Autophagy -->
+  <path d="M 425,200 L 425,160" stroke="#090" stroke-width="3" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="435" y="180" font-family="Arial" font-size="14" fill="#090" font-weight="bold">promotes</text>
+  
+  <!-- Process label -->
+  <rect x="220" y="500" width="400" height="30" rx="5" fill="#ffffcc" stroke="#333" stroke-width="1"/>
+  <text x="230" y="520" font-family="Arial" font-size="16" fill="#333" font-style="italic">Suppression by virus of host autophagy (GO:0039521)</text>
+  
+  <!-- Title of the pathway -->
+  <text x="120" y="570" font-family="Arial" font-size="20" fill="#333" font-weight="bold">HHV1-US11 inhibition of autophagy via TRIM23-TBK1</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="80" width="150" height="110" rx="5" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+  <text x="30" y="100" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Legend</text>
+  <rect x="30" y="110" width="20" height="20" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="60" y="125" font-family="Arial" font-size="12" fill="#333">Viral protein</text>
+  <rect x="30" y="140" width="20" height="20" fill="#66ccff" stroke="#333" stroke-width="1"/>
+  <text x="60" y="155" font-family="Arial" font-size="12" fill="#333">Host proteins</text>
+  <line x1="30" y1="170" x2="50" y2="170" stroke="#f00" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="60" y="175" font-family="Arial" font-size="12" fill="#333">Inhibition</text>
+  <line x1="30" y1="190" x2="50" y2="190" stroke="#090" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <text x="60" y="195" font-family="Arial" font-size="12" fill="#333">Activation</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowGreen" markerWidth="13" markerHeight="13" refX="10" refY="6" orient="auto">
+      <polygon points="0,0 12,6 0,12" fill="#090"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="13" markerHeight="13" refX="10" refY="6" orient="auto">
+      <polygon points="0,0 12,6 0,12" fill="#f00"/>
+    </marker>
+  </defs>
+</svg>

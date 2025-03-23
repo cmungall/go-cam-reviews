@@ -1,0 +1,100 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline - Spermatocyte -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9f9" stroke="#666" stroke-width="2"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Spermatocyte</text>
+  
+  <!-- Cytoplasm region -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#eef6ff" stroke="#999" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="220" y="110" font-family="Arial" font-size="18">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Cytosol region -->
+  <ellipse cx="400" cy="340" rx="300" ry="200" fill="#e6f2ff" stroke="#999" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="210" y="200" font-family="Arial" font-size="18">Cytosol (GO:0005829)</text>
+  
+  <!-- CUL4A with scaffold activity -->
+  <rect x="200" y="250" width="120" height="60" rx="10" ry="10" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="260" y="285" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">CUL4A</text>
+  <text x="260" y="305" text-anchor="middle" font-family="Arial" font-size="14">Scaffold Activity</text>
+  
+  <!-- DCAF12 with substrate adaptor activity -->
+  <rect x="380" y="250" width="120" height="60" rx="10" ry="10" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="440" y="285" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">DCAF12</text>
+  <text x="440" y="305" text-anchor="middle" font-family="Arial" font-size="14">Substrate Adaptor</text>
+  
+  <!-- RBX1 with ubiquitin ligase activity -->
+  <rect x="200" y="370" width="120" height="60" rx="10" ry="10" fill="#80bfff" stroke="#0066cc" stroke-width="2"/>
+  <text x="260" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">RBX1</text>
+  <text x="260" y="425" text-anchor="middle" font-family="Arial" font-size="14">Ubiquitin Ligase</text>
+  
+  <!-- MOV10 with RNA helicase activity -->
+  <rect x="530" y="370" width="120" height="60" rx="10" ry="10" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="590" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">MOV10</text>
+  <text x="590" y="425" text-anchor="middle" font-family="Arial" font-size="14">RNA Helicase</text>
+  
+  <!-- miRNA-mediated gene silencing region -->
+  <rect x="500" y="450" width="180" height="40" rx="5" ry="5" fill="#ffe6cc" stroke="#ff9933" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="590" y="475" text-anchor="middle" font-family="Arial" font-size="14">miRNA-mediated Gene Silencing</text>
+  
+  <!-- Process label - C-end degron pathway -->
+  <rect x="290" y="140" width="240" height="50" rx="5" ry="5" fill="#e6e6e6" stroke="#666" stroke-width="1"/>
+  <text x="410" y="165" text-anchor="middle" font-family="Arial" font-size="16">Ubiquitin-dependent Protein</text>
+  <text x="410" y="185" text-anchor="middle" font-family="Arial" font-size="16">Catabolism (C-end degron pathway)</text>
+  
+  <!-- Connection arrows with labels -->
+  <!-- CUL4A positively regulates DCAF12 -->
+  <path d="M320 280 L380 280" stroke="#006600" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="350" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#006600">+</text>
+  
+  <!-- DCAF12 has causal association with RBX1 -->
+  <path d="M400 310 L300 370" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- RBX1 negatively regulates MOV10 -->
+  <path d="M320 400 L530 400" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="420" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#cc0000">-</text>
+  
+  <!-- MOV10 involved in miRNA-mediated gene silencing -->
+  <path d="M590 430 L590 450" stroke="#ff9933" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Spermatogenesis overall process - text only -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Spermatogenesis (GO:0007283)</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Ubiquitin tags -->
+  <g transform="translate(380, 400)">
+    <circle cx="0" cy="0" r="12" fill="#ffff00" stroke="#cc9900" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ub</text>
+  </g>
+  <g transform="translate(430, 385)">
+    <circle cx="0" cy="0" r="12" fill="#ffff00" stroke="#cc9900" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ub</text>
+  </g>
+  <g transform="translate(470, 405)">
+    <circle cx="0" cy="0" r="12" fill="#ffff00" stroke="#cc9900" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ub</text>
+  </g>
+
+  <!-- Legend -->
+  <rect x="580" y="90" width="180" height="130" rx="5" ry="5" fill="white" stroke="#666" stroke-width="1"/>
+  <text x="670" y="115" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <!-- Ubiquitin legend -->
+  <g transform="translate(600, 140)">
+    <circle cx="0" cy="0" r="12" fill="#ffff00" stroke="#cc9900" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ub</text>
+  </g>
+  <text x="685" y="145" text-anchor="start" font-family="Arial" font-size="15">Ubiquitin Tag</text>
+  
+  <!-- Positive regulation legend -->
+  <text x="600" y="175" text-anchor="middle" font-family="Arial" font-size="16" fill="#006600">+</text>
+  <text x="685" y="175" text-anchor="start" font-family="Arial" font-size="15">Positive Regulation</text>
+  
+  <!-- Negative regulation legend -->
+  <text x="600" y="205" text-anchor="middle" font-family="Arial" font-size="16" fill="#cc0000">-</text>
+  <text x="685" y="205" text-anchor="start" font-family="Arial" font-size="15">Negative Regulation</text>
+</svg>

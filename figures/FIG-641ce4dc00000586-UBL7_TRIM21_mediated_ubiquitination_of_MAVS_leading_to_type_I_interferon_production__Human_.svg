@@ -1,0 +1,88 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Cell membrane -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f9f9f9" stroke="#333333" stroke-width="2" />
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="350" cy="280" rx="120" ry="70" fill="#ffdddd" stroke="#cc0000" stroke-width="2" />
+  <ellipse cx="350" cy="280" rx="100" ry="55" fill="#ffeeee" stroke="#cc0000" stroke-width="1.5" />
+  
+  <!-- MAVS on mitochondrial outer membrane -->
+  <rect x="410" y="240" width="60" height="35" rx="5" ry="5" fill="#8dd3c7" stroke="#333333" stroke-width="1.5" />
+  <text x="415" y="263" font-family="Arial" font-size="16" font-weight="bold">MAVS</text>
+  <text x="412" y="225" font-family="Arial" font-size="14">Mitochondrial outer membrane</text>
+  
+  <!-- UBL7 in cytoplasm -->
+  <rect x="250" y="350" width="60" height="35" rx="5" ry="5" fill="#ffffb3" stroke="#333333" stroke-width="1.5" />
+  <text x="255" y="373" font-family="Arial" font-size="16" font-weight="bold">UBL7</text>
+  <text x="255" y="395" font-family="Arial" font-size="14">Cytoplasm</text>
+  
+  <!-- TRIM21 in cytoplasm -->
+  <rect x="350" y="400" width="70" height="35" rx="5" ry="5" fill="#fb8072" stroke="#333333" stroke-width="1.5" />
+  <text x="355" y="423" font-family="Arial" font-size="16" font-weight="bold">TRIM21</text>
+  <text x="350" y="445" font-family="Arial" font-size="14">Cytoplasm</text>
+  
+  <!-- OTUD4 -->
+  <rect x="150" y="380" width="70" height="35" rx="5" ry="5" fill="#bebada" stroke="#333333" stroke-width="1.5" />
+  <text x="155" y="403" font-family="Arial" font-size="16" font-weight="bold">OTUD4</text>
+  <text x="152" y="425" font-family="Arial" font-size="14">Deubiquitinase</text>
+  
+  <!-- Type I interferon production -->
+  <rect x="500" y="170" width="200" height="45" rx="5" ry="5" fill="#b3e2cd" stroke="#333333" stroke-width="1.5" />
+  <text x="515" y="198" font-family="Arial" font-size="16" font-weight="bold">Type I Interferon Production</text>
+  
+  <!-- Interactions/Arrows with clearer flow -->
+  <!-- UBL7 to TRIM21 (step 1) -->
+  <line x1="310" y1="368" x2="350" y2="413" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="305" y="403" font-family="Arial" font-size="14">Adaptor activity</text>
+  <text x="305" y="300" font-family="Arial" font-size="14" font-weight="bold">1</text>
+  
+  <!-- TRIM21 to MAVS (step 2) -->
+  <path d="M 420 400 C 450 350 465 290 440 275" stroke="#333333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="440" y="350" font-family="Arial" font-size="14">Ubiquitinates</text>
+  <text x="440" y="368" font-family="Arial" font-size="14">(K27-linked)</text>
+  <text x="465" y="320" font-family="Arial" font-size="14" font-weight="bold">2</text>
+  
+  <!-- MAVS to Type I Interferon (step 3) -->
+  <path d="M 470 240 C 490 220 520 200 550 190" stroke="#333333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="500" y="230" font-family="Arial" font-size="14">Promotes</text>
+  <text x="485" y="215" font-family="Arial" font-size="14" font-weight="bold">3</text>
+  
+  <!-- OTUD4 to UBL7 (regulatory step) -->
+  <line x1="220" y1="398" x2="250" y2="368" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="180" y="355" font-family="Arial" font-size="14">Deubiquitinates</text>
+  <text x="180" y="373" font-family="Arial" font-size="14">(K11-linked)</text>
+  <text x="225" y="340" font-family="Arial" font-size="14" font-weight="bold">R</text>
+
+  <!-- Definitions for markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">UBL7/TRIM21-mediated ubiquitination of MAVS</text>
+  <text x="400" y="60" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">leading to type I interferon production</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="490" width="250" height="100" fill="#ffffff" stroke="#333333" stroke-width="1.5" rx="5" ry="5" />
+  <text x="40" y="515" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <rect x="40" y="525" width="18" height="18" fill="#8dd3c7" stroke="#333333" stroke-width="1" />
+  <text x="65" y="540" font-family="Arial" font-size="14">MAVS - Mitochondrial antiviral-signaling protein</text>
+  
+  <rect x="40" y="550" width="18" height="18" fill="#ffffb3" stroke="#333333" stroke-width="1" />
+  <text x="65" y="565" font-family="Arial" font-size="14">UBL7 - Ubiquitin-like protein 7</text>
+  
+  <rect x="40" y="575" width="18" height="18" fill="#fb8072" stroke="#333333" stroke-width="1" />
+  <text x="65" y="590" font-family="Arial" font-size="14">TRIM21 - E3 ubiquitin-protein ligase</text>
+  
+  <rect x="40" y="600" width="18" height="18" fill="#bebada" stroke="#333333" stroke-width="1" />
+  <text x="65" y="615" font-family="Arial" font-size="14">OTUD4 - OTU domain-containing protein 4</text>
+  
+  <text x="550" y="515" font-family="Arial" font-size="14" font-style="italic">Numbers indicate sequence of pathway steps</text>
+  <text x="550" y="535" font-family="Arial" font-size="14" font-style="italic">R indicates regulatory influence</text>
+</svg>

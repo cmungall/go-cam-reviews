@@ -1,0 +1,70 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Nucleus with Chromatin -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f8f8" stroke="#666" stroke-width="2"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Nucleus</text>
+  
+  <!-- Chromatin Region -->
+  <path d="M200,250 C250,220 300,280 350,250 C400,220 450,280 500,250 C550,220 600,280 650,250" 
+    fill="none" stroke="#333" stroke-width="8" opacity="0.7"/>
+  <text x="400" y="210" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Chromatin</text>
+  
+  <!-- Histone H2B -->
+  <rect x="350" y="240" width="100" height="60" rx="10" ry="10" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold">Histone H2B</text>
+  
+  <!-- Key Sites on H2B -->
+  <circle cx="375" cy="260" r="8" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="375" y="251" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold">E35</text>
+  
+  <circle cx="425" cy="260" r="8" fill="#99cc99" stroke="#006600" stroke-width="1"/>
+  <text x="425" y="251" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold">S36</text>
+  
+  <!-- Proteins and Their Activities -->
+  <!-- Parp1 -->
+  <rect x="200" y="150" width="100" height="40" rx="20" ry="20" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="250" y="175" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold">Parp1</text>
+  
+  <!-- Prkaa1 -->
+  <rect x="500" y="150" width="100" height="40" rx="20" ry="20" fill="#ccff99" stroke="#99cc00" stroke-width="2"/>
+  <text x="550" y="175" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold">Prkaa1</text>
+  
+  <!-- Nmnat1 -->
+  <rect x="100" y="250" width="100" height="40" rx="20" ry="20" fill="#cc99ff" stroke="#9933ff" stroke-width="2"/>
+  <text x="150" y="275" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold">Nmnat1</text>
+  
+  <!-- Reaction Arrows -->
+  <!-- Nmnat1 activates Parp1 -->
+  <path d="M170,250 Q200,200 230,170" fill="none" stroke="#9933ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="180" y="210" text-anchor="middle" font-family="Arial" font-size="13" fill="#9933ff" font-weight="bold">Activates</text>
+  
+  <!-- Parp1 modifies H2B E35 -->
+  <path d="M270,190 Q320,220 370,260" fill="none" stroke="#ff9933" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="310" y="215" text-anchor="middle" font-family="Arial" font-size="13" fill="#ff9933" font-weight="bold">ADP-ribosylates</text>
+  
+  <!-- Prkaa1 would modify H2B S36 but is blocked -->
+  <path d="M530,190 Q480,220 430,260" fill="none" stroke="#99cc00" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="490" y="215" text-anchor="middle" font-family="Arial" font-size="13" fill="#99cc00" font-weight="bold">Blocked</text>
+  
+  <!-- Inhibition arrow from E35 to S36 phosphorylation -->
+  <line x1="375" y1="260" x2="425" y2="260" stroke="#ff0000" stroke-width="2"/>
+  <circle cx="425" cy="260" r="10" fill="none" stroke="#ff0000" stroke-width="2"/>
+  
+  <!-- Transcriptional Effects -->
+  <rect x="250" y="350" width="140" height="40" rx="5" ry="5" fill="#ffcccc" stroke="#ff6666" stroke-width="2"/>
+  <text x="320" y="375" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Negative Regulation</text>
+  
+  <rect x="410" y="350" width="140" height="40" rx="5" ry="5" fill="#ccffcc" stroke="#66cc66" stroke-width="2"/>
+  <text x="480" y="375" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Positive Regulation</text>
+  
+  <!-- Arrows from H2B to transcriptional effects -->
+  <path d="M375,300 Q350,330 320,350" fill="none" stroke="#ff6666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M425,300 Q450,330 480,350" fill="none" stroke="#66cc66" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

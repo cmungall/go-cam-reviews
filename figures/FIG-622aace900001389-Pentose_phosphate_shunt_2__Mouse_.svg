@@ -1,0 +1,102 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f8f8f8" stroke="#999" stroke-width="2" />
+  <text x="375" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Pentose-Phosphate Shunt in Mouse</text>
+  
+  <!-- Cytosol label -->
+  <rect x="630" y="65" width="110" height="25" rx="5" ry="5" fill="#f2f2f2" stroke="#999" stroke-width="1" />
+  <text x="685" y="83" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" font-style="italic">Cytosol</text>
+  <text x="685" y="98" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0005829)</text>
+  
+  <!-- D-ribofuranose (substrate) -->
+  <rect x="100" y="250" width="120" height="60" rx="10" ry="10" fill="#d1e7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="160" y="280" font-family="Arial" font-size="14" text-anchor="middle">D-ribofuranose</text>
+  <text x="160" y="300" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(CHEBI:47013)</text>
+  
+  <!-- Enzyme 1: Rbks (Ribokinase) -->
+  <ellipse cx="280" cy="280" rx="60" ry="40" fill="#ffcccc" stroke="#cc0000" stroke-width="2" />
+  <text x="280" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Rbks</text>
+  <text x="280" y="295" font-family="Arial" font-size="12" text-anchor="middle">Ribokinase</text>
+  <text x="280" y="310" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0004747)</text>
+  
+  <!-- Intermediate product (implied based on ribokinase activity) -->
+  <rect x="380" y="250" width="120" height="60" rx="10" ry="10" fill="#d1e7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="440" y="280" font-family="Arial" font-size="14" text-anchor="middle">D-ribose</text>
+  <text x="440" y="300" font-family="Arial" font-size="12" text-anchor="middle">5-phosphate</text>
+  <text x="440" y="320" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(implied intermediate)</text>
+  
+  <!-- Enzyme 2: Tkt (Transketolase) -->
+  <ellipse cx="560" cy="280" rx="60" ry="40" fill="#ffcccc" stroke="#cc0000" stroke-width="2" />
+  <text x="560" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Tkt</text>
+  <text x="560" y="295" font-family="Arial" font-size="12" text-anchor="middle">Transketolase</text>
+  <text x="560" y="310" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0004802)</text>
+  
+  <!-- Output molecules from Tkt -->
+  <rect x="540" y="150" width="150" height="60" rx="10" ry="10" fill="#d1e7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="615" y="170" font-family="Arial" font-size="14" text-anchor="middle">β-D-fructofuranose</text>
+  <text x="615" y="190" font-family="Arial" font-size="14" text-anchor="middle">6-phosphate(2-)</text>
+  <text x="615" y="205" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(CHEBI:57634)</text>
+  
+  <rect x="540" y="370" width="150" height="60" rx="10" ry="10" fill="#d1e7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="615" y="395" font-family="Arial" font-size="14" text-anchor="middle">D-glyceraldehyde</text>
+  <text x="615" y="415" font-family="Arial" font-size="14" text-anchor="middle">3-phosphate(2-)</text>
+  <text x="615" y="430" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(CHEBI:59776)</text>
+  
+  <!-- Enzyme 3: Taldo1 (Transaldolase) -->
+  <ellipse cx="680" cy="280" rx="60" ry="40" fill="#ffcccc" stroke="#cc0000" stroke-width="2" />
+  <text x="680" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Taldo1</text>
+  <text x="680" y="295" font-family="Arial" font-size="12" text-anchor="middle">Transaldolase</text>
+  <text x="680" y="310" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0004801)</text>
+  
+  <!-- Arrows for pathway flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Pathway arrows -->
+  <line x1="220" y1="280" x2="240" y2="280" stroke="#333" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowhead)" />
+  <line x1="340" y1="280" x2="380" y2="280" stroke="#333" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowhead)" />
+  <line x1="500" y1="280" x2="520" y2="280" stroke="#333" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowhead)" />
+  <line x1="620" y1="280" x2="640" y2="280" stroke="#333" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrows to output products -->
+  <line x1="560" y1="240" x2="560" y2="210" stroke="#333" stroke-width="2" stroke-linecap="round" />
+  <line x1="560" y1="210" x2="615" y2="210" stroke="#333" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowhead)" />
+  
+  <line x1="560" y1="320" x2="560" y2="350" stroke="#333" stroke-width="2" stroke-linecap="round" />
+  <line x1="560" y1="350" x2="615" y2="350" stroke="#333" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowhead)" />
+  
+  <!-- Process label -->
+  <rect x="300" y="480" width="200" height="45" rx="5" ry="5" fill="#e6ffe6" stroke="#006600" stroke-width="2" />
+  <text x="400" y="505" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Pentose-phosphate shunt</text>
+  <text x="400" y="520" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0006098)</text>
+  
+  <!-- Connect enzymes to process -->
+  <path d="M 280,320 Q 280,420 300,500" fill="none" stroke="#006600" stroke-width="1.5" stroke-dasharray="4,2" />
+  <text x="240" y="380" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">part_of</text>
+  
+  <path d="M 560,320 Q 560,440 400,500" fill="none" stroke="#006600" stroke-width="1.5" stroke-dasharray="4,2" />
+  <text x="515" y="410" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">part_of</text>
+  
+  <path d="M 680,320 Q 680,420 500,500" fill="none" stroke="#006600" stroke-width="1.5" stroke-dasharray="4,2" />
+  <text x="635" y="380" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">part_of</text>
+  
+  <!-- Causal relationships -->
+  <path d="M 280,330 Q 380,400 485,320" fill="none" stroke="#ff6600" stroke-width="1.5" stroke-dasharray="none" marker-end="url(#arrowhead)" />
+  <text x="370" y="390" font-family="Arial" font-size="10" text-anchor="middle" fill="#ff6600" font-style="italic">positively_regulates</text>
+  
+  <path d="M 560,330 Q 600,350 640,320" fill="none" stroke="#ff6600" stroke-width="1.5" stroke-dasharray="none" marker-end="url(#arrowhead)" />
+  <text x="600" y="360" font-family="Arial" font-size="10" text-anchor="middle" fill="#ff6600" font-style="italic">positively_regulates</text>
+  
+  <!-- Legend for colors and symbols -->
+  <rect x="60" y="480" width="200" height="65" rx="5" ry="5" fill="white" stroke="#999" stroke-width="1" />
+  <text x="160" y="500" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Legend</text>
+  <rect x="70" y="510" width="12" height="12" fill="#ffcccc" stroke="#cc0000" stroke-width="1" />
+  <text x="155" y="520" font-family="Arial" font-size="11" text-anchor="middle">Enzyme Activities</text>
+  <rect x="70" y="530" width="12" height="12" fill="#d1e7ff" stroke="#0066cc" stroke-width="1" />
+  <text x="155" y="540" font-family="Arial" font-size="11" text-anchor="middle">Metabolites</text>
+  <line x1="180" y1="515" x2="195" y2="515" stroke="#ff6600" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="230" y="520" font-family="Arial" font-size="11" text-anchor="middle">Regulation</text>
+</svg>

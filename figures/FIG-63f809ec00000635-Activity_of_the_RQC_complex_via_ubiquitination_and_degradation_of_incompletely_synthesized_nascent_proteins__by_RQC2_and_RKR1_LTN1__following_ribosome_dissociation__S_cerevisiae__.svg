@@ -1,0 +1,256 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell background -->
+    <rect x="0" y="0" width="800" height="650" fill="#f8f9fa" stroke="#ccc" stroke-width="2"/>
+    
+    <!-- Title -->
+    <text x="400" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Activity of the RQC Complex in Handling Incompletely Synthesized Nascent Proteins</text>
+    <text x="400" y="55" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">S. cerevisiae</text>
+
+    <!-- Step 1: Stalled Ribosome -->
+    <g id="stalled-ribosome">
+        <circle cx="150" cy="150" r="50" fill="#ffd700" stroke="#996515" stroke-width="2"/>
+        <circle cx="130" cy="120" r="25" fill="#daa520" stroke="#996515" stroke-width="2"/>
+        <path d="M 155,150 L 175,150 L 175,180 L 210,180" fill="none" stroke="#333" stroke-width="2"/>
+        
+        <!-- Step number and explanation -->
+        <circle cx="100" cy="150" r="15" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="100" y="155" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">1</text>
+        <text x="150" y="220" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Stalled Ribosome</text>
+        <text x="150" y="235" font-family="Arial" font-size="10" text-anchor="middle">Translation is stalled due to</text>
+        <text x="150" y="250" font-family="Arial" font-size="10" text-anchor="middle">incomplete nascent protein</text>
+        
+        <!-- Dashed line connecting step number to relevant part -->
+        <path d="M 110,140 L 125,140" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        
+        <path d="M 200,150 L 245,150" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Step 2: SLH1 Disassembly -->
+    <g id="slh1-action">
+        <circle cx="270" cy="150" r="25" fill="#87ceeb" stroke="#333" stroke-width="2"/>
+        <text x="270" y="155" font-family="Arial" font-size="12" text-anchor="middle">SLH1</text>
+        <path d="M 270,180 L 270,220" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="270" y="235" font-family="Arial" font-size="10" text-anchor="middle">ATP hydrolysis activity</text>
+        <text x="270" y="250" font-family="Arial" font-size="10" text-anchor="middle">for ribosome disassembly</text>
+        
+        <!-- Step number -->
+        <circle cx="230" cy="120" r="15" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="230" y="125" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">2</text>
+        
+        <!-- Dashed line connecting step number to relevant part -->
+        <path d="M 240,130 L 255,145" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        
+        <path d="M 295,150 L 330,150" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Step 3: Ribosome Dissociation -->
+    <g id="ribosome-dissociation">
+        <circle cx="380" cy="120" r="25" fill="#daa520" stroke="#996515" stroke-width="2"/>
+        <text x="380" y="125" font-family="Arial" font-size="10" text-anchor="middle">40S</text>
+        <circle cx="380" cy="180" r="30" fill="#daa520" stroke="#996515" stroke-width="2"/>
+        <text x="380" y="185" font-family="Arial" font-size="10" text-anchor="middle">60S</text>
+        
+        <!-- Step number and explanation -->
+        <circle cx="430" cy="120" r="15" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="430" y="125" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">3</text>
+        <text x="450" y="145" font-family="Arial" font-size="10" text-anchor="middle">Ribosome dissociation</text>
+        <text x="450" y="160" font-family="Arial" font-size="10" text-anchor="middle">into 40S and 60S subunits</text>
+        
+        <!-- Dashed line connecting step number to relevant parts -->
+        <path d="M 420,110 L 400,110" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <path d="M 420,130 L 400,160" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        
+        <path d="M 380,210 L 380,240" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Step 4: RQC2 Binding -->
+    <g id="rqc2-binding">
+        <circle cx="380" cy="280" r="30" fill="#daa520" stroke="#996515" stroke-width="2"/>
+        <text x="380" y="285" font-family="Arial" font-size="10" text-anchor="middle">60S</text>
+        <circle cx="440" cy="280" r="20" fill="#ff6347" stroke="#333" stroke-width="2"/>
+        <text x="440" y="285" font-family="Arial" font-size="10" text-anchor="middle">RQC2</text>
+        <path d="M 410,280 L 420,280" fill="none" stroke="#333" stroke-width="2"/>
+        
+        <!-- Step number and explanation -->
+        <circle cx="330" cy="280" r="15" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="330" y="285" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">4</text>
+        <text x="290" y="260" font-family="Arial" font-size="10" text-anchor="middle">RQC2 binds to 60S subunit</text>
+        <text x="290" y="275" font-family="Arial" font-size="10" text-anchor="middle">ribosomal large subunit binding</text>
+        
+        <!-- Dashed line connecting step number to relevant part -->
+        <path d="M 340,275 L 360,275" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <path d="M 340,285 L 425,285" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        
+        <path d="M 380,310 L 380,340" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Step 5: CAT Tailing -->
+    <g id="cat-tailing">
+        <circle cx="380" cy="380" r="30" fill="#daa520" stroke="#996515" stroke-width="2"/>
+        <text x="380" y="385" font-family="Arial" font-size="10" text-anchor="middle">60S</text>
+        <circle cx="440" cy="380" r="20" fill="#ff6347" stroke="#333" stroke-width="2"/>
+        <text x="440" y="385" font-family="Arial" font-size="10" text-anchor="middle">RQC2</text>
+        <path d="M 410,380 L 420,380" fill="none" stroke="#333" stroke-width="2"/>
+        
+        <path d="M 380,360 Q 350,358 330,370 T 300,390" fill="none" stroke="#a52a2a" stroke-width="3"/>
+        <path d="M 300,390 Q 290,395 295,410 T 315,420" fill="none" stroke="#a52a2a" stroke-width="3"/>
+        <text x="300" y="440" font-family="Arial" font-size="10" text-anchor="middle">Nascent Peptide</text>
+        <text x="300" y="455" font-family="Arial" font-size="10" text-anchor="middle">with CAT tail</text>
+        
+        <text x="470" y="350" font-family="Arial" font-size="10" text-anchor="middle">Ala-tRNA(Ala)</text>
+        <path d="M 470,355 L 450,370" fill="none" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" stroke-dasharray="3,2"/>
+        
+        <!-- Step number and explanation -->
+        <circle cx="520" cy="380" r="15" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="520" y="385" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">5</text>
+        <text x="550" y="365" font-family="Arial" font-size="10" text-anchor="middle">RQC2 catalyzes addition of CAT tail</text>
+        <text x="550" y="380" font-family="Arial" font-size="10" text-anchor="middle">(C-terminal Alanine Threonine) to</text>
+        <text x="550" y="395" font-family="Arial" font-size="10" text-anchor="middle">the nascent peptide</text>
+        
+        <!-- Dashed line connecting step number to relevant parts -->
+        <path d="M 510,375 L 455,375" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <path d="M 510,385 L 310,400" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        
+        <path d="M 380,410 L 380,440" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Step 6: RKR1 Ubiquitination -->
+    <g id="ubiquitination">
+        <circle cx="380" cy="480" r="30" fill="#daa520" stroke="#996515" stroke-width="2"/>
+        <text x="380" y="485" font-family="Arial" font-size="10" text-anchor="middle">60S</text>
+        <circle cx="440" cy="480" r="20" fill="#ff6347" stroke="#333" stroke-width="2"/>
+        <text x="440" y="485" font-family="Arial" font-size="10" text-anchor="middle">RQC2</text>
+        
+        <circle cx="500" cy="480" r="20" fill="#32cd32" stroke="#333" stroke-width="2"/>
+        <text x="500" y="485" font-family="Arial" font-size="10" text-anchor="middle">RKR1</text>
+        <path d="M 460,480 L 480,480" fill="none" stroke="#333" stroke-width="2"/>
+        
+        <path d="M 380,460 Q 350,458 330,470 T 300,490" fill="none" stroke="#a52a2a" stroke-width="3"/>
+        <path d="M 300,490 Q 290,495 295,510 T 315,520" fill="none" stroke="#a52a2a" stroke-width="3"/>
+        
+        <circle cx="315" cy="485" r="7" fill="#6a5acd" stroke="#333" stroke-width="1"/>
+        <circle cx="300" cy="495" r="7" fill="#6a5acd" stroke="#333" stroke-width="1"/>
+        <circle cx="305" cy="505" r="7" fill="#6a5acd" stroke="#333" stroke-width="1"/>
+        
+        <text x="250" y="495" font-family="Arial" font-size="10" text-anchor="middle">Ubiquitin</text>
+        <path d="M 255,495 L 290,495" fill="none" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" stroke-dasharray="2,2"/>
+        
+        <!-- Step number and explanation -->
+        <circle cx="550" cy="480" r="15" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="550" y="485" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">6</text>
+        <text x="590" y="465" font-family="Arial" font-size="10" text-anchor="middle">RKR1 (E3 ubiquitin ligase)</text>
+        <text x="590" y="480" font-family="Arial" font-size="10" text-anchor="middle">ubiquitinates the nascent</text>
+        <text x="590" y="495" font-family="Arial" font-size="10" text-anchor="middle">peptide for degradation</text>
+        
+        <!-- Dashed line connecting step number to relevant parts -->
+        <path d="M 540,475 L 515,475" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <path d="M 540,485 L 315,495" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        
+        <path d="M 460,510 L 550,550" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Step 7: RQC1 and CDC48 -->
+    <g id="protein-extraction">
+        <circle cx="600" cy="550" r="20" fill="#9370db" stroke="#333" stroke-width="2"/>
+        <text x="600" y="555" font-family="Arial" font-size="10" text-anchor="middle">RQC1</text>
+        
+        <circle cx="650" cy="550" r="20" fill="#20b2aa" stroke="#333" stroke-width="2"/>
+        <text x="650" y="555" font-family="Arial" font-size="10" text-anchor="middle">CDC48</text>
+        <path d="M 620,550 L 630,550" fill="none" stroke="#333" stroke-width="2"/>
+        
+        <!-- Step number and explanation -->
+        <circle cx="600" cy="595" r="15" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="600" y="600" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">7</text>
+        <text x="625" cy="595" font-family="Arial" font-size="10" text-anchor="middle">RQC1 acts as adaptor protein</text>
+        <text x="625" cy="610" font-family="Arial" font-size="10" text-anchor="middle">CDC48 recognizes polyubiquitin</text>
+        <text x="625" cy="625" font-family="Arial" font-size="10" text-anchor="middle">for protein extraction</text>
+        
+        <!-- Dashed line connecting step number to relevant parts -->
+        <path d="M 600,585 L 600,570" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <path d="M 610,590 L 650,565" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        
+        <path d="M 670,550 L 700,550" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Step 8: VMS1 Peptide Cleavage -->
+    <g id="vms1-cleavage">
+        <circle cx="730" cy="550" r="20" fill="#f08080" stroke="#333" stroke-width="1"/>
+        <text x="730" y="555" font-family="Arial" font-size="10" text-anchor="middle">VMS1</text>
+        
+        <!-- Step number and explanation -->
+        <circle cx="730" cy="595" r="15" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="730" y="600" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">8</text>
+        <text x="730" y="620" font-family="Arial" font-size="10" text-anchor="middle">VMS1 RNA endonuclease activity</text>
+        <text x="730" y="635" font-family="Arial" font-size="10" text-anchor="middle">produces tRNA precursor</text>
+        
+        <!-- Dashed line connecting step number to relevant part -->
+        <path d="M 730,585 L 730,570" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="3,2"/>
+        
+        <text x="780" y="535" font-family="Arial" font-size="10" text-anchor="middle">tRNA</text>
+        <text x="780" y="550" font-family="Arial" font-size="10" text-anchor="middle">precursor</text>
+        
+        <!-- Arrow showing product formation -->
+        <path d="M 750,550 L 765,545" fill="none" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Cytosolic ribosome and RQC complex annotation -->
+    <rect x="50" y="80" width="700" height="450" fill="none" stroke="#c0c0c0" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="70" y="100" font-family="Arial" font-size="12" text-anchor="start" fill="#666">Cytosolic Ribosome (GO:0022626)</text>
+
+    <!-- Process annotation -->
+    <text x="150" y="520" font-family="Arial" font-size="13" text-anchor="start" fill="#333" font-style="italic">Ribosome-associated ubiquitin-dependent protein catabolic process (GO:1990116)</text>
+    <text x="50" y="100" font-family="Arial" font-size="13" text-anchor="start" fill="#333" font-style="italic">Rescue of stalled ribosome (GO:0072344)</text>
+
+    <!-- Legend -->
+    <g id="legend" transform="translate(600, 100)">
+        <rect x="0" y="0" width="180" height="205" fill="white" stroke="#333" stroke-width="1"/>
+        <text x="90" y="20" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+        
+        <!-- Ribosome -->
+        <circle cx="20" cy="40" r="10" fill="#daa520" stroke="#996515" stroke-width="1"/>
+        <text x="35" y="45" font-family="Arial" font-size="12" text-anchor="start">Ribosome</text>
+        
+        <!-- SLH1 -->
+        <circle cx="20" cy="65" r="10" fill="#87ceeb" stroke="#333" stroke-width="1"/>
+        <text x="35" y="70" font-family="Arial" font-size="12" text-anchor="start">SLH1</text>
+        
+        <!-- RQC2 -->
+        <circle cx="20" cy="90" r="10" fill="#ff6347" stroke="#333" stroke-width="1"/>
+        <text x="35" y="95" font-family="Arial" font-size="12" text-anchor="start">RQC2</text>
+        
+        <!-- RKR1 -->
+        <circle cx="20" cy="115" r="10" fill="#32cd32" stroke="#333" stroke-width="1"/>
+        <text x="35" y="120" font-family="Arial" font-size="12" text-anchor="start">RKR1 (E3 ligase)</text>
+        
+        <!-- RQC1 -->
+        <circle cx="20" cy="140" r="10" fill="#9370db" stroke="#333" stroke-width="1"/>
+        <text x="35" y="145" font-family="Arial" font-size="12" text-anchor="start">RQC1</text>
+        
+        <!-- CDC48 -->
+        <circle cx="20" cy="165" r="10" fill="#20b2aa" stroke="#333" stroke-width="1"/>
+        <text x="35" y="170" font-family="Arial" font-size="12" text-anchor="start">CDC48</text>
+        
+        <!-- Ubiquitin -->
+        <circle cx="20" cy="190" r="7" fill="#6a5acd" stroke="#333" stroke-width="1"/>
+        <text x="35" y="195" font-family="Arial" font-size="12" text-anchor="start">Ubiquitin</text>
+        
+        <!-- VMS1 -->
+        <circle cx="110" cy="40" r="10" fill="#f08080" stroke="#333" stroke-width="1"/>
+        <text x="125" y="45" font-family="Arial" font-size="12" text-anchor="start">VMS1</text>
+        
+        <!-- Step number -->
+        <circle cx="110" cy="65" r="10" fill="#3498db" stroke="#333" stroke-width="1"/>
+        <text x="110" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="white" font-weight="bold">1</text>
+        <text x="125" y="70" font-family="Arial" font-size="12" text-anchor="start">Process Step</text>
+    </g>
+
+    <!-- Pathway Title -->
+    <text x="400" y="80" font-family="Arial" font-size="14" text-anchor="middle">Ribosome Quality Control Pathway in S. cerevisiae</text>
+
+    <!-- Arrowhead marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+        </marker>
+    </defs>
+</svg>

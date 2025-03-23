@@ -1,0 +1,127 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cytoplasm label -->
+  <text x="400" y="120" font-family="Arial" font-size="24" text-anchor="middle" fill="#555">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Cytosol area -->
+  <rect x="100" y="150" width="600" height="300" rx="20" ry="20" fill="#e6f7ff" stroke="#333" stroke-dasharray="5,5" stroke-width="1"/>
+  <text x="400" y="180" font-family="Arial" font-size="18" text-anchor="middle" fill="#555">Cytosol (GO:0005829)</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="400" rx="120" ry="80" fill="#d1e0e0" stroke="#333" stroke-width="2"/>
+  <text x="250" y="400" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Nucleus (GO:0005634)</text>
+  
+  <!-- Lysosome -->
+  <circle cx="550" cy="350" r="60" fill="#ffcccc" stroke="#333" stroke-width="2"/>
+  <text x="550" y="355" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Lysosome</text>
+  
+  <!-- MCOLN1 in lysosome membrane -->
+  <rect x="500" y="300" width="100" height="20" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="550" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">MCOLN1</text>
+  <text x="550" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Ca²⁺ channel</text>
+  <path d="M550,320 L550,330" stroke="#333" stroke-width="1" fill="none"/>
+  
+  <!-- Calcium ions -->
+  <circle cx="530" cy="335" r="5" fill="#ff6600" stroke="#333" stroke-width="1"/>
+  <circle cx="545" cy="335" r="5" fill="#ff6600" stroke="#333" stroke-width="1"/>
+  <circle cx="560" cy="335" r="5" fill="#ff6600" stroke="#333" stroke-width="1"/>
+  <text x="580" y="335" font-family="Arial" font-size="12" fill="#333">Ca²⁺</text>
+  
+  <!-- PPP3CB (calcineurin) protein -->
+  <rect x="450" y="240" width="80" height="30" rx="15" ry="15" fill="#99cc99" stroke="#333" stroke-width="1"/>
+  <text x="490" y="260" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">PPP3CB</text>
+  
+  <!-- TFEB phosphorylated -->
+  <rect x="350" y="270" width="60" height="25" rx="5" ry="5" fill="#9999ff" stroke="#333" stroke-width="1"/>
+  <text x="380" y="287" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">TFEB-P</text>
+  <circle cx="395" y="270" r="5" fill="#ff3333" stroke="#333" stroke-width="1"/>
+  
+  <!-- TFEB in nucleus -->
+  <rect x="220" y="400" width="60" height="25" rx="5" ry="5" fill="#9999ff" stroke="#333" stroke-width="1"/>
+  <text x="250" y="417" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">TFEB</text>
+  
+  <!-- YWHAZ protein -->
+  <rect x="350" y="330" width="60" height="25" rx="15" ry="15" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="380" y="347" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">YWHAZ</text>
+  
+  <!-- IRGM protein -->
+  <rect x="450" y="190" width="60" height="25" rx="15" ry="15" fill="#cc99ff" stroke="#333" stroke-width="1"/>
+  <text x="480" y="207" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">IRGM</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- MCOLN1 calcium export -->
+  <path d="M550,320 Q520,290 490,270" stroke="#ff6600" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="495" y="245" font-family="Arial" font-size="12" fill="#333">Ca²⁺ export</text>
+  
+  <!-- Calcineurin dephosphorylates TFEB -->
+  <path d="M450,255 Q420,270 395,280" stroke="#009900" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="420" y="245" font-family="Arial" font-size="12" fill="#333">Dephosphorylation</text>
+  
+  <!-- IRGM activates PPP3CB -->
+  <path d="M480,215 L490,240" stroke="#9900cc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="455" y="230" font-family="Arial" font-size="12" fill="#333">Activates</text>
+  
+  <!-- YWHAZ sequesters TFEB-P -->
+  <path d="M380,295 L380,330" stroke="#cc6600" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="410" y="315" font-family="Arial" font-size="12" fill="#333">Sequesters</text>
+  
+  <!-- TFEB nuclear translocation -->
+  <path d="M350,280 Q300,320 250,380" stroke="#0066cc" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="280" y="330" font-family="Arial" font-size="12" fill="#333">Nuclear translocation</text>
+  
+  <!-- TFEB transcriptional activity -->
+  <path d="M250,425 Q280,450 315,450 Q350,450 420,450 Q490,450 550,410" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="400" y="480" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Transcriptional activation of lysosome genes</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Lysosome Biogenesis Regulation by TFEB</text>
+  
+  <!-- Legend -->
+  <rect x="570" y="460" width="170" height="120" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="655" y="475" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Proteins -->
+  <text x="655" y="490" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Proteins</text>
+  
+  <rect x="580" y="500" width="20" height="10" fill="#9999ff" stroke="#333" stroke-width="1"/>
+  <text x="610" y="509" font-family="Arial" font-size="12" text-anchor="start">TFEB</text>
+  
+  <rect x="580" y="515" width="20" height="10" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="610" y="524" font-family="Arial" font-size="12" text-anchor="start">YWHAZ</text>
+  
+  <rect x="580" y="530" width="20" height="10" fill="#99cc99" stroke="#333" stroke-width="1"/>
+  <text x="610" y="539" font-family="Arial" font-size="12" text-anchor="start">PPP3CB</text>
+  
+  <rect x="580" y="545" width="20" height="10" fill="#cc99ff" stroke="#333" stroke-width="1"/>
+  <text x="610" y="554" font-family="Arial" font-size="12" text-anchor="start">IRGM</text>
+  
+  <rect x="580" y="560" width="20" height="10" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="610" y="569" font-family="Arial" font-size="12" text-anchor="start">MCOLN1</text>
+  
+  <circle cx="670" y="505" r="5" fill="#ff6600" stroke="#333" stroke-width="1"/>
+  <text x="685" y="508" font-family="Arial" font-size="12" text-anchor="start">Ca²⁺</text>
+  
+  <!-- Pathway steps legend -->
+  <text x="655" y="525" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Interactions</text>
+  
+  <line x1="670" y1="535" x2="685" y2="535" stroke="#ff6600" stroke-width="2"/>
+  <polygon points="685,535 690,538 685,541" fill="#333"/>
+  <text x="700" y="538" font-family="Arial" font-size="10" text-anchor="start">Ca²⁺ export</text>
+  
+  <line x1="670" y1="550" x2="685" y2="550" stroke="#009900" stroke-width="2"/>
+  <polygon points="685,550 690,553 685,556" fill="#333"/>
+  <text x="700" y="553" font-family="Arial" font-size="10" text-anchor="start">Dephosphorylation</text>
+  
+  <line x1="670" y1="565" x2="685" y2="565" stroke="#0066cc" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="685,565 690,568 685,571" fill="#333"/>
+  <text x="700" y="568" font-family="Arial" font-size="10" text-anchor="start">Translocation</text>
+</svg>

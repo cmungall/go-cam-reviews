@@ -1,0 +1,156 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9"/>
+  
+  <!-- Cell compartments -->
+  <!-- Sperm Cell -->
+  <path d="M50,100 Q100,50 150,100 Q200,150 250,100 L250,350 Q200,400 150,350 Q100,300 50,350 Z" fill="#e6f2ff" stroke="#2b5d8c" stroke-width="2"/>
+  <text x="150" y="80" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Sperm Cell</text>
+  
+  <!-- ER membrane in sperm -->
+  <rect x="70" y="120" width="160" height="110" rx="10" ry="10" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+  <text x="150" y="140" font-family="Arial" font-size="14" text-anchor="middle">ER Membrane</text>
+  <text x="150" y="158" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0005789)</text>
+  
+  <!-- Acrosome -->
+  <path d="M70,250 Q150,230 230,250 L230,300 Q150,320 70,300 Z" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="150" y="270" font-family="Arial" font-size="14" text-anchor="middle">Acrosome</text>
+  <text x="150" y="288" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0002081)</text>
+  
+  <!-- Egg Cell -->
+  <ellipse cx="550" cy="250" rx="200" ry="150" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="550" y="160" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Egg Cell (Oocyte)</text>
+  
+  <!-- Egg Plasma Membrane -->
+  <ellipse cx="550" cy="250" rx="190" ry="140" fill="none" stroke="#b85450" stroke-width="4" stroke-dasharray="5,5"/>
+  <text x="550" y="180" font-family="Arial" font-size="14" text-anchor="middle">Plasma Membrane</text>
+  <text x="550" y="198" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0005886)</text>
+  
+  <!-- Proteins and interactions -->
+  <!-- ER Proteins -->
+  <circle cx="90" cy="175" r="20" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="90" y="180" font-family="Arial" font-size="12" text-anchor="middle">Sppl2c</text>
+  
+  <circle cx="150" cy="175" r="20" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="150" y="180" font-family="Arial" font-size="12" text-anchor="middle">Frey1</text>
+  
+  <circle cx="210" cy="175" r="20" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="210" y="180" font-family="Arial" font-size="12" text-anchor="middle">Pln</text>
+  
+  <!-- Function labels for ER proteins -->
+  <text x="90" y="145" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">Protease</text>
+  <text x="90" y="155" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">(GO:0004190)</text>
+  
+  <text x="150" y="145" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">Adaptor</text>
+  <text x="150" y="155" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">(GO:0030674)</text>
+  
+  <text x="210" y="145" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">ATPase Inhibitor</text>
+  <text x="210" y="155" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">(GO:0042030)</text>
+  
+  <!-- Acrosome Protein -->
+  <circle cx="150" cy="275" r="20" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="150" y="280" font-family="Arial" font-size="12" text-anchor="middle">Glipr1l1</text>
+  
+  <!-- Sperm and Egg Surface Proteins -->
+  <circle cx="250" cy="225" r="20" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="250" y="230" font-family="Arial" font-size="12" text-anchor="middle">Izumo1</text>
+  
+  <circle cx="390" cy="225" r="20" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="390" y="230" font-family="Arial" font-size="12" text-anchor="middle">Izumo1r</text>
+  
+  <!-- Function labels for surface proteins -->
+  <text x="250" y="205" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">Ligand</text>
+  <text x="250" y="215" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">(GO:0048018)</text>
+  
+  <text x="390" y="205" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">Receptor</text>
+  <text x="390" y="215" font-family="Arial" font-size="9" text-anchor="middle" fill="#444444">(GO:0038023)</text>
+  
+  <!-- Interaction arrows with clearer paths and spacing -->
+  <!-- Sppl2c to Frey1 -->
+  <path d="M110,175 L130,175" stroke="#3399ff" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+  <text x="120" y="165" font-family="Arial" font-size="10" text-anchor="middle">+</text>
+  
+  <!-- Frey1 to Izumo1 -->
+  <path d="M170,175 Q210,180 230,205 L250,225" stroke="#3399ff" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+  <text x="210" y="185" font-family="Arial" font-size="10" text-anchor="middle">+</text>
+  
+  <!-- Glipr1l1 to Izumo1 -->
+  <path d="M170,275 Q210,260 230,240 L250,225" stroke="#3399ff" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+  <text x="210" y="255" font-family="Arial" font-size="10" text-anchor="middle">+</text>
+  
+  <!-- Sppl2c protease activity -->
+  <path d="M75,190 Q65,210 75,230" stroke="#009900" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+  <text x="56" y="210" font-family="Arial" font-size="9" text-anchor="middle" fill="#009900">Protease</text>
+  <text x="56" y="220" font-family="Arial" font-size="9" text-anchor="middle" fill="#009900">Activity</text>
+  
+  <!-- Frey1 regulation of Sppl2c -->
+  <path d="M135,190 Q125,210 105,190" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowheadRed)" stroke-dasharray="5,3"/>
+  <text x="115" y="215" font-family="Arial" font-size="10" text-anchor="middle">-</text>
+  
+  <!-- Sppl2c to Pln -->
+  <path d="M110,175 Q150,155 190,175" stroke="#3399ff" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+  <text x="150" y="155" font-family="Arial" font-size="10" text-anchor="middle">+</text>
+  
+  <!-- Pln's role in calcium homeostasis -->
+  <path d="M210,195 Q210,215 210,235" stroke="#009900" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+  <text x="235" y="215" font-family="Arial" font-size="9" text-anchor="middle" fill="#009900">Ca²⁺ Homeostasis</text>
+  <text x="235" y="225" font-family="Arial" font-size="9" text-anchor="middle" fill="#009900">(GO:0006874)</text>
+  
+  <!-- Izumo1 to Izumo1r binding -->
+  <path d="M270,225 L370,225" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="320" y="215" font-family="Arial" font-size="12" text-anchor="middle">Binding</text>
+  
+  <!-- Process labels with better spacing -->
+  <text x="90" y="210" font-family="Arial" font-size="10" text-anchor="middle" fill="#444444">Protein</text>
+  <text x="90" y="222" font-family="Arial" font-size="10" text-anchor="middle" fill="#444444">Stabilization</text>
+  
+  <text x="150" y="210" font-family="Arial" font-size="10" text-anchor="middle" fill="#444444">Protein</text>
+  <text x="150" y="222" font-family="Arial" font-size="10" text-anchor="middle" fill="#444444">Localization</text>
+  
+  <text x="150" y="305" font-family="Arial" font-size="10" text-anchor="middle" fill="#444444">Acrosome</text>
+  <text x="150" y="317" font-family="Arial" font-size="10" text-anchor="middle" fill="#444444">Reaction</text>
+  
+  <text x="320" y="245" font-family="Arial" font-size="10" text-anchor="middle">Sperm-Egg Recognition</text>
+  <text x="320" y="257" font-family="Arial" font-size="10" text-anchor="middle">(GO:0035036)</text>
+  <text x="320" y="280" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Fertilization</text>
+  
+  <!-- Legend -->
+  <rect x="500" y="400" width="280" height="180" rx="10" ry="10" fill="white" stroke="black" stroke-width="1"/>
+  <text x="640" y="420" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <circle cx="520" cy="440" r="10" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="620" y="445" font-family="Arial" font-size="12" text-anchor="middle">Protein Molecules</text>
+  
+  <line x1="520" y1="465" x2="540" y2="465" stroke="#3399ff" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+  <text x="620" y="470" font-family="Arial" font-size="12" text-anchor="middle">Positive Regulation</text>
+  
+  <line x1="520" y1="490" x2="540" y2="490" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowheadRed)" stroke-dasharray="5,3"/>
+  <text x="620" y="495" font-family="Arial" font-size="12" text-anchor="middle">Negative Regulation</text>
+  
+  <line x1="520" y1="515" x2="540" y2="515" stroke="#009900" stroke-width="2" marker-end="url(#arrowheadGreen)"/>
+  <text x="620" y="520" font-family="Arial" font-size="12" text-anchor="middle">Activity/Process</text>
+  
+  <rect x="515" y="535" width="20" height="15" fill="#ffe6cc" stroke="#d79b00" stroke-width="1"/>
+  <text x="620" y="545" font-family="Arial" font-size="12" text-anchor="middle">Cellular Compartments</text>
+  
+  <line x1="520" y1="560" x2="540" y2="560" stroke="black" stroke-width="3"/>
+  <text x="620" y="565" font-family="Arial" font-size="12" text-anchor="middle">Key Interaction</text>
+  
+  <text x="640" y="585" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO-CAM: Regulation of oolemmal binding multimeric complex formation (Mouse)</text>
+  
+  <!-- Arrowhead definitions with different colors -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+    <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3399ff"/>
+    </marker>
+    <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000"/>
+    </marker>
+    <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#009900"/>
+    </marker>
+  </defs>
+</svg>

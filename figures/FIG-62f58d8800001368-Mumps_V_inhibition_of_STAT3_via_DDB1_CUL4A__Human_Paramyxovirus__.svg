@@ -1,0 +1,106 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="350" rx="200" ry="150" fill="#e6f7ff" stroke="#2c3e50" stroke-width="3"/>
+  <text x="400" y="350" font-family="Arial" font-size="20" fill="#2c3e50" text-anchor="middle">Nucleus</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">Mumps-V Inhibition of STAT3 via DDB1/CUL4A Complex</text>
+  
+  <!-- Viral components -->
+  <rect x="100" y="120" width="100" height="50" rx="10" fill="#ffcccc" stroke="#cc0000" stroke-width="2"/>
+  <text x="150" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Mumps-V</text>
+  <text x="150" y="170" font-family="Arial" font-size="12" text-anchor="middle">(P33483)</text>
+  
+  <!-- Host cell proteins -->
+  <rect x="300" y="120" width="80" height="50" rx="10" fill="#cce5ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="340" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">DDB1</text>
+  <text x="340" y="170" font-family="Arial" font-size="12" text-anchor="middle">(Q16531)</text>
+  
+  <rect x="450" y="120" width="80" height="50" rx="10" fill="#cce5ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="490" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">CUL4A</text>
+  <text x="490" y="170" font-family="Arial" font-size="12" text-anchor="middle">(Q13619)</text>
+  
+  <rect x="600" y="120" width="80" height="50" rx="10" fill="#cce5ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="640" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">RBX1</text>
+  <text x="640" y="170" font-family="Arial" font-size="12" text-anchor="middle">(P62877)</text>
+  
+  <rect x="400" y="450" width="80" height="50" rx="10" fill="#cce5ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="440" y="480" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">STAT3</text>
+  <text x="440" y="500" font-family="Arial" font-size="12" text-anchor="middle">(P40763)</text>
+  
+  <!-- Interactions -->
+  <!-- Mumps-V to DDB1 -->
+  <line x1="200" y1="145" x2="300" y2="145" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="250" y="135" font-family="Arial" font-size="14" text-anchor="middle">adaptor</text>
+  <text x="250" y="115" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">GO:0060090</text>
+  
+  <!-- DDB1 to CUL4A -->
+  <line x1="380" y1="145" x2="450" y2="145" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="415" y="135" font-family="Arial" font-size="14" text-anchor="middle">binding</text>
+  <text x="415" y="115" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">GO:0097602</text>
+  
+  <!-- CUL4A to RBX1 -->
+  <line x1="530" y1="145" x2="600" y2="145" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Complex Formation -->
+  <path d="M 400 200 C 400 180, 450 180, 450 200 C 450 220, 500 220, 500 200" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <text x="450" y="240" font-family="Arial" font-size="16" text-anchor="middle">E3 Ubiquitin Ligase Complex</text>
+  <text x="450" y="260" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">GO:0061630</text>
+  
+  <!-- Complex to STAT3 -->
+  <line x1="450" y1="270" x2="440" y2="450" stroke="#cc0000" stroke-width="2.5" stroke-dasharray="5,5" marker-end="url(#inhibitarrow)"/>
+  <text x="490" y="350" font-family="Arial" font-size="14" text-anchor="middle">inhibits</text>
+  <text x="490" y="370" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">GO:0045732</text>
+  
+  <!-- STAT3 Function -->
+  <text x="400" y="530" font-family="Arial" font-size="14" text-anchor="middle">Transcription Factor Activity</text>
+  <text x="400" y="550" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">GO:0000981</text>
+  
+  <!-- JAK-STAT Pathway -->
+  <text x="240" y="400" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">JAK-STAT Pathway</text>
+  <text x="240" y="420" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">GO:0019221</text>
+  
+  <!-- Viral inhibition -->
+  <text x="240" y="220" font-family="Arial" font-size="16" text-anchor="middle" fill="#cc0000" font-style="italic">Viral suppression</text>
+  <text x="240" y="240" font-family="Arial" font-size="16" text-anchor="middle" fill="#cc0000" font-style="italic">GO:0039564</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="180" y="320" font-family="Arial" font-size="20" fill="#2c3e50" text-anchor="middle">Cytoplasm</text>
+  
+  <!-- Ubiquitin Tags - implicit detail not in source model -->
+  <circle cx="430" y="380" r="10" fill="#ffd700" stroke="#996515" stroke-width="1.5"/>
+  <text x="430" y="384" font-family="Arial" font-size="10" text-anchor="middle">Ub</text>
+  <circle cx="450" y="390" r="10" fill="#ffd700" stroke="#996515" stroke-width="1.5"/>
+  <text x="450" y="394" font-family="Arial" font-size="10" text-anchor="middle">Ub</text>
+  <text x="470" y="410" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">*Ubiquitination (implicit)</text>
+  
+  <!-- Arrowhead markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+    <marker id="inhibitarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="500" width="180" height="100" fill="white" stroke="#2c3e50" stroke-width="2"/>
+  <text x="610" y="520" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <rect x="610" y="530" width="20" height="10" fill="#ffcccc" stroke="#cc0000" stroke-width="2"/>
+  <text x="635" y="540" font-family="Arial" font-size="12">Viral protein</text>
+  
+  <rect x="610" y="550" width="20" height="10" fill="#cce5ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="635" y="560" font-family="Arial" font-size="12">Host protein</text>
+  
+  <line x1="610" y1="570" x2="630" y2="570" stroke="#cc0000" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="635" y="575" font-family="Arial" font-size="12">Inhibitory effect</text>
+  
+  <circle cx="620" y="585" r="10" fill="#ffd700" stroke="#996515" stroke-width="1.5"/>
+  <text x="620" y="589" font-family="Arial" font-size="10" text-anchor="middle">Ub</text>
+  <text x="700" y="590" font-family="Arial" font-size="12" text-anchor="middle">Ubiquitin tag</text>
+</svg>

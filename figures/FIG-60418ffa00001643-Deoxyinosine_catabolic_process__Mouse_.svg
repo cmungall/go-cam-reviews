@@ -1,0 +1,87 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" fill="#ffffff" />
+  
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="350" rx="380" ry="330" fill="#f8f8f8" stroke="#888888" stroke-width="2" />
+  
+  <!-- Peroxisome -->
+  <ellipse cx="400" cy="500" rx="220" ry="150" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" stroke-dasharray="5,3" />
+  <text x="400" y="370" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Peroxisome</text>
+  
+  <!-- Cytosol label -->
+  <text x="650" y="200" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#666666">Cytosol</text>
+  
+  <!-- Molecules and reactions -->
+  <!-- Deoxyinosine to Hypoxanthine -->
+  <rect x="300" y="50" width="200" height="40" rx="10" ry="10" fill="#ffffcc" stroke="#cccc00" stroke-width="2" />
+  <text x="400" y="75" text-anchor="middle" font-family="Arial" font-size="16">Deoxyinosine</text>
+  
+  <path d="M400,90 L400,120" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="415" y="110" text-anchor="start" font-family="Arial" font-size="12" fill="#666666">Phosphorolysis</text>
+  
+  <circle cx="400" cy="140" r="25" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="400" y="145" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Pnp</text>
+  
+  <path d="M400,165 L400,195" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <rect x="300" y="205" width="200" height="40" rx="10" ry="10" fill="#ffffcc" stroke="#cccc00" stroke-width="2" />
+  <text x="400" y="230" text-anchor="middle" font-family="Arial" font-size="16">Hypoxanthine</text>
+  
+  <path d="M400,245 L400,275" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="415" y="265" text-anchor="start" font-family="Arial" font-size="12" fill="#666666">Oxidation</text>
+  
+  <circle cx="400" cy="300" r="35" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="400" y="295" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Xdh</text>
+  <text x="400" y="315" text-anchor="middle" font-family="Arial" font-size="10">dehydrogenase/oxidase</text>
+  
+  <path d="M400,335 L400,365" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <rect x="300" y="375" width="200" height="40" rx="10" ry="10" fill="#ffffcc" stroke="#cccc00" stroke-width="2" />
+  <text x="400" y="400" text-anchor="middle" font-family="Arial" font-size="16">Urate</text>
+  
+  <path d="M400,415 L400,445" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="415" y="435" text-anchor="start" font-family="Arial" font-size="12" fill="#666666">Oxidation</text>
+  
+  <!-- Inside Peroxisome -->
+  <circle cx="400" cy="470" r="25" fill="#99ccff" stroke="#0066cc" stroke-width="2" />
+  <text x="400" y="475" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Uox</text>
+  
+  <path d="M400,495 L400,525" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <rect x="300" y="535" width="200" height="40" rx="10" ry="10" fill="#ffffcc" stroke="#cccc00" stroke-width="2" />
+  <text x="400" y="560" text-anchor="middle" font-family="Arial" font-size="16">5-Hydroxyisourate</text>
+  
+  <path d="M400,575 L400,595" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="415" y="590" text-anchor="start" font-family="Arial" font-size="12" fill="#666666">Hydrolysis</text>
+  
+  <circle cx="320" cy="625" r="25" fill="#99ccff" stroke="#0066cc" stroke-width="2" />
+  <text x="320" y="630" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Urah</text>
+  
+  <path d="M345,625 L375,625" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <rect x="375" y="605" width="220" height="40" rx="10" ry="10" fill="#ffffcc" stroke="#cccc00" stroke-width="2" />
+  <text x="485" y="622" text-anchor="middle" font-family="Arial" font-size="10">2-oxo-4-hydroxy-4-carboxy-</text>
+  <text x="485" y="635" text-anchor="middle" font-family="Arial" font-size="10">5-ureidoimidazoline</text>
+  
+  <path d="M595,625 L625,625" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="595" y="615" text-anchor="middle" font-family="Arial" font-size="12" fill="#666666">Decarboxylation</text>
+  
+  <circle cx="650" cy="625" r="25" fill="#99ccff" stroke="#0066cc" stroke-width="2" />
+  <text x="650" y="630" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Urad</text>
+  
+  <path d="M675,625 L705,625" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <rect x="705" y="605" width="90" height="40" rx="10" ry="10" fill="#ffffcc" stroke="#cccc00" stroke-width="2" />
+  <text x="750" y="630" text-anchor="middle" font-family="Arial" font-size="14">Allantoin</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Deoxyinosine Catabolic Process (Mouse)</text>
+</svg>

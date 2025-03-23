@@ -1,0 +1,145 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" rx="10" ry="10"/>
+  
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f0f8ff" stroke="#666" stroke-width="2" opacity="0.8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Mouse Cell</text>
+  
+  <!-- Cytosol label -->
+  <rect x="650" y="100" width="120" height="30" fill="#e6f3ff" stroke="#666" rx="5" ry="5"/>
+  <text x="710" y="120" text-anchor="middle" font-family="Arial" font-size="14">Cytosol</text>
+  
+  <!-- Central metabolite: IMP -->
+  <circle cx="400" cy="300" r="50" fill="#ffeecc" stroke="#e69900" stroke-width="2"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">IMP</text>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial" font-size="10">(CHEBI:17202)</text>
+  
+  <!-- Adenine pathway -->
+  <rect x="150" y="150" width="100" height="40" fill="#d1e7dd" stroke="#198754" stroke-width="2" rx="5" ry="5"/>
+  <text x="200" y="175" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Adenine</text>
+  <text x="200" y="190" text-anchor="middle" font-family="Arial" font-size="10">(CHEBI:16708)</text>
+  
+  <!-- Adenosine pathway -->
+  <rect x="150" y="300" width="100" height="40" fill="#d1e7dd" stroke="#198754" stroke-width="2" rx="5" ry="5"/>
+  <text x="200" y="325" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Adenosine</text>
+  <text x="200" y="340" text-anchor="middle" font-family="Arial" font-size="10">(CHEBI:16335)</text>
+  
+  <!-- 2'-deoxyadenosine pathway -->
+  <rect x="300" y="450" width="120" height="40" fill="#d1e7dd" stroke="#198754" stroke-width="2" rx="5" ry="5"/>
+  <text x="360" y="475" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">2'-deoxyadenosine</text>
+  
+  <!-- dIMP pathway -->
+  <rect x="500" y="450" width="100" height="40" fill="#d1e7dd" stroke="#198754" stroke-width="2" rx="5" ry="5"/>
+  <text x="550" y="475" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">dIMP</text>
+  <text x="550" y="490" text-anchor="middle" font-family="Arial" font-size="10">(CHEBI:28806)</text>
+  
+  <!-- GMP pathway -->
+  <rect x="600" y="300" width="100" height="40" fill="#d1e7dd" stroke="#198754" stroke-width="2" rx="5" ry="5"/>
+  <text x="650" y="325" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">GMP</text>
+  <text x="650" y="340" text-anchor="middle" font-family="Arial" font-size="10">(CHEBI:17345)</text>
+  
+  <!-- Enzymes -->
+  <!-- APRT -->
+  <rect x="150" y="100" width="100" height="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" ry="5"/>
+  <text x="200" y="120" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Aprt</text>
+  <text x="200" y="85" text-anchor="middle" font-family="Arial" font-size="10">Adenine phosphoribosyl-</text>
+  <text x="200" y="98" text-anchor="middle" font-family="Arial" font-size="10">transferase</text>
+  
+  <!-- ADK -->
+  <rect x="150" y="250" width="100" height="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" ry="5"/>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Adk</text>
+  <text x="200" y="235" text-anchor="middle" font-family="Arial" font-size="10">Adenosine kinase</text>
+  
+  <!-- ADA -->
+  <rect x="300" y="400" width="100" height="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" ry="5"/>
+  <text x="350" y="420" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ada</text>
+  <text x="350" y="385" text-anchor="middle" font-family="Arial" font-size="10">2'-deoxyadenosine</text>
+  <text x="350" y="398" text-anchor="middle" font-family="Arial" font-size="10">deaminase</text>
+  
+  <!-- PNP -->
+  <rect x="400" y="380" width="100" height="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" ry="5"/>
+  <text x="450" y="400" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Pnp</text>
+  <text x="450" y="365" text-anchor="middle" font-family="Arial" font-size="10">Purine-nucleoside</text>
+  <text x="450" y="378" text-anchor="middle" font-family="Arial" font-size="10">phosphorylase</text>
+  
+  <!-- NT5C & NT5C2 -->
+  <rect x="500" y="380" width="100" height="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" ry="5"/>
+  <text x="550" y="400" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Nt5c/Nt5c2</text>
+  <text x="550" y="365" text-anchor="middle" font-family="Arial" font-size="10">5'-nucleotidase</text>
+  
+  <!-- GMPR & GMPR2 -->
+  <rect x="600" y="250" width="100" height="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" ry="5"/>
+  <text x="650" y="270" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Gmpr/Gmpr2</text>
+  <text x="650" y="235" text-anchor="middle" font-family="Arial" font-size="10">GMP reductase</text>
+  
+  <!-- AMPD1/2/3 -->
+  <rect x="300" y="150" width="100" height="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" ry="5"/>
+  <text x="350" y="170" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ampd1/2/3</text>
+  <text x="350" y="135" text-anchor="middle" font-family="Arial" font-size="10">AMP deaminase</text>
+  
+  <!-- HPRT1 -->
+  <rect x="450" y="200" width="100" height="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="220" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Hprt1</text>
+  <text x="500" y="185" text-anchor="middle" font-family="Arial" font-size="10">Hypoxanthine phospho-</text>
+  <text x="500" y="198" text-anchor="middle" font-family="Arial" font-size="10">ribosyltransferase</text>
+  
+  <!-- Arrows -->
+  <!-- Adenine to IMP via APRT -->
+  <line x1="250" y1="170" x2="320" y2="220" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="360" y1="180" x2="380" y2="260" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Adenosine to AMP to IMP -->
+  <line x1="250" y1="320" x2="300" y2="320" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="280" y="310" text-anchor="middle" font-family="Arial" font-size="12" fill="#444">AMP</text>
+  <line x1="320" y1="320" x2="350" y2="180" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 2'-deoxyadenosine through Ada to dIMP -->
+  <line x1="350" y1="400" x2="350" y2="450" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="450" x2="500" y2="450" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="450" y="440" text-anchor="middle" font-family="Arial" font-size="12" fill="#444">deamination</text>
+  
+  <!-- dIMP to IMP -->
+  <line x1="550" y1="380" x2="550" y2="450" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="380" x2="470" y2="350" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- GMP to IMP via GMPR -->
+  <line x1="650" y1="250" x2="650" y2="300" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="320" x2="450" y2="320" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- HPRT1 to IMP -->
+  <line x1="500" y1="230" x2="430" y2="270" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="460" y="260" text-anchor="middle" font-family="Arial" font-size="10" fill="#444">Hypoxanthine</text>
+  
+  <!-- Pnp to Hprt1 -->
+  <line x1="450" y1="380" x2="500" y2="230" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Pathway annotations -->
+  <text x="200" y="200" text-anchor="middle" font-family="Arial" font-size="10" fill="#444" font-style="italic">Adenine salvage</text>
+  <text x="280" y="340" text-anchor="middle" font-family="Arial" font-size="10" fill="#444" font-style="italic">Adenosine metabolism</text>
+  <text x="450" y="420" text-anchor="middle" font-family="Arial" font-size="10" fill="#444" font-style="italic">Deoxynucleoside salvage</text>
+  <text x="650" y="360" text-anchor="middle" font-family="Arial" font-size="10" fill="#444" font-style="italic">GMP reduction</text>
+  
+  <!-- Title -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">IMP Salvage Pathway (Mouse)</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#444"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="100" y="510" width="180" height="80" fill="#f9f9f9" stroke="#666" stroke-width="1" rx="5" ry="5"/>
+  <text x="190" y="525" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Legend</text>
+  
+  <rect x="110" y="535" width="20" height="10" fill="#cfe2ff" stroke="#0d6efd" stroke-width="1" rx="2" ry="2"/>
+  <text x="135" y="544" text-anchor="start" font-family="Arial" font-size="10">Enzymes</text>
+  
+  <rect x="110" y="555" width="20" height="10" fill="#d1e7dd" stroke="#198754" stroke-width="1" rx="2" ry="2"/>
+  <text x="135" y="564" text-anchor="start" font-family="Arial" font-size="10">Metabolites</text>
+  
+  <circle cx="120" cy="575" r="5" fill="#ffeecc" stroke="#e69900" stroke-width="1"/>
+  <text x="135" y="579" text-anchor="start" font-family="Arial" font-size="10">Target product (IMP)</text>
+</svg>

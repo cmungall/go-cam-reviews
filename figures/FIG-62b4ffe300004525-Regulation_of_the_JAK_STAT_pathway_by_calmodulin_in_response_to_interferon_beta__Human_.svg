@@ -1,0 +1,107 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="80" ry="80" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cell membrane -->
+  <path d="M 50 170 Q 150 140, 250 170 Q 350 200, 450 170 Q 550 140, 650 170 Q 750 200, 750 170" 
+        fill="none" stroke="#333" stroke-width="3"/>
+  
+  <!-- Nuclear membrane -->
+  <ellipse cx="550" cy="350" rx="180" ry="120" fill="#e6e6fa" stroke="#333" stroke-width="2"/>
+  <text x="550" y="350" font-family="Arial" font-size="18" text-anchor="middle">Nucleus</text>
+  
+  <!-- DNA in nucleus -->
+  <path d="M 450 320 Q 500 300, 550 320 Q 600 340, 650 320" fill="none" stroke="#333" stroke-width="2"/>
+  <path d="M 450 330 Q 500 350, 550 330 Q 600 310, 650 330" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- Interferon-beta -->
+  <circle cx="150" cy="100" r="30" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="150" y="105" font-family="Arial" font-size="14" text-anchor="middle">IFN-β</text>
+  
+  <!-- Interferon receptor (implicit - marked as not in source) -->
+  <rect x="150" y="145" width="60" height="25" fill="#bbbbbb" stroke="#333" stroke-width="2"/>
+  <text x="180" y="162" font-family="Arial" font-size="11" text-anchor="middle">IFN-β receptor</text>
+  <text x="180" y="180" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">(not in source)</text>
+  
+  <!-- CALM1 (Calmodulin) -->
+  <rect x="250" y="250" width="60" height="30" rx="5" ry="5" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="280" y="270" font-family="Arial" font-size="14" text-anchor="middle">CALM1</text>
+  
+  <!-- Ca2+ ions -->
+  <circle cx="220" y="250" r="12" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="220" y="254" font-family="Arial" font-size="12" text-anchor="middle">Ca²⁺</text>
+  
+  <!-- CAMK2A -->
+  <rect x="350" y="250" width="70" height="30" rx="5" ry="5" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="385" y="270" font-family="Arial" font-size="14" text-anchor="middle">CAMK2A</text>
+  
+  <!-- STAT1 in cytoplasm -->
+  <rect x="350" y="350" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="380" y="370" font-family="Arial" font-size="14" text-anchor="middle">STAT1</text>
+  
+  <!-- STAT1 in nucleus -->
+  <rect x="500" y="320" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="530" y="340" font-family="Arial" font-size="14" text-anchor="middle">STAT1</text>
+  
+  <!-- Phosphorylation mark on STAT1 -->
+  <circle cx="520" cy="315" r="8" fill="#ff3333" stroke="#333" stroke-width="1"/>
+  <text x="520" y="319" font-family="Arial" font-size="10" text-anchor="middle" fill="white">P</text>
+  
+  <!-- Arrows connecting the pathway -->
+  <!-- IFN-β to signaling -->
+  <path d="M 150 130 L 150 145" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Receptor to CALM1 -->
+  <path d="M 210 160 L 250 250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Ca2+ to CALM1 -->
+  <path d="M 232 250 L 250 250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- CALM1 to CAMK2A -->
+  <path d="M 310 250 L 350 250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="330" y="240" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">activates</text>
+  
+  <!-- CAMK2A to STAT1 -->
+  <path d="M 385 280 L 385 350" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="405" y="315" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">phosphorylates</text>
+  
+  <!-- STAT1 to nucleus -->
+  <path d="M 410 350 L 500 320" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="455" y="320" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">translocates</text>
+  
+  <!-- STAT1 to DNA -->
+  <path d="M 530 350 L 530 370 Q 530 380, 550 380" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="570" y="380" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">binds DNA</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Process labels -->
+  <text x="180" y="215" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Cellular response to interferon-beta</text>
+  <text x="530" y="425" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Transcriptional activation</text>
+  <text x="400" y="140" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">JAK-STAT Pathway Regulation by Calmodulin</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="80" width="140" height="140" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="650" y="100" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="590" y="110" width="15" height="15" fill="#ff9999"/>
+  <text x="655" y="122" font-family="Arial" font-size="12" text-anchor="middle">Cytokine</text>
+  
+  <rect x="590" y="130" width="15" height="15" fill="#99ccff"/>
+  <text x="655" y="142" font-family="Arial" font-size="12" text-anchor="middle">Calmodulin</text>
+  
+  <rect x="590" y="150" width="15" height="15" fill="#99ff99"/>
+  <text x="655" y="162" font-family="Arial" font-size="12" text-anchor="middle">Kinase</text>
+  
+  <rect x="590" y="170" width="15" height="15" fill="#ffcc99"/>
+  <text x="655" y="182" font-family="Arial" font-size="12" text-anchor="middle">Transcription Factor</text>
+  
+  <circle cx="590" cy="195" r="7" fill="#ff3333"/>
+  <text x="595" y="198" font-family="Arial" font-size="10" text-anchor="middle" fill="white">P</text>
+  <text x="655" y="200" font-family="Arial" font-size="12" text-anchor="middle">Phosphorylation</text>
+</svg>

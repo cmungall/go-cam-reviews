@@ -1,0 +1,100 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell and Nuclear Membrane -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  <ellipse cx="400" cy="320" rx="280" ry="200" fill="#eef7ff" stroke="#333" stroke-width="2"/>
+  
+  <!-- Labels for Cell and Nucleus -->
+  <text x="120" y="140" font-family="Arial" font-size="14" fill="#333">Cytoplasm</text>
+  <text x="280" y="220" font-family="Arial" font-size="14" fill="#333">Nucleus</text>
+  
+  <!-- DNA strand with break site -->
+  <path d="M 250,320 Q 300,280 350,320 Q 400,360 450,320 Q 500,280 550,320" stroke="#8844aa" stroke-width="5" fill="none"/>
+  <line x1="380" y1="335" x2="430" y2="305" stroke="red" stroke-width="8" stroke-linecap="round"/>
+  <text x="390" y="290" font-family="Arial" font-size="12" fill="red" font-weight="bold">DSB</text>
+  <text x="320" y="380" font-family="Arial" font-size="14" fill="#333">Site of double-strand break</text>
+  <text x="320" y="400" font-family="Arial" font-size="12" fill="#555">(GO:0035861)</text>
+  
+  <!-- DYRK1A in cytoplasm -->
+  <rect x="200" y="150" width="80" height="30" rx="5" fill="#66aa66" stroke="#333" stroke-width="1.5"/>
+  <text x="212" y="170" font-family="Arial" font-size="14" fill="white" font-weight="bold">DYRK1A</text>
+  
+  <!-- Repair pathway proteins -->
+  <rect x="320" y="280" width="80" height="30" rx="5" fill="#6688cc" stroke="#333" stroke-width="1.5"/>
+  <text x="332" y="300" font-family="Arial" font-size="14" fill="white" font-weight="bold">RNF169</text>
+  
+  <rect x="220" y="320" width="80" height="30" rx="5" fill="#cc6666" stroke="#333" stroke-width="1.5"/>
+  <text x="227" y="340" font-family="Arial" font-size="14" fill="white" font-weight="bold">TP53BP1</text>
+  
+  <rect x="520" y="320" width="80" height="30" rx="5" fill="#cc6666" stroke="#333" stroke-width="1.5"/>
+  <text x="535" y="340" font-family="Arial" font-size="14" fill="white" font-weight="bold">UIMC1</text>
+  
+  <!-- Activity labels with adjusted positioning -->
+  <rect x="120" y="100" width="180" height="35" rx="5" fill="white" stroke="#dddddd" stroke-width="1"/>
+  <text x="125" y="120" font-family="Arial" font-size="12" fill="#555">Protein serine kinase activity</text>
+  <text x="125" y="132" font-family="Arial" font-size="10" fill="#555">(GO:0106310)</text>
+  
+  <rect x="290" y="240" width="220" height="35" rx="5" fill="white" stroke="#dddddd" stroke-width="1"/>
+  <text x="300" y="260" font-family="Arial" font-size="12" fill="#555">Ubiquitin-modified histone reader activity</text>
+  <text x="300" y="272" font-family="Arial" font-size="10" fill="#555">(GO:0061649)</text>
+  
+  <!-- Pathway arrows -->
+  <!-- DYRK1A to RNF169 (positive regulation) - thicker line -->
+  <line x1="240" y1="180" x2="340" y2="280" stroke="#66aa66" stroke-width="3" marker-end="url(#arrowhead_green)"/>
+  <circle cx="290" y="230" r="12" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="286" y="235" font-family="Arial" font-size="18" fill="#66aa66" font-weight="bold">+</text>
+  
+  <!-- RNF169 to TP53BP1 (negative regulation) - thicker line -->
+  <line x1="320" y1="295" x2="280" y2="320" stroke="#cc6666" stroke-width="3" marker-end="url(#arrowhead_red)"/>
+  <circle cx="300" y="308" r="12" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="296" y="313" font-family="Arial" font-size="18" fill="#cc6666" font-weight="bold">−</text>
+  
+  <!-- RNF169 to UIMC1 (negative regulation) - thicker line -->
+  <line x1="400" y1="295" x2="520" y2="320" stroke="#cc6666" stroke-width="3" marker-end="url(#arrowhead_red)"/>
+  <circle cx="460" y="308" r="12" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="456" y="313" font-family="Arial" font-size="18" fill="#cc6666" font-weight="bold">−</text>
+  
+  <!-- Repair pathway labels -->
+  <text x="180" y="440" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Non-homologous end joining</text>
+  <text x="180" y="455" font-family="Arial" font-size="12" fill="#555">(GO:0006303)</text>
+  
+  <text x="450" y="440" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Homologous recombination</text>
+  <text x="450" y="455" font-family="Arial" font-size="12" fill="#555">(GO:0000724)</text>
+  
+  <!-- Pathway association lines - revised to be distinct from regulation arrows -->
+  <path d="M 220,350 Q 220,420 220,430" stroke="#cc6666" stroke-width="2.5" fill="none" stroke-dasharray="none" marker-end="url(#diamond_marker)"/>
+  <path d="M 560,350 Q 560,390 240,430" stroke="#cc6666" stroke-width="2.5" fill="none" stroke-dasharray="none" marker-end="url(#diamond_marker)"/>
+  <path d="M 360,310 Q 360,380 450,430" stroke="#6688cc" stroke-width="2.5" fill="none" stroke-dasharray="none" marker-end="url(#diamond_marker)"/>
+  
+  <!-- Legend -->
+  <rect x="620" y="480" width="160" height="120" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="630" y="500" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Legend</text>
+  
+  <rect x="630" y="510" width="20" height="15" rx="2" fill="#66aa66" stroke="#333" stroke-width="1"/>
+  <text x="655" y="523" font-family="Arial" font-size="12" fill="#333">Kinase (DYRK1A)</text>
+  
+  <rect x="630" y="535" width="20" height="15" rx="2" fill="#6688cc" stroke="#333" stroke-width="1"/>
+  <text x="655" y="548" font-family="Arial" font-size="12" fill="#333">HR pathway factor (RNF169)</text>
+  
+  <rect x="630" y="560" width="20" height="15" rx="2" fill="#cc6666" stroke="#333" stroke-width="1"/>
+  <text x="655" y="573" font-family="Arial" font-size="12" fill="#333">NHEJ factors (TP53BP1, UIMC1)</text>
+  
+  <!-- Line style examples in legend -->
+  <line x1="630" y1="590" x2="650" y2="590" stroke="#66aa66" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="655" y="593" font-family="Arial" font-size="12" fill="#333">Positive regulation</text>
+  
+  <line x1="710" y1="590" x2="730" y2="590" stroke="#cc6666" stroke-width="2" marker-end="url(#arrowhead_red)"/>
+  <text x="735" y="593" font-family="Arial" font-size="12" fill="#333">Negative regulation</text>
+  
+  <!-- Markers with color -->
+  <defs>
+    <marker id="arrowhead_green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#66aa66"/>
+    </marker>
+    <marker id="arrowhead_red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc6666"/>
+    </marker>
+    <marker id="diamond_marker" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <rect x="0" y="0" width="10" height="10" transform="rotate(45, 5, 5)" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

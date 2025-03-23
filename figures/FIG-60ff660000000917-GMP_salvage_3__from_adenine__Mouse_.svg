@@ -1,0 +1,147 @@
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell background -->
+    <rect x="50" y="50" width="700" height="580" rx="50" ry="50" fill="#f9f9f9" stroke="#333" stroke-width="2" opacity="0.7"/>
+    <text x="400" y="90" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">GMP Salvage Pathway (Mouse)</text>
+    
+    <!-- Molecules and enzymes -->
+    <!-- Adenine at top -->
+    <circle cx="400" cy="150" r="35" fill="#a8d5ff" stroke="#333" stroke-width="2"/>
+    <text x="400" y="155" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Adenine</text>
+
+    <!-- Pathway molecules and reactions -->
+    <!-- APRT reaction -->
+    <circle cx="250" cy="230" r="35" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+    <text x="250" y="235" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">AMP</text>
+    
+    <!-- AMPD reactions - three branches -->
+    <circle cx="150" cy="320" r="35" fill="#c2f0c2" stroke="#333" stroke-width="2"/>
+    <text x="150" y="325" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IMP</text>
+    
+    <circle cx="250" cy="320" r="35" fill="#c2f0c2" stroke="#333" stroke-width="2"/>
+    <text x="250" y="325" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IMP</text>
+    
+    <circle cx="350" cy="320" r="35" fill="#c2f0c2" stroke="#333" stroke-width="2"/>
+    <text x="350" y="325" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IMP</text>
+    
+    <!-- IMPDH reactions -->
+    <circle cx="150" cy="410" r="35" fill="#ffb3e6" stroke="#333" stroke-width="2"/>
+    <text x="150" y="415" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">XMP</text>
+    
+    <circle cx="350" cy="410" r="35" fill="#ffb3e6" stroke="#333" stroke-width="2"/>
+    <text x="350" y="415" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">XMP</text>
+    
+    <!-- GMPS reaction - final product -->
+    <circle cx="250" cy="500" r="40" fill="#99ff99" stroke="#333" stroke-width="2"/>
+    <text x="250" y="505" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">GMP</text>
+    
+    <!-- Proteins/Enzymes -->
+    <!-- APRT -->
+    <rect x="450" y="180" width="120" height="50" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+    <text x="510" y="205" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">APRT</text>
+    <text x="510" y="222" font-family="Arial" font-size="12" text-anchor="middle">(Aprt Mmus)</text>
+    
+    <!-- Molecular function label for APRT -->
+    <rect x="580" y="180" width="150" height="50" rx="5" ry="5" fill="#e6e6ff" stroke="#333" stroke-width="1.5"/>
+    <text x="655" y="205" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">adenine phosphoribosyl-</text>
+    <text x="655" y="220" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">transferase activity</text>
+    <text x="655" y="235" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0003999)</text>
+    
+    <!-- AMPD enzymes -->
+    <rect x="80" y="250" width="120" height="50" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+    <text x="140" y="275" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">AMPD1</text>
+    <text x="140" y="292" font-family="Arial" font-size="12" text-anchor="middle">(Ampd1 Mmus)</text>
+    
+    <rect x="215" y="250" width="120" height="50" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+    <text x="275" y="275" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">AMPD2</text>
+    <text x="275" y="292" font-family="Arial" font-size="12" text-anchor="middle">(Ampd2 Mmus)</text>
+    
+    <rect x="350" y="250" width="120" height="50" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+    <text x="410" y="275" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">AMPD3</text>
+    <text x="410" y="292" font-family="Arial" font-size="12" text-anchor="middle">(Ampd3 Mmus)</text>
+    
+    <!-- Molecular function label for AMPDs -->
+    <rect x="480" y="250" width="150" height="50" rx="5" ry="5" fill="#e6e6ff" stroke="#333" stroke-width="1.5"/>
+    <text x="555" y="275" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">AMP deaminase activity</text>
+    <text x="555" y="290" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0003876)</text>
+    
+    <!-- IMPDH enzymes -->
+    <rect x="80" y="350" width="120" height="50" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+    <text x="140" y="375" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IMPDH1</text>
+    <text x="140" y="392" font-family="Arial" font-size="12" text-anchor="middle">(Impdh1 Mmus)</text>
+    
+    <rect x="350" y="350" width="120" height="50" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+    <text x="410" y="375" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IMPDH2</text>
+    <text x="410" y="392" font-family="Arial" font-size="12" text-anchor="middle">(Impdh2 Mmus)</text>
+    
+    <!-- Molecular function label for IMPDHs -->
+    <rect x="480" y="350" width="150" height="50" rx="5" ry="5" fill="#e6e6ff" stroke="#333" stroke-width="1.5"/>
+    <text x="555" y="375" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">IMP dehydrogenase activity</text>
+    <text x="555" y="390" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0003938)</text>
+    
+    <!-- GMPS enzyme -->
+    <rect x="215" y="440" width="120" height="50" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+    <text x="275" y="465" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">GMPS</text>
+    <text x="275" y="482" font-family="Arial" font-size="12" text-anchor="middle">(Gmps Mmus)</text>
+    
+    <!-- Molecular function label for GMPS -->
+    <rect x="350" y="440" width="190" height="50" rx="5" ry="5" fill="#e6e6ff" stroke="#333" stroke-width="1.5"/>
+    <text x="445" y="460" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GMP synthase (glutamine-</text>
+    <text x="445" y="475" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">hydrolyzing) activity</text>
+    <text x="445" y="490" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0003922)</text>
+    
+    <!-- Arrows for metabolic pathway -->
+    <!-- Adenine to AMP -->
+    <line x1="385" y1="180" x2="275" y2="215" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- AMP to IMPs (three branches) -->
+    <line x1="235" y1="260" x2="165" y2="300" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <line x1="250" y1="265" x2="250" y2="285" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <line x1="265" y1="260" x2="335" y2="300" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- IMPs to XMPs -->
+    <line x1="150" y1="355" x2="150" y2="375" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <line x1="350" y1="355" x2="350" y2="375" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- XMPs to GMP -->
+    <line x1="170" y1="435" x2="230" y2="480" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <line x1="330" y1="435" x2="270" y2="480" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Process label -->
+    <rect x="550" y="500" width="170" height="80" rx="10" ry="10" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+    <text x="635" y="530" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">GMP Salvage</text>
+    <text x="635" y="550" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0032263)</text>
+    <text x="635" y="570" font-family="Arial" font-size="12" text-anchor="middle">Biological Process</text>
+    
+    <!-- Legend -->
+    <rect x="80" y="580" width="640" height="80" rx="5" ry="5" fill="#f0f0f0" stroke="#333" stroke-width="1"/>
+    <text x="400" y="600" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+    
+    <!-- Legend items -->
+    <circle cx="100" cy="625" r="10" fill="#a8d5ff" stroke="#333" stroke-width="1"/>
+    <text x="120" y="630" font-family="Arial" font-size="12" text-anchor="start">Substrate</text>
+    
+    <circle cx="200" cy="625" r="10" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+    <text x="220" y="630" font-family="Arial" font-size="12" text-anchor="start">AMP</text>
+    
+    <circle cx="280" cy="625" r="10" fill="#c2f0c2" stroke="#333" stroke-width="1"/>
+    <text x="300" y="630" font-family="Arial" font-size="12" text-anchor="start">IMP</text>
+    
+    <circle cx="360" cy="625" r="10" fill="#ffb3e6" stroke="#333" stroke-width="1"/>
+    <text x="380" y="630" font-family="Arial" font-size="12" text-anchor="start">XMP</text>
+    
+    <circle cx="440" cy="625" r="10" fill="#99ff99" stroke="#333" stroke-width="1"/>
+    <text x="460" y="630" font-family="Arial" font-size="12" text-anchor="start">GMP</text>
+    
+    <rect x="520" cy="615" width="20" height="20" rx="3" ry="3" fill="#ffffcc" stroke="#333" stroke-width="1"/>
+    <text x="550" y="630" font-family="Arial" font-size="12" text-anchor="start">Enzyme</text>
+    
+    <rect x="620" cy="615" width="20" height="20" rx="3" ry="3" fill="#e6e6ff" stroke="#333" stroke-width="1"/>
+    <text x="650" y="630" font-family="Arial" font-size="12" text-anchor="start">Function</text>
+    
+    <!-- Arrowhead marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+        </marker>
+    </defs>
+</svg>

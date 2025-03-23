@@ -1,0 +1,124 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" fill="#f9f9f9"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Cobalamin Transport and Distribution to Tissues (Mouse)</text>
+
+  <!-- Enterocyte cell -->
+  <rect x="100" y="150" width="250" height="300" fill="#ffe6cc" stroke="#000" stroke-width="2" rx="10" ry="10"/>
+  <text x="225" y="130" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Enterocyte</text>
+
+  <!-- Basal plasma membrane -->
+  <rect x="100" y="400" width="250" height="10" fill="#ffcc99" stroke="#000" stroke-width="2"/>
+  <text x="100" y="430" font-family="Arial" font-size="14" text-anchor="start">Basal plasma membrane (GO:0009925)</text>
+
+  <!-- Extracellular space -->
+  <rect x="100" y="450" width="600" height="100" fill="#e6f7ff" stroke="#000" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="470" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Extracellular space (GO:0005615)</text>
+
+  <!-- Target cell with receptor -->
+  <rect x="500" y="150" width="250" height="300" fill="#e6ffcc" stroke="#000" stroke-width="2" rx="10" ry="10"/>
+  <text x="625" y="130" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Target cell</text>
+
+  <!-- Target cell plasma membrane -->
+  <rect x="500" y="400" width="250" height="10" fill="#ccff99" stroke="#000" stroke-width="2"/>
+  <text x="580" y="430" font-family="Arial" font-size="14" text-anchor="middle">Plasma membrane (GO:0005886)</text>
+
+  <!-- Cobalamin in enterocyte -->
+  <circle cx="200" y="300" r="18" fill="#ff6666" stroke="#000" stroke-width="2"/>
+  <text x="200" y="305" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">B12</text>
+
+  <!-- ABCC1 transporter -->
+  <rect x="180" y="385" width="60" height="40" fill="#ff9900" stroke="#000" stroke-width="2"/>
+  <text x="210" y="410" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ABCC1</text>
+  <text x="210" y="375" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Abcc1 (MGI:102676)</text>
+  
+  <!-- ABCC1 function annotation -->
+  <text x="140" y="355" font-family="Arial" font-size="12" text-anchor="start" fill="#666">ABC-type vitamin B12</text>
+  <text x="140" y="370" font-family="Arial" font-size="12" text-anchor="start" fill="#666">transporter activity</text>
+  <text x="140" y="385" font-family="Arial" font-size="12" text-anchor="start" fill="#666">(GO:0015420)</text>
+
+  <!-- Arrow showing transport direction -->
+  <path d="M 200,320 L 200,380" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Cobalamin in extracellular space -->
+  <circle cx="210" y="500" r="18" fill="#ff6666" stroke="#000" stroke-width="2"/>
+  <text x="210" y="505" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">B12</text>
+
+  <!-- TCN2 protein -->
+  <ellipse cx="300" cy="500" rx="45" ry="30" fill="#9999ff" stroke="#000" stroke-width="2"/>
+  <text x="300" y="500" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TCN2</text>
+  <text x="300" y="520" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Tcn2 (MGI:98534)</text>
+  
+  <!-- TCN2 function annotation -->
+  <text x="300" y="545" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Molecular carrier activity</text>
+  <text x="300" y="560" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(GO:0140104)</text>
+
+  <!-- Arrow showing TCN2 binding B12 -->
+  <path d="M 230,500 L 250,500" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- B12-TCN2 complex -->
+  <ellipse cx="400" cy="500" rx="60" ry="35" fill="#cc99ff" stroke="#000" stroke-width="2"/>
+  <circle cx="370" y="500" r="15" fill="#ff6666" stroke="#000" stroke-width="1.5"/>
+  <text x="370" y="505" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">B12</text>
+  <text x="420" y="500" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TCN2</text>
+  <text x="400" y="525" font-family="Arial" font-size="14" text-anchor="middle">Complex</text>
+
+  <!-- Arrow showing complex formation -->
+  <path d="M 347,500 L 335,500" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- CD320 receptor -->
+  <rect x="580" y="385" width="60" height="40" fill="#66cc66" stroke="#000" stroke-width="2"/>
+  <text x="610" y="410" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CD320</text>
+  <text x="610" y="375" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Cd320 (MGI:1860083)</text>
+  
+  <!-- CD320 function annotation -->
+  <text x="610" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Cargo receptor activity</text>
+  <text x="610" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(GO:0038024)</text>
+
+  <!-- Arrow showing complex movement to receptor -->
+  <path d="M 460,500 L 550,450" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Binding event at receptor -->
+  <circle cx="590" y="440" r="25" fill="#ffff99" stroke="#000" stroke-width="2" opacity="0.8"/>
+  <text x="590" y="445" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Binding</text>
+  
+  <!-- TCN2 on cell surface -->
+  <ellipse cx="590" cy="480" rx="35" ry="22" fill="#9999ff" stroke="#000" stroke-width="2" opacity="0.7"/>
+  <text x="590" y="480" font-family="Arial" font-size="12" text-anchor="middle">TCN2</text>
+  <text x="590" y="495" font-family="Arial" font-size="10" text-anchor="middle" fill="#666">External side of PM</text>
+  <text x="590" y="510" font-family="Arial" font-size="10" text-anchor="middle" fill="#666">(GO:0009897)</text>
+
+  <!-- Arrow showing receptor-ligand interaction -->
+  <path d="M 590,455 L 590,465" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Definitions for arrow heads -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- Process Annotation -->
+  <text x="400" y="590" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cobalamin transport (GO:0015889)</text>
+
+  <!-- Legend -->
+  <rect x="50" y="610" width="700" height="80" fill="#fff" stroke="#000" stroke-width="1"/>
+  <text x="60" y="630" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <circle cx="80" y="650" r="12" fill="#ff6666" stroke="#000" stroke-width="1"/>
+  <text x="105" y="655" font-family="Arial" font-size="14">Cobalamin (B12) - Cobalamin binding (GO:0031419)</text>
+  
+  <rect x="360" y="640" width="20" height="20" fill="#ff9900" stroke="#000" stroke-width="1"/>
+  <text x="390" y="655" font-family="Arial" font-size="14">ABCC1 - ABC-type vitamin B12 transporter</text>
+  
+  <ellipse cx="80" cy="680" rx="20" ry="12" fill="#9999ff" stroke="#000" stroke-width="1"/>
+  <text x="110" y="685" font-family="Arial" font-size="14">TCN2 - Molecular carrier activity/Cargo receptor ligand activity (GO:0140355)</text>
+  
+  <rect x="500" y="670" width="20" height="20" fill="#66cc66" stroke="#000" stroke-width="1"/>
+  <text x="530" y="685" font-family="Arial" font-size="14">CD320 - Cargo receptor</text>
+  
+  <path d="M 600,650 L 630,650" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="650" y="655" font-family="Arial" font-size="14">Transport/Interaction</text>
+</svg>

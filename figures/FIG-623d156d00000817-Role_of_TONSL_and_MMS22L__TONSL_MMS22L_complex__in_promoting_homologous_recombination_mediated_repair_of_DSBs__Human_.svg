@@ -1,0 +1,140 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Cell Nucleus -->
+  <ellipse cx="400" cy="325" rx="380" ry="300" fill="#f8f9fa" stroke="#2c3e50" stroke-width="2"/>
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#2c3e50">Cell Nucleus</text>
+  
+  <!-- Chromatin region -->
+  <path d="M150,200 C200,180 250,230 300,210 S350,160 400,180 S450,230 500,210 S550,160 600,180" 
+        fill="none" stroke="#8e44ad" stroke-width="4"/>
+  <text x="180" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.5">Chromatin (GO:0000785)</text>
+  
+  <!-- DNA Double Strand Break Site -->
+  <rect x="370" y="250" width="60" height="120" rx="5" ry="5" fill="#fef9e7" stroke="#e74c3c" stroke-width="2"/>
+  <text x="400" y="240" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c" stroke="#ffffff" stroke-width="0.5">Site of Double-Strand Break</text>
+  
+  <!-- DNA Strands at break -->
+  <path d="M370,280 L390,280 M410,280 L430,280" stroke="#e74c3c" stroke-width="3"/>
+  <path d="M370,340 L390,340 M410,340 L430,340" stroke="#e74c3c" stroke-width="3"/>
+  
+  <!-- Proteins and pathways with better spacing -->
+  <!-- PRKDC -->
+  <circle cx="230" cy="270" r="35" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="230" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">PRKDC</text>
+  <text x="230" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" stroke="#ffffff" stroke-width="0.3">Protein kinase</text>
+  
+  <!-- ASF1A -->
+  <circle cx="320" cy="190" r="35" fill="#2ecc71" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="320" y="190" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">ASF1A</text>
+  <text x="320" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" stroke="#ffffff" stroke-width="0.3">Histone chaperone</text>
+  
+  <!-- KMT5A -->
+  <circle cx="180" cy="370" r="35" fill="#9b59b6" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="180" y="370" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">KMT5A</text>
+  <text x="180" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" stroke="#ffffff" stroke-width="0.3">H4K20 methyltransferase</text>
+  
+  <!-- TONSL -->
+  <circle cx="480" cy="190" r="35" fill="#e67e22" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="480" y="190" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">TONSL</text>
+  <text x="480" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" stroke="#ffffff" stroke-width="0.3">Histone reader</text>
+  
+  <!-- MMS22L -->
+  <circle cx="550" cy="270" r="35" fill="#e67e22" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="550" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">MMS22L</text>
+  <text x="550" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" stroke="#ffffff" stroke-width="0.3">ssDNA binding</text>
+  
+  <!-- RAD51 -->
+  <circle cx="480" y="380" r="35" fill="#f1c40f" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="480" y="380" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">RAD51</text>
+  <text x="480" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" stroke="#ffffff" stroke-width="0.3">DNA strand exchange</text>
+  
+  <!-- RPA Complex -->
+  <rect x="590" y="370" width="70" height="45" rx="5" ry="5" fill="#1abc9c" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="625" y="395" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">RPA</text>
+  <text x="625" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" stroke="#ffffff" stroke-width="0.3">Chromatin binding</text>
+  
+  <!-- Process annotations with clearer positioning -->
+  <text x="480" y="150" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">GO:0140566</text>
+  <text x="550" y="235" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">GO:0003697</text>
+  <text x="480" y="350" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">GO:0000150</text>
+  <text x="230" y="240" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">GO:0006974</text>
+  <text x="320" y="155" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">GO:0140713</text>
+  
+  <!-- Simplified and repositioned arrows showing relationships -->
+  <!-- PRKDC → ASF1A -->
+  <path d="M265,260 Q285,235 320,215" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowPositive)"/>
+  <text x="270" y="230" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">activates</text>
+  
+  <!-- ASF1A → TONSL -->
+  <path d="M355,190 L445,190" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowPositive)"/>
+  <text x="400" y="175" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">promotes</text>
+  
+  <!-- ASF1A → MMS22L -->
+  <path d="M350,210 Q400,240 515,270" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowPositive)"/>
+  <text x="410" y="230" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">promotes</text>
+  
+  <!-- ASF1A → RPA -->
+  <path d="M330,225 Q400,300 590,380" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowNegative)" stroke-dasharray="5,3"/>
+  <text x="400" y="290" font-family="Arial" font-size="12" font-weight="bold" fill="#c0392b" stroke="#ffffff" stroke-width="0.3">inhibits</text>
+  
+  <!-- TONSL → RAD51 -->
+  <path d="M480,225 L480,345" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowPositive)"/>
+  <text x="460" y="285" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">promotes</text>
+  
+  <!-- MMS22L → RAD51 -->
+  <path d="M535,300 L500,345" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowPositive)"/>
+  <text x="530" y="335" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">promotes</text>
+  
+  <!-- KMT5A → TONSL -->
+  <path d="M215,370 Q300,280 445,190" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowPositive)" stroke-dasharray="5,3"/>
+  <text x="290" y="290" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="0.3">regulates</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowPositive" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowNegative" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  
+  <!-- Process labels with clearer positioning -->
+  <text x="400" y="490" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#2c3e50">Homologous Recombination-Mediated Repair of DSBs</text>
+  <text x="400" y="515" font-family="Arial" font-size="14" text-anchor="middle" fill="#2c3e50">TONSL-MMS22L promotes DNA strand exchange by RAD51</text>
+  
+  <!-- Improved Legend -->
+  <rect x="610" y="70" width="180" height="240" rx="8" ry="8" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+  <rect x="610" y="70" width="180" height="30" rx="8" ry="8" fill="#2c3e50"/>
+  <text x="700" y="90" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="white">LEGEND</text>
+  
+  <circle cx="630" cy="125" r="10" fill="#3498db"/>
+  <text x="710" y="130" font-family="Arial" font-size="13" fill="#000000">Protein kinase</text>
+  
+  <circle cx="630" cy="155" r="10" fill="#2ecc71"/>
+  <text x="710" y="160" font-family="Arial" font-size="13" fill="#000000">Histone chaperone</text>
+  
+  <circle cx="630" cy="185" r="10" fill="#9b59b6"/>
+  <text x="710" y="190" font-family="Arial" font-size="13" fill="#000000">Methyltransferase</text>
+  
+  <circle cx="630" cy="215" r="10" fill="#e67e22"/>
+  <text x="710" y="220" font-family="Arial" font-size="13" fill="#000000">TONSL-MMS22L</text>
+  
+  <circle cx="630" cy="245" r="10" fill="#f1c40f"/>
+  <text x="710" y="250" font-family="Arial" font-size="13" fill="#000000">DNA repair protein</text>
+  
+  <rect x="620" y="265" width="20" height="16" rx="3" ry="3" fill="#1abc9c"/>
+  <text x="710" y="275" font-family="Arial" font-size="13" fill="#000000">Protein complex</text>
+  
+  <line x1="620" y1="295" x2="640" y2="295" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowPositive)"/>
+  <text x="710" y="300" font-family="Arial" font-size="13" fill="#000000">Promotes/activates</text>
+  
+  <line x1="620" y1="320" x2="640" y2="320" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowNegative)" stroke-dasharray="5,3"/>
+  <text x="710" y="325" font-family="Arial" font-size="13" fill="#000000">Inhibits</text>
+  
+  <!-- Key biological process highlight box -->
+  <rect x="260" y="550" width="280" height="80" rx="10" ry="10" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="400" y="575" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Key Pathway Steps:</text>
+  <text x="400" y="595" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">1. DNA damage recognition (PRKDC activation)</text>
+  <text x="400" y="615" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">2. Histone regulation (ASF1A, KMT5A)</text>
+  <text x="400" y="635" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">3. DNA repair mediated by TONSL-MMS22L complex</text>
+</svg>

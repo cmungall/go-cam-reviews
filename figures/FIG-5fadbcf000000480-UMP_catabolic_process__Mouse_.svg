@@ -1,0 +1,140 @@
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell background -->
+    <rect x="50" y="80" width="700" height="450" rx="30" ry="30" fill="#f0f5f9" stroke="#333" stroke-width="2"/>
+    
+    <!-- Cell Membrane Label -->
+    <text x="370" y="70" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Mouse Cell</text>
+    
+    <!-- Mitochondrion -->
+    <ellipse cx="620" cy="300" rx="120" ry="80" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+    <path d="M550,260 Q620,320 690,260" fill="none" stroke="#333" stroke-width="1"/>
+    <path d="M550,340 Q620,280 690,340" fill="none" stroke="#333" stroke-width="1"/>
+    <text x="620" y="240" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Mitochondrion</text>
+    
+    <!-- Cytosol label -->
+    <text x="200" y="110" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Cytosol</text>
+    
+    <!-- Pathway Components -->
+    <!-- UMP -->
+    <rect x="120" y="180" width="80" height="40" rx="10" ry="10" fill="#d4e6f1" stroke="#333" stroke-width="2"/>
+    <text x="160" y="205" font-family="Arial" font-size="14" text-anchor="middle">UMP</text>
+    
+    <!-- 5'-nucleotidase activity (Nt5c3 and Nt5c) -->
+    <rect x="120" y="250" width="80" height="60" rx="10" ry="10" fill="#aed6f1" stroke="#333" stroke-width="2"/>
+    <text x="160" y="270" font-family="Arial" font-size="12" text-anchor="middle">5'-nucleotidase</text>
+    <text x="160" y="290" font-family="Arial" font-size="10" text-anchor="middle">(Nt5c3, Nt5c)</text>
+    
+    <!-- Uridine -->
+    <rect x="250" y="180" width="80" height="40" rx="10" ry="10" fill="#d4e6f1" stroke="#333" stroke-width="2"/>
+    <text x="290" y="205" font-family="Arial" font-size="14" text-anchor="middle">Uridine</text>
+    
+    <!-- Uridine phosphorylase activity (Upp1 and Upp2) -->
+    <rect x="250" y="250" width="80" height="60" rx="10" ry="10" fill="#aed6f1" stroke="#333" stroke-width="2"/>
+    <text x="290" y="270" font-family="Arial" font-size="12" text-anchor="middle">Uridine</text>
+    <text x="290" y="284" font-family="Arial" font-size="12" text-anchor="middle">phosphorylase</text>
+    <text x="290" y="298" font-family="Arial" font-size="10" text-anchor="middle">(Upp1, Upp2)</text>
+    
+    <!-- Uracil -->
+    <rect x="380" y="180" width="80" height="40" rx="10" ry="10" fill="#d4e6f1" stroke="#333" stroke-width="2"/>
+    <text x="420" y="205" font-family="Arial" font-size="14" text-anchor="middle">Uracil</text>
+    
+    <!-- Dihydropyrimidine dehydrogenase (Dpyd) -->
+    <rect x="380" y="250" width="80" height="60" rx="10" ry="10" fill="#aed6f1" stroke="#333" stroke-width="2"/>
+    <text x="420" y="270" font-family="Arial" font-size="11" text-anchor="middle">Dihydropyrimidine</text>
+    <text x="420" y="284" font-family="Arial" font-size="11" text-anchor="middle">dehydrogenase</text>
+    <text x="420" y="298" font-family="Arial" font-size="10" text-anchor="middle">(Dpyd)</text>
+    
+    <!-- Dihydrouracil -->
+    <rect x="380" y="340" width="80" height="40" rx="10" ry="10" fill="#d4e6f1" stroke="#333" stroke-width="2"/>
+    <text x="420" y="365" font-family="Arial" font-size="12" text-anchor="middle">Dihydrouracil</text>
+    
+    <!-- Dihydropyrimidinase (Dpys) -->
+    <rect x="380" y="410" width="80" height="60" rx="10" ry="10" fill="#aed6f1" stroke="#333" stroke-width="2"/>
+    <text x="420" y="430" font-family="Arial" font-size="12" text-anchor="middle">Dihydro-</text>
+    <text x="420" y="444" font-family="Arial" font-size="12" text-anchor="middle">pyrimidinase</text>
+    <text x="420" y="458" font-family="Arial" font-size="10" text-anchor="middle">(Dpys)</text>
+    
+    <!-- N-carbamoyl-β-alanine -->
+    <rect x="250" y="340" width="80" height="40" rx="10" ry="10" fill="#d4e6f1" stroke="#333" stroke-width="2"/>
+    <text x="290" y="355" font-family="Arial" font-size="11" text-anchor="middle">N-carbamoyl-</text>
+    <text x="290" y="370" font-family="Arial" font-size="11" text-anchor="middle">β-alanine</text>
+    
+    <!-- Beta-ureidopropionase (Upb1) -->
+    <rect x="250" y="410" width="80" height="60" rx="10" ry="10" fill="#aed6f1" stroke="#333" stroke-width="2"/>
+    <text x="290" y="430" font-family="Arial" font-size="12" text-anchor="middle">β-ureido-</text>
+    <text x="290" y="444" font-family="Arial" font-size="12" text-anchor="middle">propionase</text>
+    <text x="290" y="458" font-family="Arial" font-size="10" text-anchor="middle">(Upb1)</text>
+    
+    <!-- β-alanine -->
+    <rect x="120" y="340" width="80" height="40" rx="10" ry="10" fill="#d4e6f1" stroke="#333" stroke-width="2"/>
+    <text x="160" y="365" font-family="Arial" font-size="14" text-anchor="middle">β-alanine</text>
+    
+    <!-- Beta-alanine:pyruvate transaminase (Agxt2) in mitochondrion -->
+    <rect x="580" y="320" width="80" height="60" rx="10" ry="10" fill="#f5cba7" stroke="#333" stroke-width="2"/>
+    <text x="620" y="340" font-family="Arial" font-size="11" text-anchor="middle">β-alanine:</text>
+    <text x="620" y="354" font-family="Arial" font-size="11" text-anchor="middle">pyruvate</text>
+    <text x="620" y="368" font-family="Arial" font-size="11" text-anchor="middle">transaminase</text>
+    <text x="620" y="382" font-family="Arial" font-size="10" text-anchor="middle">(Agxt2)</text>
+    
+    <!-- Arrows connecting pathway components -->
+    <path d="M160,220 L160,250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M200,200 L250,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M290,220 L290,250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M330,200 L380,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M420,220 L420,250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M420,310 L420,340" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M420,380 L420,410" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M380,360 L330,360" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M290,380 L290,410" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M250,360 L200,360" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Arrow from cytosol to mitochondrion -->
+    <path d="M200,360 Q400,460 580,360" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">UMP Catabolic Process (Mouse)</text>
+    
+    <!-- Process Label -->
+    <text x="400" y="550" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">GO:0046050 - UMP catabolic process</text>
+    
+    <!-- Legend -->
+    <rect x="50" y="560" width="700" height="110" rx="5" ry="5" fill="#f9f9f9" stroke="#333" stroke-width="1"/>
+    <text x="60" y="575" font-family="Arial" font-size="12" font-weight="bold">Legend:</text>
+    
+    <!-- Metabolite legend -->
+    <rect x="60" y="585" width="20" height="20" rx="5" ry="5" fill="#d4e6f1" stroke="#333" stroke-width="1"/>
+    <text x="85" y="600" font-family="Arial" font-size="12">Metabolites</text>
+    
+    <!-- Cytosolic enzyme legend -->
+    <rect x="160" y="585" width="20" height="20" rx="5" ry="5" fill="#aed6f1" stroke="#333" stroke-width="1"/>
+    <text x="185" y="600" font-family="Arial" font-size="12">Cytosolic enzymes</text>
+    
+    <!-- Mitochondrial enzyme legend -->
+    <rect x="300" y="585" width="20" height="20" rx="5" ry="5" fill="#f5cba7" stroke="#333" stroke-width="1"/>
+    <text x="325" y="600" font-family="Arial" font-size="12">Mitochondrial enzymes</text>
+    
+    <!-- Compartment legend -->
+    <rect x="460" y="585" width="20" height="20" rx="5" ry="5" fill="#f0f5f9" stroke="#333" stroke-width="1"/>
+    <text x="485" y="600" font-family="Arial" font-size="12">Cytosol</text>
+    
+    <rect x="550" y="585" width="20" height="20" rx="5" ry="5" fill="#ffe6cc" stroke="#333" stroke-width="1"/>
+    <text x="575" y="600" font-family="Arial" font-size="12">Mitochondrion</text>
+    
+    <!-- Reaction arrows legend -->
+    <line x1="60" y1="620" x2="80" y2="620" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="85" y="625" font-family="Arial" font-size="12">Direct conversion</text>
+    
+    <line x1="220" y1="620" x2="240" y2="620" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+    <text x="245" y="625" font-family="Arial" font-size="12">Transport between compartments</text>
+    
+    <!-- Pathway explanation -->
+    <text x="60" y="650" font-family="Arial" font-size="11" font-style="italic">The UMP catabolic process in mouse involves sequential enzymatic reactions primarily in the cytosol, with a final step in</text>
+    <text x="60" y="665" font-family="Arial" font-size="11" font-style="italic">the mitochondria. UMP is converted to uridine, then to uracil, which undergoes further modifications to ultimately produce β-alanine.</text>
+    
+    <!-- Arrowhead marker definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+        </marker>
+    </defs>
+</svg>

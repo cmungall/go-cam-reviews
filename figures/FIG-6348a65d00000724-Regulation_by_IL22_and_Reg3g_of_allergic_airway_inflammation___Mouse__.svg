@@ -1,0 +1,125 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with tissue context -->
+  <rect x="0" y="0" width="800" height="600" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  <text x="400" y="30" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Regulation of Allergic Airway Inflammation by IL22 and Reg3g</text>
+  
+  <!-- Cell representations -->
+  <!-- CD4+ T cell -->
+  <ellipse cx="200" cy="200" rx="100" ry="70" fill="#e6f7ff" stroke="#0066cc" stroke-width="3"/>
+  <text x="200" y="170" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CD4+ T Cell</text>
+  <text x="200" y="190" font-family="Arial" font-size="14" text-anchor="middle">(CL:0000624)</text>
+  
+  <!-- IL22 in CD4+ T cell -->
+  <circle cx="250" cy="210" r="25" fill="#66ccff" stroke="#0055aa" stroke-width="2"/>
+  <text x="250" y="215" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">IL22</text>
+  
+  <!-- Lung epithelial cell - repositioned to reduce congestion -->
+  <ellipse cx="550" cy="320" rx="150" ry="100" fill="#ffe6e6" stroke="#cc0000" stroke-width="3"/>
+  <text x="550" y="290" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Lung Epithelial Cell</text>
+  <text x="550" y="310" font-family="Arial" font-size="14" text-anchor="middle">(CL:0000082)</text>
+  
+  <!-- Nucleus in epithelial cell -->
+  <ellipse cx="550" cy="350" rx="50" ry="30" fill="#ffcccc" stroke="#990000" stroke-width="2"/>
+  <text x="550" y="355" font-family="Arial" font-size="12" text-anchor="middle">Nucleus</text>
+  
+  <!-- STAT3 in nucleus -->
+  <circle cx="550" cy="350" r="15" fill="#ff9999" stroke="#990000" stroke-width="2"/>
+  <text x="550" cy="355" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">STAT3</text>
+  
+  <!-- IL22RA1 on epithelial cell membrane - repositioned -->
+  <rect x="470" y="220" width="60" height="25" fill="#ff8080" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="237" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">IL22RA1</text>
+  
+  <!-- EXTL3 on epithelial cell membrane - repositioned -->
+  <rect x="580" y="220" width="60" height="25" fill="#ff8080" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="610" y="237" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">EXTL3</text>
+  
+  <!-- Extracellular space -->
+  <text x="400" y="100" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Extracellular Space</text>
+  
+  <!-- IL22 secreted -->
+  <circle cx="340" cy="150" r="25" fill="#66ccff" stroke="#0055aa" stroke-width="2"/>
+  <text x="340" y="155" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">IL22</text>
+  
+  <!-- REG3G secreted -->
+  <circle cx="400" cy="170" r="25" fill="#ccff99" stroke="#669900" stroke-width="2"/>
+  <text x="400" y="175" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">REG3G</text>
+  
+  <!-- IL33 secreted - repositioned with larger text -->
+  <circle cx="580" cy="130" r="25" fill="#ffcc66" stroke="#cc9900" stroke-width="2"/>
+  <text x="580" y="135" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">IL33</text>
+  
+  <!-- TSLP secreted - repositioned with larger text -->
+  <circle cx="650" cy="130" r="25" fill="#ffcc66" stroke="#cc9900" stroke-width="2"/>
+  <text x="650" y="135" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">TSLP</text>
+  
+  <!-- Arrows and interactions - thicker lines -->
+  <!-- IL22 secretion -->
+  <path d="M250 190 Q300 120 340 150" fill="none" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- IL22 to IL22RA1 -->
+  <path d="M360 160 Q420 190 470 220" fill="none" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="410" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="#0066cc" font-weight="bold">activates</text>
+  
+  <!-- IL22RA1 to STAT3 -->
+  <path d="M500 245 Q520 300 540 335" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="505" y="280" font-family="Arial" font-size="12" text-anchor="middle" fill="#cc0000" font-weight="bold">activates</text>
+  
+  <!-- STAT3 to REG3G -->
+  <path d="M535 340 Q470 260 400 170" fill="none" stroke="#990000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="470" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#990000" font-weight="bold">produces</text>
+  
+  <!-- REG3G to EXTL3 -->
+  <path d="M420 180 Q500 190 580 220" fill="none" stroke="#669900" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="495" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="#669900" font-weight="bold">binds</text>
+  
+  <!-- EXTL3 to IL33/TSLP - different line style for inhibition -->
+  <path d="M610 220 Q600 170 580 130" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="7,3"/>
+  <path d="M630 220 Q640 170 650 130" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="7,3"/>
+  <text x="660" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="#cc0000" font-weight="bold">inhibits</text>
+  
+  <!-- Inflammatory response outcomes -->
+  <rect x="150" y="450" width="200" height="50" fill="#ffcccc" stroke="#990000" stroke-width="2" rx="10" ry="10"/>
+  <text x="250" y="475" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Positive Regulation of</text>
+  <text x="250" y="495" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Inflammatory Response</text>
+  
+  <rect x="450" y="450" width="200" height="50" fill="#ccffcc" stroke="#009900" stroke-width="2" rx="10" ry="10"/>
+  <text x="550" y="475" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Negative Regulation of</text>
+  <text x="550" y="495" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Inflammatory Response</text>
+  
+  <!-- Connections to outcomes -->
+  <path d="M580 155 Q400 320 250 450" fill="none" stroke="#cc9900" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M650 155 Q450 320 250 450" fill="none" stroke="#cc9900" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <path d="M340 175 Q450 320 550 450" fill="none" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M400 195 Q470 320 550 450" fill="none" stroke="#669900" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <rect x="20" y="500" width="250" height="90" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="145" y="520" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <line x1="30" y1="535" x2="60" y2="535" stroke="#0066cc" stroke-width="3"/>
+  <text x="65" y="540" font-family="Arial" font-size="12" text-anchor="start">Activation</text>
+  
+  <line x1="150" y1="535" x2="180" y2="535" stroke="#cc0000" stroke-width="3" stroke-dasharray="7,3"/>
+  <text x="185" y="540" font-family="Arial" font-size="12" text-anchor="start">Inhibition</text>
+  
+  <line x1="30" y1="555" x2="60" y2="555" stroke="#990000" stroke-width="3"/>
+  <text x="65" y="560" font-family="Arial" font-size="12" text-anchor="start">Production</text>
+  
+  <circle cx="150" cy="555" r="10" fill="#66ccff" stroke="#0055aa" stroke-width="1.5"/>
+  <text x="185" y="560" font-family="Arial" font-size="12" text-anchor="start">Cytokine</text>
+  
+  <rect x="30" y="570" width="20" height="10" fill="#ff8080" stroke="#cc0000" stroke-width="1.5" rx="2" ry="2"/>
+  <text x="65" y="580" font-family="Arial" font-size="12" text-anchor="start">Receptor</text>
+  
+  <ellipse cx="160" cy="575" rx="15" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="185" y="580" font-family="Arial" font-size="12" text-anchor="start">Cell</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+</svg>

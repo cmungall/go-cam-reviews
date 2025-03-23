@@ -1,0 +1,140 @@
+<svg width="800" height="620" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="620" fill="#f9f9f9" rx="10" ry="10"/>
+  
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="310" rx="380" ry="270" fill="#e6f2ff" stroke="#999" stroke-width="2" opacity="0.7"/>
+  <text x="50" y="80" font-family="Arial" font-size="16" fill="#555">Human Cell</text>
+  
+  <!-- Cytosolic region label -->
+  <text x="400" y="140" font-family="Arial" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">Cytosolic Ribosome (GO:0022626)</text>
+  
+  <!-- Stalled Ribosome -->
+  <g id="stalled-ribosome-1">
+    <ellipse cx="200" cy="240" rx="80" ry="50" fill="#f0dfc0" stroke="#666" stroke-width="2"/>
+    <ellipse cx="200" cy="240" rx="60" ry="30" fill="#e0c090" stroke="#666" stroke-width="2"/>
+    <text x="200" y="245" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Stalled Ribosome</text>
+    <!-- mRNA strand -->
+    <path d="M120 240 Q 155 220 185 240 Q 215 260 240 240 Q 265 220 280 240" stroke="#c06040" stroke-width="3" fill="none"/>
+    <text x="200" y="210" font-family="Arial" font-size="12" fill="#c06040" text-anchor="middle" font-weight="bold">mRNA</text>
+  </g>
+  
+  <!-- Step 1: SKI Complex -->
+  <g id="ski-complex">
+    <path d="M280 240 L 320 240" stroke="#3876BF" stroke-width="3" marker-end="url(#arrowhead1)"/>
+    <rect x="320" y="200" width="110" height="80" rx="15" ry="15" fill="#90c0f0" stroke="#666" stroke-width="2"/>
+    <text x="375" y="235" font-family="Arial" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">SKI Complex</text>
+    <text x="375" y="255" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">(CPX-2736)</text>
+    <text x="375" y="275" font-family="Arial" font-size="11" fill="#333" text-anchor="middle" font-style="italic">3'-5' RNA helicase</text>
+  </g>
+  
+  <!-- Step 2: HBS1L -->
+  <g id="hbs1l">
+    <path d="M430 240 L 470 240" stroke="#6528F7" stroke-width="3" marker-end="url(#arrowhead2)"/>
+    <rect x="470" y="200" width="100" height="80" rx="15" ry="15" fill="#90e0c0" stroke="#666" stroke-width="2"/>
+    <text x="520" y="235" font-family="Arial" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">HBS1L</text>
+    <text x="520" y="255" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">(Q9Y450)</text>
+    <text x="520" y="275" font-family="Arial" font-size="11" fill="#333" text-anchor="middle" font-style="italic">GTPase activity</text>
+  </g>
+  
+  <!-- Step 3: PELO -->
+  <g id="pelo">
+    <path d="M570 240 L 610 240" stroke="#A91079" stroke-width="3" marker-end="url(#arrowhead3)"/>
+    <rect x="610" y="200" width="100" height="80" rx="15" ry="15" fill="#d0a0e0" stroke="#666" stroke-width="2"/>
+    <text x="660" y="235" font-family="Arial" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">PELO</text>
+    <text x="660" y="255" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">(Q9BRX2)</text>
+    <text x="660" y="275" font-family="Arial" font-size="11" fill="#333" text-anchor="middle" font-style="italic">Stalled ribosome sensor</text>
+  </g>
+  
+  <!-- Result: Ribosome with PELO/HBS1L -->
+  <g id="stalled-ribosome-2">
+    <ellipse cx="200" cy="400" rx="80" ry="50" fill="#f0dfc0" stroke="#666" stroke-width="2"/>
+    <ellipse cx="200" cy="400" rx="60" ry="30" fill="#e0c090" stroke="#666" stroke-width="2"/>
+    <text x="200" y="405" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Stalled Ribosome</text>
+    
+    <!-- PELO-HBS1L Complex on ribosome -->
+    <rect x="220" y="370" width="70" height="30" rx="5" ry="5" fill="#d0a0e0" stroke="#666" stroke-width="1" opacity="0.8"/>
+    <text x="255" y="390" font-family="Arial" font-size="10" fill="#333" text-anchor="middle" font-weight="bold">PELO-HBS1L</text>
+    
+    <!-- Curved arrow connecting diagrams -->
+    <path d="M660 280 Q 530 350 260 380" stroke="#A91079" stroke-width="3" fill="none" marker-end="url(#arrowhead3)" stroke-dasharray="5,2"/>
+  </g>
+  
+  <!-- Step 4: ABCE1 -->
+  <g id="abce1">
+    <rect x="320" y="360" width="110" height="90" rx="15" ry="15" fill="#f0a080" stroke="#666" stroke-width="2"/>
+    <text x="375" y="385" font-family="Arial" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">ABCE1</text>
+    <text x="375" y="405" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">(P61221)</text>
+    <text x="375" y="425" font-family="Arial" font-size="11" fill="#333" text-anchor="middle" font-style="italic">Ribonucleoside</text>
+    <text x="375" y="440" font-family="Arial" font-size="11" fill="#333" text-anchor="middle" font-style="italic">triphosphate</text>
+    <text x="375" y="455" font-family="Arial" font-size="11" fill="#333" text-anchor="middle" font-style="italic">phosphatase activity</text>
+    
+    <!-- Arrow from PELO to ABCE1 -->
+    <path d="M285 400 L 320 400" stroke="#F86F03" stroke-width="3" marker-end="url(#arrowhead4)"/>
+  </g>
+  
+  <!-- Final step: Ribosome dissociation -->
+  <g id="dissociated-ribosome">
+    <path d="M430 400 L 470 400" stroke="#F86F03" stroke-width="3" marker-end="url(#arrowhead4)"/>
+    
+    <!-- Dissociated ribosome subunits -->
+    <ellipse cx="520" cy="380" rx="40" ry="20" fill="#f0dfc0" stroke="#666" stroke-width="2"/>
+    <text x="520" y="385" font-family="Arial" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">60S</text>
+    
+    <ellipse cx="520" cy="430" rx="30" ry="15" fill="#e0c090" stroke="#666" stroke-width="2"/>
+    <text x="520" y="435" font-family="Arial" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">40S</text>
+    
+    <path d="M560 400 Q 580 400 600 400" stroke="#c06040" stroke-width="3" fill="none" stroke-dasharray="3,2"/>
+    <text x="610" y="400" font-family="Arial" font-size="13" fill="#c06040" font-weight="bold">mRNA</text>
+    
+    <text x="520" y="465" font-family="Arial" font-size="13" fill="#333" text-anchor="middle" font-style="italic">Ribosome Dissociation</text>
+    <text x="520" y="480" font-family="Arial" font-size="11" fill="#333" text-anchor="middle" font-style="italic">(GO:0032790)</text>
+  </g>
+  
+  <!-- Process Labels -->
+  <g id="process-labels">
+    <text x="375" y="330" font-family="Arial" font-size="15" fill="#555" text-anchor="middle" font-style="italic">No-Go Decay (GO:0070966)</text>
+    <text x="200" y="330" font-family="Arial" font-size="15" fill="#555" text-anchor="middle" font-style="italic">NMD (GO:0070478)</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" fill="#333" text-anchor="middle" font-weight="bold">Extraction of mRNA from Stalled Ribosomes</text>
+  <text x="400" y="65" font-family="Arial" font-size="16" fill="#555" text-anchor="middle" font-style="italic">Ribosome rescue and mRNA degradation pathway</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="700" height="80" rx="10" ry="10" fill="white" stroke="#999" stroke-width="1"/>
+  <text x="70" y="540" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Legend:</text>
+  
+  <!-- Arrow colors -->
+  <line x1="70" y1="555" x2="90" y2="555" stroke="#3876BF" stroke-width="3"/>
+  <text x="100" y="560" font-family="Arial" font-size="12" fill="#333">mRNA Extraction by SKI Complex (GO:0070478)</text>
+  
+  <line x1="70" y1="575" x2="90" y2="575" stroke="#6528F7" stroke-width="3"/>
+  <text x="100" y="580" font-family="Arial" font-size="12" fill="#333">Recruitment of PELO by HBS1L</text>
+  
+  <line x1="70" y1="595" x2="90" y2="595" stroke="#A91079" stroke-width="3"/>
+  <text x="100" y="600" font-family="Arial" font-size="12" fill="#333">Stalled Ribosome Sensing (GO:0070966)</text>
+  
+  <line x1="350" y1="555" x2="370" y2="555" stroke="#F86F03" stroke-width="3"/>
+  <text x="380" y="560" font-family="Arial" font-size="12" fill="#333">Ribosome Dissociation (GO:0032790)</text>
+  
+  <!-- Abbreviations -->
+  <text x="350" y="580" font-family="Arial" font-size="12" fill="#333">NMD: Nonsense-Mediated Decay</text>
+  <text x="350" y="600" font-family="Arial" font-size="12" fill="#333">SKI: Superkiller Complex</text>
+  
+  <!-- Arrow definitions with different colors -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3876BF"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6528F7"/>
+    </marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#A91079"/>
+    </marker>
+    <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F86F03"/>
+    </marker>
+  </defs>
+</svg>

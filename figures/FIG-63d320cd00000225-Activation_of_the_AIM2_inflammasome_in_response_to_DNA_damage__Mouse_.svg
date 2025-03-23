@@ -1,0 +1,140 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Outline -->
+  <ellipse cx="400" cy="320" rx="370" ry="250" fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="300" cy="280" rx="120" ry="100" fill="#e6f3ff" stroke="#333" stroke-width="2"/>
+  <text x="300" y="280" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Nucleus</text>
+  
+  <!-- DNA Damage Site -->
+  <circle cx="280" cy="240" r="40" fill="#ffe6e6" stroke="#ff0000" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="280" y="230" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">DNA Damage</text>
+  <text x="280" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(double-strand break)</text>
+  
+  <!-- Step 1 -->
+  <circle cx="230" cy="200" r="18" fill="#ff9900" stroke="#333" stroke-width="2"/>
+  <text x="230" y="205" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">1</text>
+  
+  <!-- AIM2 at damage site -->
+  <rect x="260" y="265" width="40" height="20" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="280" y="280" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">AIM2</text>
+  
+  <!-- DNA binding of AIM2 -->
+  <path d="M280 240 L280 265" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="310" y="255" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">DNA binding</text>
+  
+  <!-- Step 2 -->
+  <circle cx="330" cy="285" r="18" fill="#ff9900" stroke="#333" stroke-width="2"/>
+  <text x="330" y="290" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">2</text>
+  
+  <!-- Cytoplasmic AIM2 Signaling -->
+  <rect x="360" y="320" width="40" height="20" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="380" y="335" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">AIM2</text>
+  
+  <!-- Pathway from nuclear to cytoplasmic AIM2 -->
+  <path d="M300 285 C330 300, 340 310, 360 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="330" y="310" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">PRR activity</text>
+  
+  <!-- Inflammasome Assembly -->
+  <circle cx="440" cy="320" r="40" fill="#e6fff2" stroke="#333" stroke-width="2"/>
+  <text x="440" y="315" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">AIM2</text>
+  <text x="440" y="335" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Inflammasome</text>
+  
+  <!-- Step 3 -->
+  <circle cx="405" cy="280" r="18" fill="#ff9900" stroke="#333" stroke-width="2"/>
+  <text x="405" y="285" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">3</text>
+  
+  <!-- AIM2 to Inflammasome -->
+  <path d="M400 320 L400 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="410" y="300" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Adaptor</text>
+  <text x="410" y="315" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">activity</text>
+  
+  <!-- Caspase-1 Inactive -->
+  <rect x="440" y="250" width="60" height="20" rx="5" ry="5" fill="#d9d9d9" stroke="#333" stroke-width="2"/>
+  <text x="470" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Caspase-1</text>
+  
+  <!-- Caspase-1 Activation -->
+  <path d="M440 280 L440 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="520" y="320" width="60" height="20" rx="5" ry="5" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="550" y="335" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Caspase-1</text>
+  <text x="550" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(active)</text>
+  
+  <!-- Step 4 -->
+  <circle cx="500" cy="290" r="18" fill="#ff9900" stroke="#333" stroke-width="2"/>
+  <text x="500" y="295" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">4</text>
+  
+  <!-- Inflammasome to Active Caspase-1 -->
+  <path d="M480 320 L520 320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="500" y="315" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Activation</text>
+  
+  <!-- Inactive GSDMD -->
+  <rect x="520" y="380" width="60" height="20" rx="5" ry="5" fill="#d9d9d9" stroke="#333" stroke-width="2"/>
+  <text x="550" y="395" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">GSDMD</text>
+  
+  <!-- Caspase-1 to GSDMD -->
+  <path d="M550 340 L550 380" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="580" y="360" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Cleaves</text>
+  
+  <!-- Active GSDMD -->
+  <rect x="520" y="440" width="60" height="20" rx="5" ry="5" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="550" y="455" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">GSDMD</text>
+  <text x="550" y="470" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(active)</text>
+  
+  <!-- Step 5 -->
+  <circle cx="610" cy="410" r="18" fill="#ff9900" stroke="#333" stroke-width="2"/>
+  <text x="610" y="415" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">5</text>
+  
+  <!-- GSDMD Activation -->
+  <path d="M550 400 L550 440" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="620" y="420" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">PI(4,5)P₂ binding</text>
+  
+  <!-- Cell Membrane -->
+  <path d="M100 480 C250 550, 550 550, 700 480" stroke="#333" stroke-width="4" fill="none"/>
+  <text x="400" y="570" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Plasma Membrane</text>
+  
+  <!-- GSDMD Pore Formation -->
+  <path d="M550 460 L550 500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M500 500 C520 520, 580 520, 600 500" stroke="#99ccff" stroke-width="3" fill="none"/>
+  <text x="550" y="530" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Pore Formation</text>
+  
+  <!-- Pyroptosis Outcome -->
+  <text x="650" y="510" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333" stroke="#ff6666" stroke-width="0.5">Pyroptosis</text>
+  <path d="M600 510 L630 510" stroke="#ff6666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Inflammatory Response -->
+  <text x="200" y="510" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333" stroke="#ff9900" stroke-width="0.5">Inflammatory Response</text>
+  <path d="M500 510 L270 510" stroke="#ff9900" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="40" width="220" height="180" rx="10" ry="10" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="160" y="60" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="60" y="70" width="20" height="10" rx="3" ry="3" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="130" y="80" font-family="Arial" font-size="13" text-anchor="start" fill="#333">AIM2</text>
+  
+  <rect x="60" y="90" width="20" height="10" rx="3" ry="3" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="130" y="100" font-family="Arial" font-size="13" text-anchor="start" fill="#333">Caspase-1 (active)</text>
+  
+  <rect x="60" y="110" width="20" height="10" rx="3" ry="3" fill="#99ccff" stroke="#333" stroke-width="1"/>
+  <text x="130" y="120" font-family="Arial" font-size="13" text-anchor="start" fill="#333">GSDMD (active)</text>
+  
+  <circle cx="70" cy="140" r="10" fill="#e6fff2" stroke="#333" stroke-width="1"/>
+  <text x="130" y="145" font-family="Arial" font-size="13" text-anchor="start" fill="#333">Inflammasome complex</text>
+  
+  <circle cx="70" cy="165" r="10" fill="#ffe6e6" stroke="#ff0000" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="130" y="170" font-family="Arial" font-size="13" text-anchor="start" fill="#333">DNA damage site</text>
+  
+  <circle cx="70" cy="190" r="10" fill="#ff9900" stroke="#333" stroke-width="1"/>
+  <text x="130" y="195" font-family="Arial" font-size="13" text-anchor="start" fill="#333">Process step number</text>
+  
+  <!-- Title -->
+  <text x="400" y="25" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Activation of the AIM2 inflammasome in response to DNA damage</text>
+</svg>

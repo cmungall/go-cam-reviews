@@ -1,0 +1,112 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Poxvirus OPG038 Inhibition of Host CD80/CD86</text>
+  
+  <!-- Cells -->
+  <!-- Antigen Presenting Cell -->
+  <ellipse cx="250" cy="300" rx="150" ry="200" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="250" y="180" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Professional Antigen</text>
+  <text x="250" y="200" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Presenting Cell</text>
+  
+  <!-- T Cell -->
+  <ellipse cx="600" cy="300" rx="120" ry="150" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2"/>
+  <text x="600" y="210" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">T Cell</text>
+  
+  <!-- Membrane proteins -->
+  <!-- CD80 -->
+  <rect x="360" y="250" width="40" height="20" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="380" y="264" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">CD80</text>
+  
+  <!-- CD86 -->
+  <rect x="360" y="290" width="40" height="20" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="380" y="304" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">CD86</text>
+  
+  <!-- CD28 -->
+  <rect x="480" y="270" width="40" height="20" fill="#99ccff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="284" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">CD28</text>
+  
+  <!-- OPG038 Virus Protein -->
+  <circle cx="425" cy="330" r="25" fill="#ffcc99" stroke="#ff9900" stroke-width="2"/>
+  <text x="425" y="334" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">OPG038</text>
+  
+  <!-- Interactions -->
+  <!-- Sequestering arrows from OPG038 to CD80/CD86 -->
+  <line x1="425" y1="305" x2="390" y2="270" stroke="#ff0000" stroke-width="2" marker-end="url(#inhibitArrow)"/>
+  <line x1="390" y1="270" x2="425" y2="305" stroke="#ff0000" stroke-width="2" marker-end="url(#inhibitArrow)"/>
+  
+  <line x1="425" y1="305" x2="390" y2="290" stroke="#ff0000" stroke-width="2" marker-end="url(#inhibitArrow)"/>
+  <line x1="390" y1="290" x2="425" y2="305" stroke="#ff0000" stroke-width="2" marker-end="url(#inhibitArrow)"/>
+  
+  <!-- Normal pathway (dimmed to show inhibition) -->
+  <line x1="400" y1="260" x2="480" y2="270" stroke="#999999" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="400" y1="300" x2="480" y2="280" stroke="#999999" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  
+  <!-- Activation pathway -->
+  <path d="M 520 270 C 540 260, 560 250, 580 250" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="550" y="235" font-family="Arial" font-size="13" font-weight="bold" fill="#333333">T cell activation</text>
+  <text x="550" y="250" font-family="Arial" font-size="13" font-weight="bold" fill="#333333">(inhibited)</text>
+  
+  <!-- Biological processes -->
+  <rect x="150" y="100" width="180" height="40" fill="#ffd700" stroke="#996515" stroke-width="2" rx="10" ry="10" opacity="0.7"/>
+  <text x="240" y="125" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Negative regulation of</text>
+  <text x="240" y="140" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">T cell mediated immunity</text>
+  
+  <rect x="425" y="100" width="180" height="40" fill="#ffd700" stroke="#996515" stroke-width="2" rx="10" ry="10" opacity="0.7"/>
+  <text x="515" y="125" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Symbiont-mediated suppression</text>
+  <text x="515" y="140" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">of host T-cell immune response</text>
+  
+  <rect x="600" y="150" width="120" height="25" fill="#ffd700" stroke="#996515" stroke-width="2" rx="10" ry="10" opacity="0.7"/>
+  <text x="660" y="167" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">T cell activation</text>
+  
+  <!-- Extracellular Space Label -->
+  <text x="425" y="400" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Plasma membrane labels -->
+  <text x="290" y="260" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Plasma</text>
+  <text x="290" y="280" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">membrane</text>
+  
+  <text x="560" y="260" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Plasma</text>
+  <text x="560" y="280" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">membrane</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333333"/>
+    </marker>
+    <marker id="inhibitArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ff0000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="400" width="180" height="180" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="690" y="420" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="615" y="430" width="20" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="1" rx="3" ry="3"/>
+  <text x="640" y="442" font-family="Arial" font-size="12" text-anchor="start">CD80/CD86</text>
+  
+  <rect x="615" y="455" width="20" height="15" fill="#99ccff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="640" y="467" font-family="Arial" font-size="12" text-anchor="start">CD28</text>
+  
+  <circle cx="625" cy="485" r="10" fill="#ffcc99" stroke="#ff9900" stroke-width="1"/>
+  <text x="640" y="489" font-family="Arial" font-size="12" text-anchor="start">OPG038 (Poxvirus)</text>
+  
+  <line x1="615" y1="510" x2="635" y2="510" stroke="#ff0000" stroke-width="2" marker-end="url(#inhibitArrow)"/>
+  <text x="640" y="514" font-family="Arial" font-size="12" text-anchor="start">Inhibition/Sequestering</text>
+  
+  <line x1="615" y1="535" x2="635" y2="535" stroke="#333333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="640" y="539" font-family="Arial" font-size="12" text-anchor="start">Normal pathway</text>
+  
+  <rect x="615" y="555" width="20" height="15" fill="#d1e7dd" stroke="#198754" stroke-width="1"/>
+  <text x="640" y="567" font-family="Arial" font-size="12" text-anchor="start">APC</text>
+  
+  <rect x="700" y="555" width="20" height="15" fill="#cfe2ff" stroke="#0d6efd" stroke-width="1"/>
+  <text x="725" y="567" font-family="Arial" font-size="12" text-anchor="start">T Cell</text>
+  
+  <rect x="615" y="575" width="20" height="15" fill="#ffd700" stroke="#996515" stroke-width="1" opacity="0.7"/>
+  <text x="640" y="587" font-family="Arial" font-size="12" text-anchor="start">Biological process</text>
+</svg>

@@ -1,0 +1,130 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">IL-23 Signaling Pathway (Human)</text>
+  
+  <!-- Cell Membrane -->
+  <rect x="100" y="180" width="600" height="10" fill="#888888" rx="2"/>
+  <text x="120" y="170" font-family="Arial" font-size="16">Plasma Membrane</text>
+  
+  <!-- Extracellular Space -->
+  <text x="120" y="110" font-family="Arial" font-size="16" font-style="italic">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="120" y="220" font-family="Arial" font-size="16" font-style="italic">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="450" cy="450" rx="150" ry="100" fill="#e6e6fa" stroke="#000000" stroke-width="2"/>
+  <text x="450" y="450" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Nucleus (GO:0005634)</text>
+  
+  <!-- IL-23 Complex -->
+  <circle cx="250" cy="120" r="35" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="250" y="120" font-family="Arial" font-size="14" text-anchor="middle">IL-23</text>
+  <text x="250" y="138" font-family="Arial" font-size="11" text-anchor="middle">CPX-3290</text>
+  
+  <!-- IL-23 Receptor Complex -->
+  <rect x="230" y="180" width="40" height="20" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="250" y="194" font-family="Arial" font-size="12" text-anchor="middle">IL23R</text>
+  <text x="250" y="206" font-family="Arial" font-size="10" text-anchor="middle">Q5VWK5</text>
+  
+  <!-- IL-12RB1 -->
+  <rect x="280" y="180" width="40" height="20" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="300" y="194" font-family="Arial" font-size="12" text-anchor="middle">IL12RB1</text>
+  <text x="300" y="206" font-family="Arial" font-size="10" text-anchor="middle">P42701</text>
+  
+  <!-- JAK2 -->
+  <rect x="230" y="230" width="40" height="20" fill="#99ff99" stroke="#009900" stroke-width="2"/>
+  <text x="250" y="244" font-family="Arial" font-size="12" text-anchor="middle">JAK2</text>
+  <text x="250" y="256" font-family="Arial" font-size="10" text-anchor="middle">O60674</text>
+  
+  <!-- TYK2 -->
+  <rect x="280" y="230" width="40" height="20" fill="#99ff99" stroke="#009900" stroke-width="2"/>
+  <text x="300" y="244" font-family="Arial" font-size="12" text-anchor="middle">TYK2</text>
+  <text x="300" y="256" font-family="Arial" font-size="10" text-anchor="middle">P29597</text>
+  
+  <!-- STAT3 -->
+  <rect x="350" y="300" width="40" height="20" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="370" y="314" font-family="Arial" font-size="12" text-anchor="middle">STAT3</text>
+  <text x="370" y="326" font-family="Arial" font-size="10" text-anchor="middle">P40763</text>
+  
+  <!-- STAT4 -->
+  <rect x="420" y="300" width="40" height="20" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="440" y="314" font-family="Arial" font-size="12" text-anchor="middle">STAT4</text>
+  <text x="440" y="326" font-family="Arial" font-size="10" text-anchor="middle">Q14765</text>
+  
+  <!-- STAT3 in nucleus -->
+  <rect x="400" y="420" width="40" height="20" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="420" y="434" font-family="Arial" font-size="12" text-anchor="middle">STAT3</text>
+  <text x="420" y="446" font-family="Arial" font-size="10" text-anchor="middle">P40763</text>
+  
+  <!-- STAT4 in nucleus -->
+  <rect x="470" y="420" width="40" height="20" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="490" y="434" font-family="Arial" font-size="12" text-anchor="middle">STAT4</text>
+  <text x="490" y="446" font-family="Arial" font-size="10" text-anchor="middle">Q14765</text>
+  
+  <!-- Connection lines with consistent arrows -->
+  <!-- IL-23 to receptor -->
+  <line x1="250" y1="155" x2="250" y2="180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Receptor to JAK2/TYK2 -->
+  <line x1="250" y1="200" x2="250" y2="230" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="300" y1="200" x2="300" y2="230" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- JAK2/TYK2 to STATs -->
+  <path d="M 250,250 Q 300,275 350,300" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 300,250 Q 350,275 420,300" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- STAT3/4 to nucleus -->
+  <path d="M 370,320 Q 380,370 400,420" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 440,320 Q 450,370 470,420" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Annotations -->
+  <text x="160" y="100" font-family="Arial" font-size="14" fill="#cc0000">Cytokine Activity (GO:0005125)</text>
+  
+  <!-- Cell component labels -->
+  <text x="330" y="176" font-family="Arial" font-size="12" font-style="italic">Cell Surface (GO:0009986)</text>
+  <text x="330" y="225" font-family="Arial" font-size="12" font-style="italic">Cytoplasmic Side (GO:0009898)</text>
+  
+  <!-- Pathway label -->
+  <text x="100" y="550" font-family="Arial" font-size="16" font-style="italic">Interleukin-23-mediated Signaling Pathway (GO:0038155)</text>
+  
+  <!-- Parts of IL-23 complex -->
+  <text x="140" y="115" font-family="Arial" font-size="12">IL23A (Q9NPF7) +</text>
+  <text x="140" y="130" font-family="Arial" font-size="12">IL12B (P29460)</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="520" width="180" height="100" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="590" y="535" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="590" y="545" width="15" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="610" y="557" font-family="Arial" font-size="12">Cytokine</text>
+  
+  <rect x="590" y="565" width="15" height="15" fill="#99ccff" stroke="#0066cc" stroke-width="1"/>
+  <text x="610" y="577" font-family="Arial" font-size="12">Receptor</text>
+  
+  <rect x="590" y="585" width="15" height="15" fill="#99ff99" stroke="#009900" stroke-width="1"/>
+  <text x="610" y="597" font-family="Arial" font-size="12">Tyrosine Kinase</text>
+  
+  <rect x="590" y="605" width="15" height="15" fill="#ffcc99" stroke="#ff6600" stroke-width="1"/>
+  <text x="610" y="617" font-family="Arial" font-size="12">Transcription Factor</text>
+  
+  <!-- Additional function annotations -->
+  <text x="380" y="185" font-family="Arial" font-size="12" fill="#0066cc">Cytokine Receptor Activity (GO:0004896)</text>
+  <text x="380" y="200" font-family="Arial" font-size="12" fill="#0066cc">Coreceptor Activity (GO:0015026)</text>
+  
+  <text x="380" y="235" font-family="Arial" font-size="12" fill="#009900">Protein Tyrosine Kinase</text>
+  <text x="380" y="250" font-family="Arial" font-size="12" fill="#009900">Activity (GO:0004713)</text>
+  
+  <text x="500" y="450" font-family="Arial" font-size="12" fill="#ff6600">DNA-binding Transcription</text>
+  <text x="500" y="465" font-family="Arial" font-size="12" fill="#ff6600">Factor Activity (GO:0003700)</text>
+</svg>

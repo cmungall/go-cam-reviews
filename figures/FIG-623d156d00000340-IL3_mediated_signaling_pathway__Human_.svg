@@ -1,0 +1,108 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell components -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Cell membrane -->
+  <path d="M50,250 Q400,200 750,250 Q400,300 50,250" fill="#e6f2ff" stroke="#99ccff" stroke-width="3" />
+  <path d="M50,250 Q400,200 750,250" fill="none" stroke="#0066cc" stroke-width="4" stroke-dasharray="5,3" />
+  <path d="M50,250 Q400,300 750,250" fill="none" stroke="#0066cc" stroke-width="4" />
+
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="450" rx="150" ry="100" fill="#e6e6ff" stroke="#9999ff" stroke-width="3" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">IL3-Mediated Signaling Pathway (Human)</text>
+  
+  <!-- Compartment labels -->
+  <text x="400" y="170" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic">Extracellular space (GO:0005615)</text>
+  <text x="650" y="350" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic">Cytoplasm</text>
+  <text x="400" y="450" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic">Nucleus (GO:0005634)</text>
+  
+  <!-- IL3 cytokine -->
+  <circle cx="400" cy="120" r="30" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="400" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IL3</text>
+  <text x="400" y="90" font-family="Arial" font-size="12" text-anchor="middle">Cytokine activity (GO:0005125)</text>
+  
+  <!-- IL3RA receptor -->
+  <rect x="350" y="230" width="60" height="40" fill="#99cc99" stroke="#006600" stroke-width="2" rx="5" ry="5" />
+  <text x="380" y="255" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IL3RA</text>
+  <text x="380" y="215" font-family="Arial" font-size="10" text-anchor="middle">IL3 receptor (GO:0004912)</text>
+  
+  <!-- CSF2RB coreceptor -->
+  <rect x="420" y="230" width="60" height="40" fill="#99cccc" stroke="#006666" stroke-width="2" rx="5" ry="5" />
+  <text x="450" y="255" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CSF2RB</text>
+  <text x="450" y="215" font-family="Arial" font-size="10" text-anchor="middle">Coreceptor (GO:0015026)</text>
+  
+  <!-- JAK2 kinase -->
+  <rect x="385" y="280" width="60" height="30" fill="#cc99ff" stroke="#6600cc" stroke-width="2" rx="5" ry="5" />
+  <text x="415" y="300" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">JAK2</text>
+  <text x="415" y="315" font-family="Arial" font-size="10" text-anchor="middle">Tyrosine kinase (GO:0004713)</text>
+  <text x="485" y="290" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Extrinsic component of</text>
+  <text x="485" y="302" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">plasma membrane (GO:0019897)</text>
+  
+  <!-- STAT5A transcription factor -->
+  <polygon points="400,400 425,430 400,460 375,430" fill="#ffcc99" stroke="#cc6600" stroke-width="2" />
+  <text x="400" y="435" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">STAT5A</text>
+  <text x="400" y="480" font-family="Arial" font-size="10" text-anchor="middle">DNA-binding transcription factor (GO:0003700)</text>
+  
+  <!-- Phosphorylated STAT5A -->
+  <circle cx="385" cy="430" r="5" fill="#ff0000" stroke="#990000" stroke-width="1" />
+  <text x="385" y="425" font-family="Arial" font-size="10" text-anchor="middle">P</text>
+  
+  <!-- Pathway arrows -->
+  <path d="M400,150 L400,220" fill="none" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="415" y="190" font-family="Arial" font-size="12" text-anchor="middle">Binding</text>
+  
+  <path d="M380,270 L380,280" fill="none" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="350" y="275" font-family="Arial" font-size="12" text-anchor="middle">Activation</text>
+  
+  <path d="M415,310 L415,390" fill="none" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="440" y="350" font-family="Arial" font-size="12" text-anchor="middle">Phosphorylation</text>
+  
+  <!-- Binding arrow between receptors -->
+  <path d="M410,245 L420,245" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="415" y="235" font-family="Arial" font-size="10" text-anchor="middle">Complex</text>
+  
+  <!-- STAT5A translocation arrow -->
+  <path d="M400,470 C430,520 470,520 500,450" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="450" y="520" font-family="Arial" font-size="12" text-anchor="middle">Translocation to</text>
+  <text x="450" y="535" font-family="Arial" font-size="12" text-anchor="middle">bind DNA</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Pathway label -->
+  <text x="600" y="100" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic">GO:0038156</text>
+  <text x="600" y="120" font-family="Arial" font-size="14" text-anchor="middle">interleukin-3-mediated signaling pathway</text>
+  
+  <!-- Legend box -->
+  <rect x="50" y="470" width="230" height="120" fill="white" stroke="black" stroke-width="1" />
+  <text x="60" y="490" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Legend items -->
+  <circle cx="70" cy="510" r="7" fill="#ff9999" stroke="#cc0000" stroke-width="1" />
+  <text x="85" y="513" font-family="Arial" font-size="12">IL3 (P08700) - Cytokine</text>
+  
+  <rect x="60" y="525" width="14" height="14" fill="#99cc99" stroke="#006600" stroke-width="1" rx="2" ry="2" />
+  <text x="85" y="535" font-family="Arial" font-size="12">IL3RA (P26951) - Receptor</text>
+  
+  <rect x="60" y="545" width="14" height="14" fill="#99cccc" stroke="#006666" stroke-width="1" rx="2" ry="2" />
+  <text x="85" y="555" font-family="Arial" font-size="12">CSF2RB (P32927) - Coreceptor</text>
+  
+  <rect x="60" y="565" width="14" height="14" fill="#cc99ff" stroke="#6600cc" stroke-width="1" rx="2" ry="2" />
+  <text x="85" y="575" font-family="Arial" font-size="12">JAK2 (O60674) - Kinase</text>
+  
+  <polygon points="67,585 74,592 67,599 60,592" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="85" y="595" font-family="Arial" font-size="12">STAT5A (P42229) - TF</text>
+  
+  <!-- Note about implicit details -->
+  <rect x="550" y="470" width="230" height="70" fill="#ffffcc" stroke="#cccc00" stroke-width="1" />
+  <text x="560" y="490" font-family="Arial" font-size="14" font-weight="bold">Note:</text>
+  <text x="560" y="510" font-family="Arial" font-size="12">STAT5A phosphorylation and</text>
+  <text x="560" y="525" font-family="Arial" font-size="12">translocation details are inferred</text>
+  <text x="560" y="540" font-family="Arial" font-size="12">from canonical JAK-STAT signaling</text>
+</svg>

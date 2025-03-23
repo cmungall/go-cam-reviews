@@ -1,0 +1,106 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <path d="M50,150 Q400,50 750,150 Q750,400 400,530 Q50,400 50,150" fill="#f8f8f8" stroke="#333" stroke-width="3"/>
+  
+  <!-- Extracellular space label -->
+  <text x="400" y="80" font-family="Arial" font-size="28" text-anchor="middle" fill="#555">Extracellular Space</text>
+
+  <!-- Plasma membrane label -->
+  <text x="100" y="150" font-family="Arial" font-size="22" text-anchor="start" fill="#333">Plasma Membrane</text>
+  
+  <!-- Cytosol label - repositioned -->
+  <text x="150" y="380" font-family="Arial" font-size="28" text-anchor="start" fill="#555">Cytosol</text>
+  
+  <!-- NLRP6 initial state -->
+  <circle cx="180" cy="300" r="35" fill="#8ED1FC" stroke="#333" stroke-width="2"/>
+  <text x="180" y="305" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">NLRP6</text>
+  
+  <!-- dsRNA binding -->
+  <path d="M100,250 Q120,240 140,250 Q160,260 180,250" stroke="#663300" stroke-width="3" fill="none"/>
+  <text x="140" y="230" font-family="Arial" font-size="18" text-anchor="middle" fill="#663300">dsRNA</text>
+  <path d="M100,250 L180,300" stroke="#333" stroke-dasharray="5,5" stroke-width="2" fill="none"/>
+  <text x="130" y="280" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">binds</text>
+  
+  <!-- LTA binding -->
+  <rect x="240" y="220" width="60" height="25" fill="#FFC0CB" stroke="#333" stroke-width="2"/>
+  <text x="270" y="238" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">LTA</text>
+  <path d="M250,230 L180,300" stroke="#333" stroke-dasharray="5,5" stroke-width="2" fill="none"/>
+  <text x="230" y="260" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">binds</text>
+  
+  <!-- NLRP6 Inflammasome Assembly - repositioned and redesigned -->
+  <circle cx="330" cy="370" r="60" fill="#8ED1FC" stroke="#333" stroke-width="3"/>
+  <path d="M330,370 m-42,-42 a60,60 0 1,0 84,0 a60,60 0 1,0 -84,0" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="330" y="360" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">NLRP6</text>
+  <text x="330" y="385" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Inflammasome</text>
+  <path d="M215,310 L280,340" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="250" y="315" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">assembles</text>
+
+  <!-- Caspase-1 activation - repositioned -->
+  <rect x="450" y="300" width="80" height="35" rx="5" ry="5" fill="#FFA07A" stroke="#333" stroke-width="2"/>
+  <text x="490" y="323" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">CASP1</text>
+  <path d="M390,370 L450,320" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="420" y="355" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">activates</text>
+  
+  <!-- IL-1β processing -->
+  <rect x="575" y="230" width="60" height="35" rx="5" ry="5" fill="#90EE90" stroke="#333" stroke-width="2"/>
+  <text x="605" y="253" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">IL-1β</text>
+  <path d="M530,300 L575,250" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="552" y="285" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">cleaves</text>
+  
+  <!-- IL-18 processing -->
+  <rect x="575" y="300" width="60" height="35" rx="5" ry="5" fill="#90EE90" stroke="#333" stroke-width="2"/>
+  <text x="605" y="323" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">IL-18</text>
+  <path d="M530,320 L575,320" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="552" y="345" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">cleaves</text>
+  
+  <!-- GSDMD activation -->
+  <rect x="450" y="400" width="80" height="35" rx="5" ry="5" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <text x="490" y="423" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">GSDMD</text>
+  <path d="M390,390 L450,415" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="420" y="420" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">activates</text>
+  
+  <!-- GSDMD pore formation in membrane -->
+  <path d="M525,400 L625,200" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M605,170 a20,12 0 1,0 50,0 a20,12 0 1,0 -50,0" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <text x="630" y="155" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">GSDMD Pore</text>
+  
+  <!-- Cytokine secretion -->
+  <path d="M635,230 L685,150" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M635,300 L685,150" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="685" y="115" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Cytokine</text>
+  <text x="685" y="135" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Secretion</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="30" font-weight="bold" text-anchor="middle" fill="#333">NLRP6 Inflammasome Pathway</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="580" width="700" height="100" rx="10" ry="10" fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  <text x="70" y="605" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#333">Legend:</text>
+  
+  <!-- Protein symbol -->
+  <circle cx="100" cy="635" r="15" fill="#8ED1FC" stroke="#333" stroke-width="2"/>
+  <text x="130" y="640" font-family="Arial" font-size="16" text-anchor="start" fill="#333">Sensor Protein (NLRP6): Pattern recognition receptor</text>
+  
+  <!-- Enzyme symbol -->
+  <rect x="100" cy="655" width="30" height="30" rx="5" ry="5" fill="#FFA07A" stroke="#333" stroke-width="2"/>
+  <text x="130" y="670" font-family="Arial" font-size="16" text-anchor="start" fill="#333">Enzyme (CASP1): Caspase-1 protease</text>
+  
+  <!-- Cytokine symbol -->
+  <rect x="400" cy="635" width="30" height="30" rx="5" ry="5" fill="#90EE90" stroke="#333" stroke-width="2"/>
+  <text x="440" y="640" font-family="Arial" font-size="16" text-anchor="start" fill="#333">Cytokine (IL-1β, IL-18): Inflammatory mediators</text>
+  
+  <!-- Pore-forming symbol -->
+  <rect x="400" cy="655" width="30" height="30" rx="5" ry="5" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <text x="440" y="670" font-family="Arial" font-size="16" text-anchor="start" fill="#333">GSDMD: Pore-forming protein causing pyroptosis</text>
+  
+  <!-- PAMP symbol -->
+  <rect x="100" cy="615" width="30" height="15" fill="#FFC0CB" stroke="#333" stroke-width="2"/>
+  <text x="130" y="615" font-family="Arial" font-size="16" text-anchor="start" fill="#333">PAMPs (dsRNA, LTA): Pathogen-associated molecular patterns</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+</svg>

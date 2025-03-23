@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell compartments -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f8f8" />
+  
+  <!-- Cell outlines -->
+  <!-- CD4+ T Cell -->
+  <ellipse cx="200" cy="180" rx="140" ry="80" fill="#e6f2ff" stroke="#0066cc" stroke-width="3" />
+  <text x="200" y="130" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066cc">CD4+ T Cell</text>
+  
+  <!-- Lung Epithelial Cell -->
+  <ellipse cx="500" cy="380" rx="180" ry="100" fill="#e6ffe6" stroke="#009900" stroke-width="3" />
+  <text x="500" y="295" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#009900">Lung Epithelial Cell</text>
+  
+  <!-- Extracellular space label -->
+  <text x="400" y="80" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#666666">Extracellular Space</text>
+  
+  <!-- Nucleus of Epithelial Cell -->
+  <ellipse cx="500" cy="390" rx="60" ry="40" fill="#d9f2d9" stroke="#006600" stroke-width="2" />
+  <text x="500" y="395" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#006600">Nucleus</text>
+  
+  <!-- Proteins and Signaling Molecules -->
+  <!-- IL-22 -->
+  <circle cx="180" cy="200" r="20" fill="#ff9999" stroke="#cc0000" stroke-width="2.5" />
+  <text x="180" y="205" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">IL-22</text>
+  
+  <!-- IL-22 secretion arrow -->
+  <path d="M200 200 Q 280 220 350 240" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="280" y="215" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#cc0000">secretion</text>
+  
+  <!-- IL-22 in extracellular space -->
+  <circle cx="350" cy="240" r="20" fill="#ff9999" stroke="#cc0000" stroke-width="2.5" />
+  <text x="350" y="245" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">IL-22</text>
+  
+  <!-- IL-22RA1 receptor -->
+  <rect x="430" y="320" width="65" height="30" fill="#ccffcc" stroke="#009900" stroke-width="2.5" rx="5" ry="5" />
+  <text x="462" y="340" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">IL-22RA1</text>
+  
+  <!-- IL-22 binding to receptor -->
+  <path d="M360 255 Q 400 290 430 330" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="395" y="285" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#cc0000">binding</text>
+  
+  <!-- STAT3 activation -->
+  <rect x="470" y="380" width="50" height="25" fill="#ffcc99" stroke="#ff6600" stroke-width="2.5" rx="5" ry="5" />
+  <text x="495" y="397" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">STAT3</text>
+  
+  <!-- STAT3 signaling -->
+  <path d="M470 350 Q 485 365 490 380" fill="none" stroke="#ff6600" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="455" y="365" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff6600">activation</text>
+  
+  <!-- REG3A production -->
+  <rect x="550" y="380" width="60" height="25" fill="#ffff99" stroke="#cc9900" stroke-width="2.5" rx="5" ry="5" />
+  <text x="580" y="397" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">REG3A</text>
+  
+  <!-- REG3A activation arrow -->
+  <path d="M520 390 L 550 390" fill="none" stroke="#cc9900" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="535" y="380" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#cc9900">induces</text>
+  
+  <!-- REG3A secretion -->
+  <path d="M580 380 Q 580 330 580 280" fill="none" stroke="#cc9900" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="595" y="330" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#cc9900">secretion</text>
+  
+  <!-- REG3A in extracellular space -->
+  <rect x="550" y="240" width="60" height="25" fill="#ffff99" stroke="#cc9900" stroke-width="2.5" rx="5" ry="5" />
+  <text x="580" y="257" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">REG3A</text>
+  
+  <!-- EXTL3 receptor -->
+  <rect x="550" y="320" width="60" height="30" fill="#ccffcc" stroke="#009900" stroke-width="2.5" rx="5" ry="5" />
+  <text x="580" y="340" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">EXTL3</text>
+  
+  <!-- REG3A binding to EXTL3 -->
+  <path d="M580 265 L 580 320" fill="none" stroke="#cc9900" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="595" y="290" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#cc9900">binding</text>
+  
+  <!-- IL-33 and TSLP (inflammatory cytokines) -->
+  <circle cx="650" cy="200" r="20" fill="#cc99ff" stroke="#6600cc" stroke-width="2.5" />
+  <text x="650" y="205" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">IL-33</text>
+  
+  <circle cx="700" cy="200" r="20" fill="#cc99ff" stroke="#6600cc" stroke-width="2.5" />
+  <text x="700" y="205" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">TSLP</text>
+  
+  <!-- Inhibition lines - thicker and more prominent -->
+  <path d="M580 280 Q 620 240 650 220" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="5,3" />
+  <line x1="635" y1="225" x2="650" y2="215" stroke="#000000" stroke-width="3" />
+  <text x="600" y="245" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">inhibits</text>
+  
+  <path d="M580 280 Q 640 240 700 220" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="5,3" />
+  <line x1="685" y1="225" x2="700" y2="215" stroke="#000000" stroke-width="3" />
+  <text x="640" y="235" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">inhibits</text>
+  
+  <!-- Inflammatory process indications -->
+  <text x="675" y="170" font-family="Arial" font-size="14" font-style="italic" font-weight="bold" fill="#6600cc" text-anchor="middle">Inflammatory</text>
+  <text x="675" y="150" font-family="Arial" font-size="14" font-style="italic" font-weight="bold" fill="#6600cc" text-anchor="middle">Cytokines</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Pathway Legend -->
+  <rect x="30" y="480" width="740" height="100" fill="white" stroke="#666666" stroke-width="2" />
+  <text x="400" y="500" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">IL-22 and REG3A Regulation of Allergic Airway Inflammation</text>
+  
+  <!-- Legend items -->
+  <circle cx="70" cy="520" r="8" fill="#ff9999" stroke="#cc0000" stroke-width="1.5" />
+  <text x="85" y="524" font-family="Arial" font-size="13" font-weight="bold" text-anchor="start">IL-22 (Cytokine)</text>
+  
+  <rect x="170" y="514" width="40" height="12" fill="#ffff99" stroke="#cc9900" stroke-width="1.5" rx="3" ry="3" />
+  <text x="220" y="524" font-family="Arial" font-size="13" font-weight="bold" text-anchor="start">REG3A (Hormone)</text>
+  
+  <rect x="350" y="514" width="40" height="12" fill="#ccffcc" stroke="#009900" stroke-width="1.5" rx="3" ry="3" />
+  <text x="400" y="524" font-family="Arial" font-size="13" font-weight="bold" text-anchor="start">Receptors (IL-22RA1, EXTL3)</text>
+  
+  <rect x="350" y="540" width="40" height="12" fill="#ffcc99" stroke="#ff6600" stroke-width="1.5" rx="3" ry="3" />
+  <text x="400" y="550" font-family="Arial" font-size="13" font-weight="bold" text-anchor="start">Transcription Factor (STAT3)</text>
+  
+  <circle cx="70" cy="540" r="8" fill="#cc99ff" stroke="#6600cc" stroke-width="1.5" />
+  <text x="85" y="544" font-family="Arial" font-size="13" font-weight="bold" text-anchor="start">Inflammatory Cytokines (IL-33, TSLP)</text>
+  
+  <line x1="570" y1="520" x2="600" y2="520" stroke="#000000" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="585" y1="520" x2="585" y2="530" stroke="#000000" stroke-width="2" />
+  <text x="610" y="524" font-family="Arial" font-size="13" font-weight="bold" text-anchor="start">Inhibition</text>
+  
+  <text x="70" y="570" font-family="Arial" font-size="12" font-style="italic" text-anchor="start">This pathway illustrates how IL-22 and REG3A negatively regulate allergic airway inflammation by inhibiting the inflammatory cytokines IL-33 and TSLP.</text>
+</svg>

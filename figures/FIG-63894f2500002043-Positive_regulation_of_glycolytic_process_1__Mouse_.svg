@@ -1,0 +1,106 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outline -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f8f8" />
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9ff" stroke="#cccccc" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Cell labels -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Positive Regulation of Glycolytic Process (Mouse)</text>
+  <text x="650" y="580" font-family="Arial" font-size="16" text-anchor="middle">Cytosol (GO:0005829)</text>
+  
+  <!-- Proteins -->
+  <g id="ppp2ca">
+    <rect x="100" y="150" width="120" height="60" rx="10" ry="10" fill="#a6cee3" stroke="#333333" stroke-width="2" />
+    <text x="160" y="175" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Ppp2ca</text>
+    <text x="160" y="195" font-family="Arial" font-size="13" text-anchor="middle">Protein phosphatase</text>
+  </g>
+  
+  <g id="gpi1">
+    <rect x="100" y="350" width="120" height="60" rx="10" ry="10" fill="#b2df8a" stroke="#333333" stroke-width="2" />
+    <text x="160" y="375" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Gpi1</text>
+    <text x="160" y="395" font-family="Arial" font-size="13" text-anchor="middle">G6P isomerase</text>
+  </g>
+  
+  <g id="pfkfb1">
+    <rect x="320" y="250" width="120" height="60" rx="10" ry="10" fill="#fb9a99" stroke="#333333" stroke-width="2" />
+    <text x="380" y="275" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Pfkfb1</text>
+    <text x="380" y="295" font-family="Arial" font-size="13" text-anchor="middle">PFK-2/FBPase-2</text>
+  </g>
+  
+  <g id="pfkl">
+    <rect x="580" y="250" width="120" height="60" rx="10" ry="10" fill="#fdbf6f" stroke="#333333" stroke-width="2" />
+    <text x="640" y="275" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Pfkl</text>
+    <text x="640" y="295" font-family="Arial" font-size="13" text-anchor="middle">PFK-1</text>
+  </g>
+  
+  <!-- Metabolites and processes -->
+  <g id="f26bp">
+    <ellipse cx="490" cy="250" rx="40" ry="25" fill="#ffffb3" stroke="#333333" stroke-width="1.5" />
+    <text x="490" y="245" font-family="Arial" font-size="13" text-anchor="middle">Fructose-2,6-</text>
+    <text x="490" y="260" font-family="Arial" font-size="13" text-anchor="middle">bisphosphate</text>
+  </g>
+  
+  <g id="glycolysis">
+    <rect x="580" y="380" width="120" height="60" rx="15" ry="15" fill="#d9d9d9" stroke="#333333" stroke-width="1.5" />
+    <text x="640" y="405" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">Glycolytic</text>
+    <text x="640" y="425" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">Process</text>
+    <text x="640" y="445" font-family="Arial" font-size="12" text-anchor="middle">(via Fructose-6-P)</text>
+  </g>
+  
+  <!-- Arrows -->
+  <g id="arrows" stroke="#333333" stroke-width="2" fill="none">
+    <!-- Ppp2ca -> Pfkfb1 -->
+    <path d="M220 180 Q270 180 300 250" marker-end="url(#arrowhead)" />
+    <rect x="225" y="145" width="80" height="35" fill="#ffffff" fill-opacity="0.8" rx="5" ry="5" />
+    <text x="265" y="160" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">activates by</text>
+    <text x="265" y="175" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">dephosphorylation</text>
+    
+    <!-- Gpi1 -> Pfkfb1 -->
+    <path d="M220 350 Q270 350 300 310" marker-end="url(#arrowhead)" />
+    <rect x="225" y="350" width="80" height="35" fill="#ffffff" fill-opacity="0.8" rx="5" ry="5" />
+    <text x="265" y="365" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">positively</text>
+    <text x="265" y="380" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">regulates</text>
+    
+    <!-- Pfkfb1 -> F26BP -->
+    <path d="M440 260 L450 250" marker-end="url(#arrowhead)" />
+    <rect x="420" y="215" width="70" height="20" fill="#ffffff" fill-opacity="0.8" rx="5" ry="5" />
+    <text x="455" y="230" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">synthesizes</text>
+    
+    <!-- F26BP -> Pfkl -->
+    <path d="M530 250 L580 260" marker-end="url(#arrowhead)" />
+    <rect x="520" y="215" width="60" height="35" fill="#ffffff" fill-opacity="0.8" rx="5" ry="5" />
+    <text x="550" y="230" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">allosteric</text>
+    <text x="550" y="245" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">activator</text>
+    
+    <!-- Pfkl -> Glycolysis -->
+    <path d="M640 310 L640 380" marker-end="url(#arrowhead)" />
+    <rect x="630" y="330" width="70" height="35" fill="#ffffff" fill-opacity="0.8" rx="5" ry="5" />
+    <text x="665" y="345" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">catalyzes</text>
+    <text x="665" y="360" font-family="Arial" font-size="13" text-anchor="middle" fill="#000000">key step</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="470" width="280" height="120" fill="white" stroke="#333333" stroke-width="1" />
+  <text x="60" y="490" font-family="Arial" font-size="15" font-weight="bold">Legend:</text>
+  
+  <rect x="60" y="500" width="20" height="15" fill="#a6cee3" stroke="#333333" stroke-width="1" />
+  <text x="85" y="512" font-family="Arial" font-size="13">Phosphatase (Ppp2ca) - GO:0004722</text>
+  
+  <rect x="60" y="520" width="20" height="15" fill="#b2df8a" stroke="#333333" stroke-width="1" />
+  <text x="85" y="532" font-family="Arial" font-size="13">G6P isomerase (Gpi1) - GO:0004347</text>
+  
+  <rect x="60" y="540" width="20" height="15" fill="#fb9a99" stroke="#333333" stroke-width="1" />
+  <text x="85" y="552" font-family="Arial" font-size="13">PFK-2 (Pfkfb1) - GO:0003873</text>
+  
+  <rect x="60" y="560" width="20" height="15" fill="#fdbf6f" stroke="#333333" stroke-width="1" />
+  <text x="85" y="572" font-family="Arial" font-size="13">PFK-1 (Pfkl) - GO:0003872</text>
+  
+  <ellipse cx="70" y="585" rx="10" ry="7" fill="#ffffb3" stroke="#333333" stroke-width="1" />
+  <text x="85" y="590" font-family="Arial" font-size="13">Metabolite: CHEBI:58579</text>
+</svg>

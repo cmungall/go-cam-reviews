@@ -1,0 +1,117 @@
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell compartments -->
+  <rect x="50" y="80" width="700" height="350" rx="20" ry="20" fill="#f0f9ff" stroke="#a0d0e0" stroke-width="2" opacity="0.7"/>
+  <rect x="150" y="480" width="500" height="150" rx="15" ry="15" fill="#fff9e6" stroke="#e0c080" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Compartment labels -->
+  <text x="400" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Cytosol</text>
+  <text x="400" y="510" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Peroxisome</text>
+  
+  <!-- Molecules and enzymes in cytosol -->
+  <!-- Adenosine to Inosine -->
+  <circle cx="100" cy="200" r="25" fill="#d9f0ff" stroke="#6495ED" stroke-width="2"/>
+  <text x="100" y="200" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">Adenosine</text>
+  
+  <circle cx="250" cy="200" r="25" fill="#d9f0ff" stroke="#6495ED" stroke-width="2"/>
+  <text x="250" y="200" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">Inosine</text>
+  
+  <path d="M130 200 H220" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="155" y="175" width="40" height="20" fill="#f8d0a0" stroke="#e08040" stroke-width="1" rx="5" ry="5"/>
+  <text x="175" y="189" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">Ada</text>
+  
+  <!-- Inosine to Hypoxanthine -->
+  <circle cx="400" cy="200" r="25" fill="#d9f0ff" stroke="#6495ED" stroke-width="2"/>
+  <text x="400" y="200" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">Hypoxanthine</text>
+  
+  <path d="M280 200 H370" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="305" y="175" width="40" height="20" fill="#f8d0a0" stroke="#e08040" stroke-width="1" rx="5" ry="5"/>
+  <text x="325" y="189" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">Pnp</text>
+  
+  <!-- Hypoxanthine to Xanthine -->
+  <circle cx="550" cy="200" r="25" fill="#d9f0ff" stroke="#6495ED" stroke-width="2"/>
+  <text x="550" y="200" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">Xanthine</text>
+  
+  <path d="M430 200 H520" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="455" y="175" width="40" height="20" fill="#f8d0a0" stroke="#e08040" stroke-width="1" rx="5" ry="5"/>
+  <text x="475" y="189" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">Xdh</text>
+  
+  <!-- Xanthine to Urate -->
+  <circle cx="700" cy="200" r="25" fill="#d9f0ff" stroke="#6495ED" stroke-width="2"/>
+  <text x="700" y="200" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">Urate</text>
+  
+  <path d="M580 200 H670" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="605" y="175" width="40" height="20" fill="#f8d0a0" stroke="#e08040" stroke-width="1" rx="5" ry="5"/>
+  <text x="625" y="189" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">Xdh</text>
+  
+  <!-- Transport from cytosol to peroxisome -->
+  <path d="M700 230 Q600 350 400 480" stroke="#4a90e2" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#transportarrow)"/>
+  <rect x="575" y="320" width="70" height="25" fill="white" stroke="none" rx="5" ry="5" opacity="0.9"/>
+  <text x="610" y="337" font-family="Arial" font-size="13" font-style="italic" text-anchor="middle" fill="#4a90e2">Transport</text>
+  
+  <!-- Urate in peroxisome -->
+  <circle cx="400" cy="570" r="25" fill="#ffecb8" stroke="#e6b422" stroke-width="2"/>
+  <text x="400" y="570" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">Urate</text>
+  
+  <!-- Molecules and enzymes in peroxisome -->
+  <circle cx="250" cy="570" r="25" fill="#ffecb8" stroke="#e6b422" stroke-width="2"/>
+  <text x="250" y="565" font-family="Arial" font-size="10" text-anchor="middle">5-Hydroxy-</text>
+  <text x="250" y="578" font-family="Arial" font-size="10" text-anchor="middle">isourate</text>
+  
+  <path d="M370 570 H280" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="310" y="545" width="40" height="20" fill="#f8d0a0" stroke="#e08040" stroke-width="1" rx="5" ry="5"/>
+  <text x="330" y="559" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">Uox</text>
+  
+  <!-- OHCU with more space -->
+  <circle cx="550" cy="570" r="30" fill="#ffecb8" stroke="#e6b422" stroke-width="2"/>
+  <text x="550" y="555" font-family="Arial" font-size="9" text-anchor="middle">2-Oxo-4-hydroxy-</text>
+  <text x="550" y="570" font-family="Arial" font-size="9" text-anchor="middle">4-carboxy-5-</text>
+  <text x="550" y="585" font-family="Arial" font-size="9" text-anchor="middle">ureidoimidazoline</text>
+  
+  <path d="M220 570 H520" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="175" y="545" width="40" height="20" fill="#f8d0a0" stroke="#e08040" stroke-width="1" rx="5" ry="5"/>
+  <text x="195" y="559" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">Urah</text>
+  
+  <circle cx="700" cy="570" r="25" fill="#ffecb8" stroke="#e6b422" stroke-width="2"/>
+  <text x="700" y="570" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">Allantoin</text>
+  
+  <path d="M585 570 H670" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="610" y="545" width="40" height="20" fill="#f8d0a0" stroke="#e08040" stroke-width="1" rx="5" ry="5"/>
+  <text x="630" y="559" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">Urad</text>
+  
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+    <marker id="transportarrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90e2"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Adenosine Catabolic Pathway in Mouse</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="640" width="700" height="30" fill="#f9f9f9" stroke="#cccccc" stroke-width="1" rx="5" ry="5"/>
+  
+  <rect x="60" y="645" width="20" height="20" fill="#d9f0ff" stroke="#6495ED" stroke-width="1" rx="3" ry="3"/>
+  <text x="88" y="659" font-family="Arial" font-size="12" text-anchor="start">Cytosolic Metabolites</text>
+  
+  <rect x="230" y="645" width="20" height="20" fill="#ffecb8" stroke="#e6b422" stroke-width="1" rx="3" ry="3"/>
+  <text x="258" y="659" font-family="Arial" font-size="12" text-anchor="start">Peroxisomal Metabolites</text>
+  
+  <rect x="400" y="645" width="20" height="20" fill="#f8d0a0" stroke="#e08040" stroke-width="1" rx="3" ry="3"/>
+  <text x="428" y="659" font-family="Arial" font-size="12" text-anchor="start">Enzymes</text>
+  
+  <line x1="520" y1="655" x2="550" y2="655" stroke="#4a90e2" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="560" y="659" font-family="Arial" font-size="12" text-anchor="start">Transport</text>
+  
+  <!-- Enzyme abbreviation explanations -->
+  <text x="400" y="440" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Enzyme Key:</text>
+  <text x="155" y="440" font-family="Arial" font-size="11" text-anchor="start">Ada: Adenosine deaminase</text>
+  <text x="155" y="455" font-family="Arial" font-size="11" text-anchor="start">Pnp: Purine-nucleoside phosphorylase</text>
+  <text x="450" y="440" font-family="Arial" font-size="11" text-anchor="start">Xdh: Xanthine dehydrogenase/oxidase</text>
+  <text x="450" y="455" font-family="Arial" font-size="11" text-anchor="start">Uox: Urate oxidase</text>
+  <text x="610" y="440" font-family="Arial" font-size="11" text-anchor="start">Urah: Hydroxyisourate hydrolase</text>
+  <text x="610" y="455" font-family="Arial" font-size="11" text-anchor="start">Urad: OHCU decarboxylase</text>
+</svg>

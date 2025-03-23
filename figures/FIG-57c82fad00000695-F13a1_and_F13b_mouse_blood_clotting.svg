@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background representing blood plasma -->
+    <rect width="800" height="650" fill="#FFF5F5" rx="10" ry="10" />
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">F13a1 and F13b Mouse Blood Clotting Pathway</text>
+    
+    <!-- Proteins -->
+    <g id="F2-protein">
+        <circle cx="200" cy="150" r="55" fill="#A0D8EF" stroke="#000" stroke-width="2" />
+        <text x="200" y="145" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">F2</text>
+        <text x="200" y="165" font-family="Arial" font-size="14" text-anchor="middle">(MGI:88380)</text>
+        <text x="200" y="185" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Serine-type endopeptidase</text>
+        <text x="200" y="200" font-family="Arial" font-size="10" text-anchor="middle">(protein cutting enzyme)</text>
+    </g>
+    
+    <g id="F13b-protein">
+        <circle cx="400" cy="280" r="55" fill="#FFD700" stroke="#000" stroke-width="2" />
+        <text x="400" y="275" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">F13b</text>
+        <text x="400" y="295" font-family="Arial" font-size="14" text-anchor="middle">(MGI:88379)</text>
+        <text x="400" y="315" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Protein binding</text>
+    </g>
+    
+    <g id="F13a1-protein">
+        <circle cx="600" cy="400" r="55" fill="#98FB98" stroke="#000" stroke-width="2" />
+        <text x="600" y="395" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">F13a1</text>
+        <text x="600" y="415" font-family="Arial" font-size="14" text-anchor="middle">(MGI:1921395)</text>
+        <text x="600" y="435" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">γ-glutamyltransferase</text>
+        <text x="600" y="450" font-family="Arial" font-size="10" text-anchor="middle">(cross-links proteins)</text>
+    </g>
+    
+    <!-- Arrows and interactions -->
+    <!-- F2 positively regulates F13a1 -->
+    <path d="M 240 180 Q 400 250 560 380" fill="none" stroke="#008000" stroke-width="3" marker-end="url(#arrowPositive)" />
+    <text x="400" y="260" font-family="Arial" font-size="14" font-weight="bold" fill="#008000" text-anchor="middle">Positively regulates</text>
+    
+    <!-- F2 negatively regulates F13b -->
+    <path d="M 250 150 L 350 280" fill="none" stroke="#FF0000" stroke-width="3" marker-end="url(#arrowNegative)" />
+    <text x="300" y="190" font-family="Arial" font-size="14" font-weight="bold" fill="#FF0000" text-anchor="middle">Negatively regulates</text>
+    
+    <!-- F13b negatively regulates F13a1 -->
+    <path d="M 440 315 Q 500 350 560 370" fill="none" stroke="#FF0000" stroke-width="3" marker-end="url(#arrowNegative)" />
+    <text x="500" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="#FF0000" text-anchor="middle">Negatively regulates</text>
+    
+    <!-- Biological outcome -->
+    <rect x="500" y="500" width="200" height="60" rx="10" ry="10" fill="#FFB6C1" stroke="#000" stroke-width="2" />
+    <text x="600" y="530" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Blood Coagulation,</text>
+    <text x="600" y="550" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Fibrin Clot Formation</text>
+    
+    <!-- Arrow from F13a1 to outcome -->
+    <path d="M 600 455 L 600 500" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowBlack)" />
+    
+    <!-- Legend -->
+    <rect x="50" y="520" width="300" height="100" rx="5" ry="5" fill="white" stroke="#000" stroke-width="1" />
+    <text x="200" y="540" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Legend</text>
+    
+    <line x1="70" y1="560" x2="120" y2="560" stroke="#008000" stroke-width="3" marker-end="url(#arrowPositive)" />
+    <text x="220" y="565" font-family="Arial" font-size="14" text-anchor="left">Positive regulation</text>
+    
+    <line x1="70" y1="590" x2="120" y2="590" stroke="#FF0000" stroke-width="3" marker-end="url(#arrowNegative)" />
+    <text x="220" y="595" font-family="Arial" font-size="14" text-anchor="left">Negative regulation</text>
+    
+    <!-- Arrow markers -->
+    <defs>
+        <marker id="arrowPositive" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#008000" />
+        </marker>
+        <marker id="arrowNegative" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#FF0000" />
+        </marker>
+        <marker id="arrowBlack" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+        </marker>
+    </defs>
+</svg>

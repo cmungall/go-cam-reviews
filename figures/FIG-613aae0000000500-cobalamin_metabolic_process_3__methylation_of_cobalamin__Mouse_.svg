@@ -1,0 +1,127 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#999" stroke-width="2"/>
+  
+  <!-- Cell components -->
+  <text x="400" y="35" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cobalamin Metabolic Process in Mouse</text>
+  <text x="400" y="60" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">GO:0009235</text>
+  
+  <!-- Cytosol label -->
+  <rect x="50" y="50" width="700" height="30" rx="15" ry="15" fill="#e3f2fd" stroke="#64b5f6" stroke-width="2"/>
+  <text x="400" y="70" font-family="Arial" font-size="14" text-anchor="middle">Cytosol (GO:0005829)</text>
+  
+  <!-- Pathway elements -->
+  <g id="molecules">
+    <!-- Cob(II)alamin -->
+    <circle cx="150" cy="300" r="40" fill="#f7d794" stroke="#e58e26" stroke-width="2"/>
+    <text x="150" y="295" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Cob(II)alamin</text>
+    <text x="150" y="315" font-family="Arial" font-size="10" text-anchor="middle">(CHEBI:16304)</text>
+    
+    <!-- Methylcobalamin -->
+    <circle cx="650" cy="300" r="40" fill="#f7d794" stroke="#e58e26" stroke-width="2"/>
+    <text x="650" y="295" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Methylcobalamin</text>
+    <text x="650" y="315" font-family="Arial" font-size="10" text-anchor="middle">(CHEBI:28115)</text>
+  </g>
+  
+  <g id="proteins">
+    <!-- Mmachc -->
+    <rect x="200" y="200" width="120" height="60" rx="10" ry="10" fill="#b8e994" stroke="#6ab04c" stroke-width="2"/>
+    <text x="260" y="225" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Mmachc</text>
+    <text x="260" y="245" font-family="Arial" font-size="10" text-anchor="middle">(MGI:1914346)</text>
+    <text x="260" y="255" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">oxidoreductase activity</text>
+    
+    <!-- Mmadhc -->
+    <rect x="350" y="200" width="120" height="60" rx="10" ry="10" fill="#b8e994" stroke="#6ab04c" stroke-width="2"/>
+    <text x="410" y="225" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Mmadhc</text>
+    <text x="410" y="245" font-family="Arial" font-size="10" text-anchor="middle">(MGI:1923786)</text>
+    <text x="410" y="255" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">molecular carrier activity</text>
+    
+    <!-- Mtrr -->
+    <rect x="500" y="200" width="120" height="60" rx="10" ry="10" fill="#b8e994" stroke="#6ab04c" stroke-width="2"/>
+    <text x="560" y="225" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Mtrr</text>
+    <text x="560" y="245" font-family="Arial" font-size="10" text-anchor="middle">(MGI:1891037)</text>
+    <text x="560" y="255" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">methionine synthase reductase</text>
+    
+    <!-- Mtr -->
+    <rect x="350" y="400" width="120" height="60" rx="10" ry="10" fill="#b8e994" stroke="#6ab04c" stroke-width="2"/>
+    <text x="410" y="425" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Mtr</text>
+    <text x="410" y="445" font-family="Arial" font-size="10" text-anchor="middle">(MGI:894292)</text>
+    <text x="410" y="455" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">methionine synthase activity</text>
+  </g>
+  
+  <g id="arrows-and-labels">
+    <!-- Mmachc to Mmadhc pathway -->
+    <path d="M 260 260 L 260 300 L 350 300" stroke="#7D3C98" stroke-width="2" fill="none"/>
+    <polygon points="350,300 340,295 340,305" fill="#7D3C98"/>
+    
+    <!-- Mmadhc to Mtrr pathway -->
+    <path d="M 410 260 L 410 300 L 500 300" stroke="#2874A6" stroke-width="2" fill="none"/>
+    <polygon points="500,300 490,295 490,305" fill="#2874A6"/>
+    
+    <!-- Mtrr to Output pathway -->
+    <path d="M 560 260 L 560 300 L 610 300" stroke="#1E8449" stroke-width="2" fill="none"/>
+    <polygon points="610,300 600,295 600,305" fill="#1E8449"/>
+    
+    <!-- Cob(II)alamin to Mmachc -->
+    <path d="M 190 300 L 240 300" stroke="#7D3C98" stroke-width="2" fill="none"/>
+    <polygon points="240,300 230,295 230,305" fill="#7D3C98"/>
+    <text x="215" y="290" font-family="Arial" font-size="10" text-anchor="middle">input</text>
+    
+    <!-- Mtr to pathway -->
+    <path d="M 410 400 C 410 350 350 320 350 300" stroke="#2874A6" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+    <polygon points="350,300 355,310 345,310" fill="#2874A6"/>
+    
+    <!-- Mtr direct pathway to Cob(II)alamin -->
+    <path d="M 350 430 C 250 430 200 350 190 310" stroke="#7D3C98" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+    <polygon points="190,310 190,320 180,315" fill="#7D3C98"/>
+    <text x="220" y="415" font-family="Arial" font-size="10" text-anchor="middle">generates cob(II)alamin</text>
+    
+    <!-- Causal relationship indicators -->
+    <path d="M 260 190 C 260 170 410 170 410 200" stroke="#D35400" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+    <polygon points="410,200 405,190 415,190" fill="#D35400"/>
+    <text x="335" y="160" font-family="Arial" font-size="10" text-anchor="middle">activates</text>
+    
+    <path d="M 410 190 C 410 170 560 170 560 200" stroke="#D35400" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+    <polygon points="560,200 555,190 565,190" fill="#D35400"/>
+    <text x="485" y="160" font-family="Arial" font-size="10" text-anchor="middle">activates</text>
+    
+    <path d="M 260 190 C 150 150 90 250 150 250" stroke="#D35400" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+    <polygon points="150,250 145,240 155,240" fill="#D35400"/>
+    
+    <path d="M 410 190 C 320 150 300 200 350 250" stroke="#D35400" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+    <polygon points="350,250 345,240 355,240" fill="#D35400"/>
+  </g>
+  
+  <!-- Reaction steps -->
+  <g id="reaction-labels">
+    <text x="260" y="320" font-family="Arial" font-size="10" text-anchor="middle">Step 1: Reduction</text>
+    <text x="410" y="320" font-family="Arial" font-size="10" text-anchor="middle">Step 2: Transport</text>
+    <text x="560" y="320" font-family="Arial" font-size="10" text-anchor="middle">Step 3: Methylation</text>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="550" y="450" width="180" height="90" fill="white" stroke="#999" stroke-width="1" rx="5" ry="5"/>
+  <text x="640" y="470" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="560" y="480" width="20" height="15" fill="#b8e994" stroke="#6ab04c" stroke-width="2"/>
+  <text x="585" y="490" font-family="Arial" font-size="11" text-anchor="start">Protein/Enzyme</text>
+  
+  <circle cx="570" cy="510" r="7" fill="#f7d794" stroke="#e58e26" stroke-width="2"/>
+  <text x="585" y="515" font-family="Arial" font-size="11" text-anchor="start">Molecule</text>
+  
+  <line x1="560" y1="530" x2="580" y2="530" stroke="#7D3C98" stroke-width="2"/>
+  <polygon points="580,530 572,526 572,534" fill="#7D3C98"/>
+  <text x="600" y="535" font-family="Arial" font-size="11" text-anchor="start">Reduction</text>
+  
+  <line x1="560" y1="550" x2="580" y2="550" stroke="#2874A6" stroke-width="2"/>
+  <polygon points="580,550 572,546 572,554" fill="#2874A6"/>
+  <text x="600" y="555" font-family="Arial" font-size="11" text-anchor="start">Transport</text>
+  
+  <line x1="560" y1="570" x2="580" y2="570" stroke="#1E8449" stroke-width="2"/>
+  <polygon points="580,570 572,566 572,574" fill="#1E8449"/>
+  <text x="600" y="575" font-family="Arial" font-size="11" text-anchor="start">Methylation</text>
+  
+  <line x1="560" y1="590" x2="580" y2="590" stroke="#D35400" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="580,590 572,586 572,594" fill="#D35400"/>
+  <text x="600" y="595" font-family="Arial" font-size="11" text-anchor="start">Activation</text>
+</svg>

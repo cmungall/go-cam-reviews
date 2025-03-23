@@ -1,0 +1,176 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background cell components -->
+  <rect x="0" y="0" width="800" height="700" fill="#f9f9f9" />
+  
+  <!-- Cell membrane -->
+  <path d="M50,200 C100,180 150,220 200,200 C250,180 300,220 350,200 C400,180 450,220 500,200 C550,180 600,220 650,200 C700,180 750,220 800,200" 
+        stroke="#888" fill="none" stroke-width="10" />
+  <path d="M50,210 C100,230 150,190 200,210 C250,230 300,190 350,210 C400,230 450,190 500,210 C550,230 600,190 650,210 C700,230 750,190 800,210" 
+        stroke="#888" fill="none" stroke-width="10" />
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="470" rx="180" ry="120" fill="#e6e6fa" stroke="#666" stroke-width="3" />
+  <text x="400" y="470" font-family="Arial" font-size="20" text-anchor="middle">Nucleus</text>
+  
+  <!-- Extracellular Space Label -->
+  <text x="400" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Extracellular Space</text>
+  
+  <!-- Cytoplasm Label -->
+  <text x="150" y="280" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Cytoplasm</text>
+  
+  <!-- Ligand - Spi -->
+  <circle cx="300" cy="120" r="30" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="300" y="125" font-family="Arial" font-size="16" text-anchor="middle">Spi</text>
+  
+  <!-- Receptor - Egfr -->
+  <rect x="280" y="175" width="40" height="60" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2" />
+  <text x="300" y="210" font-family="Arial" font-size="16" text-anchor="middle">Egfr</text>
+  
+  <!-- Arrow from Spi to Egfr -->
+  <path d="M300,150 L300,175" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="320" y="165" font-family="Arial" font-size="10" text-anchor="start">Binds</text>
+  
+  <!-- Adaptor proteins -->
+  <rect x="230" y="260" width="50" height="25" rx="5" ry="5" fill="#99ff99" stroke="#009900" stroke-width="2" />
+  <text x="255" y="278" font-family="Arial" font-size="14" text-anchor="middle">Drk</text>
+  
+  <rect x="300" y="260" width="50" height="25" rx="5" ry="5" fill="#99ff99" stroke="#009900" stroke-width="2" />
+  <text x="325" y="278" font-family="Arial" font-size="14" text-anchor="middle">Shc</text>
+  
+  <rect x="370" y="260" width="50" height="25" rx="5" ry="5" fill="#99ff99" stroke="#009900" stroke-width="2" />
+  <text x="395" y="278" font-family="Arial" font-size="14" text-anchor="middle">Csw</text>
+  
+  <!-- Arrows from Egfr to adaptors -->
+  <path d="M290,235 C280,245 255,245 255,260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="240" y="245" font-family="Arial" font-size="10" text-anchor="middle">Activates</text>
+  
+  <path d="M300,235 L325,260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="315" y="245" font-family="Arial" font-size="10" text-anchor="middle">Activates</text>
+  
+  <path d="M310,235 C320,245 395,245 395,260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="380" y="245" font-family="Arial" font-size="10" text-anchor="middle">Activates</text>
+  
+  <!-- Sos -->
+  <ellipse cx="300" cy="320" rx="40" ry="25" fill="#ffcc99" stroke="#ff6600" stroke-width="2" />
+  <text x="300" y="325" font-family="Arial" font-size="16" text-anchor="middle">Sos</text>
+  
+  <!-- Arrows from adaptors to Sos -->
+  <path d="M255,285 C255,300 280,300 300,320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M325,285 L300,320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M395,285 C395,300 320,300 300,320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="255" y="305" font-family="Arial" font-size="10" text-anchor="middle">Recruit</text>
+  
+  <!-- MAPK Cascade -->
+  <rect x="300" y="360" width="50" height="25" rx="5" ry="5" fill="#ffff99" stroke="#cc9900" stroke-width="2" />
+  <text x="325" y="378" font-family="Arial" font-size="14" text-anchor="middle">Ras85D</text>
+  
+  <rect x="380" y="360" width="50" height="25" rx="5" ry="5" fill="#ffff99" stroke="#cc9900" stroke-width="2" />
+  <text x="405" y="378" font-family="Arial" font-size="14" text-anchor="middle">Raf</text>
+  
+  <rect x="460" y="360" width="50" height="25" rx="5" ry="5" fill="#ffff99" stroke="#cc9900" stroke-width="2" />
+  <text x="485" y="378" font-family="Arial" font-size="14" text-anchor="middle">Dsor1</text>
+  
+  <rect x="540" y="360" width="50" height="25" rx="5" ry="5" fill="#ffff99" stroke="#cc9900" stroke-width="2" />
+  <text x="565" y="378" font-family="Arial" font-size="14" text-anchor="middle">rl</text>
+  
+  <!-- Arrows in MAPK cascade -->
+  <path d="M300,345 L325,360" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="270" y="355" font-family="Arial" font-size="10" text-anchor="middle">Activates</text>
+  
+  <path d="M350,372 L380,372" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="365" y="362" font-family="Arial" font-size="10" text-anchor="middle">Phosphorylates</text>
+  
+  <path d="M430,372 L460,372" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="445" y="362" font-family="Arial" font-size="10" text-anchor="middle">Phosphorylates</text>
+  
+  <path d="M510,372 L540,372" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="525" y="362" font-family="Arial" font-size="10" text-anchor="middle">Phosphorylates</text>
+  
+  <!-- Transcription Factors in Nucleus -->
+  <rect x="275" y="445" width="50" height="25" rx="5" ry="5" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="300" y="463" font-family="Arial" font-size="14" text-anchor="middle">aop</text>
+  
+  <rect x="345" y="445" width="50" height="25" rx="5" ry="5" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="370" y="463" font-family="Arial" font-size="14" text-anchor="middle">cic</text>
+  
+  <rect x="415" y="445" width="50" height="25" rx="5" ry="5" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="440" y="463" font-family="Arial" font-size="14" text-anchor="middle">gro</text>
+  
+  <rect x="485" y="445" width="50" height="25" rx="5" ry="5" fill="#99ff99" stroke="#009900" stroke-width="2" />
+  <text x="510" y="463" font-family="Arial" font-size="14" text-anchor="middle">pnt</text>
+  
+  <!-- Arrows from MAPK to TFs with staggered control points -->
+  <path d="M565,385 C565,415 300,415 300,445" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="435" y="420" font-family="Arial" font-size="10" text-anchor="middle">Inhibits</text>
+  
+  <path d="M565,385 C565,410 370,410 370,445" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="435" y="410" font-family="Arial" font-size="10" text-anchor="middle">Inhibits</text>
+  
+  <path d="M565,385 C565,405 440,405 440,445" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="490" y="410" font-family="Arial" font-size="10" text-anchor="middle">Inhibits</text>
+  
+  <path d="M565,385 C565,400 510,400 510,445" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="540" y="415" font-family="Arial" font-size="10" text-anchor="middle">Activates</text>
+  
+  <!-- DNA representations -->
+  <path d="M250,520 C260,510 270,530 280,520 C290,510 300,530 310,520 C320,510 330,530 340,520" stroke="#000" stroke-width="2" fill="none" />
+  <path d="M320,520 C330,510 340,530 350,520 C360,510 370,530 380,520 C390,510 400,530 410,520" stroke="#000" stroke-width="2" fill="none" />
+  <path d="M390,520 C400,510 410,530 420,520 C430,510 440,530 450,520 C460,510 470,530 480,520" stroke="#000" stroke-width="2" fill="none" />
+  <path d="M460,520 C470,510 480,530 490,520 C500,510 510,530 520,520 C530,510 540,530 550,520" stroke="#000" stroke-width="2" fill="none" />
+  
+  <!-- Repression markers -->
+  <line x1="290" y1="490" x2="310" y2="510" stroke="#ff0000" stroke-width="3" />
+  <line x1="310" y1="490" x2="290" y2="510" stroke="#ff0000" stroke-width="3" />
+  
+  <line x1="360" y1="490" x2="380" y2="510" stroke="#ff0000" stroke-width="3" />
+  <line x1="380" y1="490" x2="360" y2="510" stroke="#ff0000" stroke-width="3" />
+  
+  <line x1="430" y1="490" x2="450" y2="510" stroke="#ff0000" stroke-width="3" />
+  <line x1="450" y1="490" x2="430" y2="510" stroke="#ff0000" stroke-width="3" />
+  
+  <!-- Activation marker -->
+  <polygon points="510,490 500,510 520,510" fill="#009900" stroke="#009900" stroke-width="1" />
+  
+  <!-- Arrows from TFs to DNA -->
+  <path d="M300,470 L300,490" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="270" y="480" font-family="Arial" font-size="10" text-anchor="middle">Represses</text>
+  
+  <path d="M370,470 L370,490" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="340" y="480" font-family="Arial" font-size="10" text-anchor="middle">Represses</text>
+  
+  <path d="M440,470 L440,490" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="410" y="480" font-family="Arial" font-size="10" text-anchor="middle">Represses</text>
+  
+  <path d="M510,470 L510,490" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="540" y="480" font-family="Arial" font-size="10" text-anchor="middle">Activates</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+  
+  <!-- Pathway Title -->
+  <text x="400" y="620" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Epidermal Growth Factor Receptor Signaling Pathway in Drosophila</text>
+  <text x="400" y="650" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle">via Spi-Egfr</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="250" width="180" height="130" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="670" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <rect x="590" y="280" width="15" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="1" />
+  <text x="670" y="292" font-family="Arial" font-size="12" text-anchor="start">Ligand / Repressors</text>
+  
+  <rect x="590" y="300" width="15" height="15" fill="#99ccff" stroke="#0066cc" stroke-width="1" />
+  <text x="670" y="312" font-family="Arial" font-size="12" text-anchor="start">Receptor</text>
+  
+  <rect x="590" y="320" width="15" height="15" fill="#99ff99" stroke="#009900" stroke-width="1" />
+  <text x="670" y="332" font-family="Arial" font-size="12" text-anchor="start">Adaptors / Activator</text>
+  
+  <ellipse cx="597" cy="345" rx="7" ry="5" fill="#ffcc99" stroke="#ff6600" stroke-width="1" />
+  <text x="670" y="347" font-family="Arial" font-size="12" text-anchor="start">GEF</text>
+  
+  <rect x="590" y="360" width="15" height="15" fill="#ffff99" stroke="#cc9900" stroke-width="1" />
+  <text x="670" y="372" font-family="Arial" font-size="12" text-anchor="start">MAPK Cascade</text>
+</svg>

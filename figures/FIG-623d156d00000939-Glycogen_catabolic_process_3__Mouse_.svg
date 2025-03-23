@@ -1,0 +1,111 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline with cytosol label -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f9fa" stroke="#b0b0b0" stroke-width="2"/>
+  <text x="70" y="80" font-family="Arial" font-size="16" fill="#505050" font-weight="bold">Cytosol (GO:0005829)</text>
+  
+  <!-- Main title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" fill="#000000" text-anchor="middle" font-weight="bold">Glycogen Catabolic Process (Mouse)</text>
+  
+  <!-- Glycogen molecule -->
+  <circle cx="160" cy="180" r="40" fill="#c7b299" stroke="#8b7355" stroke-width="2"/>
+  <text x="160" y="185" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Glycogen</text>
+  
+  <!-- Phkg1 -->
+  <rect x="100" y="280" width="100" height="40" rx="5" ry="5" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="150" y="305" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Phkg1</text>
+  <text x="150" y="318" font-family="Arial" font-size="10" fill="#505050" text-anchor="middle" font-style="italic">phosphorylase kinase</text>
+  
+  <!-- Pygm -->
+  <rect x="240" y="180" width="100" height="40" rx="5" ry="5" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="290" y="205" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Pygm</text>
+  <text x="290" y="218" font-family="Arial" font-size="10" fill="#505050" text-anchor="middle" font-style="italic">glycogen phosphorylase</text>
+
+  <!-- Agl box -->
+  <rect x="380" y="180" width="100" height="55" rx="5" ry="5" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="430" y="203" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Agl</text>
+  <text x="430" y="218" font-family="Arial" font-size="9" fill="#505050" text-anchor="middle" font-style="italic">amylo-α-1,6-glucosidase</text>
+  <text x="430" y="228" font-family="Arial" font-size="9" fill="#505050" text-anchor="middle" font-style="italic">4-α-glucanotransferase</text>
+  
+  <!-- Pgm1 and Pgm2 boxes -->
+  <rect x="520" y="140" width="100" height="40" rx="5" ry="5" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="570" y="165" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Pgm1</text>
+  <text x="570" y="178" font-family="Arial" font-size="10" fill="#505050" text-anchor="middle" font-style="italic">phosphoglucomutase</text>
+  
+  <rect x="520" y="220" width="100" height="40" rx="5" ry="5" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="570" y="245" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Pgm2</text>
+  <text x="570" y="258" font-family="Arial" font-size="10" fill="#505050" text-anchor="middle" font-style="italic">phosphoglucomutase</text>
+  
+  <!-- End product -->
+  <rect x="650" y="180" width="80" height="40" rx="5" ry="5" fill="#ffcccc" stroke="#ff8080" stroke-width="2"/>
+  <text x="690" y="202" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">α-D-glucose</text>
+  <text x="690" y="215" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">6-phosphate</text>
+  
+  <!-- Arrows between proteins -->
+  <!-- Phkg1 to Pygm -->
+  <line x1="150" y1="280" x2="260" y2="220" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="180" y="250" font-family="Arial" font-size="12" fill="#505050" font-style="italic">activates</text>
+  
+  <!-- Pygm to intermediate products -->
+  <line x1="340" y1="200" x2="380" y2="200" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Agl to Pygm (feedback loop) -->
+  <path d="M 380,230 C 350,260 320,260 290,220" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Pygm to Pgm paths -->
+  <path d="M 340,180 C 400,100 460,140 520,160" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 340,220 C 400,300 450,280 520,240" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Agl to Pygm -->
+  <path d="M 430,235 C 430,280 350,300 290,220" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Pgm to end product -->
+  <line x1="620" y1="160" x2="650" y2="180" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="620" y1="240" x2="650" y2="220" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Glycogen to Pygm -->
+  <line x1="200" y1="180" x2="240" y2="180" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+    </marker>
+  </defs>
+  
+  <!-- Process label -->
+  <rect x="250" y="380" width="300" height="30" rx="5" ry="5" fill="#e6f2ff" stroke="#99ccff" stroke-width="1"/>
+  <text x="400" y="400" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Glycogen Catabolic Process (GO:0005980)</text>
+  
+  <!-- Connecting pathway box to proteins -->
+  <path d="M 400,380 C 400,350 400,320 400,235" stroke="#99ccff" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 300,380 C 300,350 300,250 290,220" stroke="#99ccff" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 500,380 C 500,350 570,320 570,260" stroke="#99ccff" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  
+  <!-- Legend -->
+  <rect x="100" y="560" width="600" height="80" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="110" y="580" font-family="Arial" font-size="16" fill="#000000" font-weight="bold">Legend:</text>
+  
+  <!-- Gene product symbol -->
+  <rect x="120" y="590" width="60" height="25" rx="5" ry="5" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="190" y="608" font-family="Arial" font-size="14" fill="#000000">Gene product with molecular function</text>
+  
+  <!-- Substrate/product symbol -->
+  <circle cx="130" y="630" r="12" fill="#c7b299" stroke="#8b7355" stroke-width="2"/>
+  <text x="190" y="635" font-family="Arial" font-size="14" fill="#000000">Substrate (Glycogen)</text>
+  
+  <!-- End product symbol -->
+  <rect x="340" y="590" width="60" height="25" rx="5" ry="5" fill="#ffcccc" stroke="#ff8080" stroke-width="2"/>
+  <text x="410" y="608" font-family="Arial" font-size="14" fill="#000000">End product (α-D-glucose 6-phosphate)</text>
+  
+  <!-- Arrow symbol -->
+  <line x1="340" y1="630" x2="380" y2="630" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="410" y="635" font-family="Arial" font-size="14" fill="#000000">Causal relationship</text>
+  
+  <!-- Process symbol -->
+  <rect x="500" y="590" width="60" height="25" rx="5" ry="5" fill="#e6f2ff" stroke="#99ccff" stroke-width="1"/>
+  <text x="570" y="608" font-family="Arial" font-size="14" fill="#000000">Biological process</text>
+  
+  <!-- Dashed line symbol -->
+  <line x1="500" y1="630" x2="560" y2="630" stroke="#99ccff" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="570" y="635" font-family="Arial" font-size="14" fill="#000000">Part of relationship</text>
+</svg>

@@ -1,0 +1,139 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#f8f9fa" />
+  
+  <!-- Cell membrane -->
+  <path d="M 50 200 L 750 200" stroke="#8B4513" stroke-width="10" fill="none" />
+  <path d="M 50 200 Q 400 220 750 200" stroke="#A0522D" stroke-width="3" fill="none" />
+  <path d="M 50 200 Q 400 180 750 200" stroke="#A0522D" stroke-width="3" fill="none" />
+  
+  <!-- Extracellular space label -->
+  <text x="50" y="160" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Extracellular space</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="50" y="240" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Cytoplasm</text>
+  
+  <!-- Insulin (Ins1/Ins2) -->
+  <circle cx="150" cy="120" r="30" fill="#FFD700" stroke="#555" stroke-width="2" />
+  <text x="150" y="125" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Insulin</text>
+  <text x="150" y="80" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(Ins1/Ins2)</text>
+  <text x="150" y="95" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">GO:0048018</text>
+  
+  <!-- Insulin Receptor (Insr) -->
+  <rect x="220" y="170" width="80" height="60" rx="5" ry="5" fill="#87CEFA" stroke="#555" stroke-width="2" />
+  <text x="260" y="200" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Insr</text>
+  <text x="260" y="215" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">GO:0005009</text>
+  
+  <!-- Arrow from Insulin to Receptor -->
+  <path d="M 180 120 L 230 180" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="210" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Binding</text>
+  
+  <!-- Activated Insr (Tyrosine Kinase) -->
+  <rect x="220" y="240" width="80" height="50" rx="5" ry="5" fill="#87CEFA" stroke="#555" stroke-width="2" />
+  <text x="260" y="260" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Insr</text>
+  <text x="260" y="275" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">GO:0004713</text>
+  
+  <!-- Activation arrow -->
+  <path d="M 260 230 L 260 240" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="290" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Activation</text>
+  
+  <!-- IRS1/IRS2 -->
+  <rect x="350" y="280" width="80" height="50" rx="5" ry="5" fill="#98FB98" stroke="#555" stroke-width="2" />
+  <text x="390" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">IRS1/IRS2</text>
+  <text x="390" y="315" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">GO:0030674</text>
+  
+  <!-- Arrow from Insr to IRS1/IRS2 -->
+  <path d="M 300 265 L 350 290" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Phosphorylation symbol -->
+  <circle cx="340" cy="278" r="10" fill="#FF6347" stroke="#333" stroke-width="1" />
+  <text x="340" y="283" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  
+  <!-- PI3K (Pik3r1/Pik3ca) -->
+  <rect x="460" y="330" width="80" height="60" rx="5" ry="5" fill="#FF9999" stroke="#555" stroke-width="2" />
+  <text x="500" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">PI3K</text>
+  <text x="500" y="365" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">Pik3r1/Pik3ca</text>
+  <text x="500" y="380" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">GO:0016303</text>
+  
+  <!-- Arrow from IRS1/IRS2 to PI3K -->
+  <path d="M 430 305 L 470 340" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="450" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Activates</text>
+  
+  <!-- PIP2 to PIP3 conversion (implicit) -->
+  <ellipse cx="500" cy="420" rx="20" ry="15" fill="#ADD8E6" stroke="#555" stroke-width="1" />
+  <text x="500" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">PIP3</text>
+  <text x="500" y="440" font-family="Arial" font-size="10" text-anchor="middle" fill="#555" font-style="italic">*implicit</text>
+  
+  <!-- Arrow from PI3K to PIP3 -->
+  <path d="M 500 390 L 500 405" stroke="#555" stroke-width="2" fill="none" stroke-dasharray="3,3" marker-end="url(#arrowhead)" />
+  
+  <!-- PDPK1 -->
+  <rect x="550" y="450" width="80" height="50" rx="5" ry="5" fill="#DDA0DD" stroke="#555" stroke-width="2" />
+  <text x="590" y="470" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">PDPK1</text>
+  <text x="590" y="485" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">GO:0004676</text>
+  
+  <!-- Arrow from PIP3 to PDPK1 -->
+  <path d="M 520 420 L 560 450" stroke="#555" stroke-width="2" fill="none" stroke-dasharray="3,3" marker-end="url(#arrowhead)" />
+  <text x="540" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#555" font-style="italic">Recruitment</text>
+  
+  <!-- AKT1 -->
+  <rect x="650" y="520" width="80" height="50" rx="5" ry="5" fill="#B0C4DE" stroke="#555" stroke-width="2" />
+  <text x="690" y="540" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">AKT1</text>
+  <text x="690" y="555" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">GO:0016301</text>
+  
+  <!-- Arrow from PDPK1 to AKT1 -->
+  <path d="M 610 500 L 660 520" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Phosphorylation symbol -->
+  <circle cx="650" cy="510" r="10" fill="#FF6347" stroke="#333" stroke-width="1" />
+  <text x="650" y="515" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="#333">Insulin Receptor Signaling Pathway (Mouse)</text>
+  
+  <!-- Pathway label -->
+  <text x="400" y="65" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#555">GO:0008286</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="550" width="700" height="80" rx="5" ry="5" fill="#f0f0f0" stroke="#555" stroke-width="1" />
+  <text x="400" y="570" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="80" cy="590" r="10" fill="#FFD700" stroke="#555" stroke-width="1" />
+  <text x="100" y="595" font-family="Arial" font-size="14" fill="#333">Receptor Ligand</text>
+  
+  <rect x="200" cy="1" width="20" height="15" rx="2" ry="2" fill="#87CEFA" stroke="#555" stroke-width="1" y="585" />
+  <text x="230" y="595" font-family="Arial" font-size="14" fill="#333">Receptor</text>
+  
+  <rect x="300" cy="1" width="20" height="15" rx="2" ry="2" fill="#98FB98" stroke="#555" stroke-width="1" y="585" />
+  <text x="330" y="595" font-family="Arial" font-size="14" fill="#333">Adaptor Protein</text>
+  
+  <rect x="450" cy="1" width="20" height="15" rx="2" ry="2" fill="#FF9999" stroke="#555" stroke-width="1" y="585" />
+  <text x="480" y="595" font-family="Arial" font-size="14" fill="#333">Kinase</text>
+  
+  <rect x="550" cy="1" width="20" height="15" rx="2" ry="2" fill="#DDA0DD" stroke="#555" stroke-width="1" y="585" />
+  <text x="580" y="595" font-family="Arial" font-size="14" fill="#333">PDK</text>
+  
+  <rect x="630" cy="1" width="20" height="15" rx="2" ry="2" fill="#B0C4DE" stroke="#555" stroke-width="1" y="585" />
+  <text x="660" y="595" font-family="Arial" font-size="14" fill="#333">Ser/Thr Kinase</text>
+  
+  <circle cx="80" cy="615" r="10" fill="#FF6347" stroke="#333" stroke-width="1" />
+  <text x="80" y="620" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  <text x="110" y="620" font-family="Arial" font-size="14" fill="#333">Phosphorylation</text>
+  
+  <line x1="200" y1="615" x2="230" y2="615" stroke="#555" stroke-width="2" stroke-dasharray="3,3" />
+  <text x="280" y="620" font-family="Arial" font-size="14" fill="#333">Implicit Step</text>
+  
+  <ellipse cx="350" cy="615" rx="15" ry="10" fill="#ADD8E6" stroke="#555" stroke-width="1" />
+  <text x="390" y="620" font-family="Arial" font-size="14" fill="#333">Lipid</text>
+  
+  <!-- Citation -->
+  <text x="400" y="640" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">GO-CAM: gomodel:62b4ffe300006559</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+</svg>

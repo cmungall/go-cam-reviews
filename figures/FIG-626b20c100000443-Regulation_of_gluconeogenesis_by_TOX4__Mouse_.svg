@@ -1,0 +1,113 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9f9" stroke="#888" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="280" cy="300" rx="150" ry="140" fill="#e6f3ff" stroke="#666" stroke-width="2"/>
+  <text x="280" y="470" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Nucleus</text>
+  
+  <!-- Chromatin -->
+  <path d="M200,250 Q220,230 240,250 Q260,270 280,250 Q300,230 320,250 Q340,270 360,250" fill="none" stroke="#8844aa" stroke-width="4"/>
+  <text x="280" y="220" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Chromatin (GO:0000785)</text>
+  
+  <!-- Transcription factors -->
+  <circle cx="210" cy="300" r="25" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="210" y="305" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">TOX4</text>
+  
+  <circle cx="280" cy="300" r="25" fill="#99ccff" stroke="#333" stroke-width="1.5"/>
+  <text x="280" y="305" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">FOXO1</text>
+  
+  <circle cx="350" cy="300" r="25" fill="#99ff99" stroke="#333" stroke-width="1.5"/>
+  <text x="350" y="305" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CREB1</text>
+  
+  <!-- ER -->
+  <path d="M450,200 Q500,150 550,200 Q600,250 650,200 Q700,150 750,200 Q700,250 650,300 Q600,350 550,300 Q500,250 450,300 Q400,350 350,300 Q400,250 450,200" fill="#fff3e6" stroke="#666" stroke-width="2"/>
+  <text x="550" y="380" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Endoplasmic Reticulum (GO:0005783)</text>
+  
+  <!-- Gene products in ER -->
+  <circle cx="500" cy="250" r="30" fill="#ffcc99" stroke="#333" stroke-width="1.5"/>
+  <text x="500" y="255" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">G6PC1</text>
+  
+  <circle cx="600" cy="250" r="30" fill="#ccff99" stroke="#333" stroke-width="1.5"/>
+  <text x="600" y="255" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">PCK1</text>
+  
+  <!-- Positive regulation arrows with clear labels -->
+  <!-- TOX4 regulation -->
+  <path d="M230,320 L280,360" fill="none" stroke="#ff6666" stroke-width="2" marker-end="url(#arrowhead1)"/>
+  <rect x="230" y="335" width="100" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="280" y="350" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#ff6666">activates</text>
+  
+  <!-- FOXO1 regulation -->
+  <path d="M280,330 L310,360" fill="none" stroke="#6699cc" stroke-width="2" marker-end="url(#arrowhead2)"/>
+  <rect x="275" y="340" width="80" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="315" y="355" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#6699cc">activates</text>
+  
+  <!-- CREB1 regulation -->
+  <path d="M340,330 L330,360" fill="none" stroke="#66cc66" stroke-width="2" marker-end="url(#arrowhead3)"/>
+  <rect x="320" y="340" width="80" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="360" y="355" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#66cc66">activates</text>
+  
+  <!-- Gene expression arrows -->
+  <path d="M280,380 Q400,380 450,300" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="320" y="380" width="150" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="395" y="395" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">RNA Pol II transcription</text>
+  
+  <path d="M300,390 Q420,420 500,300" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M320,390 Q440,400 580,290" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Process labels -->
+  <text x="550" y="320" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Gluconeogenesis (GO:0006094)</text>
+  
+  <!-- Cross-regulatory arrows between TFs -->
+  <path d="M235,290 L255,290" fill="none" stroke="#ff6666" stroke-width="1.5" marker-end="url(#arrowhead1)"/>
+  <path d="M305,290 L325,290" fill="none" stroke="#6699cc" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+  <path d="M350,270 Q280,240 210,270" fill="none" stroke="#66cc66" stroke-width="1.5" marker-end="url(#arrowhead3)"/>
+  
+  <!-- Enzyme activities -->
+  <text x="500" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Glucose-6-phosphatase</text>
+  <text x="500" y="215" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">activity (GO:0004346)</text>
+  
+  <text x="600" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">PEPCK activity</text>
+  <text x="600" y="215" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">(GO:0004613)</text>
+  
+  <!-- Cell label -->
+  <text x="400" y="550" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#333">Mouse Hepatocyte (Liver)</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#000">Regulation of Gluconeogenesis by TOX4 (Mouse)</text>
+
+  <!-- Legend -->
+  <rect x="580" y="440" width="200" height="140" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="680" y="460" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  
+  <circle cx="600" cy="480" r="10" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="615" y="485" text-anchor="start" font-family="Arial" font-size="12" fill="#333">TOX4 (Transcription factor)</text>
+  
+  <circle cx="600" cy="505" r="10" fill="#99ccff" stroke="#333" stroke-width="1"/>
+  <text x="615" y="510" text-anchor="start" font-family="Arial" font-size="12" fill="#333">FOXO1 (Transcription factor)</text>
+  
+  <circle cx="600" cy="530" r="10" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="615" y="535" text-anchor="start" font-family="Arial" font-size="12" fill="#333">CREB1 (Transcription factor)</text>
+  
+  <circle cx="600" cy="555" r="10" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="615" y="560" text-anchor="start" font-family="Arial" font-size="12" fill="#333">G6PC1 (Enzyme)</text>
+  
+  <circle cx="600" cy="580" r="10" fill="#ccff99" stroke="#333" stroke-width="1"/>
+  <text x="615" y="585" text-anchor="start" font-family="Arial" font-size="12" fill="#333">PCK1 (Enzyme)</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6666"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6699cc"/>
+    </marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#66cc66"/>
+    </marker>
+  </defs>
+</svg>

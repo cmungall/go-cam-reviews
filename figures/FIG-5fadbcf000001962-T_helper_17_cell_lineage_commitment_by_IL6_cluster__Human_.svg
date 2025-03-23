@@ -1,0 +1,129 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="350" rx="350" ry="220" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Nuclear envelope -->
+  <ellipse cx="400" cy="400" rx="120" ry="80" fill="#e6f7ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="400" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Nucleus</text>
+  
+  <!-- Plasma membrane label -->
+  <text x="400" y="140" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Cytosol label -->
+  <text x="240" y="300" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Cytosol</text>
+  
+  <!-- Extracellular space label -->
+  <text x="400" y="60" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Extracellular Space</text>
+  
+  <!-- IL-6 in extracellular space -->
+  <circle cx="400" cy="100" r="25" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="400" y="105" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IL-6</text>
+  
+  <!-- IL-6R on plasma membrane -->
+  <rect x="370" y="140" width="50" height="25" fill="#99cc99" stroke="#333" stroke-width="2"/>
+  <text x="395" y="158" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IL6R</text>
+  
+  <!-- IL6ST on plasma membrane -->
+  <rect x="440" y="140" width="50" height="25" fill="#9999ff" stroke="#333" stroke-width="2"/>
+  <text x="465" y="158" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IL6ST</text>
+  
+  <!-- JAK1 on cytoplasmic side of plasma membrane -->
+  <rect x="390" y="180" width="60" height="25" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="420" y="198" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">JAK1</text>
+  
+  <!-- STAT3 in cytoplasm -->
+  <circle cx="360" cy="240" r="25" fill="#cc99ff" stroke="#333" stroke-width="2"/>
+  <text x="360" y="245" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">STAT3</text>
+  
+  <!-- STAT3 in nucleus -->
+  <circle cx="400" cy="350" r="25" fill="#cc99ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="355" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">STAT3</text>
+  
+  <!-- SOCS3 in cytosol -->
+  <rect x="230" y="240" width="70" height="25" fill="#ffff99" stroke="#333" stroke-width="2"/>
+  <text x="265" y="255" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">SOCS3</text>
+  
+  <!-- Binding arrow from IL-6 to IL-6R with number -->
+  <path d="M 400,125 L 400,140" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <circle cx="415" y="130" r="10" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="415" y="134" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">1</text>
+  
+  <!-- Activation arrow from IL6R to IL6ST with number -->
+  <path d="M 420,150 L 440,150" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <circle cx="430" y="135" r="10" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="430" y="139" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">2</text>
+  
+  <!-- Activation arrow from IL6ST to JAK1 with number -->
+  <path d="M 465,165 L 430,180" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <circle cx="455" y="175" r="10" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="455" y="179" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">3</text>
+  
+  <!-- Activation arrow from JAK1 to STAT3 with number -->
+  <path d="M 390,195 L 370,215" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <circle cx="385" y="210" r="10" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="385" y="214" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">4</text>
+  
+  <!-- STAT3 translocation to nucleus with number -->
+  <path d="M 360,265 L 385,325" stroke="#333" stroke-width="3" stroke-dasharray="7,7" marker-end="url(#arrowhead)"/>
+  <circle cx="365" y="300" r="10" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="365" y="304" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">5</text>
+  
+  <!-- Activation arrow from STAT3 to SOCS3 with number -->
+  <path d="M 380,350 C 320,320 300,280 290,260" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <circle cx="330" y="310" r="10" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="330" y="314" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">6</text>
+  
+  <!-- Inhibition arrow from SOCS3 to JAK1 with number -->
+  <path d="M 300,240 L 390,190" stroke="#FF0000" stroke-width="3" marker-end="url(#inhibition)"/>
+  <circle cx="340" y="210" r="10" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="340" y="214" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">7</text>
+  
+  <!-- DNA binding representation in nucleus -->
+  <path d="M 400,370 L 400,410 M 385,410 L 415,410" stroke="#333" stroke-width="2"/>
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle">DNA binding</text>
+  
+  <!-- Arrowhead and inhibition markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="inhibition" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <line x1="0" y1="0" x2="12" y2="12" stroke="#FF0000" stroke-width="2.5"/>
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#FF0000" stroke-width="2.5"/>
+    </marker>
+  </defs>
+  
+  <!-- T-helper 17 cell lineage commitment label -->
+  <text x="400" y="470" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">T-helper 17 Cell Lineage Commitment</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="30" width="200" height="250" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="590" y="55" font-family="Arial" font-size="18" font-weight="bold">Legend</text>
+  
+  <circle cx="600" cy="80" r="8" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="615" y="85" font-family="Arial" font-size="14">IL-6 (P05231)</text>
+  
+  <rect x="592" y="100" width="16" height="12" fill="#99cc99" stroke="#333" stroke-width="1.5"/>
+  <text x="615" y="110" font-family="Arial" font-size="14">IL6R (P08887-2)</text>
+  
+  <rect x="592" y="125" width="16" height="12" fill="#9999ff" stroke="#333" stroke-width="1.5"/>
+  <text x="615" y="135" font-family="Arial" font-size="14">IL6ST (P40189-2)</text>
+  
+  <rect x="592" y="150" width="16" height="12" fill="#ffcc99" stroke="#333" stroke-width="1.5"/>
+  <text x="615" y="160" font-family="Arial" font-size="14">JAK1 (P23458)</text>
+  
+  <circle cx="600" cy="180" r="8" fill="#cc99ff" stroke="#333" stroke-width="1.5"/>
+  <text x="615" y="185" font-family="Arial" font-size="14">STAT3 (P40763)</text>
+  
+  <rect x="592" y="200" width="16" height="12" fill="#ffff99" stroke="#333" stroke-width="1.5"/>
+  <text x="615" y="210" font-family="Arial" font-size="14">SOCS3 (O14543)</text>
+  
+  <line x1="590" y1="230" x2="610" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="620" y="235" font-family="Arial" font-size="14">Activation</text>
+  
+  <line x1="590" y1="255" x2="610" y2="255" stroke="#FF0000" stroke-width="2" marker-end="url(#inhibition)"/>
+  <text x="620" y="260" font-family="Arial" font-size="14">Inhibition</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">T-helper 17 Cell Lineage Commitment by IL-6 Cluster (Human)</text>
+</svg>

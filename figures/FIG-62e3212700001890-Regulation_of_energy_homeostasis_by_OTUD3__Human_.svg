@@ -1,0 +1,113 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Nuclear membrane -->
+  <ellipse cx="400" cy="350" rx="250" ry="150" fill="#e6f2ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="480" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus (GO:0005634)</text>
+
+  <!-- Cytoplasm label -->
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cytoplasm (GO:0005737)</text>
+  
+  <!-- CREBBP in cytoplasm -->
+  <circle cx="200" cy="200" r="40" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="200" y="200" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">CREBBP</text>
+  <text x="200" y="220" text-anchor="middle" font-family="Arial" font-size="12">(Q92793)</text>
+  
+  <!-- CREBBP molecular function -->
+  <rect x="130" y="120" width="140" height="45" rx="5" ry="5" fill="#ffcccc" stroke="#333" stroke-width="1"/>
+  <text x="200" y="142" text-anchor="middle" font-family="Arial" font-size="12">Peptide-lysine-N-</text>
+  <text x="200" y="158" text-anchor="middle" font-family="Arial" font-size="12">acetyltransferase activity</text>
+  
+  <!-- Biological process -->
+  <rect x="90" y="260" width="220" height="35" rx="5" ry="5" fill="#e6ffe6" stroke="#333" stroke-width="1"/>
+  <text x="200" y="282" text-anchor="middle" font-family="Arial" font-size="12">N-terminal peptidyl-lysine acetylation</text>
+  
+  <!-- OTUD3 in nucleus -->
+  <circle cx="300" cy="350" r="40" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="300" y="350" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">OTUD3</text>
+  <text x="300" y="370" text-anchor="middle" font-family="Arial" font-size="12">(Q5T2D3)</text>
+  
+  <!-- OTUD3 molecular function -->
+  <rect x="230" y="410" width="140" height="45" rx="5" ry="5" fill="#cce6ff" stroke="#333" stroke-width="1"/>
+  <text x="300" y="430" text-anchor="middle" font-family="Arial" font-size="12">Cysteine-type</text>
+  <text x="300" y="446" text-anchor="middle" font-family="Arial" font-size="12">deubiquitinase activity</text>
+  
+  <!-- Biological process for OTUD3 -->
+  <rect x="220" y="280" width="160" height="35" rx="5" ry="5" fill="#e6ffe6" stroke="#333" stroke-width="1"/>
+  <text x="300" y="302" text-anchor="middle" font-family="Arial" font-size="12">Protein K48-linked</text>
+  <text x="300" y="318" text-anchor="middle" font-family="Arial" font-size="12">deubiquitination</text>
+  
+  <!-- PPARD in nucleus -->
+  <circle cx="500" cy="350" r="40" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="500" y="350" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">PPARD</text>
+  <text x="500" y="370" text-anchor="middle" font-family="Arial" font-size="12">(Q03181)</text>
+  
+  <!-- PPARD molecular function -->
+  <rect x="430" y="410" width="140" height="45" rx="5" ry="5" fill="#ccffcc" stroke="#333" stroke-width="1"/>
+  <text x="500" y="430" text-anchor="middle" font-family="Arial" font-size="12">DNA-binding</text>
+  <text x="500" y="446" text-anchor="middle" font-family="Arial" font-size="12">transcription factor activity</text>
+  
+  <!-- Biological process for PPARD -->
+  <rect x="420" y="280" width="160" height="35" rx="5" ry="5" fill="#e6ffe6" stroke="#333" stroke-width="1"/>
+  <text x="500" y="302" text-anchor="middle" font-family="Arial" font-size="12">Regulation of transcription</text>
+  <text x="500" y="318" text-anchor="middle" font-family="Arial" font-size="12">by RNA polymerase II</text>
+  
+  <!-- Energy homeostasis end process -->
+  <rect x="580" y="200" width="120" height="60" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+  <text x="640" y="235" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Energy</text>
+  <text x="640" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Homeostasis</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="redArrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff0000"/>
+    </marker>
+    <marker id="blueArrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc"/>
+    </marker>
+  </defs>
+  
+  <!-- Arrows for interactions -->
+  <!-- CREBBP to OTUD3 positive regulation with enhanced arrow -->
+  <path d="M 240 200 Q 270 240 300 280" fill="none" stroke="#ff0000" stroke-width="2.5" marker-end="url(#redArrowhead)"/>
+  <circle cx="270" y="240" r="12" fill="white" stroke="#ff0000" stroke-width="2"/>
+  <text x="270" y="245" text-anchor="middle" font-family="Arial" font-size="14" fill="#ff0000" font-weight="bold">+</text>
+  
+  <!-- OTUD3 to PPARD positive regulation with enhanced arrow -->
+  <path d="M 340 350 L 460 350" fill="none" stroke="#0066cc" stroke-width="2.5" marker-end="url(#blueArrowhead)"/>
+  <circle cx="400" y="350" r="12" fill="white" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="14" fill="#0066cc" font-weight="bold">+</text>
+  
+  <!-- PPARD to energy homeostasis with enhanced arrow -->
+  <path d="M 540 320 Q 570 280 610 260" fill="none" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <rect x="600" y="430" width="150" height="120" rx="5" ry="5" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="675" y="450" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <circle cx="620" cy="470" r="8" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="680" y="474" text-anchor="middle" font-family="Arial" font-size="12">CREBBP (Q92793)</text>
+  
+  <circle cx="620" cy="490" r="8" fill="#99ccff" stroke="#333" stroke-width="1"/>
+  <text x="680" y="494" text-anchor="middle" font-family="Arial" font-size="12">OTUD3 (Q5T2D3)</text>
+  
+  <circle cx="620" cy="510" r="8" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="680" y="514" text-anchor="middle" font-family="Arial" font-size="12">PPARD (Q03181)</text>
+  
+  <line x1="615" y1="530" x2="635" y2="530" stroke="#ff0000" stroke-width="2.5"/>
+  <circle cx="625" y="530" r="6" fill="white" stroke="#ff0000" stroke-width="1.5"/>
+  <text x="625" y="533" text-anchor="middle" font-family="Arial" font-size="10" fill="#ff0000">+</text>
+  <text x="685" y="534" text-anchor="middle" font-family="Arial" font-size="12">CREBBP regulation</text>
+  
+  <line x1="615" y1="550" x2="635" y2="550" stroke="#0066cc" stroke-width="2.5"/>
+  <circle cx="625" y="550" r="6" fill="white" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="625" y="553" text-anchor="middle" font-family="Arial" font-size="10" fill="#0066cc">+</text>
+  <text x="685" y="554" text-anchor="middle" font-family="Arial" font-size="12">OTUD3 regulation</text>
+  
+  <line x1="615" y1="570" x2="635" y2="570" stroke="#333" stroke-width="2"/>
+  <text x="680" y="574" text-anchor="middle" font-family="Arial" font-size="12">Process flow</text>
+</svg>

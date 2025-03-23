@@ -1,0 +1,107 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell components -->
+  <rect x="0" y="0" width="800" height="600" fill="#f9f9f9"/>
+  
+  <!-- Extracellular space -->
+  <rect x="0" y="0" width="800" height="200" fill="#e6f7ff" opacity="0.7"/>
+  <text x="20" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Extracellular Space</text>
+  
+  <!-- Cell membrane -->
+  <path d="M0,200 Q200,180 400,200 Q600,220 800,200 L800,500 Q600,480 400,500 Q200,520 0,500 Z" fill="#fff" stroke="#888" stroke-width="2"/>
+  <text x="20" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <text x="20" y="280" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="400" rx="150" ry="80" fill="#f2e6ff" stroke="#9966cc" stroke-width="2"/>
+  <text x="380" y="405" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Nucleus</text>
+
+  <!-- IL12A and IL12B cytokines in extracellular space -->
+  <circle cx="300" cy="80" r="25" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="287" y="85" font-family="Arial" font-size="14" fill="#333">IL12A</text>
+  
+  <circle cx="380" cy="100" r="25" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="367" y="105" font-family="Arial" font-size="14" fill="#333">IL12B</text>
+  
+  <!-- IL12 heterodimer -->
+  <ellipse cx="340" cy="140" rx="45" ry="25" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="305" y="145" font-family="Arial" font-size="14" fill="#333">IL12 (A+B)</text>
+  
+  <!-- Receptors on plasma membrane -->
+  <rect x="280" y="190" width="40" height="20" fill="#99ccff" stroke="#3366cc" stroke-width="2"/>
+  <text x="283" y="205" font-family="Arial" font-size="12" fill="#333">IL12RB1</text>
+  
+  <rect x="360" y="190" width="40" height="20" fill="#99ccff" stroke="#3366cc" stroke-width="2"/>
+  <text x="363" y="205" font-family="Arial" font-size="12" fill="#333">IL12RB2</text>
+  
+  <!-- Kinases on cytoplasmic side -->
+  <polygon points="290,230 310,230 310,260 300,270 290,260" fill="#99ff99" stroke="#339933" stroke-width="2"/>
+  <text x="288" y="250" font-family="Arial" font-size="12" fill="#333">TYK2</text>
+  
+  <polygon points="370,230 390,230 390,260 380,270 370,260" fill="#99ff99" stroke="#339933" stroke-width="2"/>
+  <text x="370" y="250" font-family="Arial" font-size="12" fill="#333">JAK2</text>
+  
+  <!-- STAT4 in cytoplasm -->
+  <rect x="330" y="300" width="40" height="20" fill="#ff99cc" stroke="#cc3366" stroke-width="2"/>
+  <text x="332" y="315" font-family="Arial" font-size="12" fill="#333">STAT4</text>
+  
+  <!-- STAT4 in nucleus -->
+  <rect x="380" y="370" width="40" height="20" fill="#ff99cc" stroke="#cc3366" stroke-width="2"/>
+  <text x="382" y="385" font-family="Arial" font-size="12" fill="#333">STAT4</text>
+  
+  <!-- Signaling pathway arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- IL12A and IL12B association -->
+  <line x1="325" y1="80" x2="355" y2="100" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="335" y="75" font-family="Arial" font-size="10" fill="#333">binding</text>
+  
+  <!-- Binding of IL12 to receptors -->
+  <line x1="340" y1="165" x2="320" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="165" x2="370" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="340" y="170" font-family="Arial" font-size="10" fill="#333">receptor binding</text>
+  
+  <!-- Receptor activation to kinases -->
+  <line x1="300" y1="210" x2="300" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="380" y1="210" x2="380" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="250" y="230" font-family="Arial" font-size="10" fill="#333">activation</text>
+  <text x="390" y="230" font-family="Arial" font-size="10" fill="#333">activation</text>
+  
+  <!-- Kinase signaling to STAT4 -->
+  <line x1="300" y1="270" x2="330" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="380" y1="270" x2="350" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="300" y="290" font-family="Arial" font-size="10" fill="#333">phosphorylation</text>
+  
+  <!-- STAT4 translocation to nucleus -->
+  <line x1="350" y1="320" x2="380" y2="370" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="355" y="345" font-family="Arial" font-size="10" fill="#333">translocation</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="30" width="200" height="160" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+  <text x="590" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  
+  <!-- Cytokines -->
+  <circle cx="600" cy="70" r="10" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="615" y="75" font-family="Arial" font-size="12" fill="#333">Cytokines (IL12A/B)</text>
+  
+  <!-- Receptors -->
+  <rect x="590" y="90" width="20" height="10" fill="#99ccff" stroke="#3366cc" stroke-width="2"/>
+  <text x="615" y="100" font-family="Arial" font-size="12" fill="#333">Receptors (IL12RB1/2)</text>
+  
+  <!-- Kinases -->
+  <polygon points="590,115 610,115 610,130 600,135 590,130" fill="#99ff99" stroke="#339933" stroke-width="2" transform="scale(0.5) translate(600, 130)"/>
+  <text x="615" y="125" font-family="Arial" font-size="12" fill="#333">Kinases (JAK2/TYK2)</text>
+  
+  <!-- STAT4 -->
+  <rect x="590" y="145" width="20" height="10" fill="#ff99cc" stroke="#cc3366" stroke-width="2"/>
+  <text x="615" y="155" font-family="Arial" font-size="12" fill="#333">Transcription Factor (STAT4)</text>
+  
+  <!-- Pathway name -->
+  <text x="250" y="570" font-family="Arial" font-size="18" font-weight="bold" fill="#333">IL12-Mediated Signaling Pathway</text>
+  <text x="330" y="590" font-family="Arial" font-size="14" fill="#666">Human (Homo sapiens)</text>
+</svg>

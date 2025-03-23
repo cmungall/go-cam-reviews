@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <rect x="50" y="200" width="700" height="15" rx="7" fill="#8A9BA8" opacity="0.8"/>
+  <text x="60" y="230" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Extracellular space -->
+  <text x="60" y="180" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Cytoplasm -->
+  <text x="60" y="280" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="450" rx="150" ry="80" fill="#DFEAFF" stroke="#6E8BC5" stroke-width="3"/>
+  <text x="400" y="455" font-family="Arial" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">Nucleus</text>
+  
+  <!-- BMP2 ligand -->
+  <circle cx="200" cy="150" r="28" fill="#FF9E6D" stroke="#E86A33" stroke-width="3"/>
+  <text x="200" y="156" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">BMP2</text>
+  <text x="200" y="115" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Receptor Ligand Activity</text>
+  
+  <!-- BMPR2 receptor -->
+  <rect x="175" y="190" width="50" height="35" fill="#6FA8DC" stroke="#3D85C6" stroke-width="3"/>
+  <text x="200" y="212" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">BMPR2</text>
+  
+  <!-- BMPR1A receptor -->
+  <rect x="225" y="190" width="50" height="35" fill="#93C47D" stroke="#6AA84F" stroke-width="3"/>
+  <text x="250" y="212" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">BMPR1A</text>
+  
+  <!-- Binding and activation arrows -->
+  <path d="M200,178 L200,190" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Phosphorylation events -->
+  <circle cx="200" cy="245" r="15" fill="#FFD966" stroke="#F1C232" stroke-width="3"/>
+  <text x="200" y="250" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">P</text>
+  <circle cx="250" cy="245" r="15" fill="#FFD966" stroke="#F1C232" stroke-width="3"/>
+  <text x="250" y="250" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">P</text>
+  
+  <!-- SMAD1 in cytoplasm -->
+  <rect x="300" y="300" width="70" height="30" fill="#B4A7D6" stroke="#8E7CC3" stroke-width="3"/>
+  <text x="335" y="320" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">SMAD1</text>
+  
+  <!-- SMAD1 activation and transport to nucleus -->
+  <path d="M250,245 Q335,270 335,300" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M335,330 Q335,380 355,420" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- SMAD1 in nucleus as transcription factor -->
+  <rect x="355" y="420" width="70" height="30" fill="#B4A7D6" stroke="#8E7CC3" stroke-width="3"/>
+  <text x="390" y="440" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">SMAD1</text>
+  <text x="390" y="475" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Transcription Factor Activity</text>
+  
+  <!-- Clathrin-dependent endocytosis -->
+  <path d="M180,210 Q150,250 130,300" stroke="#333" stroke-width="3" fill="none" stroke-dasharray="6,6" marker-end="url(#arrowhead)"/>
+  <circle cx="130" cy="300" r="28" fill="#F9CB9C" stroke="#E69138" stroke-width="3"/>
+  <text x="130" y="295" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Clathrin-</text>
+  <text x="130" y="312" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">coated pit</text>
+  <text x="130" y="340" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">EPS15L1</text>
+  
+  <!-- BMP signaling pathway label -->
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">BMP2-SMAD Signaling Pathway (Mouse)</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Pathway elements -->
+  <rect x="500" y="230" width="250" height="120" fill="#F5F5F5" stroke="#333" stroke-width="2" rx="10" opacity="0.9"/>
+  <text x="625" y="250" font-family="Arial" font-size="16" fill="#333" text-anchor="middle" font-weight="bold">Molecular Functions</text>
+  <text x="625" y="280" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">• Protein Ser/Thr Kinase Activity</text>
+  <text x="625" y="310" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">• BMP Binding</text>
+  <text x="625" y="340" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">• BMP Receptor Activity</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="430" width="220" height="150" fill="#F5F5F5" stroke="#333" stroke-width="2" rx="10"/>
+  <text x="660" y="455" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <circle cx="575" y="480" r="12" fill="#FF9E6D" stroke="#E86A33" stroke-width="2"/>
+  <text x="645" y="485" font-family="Arial" font-size="16" fill="#333">BMP2 ligand</text>
+  
+  <rect x="568" y="500" width="18" height="18" fill="#6FA8DC" stroke="#3D85C6" stroke-width="2"/>
+  <text x="645" y="515" font-family="Arial" font-size="16" fill="#333">BMPR2</text>
+  
+  <rect x="568" y="530" width="18" height="18" fill="#93C47D" stroke="#6AA84F" stroke-width="2"/>
+  <text x="645" y="545" font-family="Arial" font-size="16" fill="#333">BMPR1A</text>
+  
+  <rect x="568" y="560" width="18" height="18" fill="#B4A7D6" stroke="#8E7CC3" stroke-width="2"/>
+  <text x="645" y="575" font-family="Arial" font-size="16" fill="#333">SMAD1</text>
+</svg>

@@ -1,0 +1,122 @@
+<svg width="850" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="425" cy="325" rx="380" ry="280" fill="#f9f9f9" stroke="#555" stroke-width="3"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="275" cy="325" rx="150" ry="120" fill="#e6f2ff" stroke="#555" stroke-width="2"/>
+  <text x="275" y="325" font-family="Arial" font-size="20" text-anchor="middle">Nucleus</text>
+  
+  <!-- DNA damage site in nucleus -->
+  <path d="M225,275 Q255,265 285,275 Q315,285 345,275" fill="none" stroke="#cc0000" stroke-width="3"/>
+  <text x="285" y="245" font-family="Arial" font-size="16" text-anchor="middle">DNA damage site</text>
+  
+  <!-- AIM2 binding to dsDNA -->
+  <polygon points="270,260 300,260 300,290 270,290" fill="#FF8C42" stroke="#000" stroke-width="2"/>
+  <text x="285" y="280" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">AIM2</text>
+  <text x="285" y="305" font-family="Arial" font-size="12" text-anchor="middle">dsDNA binding</text>
+  
+  <!-- Signaling in cytoplasm -->
+  <!-- AIM2 activated in cytoplasm -->
+  <polygon points="410,260 440,260 440,290 410,290" fill="#FF8C42" stroke="#000" stroke-width="2"/>
+  <text x="425" y="280" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">AIM2</text>
+  <text x="425" y="315" font-family="Arial" font-size="12" text-anchor="middle">Pattern recognition</text>
+  
+  <!-- Arrow from DNA binding to cytoplasmic AIM2 -->
+  <line x1="310" y1="275" x2="395" y2="275" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Adaptor signaling -->
+  <polygon points="510,305 540,325 510,345 480,325" fill="#6ECC6E" stroke="#000" stroke-width="2"/>
+  <text x="510" y="330" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">ASC</text>
+  <text x="510" y="360" font-family="Arial" font-size="10" text-anchor="middle" fill="#444">(PYCARD)</text>
+  <text x="510" y="378" font-family="Arial" font-size="10" text-anchor="middle">Adaptor activity</text>
+  
+  <!-- Arrow from AIM2 to ASC -->
+  <line x1="440" y1="280" x2="480" y2="325" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Caspase-1 activation -->
+  <rect x="475" y="405" width="100" height="40" rx="10" ry="10" fill="#E56399" stroke="#000" stroke-width="2"/>
+  <text x="525" y="430" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Caspase-1</text>
+  <text x="525" y="460" font-family="Arial" font-size="10" text-anchor="middle">Endopeptidase activity</text>
+  
+  <!-- Arrow from ASC to Caspase-1 -->
+  <line x1="510" y1="350" x2="525" y2="400" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Pro Gasdermin D to Gasdermin D -->
+  <rect x="325" y="405" width="100" height="40" rx="10" ry="10" fill="#F9DB6D" stroke="#000" stroke-width="2"/>
+  <text x="375" y="430" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Pro-GSDMD</text>
+  
+  <!-- Cleaved/Active GSDMD -->
+  <rect x="325" y="475" width="100" height="40" rx="10" ry="10" fill="#F9DB6D" stroke="#cc0000" stroke-width="3"/>
+  <text x="375" y="500" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">GSDMD</text>
+  <text x="375" y="520" font-family="Arial" font-size="10" text-anchor="middle">Cleaved/Active</text>
+  
+  <!-- Arrow from Caspase-1 to Pro-GSDMD -->
+  <line x1="475" y1="425" x2="435" y2="425" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow from Pro-GSDMD to GSDMD -->
+  <line x1="375" y1="450" x2="375" y2="470" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Plasma membrane detail -->
+  <path d="M125,525 Q425,555 725,525" fill="none" stroke="#555" stroke-width="4"/>
+  <text x="425" y="580" font-family="Arial" font-size="16" text-anchor="middle">Plasma membrane</text>
+  
+  <!-- Pore formation by GSDMD -->
+  <circle cx="425" cy="525" r="15" fill="white" stroke="#cc0000" stroke-width="3"/>
+  <path d="M395,525 C385,510 405,510 395,525" fill="none" stroke="#cc0000" stroke-width="3"/>
+  <path d="M455,525 C465,510 445,510 455,525" fill="none" stroke="#cc0000" stroke-width="3"/>
+  
+  <!-- Arrow from GSDMD to pore -->
+  <line x1="375" y1="500" x2="405" y2="520" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Inflammatory mediators leaving cell -->
+  <path d="M425,540 Q425,565 440,580" fill="none" stroke="#ff6666" stroke-width="2" stroke-dasharray="5,2"/>
+  <path d="M425,540 Q425,565 410,580" fill="none" stroke="#ff6666" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="465" y="595" font-family="Arial" font-size="14" text-anchor="middle">Inflammatory response</text>
+  
+  <!-- Cell label -->
+  <text x="145" y="155" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Neural Cell</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="425" y="50" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Activation of the AIM2 Inflammasome in Neural Cells</text>
+  <text x="425" y="80" font-family="Arial" font-size="16" text-anchor="middle">Leading to Pyroptosis and Inflammatory Response</text>
+  
+  <!-- Pathway steps labels -->
+  <text x="120" y="275" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#444">1. DNA Damage</text>
+  <text x="425" y="230" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#444">2. AIM2 Activation</text>
+  <text x="575" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#444">3. ASC Recruitment</text>
+  <text x="600" y="425" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#444">4. Caspase-1 Activation</text>
+  <text x="260" y="425" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#444">5. GSDMD Cleavage</text>
+  <text x="550" y="525" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#444">6. Pore Formation</text>
+  
+  <!-- Legend -->
+  <rect x="650" y="120" width="160" height="190" fill="#fff" stroke="#555" stroke-width="1.5" rx="5" ry="5" opacity="0.9"/>
+  <text x="730" y="140" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <polygon points="665,155 677,155 677,167 665,167" fill="#FF8C42" stroke="#000" stroke-width="1"/>
+  <text x="730" y="165" font-family="Arial" font-size="12" text-anchor="middle">AIM2</text>
+  
+  <polygon points="670,180 682,190 670,200 658,190" fill="#6ECC6E" stroke="#000" stroke-width="1"/>
+  <text x="730" y="190" font-family="Arial" font-size="12" text-anchor="middle">ASC (PYCARD)</text>
+  
+  <rect x="663" y="210" width="14" height="14" rx="4" ry="4" fill="#E56399" stroke="#000" stroke-width="1"/>
+  <text x="730" y="220" font-family="Arial" font-size="12" text-anchor="middle">Caspase-1</text>
+  
+  <rect x="663" y="235" width="14" height="14" rx="4" ry="4" fill="#F9DB6D" stroke="#000" stroke-width="1"/>
+  <text x="730" y="245" font-family="Arial" font-size="12" text-anchor="middle">Pro-GSDMD</text>
+  
+  <rect x="663" y="260" width="14" height="14" rx="4" ry="4" fill="#F9DB6D" stroke="#cc0000" stroke-width="2"/>
+  <text x="730" y="270" font-family="Arial" font-size="12" text-anchor="middle">Cleaved GSDMD</text>
+  
+  <line x1="663" y1="285" x2="677" y2="285" stroke="#cc0000" stroke-width="2"/>
+  <text x="730" y="290" font-family="Arial" font-size="12" text-anchor="middle">DNA damage</text>
+  
+  <circle cx="670" y="305" r="6" fill="white" stroke="#cc0000" stroke-width="2"/>
+  <text x="730" y="310" font-family="Arial" font-size="12" text-anchor="middle">Membrane pore</text>
+</svg>

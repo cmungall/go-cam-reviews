@@ -1,0 +1,191 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Ribosome Quality Control (RQC) Complex Activity</text>
+  <text x="400" y="55" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Ubiquitination and Degradation of Incompletely Synthesized Nascent Proteins</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="70" y="90" font-family="Arial" font-size="16" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Step 1: Stalled ribosome -->
+  <g transform="translate(150,150)">
+    <!-- Background for step 1 -->
+    <rect x="-90" y="-80" width="180" height="180" rx="10" ry="10" fill="#F8F9F9" stroke="#E5E7E9" stroke-width="1" opacity="0.7" />
+    
+    <!-- Ribosome (large and small subunit) -->
+    <ellipse cx="0" cy="0" rx="70" ry="50" fill="#dddddd" stroke="#555555" stroke-width="2" />
+    <path d="M-40,-15 L40,-15" stroke="#555555" stroke-width="2" />
+    <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle">Stalled</text>
+    <text x="0" y="25" font-family="Arial" font-size="12" text-anchor="middle">Ribosome</text>
+    
+    <!-- Nascent peptide -->
+    <path d="M30,-20 Q50,-30 70,-15 Q90,0 110,0" stroke="#ff6666" stroke-width="3" fill="none" />
+    <text x="70" y="-40" font-family="Arial" font-size="12" text-anchor="middle">Incomplete</text>
+    <text x="70" y="-25" font-family="Arial" font-size="12" text-anchor="middle">Peptide</text>
+    
+    <!-- Step Label -->
+    <text x="0" y="-65" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">1. Stalled Ribosome</text>
+  </g>
+  
+  <!-- Step 2: Ribosome Disassembly -->
+  <g transform="translate(350,150)">
+    <!-- Background for step 2 -->
+    <rect x="-90" y="-80" width="180" height="180" rx="10" ry="10" fill="#EBF5FB" stroke="#D6EAF8" stroke-width="1" opacity="0.7" />
+    
+    <!-- Ribosome (separating) -->
+    <ellipse cx="-20" cy="10" rx="40" ry="30" fill="#dddddd" stroke="#555555" stroke-width="2" />
+    <ellipse cx="30" cy="-10" rx="40" ry="30" fill="#dddddd" stroke="#555555" stroke-width="2" />
+    
+    <!-- ABCE1 and ASCC3 -->
+    <circle cx="0" cy="50" r="22" fill="#AED6F1" stroke="#2874A6" stroke-width="2" />
+    <text x="0" y="54" font-family="Arial" font-size="11" text-anchor="middle">ABCE1</text>
+    
+    <circle cx="50" cy="50" r="22" fill="#D6EAF8" stroke="#2E86C1" stroke-width="2" />
+    <text x="50" y="54" font-family="Arial" font-size="11" text-anchor="middle">ASCC3</text>
+    
+    <!-- ATP -->
+    <text x="25" y="85" font-family="Arial" font-size="12" text-anchor="middle">ATP Hydrolysis</text>
+    
+    <!-- Step Label -->
+    <text x="10" y="-65" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">2. Ribosome Disassembly</text>
+    
+    <!-- Arrows from step 1 -->
+    <path d="M-130,0 L-70,0" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  </g>
+  
+  <!-- Step 3: NEMF CAT Tailing -->
+  <g transform="translate(550,150)">
+    <!-- Background for step 3 -->
+    <rect x="-90" y="-80" width="180" height="180" rx="10" ry="10" fill="#EAFAF1" stroke="#D5F5E3" stroke-width="1" opacity="0.7" />
+    
+    <!-- Ribosomal large subunit -->
+    <ellipse cx="0" cy="0" rx="50" ry="35" fill="#dddddd" stroke="#555555" stroke-width="2" />
+    
+    <!-- Nascent peptide with CAT tail -->
+    <path d="M30,-10 Q50,-20 70,-10 Q90,0 105,10" stroke="#ff6666" stroke-width="3" fill="none" />
+    <path d="M105,10 Q120,20 130,10" stroke="#88cc88" stroke-width="3" fill="none" />
+    
+    <!-- NEMF -->
+    <circle cx="80" cy="40" r="22" fill="#D5F5E3" stroke="#27AE60" stroke-width="2" />
+    <text x="80" y="44" font-family="Arial" font-size="11" text-anchor="middle">NEMF</text>
+    
+    <!-- CAT tailing label -->
+    <text x="130" y="20" font-family="Arial" font-size="12" text-anchor="middle">CAT</text>
+    <text x="130" y="35" font-family="Arial" font-size="12" text-anchor="middle">tail</text>
+    
+    <!-- Step Label -->
+    <text x="0" y="-65" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">3. CAT Tailing by NEMF</text>
+    
+    <!-- Arrows from step 2 -->
+    <path d="M-130,0 L-70,0" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  </g>
+  
+  <!-- Step 4: Ubiquitination by LTN1 -->
+  <g transform="translate(350,320)">
+    <!-- Background for step 4 -->
+    <rect x="-90" y="-80" width="180" height="180" rx="10" ry="10" fill="#FEF9E7" stroke="#FCF3CF" stroke-width="1" opacity="0.7" />
+    
+    <!-- Ribosomal large subunit -->
+    <ellipse cx="0" cy="0" rx="50" ry="35" fill="#dddddd" stroke="#555555" stroke-width="2" />
+    
+    <!-- Nascent peptide with CAT tail -->
+    <path d="M30,-10 Q50,-20 70,-10 Q90,0 105,10" stroke="#ff6666" stroke-width="3" fill="none" />
+    <path d="M105,10 Q120,20 130,10" stroke="#88cc88" stroke-width="3" fill="none" />
+    
+    <!-- Ubiquitin tags -->
+    <circle cx="60" cy="-15" r="8" fill="#ffcc00" stroke="#cc9900" stroke-width="1" />
+    <circle cx="80" cy="-12" r="8" fill="#ffcc00" stroke="#cc9900" stroke-width="1" />
+    <circle cx="95" cy="0" r="8" fill="#ffcc00" stroke="#cc9900" stroke-width="1" />
+    
+    <!-- LTN1 -->
+    <circle cx="60" cy="50" r="22" fill="#F9E79F" stroke="#D4AC0D" stroke-width="2" />
+    <text x="60" y="54" font-family="Arial" font-size="11" text-anchor="middle">LTN1</text>
+    
+    <!-- Ubiquitination label -->
+    <text x="130" y="45" font-family="Arial" font-size="12" text-anchor="middle">Ubiquitin</text>
+    <text x="130" y="60" font-family="Arial" font-size="12" text-anchor="middle">tags</text>
+    
+    <!-- Step Label -->
+    <text x="0" y="-65" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">4. Ubiquitination by LTN1</text>
+    
+    <!-- Arrows from step 3 to step 4 - improved -->
+    <path d="M150,-170 C200,-110 200,-50 100,-50" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  </g>
+  
+  <!-- Step 5: Protein Degradation -->
+  <g transform="translate(150,320)">
+    <!-- Background for step 5 -->
+    <rect x="-90" y="-80" width="180" height="180" rx="10" ry="10" fill="#FDEDEC" stroke="#FADBD8" stroke-width="1" opacity="0.7" />
+    
+    <!-- Proteasome simplified -->
+    <rect x="-40" y="-30" width="80" height="60" rx="10" ry="10" fill="#F5B7B1" stroke="#943126" stroke-width="2" />
+    <rect x="-30" y="-20" width="60" height="40" rx="5" ry="5" fill="#F5B7B1" stroke="#943126" stroke-width="1" />
+    <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle">Proteasome</text>
+    
+    <!-- Degraded peptide fragments -->
+    <circle cx="60" cy="10" r="4" fill="#ff6666" />
+    <circle cx="70" cy="-5" r="4" fill="#ff6666" />
+    <circle cx="80" cy="15" r="4" fill="#ff6666" />
+    <circle cx="65" cy="25" r="4" fill="#ff6666" />
+    
+    <!-- Step Label -->
+    <text x="0" y="-65" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">5. Protein Degradation</text>
+    
+    <!-- Arrows from step 4 - improved -->
+    <path d="M130,0 L70,0" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  </g>
+  
+  <!-- Flow indicators - additional arrows for clarity -->
+  <text x="250" y="135" font-family="Arial" font-size="13" text-anchor="middle">Disassembly</text>
+  <text x="450" y="135" font-family="Arial" font-size="13" text-anchor="middle">CAT Tailing</text>
+  <text x="410" y="260" font-family="Arial" font-size="13" text-anchor="middle" transform="rotate(-45,410,260)">Ubiquitination</text>
+  <text x="250" y="320" font-family="Arial" font-size="13" text-anchor="middle">Degradation</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <g transform="translate(600,420)">
+    <rect x="-10" y="-10" width="200" height="180" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" />
+    <text x="90" y="15" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+    
+    <!-- Ribosome -->
+    <ellipse cx="20" cy="35" rx="15" ry="10" fill="#dddddd" stroke="#555555" stroke-width="1" />
+    <text x="95" y="40" font-family="Arial" font-size="12" text-anchor="middle">Cytosolic Ribosome</text>
+    
+    <!-- Nascent peptide -->
+    <path d="M10,55 L30,55" stroke="#ff6666" stroke-width="3" />
+    <text x="95" y="60" font-family="Arial" font-size="12" text-anchor="middle">Nascent Peptide</text>
+    
+    <!-- CAT tail -->
+    <path d="M10,75 L30,75" stroke="#88cc88" stroke-width="3" />
+    <text x="95" y="80" font-family="Arial" font-size="12" text-anchor="middle">CAT Tail</text>
+    
+    <!-- Ubiquitin -->
+    <circle cx="20" cy="95" r="6" fill="#ffcc00" stroke="#cc9900" stroke-width="1" />
+    <text x="95" y="100" font-family="Arial" font-size="12" text-anchor="middle">Ubiquitin</text>
+    
+    <!-- Proteins -->
+    <circle cx="20" cy="115" r="6" fill="#AED6F1" stroke="#2874A6" stroke-width="1" />
+    <text x="95" y="120" font-family="Arial" font-size="12" text-anchor="middle">RQC Proteins</text>
+    
+    <!-- Proteasome -->
+    <rect x="10" y="130" width="20" height="15" rx="3" ry="3" fill="#F5B7B1" stroke="#943126" stroke-width="1" />
+    <text x="95" y="140" font-family="Arial" font-size="12" text-anchor="middle">Proteasome</text>
+  </g>
+  
+  <!-- Process description -->
+  <g transform="translate(100, 480)">
+    <text x="300" y="0" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">RQC Complex Activity:</text>
+    <text x="300" y="20" font-family="Arial" font-size="12" text-anchor="middle">ABCE1 and ASCC3 facilitate ribosome disassembly through ATP hydrolysis</text>
+    <text x="300" y="40" font-family="Arial" font-size="12" text-anchor="middle">NEMF adds CAT tails (C-terminal alanine and threonine) to incomplete nascent peptides</text>
+    <text x="300" y="60" font-family="Arial" font-size="12" text-anchor="middle">LTN1 is an E3 ubiquitin ligase that marks defective proteins for degradation</text>
+    <text x="300" y="80" font-family="Arial" font-size="12" text-anchor="middle">Ubiquitinated peptides are targeted to the proteasome for degradation</text>
+  </g>
+</svg>

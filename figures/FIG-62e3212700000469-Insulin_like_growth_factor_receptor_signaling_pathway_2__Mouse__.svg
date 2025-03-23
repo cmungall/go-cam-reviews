@@ -1,0 +1,150 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell membrane -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" />
+  <path d="M 50 150 C 100 130, 200 170, 300 150 C 400 130, 500 170, 600 150 C 700 130, 750 160, 800 150" 
+        stroke="#87CEEB" stroke-width="10" fill="none" />
+  <path d="M 50 160 C 100 140, 200 180, 300 160 C 400 140, 500 180, 600 160 C 700 140, 750 170, 800 160" 
+        stroke="#4682B4" stroke-width="6" fill="none" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">
+    Insulin-like Growth Factor Receptor Signaling Pathway (Mouse)
+  </text>
+  
+  <!-- IGF2 ligand -->
+  <circle cx="200" cy="100" r="25" fill="#90EE90" stroke="#2E8B57" stroke-width="2" />
+  <text x="200" y="105" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">IGF2</text>
+  
+  <!-- IGF1R receptor -->
+  <rect x="180" y="150" width="40" height="60" fill="#FF9999" stroke="#8B0000" stroke-width="2" />
+  <text x="200" y="185" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">IGF1R</text>
+  
+  <!-- Arrow from IGF2 to IGF1R -->
+  <path d="M 200 125 L 200 150" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- PTK activation -->
+  <circle cx="200" cy="240" r="25" fill="#FFA500" stroke="#8B4513" stroke-width="2" />
+  <text x="200" y="245" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PTK</text>
+  
+  <!-- Arrow from IGF1R to PTK -->
+  <path d="M 200 210 L 200 215" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- SHC1 adaptor -->
+  <rect x="300" y="220" width="60" height="30" fill="#ADD8E6" stroke="#4682B4" stroke-width="2" rx="10" ry="10" />
+  <text x="330" y="240" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SHC1</text>
+  
+  <!-- Arrow from PTK to SHC1 -->
+  <path d="M 225 240 L 300 235" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- GRB2 adaptor -->
+  <rect x="400" y="220" width="60" height="30" fill="#ADD8E6" stroke="#4682B4" stroke-width="2" rx="10" ry="10" />
+  <text x="430" y="240" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">GRB2</text>
+  
+  <!-- Arrow from SHC1 to GRB2 -->
+  <path d="M 360 235 L 400 235" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- SOS1 exchange factor -->
+  <rect x="500" y="220" width="60" height="30" fill="#FFFF99" stroke="#B8860B" stroke-width="2" />
+  <text x="530" y="240" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SOS1</text>
+  
+  <!-- Arrow from GRB2 to SOS1 -->
+  <path d="M 460 235 L 500 235" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- KRAS -->
+  <circle cx="600" cy="240" r="25" fill="#DDA0DD" stroke="#8B008B" stroke-width="2" />
+  <text x="600" y="245" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">KRAS</text>
+  
+  <!-- Arrow from SOS1 to KRAS -->
+  <path d="M 560 235 L 575 240" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- RAF1 MAPKKK -->
+  <polygon points="600,290 625,320 575,320" fill="#FF6347" stroke="#8B0000" stroke-width="2" />
+  <text x="600" y="310" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">RAF1</text>
+  
+  <!-- Arrow from KRAS to RAF1 -->
+  <path d="M 600 265 L 600 290" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- MAP2K branches with more uniform spacing -->
+  <!-- Left branch: MAP2K2 -->
+  <rect x="530" y="350" width="60" height="30" fill="#FFB6C1" stroke="#C71585" stroke-width="2" />
+  <text x="560" y="370" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">MAP2K2</text>
+  
+  <!-- Right branch: MAP2K1 -->
+  <rect x="610" y="350" width="60" height="30" fill="#FFB6C1" stroke="#C71585" stroke-width="2" />
+  <text x="640" y="370" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">MAP2K1</text>
+  
+  <!-- Alternative branch: MAP2K5 - Highlighted -->
+  <rect x="700" y="290" width="60" height="30" fill="#FFCCCC" stroke="#C71585" stroke-width="3" />
+  <text x="730" y="310" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">MAP2K5</text>
+  <!-- Annotation for this pathway branch -->
+  <text x="730" y="275" font-family="Arial" font-size="12" font-style="italic" fill="#C71585">Alternative</text>
+  <text x="730" y="290" font-family="Arial" font-size="12" font-style="italic" fill="#C71585">pathway</text>
+  
+  <!-- Arrows from RAF1 to MAP2Ks -->
+  <path d="M 590 320 L 560 350" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 610 320 L 640 350" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 625 310 L 700 305" stroke="#C71585" stroke-width="2.5" marker-end="url(#arrowhead)" stroke-dasharray="5,2" />
+  
+  <!-- MAPK branches -->
+  <!-- Left branch: MAPK3 -->
+  <ellipse cx="560" cy="420" rx="30" ry="25" fill="#87CEFA" stroke="#4169E1" stroke-width="2" />
+  <text x="560" y="425" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">MAPK3</text>
+  
+  <!-- Right branch: MAPK1 -->
+  <ellipse cx="640" cy="420" rx="30" ry="25" fill="#87CEFA" stroke="#4169E1" stroke-width="2" />
+  <text x="640" y="425" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">MAPK1</text>
+  
+  <!-- MAPK7 - Highlighted -->
+  <ellipse cx="730" cy="360" rx="30" ry="25" fill="#B0E0FF" stroke="#4169E1" stroke-width="3" />
+  <text x="730" y="365" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">MAPK7</text>
+  
+  <!-- Arrows from MAP2Ks to MAPKs -->
+  <path d="M 560 380 L 560 395" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 640 380 L 640 395" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 730 320 L 730 335" stroke="#4169E1" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  
+  <!-- ATP/ADP symbols -->
+  <text x="160" y="255" font-family="Arial" font-size="11" fill="#666">ATP→ADP</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="100" y="350" font-family="Arial" font-size="16" font-style="italic" fill="#555">Cytoplasm</text>
+  
+  <!-- Extracellular label -->
+  <text x="100" y="120" font-family="Arial" font-size="16" font-style="italic" fill="#555">Extracellular</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="480" width="700" height="100" fill="white" stroke="#666" stroke-width="1" />
+  <text x="400" y="500" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="80" cy="520" r="10" fill="#90EE90" stroke="#2E8B57" stroke-width="1" />
+  <text x="100" y="525" font-family="Arial" font-size="13">Ligand</text>
+  
+  <rect x="150" y="510" width="20" height="20" fill="#FF9999" stroke="#8B0000" stroke-width="1" />
+  <text x="180" y="525" font-family="Arial" font-size="13">Receptor</text>
+  
+  <rect x="240" y="510" width="30" height="20" fill="#ADD8E6" stroke="#4682B4" stroke-width="1" rx="5" ry="5" />
+  <text x="290" y="525" font-family="Arial" font-size="13">Adaptor Protein</text>
+  
+  <circle cx="350" cy="520" r="10" fill="#DDA0DD" stroke="#8B008B" stroke-width="1" />
+  <text x="370" y="525" font-family="Arial" font-size="13">GTPase</text>
+  
+  <polygon points="410,510 425,530 395,530" fill="#FF6347" stroke="#8B0000" stroke-width="1" />
+  <text x="440" y="525" font-family="Arial" font-size="13">MAPKKK</text>
+  
+  <rect x="480" y="510" width="30" height="20" fill="#FFB6C1" stroke="#C71585" stroke-width="1" />
+  <text x="530" y="525" font-family="Arial" font-size="13">MAPKK</text>
+  
+  <ellipse cx="580" cy="520" rx="15" ry="12" fill="#87CEFA" stroke="#4169E1" stroke-width="1" />
+  <text x="610" y="525" font-family="Arial" font-size="13">MAPK</text>
+  
+  <path d="M 630 520 L 650 520" stroke="#C71585" stroke-width="2" stroke-dasharray="5,2" />
+  <text x="680" y="525" font-family="Arial" font-size="13">Alternative pathway</text>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+  </defs>
+</svg>

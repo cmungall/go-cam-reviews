@@ -1,0 +1,123 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Cell membrane -->
+  <path d="M100,200 L700,200 L700,500 L100,500 Z" fill="#e6f7ff" stroke="#333" stroke-width="2" />
+  
+  <!-- Extracellular space -->
+  <rect x="100" y="50" width="600" height="150" fill="#f0f8ff" stroke="#333" stroke-dasharray="5,5" stroke-width="1" />
+  <text x="120" y="80" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Plasma membrane -->
+  <path d="M100,200 L700,200" stroke="#333" stroke-width="4" />
+  <text x="120" y="230" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- ADAM17 -->
+  <rect x="150" y="180" width="100" height="40" fill="#ff9999" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="160" y="205" font-family="Arial" font-size="14" fill="#333" font-weight="bold">ADAM17</text>
+  <text x="145" y="170" font-family="Arial" font-size="12" fill="#333">Metalloendopeptidase</text>
+  <text x="160" y="155" font-family="Arial" font-size="12" fill="#333">(GO:0004222)</text>
+  
+  <!-- HB-EGF precursor -->
+  <rect x="280" y="180" width="80" height="40" fill="#99cc99" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="290" y="205" font-family="Arial" font-size="14" fill="#333" font-weight="bold">HB-EGF</text>
+  <text x="290" y="220" font-family="Arial" font-size="12" fill="#333">precursor</text>
+  
+  <!-- Step 1 label -->
+  <text x="250" y="185" font-family="Arial" font-size="12" fill="#333" font-weight="bold">1</text>
+  <circle cx="250" cy="185" r="10" fill="white" stroke="#333" stroke-width="1" />
+  
+  <!-- Cleavage arrow -->
+  <path d="M250,200 L280,200" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Step 2 label -->
+  <text x="315" y="165" font-family="Arial" font-size="12" fill="#333" font-weight="bold">2</text>
+  <circle cx="315" cy="165" r="10" fill="white" stroke="#333" stroke-width="1" />
+  
+  <path d="M330,180 L330,150" stroke="#333" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)" />
+  
+  <!-- Mature HB-EGF -->
+  <circle cx="330" cy="120" r="25" fill="#99cc99" stroke="#333" stroke-width="2" />
+  <text x="310" y="124" font-family="Arial" font-size="13" fill="#333" font-weight="bold">HB-EGF</text>
+  <text x="310" y="90" font-family="Arial" font-size="12" fill="#333">Receptor ligand</text>
+  <text x="315" y="75" font-family="Arial" font-size="12" fill="#333">(GO:0048018)</text>
+  
+  <!-- EGFR -->
+  <rect x="450" y="180" width="80" height="40" fill="#9999ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="470" y="205" font-family="Arial" font-size="14" fill="#333" font-weight="bold">EGFR</text>
+  <text x="425" y="170" font-family="Arial" font-size="12" fill="#333">EGF receptor activity</text>
+  <text x="435" y="155" font-family="Arial" font-size="12" fill="#333">(GO:0005006)</text>
+  
+  <!-- ERBB2 -->
+  <rect x="550" y="180" width="80" height="40" fill="#ff99cc" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="565" y="205" font-family="Arial" font-size="14" fill="#333" font-weight="bold">ERBB2</text>
+  <text x="535" y="170" font-family="Arial" font-size="12" fill="#333">Protein tyrosine kinase</text>
+  <text x="550" y="155" font-family="Arial" font-size="12" fill="#333">(GO:0004713)</text>
+  
+  <!-- Step 3 label -->
+  <text x="390" y="135" font-family="Arial" font-size="12" fill="#333" font-weight="bold">3</text>
+  <circle cx="390" cy="135" r="10" fill="white" stroke="#333" stroke-width="1" />
+  
+  <!-- Binding interaction -->
+  <path d="M355,120 L450,180" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="375" y="130" font-family="Arial" font-size="14" fill="#333">Binds</text>
+  
+  <!-- Step 4 label -->
+  <text x="530" y="220" font-family="Arial" font-size="12" fill="#333" font-weight="bold">4</text>
+  <circle cx="530" cy="220" r="10" fill="white" stroke="#333" stroke-width="1" />
+  
+  <!-- EGFR-ERBB2 interaction -->
+  <path d="M530,200 L550,200" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="510" y="235" font-family="Arial" font-size="14" fill="#333">Activates</text>
+  
+  <!-- Process labels -->
+  <text x="240" y="240" font-family="Arial" font-size="13" fill="#333" font-style="italic">Signaling receptor ligand</text>
+  <text x="240" y="255" font-family="Arial" font-size="13" fill="#333" font-style="italic">precursor processing</text>
+  <text x="240" y="270" font-family="Arial" font-size="13" fill="#333" font-style="italic">(GO:0140448)</text>
+  
+  <text x="460" y="270" font-family="Arial" font-size="16" fill="#333" font-weight="bold">ERBB2-EGFR Signaling Pathway</text>
+  <text x="490" y="290" font-family="Arial" font-size="14" fill="#333" font-style="italic">(GO:0038134)</text>
+  
+  <!-- Pathway flow arrow -->
+  <path d="M200,300 C300,320 400,320 600,300" stroke="#333" stroke-width="2" stroke-dasharray="6,2" marker-end="url(#arrow)" fill="none" />
+  <text x="350" y="330" font-family="Arial" font-size="14" fill="#333">Pathway Flow</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="350" width="200" height="130" fill="white" stroke="#333" stroke-width="1" rx="5" ry="5" />
+  <text x="600" y="370" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="560" y="380" width="20" height="15" fill="#ff9999" stroke="#333" stroke-width="1" />
+  <text x="590" y="392" font-family="Arial" font-size="12" fill="#333">Metalloendopeptidase (ADAM17)</text>
+  
+  <rect x="560" y="405" width="20" height="15" fill="#99cc99" stroke="#333" stroke-width="1" />
+  <text x="590" y="417" font-family="Arial" font-size="12" fill="#333">Growth Factor (HB-EGF)</text>
+  
+  <rect x="560" y="430" width="20" height="15" fill="#9999ff" stroke="#333" stroke-width="1" />
+  <text x="590" y="442" font-family="Arial" font-size="12" fill="#333">EGF Receptor (EGFR)</text>
+  
+  <rect x="560" y="455" width="20" height="15" fill="#ff99cc" stroke="#333" stroke-width="1" />
+  <text x="590" y="467" font-family="Arial" font-size="12" fill="#333">Tyrosine Kinase (ERBB2)</text>
+  
+  <!-- Pathway steps explanation -->
+  <rect x="100" y="350" width="430" height="130" fill="white" stroke="#333" stroke-width="1" rx="5" ry="5" />
+  <text x="110" y="370" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Pathway Steps</text>
+  
+  <text x="110" y="390" font-family="Arial" font-size="12" fill="#333"><tspan font-weight="bold">1.</tspan> ADAM17 cleaves HB-EGF precursor (Metalloendopeptidase activity)</text>
+  <text x="110" y="410" font-family="Arial" font-size="12" fill="#333"><tspan font-weight="bold">2.</tspan> Mature HB-EGF is released to extracellular space</text>
+  <text x="110" y="430" font-family="Arial" font-size="12" fill="#333"><tspan font-weight="bold">3.</tspan> HB-EGF binds to EGFR (Receptor ligand activity)</text>
+  <text x="110" y="450" font-family="Arial" font-size="12" fill="#333"><tspan font-weight="bold">4.</tspan> Activated EGFR dimerizes with ERBB2, activating tyrosine kinase</text>
+  <text x="110" y="470" font-family="Arial" font-size="12" fill="#333"><tspan font-weight="bold">Result:</tspan> Initiation of ERBB2-EGFR signaling pathway</text>
+  
+  <!-- Arrows definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Citation note -->
+  <text x="100" y="550" font-family="Arial" font-size="12" fill="#666">Citations: PMID:21946538, PMID:14993236, PMID:16357442, PMID:19029950</text>
+  <text x="100" y="570" font-family="Arial" font-size="14" fill="#333" font-style="italic">Mouse (Mus musculus) - NCBITaxon:10090</text>
+</svg>

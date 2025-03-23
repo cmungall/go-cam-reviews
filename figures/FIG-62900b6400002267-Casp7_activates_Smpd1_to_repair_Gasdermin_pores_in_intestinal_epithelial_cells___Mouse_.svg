@@ -1,0 +1,125 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="650" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Casp7 activates Smpd1 to repair Gasdermin pores in intestinal epithelial cells</text>
+  <text x="400" y="55" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">(Mus musculus)</text>
+  
+  <!-- Cell membrane -->
+  <path d="M100,150 C100,100 700,100 700,150 C750,200 750,400 700,450 C700,500 100,500 100,450 C50,400 50,200 100,150 Z" fill="#e6f2ff" stroke="#0066cc" stroke-width="3"/>
+  <text x="400" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Plasma membrane (GO:0005886)</text>
+  
+  <!-- Cytosol -->
+  <text x="400" y="180" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Cytosol (GO:0005829)</text>
+  
+  <!-- Extracellular space -->
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Extracellular space (GO:0005615)</text>
+  
+  <!-- Casp1 in cytosol -->
+  <circle cx="200" cy="250" r="30" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="200" y="253" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Casp1</text>
+  <text x="200" y="270" font-family="Arial" font-size="10" text-anchor="middle">endopeptidase</text>
+  
+  <!-- Casp1 activating Gsdmd -->
+  <path d="M230,250 Q270,250 300,300" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <rect x="250" y="230" width="70" height="35" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#999999" stroke-width="1"/>
+  <text x="285" y="247" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  <text x="285" y="262" font-family="Arial" font-size="10" text-anchor="middle">RO:0002629</text>
+  
+  <!-- Gsdmd -->
+  <rect x="270" y="300" width="60" height="40" rx="10" ry="10" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="300" y="323" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Gsdmd</text>
+  
+  <!-- Gsdmd creating pores -->
+  <path d="M300,340 Q300,390 300,420" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <rect x="320" y="370" width="85" height="35" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#999999" stroke-width="1"/>
+  <text x="362" y="387" font-family="Arial" font-size="12" text-anchor="middle">wide pore</text>
+  <text x="362" y="402" font-family="Arial" font-size="10" text-anchor="middle">GO:0022829</text>
+  
+  <!-- Pores in membrane -->
+  <ellipse cx="300" cy="450" rx="20" ry="10" fill="none" stroke="#000000" stroke-width="2"/>
+  <ellipse cx="400" cy="460" rx="20" ry="10" fill="none" stroke="#000000" stroke-width="2"/>
+  <ellipse cx="500" cy="455" rx="20" ry="10" fill="none" stroke="#000000" stroke-width="2"/>
+  <text x="400" y="490" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Gasdermin pores</text>
+  
+  <!-- Protein secretion through pores -->
+  <path d="M300,440 Q300,400 300,370" stroke="#000000" stroke-width="1" stroke-dasharray="5,5" marker-end="url(#arrowhead)" fill="none"/>
+  <rect x="210" y="400" width="85" height="35" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#999999" stroke-width="1"/>
+  <text x="252" y="417" font-family="Arial" font-size="12" text-anchor="middle">protein secretion</text>
+  <text x="252" y="432" font-family="Arial" font-size="10" text-anchor="middle">GO:0009306</text>
+  
+  <!-- Pyroptotic response -->
+  <path d="M500,455 Q550,430 600,430" stroke="#000000" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <rect x="600" y="415" width="90" height="35" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#999999" stroke-width="1"/>
+  <text x="645" y="432" font-family="Arial" font-size="12" text-anchor="middle">pyroptosis</text>
+  <text x="645" y="447" font-family="Arial" font-size="10" text-anchor="middle">GO:0070269</text>
+  
+  <!-- Casp7 in extracellular space -->
+  <circle cx="400" cy="60" r="30" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="400" y="63" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Casp7</text>
+  <text x="400" y="78" font-family="Arial" font-size="10" text-anchor="middle">endopeptidase</text>
+  
+  <!-- Casp7 activating Smpd1 -->
+  <path d="M430,60 Q500,60 550,60" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <rect x="470" y="35" width="70" height="35" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#999999" stroke-width="1"/>
+  <text x="505" y="52" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  <text x="505" y="67" font-family="Arial" font-size="10" text-anchor="middle">RO:0002629</text>
+  
+  <!-- Smpd1 -->
+  <circle cx="580" cy="60" r="30" fill="#99ff99" stroke="#009900" stroke-width="2"/>
+  <text x="580" y="63" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Smpd1</text>
+  <text x="580" y="78" font-family="Arial" font-size="10" text-anchor="middle">sphingomyelinase</text>
+  
+  <!-- Smpd1 producing ceramide -->
+  <path d="M580,90 Q580,130 580,170" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <rect x="600" y="120" width="85" height="35" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#999999" stroke-width="1"/>
+  <text x="642" y="137" font-family="Arial" font-size="12" text-anchor="middle">ceramide synthesis</text>
+  <text x="642" y="152" font-family="Arial" font-size="10" text-anchor="middle">GO:0046513</text>
+  
+  <!-- Ceramide -->
+  <rect x="550" y="170" width="60" height="30" rx="5" ry="5" fill="#ffff99" stroke="#cc9900" stroke-width="2"/>
+  <text x="580" y="190" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Ceramide</text>
+  <text x="580" y="205" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">CHEBI:52639</text>
+  
+  <!-- Membrane repair -->
+  <path d="M580,200 Q580,300 500,400" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <rect x="600" y="280" width="100" height="35" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#999999" stroke-width="1"/>
+  <text x="650" y="300" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Membrane repair</text>
+  <text x="650" y="315" font-family="Arial" font-size="10" text-anchor="middle">GO:0001778</text>
+  
+  <!-- Pore activation of Casp7 -->
+  <path d="M350,430 Q375,250 400,100" stroke="#6600cc" stroke-width="1.5" stroke-dasharray="5,5" marker-end="url(#arrowhead)" fill="none"/>
+  <rect x="380" y="235" width="80" height="35" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#999999" stroke-width="1"/>
+  <text x="420" y="255" font-family="Arial" font-size="12" text-anchor="middle">signaling</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="700" height="110" rx="10" ry="10" fill="white" stroke="#666666" stroke-width="1"/>
+  <text x="400" y="540" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="80" cy="560" r="10" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="100" y="564" font-family="Arial" font-size="14" text-anchor="start">Caspase enzymes (Casp1, Casp7) - endopeptidase activity</text>
+  
+  <rect x="80" cy="580" width="20" height="15" rx="3" ry="3" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="110" y="592" font-family="Arial" font-size="14" text-anchor="start">Gasdermin D (Gsdmd) - forms membrane pores</text>
+  
+  <circle cx="80" cy="610" r="10" fill="#99ff99" stroke="#009900" stroke-width="2"/>
+  <text x="100" y="614" font-family="Arial" font-size="14" text-anchor="start">Sphingomyelinase (Smpd1) - acid sphingomyelin phosphodiesterase activity</text>
+  
+  <rect x="350" y="580" width="20" height="15" rx="3" ry="3" fill="#ffff99" stroke="#cc9900" stroke-width="2"/>
+  <text x="380" y="592" font-family="Arial" font-size="14" text-anchor="start">Ceramide (N-acylsphingosine) - lipid involved in membrane repair</text>
+  
+  <line x1="350" y1="560" x2="380" y2="560" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="395" y="564" font-family="Arial" font-size="14" text-anchor="start">Activation/production (direct relationship)</text>
+  
+  <line x1="350" y1="610" x2="380" y2="610" stroke="#6600cc" stroke-width="1.5" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="395" y="614" font-family="Arial" font-size="14" text-anchor="start">Indirect relationship or process</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+</svg>

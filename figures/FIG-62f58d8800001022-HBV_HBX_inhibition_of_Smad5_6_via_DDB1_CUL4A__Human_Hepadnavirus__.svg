@@ -1,0 +1,103 @@
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="30" y="70" width="740" height="490" rx="60" ry="60" fill="#f9f9f9" stroke="#999" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="70" y="100" font-family="Arial" font-size="18" fill="#666">Human Hepatocyte</text>
+  
+  <!-- Cell nucleus outline -->
+  <ellipse cx="400" cy="320" rx="350" ry="230" fill="#f0f8ff" stroke="#666" stroke-width="3"/>
+  <text x="400" y="140" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Nucleus</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">HBV-HBX Inhibition of SMC5/6 via DDB1/CUL4A</text>
+  
+  <!-- Main proteins and interactions -->
+  
+  <!-- HBX protein -->
+  <rect x="600" y="200" width="100" height="45" fill="#ff9999" stroke="#666" stroke-width="2" rx="8" ry="8"/>
+  <text x="650" y="230" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">HBX</text>
+  
+  <!-- DDB1 protein -->
+  <rect x="450" y="280" width="100" height="45" fill="#99ccff" stroke="#666" stroke-width="2" rx="8" ry="8"/>
+  <text x="500" y="310" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">DDB1</text>
+  
+  <!-- CUL4A protein -->
+  <rect x="350" y="360" width="100" height="45" fill="#99ccff" stroke="#666" stroke-width="2" rx="8" ry="8"/>
+  <text x="400" y="390" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">CUL4A</text>
+  
+  <!-- RBX1 protein -->
+  <rect x="250" y="430" width="100" height="45" fill="#99ccff" stroke="#666" stroke-width="2" rx="8" ry="8"/>
+  <text x="300" y="460" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">RBX1</text>
+  
+  <!-- SMC5 protein -->
+  <rect x="120" y="280" width="100" height="45" fill="#a5d6a7" stroke="#666" stroke-width="2" rx="8" ry="8"/>
+  <text x="170" y="310" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">SMC5</text>
+  
+  <!-- SMC6 protein -->
+  <rect x="120" y="360" width="100" height="45" fill="#a5d6a7" stroke="#666" stroke-width="2" rx="8" ry="8"/>
+  <text x="170" y="390" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">SMC6</text>
+  
+  <!-- Arrows and interaction lines -->
+  <!-- HBX to DDB1 -->
+  <path d="M600,225 C550,230 530,250 500,280" stroke="#666" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="560" y="235" font-family="Arial" font-size="16" fill="#666" font-style="italic">adaptor activity</text>
+  
+  <!-- DDB1 to CUL4A -->
+  <path d="M450,325 C435,335 420,345 400,360" stroke="#666" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="400" y="330" font-family="Arial" font-size="16" fill="#666" font-style="italic">binding</text>
+  
+  <!-- CUL4A to RBX1 -->
+  <path d="M350,405 C335,415 320,420 300,430" stroke="#666" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="300" y="410" font-family="Arial" font-size="16" fill="#666" font-style="italic">activates</text>
+  
+  <!-- RBX1 to SMC proteins -->
+  <path d="M250,450 C220,450 200,430 170,405" stroke="#666" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M250,430 C220,410 200,370 170,325" stroke="#666" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="180" y="420" font-family="Arial" font-size="16" fill="#666" font-style="italic">inhibits</text>
+  
+  <!-- Ubiquitination symbol near SMC proteins -->
+  <circle cx="90" y="320" r="20" fill="#ffffcc" stroke="#ff6600" stroke-width="2"/>
+  <text x="90" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="#ff6600" font-weight="bold">Ub</text>
+  
+  <!-- Protein degradation indication -->
+  <path d="M70,280 L50,310 M70,310 L50,280" stroke="#ff0000" stroke-width="2.5"/>
+  <path d="M70,360 L50,390 M70,390 L50,360" stroke="#ff0000" stroke-width="2.5"/>
+  
+  <!-- Viral presence indication -->
+  <path d="M670,170 c10,-15 20,-5 30,-15" stroke="#ff9999" stroke-width="2.5" fill="none"/>
+  <path d="M670,160 c10,-15 20,-5 30,-15" stroke="#ff9999" stroke-width="2.5" fill="none"/>
+  <text x="700" y="135" font-family="Arial" font-size="16" fill="#666">HBV</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="580" width="700" height="80" fill="#f8f8f8" stroke="#666" stroke-width="1" rx="10" ry="10"/>
+  <text x="400" y="600" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">LEGEND</text>
+  
+  <!-- Legend items -->
+  <rect x="70" y="615" width="25" height="15" fill="#ff9999" stroke="#666"/>
+  <text x="105" y="627" font-family="Arial" font-size="16" text-anchor="start">HBV Viral Protein</text>
+  
+  <rect x="270" y="615" width="25" height="15" fill="#99ccff" stroke="#666"/>
+  <text x="305" y="627" font-family="Arial" font-size="16" text-anchor="start">Host Ubiquitin Ligase Complex</text>
+  
+  <rect x="530" y="615" width="25" height="15" fill="#a5d6a7" stroke="#666"/>
+  <text x="565" y="627" font-family="Arial" font-size="16" text-anchor="start">Host DNA Repair Complex</text>
+  
+  <circle x="70" y="645" r="10" fill="#ffffcc" stroke="#ff6600" stroke-width="2"/>
+  <text x="70" y="649" font-family="Arial" font-size="8" text-anchor="middle" fill="#ff6600" font-weight="bold">Ub</text>
+  <text x="105" y="650" font-family="Arial" font-size="16" text-anchor="start">Ubiquitination</text>
+  
+  <path d="M270,635 L250,655 M270,655 L250,635" stroke="#ff0000" stroke-width="2"/>
+  <text x="305" y="650" font-family="Arial" font-size="16" text-anchor="start">Protein Degradation</text>
+  
+  <!-- Process description -->
+  <rect x="50" y="500" width="700" height="60" fill="#f0f0f0" stroke="#666" stroke-width="1" rx="10" ry="10"/>
+  <text x="400" y="525" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">PATHWAY SUMMARY</text>
+  <text x="400" y="550" font-family="Arial" font-size="16" text-anchor="middle">HBV-HBX recruits host DDB1/CUL4A/RBX1 ubiquitin ligase complex to target SMC5/6 for degradation,</text>
+  <text x="400" y="570" font-family="Arial" font-size="16" text-anchor="middle">thereby inhibiting host antiviral DNA repair mechanisms and promoting viral replication.</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,113 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Liver cell -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f8e8d8" stroke="#b08068" stroke-width="2"/>
+  
+  <!-- Cell nucleus -->
+  <ellipse cx="150" cy="150" rx="60" ry="50" fill="#e0e8f0" stroke="#808890" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Ascorbic Acid Biosynthetic Pathway (Mouse Liver)</text>
+  
+  <!-- Pathway elements -->
+  
+  <!-- Starting substrate -->
+  <rect x="150" y="250" width="100" height="40" rx="10" ry="10" fill="#d0e0ff" stroke="#4060a0" stroke-width="1.5"/>
+  <text x="200" y="275" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">β-D-glucose 1-phosphate</text>
+  
+  <!-- Enzyme 1: Ugp2 -->
+  <rect x="270" y="230" width="80" height="30" rx="15" ry="15" fill="#aed6b0" stroke="#006400" stroke-width="1.5"/>
+  <text x="310" y="250" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">Ugp2</text>
+  <text x="310" y="220" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">UTP-monosaccharide-1-phosphate uridylyltransferase</text>
+  
+  <!-- Intermediate 1 -->
+  <rect x="370" y="250" width="100" height="40" rx="10" ry="10" fill="#d0e0ff" stroke="#4060a0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="420" y="270" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">UDP-glucose</text>
+  <text x="420" y="286" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle" fill="#606060">(implicit intermediate)</text>
+  
+  <!-- Enzyme 2: Ugdh -->
+  <rect x="490" y="230" width="80" height="30" rx="15" ry="15" fill="#b3d1e0" stroke="#006400" stroke-width="1.5"/>
+  <text x="530" y="250" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">Ugdh</text>
+  <text x="530" y="220" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">UDP-glucose 6-dehydrogenase</text>
+  
+  <!-- Intermediate 2 -->
+  <rect x="590" y="250" width="100" height="40" rx="10" ry="10" fill="#d0e0ff" stroke="#4060a0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="640" y="270" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">UDP-glucuronate</text>
+  <text x="640" y="286" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle" fill="#606060">(implicit intermediate)</text>
+  
+  <!-- Enzyme 3: Ugt1a6a -->
+  <rect x="620" y="320" width="80" height="30" rx="15" ry="15" fill="#c9bff0" stroke="#006400" stroke-width="1.5"/>
+  <text x="660" y="340" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">Ugt1a6a</text>
+  <text x="660" y="310" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">alpha-glucuronidase</text>
+  
+  <!-- Intermediate 3 -->
+  <rect x="590" y="380" width="100" height="40" rx="10" ry="10" fill="#d0e0ff" stroke="#4060a0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="640" y="400" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">L-glucuronate</text>
+  <text x="640" y="416" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle" fill="#606060">(implicit intermediate)</text>
+  
+  <!-- Enzyme 4: Akr1a1 -->
+  <rect x="490" y="370" width="80" height="30" rx="15" ry="15" fill="#f1c4a5" stroke="#006400" stroke-width="1.5"/>
+  <text x="530" y="390" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">Akr1a1</text>
+  <text x="530" y="360" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">L-glucuronate reductase</text>
+  
+  <!-- Intermediate 4 -->
+  <rect x="370" y="380" width="100" height="40" rx="10" ry="10" fill="#d0e0ff" stroke="#4060a0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="420" y="400" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">L-gulonate</text>
+  <text x="420" y="416" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle" fill="#606060">(implicit intermediate)</text>
+  
+  <!-- Enzyme 5: Rgn -->
+  <rect x="270" y="370" width="80" height="30" rx="15" ry="15" fill="#f0dcb5" stroke="#006400" stroke-width="1.5"/>
+  <text x="310" y="390" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">Rgn</text>
+  <text x="310" y="360" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">gluconolactonase</text>
+  
+  <!-- Intermediate 5 -->
+  <rect x="150" y="380" width="100" height="40" rx="10" ry="10" fill="#d0e0ff" stroke="#4060a0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="200" y="400" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">L-gulonolactone</text>
+  <text x="200" y="416" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle" fill="#606060">(implicit intermediate)</text>
+  
+  <!-- Enzyme 6: Gulo -->
+  <rect x="150" y="450" width="80" height="30" rx="15" ry="15" fill="#f0b5b9" stroke="#006400" stroke-width="1.5"/>
+  <text x="190" y="470" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">Gulo</text>
+  <text x="190" y="440" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">L-gulonolactone oxidase</text>
+  
+  <!-- Final product -->
+  <rect x="250" y="480" width="100" height="40" rx="10" ry="10" fill="#ffd700" stroke="#b8860b" stroke-width="2"/>
+  <text x="300" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">L-ascorbate</text>
+  
+  <!-- Arrows -->
+  <line x1="250" y1="270" x2="270" y2="270" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="245" x2="370" y2="255" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="470" y1="270" x2="490" y2="270" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="570" y1="245" x2="590" y2="255" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="640" y1="290" x2="640" y2="320" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="640" y1="350" x2="640" y2="380" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="590" y1="400" x2="570" y2="400" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="490" y1="385" x2="470" y2="385" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="400" x2="350" y2="400" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="270" y1="385" x2="250" y2="385" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="190" y1="420" x2="190" y2="450" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="230" y1="465" x2="270" y2="485" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Tissue label -->
+  <text x="100" y="90" font-family="Arial" font-size="16" font-weight="bold">Mouse Liver Cell</text>
+  
+  <!-- Process label -->
+  <text x="100" y="115" font-family="Arial" font-size="14" font-style="italic" fill="#606060">Biosynthetic process (GO:0009058)</text>
+  
+  <!-- Legend -->
+  <rect x="500" y="490" width="220" height="50" fill="white" stroke="#000000" stroke-width="1"/>
+  <rect x="510" y="500" width="20" height="20" rx="5" ry="5" fill="#d0e0ff" stroke="#4060a0" stroke-width="1.5"/>
+  <text x="535" y="515" font-family="Arial" font-size="12">Substrate/Metabolite</text>
+  <rect x="510" y="525" width="20" height="20" rx="5" ry="5" fill="#d0e0ff" stroke="#4060a0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="535" y="540" font-family="Arial" font-size="12">Implicit Intermediate</text>
+  <rect x="630" y="500" width="20" height="20" rx="10" ry="10" fill="#aed6b0" stroke="#006400" stroke-width="1.5"/>
+  <text x="655" y="515" font-family="Arial" font-size="12">Enzyme</text>
+  <rect x="630" y="525" width="20" height="20" rx="5" ry="5" fill="#ffd700" stroke="#b8860b" stroke-width="2"/>
+  <text x="655" y="540" font-family="Arial" font-size="12">Final Product</text>
+</svg>

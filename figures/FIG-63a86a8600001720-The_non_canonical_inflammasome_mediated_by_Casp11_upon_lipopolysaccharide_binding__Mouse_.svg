@@ -1,0 +1,133 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Non-canonical Inflammasome Pathway Mediated by Casp11</text>
+  
+  <!-- Cell Membrane -->
+  <path d="M100,150 L700,150 L700,500 L100,500 Z" fill="#f8f8f8" stroke="#666666" stroke-width="2"/>
+  <path d="M100,150 L700,150" stroke="#666666" stroke-width="4" stroke-dasharray="5,5"/>
+  <text x="720" y="150" font-family="Arial" font-size="14" text-anchor="start">Plasma membrane</text>
+  
+  <!-- Bacterial Cell -->
+  <ellipse cx="180" cy="100" rx="50" ry="30" fill="#d9edf7" stroke="#337ab7" stroke-width="2"/>
+  <text x="180" y="105" font-family="Arial" font-size="12" text-anchor="middle">Bacterium</text>
+  
+  <!-- LPS/Lipid A Release -->
+  <path d="M200,120 Q220,130 240,140" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <circle cx="250" cy="145" r="10" fill="#cc0000"/>
+  <text x="260" y="145" font-family="Arial" font-size="12" text-anchor="start">LPS (Lipid A)</text>
+  
+  <!-- Cytosol -->
+  <text x="120" y="180" font-family="Arial" font-size="14" text-anchor="start" font-style="italic">Cytosol</text>
+  
+  <!-- Casp4 Protein -->
+  <rect x="300" y="200" width="80" height="40" fill="#ffeeba" stroke="#d39e00" stroke-width="2" rx="5" ry="5"/>
+  <text x="340" y="225" font-family="Arial" font-size="12" text-anchor="middle">Casp4</text>
+  
+  <!-- LPS binding to Casp4 -->
+  <path d="M260,150 Q280,180 300,210" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="270" y="185" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">Lipid binding</text>
+  
+  <!-- Casp4 activation -->
+  <rect x="300" y="300" width="80" height="40" fill="#ffeeba" stroke="#d39e00" stroke-width="2" rx="5" ry="5"/>
+  <text x="340" y="315" font-family="Arial" font-size="12" text-anchor="middle">Casp4</text>
+  <text x="340" y="330" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">active</text>
+  
+  <!-- Activation arrow -->
+  <path d="M340,240 L340,300" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="355" y="270" font-family="Arial" font-size="11" text-anchor="start" font-style="italic">Cysteine-type</text>
+  <text x="355" y="282" font-family="Arial" font-size="11" text-anchor="start" font-style="italic">endopeptidase</text>
+  <text x="355" y="294" font-family="Arial" font-size="11" text-anchor="start" font-style="italic">activity</text>
+  
+  <!-- GSDMD Protein -->
+  <rect x="450" y="300" width="80" height="40" fill="#d4edda" stroke="#28a745" stroke-width="2" rx="5" ry="5"/>
+  <text x="490" y="325" font-family="Arial" font-size="12" text-anchor="middle">GSDMD</text>
+  
+  <!-- Casp4 cleaving GSDMD -->
+  <path d="M380,320 L450,320" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="415" y="310" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">Cleaves</text>
+  
+  <!-- Cleaved GSDMD -->
+  <rect x="450" y="400" width="80" height="40" fill="#d4edda" stroke="#28a745" stroke-width="2" rx="5" ry="5"/>
+  <text x="490" y="415" font-family="Arial" font-size="12" text-anchor="middle">GSDMD</text>
+  <text x="490" y="430" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">cleaved</text>
+  
+  <!-- GSDMD cleavage -->
+  <path d="M490,340 L490,400" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="505" y="370" font-family="Arial" font-size="11" text-anchor="start" font-style="italic">Protein</text>
+  <text x="505" y="382" font-family="Arial" font-size="11" text-anchor="start" font-style="italic">maturation</text>
+  
+  <!-- PIP2 in membrane -->
+  <ellipse cx="600" cy="150" rx="30" ry="10" fill="#87ceeb" stroke="#0056b3" stroke-width="2"/>
+  <text x="600" y="154" font-family="Arial" font-size="11" text-anchor="middle">PIP2</text>
+  
+  <!-- GSDMD moving to membrane -->
+  <path d="M530,420 Q565,370 600,160" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="570" y="320" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">PIP2 binding</text>
+  
+  <!-- Membrane pore -->
+  <path d="M550,150 A50,10 0 1,0 650,150" stroke="#000000" stroke-width="3" fill="none"/>
+  <path d="M550,150 A50,30 0 1,1 650,150" stroke="#000000" stroke-width="3" fill="none"/>
+  <text x="600" y="200" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">Wide pore</text>
+  <text x="600" y="212" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">channel activity</text>
+  
+  <!-- Pyroptosis -->
+  <path d="M650,100 L680,100 L700,80 L720,100 L750,80 L780,100" stroke="#ff6347" stroke-width="2" fill="none"/>
+  <text x="700" y="70" font-family="Arial" font-size="14" text-anchor="middle" fill="#ff6347">Pyroptosis</text>
+  <path d="M600,135 Q650,90 700,70" stroke="#ff6347" stroke-width="3" fill="none" marker-end="url(#redarrowhead)"/>
+  
+  <!-- NLRP3 pathway - made more prominent -->
+  <rect x="250" y="400" width="80" height="40" fill="#f8d7da" stroke="#dc3545" stroke-width="3" rx="5" ry="5"/>
+  <text x="290" y="425" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">NLRP3</text>
+  
+  <!-- Casp4 to NLRP3 -->
+  <path d="M320,340 L290,400" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="270" y="370" font-family="Arial" font-size="11" text-anchor="end" font-style="italic">Signaling</text>
+  
+  <!-- Inflammasome -->
+  <ellipse cx="180" cy="450" rx="70" ry="30" fill="#f8d7da" stroke="#dc3545" stroke-width="3"/>
+  <text x="180" y="446" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Inflammasome</text>
+  <text x="180" y="462" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Complex</text>
+  
+  <!-- NLRP3 to Inflammasome - made more prominent -->
+  <path d="M250,420 L200,430" stroke="#dc3545" stroke-width="3" fill="none" marker-end="url(#redarrowhead)"/>
+  <text x="220" y="400" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">Complex</text>
+  <text x="220" y="412" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">assembly</text>
+  
+  <!-- Defense Response Label -->
+  <rect x="550" y="450" width="140" height="40" fill="#f5f5f5" stroke="#666666" stroke-width="2" rx="5" ry="5"/>
+  <text x="620" y="472" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Defense response</text>
+  <text x="620" y="487" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">to bacterium</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="700" height="70" fill="#f5f5f5" stroke="#666666" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="535" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="60" y="545" width="15" height="15" fill="#ffeeba" stroke="#d39e00" stroke-width="1"/>
+  <text x="80" y="558" font-family="Arial" font-size="12" text-anchor="start">Casp4 (Caspase-11)</text>
+  
+  <rect x="200" y="545" width="15" height="15" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="220" y="558" font-family="Arial" font-size="12" text-anchor="start">GSDMD (Gasdermin D)</text>
+  
+  <rect x="380" y="545" width="15" height="15" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="400" y="558" font-family="Arial" font-size="12" text-anchor="start">NLRP3 inflammasome components</text>
+  
+  <circle cx="550" y="552" r="7" fill="#cc0000"/>
+  <text x="565" y="558" font-family="Arial" font-size="12" text-anchor="start">LPS (Lipid A)</text>
+  
+  <ellipse cx="650" y="552" rx="15" ry="5" fill="#87ceeb" stroke="#0056b3" stroke-width="1"/>
+  <text x="670" y="558" font-family="Arial" font-size="12" text-anchor="start">PIP2</text>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+    <marker id="redarrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6347"/>
+    </marker>
+  </defs>
+</svg>

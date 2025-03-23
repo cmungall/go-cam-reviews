@@ -1,0 +1,117 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">
+    Casp7 activates Smpd1 to repair perforin pores in hepatocytes (Mouse)
+  </text>
+  
+  <!-- Cell outline (hepatocyte) -->
+  <ellipse cx="400" cy="300" rx="350" ry="200" fill="#e6f2ff" stroke="#333" stroke-width="3"/>
+  <text x="400" y="490" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" font-style="italic">Hepatocyte</text>
+  
+  <!-- Plasma membrane label -->
+  <text x="100" y="240" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Plasma membrane</text>
+  <line x1="100" y1="245" x2="100" y2="290" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Cytoplasm label -->
+  <text x="300" y="360" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic" fill="#333">Cytoplasm</text>
+  
+  <!-- Extracellular space label -->
+  <text x="650" y="150" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic" fill="#333">Extracellular space</text>
+  
+  <!-- Perforin pore complex in membrane -->
+  <circle cx="250" cy="280" r="30" fill="#ff9999" stroke="#333" stroke-width="2.5"/>
+  <text x="250" y="285" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Prf1</text>
+  
+  <!-- Granzyme B in extracellular space -->
+  <rect x="300" y="180" width="60" height="35" rx="7" ry="7" fill="#99cc99" stroke="#333" stroke-width="2.5"/>
+  <text x="330" y="205" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Gzmb</text>
+  
+  <!-- Granzyme B in cytoplasm -->
+  <rect x="300" y="330" width="60" height="35" rx="7" ry="7" fill="#99cc99" stroke="#333" stroke-width="2.5"/>
+  <text x="330" y="355" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Gzmb</text>
+  
+  <!-- Arrow from extracellular Granzyme B to cytoplasmic Granzyme B (entry) -->
+  <path d="M330,215 L330,325" stroke="#ff6600" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <text x="345" y="270" font-family="Arial" font-size="14" fill="#333" font-weight="bold">entry</text>
+  
+  <!-- Caspase-7 in extracellular space -->
+  <rect x="450" y="180" width="60" height="35" rx="7" ry="7" fill="#9999ff" stroke="#333" stroke-width="2.5"/>
+  <text x="480" y="205" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Casp7</text>
+  
+  <!-- Smpd1 in extracellular space -->
+  <rect x="550" y="180" width="60" height="35" rx="7" ry="7" fill="#ffcc99" stroke="#333" stroke-width="2.5"/>
+  <text x="580" y="205" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Smpd1</text>
+  
+  <!-- Ceramide product -->
+  <ellipse cx="680" cy="180" rx="35" ry="20" fill="#ffff99" stroke="#333" stroke-width="2.5"/>
+  <text x="680" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Ceramide</text>
+  
+  <!-- Arrow from Granzyme B to Perforin (activation) -->
+  <path d="M300,347 L285,310" stroke="#ff0000" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <text x="270" y="335" font-family="Arial" font-size="14" fill="#333" font-weight="bold">activates</text>
+  
+  <!-- Arrow from Perforin to Caspase-7 (secretion) -->
+  <path d="M280,280 L445,200" stroke="#009900" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <text x="350" y="225" font-family="Arial" font-size="14" fill="#333" font-weight="bold">protein secretion</text>
+  
+  <!-- Arrow from Caspase-7 to Smpd1 (activation) -->
+  <path d="M510,197 L545,197" stroke="#ff0000" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <text x="527" y="185" font-family="Arial" font-size="14" fill="#333" font-weight="bold">activates</text>
+  
+  <!-- Arrow from Smpd1 to Ceramide (production) -->
+  <path d="M610,197 L640,190" stroke="#0000ff" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <text x="625" y="180" font-family="Arial" font-size="14" fill="#333" font-weight="bold">produces</text>
+  
+  <!-- Arrow from Ceramide to membrane repair -->
+  <path d="M680,200 L680,280" stroke="#009900" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <text x="710" y="240" font-family="Arial" font-size="14" fill="#333" font-weight="bold">membrane repair</text>
+  
+  <!-- Perforin pores visualization -->
+  <ellipse cx="620" cy="280" rx="15" ry="5" fill="none" stroke="#333" stroke-width="2"/>
+  <ellipse cx="660" cy="280" rx="15" ry="5" fill="none" stroke="#333" stroke-width="2"/>
+  <ellipse cx="700" cy="280" rx="15" ry="5" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="660" y="305" font-family="Arial" font-size="14" fill="#333">Repaired pores</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="510" width="700" height="80" fill="#f0f0f0" stroke="#333" stroke-width="1.5"/>
+  <text x="60" y="530" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <!-- Legend items -->
+  <circle cx="80" cy="550" r="12" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="100" y="555" font-family="Arial" font-size="14">Prf1 - Perforin (wide pore channel activity)</text>
+  
+  <rect x="350" y="540" width="24" height="18" rx="4" ry="4" fill="#99cc99" stroke="#333" stroke-width="1.5"/>
+  <text x="380" y="555" font-family="Arial" font-size="14">Gzmb - Granzyme B (serine-type endopeptidase)</text>
+  
+  <rect x="80" y="575" width="24" height="18" rx="4" ry="4" fill="#9999ff" stroke="#333" stroke-width="1.5"/>
+  <text x="110" y="585" font-family="Arial" font-size="14">Casp7 - Caspase-7 (cysteine-type endopeptidase)</text>
+  
+  <rect x="350" y="575" width="24" height="18" rx="4" ry="4" fill="#ffcc99" stroke="#333" stroke-width="1.5"/>
+  <text x="380" y="585" font-family="Arial" font-size="14">Smpd1 - Acid sphingomyelinase</text>
+  
+  <ellipse cx="580" cy="575" rx="15" ry="10" fill="#ffff99" stroke="#333" stroke-width="1.5"/>
+  <text x="605" y="580" font-family="Arial" font-size="14">Ceramide (N-acylsphingosine)</text>
+  
+  <!-- Arrow color legend -->
+  <line x1="60" y1="600" x2="90" y2="600" stroke="#ff0000" stroke-width="4"/>
+  <text x="100" y="605" font-family="Arial" font-size="14">Activation</text>
+  
+  <line x1="170" y1="600" x2="200" y2="600" stroke="#009900" stroke-width="4"/>
+  <text x="210" y="605" font-family="Arial" font-size="14">Cellular process</text>
+  
+  <line x1="320" y1="600" x2="350" y2="600" stroke="#0000ff" stroke-width="4"/>
+  <text x="360" y="605" font-family="Arial" font-size="14">Production</text>
+  
+  <line x1="450" y1="600" x2="480" y2="600" stroke="#ff6600" stroke-width="4"/>
+  <text x="490" y="605" font-family="Arial" font-size="14">Transport/Entry</text>
+</svg>

@@ -1,0 +1,108 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with nucleus outline -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f8f8" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f0f7ff" stroke="#666" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="300" rx="300" ry="220" fill="#e6eeff" stroke="#666" stroke-width="2.5"/>
+  <text x="400" y="130" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Nucleus</text>
+  
+  <!-- Chromatin region -->
+  <ellipse cx="400" cy="340" rx="250" ry="160" fill="#dae4f1" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="400" y="220" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Chromatin</text>
+  
+  <!-- Liver Cell label -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="22" fill="#333">Liver Cell</text>
+  
+  <!-- SIK2 protein -->
+  <rect x="120" y="320" width="100" height="50" rx="10" ry="10" fill="#66c2a5" stroke="#333" stroke-width="2"/>
+  <text x="170" y="350" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#333">SIK2</text>
+  <text x="170" y="370" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(Q9H0K1)</text>
+  
+  <!-- EP300 protein -->
+  <rect x="300" y="320" width="100" height="50" rx="10" ry="10" fill="#8da0cb" stroke="#333" stroke-width="2"/>
+  <text x="350" y="350" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#333">EP300</text>
+  <text x="350" y="370" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(Q09472)</text>
+  
+  <!-- MLXIPL protein -->
+  <rect x="480" y="320" width="100" height="50" rx="10" ry="10" fill="#fc8d62" stroke="#333" stroke-width="2"/>
+  <text x="530" y="350" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#333">MLXIPL</text>
+  <text x="530" y="370" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(Q9NP71)</text>
+  
+  <!-- PPARA protein -->
+  <rect x="300" y="450" width="100" height="50" rx="10" ry="10" fill="#e78ac3" stroke="#333" stroke-width="2"/>
+  <text x="350" y="480" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#333">PPARA</text>
+  <text x="350" y="500" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(Q07869)</text>
+  
+  <!-- SIK2 to EP300 interaction (inhibition) -->
+  <line x1="220" y1="345" x2="300" y2="345" stroke="#d53e4f" stroke-width="3" marker-end="url(#inhibitArrow)"/>
+  <text x="260" y="335" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#d53e4f">Inhibits</text>
+  <text x="260" y="320" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">Protein S/T kinase</text>
+  
+  <!-- EP300 to MLXIPL interaction (activation) -->
+  <line x1="400" y1="345" x2="480" y2="345" stroke="#1a9850" stroke-width="3" marker-end="url(#activateArrow)"/>
+  <text x="440" y="335" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#1a9850">Activates</text>
+  <text x="440" y="320" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">Acetyltransferase</text>
+  
+  <!-- EP300 to PPARA interaction (activation) -->
+  <path d="M 350,370 Q 350,410 350,450" fill="none" stroke="#1a9850" stroke-width="3" marker-end="url(#activateArrow)"/>
+  <text x="385" y="410" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#1a9850">Activates</text>
+  <text x="385" y="425" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">Protein binding</text>
+  
+  <!-- MLXIPL to DNA/Lipid synthesis -->
+  <path d="M 580,345 Q 620,345 620,380 Q 620,415 580,415" fill="none" stroke="#1a9850" stroke-width="3" marker-end="url(#activateArrow)"/>
+  <rect x="490" y="400" width="90" height="45" rx="5" ry="5" fill="#ffd92f" stroke="#333" stroke-width="1.5"/>
+  <text x="535" y="425" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#333">Lipid</text>
+  <text x="535" y="440" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#333">Biosynthesis</text>
+  <text x="650" y="355" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">DNA-binding</text>
+  <text x="650" y="370" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">transcription</text>
+  <text x="650" y="385" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">activator</text>
+  
+  <!-- PPARA DNA-binding -->
+  <path d="M 400,475 Q 440,475 440,450" fill="none" stroke="#1a9850" stroke-width="3" marker-end="url(#activateArrow)"/>
+  <text x="480" y="470" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">DNA-binding</text>
+  <text x="480" y="485" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">transcription</text>
+  <text x="480" y="500" text-anchor="middle" font-family="Arial" font-style="italic" font-size="11" fill="#333">activator</text>
+  
+  <!-- DNA strands under proteins -->
+  <path d="M 280,380 C 600,380 250,410 600,410" stroke="#333" stroke-width="2.5" fill="none"/>
+  <path d="M 280,385 C 600,385 250,415 600,415" stroke="#333" stroke-width="2.5" fill="none"/>
+  
+  <!-- Arrowhead markers -->
+  <defs>
+    <marker id="activateArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a9850"/>
+    </marker>
+    <marker id="inhibitArrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <line x1="0" y1="0" x2="10" y2="10" stroke="#d53e4f" stroke-width="2"/>
+      <line x1="0" y1="10" x2="10" y2="0" stroke="#d53e4f" stroke-width="2"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="580" y="480" width="200" height="100" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="590" y="500" font-family="Arial" font-weight="bold" font-size="14" fill="#333">Legend:</text>
+  
+  <rect x="590" y="510" width="15" height="15" fill="#66c2a5" stroke="#333" stroke-width="1"/>
+  <text x="610" y="522" font-family="Arial" font-size="12" fill="#333">Kinase (SIK2)</text>
+  
+  <rect x="590" y="530" width="15" height="15" fill="#8da0cb" stroke="#333" stroke-width="1"/>
+  <text x="610" y="542" font-family="Arial" font-size="12" fill="#333">Acetyltransferase (EP300)</text>
+  
+  <rect x="590" y="550" width="15" height="15" fill="#fc8d62" stroke="#333" stroke-width="1"/>
+  <text x="610" y="562" font-family="Arial" font-size="12" fill="#333">Transcription Factor (MLXIPL)</text>
+  
+  <rect x="590" y="570" width="15" height="15" fill="#e78ac3" stroke="#333" stroke-width="1"/>
+  <text x="610" y="582" font-family="Arial" font-size="12" fill="#333">Nuclear Receptor (PPARA)</text>
+
+  <line x1="700" y1="520" x2="730" y2="520" stroke="#1a9850" stroke-width="2.5" marker-end="url(#activateArrow)"/>
+  <text x="740" y="522" font-family="Arial" font-size="12" fill="#333">Activates</text>
+  
+  <line x1="700" y1="540" x2="730" y2="540" stroke="#d53e4f" stroke-width="2.5" marker-end="url(#inhibitArrow)"/>
+  <text x="740" y="542" font-family="Arial" font-size="12" fill="#333">Inhibits</text>
+  
+  <!-- Title -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#333">SIK2 Activity on P300 - Regulation of Lipid Biosynthesis</text>
+</svg>

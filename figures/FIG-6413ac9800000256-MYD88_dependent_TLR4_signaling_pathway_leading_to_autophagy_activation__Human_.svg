@@ -1,0 +1,111 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <rect x="50" y="150" width="700" height="20" fill="#8BC34A" opacity="0.7" rx="5" ry="5"/>
+  <text x="720" y="160" font-family="Arial" font-size="16" text-anchor="end" dominant-baseline="middle" fill="#333" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Cytoplasm background -->
+  <rect x="50" y="170" width="700" height="380" fill="#E3F2FD" opacity="0.3" rx="5" ry="5"/>
+  <text x="720" y="540" font-family="Arial" font-size="16" text-anchor="end" dominant-baseline="middle" fill="#333" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">MYD88-dependent TLR4 Signaling Pathway</text>
+  <text x="400" y="70" font-family="Arial" font-size="18" text-anchor="middle">Leading to Autophagy Activation in Human</text>
+  
+  <!-- LPS (optional) -->
+  <circle cx="200" cy="120" r="20" fill="#FF5722" opacity="0.7"/>
+  <text x="200" y="120" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="black" font-weight="bold">LPS</text>
+  <text x="200" y="90" font-family="Arial" font-size="11" text-anchor="middle" fill="#666" font-style="italic">CHEBI:16412</text>
+  
+  <!-- TLR4 receptor -->
+  <rect x="180" y="140" width="40" height="40" fill="#2196F3" opacity="0.7" rx="5" ry="5"/>
+  <text x="200" y="158" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">TLR4</text>
+  <text x="200" y="173" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="white">O00206</text>
+  
+  <!-- Arrow from LPS to TLR4 -->
+  <line x1="200" y1="135" x2="200" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- TIRAP -->
+  <rect x="180" y="200" width="40" height="30" fill="#9C27B0" opacity="0.7" rx="5" ry="5"/>
+  <text x="200" y="213" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">TIRAP</text>
+  <text x="200" y="225" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="white">P58753</text>
+  
+  <!-- Arrow from TLR4 to TIRAP -->
+  <line x1="200" y1="180" x2="200" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- MYD88 -->
+  <rect x="180" y="250" width="40" height="30" fill="#673AB7" opacity="0.7" rx="5" ry="5"/>
+  <text x="200" y="263" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">MYD88</text>
+  <text x="200" y="275" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="white">Q99836</text>
+  
+  <!-- Arrow from TIRAP to MYD88 -->
+  <line x1="200" y1="230" x2="200" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- IRAK4 -->
+  <rect x="260" y="280" width="40" height="30" fill="#3F51B5" opacity="0.7" rx="5" ry="5"/>
+  <text x="280" y="293" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">IRAK4</text>
+  <text x="280" y="305" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="white">Q9NWZ3</text>
+  
+  <!-- Arrow from MYD88 to IRAK4 -->
+  <path d="M220,265 Q240,265 260,280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- IRAK2 -->
+  <rect x="340" y="280" width="40" height="30" fill="#5E35B1" opacity="0.7" rx="5" ry="5"/>
+  <text x="360" y="293" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">IRAK2</text>
+  <text x="360" y="305" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="white">O43187</text>
+  
+  <!-- Arrow from IRAK4 to IRAK2 -->
+  <line x1="300" y1="295" x2="340" y2="295" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- TRAF6 -->
+  <rect x="420" y="330" width="40" height="30" fill="#009688" opacity="0.7" rx="5" ry="5"/>
+  <text x="440" y="343" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">TRAF6</text>
+  <text x="440" y="355" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="white">Q9Y4K3</text>
+  
+  <!-- Arrow from IRAK2 to TRAF6 -->
+  <path d="M380,295 Q400,295 420,330" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- BECN1 -->
+  <rect x="420" y="390" width="40" height="30" fill="#4CAF50" opacity="0.7" rx="5" ry="5"/>
+  <text x="440" y="403" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">BECN1</text>
+  <text x="440" y="415" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="white">Q14457</text>
+  
+  <!-- Arrow from TRAF6 to BECN1 -->
+  <line x1="440" y1="360" x2="440" y2="390" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- PIK3C3 -->
+  <rect x="500" y="450" width="40" height="30" fill="#00BCD4" opacity="0.7" rx="5" ry="5"/>
+  <text x="520" y="463" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="white" font-weight="bold">PIK3C3</text>
+  <text x="520" y="475" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="white">Q8NEB9</text>
+  
+  <!-- Arrow from BECN1 to PIK3C3 -->
+  <path d="M460,405 Q480,405 500,450" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Autophagosome formation -->
+  <ellipse cx="600" y="480" rx="80" ry="35" fill="#FFEB3B" opacity="0.4" stroke="#FFC107" stroke-width="2"/>
+  <text x="600" y="475" font-family="Arial" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#333" font-weight="bold">Autophagosome</text>
+  <text x="600" y="493" font-family="Arial" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#333" font-weight="bold">Assembly</text>
+  
+  <!-- Arrow from PIK3C3 to Autophagosome -->
+  <path d="M540,465 Q570,465 570,480" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Pathway label -->
+  <text x="100" y="120" font-family="Arial" font-size="16" font-weight="bold" fill="#333">TLR4 Signaling</text>
+  <text x="500" y="530" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Autophagy Activation</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Process labels -->
+  <text x="310" y="255" font-family="Arial" font-size="14" fill="#666" font-style="italic" font-weight="bold">Protein kinase activity</text>
+  <text x="470" y="325" font-family="Arial" font-size="14" fill="#666" font-style="italic" font-weight="bold">Ubiquitin ligase activity</text>
+  <text x="550" y="445" font-family="Arial" font-size="14" fill="#666" font-style="italic" font-weight="bold">PI kinase activity</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="550" width="700" height="40" fill="#f8f8f8" stroke="#ccc" stroke-width="1"/>
+  <text x="400" y="570" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Pathway Legend: GO-CAM Model 6413ac9800000256</text>
+  <text x="400" y="585" font-family="Arial" font-size="12" text-anchor="middle">A protein signaling cascade from TLR4 receptor through MYD88-dependent pathway to initiate autophagy</text>
+</svg>

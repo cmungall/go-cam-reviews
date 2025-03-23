@@ -1,0 +1,97 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Cellular context with Golgi -->
+  <rect x="0" y="0" width="700" height="500" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  <text x="350" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">S100 Proteins Regulate TPPP-Mediated Microtubule Nucleation</text>
+  
+  <!-- Golgi apparatus -->
+  <ellipse cx="470" cy="300" rx="180" ry="120" fill="#ffeedd" stroke="#333" stroke-width="2"/>
+  <text x="470" y="300" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Golgi apparatus</text>
+  
+  <!-- Proteins -->
+  <!-- S100B -->
+  <circle cx="150" cy="150" r="30" fill="#a1d99b" stroke="#333" stroke-width="2"/>
+  <text x="150" y="155" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">S100B</text>
+  
+  <!-- S100A6 -->
+  <circle cx="150" cy="250" r="30" fill="#9ecae1" stroke="#333" stroke-width="2"/>
+  <text x="150" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">S100A6</text>
+  
+  <!-- S100A2 -->
+  <circle cx="150" cy="350" r="30" fill="#bcbddc" stroke="#333" stroke-width="2"/>
+  <text x="150" y="355" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">S100A2</text>
+  
+  <!-- TPPP Monomer -->
+  <rect x="300" y="220" width="60" height="60" fill="#fdae6b" stroke="#333" stroke-width="2"/>
+  <text x="330" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TPPP</text>
+  
+  <!-- TPPP Dimer -->
+  <rect x="420" y="220" width="60" height="60" fill="#fdae6b" stroke="#333" stroke-width="2"/>
+  <rect x="440" y="220" width="60" height="60" fill="#fdae6b" stroke="#333" stroke-width="2"/>
+  <text x="460" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TPPP</text>
+  <text x="460" y="275" text-anchor="middle" font-family="Arial" font-size="14">dimer</text>
+  
+  <!-- Microtubule Nucleation Activity -->
+  <path d="M550,200 L580,220 L580,280 L550,300 L520,280 L520,220 Z" fill="#fc9272" stroke="#333" stroke-width="2"/>
+  <text x="550" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Microtubule</text>
+  <text x="550" y="275" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Nucleation</text>
+  
+  <!-- Newly nucleated microtubules -->
+  <line x1="580" y1="250" x2="640" y2="210" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <line x1="580" y1="250" x2="640" y2="230" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <line x1="580" y1="250" x2="640" y2="250" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <line x1="580" y1="250" x2="640" y2="270" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <line x1="580" y1="250" x2="640" y2="290" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Interaction Arrows -->
+  <!-- S100B to TPPP -->
+  <line x1="180" y1="150" x2="295" y2="235" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="230" y="175" text-anchor="middle" font-family="Arial" font-size="14">Protein binding</text>
+  
+  <!-- S100A6 to TPPP -->
+  <line x1="180" y1="250" x2="295" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="230" y="235" text-anchor="middle" font-family="Arial" font-size="14">Protein binding</text>
+  
+  <!-- S100A2 to TPPP -->
+  <line x1="180" y1="350" x2="295" y2="265" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="230" y="325" text-anchor="middle" font-family="Arial" font-size="14">Protein binding</text>
+  
+  <!-- TPPP to TPPP dimer -->
+  <line x1="360" y1="250" x2="415" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="390" y="235" text-anchor="middle" font-family="Arial" font-size="14">Dimerization</text>
+  
+  <!-- TPPP dimer to Microtubule Nucleation -->
+  <line x1="500" y1="250" x2="515" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="510" y="235" text-anchor="middle" font-family="Arial" font-size="14">Promotes</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="20" y="420" width="660" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="30" y="440" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <circle cx="50" cy="460" r="10" fill="#a1d99b" stroke="#333" stroke-width="1"/>
+  <text x="65" y="465" font-family="Arial" font-size="14">S100B</text>
+  
+  <circle cx="120" cy="460" r="10" fill="#9ecae1" stroke="#333" stroke-width="1"/>
+  <text x="135" y="465" font-family="Arial" font-size="14">S100A6</text>
+  
+  <circle cx="190" cy="460" r="10" fill="#bcbddc" stroke="#333" stroke-width="1"/>
+  <text x="205" y="465" font-family="Arial" font-size="14">S100A2</text>
+  
+  <rect x="260" y="450" width="20" height="20" fill="#fdae6b" stroke="#333" stroke-width="1"/>
+  <text x="285" y="465" font-family="Arial" font-size="14">TPPP</text>
+  
+  <path d="M340,450 L350,455 L350,465 L340,470 L330,465 L330,455 Z" fill="#fc9272" stroke="#333" stroke-width="1"/>
+  <text x="375" y="465" font-family="Arial" font-size="14">Microtubule Nucleation</text>
+  
+  <ellipse cx="470" cy="460" rx="30" ry="10" fill="#ffeedd" stroke="#333" stroke-width="1"/>
+  <text x="505" y="465" font-family="Arial" font-size="14">Golgi apparatus</text>
+  
+  <line x1="550" y1="460" x2="570" y2="460" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="615" y="465" font-family="Arial" font-size="14">Causal relationship</text>
+</svg>

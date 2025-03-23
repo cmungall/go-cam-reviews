@@ -1,0 +1,135 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">Ochratoxin A Biosynthesis &amp; Catabolism (A. niger)</text>
+  
+  <!-- Cell membrane representation -->
+  <rect x="50" y="80" width="700" height="400" rx="20" ry="20" fill="#f9f9f9" stroke="#888" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="100" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Aspergillus niger cell</text>
+  
+  <!-- Extracellular region -->
+  <rect x="100" y="360" width="600" height="100" rx="10" ry="10" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <text x="150" y="380" font-family="Arial" font-size="16" font-weight="bold" font-style="italic">Extracellular region (GO:0005576)</text>
+  
+  <!-- Biosynthesis pathway -->
+  <text x="400" y="130" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Ochratoxin A Biosynthetic Process (GO:1900818)</text>
+  
+  <!-- Group OtaA and its substrates -->
+  <rect x="90" y="150" width="190" height="110" rx="5" ry="5" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Substrates -->
+  <rect x="100" y="160" width="100" height="40" rx="5" ry="5" fill="#ffe6cc" stroke="#ff9933" stroke-width="2"/>
+  <text x="150" y="183" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Malonyl-CoA</text>
+  
+  <rect x="100" y="210" width="100" height="40" rx="5" ry="5" fill="#ffe6cc" stroke="#ff9933" stroke-width="2"/>
+  <text x="150" y="233" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Acetyl-CoA</text>
+  
+  <!-- Group OtaB and its substrate -->
+  <rect x="220" y="230" width="150" height="110" rx="5" ry="5" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <rect x="230" y="250" width="100" height="40" rx="5" ry="5" fill="#ffe6cc" stroke="#ff9933" stroke-width="2"/>
+  <text x="280" y="273" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">L-Phenylalanine</text>
+  
+  <!-- Enzymes with bolder outlines -->
+  <circle cx="220" y="190" r="30" fill="#d9ead3" stroke="#6aa84f" stroke-width="3"/>
+  <text x="220" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">OtaA</text>
+  <text x="220" y="195" font-family="Arial" font-size="9" text-anchor="middle">(A2R6H1)</text>
+  <text x="220" y="160" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" font-style="italic">Catalytic activity</text>
+  <text x="220" y="170" font-family="Arial" font-size="9" text-anchor="middle" font-style="italic">(GO:0003824)</text>
+  
+  <circle cx="340" y="190" r="30" fill="#d9ead3" stroke="#6aa84f" stroke-width="3"/>
+  <text x="340" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">OtaC</text>
+  <text x="340" y="195" font-family="Arial" font-size="9" text-anchor="middle">(A2R6G9)</text>
+  <text x="340" y="160" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" font-style="italic">Oxidoreductase</text>
+  <text x="340" y="170" font-family="Arial" font-size="9" text-anchor="middle" font-style="italic">(GO:0016491)</text>
+  
+  <circle cx="340" y="270" r="30" fill="#d9ead3" stroke="#6aa84f" stroke-width="3"/>
+  <text x="340" y="265" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">OtaB</text>
+  <text x="340" y="275" font-family="Arial" font-size="9" text-anchor="middle">(A2R6H0)</text>
+  <text x="340" y="310" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" font-style="italic">NRPS activity</text>
+  <text x="340" y="320" font-family="Arial" font-size="9" text-anchor="middle" font-style="italic">(GO:1904091)</text>
+  
+  <!-- Group OtaD and its product -->
+  <rect x="430" y="190" width="260" height="100" rx="5" ry="5" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <circle cx="460" y="230" r="30" fill="#d9ead3" stroke="#6aa84f" stroke-width="3"/>
+  <text x="460" y="225" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">OtaD</text>
+  <text x="460" y="235" font-family="Arial" font-size="9" text-anchor="middle">(A2R6G7)</text>
+  <text x="460" y="200" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" font-style="italic">Catalytic activity</text>
+  <text x="460" y="210" font-family="Arial" font-size="9" text-anchor="middle" font-style="italic">(GO:0003824)</text>
+  
+  <!-- Products -->
+  <rect x="580" y="220" width="100" height="40" rx="5" ry="5" fill="#cfe2f3" stroke="#3d85c6" stroke-width="2"/>
+  <text x="630" y="243" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Ochratoxin A</text>
+  
+  <!-- Arrows for biosynthesis -->
+  <line x1="200" y1="190" x2="250" y2="190" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="270" y1="190" x2="310" y2="190" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="330" y1="220" x2="330" y2="240" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="190" x2="400" y2="210" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="270" x2="430" y2="240" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="490" y1="230" x2="570" y2="230" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Secretion arrow with vesicle representation -->
+  <path d="M 630,260 Q 650,290 630,320 Q 610,350 630,360" stroke="#000" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)"/>
+  <ellipse cx="630" cy="300" rx="12" ry="10" fill="#fff" stroke="#666" stroke-width="1"/>
+  <text x="655" y="310" font-family="Arial" font-size="11" fill="#333" font-weight="bold" font-style="italic">Secretion</text>
+  <text x="655" y="322" font-family="Arial" font-size="9" fill="#666" font-style="italic">(implicit)</text>
+  
+  <!-- Catabolic pathway -->
+  <text x="400" y="350" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Ochratoxin A Catabolic Process (GO:1900817)</text>
+  
+  <!-- Group Am2 and its substrates/products -->
+  <rect x="380" y="380" width="320" height="70" rx="5" ry="5" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Extracellular enzyme with bolder outline -->
+  <circle cx="510" y="410" r="30" fill="#d5a6bd" stroke="#a64d79" stroke-width="3"/>
+  <text x="510" y="405" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Am2</text>
+  <text x="510" y="415" font-family="Arial" font-size="9" text-anchor="middle">(A2R2V4)</text>
+  <text x="510" y="445" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" font-style="italic">Carboxypeptidase</text>
+  <text x="510" y="455" font-family="Arial" font-size="9" text-anchor="middle" font-style="italic">(GO:0004180)</text>
+  
+  <!-- Substrates and products for catabolism -->
+  <rect x="400" y="390" width="100" height="40" rx="5" ry="5" fill="#cfe2f3" stroke="#3d85c6" stroke-width="2"/>
+  <text x="450" y="413" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Ochratoxin A</text>
+  
+  <rect x="580" y="390" width="100" height="40" rx="5" ry="5" fill="#d9d2e9" stroke="#8e7cc3" stroke-width="2"/>
+  <text x="630" y="413" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Ochratoxin α</text>
+  
+  <!-- Catabolism arrow -->
+  <line x1="510" y1="410" x2="570" y2="410" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="490" width="700" height="80" rx="5" ry="5" fill="#f5f5f5" stroke="#333" stroke-width="1"/>
+  <text x="60" y="510" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <rect x="60" y="520" width="20" height="15" rx="2" ry="2" fill="#ffe6cc" stroke="#ff9933" stroke-width="2"/>
+  <text x="85" y="533" font-family="Arial" font-size="12" font-weight="bold">Substrate</text>
+  
+  <rect x="160" y="520" width="20" height="15" rx="2" ry="2" fill="#cfe2f3" stroke="#3d85c6" stroke-width="2"/>
+  <text x="185" y="533" font-family="Arial" font-size="12" font-weight="bold">Ochratoxin A</text>
+  
+  <rect x="270" y="520" width="20" height="15" rx="2" ry="2" fill="#d9d2e9" stroke="#8e7cc3" stroke-width="2"/>
+  <text x="295" y="533" font-family="Arial" font-size="12" font-weight="bold">Ochratoxin α</text>
+  
+  <circle cx="380" cy="527" r="10" fill="#d9ead3" stroke="#6aa84f" stroke-width="3"/>
+  <text x="395" y="533" font-family="Arial" font-size="12" font-weight="bold">Biosynthetic enzyme</text>
+  
+  <circle cx="520" cy="527" r="10" fill="#d5a6bd" stroke="#a64d79" stroke-width="3"/>
+  <text x="535" y="533" font-family="Arial" font-size="12" font-weight="bold">Catabolic enzyme</text>
+  
+  <line x1="620" y1="527" x2="650" y2="527" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="655" y="533" font-family="Arial" font-size="12" font-weight="bold">Reaction direction</text>
+  
+  <rect x="60" y="545" width="70" height="20" rx="2" ry="2" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="135" y="560" font-family="Arial" font-size="12" font-weight="bold">Reaction grouping</text>
+  
+  <line x1="240" y1="555" x2="270" y2="555" stroke="#000" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="275" y="560" font-family="Arial" font-size="12" font-weight="bold">Implicit process (not in GO-CAM)</text>
+</svg>

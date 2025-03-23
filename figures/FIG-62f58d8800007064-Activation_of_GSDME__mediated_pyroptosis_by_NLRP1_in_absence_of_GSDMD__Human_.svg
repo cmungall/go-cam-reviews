@@ -1,0 +1,80 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  
+  <!-- Plasma membrane -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="none" stroke="#333" stroke-width="4" stroke-dasharray="5,5"/>
+  <text x="650" y="400" font-family="Arial" font-size="16" font-weight="bold" fill="#000" stroke="#fff" stroke-width="0.5">Plasma membrane</text>
+  
+  <!-- Cytosol label -->
+  <text x="400" y="180" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">Cytosol</text>
+  
+  <!-- NLRP1 in cytosol -->
+  <rect x="200" y="230" width="80" height="40" rx="5" ry="5" fill="#a6cee3" stroke="#333" stroke-width="2"/>
+  <text x="240" y="255" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">NLRP1</text>
+  
+  <!-- NLRP1 inflammasome assembly -->
+  <rect x="200" y="300" width="120" height="60" rx="10" ry="10" fill="#b2df8a" stroke="#333" stroke-width="2"/>
+  <text x="260" y="325" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">NLRP1</text>
+  <text x="260" y="345" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">inflammasome</text>
+  
+  <!-- Arrow from NLRP1 to inflammasome -->
+  <path d="M240 270 L240 300" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="175" y="285" font-family="Arial" font-size="11" fill="#000">molecular condensate</text>
+  <text x="175" y="298" font-family="Arial" font-size="11" fill="#000">scaffold activity</text>
+  
+  <!-- CASP8 -->
+  <rect x="360" y="300" width="80" height="40" rx="5" ry="5" fill="#fdbf6f" stroke="#333" stroke-width="2"/>
+  <text x="400" y="325" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">CASP8</text>
+  
+  <!-- Arrow from inflammasome to CASP8 -->
+  <path d="M320 330 L360 320" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="330" y="310" font-family="Arial" font-size="11" fill="#000">endopeptidase</text>
+  <text x="330" y="323" font-family="Arial" font-size="11" fill="#000">activator activity</text>
+  
+  <!-- CASP3 -->
+  <rect x="480" y="300" width="80" height="40" rx="5" ry="5" fill="#fdbf6f" stroke="#333" stroke-width="2"/>
+  <text x="520" y="325" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">CASP3</text>
+  
+  <!-- Arrow from CASP8 to CASP3 -->
+  <path d="M440 320 L480 320" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="460" y="310" font-family="Arial" font-size="11" fill="#000">cysteine-type</text>
+  <text x="460" y="323" font-family="Arial" font-size="11" fill="#000">endopeptidase</text>
+  
+  <!-- GSDME in cytosol -->
+  <rect x="480" y="380" width="80" height="40" rx="5" ry="5" fill="#fb9a99" stroke="#333" stroke-width="2"/>
+  <text x="520" y="405" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">GSDME</text>
+  
+  <!-- Arrow from CASP3 to GSDME -->
+  <path d="M520 340 L520 380" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="530" y="360" font-family="Arial" font-size="11" fill="#000">protein</text>
+  <text x="530" y="373" font-family="Arial" font-size="11" fill="#000">maturation</text>
+  
+  <!-- GSDME pore formation in membrane -->
+  <path d="M600 415 Q 630 380 660 415" stroke="#fb9a99" stroke-width="8" fill="none"/>
+  <path d="M600 435 Q 630 470 660 435" stroke="#fb9a99" stroke-width="8" fill="none"/>
+  <text x="630" y="435" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">GSDME pore</text>
+  
+  <!-- Arrow from GSDME to pore -->
+  <path d="M560 400 L600 425" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="570" y="420" font-family="Arial" font-size="11" fill="#000">wide pore</text>
+  <text x="570" y="433" font-family="Arial" font-size="11" fill="#000">channel activity</text>
+  
+  <!-- Pyroptotic cell death -->
+  <text x="400" y="500" font-family="Arial" font-size="18" font-weight="bold" fill="#e31a1c" text-anchor="middle">Pyroptotic Cell Death</text>
+  
+  <!-- Arrow from pore to cell death -->
+  <path d="M630 450 L470 490" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <rect x="150" y="20" width="500" height="60" rx="10" ry="10" fill="#f8f8f8" stroke="#333" stroke-width="1" opacity="0.9"/>
+  <text x="400" y="45" font-family="Arial" font-size="20" font-weight="bold" fill="#000" text-anchor="middle">Activation of GSDME-mediated Pyroptosis by NLRP1</text>
+  <text x="400" y="70" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">in absence of GSDMD (Human)</text>
+</svg>

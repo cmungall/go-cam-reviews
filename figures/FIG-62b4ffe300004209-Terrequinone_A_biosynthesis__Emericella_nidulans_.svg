@@ -1,0 +1,123 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and title -->
+  <rect width="800" height="600" fill="#ffffff" />
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Terrequinone A Biosynthesis in Emericella nidulans</text>
+  
+  <!-- Molecules and reactions -->
+  <!-- L-tryptophan -->
+  <rect x="100" y="150" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#000000" stroke-width="2" />
+  <text x="160" y="183" font-family="Arial" font-size="14" text-anchor="middle">L-tryptophan</text>
+  <text x="160" y="198" font-family="Arial" font-size="11" text-anchor="middle">CHEBI:16828</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="220" y1="180" x2="280" y2="180" stroke="#000000" stroke-width="2" />
+  <polygon points="280,180 270,175 270,185" fill="#000000" />
+  <text x="250" y="170" font-family="Arial" font-size="10" text-anchor="middle">Transamination</text>
+  
+  <!-- tdiD enzyme box -->
+  <rect x="230" y="140" width="40" height="25" rx="5" ry="5" fill="#ff9999" stroke="#000000" stroke-width="1" />
+  <text x="250" y="155" font-family="Arial" font-size="11" text-anchor="middle">tdiD</text>
+  
+  <!-- 3-(indol-3-yl)pyruvate -->
+  <rect x="300" y="150" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#000000" stroke-width="2" />
+  <text x="360" y="175" font-family="Arial" font-size="14" text-anchor="middle">3-(indol-3-yl)</text>
+  <text x="360" y="190" font-family="Arial" font-size="14" text-anchor="middle">pyruvate</text>
+  <text x="360" y="205" font-family="Arial" font-size="11" text-anchor="middle">CHEBI:17640</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="420" y1="180" x2="480" y2="180" stroke="#000000" stroke-width="2" />
+  <polygon points="480,180 470,175 470,185" fill="#000000" />
+  <text x="450" y="170" font-family="Arial" font-size="10" text-anchor="middle">NRPS condensation</text>
+  
+  <!-- tdiA enzyme box -->
+  <rect x="430" y="140" width="40" height="25" rx="5" ry="5" fill="#ff9999" stroke="#000000" stroke-width="1" />
+  <text x="450" y="155" font-family="Arial" font-size="11" text-anchor="middle">tdiA</text>
+  
+  <!-- Intermediate 1 -->
+  <rect x="500" y="150" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#000000" stroke-width="2" />
+  <text x="560" y="183" font-family="Arial" font-size="14" text-anchor="middle">Intermediate 1</text>
+  <text x="560" y="198" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">(NRPS product)</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="560" y1="210" x2="560" y2="270" stroke="#000000" stroke-width="2" />
+  <polygon points="560,270 555,260 565,260" fill="#000000" />
+  <text x="580" y="240" font-family="Arial" font-size="10" text-anchor="middle">Prenylation</text>
+  
+  <!-- tdiB enzyme box -->
+  <rect x="570" y="230" width="40" height="25" rx="5" ry="5" fill="#ff9999" stroke="#000000" stroke-width="1" />
+  <text x="590" y="245" font-family="Arial" font-size="11" text-anchor="middle">tdiB</text>
+  
+  <!-- Intermediate 2 -->
+  <rect x="500" y="290" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#000000" stroke-width="2" />
+  <text x="560" y="323" font-family="Arial" font-size="14" text-anchor="middle">Intermediate 2</text>
+  <text x="560" y="338" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">(Prenylated product)</text>
+  
+  <!-- Arrow 4 -->
+  <line x1="500" y1="320" x2="440" y2="320" stroke="#000000" stroke-width="2" />
+  <polygon points="440,320 450,315 450,325" fill="#000000" />
+  <text x="470" y="310" font-family="Arial" font-size="10" text-anchor="middle">Oxidation</text>
+  
+  <!-- tdiC enzyme box -->
+  <rect x="450" y="280" width="40" height="25" rx="5" ry="5" fill="#ff9999" stroke="#000000" stroke-width="1" />
+  <text x="470" y="295" font-family="Arial" font-size="11" text-anchor="middle">tdiC</text>
+  
+  <!-- Intermediate 3 -->
+  <rect x="300" y="290" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#000000" stroke-width="2" />
+  <text x="360" y="323" font-family="Arial" font-size="14" text-anchor="middle">Intermediate 3</text>
+  <text x="360" y="338" font-family="Arial" font-size="11" font-style="italic" text-anchor="middle">(Oxidized product)</text>
+  
+  <!-- Arrow 5 -->
+  <line x1="300" y1="320" x2="240" y2="320" stroke="#000000" stroke-width="2" />
+  <polygon points="240,320 250,315 250,325" fill="#000000" />
+  <text x="270" y="310" font-family="Arial" font-size="10" text-anchor="middle">Dimerization</text>
+  
+  <!-- tdiE enzyme box -->
+  <rect x="250" y="280" width="40" height="25" rx="5" ry="5" fill="#ff9999" stroke="#000000" stroke-width="1" />
+  <text x="270" y="295" font-family="Arial" font-size="11" text-anchor="middle">tdiE</text>
+  
+  <!-- Terrequinone A -->
+  <rect x="100" y="290" width="120" height="60" rx="10" ry="10" fill="#e6ffef" stroke="#000000" stroke-width="2" />
+  <text x="160" y="315" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Terrequinone A</text>
+  <text x="160" y="330" font-family="Arial" font-size="11" text-anchor="middle">CHEBI:64534</text>
+  
+  <!-- Enzyme functions labels -->
+  <text x="250" y="130" font-family="Arial" font-size="11" text-anchor="middle">L-tryptophan aminotransferase</text>
+  <text x="450" y="130" font-family="Arial" font-size="11" text-anchor="middle">Non-ribosomal peptide synthetase</text>
+  <text x="610" y="245" font-family="Arial" font-size="11" text-anchor="middle">Prenyltransferase</text>
+  <text x="410" y="295" font-family="Arial" font-size="11" text-anchor="middle">Oxidoreductase</text>
+  <text x="210" y="295" font-family="Arial" font-size="11" text-anchor="middle">Catalytic activity</text>
+  
+  <!-- Notes about intermediates -->
+  <text x="400" y="400" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">*Intermediates not explicitly described in GO-CAM are shown for pathway continuity</text>
+  
+  <!-- Protein information -->
+  <text x="400" y="420" font-family="Arial" font-size="12" text-anchor="middle">tdiA (A7XRY0) · tdiB (A7XRY3) · tdiC (A7XRY6) · tdiD (A7XRY8) · tdiE (A7XRZ1)</text>
+  
+  <!-- Cell compartment (hinted background) -->
+  <rect x="80" y="100" width="560" height="280" rx="20" ry="20" fill="none" stroke="#cccccc" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="100" y="120" font-family="Arial" font-size="12" fill="#666666">Emericella nidulans cytoplasm</text>
+
+  <!-- Legend -->
+  <rect x="600" y="400" width="180" height="180" fill="#f9f9f9" stroke="#000000" stroke-width="1" />
+  <text x="690" y="420" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="610" y="430" width="20" height="20" fill="#ff9999" stroke="#000000" stroke-width="1" />
+  <text x="635" y="445" font-family="Arial" font-size="12" text-anchor="start">Enzyme</text>
+  
+  <rect x="610" y="460" width="20" height="20" fill="#e6f7ff" stroke="#000000" stroke-width="1" />
+  <text x="635" y="475" font-family="Arial" font-size="12" text-anchor="start">Substrate/Intermediate</text>
+  
+  <rect x="610" y="490" width="20" height="20" fill="#e6ffef" stroke="#000000" stroke-width="1" />
+  <text x="635" y="505" font-family="Arial" font-size="12" text-anchor="start">Final product</text>
+  
+  <line x1="610" y1="520" x2="630" y2="520" stroke="#000000" stroke-width="2" />
+  <polygon points="630,520 622,515 622,525" fill="#000000" />
+  <text x="635" y="525" font-family="Arial" font-size="12" text-anchor="start">Reaction</text>
+  
+  <rect x="610" y="540" width="20" height="20" fill="none" stroke="#cccccc" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="635" y="555" font-family="Arial" font-size="12" text-anchor="start">Cell compartment</text>
+  
+  <!-- Citation -->
+  <text x="400" y="580" font-family="Arial" font-size="10" text-anchor="middle">References: PMID:17704773, PMID:18029206</text>
+</svg>

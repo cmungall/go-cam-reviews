@@ -1,0 +1,148 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell outlines -->
+  <rect width="800" height="650" fill="#ffffff" />
+  
+  <!-- Presynaptic terminal -->
+  <path d="M 100,150 C 150,100 250,100 300,150 L 300,300 C 250,350 150,350 100,300 Z" fill="#f1f8fc" stroke="#2c3e50" stroke-width="2" />
+  <text x="150" y="130" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Presynaptic terminal</text>
+  
+  <!-- Postsynaptic neuron -->
+  <path d="M 300,150 C 350,100 700,100 750,150 L 750,500 C 700,550 350,550 300,500 Z" fill="#f5f9ea" stroke="#2c3e50" stroke-width="2" />
+  <text x="500" y="130" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Postsynaptic hippocampal neuron</text>
+  
+  <!-- Synaptic cleft -->
+  <rect x="100" y="300" width="200" height="50" fill="#e8f4fc" stroke="#2c3e50" stroke-width="1" />
+  <text x="200" y="330" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Synaptic cleft</text>
+  
+  <!-- Postsynaptic density -->
+  <rect x="300" y="300" width="100" height="50" fill="#bae1ff" stroke="#2c3e50" stroke-width="1" />
+  <text x="350" y="330" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Postsynaptic density</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="550" cy="400" rx="120" ry="80" fill="#e6f5e9" stroke="#2c3e50" stroke-width="2" />
+  <text x="550" y="380" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Nucleus</text>
+  <ellipse cx="550" cy="410" rx="80" ry="40" fill="#d0ebf5" stroke="#2c3e50" stroke-width="1" opacity="0.7" />
+  <text x="550" y="415" font-family="Arial" font-size="14" text-anchor="middle" fill="#2c3e50">Chromatin</text>
+  
+  <!-- Molecules and proteins with color-coding -->
+  <!-- Glutamate -->
+  <circle cx="200" cy="280" r="15" fill="#ff9e9e" stroke="#d62728" stroke-width="1.5" />
+  <text x="200" y="285" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">Glu</text>
+  
+  <!-- NMDA receptor -->
+  <rect x="320" y="270" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#e67e22" stroke-width="2" />
+  <text x="350" y="290" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">NMDA-R</text>
+  
+  <!-- DLG4 -->
+  <rect x="320" y="320" width="60" height="20" rx="3" ry="3" fill="#c2e0c2" stroke="#2ecc71" stroke-width="1.5" />
+  <text x="350" y="335" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">DLG4</text>
+  
+  <!-- PTEN -->
+  <rect x="400" y="320" width="50" height="20" rx="3" ry="3" fill="#b3d9ff" stroke="#3498db" stroke-width="1.5" />
+  <text x="425" y="335" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">PTEN</text>
+  
+  <!-- CTNNB1 -->
+  <rect x="450" y="360" width="60" height="20" rx="3" ry="3" fill="#d9b3ff" stroke="#9b59b6" stroke-width="1.5" />
+  <text x="480" y="375" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">CTNNB1</text>
+  
+  <!-- CTNNB1 in nucleus -->
+  <rect x="500" y="400" width="60" height="20" rx="3" ry="3" fill="#d9b3ff" stroke="#9b59b6" stroke-width="1.5" />
+  <text x="530" y="415" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">CTNNB1</text>
+  
+  <!-- SLC6A20 gene -->
+  <rect x="590" y="400" width="70" height="20" rx="0" ry="0" fill="#ffe6cc" stroke="#f39c12" stroke-width="1.5" />
+  <text x="625" y="415" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">SLC6A20</text>
+  
+  <!-- SLC6A20 protein -->
+  <rect x="400" y="200" width="70" height="20" rx="3" ry="3" fill="#ffe6cc" stroke="#f39c12" stroke-width="1.5" />
+  <text x="435" y="215" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">SLC6A20</text>
+  
+  <!-- Glycine -->
+  <circle cx="350" cy="200" r="15" fill="#e6ccff" stroke="#9b59b6" stroke-width="1.5" />
+  <text x="350" y="205" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">Gly</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- Glutamate to NMDA -->
+  <line x1="215" y1="280" x2="320" y2="285" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="260" y="270" font-family="Arial" font-size="10" fill="#2c3e50">Binding</text>
+  
+  <!-- NMDA to DLG4 -->
+  <line x1="350" y1="300" x2="350" y2="320" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="360" y="315" font-family="Arial" font-size="10" fill="#2c3e50">Activates</text>
+  
+  <!-- DLG4 to PTEN -->
+  <line x1="380" y1="330" x2="400" y2="330" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="385" y="320" font-family="Arial" font-size="10" fill="#2c3e50">Activates</text>
+  
+  <!-- PTEN to CTNNB1 -->
+  <path d="M 425,340 C 425,350 480,350 480,360" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="445" y="355" font-family="Arial" font-size="10" fill="#2c3e50">Regulates</text>
+  
+  <!-- CTNNB1 to nucleus -->
+  <path d="M 480,380 C 480,390 510,390 510,400" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="485" y="395" font-family="Arial" font-size="10" fill="#2c3e50">Translocation</text>
+  
+  <!-- CTNNB1 to SLC6A20 gene -->
+  <line x1="560" y1="410" x2="590" y2="410" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="570" y="400" font-family="Arial" font-size="10" fill="#2c3e50">Promotes</text>
+  
+  <!-- SLC6A20 gene to SLC6A20 protein -->
+  <path d="M 625,400 C 625,300 500,300 470,220" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead)" />
+  <text x="550" y="320" font-family="Arial" font-size="10" fill="#2c3e50">Expression</text>
+  
+  <!-- SLC6A20 to Glycine -->
+  <line x1="400" y1="210" x2="365" y2="205" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="380" y="195" font-family="Arial" font-size="10" fill="#2c3e50">Transports</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Title and labels -->
+  <text x="400" y="50" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#2c3e50">PTEN in Excitatory Hippocampal Synapse Long-Term Depression</text>
+  <text x="400" y="75" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic" fill="#2c3e50">Human (GO-CAM Model 62900b6400001630)</text>
+  
+  <!-- Activity labels with better placement -->
+  <text x="245" y="260" font-family="Arial" font-size="12" font-weight="bold" fill="#e67e22">NMDA glutamate</text>
+  <text x="245" y="274" font-family="Arial" font-size="12" fill="#e67e22">receptor activity</text>
+  
+  <text x="350" y="355" font-family="Arial" font-size="12" font-weight="bold" fill="#2ecc71">Synaptic receptor</text>
+  <text x="350" y="369" font-family="Arial" font-size="12" fill="#2ecc71">adaptor activity</text>
+  
+  <text x="425" y="355" font-family="Arial" font-size="12" font-weight="bold" fill="#3498db">Phosphatidylinositol</text>
+  <text x="425" y="369" font-family="Arial" font-size="12" fill="#3498db">phosphate phosphatase</text>
+  
+  <text x="480" y="395" font-family="Arial" font-size="12" font-weight="bold" fill="#9b59b6">Transcription</text>
+  <text x="480" y="409" font-family="Arial" font-size="12" fill="#9b59b6">coactivator</text>
+  
+  <text x="435" y="180" font-family="Arial" font-size="12" font-weight="bold" fill="#f39c12">Glycine transporter</text>
+  <text x="435" y="194" font-family="Arial" font-size="12" fill="#f39c12">activity</text>
+  
+  <!-- Process label -->
+  <text x="200" y="570" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Long-term synaptic depression (GO:0060292)</text>
+  <text x="600" y="570" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Glycine import (GO:1903804)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="590" width="700" height="50" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1" rx="5" ry="5" />
+  <text x="60" y="610" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Legend:</text>
+  <text x="120" y="610" font-family="Arial" font-size="12" fill="#2c3e50">Molecules</text>
+  <circle cx="160" y="610" r="6" fill="#ff9e9e" stroke="#d62728" stroke-width="1" />
+  <text x="200" y="610" font-family="Arial" font-size="12" fill="#2c3e50">Receptors</text>
+  <rect x="240" y="605" width="12" height="10" rx="2" ry="2" fill="#ffcc99" stroke="#e67e22" stroke-width="1" />
+  <text x="290" y="610" font-family="Arial" font-size="12" fill="#2c3e50">Adaptor proteins</text>
+  <rect x="370" y="605" width="12" height="10" rx="2" ry="2" fill="#c2e0c2" stroke="#2ecc71" stroke-width="1" />
+  <text x="420" y="610" font-family="Arial" font-size="12" fill="#2c3e50">Enzymes</text>
+  <rect x="460" y="605" width="12" height="10" rx="2" ry="2" fill="#b3d9ff" stroke="#3498db" stroke-width="1" />
+  <text x="510" y="610" font-family="Arial" font-size="12" fill="#2c3e50">Transcription factors</text>
+  <rect x="600" y="605" width="12" height="10" rx="2" ry="2" fill="#d9b3ff" stroke="#9b59b6" stroke-width="1" />
+  <text x="650" y="610" font-family="Arial" font-size="12" fill="#2c3e50">Transporters</text>
+  <rect x="710" y="605" width="12" height="10" rx="2" ry="2" fill="#ffe6cc" stroke="#f39c12" stroke-width="1" />
+  
+  <text x="120" y="630" font-family="Arial" font-size="12" fill="#2c3e50">Direct activation</text>
+  <line x1="190" y1="630" x2="220" y2="630" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="250" y="630" font-family="Arial" font-size="12" fill="#2c3e50">Gene expression</text>
+  <line x1="320" y1="630" x2="350" y2="630" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+</svg>

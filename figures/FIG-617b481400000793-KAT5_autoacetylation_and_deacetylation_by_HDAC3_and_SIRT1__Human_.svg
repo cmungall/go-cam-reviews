@@ -1,0 +1,22 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="700" height="500" fill="none" stroke="black" />
+  <text x="150" y="30" style="font-weight:bold;">KAT5 Autoacetylation and Deacetylation Pathway</text>
+  <rect x="200" y="100" width="150" height="50" fill="#ADD8E6" stroke="black" />
+  <text x="205" y="130">KAT5 Autoacetylation</text>
+  <text x="180" y="90">(Peptide-lysine-N-acetyltransferase)</text>
+  <rect x="450" y="100" width="150" height="50" fill="#ADD8E6" stroke="black" />
+  <text x="455" y="130">KAT5 Histone<br />Acetyltransferase</text>
+  <text x="200" y="200" style="font-weight:bold;">Nucleus</text>
+  <rect x="260" y="250" width="120" height="40" fill="#90EE90" stroke="black" />
+  <text x="265" y="275">HDAC3<br/>(Lysine Deacetylase)</text>
+  <rect x="420" y="250" width="120" height="40" fill="#90EE90" stroke="black" />
+  <text x="425" y="275">SIRT1<br/>(NAD-Dependent Deacetylase)</text>
+  <path d="M350 150 Q325 180 275 250" stroke="black" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M550 150 Q525 180 475 250" stroke="black" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M370 150 Q350 190 310 250" stroke="black" fill="none" marker-end="url(#arrowhead)" />
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

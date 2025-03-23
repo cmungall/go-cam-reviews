@@ -1,0 +1,106 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outline -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Cell Membrane -->
+  <path d="M50,150 C100,130 700,130 750,150 C760,200 760,400 750,450 C700,470 100,470 50,450 C40,400 40,200 50,150 Z" 
+        fill="#f5f5f5" stroke="#333" stroke-width="2"/>
+  
+  <!-- Lipid bilayer representation -->
+  <path d="M50,150 C100,130 700,130 750,150" fill="none" stroke="#85C1E9" stroke-width="10"/>
+  <path d="M50,160 C100,140 700,140 750,160" fill="none" stroke="#5DADE2" stroke-width="10"/>
+  
+  <!-- Labels for cellular compartments -->
+  <rect x="300" y="90" width="200" height="30" rx="5" fill="white" fill-opacity="0.7" stroke="#333" stroke-width="1"/>
+  <text x="400" y="110" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Extracellular Space</text>
+  
+  <rect x="300" y="480" width="200" height="30" rx="5" fill="white" fill-opacity="0.7" stroke="#333" stroke-width="1"/>
+  <text x="400" y="500" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cytoplasm (GO:0005737)</text>
+  
+  <rect x="300" y="140" width="200" height="25" rx="5" fill="white" fill-opacity="0.7" stroke="#333" stroke-width="1"/>
+  <text x="400" y="158" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Cell Surface (GO:0009986)</text>
+  
+  <!-- TIRAP at cell surface -->
+  <rect x="200" y="170" width="100" height="50" rx="10" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <text x="250" y="200" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TIRAP</text>
+  <text x="250" y="218" font-family="Arial" font-size="11" text-anchor="middle">P58753</text>
+  
+  <rect x="215" y="130" width="70" height="20" rx="5" fill="white" fill-opacity="0.9" stroke="#333" stroke-width="1"/>
+  <text x="250" y="144" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">adaptor activity</text>
+  
+  <!-- MYD88 at cell surface -->
+  <rect x="350" y="170" width="100" height="50" rx="10" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <text x="400" y="200" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">MYD88</text>
+  <text x="400" y="218" font-family="Arial" font-size="11" text-anchor="middle">Q99836</text>
+  
+  <rect x="365" y="130" width="70" height="20" rx="5" fill="white" fill-opacity="0.9" stroke="#333" stroke-width="1"/>
+  <text x="400" y="144" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">adaptor activity</text>
+  
+  <!-- IRAK4 at cell surface -->
+  <rect x="500" y="170" width="100" height="50" rx="10" fill="#FF9999" stroke="#333" stroke-width="2"/>
+  <text x="550" y="200" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IRAK4</text>
+  <text x="550" y="218" font-family="Arial" font-size="11" text-anchor="middle">Q9NWZ3</text>
+  
+  <rect x="515" y="130" width="70" height="20" rx="5" fill="white" fill-opacity="0.9" stroke="#333" stroke-width="1"/>
+  <text x="550" y="144" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">kinase activity</text>
+  
+  <!-- IRAK1 at cell surface -->
+  <rect x="500" y="280" width="100" height="50" rx="10" fill="#FF9999" stroke="#333" stroke-width="2"/>
+  <text x="550" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">IRAK1</text>
+  <text x="550" y="328" font-family="Arial" font-size="11" text-anchor="middle">P51617</text>
+  
+  <rect x="515" y="240" width="70" height="20" rx="5" fill="white" fill-opacity="0.9" stroke="#333" stroke-width="1"/>
+  <text x="550" y="254" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">kinase activity</text>
+  
+  <!-- TRAF6 in cytoplasm -->
+  <rect x="350" y="380" width="100" height="50" rx="10" fill="#90EE90" stroke="#333" stroke-width="2"/>
+  <text x="400" y="410" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TRAF6</text>
+  <text x="400" y="428" font-family="Arial" font-size="11" text-anchor="middle">Q9Y4K3</text>
+  
+  <rect x="315" y="340" width="170" height="20" rx="5" fill="white" fill-opacity="0.9" stroke="#333" stroke-width="1"/>
+  <text x="400" y="354" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">ubiquitin-ubiquitin ligase activity</text>
+  
+  <!-- Arrows for interactions -->
+  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+  </marker>
+  
+  <!-- TIRAP to MYD88 -->
+  <line x1="300" y1="195" x2="350" y2="195" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="325" y="185" font-family="Arial" font-size="10" text-anchor="middle">positively regulates</text>
+  
+  <!-- MYD88 to IRAK4 -->
+  <line x1="450" y1="195" x2="500" y2="195" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="475" y="185" font-family="Arial" font-size="10" text-anchor="middle">positively regulates</text>
+  
+  <!-- IRAK4 to IRAK1 -->
+  <path d="M550,220 L550,280" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="565" y="250" font-family="Arial" font-size="10" text-anchor="start">positively regulates</text>
+  
+  <!-- IRAK1 to TRAF6 -->
+  <path d="M500,305 C450,305 450,400 350,400" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="450" y="330" font-family="Arial" font-size="10" text-anchor="middle">positively regulates</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="480" width="180" height="100" fill="white" stroke="#333" stroke-width="1" fill-opacity="0.9"/>
+  <text x="690" y="500" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="610" y="510" width="20" height="15" fill="#FFD700" stroke="#333" stroke-width="1"/>
+  <text x="640" y="523" font-family="Arial" font-size="12" text-anchor="start">Adaptor Protein</text>
+  
+  <rect x="610" y="535" width="20" height="15" fill="#FF9999" stroke="#333" stroke-width="1"/>
+  <text x="640" y="548" font-family="Arial" font-size="12" text-anchor="start">Kinase</text>
+  
+  <rect x="610" y="560" width="20" height="15" fill="#90EE90" stroke="#333" stroke-width="1"/>
+  <text x="640" y="573" font-family="Arial" font-size="12" text-anchor="start">Ubiquitin Ligase</text>
+  
+  <!-- Title -->
+  <rect x="200" y="25" width="400" height="55" rx="5" fill="white" fill-opacity="0.7" stroke="#333" stroke-width="1"/>
+  <text x="400" y="45" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">TIRAP-MYDDOSOME Signaling Pathway</text>
+  <text x="400" y="70" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">SPModule-TIRAP-MYDDOSOME (Human)</text>
+  
+  <!-- Relation annotation -->
+  <rect x="50" y="520" width="320" height="25" rx="5" fill="white" fill-opacity="0.9" stroke="#333" stroke-width="1"/>
+  <text x="60" y="537" font-family="Arial" font-size="14" text-anchor="start" font-style="italic">All arrows represent "positively regulates" (RO:0002629)</text>
+</svg>

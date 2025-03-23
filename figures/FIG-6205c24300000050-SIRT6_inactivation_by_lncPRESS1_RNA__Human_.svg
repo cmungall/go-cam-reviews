@@ -1,0 +1,114 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Nucleus -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#666" stroke-width="2" opacity="0.8"/>
+  <text x="400" y="120" font-family="Arial" font-size="18" text-anchor="middle">Nucleus</text>
+  
+  <!-- Chromatin region -->
+  <path d="M250,250 C270,220 350,200 400,210 C450,220 500,250 550,240 C600,230 650,200 680,240 C710,280 650,330 600,320 C550,310 500,280 450,290 C400,300 350,330 300,320 C250,310 230,280 250,250 Z" fill="#e6e6fa" stroke="#9370db" stroke-width="2"/>
+  <text x="480" y="270" font-family="Arial" font-size="16" text-anchor="middle">Chromatin (GO:0000785)</text>
+  
+  <!-- Step 1: lncPRESS1 RNA -->
+  <rect x="100" y="130" width="200" height="90" rx="5" ry="5" fill="#f9f9f9" stroke="#888" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="200" y="145" font-family="Arial" font-size="13" text-anchor="middle" fill="#444">Step 1: RNA-Protein Interaction</text>
+  
+  <path d="M150,200 C170,180 190,210 210,190 C230,170 250,200 270,180 C290,160 310,190 330,170" fill="none" stroke="#4CAF50" stroke-width="4"/>
+  <text x="200" y="170" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">lncPRESS1 RNA</text>
+  <text x="200" y="185" font-family="Arial" font-size="11" text-anchor="middle">(URS0000BC450A_9606)</text>
+  <text x="200" y="200" font-family="Arial" font-size="11" text-anchor="middle">GO:0005515 (protein binding)</text>
+  
+  <!-- SIRT6 protein initial state -->
+  <circle cx="400" cy="200" r="35" fill="#ff9800" stroke="#b26a00" stroke-width="2"/>
+  <text x="400" y="205" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">SIRT6</text>
+  <text x="400" y="220" font-family="Arial" font-size="11" text-anchor="middle">(Q8N6T7)</text>
+  
+  <!-- Binding interaction -->
+  <line x1="330" y1="170" x2="370" y2="185" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="350" y="160" font-family="Arial" font-size="13" text-anchor="middle">Binds</text>
+  <text x="350" y="175" font-family="Arial" font-size="11" text-anchor="middle">GO:0106222</text>
+  <text x="350" y="190" font-family="Arial" font-size="11" text-anchor="middle">(lncRNA binding)</text>
+  
+  <!-- Step 2: SIRT6 Inactivation -->
+  <rect x="320" y="230" width="260" height="100" rx="5" ry="5" fill="#f9f9f9" stroke="#888" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="450" y="245" font-family="Arial" font-size="13" text-anchor="middle" fill="#444">Step 2: SIRT6 Inactivation</text>
+  <text x="450" y="260" font-family="Arial" font-size="11" text-anchor="middle" fill="#666" font-style="italic">lncPRESS1 inhibits SIRT6 function</text>
+  
+  <!-- SIRT6 protein bound state -->
+  <circle cx="450" cy="280" r="35" fill="#ff9800" stroke="#b26a00" stroke-width="2" opacity="0.7"/>
+  <text x="450" y="285" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">SIRT6</text>
+  <text x="450" y="300" font-family="Arial" font-size="11" text-anchor="middle">(Inactive)</text>
+  
+  <!-- lncPRESS1 bound to SIRT6 -->
+  <path d="M400,230 C420,240 430,245 450,260" fill="none" stroke="#4CAF50" stroke-width="3"/>
+  
+  <!-- Step 3: Downstream Effects -->
+  <rect x="120" y="350" width="560" height="90" rx="5" ry="5" fill="#f9f9f9" stroke="#888" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="400" y="365" font-family="Arial" font-size="13" text-anchor="middle" fill="#444">Step 3: Downstream Effects on Chromatin Functions</text>
+  <text x="400" y="380" font-family="Arial" font-size="11" text-anchor="middle" fill="#666" font-style="italic">Inhibition of SIRT6's enzymatic and binding activities</text>
+  
+  <!-- Inhibition arrow to chromatin binding -->
+  <line x1="460" y1="315" x2="500" y2="380" stroke="red" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#inhibitmarker)"/>
+  <text x="525" y="380" font-family="Arial" font-size="13" text-anchor="middle" fill="red">Inhibits</text>
+  <text x="525" y="395" font-family="Arial" font-size="11" text-anchor="middle" fill="red">GO:0003682</text>
+  <text x="525" y="410" font-family="Arial" font-size="11" text-anchor="middle" fill="red">(chromatin binding)</text>
+  
+  <!-- Inhibition arrow to deacetylase activity -->
+  <line x1="425" y1="315" x2="320" y2="380" stroke="red" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#inhibitmarker)"/>
+  <text x="300" y="380" font-family="Arial" font-size="13" text-anchor="middle" fill="red">Inhibits</text>
+  <text x="300" y="395" font-family="Arial" font-size="11" text-anchor="middle" fill="red">GO:0017136</text>
+  <text x="300" y="410" font-family="Arial" font-size="11" text-anchor="middle" fill="red">(histone deacetylase activity)</text>
+  
+  <!-- Step 4: Biological Outcome -->
+  <rect x="120" y="460" width="560" height="100" rx="5" ry="5" fill="#f9f9f9" stroke="#888" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="400" y="475" font-family="Arial" font-size="13" text-anchor="middle" fill="#444">Step 4: Cellular Process Outcome</text>
+  <text x="400" y="490" font-family="Arial" font-size="11" text-anchor="middle" fill="#666" font-style="italic">Effects on gene expression and cellular differentiation</text>
+  
+  <!-- Biological outcome -->
+  <rect x="230" y="500" width="240" height="60" rx="10" ry="10" fill="#e3f2fd" stroke="#2196F3" stroke-width="2"/>
+  <text x="350" y="525" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">Positive Regulation of</text>
+  <text x="350" y="545" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">Stem Cell Differentiation</text>
+  <text x="350" y="560" font-family="Arial" font-size="11" text-anchor="middle">(GO:2000738)</text>
+  
+  <!-- Process label -->
+  <rect x="500" y="500" width="160" height="40" rx="5" ry="5" fill="#fce4ec" stroke="#e91e63" stroke-width="1"/>
+  <text x="580" y="520" font-family="Arial" font-size="11" text-anchor="middle">Negative regulation of protein</text>
+  <text x="580" y="535" font-family="Arial" font-size="11" text-anchor="middle">localization to chromatin (GO:0120186)</text>
+  
+  <!-- Causal arrows -->
+  <line x1="400" y1="440" x2="350" y2="495" stroke="#2196F3" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="440" x2="580" y2="495" stroke="#e91e63" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <rect x="580" y="120" width="190" height="160" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="675" y="140" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="600" cy="160" r="8" fill="#ff9800"/>
+  <text x="670" y="165" font-family="Arial" font-size="13" text-anchor="middle">SIRT6 Protein</text>
+  
+  <line x1="590" y1="185" x2="610" y2="185" stroke="#4CAF50" stroke-width="4"/>
+  <text x="670" y="190" font-family="Arial" font-size="13" text-anchor="middle">lncPRESS1 RNA</text>
+  
+  <line x1="590" y1="210" x2="610" y2="210" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="670" y="215" font-family="Arial" font-size="13" text-anchor="middle">Activation</text>
+  
+  <line x1="590" y1="235" x2="610" y2="235" stroke="red" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#inhibitmarker)"/>
+  <text x="670" y="240" font-family="Arial" font-size="13" text-anchor="middle">Inhibition</text>
+  
+  <rect x="590" y="250" width="16" height="16" fill="#e6e6fa" stroke="#9370db" stroke-width="1"/>
+  <text x="670" y="263" font-family="Arial" font-size="13" text-anchor="middle">Chromatin</text>
+  
+  <!-- Markers definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+    <marker id="inhibitmarker" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <line x1="0" y1="0" x2="10" y2="10" stroke="red" stroke-width="2"/>
+      <line x1="0" y1="10" x2="10" y2="0" stroke="red" stroke-width="2"/>
+    </marker>
+  </defs>
+  
+  <!-- Title of figure -->
+  <text x="400" y="50" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">SIRT6 Inactivation by lncPRESS1 RNA in Human Cells</text>
+  <text x="400" y="75" font-family="Arial" font-size="15" text-anchor="middle" font-style="italic">Regulation of Chromatin Binding and Stem Cell Differentiation</text>
+</svg>

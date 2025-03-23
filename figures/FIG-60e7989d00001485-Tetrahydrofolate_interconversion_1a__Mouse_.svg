@@ -1,0 +1,127 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell nucleus background -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f5ff" stroke="#2c3e50" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Nucleus (GO:0005634)</text>
+  <text x="400" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">S Phase (DNA Replication)</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Tetrahydrofolate Interconversion Pathway (Mouse)</text>
+  
+  <!-- Enzyme nodes -->
+  <g id="shmt1">
+    <rect x="150" y="200" width="130" height="70" rx="10" ry="10" fill="#b3e0ff" stroke="#2c3e50" stroke-width="2"/>
+    <text x="215" y="225" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Shmt1</text>
+    <text x="215" y="245" text-anchor="middle" font-family="Arial" font-size="12">glycine hydroxymethyl-</text>
+    <text x="215" y="260" text-anchor="middle" font-family="Arial" font-size="12">transferase activity</text>
+    <text x="215" y="275" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic">GO:0004372</text>
+  </g>
+  
+  <g id="shmt2">
+    <rect x="150" y="350" width="130" height="70" rx="10" ry="10" fill="#b3e0ff" stroke="#2c3e50" stroke-width="2"/>
+    <text x="215" y="375" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Shmt2</text>
+    <text x="215" y="395" text-anchor="middle" font-family="Arial" font-size="12">glycine hydroxymethyl-</text>
+    <text x="215" y="410" text-anchor="middle" font-family="Arial" font-size="12">transferase activity</text>
+    <text x="215" y="425" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic">GO:0004372</text>
+  </g>
+  
+  <g id="tyms">
+    <rect x="520" y="270" width="130" height="70" rx="10" ry="10" fill="#ffcc99" stroke="#2c3e50" stroke-width="2"/>
+    <text x="585" y="295" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Tyms</text>
+    <text x="585" y="315" text-anchor="middle" font-family="Arial" font-size="12">thymidylate synthase</text>
+    <text x="585" y="330" text-anchor="middle" font-family="Arial" font-size="12">activity</text>
+    <text x="585" y="345" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic">GO:0004799</text>
+  </g>
+  
+  <g id="dhfr">
+    <rect x="320" y="430" width="130" height="70" rx="10" ry="10" fill="#c2f0c2" stroke="#2c3e50" stroke-width="2"/>
+    <text x="385" y="455" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Dhfr</text>
+    <text x="385" y="475" text-anchor="middle" font-family="Arial" font-size="12">dihydrofolate reductase</text>
+    <text x="385" y="490" text-anchor="middle" font-family="Arial" font-size="12">activity</text>
+    <text x="385" y="505" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic">GO:0004146</text>
+  </g>
+  
+  <!-- Substrate/product nodes -->
+  <g id="thf">
+    <ellipse cx="350" cy="235" rx="45" ry="20" fill="#ffffcc" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="350" y="240" text-anchor="middle" font-family="Arial" font-size="13">5,10-methylene-THF</text>
+  </g>
+  
+  <g id="dump">
+    <ellipse cx="450" cy="235" rx="30" ry="20" fill="#ffffcc" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="450" y="240" text-anchor="middle" font-family="Arial" font-size="13">dUMP</text>
+  </g>
+  
+  <g id="dtmp">
+    <ellipse cx="450" cy="340" rx="30" ry="20" fill="#ffffcc" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="450" y="345" text-anchor="middle" font-family="Arial" font-size="13">dTMP</text>
+  </g>
+  
+  <g id="dhf">
+    <ellipse cx="350" cy="340" rx="30" ry="20" fill="#ffffcc" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="350" y="345" text-anchor="middle" font-family="Arial" font-size="13">DHF</text>
+  </g>
+  
+  <g id="tetrahydrofolate">
+    <ellipse cx="225" cy="290" rx="30" ry="20" fill="#ffffcc" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="225" y="295" text-anchor="middle" font-family="Arial" font-size="13">THF</text>
+  </g>
+  
+  <!-- Causal relationships (arrows) -->
+  <!-- Shmt1 to methylene-THF -->
+  <path d="M280 235 L310 235" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- methylene-THF to Tyms -->
+  <path d="M390 235 L420 235" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- dUMP to Tyms -->
+  <path d="M480 235 L520 270" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Shmt2 to methylene-THF -->
+  <path d="M280 350 C310 350, 320 300, 350 255" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Tyms to dTMP -->
+  <path d="M520 320 L480 340" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Tyms to DHF -->
+  <path d="M520 310 L380 340" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- DHF to Dhfr -->
+  <path d="M350 360 L350 430" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Dhfr to THF -->
+  <path d="M320 450 C300 430, 290 400, 250 310" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Process label -->
+  <rect x="280" y="175" width="240" height="30" rx="15" ry="15" fill="#ffe6cc" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="400" y="195" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Tetrahydrofolate Interconversion (GO:0035999)</text>
+  
+  <!-- Legend -->
+  <rect x="530" y="430" width="230" height="135" rx="5" ry="5" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="645" y="450" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <rect x="540" y="460" width="20" height="15" fill="#b3e0ff" stroke="#2c3e50" stroke-width="1"/>
+  <text x="570" y="472" text-anchor="start" font-family="Arial" font-size="12">SHMT enzymes</text>
+  
+  <rect x="540" y="480" width="20" height="15" fill="#ffcc99" stroke="#2c3e50" stroke-width="1"/>
+  <text x="570" y="492" text-anchor="start" font-family="Arial" font-size="12">Thymidylate synthase</text>
+  
+  <rect x="540" y="500" width="20" height="15" fill="#c2f0c2" stroke="#2c3e50" stroke-width="1"/>
+  <text x="570" y="512" text-anchor="start" font-family="Arial" font-size="12">Dihydrofolate reductase</text>
+  
+  <ellipse cx="550" cy="525" rx="10" ry="7" fill="#ffffcc" stroke="#2c3e50" stroke-width="1"/>
+  <text x="570" y="530" text-anchor="start" font-family="Arial" font-size="12">Folate metabolites</text>
+  
+  <path d="M540 540 L560 540" fill="none" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="570" y="545" text-anchor="start" font-family="Arial" font-size="12">Causal relationship (RO:0002413)</text>
+  
+  <!-- Additional annotations -->
+  <text x="110" y="530" text-anchor="start" font-family="Arial" font-size="13" font-style="italic">Abbreviations: THF - Tetrahydrofolate, DHF - Dihydrofolate,</text>
+  <text x="110" y="550" text-anchor="start" font-family="Arial" font-size="13" font-style="italic">dUMP - deoxyuridine monophosphate, dTMP - deoxythymidine monophosphate</text>
+</svg>

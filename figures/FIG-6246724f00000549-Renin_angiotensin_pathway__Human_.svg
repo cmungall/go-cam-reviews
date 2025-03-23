@@ -1,0 +1,122 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Cell context -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" stroke="#ccc" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Renin-Angiotensin Pathway (Human)</text>
+  
+  <!-- Cell membrane -->
+  <path d="M 50 150 L 750 150 L 750 550 L 50 550 Z" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="60" y="180" font-family="Arial" font-size="16" fill="#555">Plasma Membrane</text>
+  
+  <!-- Extracellular Space Label -->
+  <text x="60" y="130" font-family="Arial" font-size="16" fill="#555">Extracellular Space</text>
+  
+  <!-- Intracellular Space Label -->
+  <text x="60" y="230" font-family="Arial" font-size="16" fill="#555">Intracellular Space</text>
+  
+  <!-- Renin (P00797-1) -->
+  <circle cx="150" cy="100" r="40" fill="#b3e5fc" stroke="#0288d1" stroke-width="2"/>
+  <text x="150" y="100" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Renin</text>
+  <text x="150" y="120" font-family="Arial" font-size="12" text-anchor="middle">(P00797-1)</text>
+  
+  <!-- Angiotensinogen (P01019) -->
+  <rect x="250" y="80" width="100" height="40" rx="10" ry="10" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="300" y="105" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">AGT</text>
+  <text x="300" y="120" font-family="Arial" font-size="12" text-anchor="middle">(P01019)</text>
+  
+  <!-- Angiotensin I (Implicit) -->
+  <rect x="400" y="80" width="100" height="40" rx="10" ry="10" fill="#c8e6c9" stroke="#388e3c" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="450" y="105" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Angiotensin I</text>
+  <text x="450" y="120" font-family="Arial" font-size="12" text-anchor="middle" fill="#777">(Implicit)</text>
+  
+  <!-- ACE (P12821) -->
+  <circle cx="550" cy="100" r="40" fill="#d1c4e9" stroke="#673ab7" stroke-width="2"/>
+  <text x="550" y="100" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ACE</text>
+  <text x="550" y="120" font-family="Arial" font-size="12" text-anchor="middle">(P12821)</text>
+  
+  <!-- Angiotensin II (Product of ACE action, Implicit) -->
+  <rect x="650" y="80" width="100" height="40" rx="10" ry="10" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Angiotensin II</text>
+  <text x="700" y="120" font-family="Arial" font-size="12" text-anchor="middle">(Active AGT)</text>
+  
+  <!-- AGTR1 Receptor (P30556) -->
+  <rect x="650" y="140" width="100" height="60" rx="5" ry="5" fill="#ffcdd2" stroke="#d32f2f" stroke-width="2"/>
+  <text x="700" y="170" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">AGTR1</text>
+  <text x="700" y="190" font-family="Arial" font-size="12" text-anchor="middle">(P30556)</text>
+  
+  <!-- Signaling pathway downstream -->
+  <path d="M 700 200 L 700 300 L 400 400" fill="none" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="550" y="370" font-family="Arial" font-size="14" fill="#d32f2f" text-anchor="middle">Angiotensin-activated</text>
+  <text x="550" y="390" font-family="Arial" font-size="14" fill="#d32f2f" text-anchor="middle">signaling pathway (GO:0038166)</text>
+  
+  <!-- Process arrows -->
+  <!-- Renin cleaves Angiotensinogen -->
+  <path d="M 190 100 L 240 100" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="215" y="90" font-family="Arial" font-size="12" text-anchor="middle">cleaves</text>
+  
+  <!-- Angiotensinogen to Angiotensin I -->
+  <path d="M 350 100 L 390 100" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- ACE cleaves Angiotensin I to Angiotensin II -->
+  <path d="M 510 100 L 540 100" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="525" y="90" font-family="Arial" font-size="12" text-anchor="middle">cleaves</text>
+  
+  <!-- Angiotensin II to AGTR1 -->
+  <path d="M 700 120 L 700 140" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="720" y="130" font-family="Arial" font-size="12" text-anchor="middle">binds</text>
+  
+  <!-- Process labels -->
+  <text x="150" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Aspartic-type endopeptidase</text>
+  <text x="150" y="65" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">activity (GO:0004190)</text>
+  
+  <text x="550" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Peptidyl-dipeptidase activity</text>
+  <text x="550" y="65" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(GO:0008241)</text>
+  
+  <text x="700" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Angiotensin type I</text>
+  <text x="700" y="255" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">receptor activity (GO:0001596)</text>
+  
+  <!-- Biological processes -->
+  <rect x="100" y="480" width="180" height="40" rx="5" ry="5" fill="#ffe0b2" stroke="#e65100" stroke-width="2"/>
+  <text x="190" y="505" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Angiotensin maturation</text>
+  <text x="190" y="520" font-family="Arial" font-size="12" text-anchor="middle">(GO:0002003)</text>
+  
+  <rect x="500" y="480" width="250" height="40" rx="5" ry="5" fill="#ffe0b2" stroke="#e65100" stroke-width="2"/>
+  <text x="625" y="505" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Blood vessel diameter homeostasis</text>
+  <text x="625" y="520" font-family="Arial" font-size="12" text-anchor="middle">(GO:0002034)</text>
+  
+  <!-- Process connections -->
+  <path d="M 190 430 L 190 480" fill="none" stroke="#e65100" stroke-width="2" stroke-dasharray="5,3"/>
+  <path d="M 625 430 L 625 480" fill="none" stroke="#e65100" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Pathway explanation -->
+  <rect x="210" y="520" width="270" height="70" fill="rgba(255,255,255,0.9)" stroke="#333" stroke-width="1"/>
+  <text x="220" y="535" font-family="Arial" font-size="12" font-weight="bold">Pathway function:</text>
+  <text x="220" y="550" font-family="Arial" font-size="11">The renin-angiotensin system regulates blood pressure,</text>
+  <text x="220" y="565" font-family="Arial" font-size="11">fluid balance, and vascular resistance. Dysregulation</text>
+  <text x="220" y="580" font-family="Arial" font-size="11">is linked to hypertension and cardiovascular disease.</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="520" width="180" height="70" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="30" y="535" font-family="Arial" font-size="12" font-weight="bold">Legend:</text>
+  
+  <!-- Legend items -->
+  <circle cx="40" cy="550" r="8" fill="#b3e5fc" stroke="#0288d1" stroke-width="1"/>
+  <text x="55" y="555" font-family="Arial" font-size="12">Enzymes</text>
+  
+  <rect x="110" y="542" width="16" height="16" rx="3" ry="3" fill="#c8e6c9" stroke="#388e3c" stroke-width="1"/>
+  <text x="133" y="555" font-family="Arial" font-size="12">Substrates</text>
+  
+  <rect x="40" y="567" width="16" height="16" rx="3" ry="3" fill="#ffcdd2" stroke="#d32f2f" stroke-width="1"/>
+  <text x="63" y="580" font-family="Arial" font-size="12">Receptors</text>
+  
+  <rect x="110" y="567" width="16" height="16" rx="3" ry="3" fill="#ffe0b2" stroke="#e65100" stroke-width="1"/>
+  <text x="133" y="580" font-family="Arial" font-size="12">Processes</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

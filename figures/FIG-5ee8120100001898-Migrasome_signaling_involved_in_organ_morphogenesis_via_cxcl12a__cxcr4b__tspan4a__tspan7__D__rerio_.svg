@@ -1,0 +1,93 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Migrasome Signaling in Zebrafish Organ Morphogenesis</text>
+  
+  <!-- Cell membrane & components -->
+  <ellipse cx="400" cy="300" rx="300" ry="200" fill="#eef7ff" stroke="#aad4ff" stroke-width="2" opacity="0.8" />
+  <text x="400" y="140" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic" fill="#666">Cellular Environment</text>
+  
+  <!-- Migrasome -->
+  <circle cx="250" cy="300" r="80" fill="#e6ffe6" stroke="#66cc66" stroke-width="2" />
+  <text x="250" y="300" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Migrasome</text>
+  <text x="250" y="320" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">(GO:0140494)</text>
+  
+  <!-- Tetraspanins -->
+  <rect x="170" y="250" width="60" height="30" rx="5" ry="5" fill="#ffcccc" stroke="#ff9999" stroke-width="2" />
+  <text x="200" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">tspan4a</text>
+  
+  <rect x="170" y="320" width="60" height="30" rx="5" ry="5" fill="#ffcccc" stroke="#ff9999" stroke-width="2" />
+  <text x="200" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">tspan6</text>
+  
+  <!-- CXCL12a -->
+  <rect x="250" y="220" width="70" height="30" rx="15" ry="15" fill="#ffdd99" stroke="#ffcc66" stroke-width="2" />
+  <text x="285" y="240" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">CXCL12a</text>
+  
+  <!-- Chemoattractant activity label -->
+  <text x="320" y="205" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" fill="#666">chemoattractant activity</text>
+  
+  <!-- Secretion arrows -->
+  <path d="M 300 220 L 350 180 L 400 160" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Forerunner cell group -->
+  <rect x="500" y="220" width="120" height="160" rx="10" ry="10" fill="#e6f2ff" stroke="#99ccff" stroke-width="2" />
+  <text x="560" y="240" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Forerunner</text>
+  <text x="560" y="260" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Cell Group</text>
+  <text x="560" y="278" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">(ZFA:0000023)</text>
+  
+  <!-- CXCR4b receptor -->
+  <rect x="520" y="290" width="80" height="30" rx="5" ry="5" fill="#cc99ff" stroke="#9966cc" stroke-width="2" />
+  <text x="560" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">CXCR4b</text>
+  
+  <!-- Receptor activity label -->
+  <text x="560" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" fill="#666">G protein-coupled</text>
+  <text x="560" y="345" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" fill="#666">chemoattractant receptor</text>
+  
+  <!-- Cell localization label -->
+  <text x="560" y="375" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Cell Localization</text>
+  <text x="560" y="390" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">(GO:0051674)</text>
+  
+  <!-- Interaction arrows -->
+  <!-- tspan4a -> CXCL12a (regulation) -->
+  <path d="M 230 250 L 250 235" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="235" y="230" font-family="Arial" font-size="12" fill="#666">RO:0002304</text>
+  
+  <!-- tspan6 -> CXCL12a (regulation) -->
+  <path d="M 230 320 L 250 250" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="215" y="290" font-family="Arial" font-size="12" fill="#666">RO:0002304</text>
+  
+  <!-- CXCL12a to CXCR4b signaling (positively regulates) -->
+  <path d="M 320 235 C 400 180, 420 180, 520 290" stroke="#333" stroke-width="2" fill="none" stroke-dasharray="none" marker-end="url(#arrowhead)" />
+  <text x="400" y="210" font-family="Arial" font-size="12" fill="#666">RO:0002629</text>
+  
+  <!-- Defs for arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="450" width="180" height="130" rx="5" ry="5" fill="white" stroke="#ccc" stroke-width="1" />
+  <text x="620" y="470" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  
+  <rect x="620" y="480" width="14" height="14" rx="2" ry="2" fill="#ffcccc" stroke="#ff9999" stroke-width="1" />
+  <text x="640" y="492" font-family="Arial" font-size="12" fill="#333">Tetraspanins</text>
+  
+  <rect x="620" y="500" width="14" height="14" rx="7" ry="7" fill="#ffdd99" stroke="#ffcc66" stroke-width="1" />
+  <text x="640" y="512" font-family="Arial" font-size="12" fill="#333">Chemoattractant</text>
+  
+  <rect x="620" y="520" width="14" height="14" rx="2" ry="2" fill="#cc99ff" stroke="#9966cc" stroke-width="1" />
+  <text x="640" y="532" font-family="Arial" font-size="12" fill="#333">Receptor</text>
+  
+  <circle cx="627" cy="547" r="7" fill="#e6ffe6" stroke="#66cc66" stroke-width="1" />
+  <text x="640" y="552" font-family="Arial" font-size="12" fill="#333">Migrasome</text>
+  
+  <line x1="620" y1="565" x2="634" y2="565" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="640" y="570" font-family="Arial" font-size="12" fill="#333">Activation/Regulation</text>
+  
+  <ellipse cx="627" cy="585" rx="10" ry="6" fill="#eef7ff" stroke="#aad4ff" stroke-width="1" opacity="0.8" />
+  <text x="640" y="590" font-family="Arial" font-size="12" fill="#333">Cellular Environment</text>
+</svg>

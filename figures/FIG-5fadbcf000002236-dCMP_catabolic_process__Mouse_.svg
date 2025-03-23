@@ -1,0 +1,127 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Background with Cytosol Label -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#cccccc" stroke-width="2"/>
+  <text x="100" y="100" font-family="Arial" font-size="20" font-weight="bold" fill="#666666">Cytosol (GO:0005829)</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#333333" text-anchor="middle">dCMP Catabolic Process (Mouse)</text>
+  
+  <!-- Metabolites and Enzymes -->
+  <!-- First reaction: dCMP to deoxycytidine -->
+  <circle cx="150" cy="220" r="40" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="150" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">dCMP</text>
+  <text x="150" y="237" font-family="Arial" font-size="11" fill="#0066cc" text-anchor="middle">(CHEBI:15698)</text>
+  
+  <line x1="190" y1="220" x2="240" y2="220" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="195" y="180" width="40" height="25" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="215" y="197" font-family="Arial" font-size="13" fill="#333333" text-anchor="middle">Nt5c</text>
+  
+  <rect x="195" y="235" width="40" height="25" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="215" y="252" font-family="Arial" font-size="13" fill="#333333" text-anchor="middle">Nt5c3</text>
+  
+  <circle cx="280" cy="220" r="40" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="280" y="215" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">Deoxycytidine</text>
+  <text x="280" y="237" font-family="Arial" font-size="11" fill="#0066cc" text-anchor="middle">(2'-deoxycytidine)</text>
+  
+  <!-- Reaction numbering -->
+  <circle cx="215" y="170" r="15" fill="white" stroke="#333333" stroke-width="1"/>
+  <text x="215" y="175" font-family="Arial" font-size="14" font-weight="bold" fill="#333333" text-anchor="middle">1</text>
+  
+  <!-- Second reaction: deoxycytidine to deoxyuridine -->
+  <line x1="320" y1="220" x2="370" y2="220" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="325" y="180" width="40" height="25" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="345" y="197" font-family="Arial" font-size="13" fill="#333333" text-anchor="middle">Cda</text>
+  
+  <circle cx="410" cy="220" r="40" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="410" y="215" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">Deoxyuridine</text>
+  <text x="410" y="237" font-family="Arial" font-size="11" fill="#0066cc" text-anchor="middle">(2'-deoxyuridine)</text>
+  
+  <!-- Reaction numbering -->
+  <circle cx="345" y="170" r="15" fill="white" stroke="#333333" stroke-width="1"/>
+  <text x="345" y="175" font-family="Arial" font-size="14" font-weight="bold" fill="#333333" text-anchor="middle">2</text>
+  
+  <!-- Third reaction: deoxyuridine to dihydrouracil -->
+  <line x1="450" y1="220" x2="500" y2="220" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="455" y="180" width="40" height="25" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="475" y="197" font-family="Arial" font-size="13" fill="#333333" text-anchor="middle">Upp1</text>
+  
+  <rect x="455" y="235" width="40" height="25" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="475" y="252" font-family="Arial" font-size="13" fill="#333333" text-anchor="middle">Upp2</text>
+  
+  <circle cx="540" cy="220" r="40" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="540" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">Dihydrouracil</text>
+  
+  <!-- Reaction numbering -->
+  <circle cx="475" y="170" r="15" fill="white" stroke="#333333" stroke-width="1"/>
+  <text x="475" y="175" font-family="Arial" font-size="14" font-weight="bold" fill="#333333" text-anchor="middle">3</text>
+  
+  <!-- Fourth reaction: dihydrouracil to N-carbamoyl-β-alanine -->
+  <line x1="540" y1="260" x2="540" y2="300" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="500" y="270" width="40" height="25" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="520" y="287" font-family="Arial" font-size="13" fill="#333333" text-anchor="middle">Dpyd</text>
+  
+  <circle cx="540" cy="340" r="40" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="540" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">N-carbamoyl-</text>
+  <text x="540" y="355" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">β-alanine</text>
+  
+  <!-- Reaction numbering -->
+  <circle cx="580" y="280" r="15" fill="white" stroke="#333333" stroke-width="1"/>
+  <text x="580" y="285" font-family="Arial" font-size="14" font-weight="bold" fill="#333333" text-anchor="middle">4</text>
+  
+  <!-- Fifth reaction: N-carbamoyl-β-alanine to β-alanine -->
+  <line x1="540" y1="380" x2="540" y2="420" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="500" y="390" width="40" height="25" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="520" y="407" font-family="Arial" font-size="13" fill="#333333" text-anchor="middle">Dpys</text>
+  
+  <circle cx="540" cy="460" r="40" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="540" y="460" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">β-alanine</text>
+  
+  <!-- Reaction numbering -->
+  <circle cx="580" y="400" r="15" fill="white" stroke="#333333" stroke-width="1"/>
+  <text x="580" y="405" font-family="Arial" font-size="14" font-weight="bold" fill="#333333" text-anchor="middle">5</text>
+  
+  <!-- Final step -->
+  <line x1="500" y1="460" x2="450" y2="460" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="455" y="430" width="40" height="25" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="475" y="447" font-family="Arial" font-size="13" fill="#333333" text-anchor="middle">Upb1</text>
+  
+  <circle cx="410" cy="460" r="40" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="410" y="455" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">End</text>
+  <text x="410" y="475" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">Products</text>
+  
+  <!-- Reaction numbering -->
+  <circle cx="475" y="490" r="15" fill="white" stroke="#333333" stroke-width="1"/>
+  <text x="475" y="495" font-family="Arial" font-size="14" font-weight="bold" fill="#333333" text-anchor="middle">6</text>
+  
+  <!-- Enzyme Functions -->
+  <text x="215" y="162" font-family="Arial" font-size="11" fill="#666666" text-anchor="middle">5'-nucleotidase activity</text>
+  <text x="345" y="162" font-family="Arial" font-size="11" fill="#666666" text-anchor="middle">deaminase activity</text>
+  <text x="475" y="162" font-family="Arial" font-size="11" fill="#666666" text-anchor="middle">deoxyuridine phosphorylase</text>
+  <text x="595" y="270" font-family="Arial" font-size="11" fill="#666666" text-anchor="middle">dihydropyrimidine dehydrogenase</text>
+  <text x="595" y="390" font-family="Arial" font-size="11" fill="#666666" text-anchor="middle">dihydropyrimidinase activity</text>
+  <text x="500" y="505" font-family="Arial" font-size="11" fill="#666666" text-anchor="middle">β-ureidopropionase activity</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="400" width="130" height="130" fill="white" stroke="#cccccc" stroke-width="1"/>
+  <text x="610" y="420" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Legend</text>
+  
+  <circle cx="620" cy="440" r="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="640" y="445" font-family="Arial" font-size="12" fill="#333333">Metabolite</text>
+  
+  <rect x="610" y="460" width="20" height="15" fill="#f2f2f2" stroke="#333333" stroke-width="1" rx="3" ry="3"/>
+  <text x="640" y="472" font-family="Arial" font-size="12" fill="#333333">Enzyme</text>
+  
+  <line x1="610" y1="490" x2="630" y2="490" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="640" y="495" font-family="Arial" font-size="12" fill="#333333">Reaction</text>
+  
+  <circle cx="620" y="510" r="10" fill="white" stroke="#333333" stroke-width="1"/>
+  <text x="620" y="515" font-family="Arial" font-size="10" font-weight="bold" fill="#333333" text-anchor="middle">1</text>
+  <text x="640" y="515" font-family="Arial" font-size="12" fill="#333333">Step Number</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>

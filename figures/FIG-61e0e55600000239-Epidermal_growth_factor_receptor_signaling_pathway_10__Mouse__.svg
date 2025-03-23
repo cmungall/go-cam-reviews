@@ -1,0 +1,96 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#f8f9fa" />
+  
+  <!-- Cell membrane -->
+  <path d="M 100,250 L 700,250" stroke="#888888" stroke-width="5" fill="none" />
+  <text x="50" y="245" font-family="Arial" font-size="14" fill="#555555">Plasma membrane</text>
+  
+  <!-- Extracellular space -->
+  <rect x="100" y="100" width="600" height="145" fill="#e6f2ff" opacity="0.5" rx="10" ry="10" />
+  <text x="110" y="120" font-family="Arial" font-size="14" fill="#555555">Extracellular space (GO:0005615)</text>
+  
+  <!-- Cell cortex -->
+  <rect x="100" y="255" width="600" height="145" fill="#ffe6e6" opacity="0.5" rx="10" ry="10" />
+  <text x="110" y="275" font-family="Arial" font-size="14" fill="#555555">Cell cortex (GO:0005938)</text>
+  
+  <!-- Cytosol -->
+  <rect x="100" y="405" width="600" height="195" fill="#e6ffe6" opacity="0.5" rx="10" ry="10" />
+  <text x="110" y="425" font-family="Arial" font-size="14" fill="#555555">Cytosol (GO:0005829)</text>
+  
+  <!-- TGFα (ligand) -->
+  <circle cx="200" cy="180" r="30" fill="#99ccff" stroke="#3366ff" stroke-width="2" />
+  <text x="200" y="185" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">TGFα</text>
+  <text x="200" y="140" font-family="Arial" font-size="12" fill="#555555" text-anchor="middle">Receptor ligand activity</text>
+  <text x="200" y="155" font-family="Arial" font-size="12" fill="#555555" text-anchor="middle">(GO:0048018)</text>
+  
+  <!-- EGFR Receptor -->
+  <rect x="250" y="220" width="80" height="60" fill="#ff9999" stroke="#ff6666" stroke-width="2" rx="5" ry="5" />
+  <text x="290" y="255" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">EGFR</text>
+  <text x="290" y="200" font-family="Arial" font-size="12" fill="#555555" text-anchor="middle">EGFR activity</text>
+  <text x="290" y="215" font-family="Arial" font-size="12" fill="#555555" text-anchor="middle">(GO:0005006)</text>
+  
+  <!-- EGFR Kinase Domain -->
+  <rect x="250" y="280" width="80" height="25" fill="#ffcccc" stroke="#ff6666" stroke-width="2" rx="5" ry="5" />
+  <text x="290" y="297" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Kinase domain</text>
+  <text x="290" y="315" font-family="Arial" font-size="10" fill="#555555" text-anchor="middle">Protein tyrosine kinase</text>
+  <text x="290" y="328" font-family="Arial" font-size="10" fill="#555555" text-anchor="middle">activity (GO:0004713)</text>
+  
+  <!-- Grb2 Adaptor -->
+  <polygon points="360,350 400,320 440,350 400,380" fill="#ffcc99" stroke="#ff9933" stroke-width="2" />
+  <text x="400" y="355" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Grb2</text>
+  <text x="400" y="395" font-family="Arial" font-size="10" fill="#555555" text-anchor="middle">Transmembrane receptor adaptor</text>
+  <text x="400" y="408" font-family="Arial" font-size="10" fill="#555555" text-anchor="middle">activity (GO:0005068)</text>
+  
+  <!-- Gab1 -->
+  <rect x="470" y="320" width="80" height="60" fill="#99cc99" stroke="#66aa66" stroke-width="2" rx="15" ry="15" />
+  <text x="510" y="355" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Gab1</text>
+  <text x="510" y="395" font-family="Arial" font-size="10" fill="#555555" text-anchor="middle">Signaling adaptor activity</text>
+  <text x="510" y="408" font-family="Arial" font-size="10" fill="#555555" text-anchor="middle">(GO:0035591)</text>
+  
+  <!-- Ptpn11 -->
+  <ellipse cx="580" cy="490" rx="60" ry="30" fill="#cc99cc" stroke="#aa66aa" stroke-width="2" />
+  <text x="580" y="495" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Ptpn11</text>
+  <text x="580" y="530" font-family="Arial" font-size="10" fill="#555555" text-anchor="middle">Protein tyrosine phosphatase</text>
+  <text x="580" y="543" font-family="Arial" font-size="10" fill="#555555" text-anchor="middle">activity (GO:0004726)</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333" />
+    </marker>
+  </defs>
+  
+  <!-- TGFα to EGFR -->
+  <line x1="230" y1="180" x2="260" y2="230" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="230" y="195" font-family="Arial" font-size="10" fill="#333333">binds</text>
+  
+  <!-- EGFR to Grb2 -->
+  <path d="M 330,250 Q 350,280 360,350" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="335" y="290" font-family="Arial" font-size="10" fill="#333333">activates</text>
+  
+  <!-- Grb2 to Gab1 -->
+  <line x1="440" y1="350" x2="470" y2="350" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="450" y="340" font-family="Arial" font-size="10" fill="#333333">recruits</text>
+  
+  <!-- Gab1 to Ptpn11 -->
+  <path d="M 530,380 Q 550,420 560,460" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="540" y="430" font-family="Arial" font-size="10" fill="#333333">activates</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="20" font-weight="bold" fill="#333333" text-anchor="middle">Epidermal Growth Factor Receptor Signaling Pathway (Mouse)</text>
+  <text x="400" y="75" font-family="Arial" font-size="16" fill="#666666" text-anchor="middle">GO:0007173</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="620" width="20" height="10" fill="#99ccff" stroke="#3366ff" stroke-width="1" />
+  <text x="625" y="630" font-family="Arial" font-size="10" fill="#333333">Ligand</text>
+  
+  <rect x="660" y="620" width="20" height="10" fill="#ff9999" stroke="#ff6666" stroke-width="1" />
+  <text x="685" y="630" font-family="Arial" font-size="10" fill="#333333">Receptor</text>
+  
+  <rect x="600" y="640" width="20" height="10" fill="#ffcc99" stroke="#ff9933" stroke-width="1" rx="5" ry="5" />
+  <text x="625" y="650" font-family="Arial" font-size="10" fill="#333333">Adaptor</text>
+  
+  <rect x="660" y="640" width="20" height="10" fill="#cc99cc" stroke="#aa66aa" stroke-width="1" rx="5" ry="5" />
+  <text x="685" y="650" font-family="Arial" font-size="10" fill="#333333">Enzyme</text>
+</svg>

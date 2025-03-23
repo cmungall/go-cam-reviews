@@ -1,0 +1,95 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Epidermal Growth Factor Receptor Signaling Pathway (Mouse)</text>
+  
+  <!-- Cell representation -->
+  <rect x="100" y="180" width="600" height="300" fill="#f8f8f8" opacity="0.5" stroke="none"/>
+  
+  <!-- Extracellular space -->
+  <rect x="100" y="80" width="600" height="100" fill="#e6f3ff" opacity="0.5" stroke="none"/>
+  <text x="120" y="100" font-family="Arial" font-size="16" font-style="italic">Extracellular space (GO:0005615)</text>
+  
+  <!-- Plasma membrane -->
+  <path d="M 100 180 L 700 180" stroke="#000000" stroke-width="4"/>
+  <text x="120" y="170" font-family="Arial" font-size="16" font-style="italic" dominant-baseline="text-before-edge">Plasma membrane (GO:0005886)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="120" y="200" font-family="Arial" font-size="16" font-style="italic">Cytoplasm</text>
+  
+  <!-- EGF receptor (EGFR) -->
+  <rect x="450" y="165" width="60" height="30" fill="#8dd3c7" stroke="#000000" stroke-width="2" rx="5" ry="5"/>
+  <text x="480" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">EGFR</text>
+  <text x="480" y="200" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">MGI:95294</text>
+  
+  <!-- MEP1A (Meprin A) -->
+  <rect x="200" y="165" width="60" height="30" fill="#fb8072" stroke="#000000" stroke-width="2" rx="5" ry="5"/>
+  <text x="230" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MEP1A</text>
+  <text x="230" y="200" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">MGI:96963</text>
+  
+  <!-- ADAM10 -->
+  <rect x="300" y="165" width="60" height="30" fill="#fb8072" stroke="#000000" stroke-width="2" rx="5" ry="5"/>
+  <text x="330" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ADAM10</text>
+  <text x="330" y="200" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">MGI:109548</text>
+  
+  <!-- Pre-pro-EGF -->
+  <rect x="250" y="280" width="80" height="30" fill="#bebada" stroke="#000000" stroke-width="2" rx="5" ry="5"/>
+  <text x="290" y="298" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Pre-pro-EGF</text>
+  
+  <!-- Mature EGF -->
+  <ellipse cx="400" cy="120" rx="40" ry="25" fill="#ffffb3" stroke="#000000" stroke-width="2"/>
+  <text x="400" y="125" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">EGF</text>
+  <text x="400" y="138" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">MGI:95290</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- Pre-pro-EGF to membrane pathway -->
+  <path d="M 290 280 L 230 195" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 290 280 L 330 195" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Metallopeptidase activity (MEP1A) -->
+  <path d="M 230 165 L 280 140" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="220" y="145" font-family="Arial" font-size="12" font-style="italic" fill="#333333">Metallopeptidase activity</text>
+  
+  <!-- Metallopeptidase activity (ADAM10) -->
+  <path d="M 330 165 L 370 140" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="350" y="145" font-family="Arial" font-size="12" font-style="italic" fill="#333333">Metallopeptidase activity</text>
+  
+  <!-- EGF to EGFR binding -->
+  <path d="M 430 135 L 470 165" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="460" y="145" font-family="Arial" font-size="12" font-style="italic" fill="#333333">Receptor ligand activity</text>
+  
+  <!-- EGFR activation -->
+  <path d="M 510 180 L 550 180" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="565" y="180" font-family="Arial" font-size="14" font-weight="bold">EGFR Signaling</text>
+  <text x="565" y="195" font-family="Arial" font-size="12" font-style="italic" fill="#333333">(GO:0007173)</text>
+  
+  <!-- Process label for EGF maturation -->
+  <text x="250" y="240" font-family="Arial" font-size="14" font-weight="bold">EGF Receptor Ligand Maturation</text>
+  <text x="250" y="255" font-family="Arial" font-size="12" font-style="italic" fill="#333333">(GO:0038004)</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="400" width="230" height="140" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="560" y="420" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="560" y="430" width="20" height="15" fill="#fb8072" stroke="#000000" stroke-width="1"/>
+  <text x="585" y="443" font-family="Arial" font-size="14">Metallopeptidases</text>
+  
+  <rect x="560" y="455" width="20" height="15" fill="#8dd3c7" stroke="#000000" stroke-width="1"/>
+  <text x="585" y="468" font-family="Arial" font-size="14">Receptor</text>
+  
+  <ellipse cx="570" cy="485" rx="10" ry="7.5" fill="#ffffb3" stroke="#000000" stroke-width="1"/>
+  <text x="585" y="488" font-family="Arial" font-size="14">Ligand</text>
+  
+  <rect x="560" y="495" width="20" height="15" fill="#bebada" stroke="#000000" stroke-width="1"/>
+  <text x="585" y="508" font-family="Arial" font-size="14">Precursor protein</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+</svg>

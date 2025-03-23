@@ -1,0 +1,125 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane - Erythroid lineage cell -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f9e6e6" stroke="#d88c8c" stroke-width="2"/>
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Erythroid Lineage Cell (CL:0000764)</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="320" rx="180" ry="120" fill="#e6e6fa" stroke="#9370db" stroke-width="2"/>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Nucleus</text>
+  
+  <!-- ZNF410 -->
+  <rect x="320" y="300" width="80" height="40" rx="5" ry="5" fill="#a0d6b4" stroke="#2e8b57" stroke-width="2"/>
+  <text x="360" y="325" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">ZNF410</text>
+  
+  <!-- CHD4 -->
+  <rect x="450" y="300" width="80" height="40" rx="5" ry="5" fill="#f0c869" stroke="#daa520" stroke-width="2"/>
+  <text x="490" y="325" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">CHD4</text>
+  
+  <!-- HBG1 gene -->
+  <rect x="280" y="370" width="80" height="30" rx="5" ry="5" fill="#c6def1" stroke="#4682b4" stroke-width="2"/>
+  <text x="320" y="390" text-anchor="middle" font-family="Arial" font-size="13">HBG1 gene</text>
+  
+  <!-- HBG2 gene -->
+  <rect x="450" y="370" width="80" height="30" rx="5" ry="5" fill="#c6def1" stroke="#4682b4" stroke-width="2"/>
+  <text x="490" y="390" text-anchor="middle" font-family="Arial" font-size="13">HBG2 gene</text>
+  
+  <!-- Erythrocyte cell -->
+  <ellipse cx="600" cy="480" rx="80" ry="50" fill="#ffcccc" stroke="#ff6666" stroke-width="2"/>
+  <text x="600" y="470" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Erythrocyte</text>
+  <text x="600" y="490" text-anchor="middle" font-family="Arial" font-size="13">(CL:0000232)</text>
+  
+  <!-- HBG1 protein in erythrocyte -->
+  <rect x="560" y="450" width="35" height="20" rx="5" ry="5" fill="#c6def1" stroke="#4682b4" stroke-width="2"/>
+  <text x="577" y="464" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">HBG1</text>
+  
+  <!-- HBG2 protein in erythrocyte -->
+  <rect x="605" y="450" width="35" height="20" rx="5" ry="5" fill="#c6def1" stroke="#4682b4" stroke-width="2"/>
+  <text x="622" y="464" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">HBG2</text>
+  
+  <!-- Oxygen molecule and transport -->
+  <circle cx="650" cy="500" r="10" fill="#f9e6e6" stroke="#ff0000" stroke-width="1.5"/>
+  <text x="650" y="505" text-anchor="middle" font-family="Arial" font-size="14" fill="#ff0000" font-weight="bold">O₂</text>
+  
+  <!-- Arrows and connections -->
+  <!-- ZNF410 activates CHD4 - green activation arrow -->
+  <line x1="400" y1="320" x2="450" y2="320" stroke="#2e8b57" stroke-width="2.5"/>
+  <polygon points="445,315 455,320 445,325" fill="#2e8b57"/>
+  <text x="425" y="312" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">activates</text>
+  
+  <!-- CHD4 represses HBG1 - red repression arrow -->
+  <line x1="470" y1="340" x2="330" y2="370" stroke="#cc3333" stroke-width="2.5"/>
+  <line x1="335" y1="365" x2="325" y2="375" stroke="#cc3333" stroke-width="2.5"/>
+  <line x1="335" y1="375" x2="325" y2="365" stroke="#cc3333" stroke-width="2.5"/>
+  <text x="380" y="360" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">represses</text>
+  
+  <!-- CHD4 represses HBG2 - red repression arrow -->
+  <line x1="490" y1="340" x2="490" y2="370" stroke="#cc3333" stroke-width="2.5"/>
+  <line x1="485" y1="360" x2="495" y2="370" stroke="#cc3333" stroke-width="2.5"/>
+  <line x1="495" y1="360" x2="485" y2="370" stroke="#cc3333" stroke-width="2.5"/>
+  <text x="510" y="355" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">represses</text>
+  
+  <!-- HBG1 gene to protein expression - blue expression arrow -->
+  <path d="M320,400 Q320,430 390,480" stroke="#4682b4" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <text x="330" y="440" text-anchor="middle" font-family="Arial" font-size="12" fill="#4682b4" font-weight="bold">expression</text>
+  
+  <!-- HBG2 gene to protein expression - blue expression arrow -->
+  <path d="M490,400 Q490,430 530,480" stroke="#4682b4" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <text x="500" y="440" text-anchor="middle" font-family="Arial" font-size="12" fill="#4682b4" font-weight="bold">expression</text>
+  
+  <!-- Oxygen transport function -->
+  <path d="M630,460 Q660,480 650,500" stroke="#ff0000" stroke-width="2" fill="none"/>
+  <rect x="660" y="460" width="110" height="45" rx="10" ry="10" fill="#fff2f2" stroke="#ff6666" stroke-width="1.5"/>
+  <text x="715" y="475" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Oxygen Carrier</text>
+  <text x="715" y="490" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Activity (GO:0005344)</text>
+  
+  <!-- Oxygen transport process -->
+  <rect x="580" y="535" width="120" height="25" rx="10" ry="10" fill="#fff2f2" stroke="#ff6666" stroke-width="1.5"/>
+  <text x="640" y="552" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Oxygen Transport</text>
+  <text x="640" y="568" text-anchor="middle" font-family="Arial" font-size="10">(GO:0015671)</text>
+  
+  <!-- Title and labels -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Silencing of Fetal Hemoglobin by ZNF410</text>
+  
+  <!-- Molecular functions -->
+  <rect x="320" y="265" width="80" height="30" rx="10" ry="10" fill="#ddffee" stroke="#2e8b57" stroke-width="1"/>
+  <text x="360" y="278" text-anchor="middle" font-family="Arial" font-size="11">DNA-binding TF</text>
+  <text x="360" y="290" text-anchor="middle" font-family="Arial" font-size="10">(GO:0003700)</text>
+  
+  <rect x="450" y="265" width="80" height="30" rx="10" ry="10" fill="#fff8dd" stroke="#daa520" stroke-width="1"/>
+  <text x="490" y="278" text-anchor="middle" font-family="Arial" font-size="11">Transcription</text>
+  <text x="490" y="290" text-anchor="middle" font-family="Arial" font-size="11">Corepressor</text>
+  
+  <!-- Biological processes -->
+  <text x="360" y="345" text-anchor="middle" font-family="Arial" font-size="10">GO:0045944</text>
+  <text x="490" y="345" text-anchor="middle" font-family="Arial" font-size="10">GO:0010629</text>
+  
+  <!-- Additional annotations -->
+  <text x="360" y="405" text-anchor="middle" font-family="Arial" font-size="10" fill="#4682b4">HBG1 (P69891)</text>
+  <text x="490" y="405" text-anchor="middle" font-family="Arial" font-size="10" fill="#4682b4">HBG2 (P69892)</text>
+  
+  <!-- Legend box -->
+  <rect x="40" y="460" width="200" height="130" rx="10" ry="10" fill="white" stroke="black" stroke-width="1" fill-opacity="0.8"/>
+  <text x="140" y="480" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <rect x="50" y="490" width="15" height="15" fill="#a0d6b4" stroke="#2e8b57" stroke-width="1"/>
+  <text x="75" y="502" text-anchor="start" font-family="Arial" font-size="12">ZNF410 (Q86VK4)</text>
+  
+  <rect x="50" y="510" width="15" height="15" fill="#f0c869" stroke="#daa520" stroke-width="1"/>
+  <text x="75" y="522" text-anchor="start" font-family="Arial" font-size="12">CHD4 (Q14839)</text>
+  
+  <rect x="50" y="530" width="15" height="15" fill="#c6def1" stroke="#4682b4" stroke-width="1"/>
+  <text x="75" y="542" text-anchor="start" font-family="Arial" font-size="12">HBG1/2 (Fetal Hb)</text>
+  
+  <circle cx="57" cy="552" r="7" fill="#f9e6e6" stroke="#ff0000" stroke-width="1"/>
+  <text x="75" y="562" text-anchor="start" font-family="Arial" font-size="12">Oxygen</text>
+  
+  <!-- Arrow types in legend -->
+  <line x1="50" y1="574" x2="70" y2="574" stroke="#2e8b57" stroke-width="2"/>
+  <polygon points="65,569 75,574 65,579" fill="#2e8b57"/>
+  <text x="140" y="578" text-anchor="start" font-family="Arial" font-size="12">Activation</text>
+  
+  <line x1="50" y1="590" x2="70" y2="590" stroke="#cc3333" stroke-width="2"/>
+  <line x1="65" y1="585" x2="75" y2="595" stroke="#cc3333" stroke-width="2"/>
+  <line x1="75" y1="585" x2="65" y2="595" stroke="#cc3333" stroke-width="2"/>
+  <text x="140" y="594" text-anchor="start" font-family="Arial" font-size="12">Repression</text>
+</svg>

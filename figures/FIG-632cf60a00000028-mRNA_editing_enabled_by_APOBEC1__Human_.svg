@@ -1,0 +1,109 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline and nucleus -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#666" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="400" cy="300" rx="250" ry="180" fill="#e6eeff" stroke="#333" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Labels for cellular compartments -->
+  <text x="400" y="140" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Nucleus (GO:0005634)</text>
+  <text x="650" y="260" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cytoplasm</text>
+  
+  <!-- mRNA -->
+  <path d="M 250,290 Q 300,260 350,290 Q 400,320 450,290 Q 500,260 550,290" stroke="#aa6600" stroke-width="5" fill="none"/>
+  <text x="400" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">APOB mRNA</text>
+  
+  <!-- Proteins involved in editing -->
+  <rect x="280" y="200" width="60" height="30" rx="5" ry="5" fill="#ff9966" stroke="#993300" stroke-width="2"/>
+  <text x="310" y="220" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RBM47</text>
+  <text x="310" y="185" font-family="Arial" font-size="11" text-anchor="middle" fill="#666666">A0AV96</text>
+  
+  <rect x="370" y="200" width="60" height="30" rx="5" ry="5" fill="#ff9966" stroke="#993300" stroke-width="2"/>
+  <text x="400" y="220" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">A1CF</text>
+  <text x="400" y="185" font-family="Arial" font-size="11" text-anchor="middle" fill="#666666">Q9NQ94</text>
+  
+  <rect x="460" y="200" width="70" height="30" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="495" y="220" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">APOBEC1</text>
+  <text x="495" y="185" font-family="Arial" font-size="11" text-anchor="middle" fill="#666666">P41238</text>
+  
+  <!-- Connector lines to show protein interactions -->
+  <line x1="310" y1="230" x2="350" y2="290" stroke="#333" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="400" y1="230" x2="400" y2="290" stroke="#333" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="495" y1="230" x2="450" y2="290" stroke="#333" stroke-width="2" stroke-dasharray="4,2"/>
+  
+  <!-- Function labels -->
+  <rect x="265" y="150" width="90" height="25" rx="5" ry="5" fill="#ffcc99" stroke="#ff9933" stroke-width="1"/>
+  <text x="310" y="167" font-family="Arial" font-size="11" text-anchor="middle" fill="#333333" font-weight="bold">Adaptor activity</text>
+  <text x="310" y="140" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(GO:0140767)</text>
+  
+  <rect x="355" y="150" width="90" height="25" rx="5" ry="5" fill="#ffcc99" stroke="#ff9933" stroke-width="1"/>
+  <text x="400" y="167" font-family="Arial" font-size="11" text-anchor="middle" fill="#333333" font-weight="bold">Adaptor activity</text>
+  <text x="400" y="140" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(GO:0140767)</text>
+  
+  <rect x="445" y="150" width="100" height="25" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="1"/>
+  <text x="495" y="167" font-family="Arial" font-size="11" text-anchor="middle" fill="#333333" font-weight="bold">Cytidine deaminase</text>
+  <text x="495" y="140" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(GO:0004126)</text>
+  
+  <!-- Editing site -->
+  <circle cx="400" cy="290" r="18" fill="#ffcc00" stroke="#ff6600" stroke-width="2"/>
+  <text x="400" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">C→U</text>
+  
+  <!-- Resulting APOB protein variants -->
+  <rect x="200" y="450" width="100" height="40" rx="8" ry="8" fill="#99cc99" stroke="#006600" stroke-width="2"/>
+  <text x="250" y="475" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">APOB100</text>
+  <text x="250" y="440" font-family="Arial" font-size="11" text-anchor="middle" fill="#666666">P04114</text>
+  <text x="250" y="427" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">Unedited form</text>
+  
+  <rect x="500" y="450" width="100" height="40" rx="8" ry="8" fill="#99cc99" stroke="#006600" stroke-width="2"/>
+  <text x="550" y="475" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">APOB48</text>
+  <text x="550" y="440" font-family="Arial" font-size="11" text-anchor="middle" fill="#666666">P04114 variant</text>
+  <text x="550" y="427" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">Edited form</text>
+  
+  <!-- Arrows indicating function -->
+  <path d="M 250,490 L 250,530" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 550,490 L 550,530" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="200" y="540" width="100" height="35" rx="5" ry="5" fill="#ccffcc" stroke="#006600" stroke-width="1"/>
+  <text x="250" y="555" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">LDL receptor</text>
+  <text x="250" y="570" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">binding</text>
+  <text x="250" y="590" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(GO:0050750)</text>
+  
+  <rect x="500" y="540" width="100" height="35" rx="5" ry="5" fill="#ccffcc" stroke="#006600" stroke-width="1"/>
+  <text x="550" y="555" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">LDL particle</text>
+  <text x="550" y="570" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">clearance</text>
+  <text x="550" y="590" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(GO:0034383)</text>
+  
+  <!-- Editing process arrows -->
+  <path d="M 350,380 C 400,400 450,400 500,380" stroke="#993300" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="375" y="405" width="150" height="25" rx="5" ry="5" fill="#ffffcc" stroke="#ffcc00" stroke-width="1"/>
+  <text x="450" y="422" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Cytidine to uridine</text>
+  <text x="450" y="440" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(GO:0016554)</text>
+  
+  <!-- C to U editing illustration -->
+  <circle cx="320" cy="370" r="15" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="320" y="375" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">C</text>
+  
+  <path d="M 340,370 L 370,370" stroke="#cc0000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <circle cx="390" cy="370" r="15" fill="#9999ff" stroke="#0000cc" stroke-width="2"/>
+  <text x="390" y="375" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">U</text>
+  
+  <text x="355" y="357" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Deamination</text>
+  
+  <!-- Process arrows from editing to protein variants -->
+  <path d="M 320,390 L 250,430" stroke="#333" stroke-width="2" stroke-dasharray="5,2" marker-end="url(#arrowhead)"/>
+  <path d="M 390,390 L 520,430" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <text x="295" y="395" font-family="Arial" font-size="11" text-anchor="middle" fill="#333" font-weight="bold">No editing</text>
+  <text x="460" y="395" font-family="Arial" font-size="11" text-anchor="middle" fill="#333" font-weight="bold">mRNA editing introduces</text>
+  <text x="460" y="410" font-family="Arial" font-size="11" text-anchor="middle" fill="#333" font-weight="bold">premature stop codon</text>
+  
+  <!-- Defs for arrowheads -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">mRNA Editing by APOBEC1 in Human Cells</text>
+  <text x="400" y="65" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Cytidine to Uridine Editing in APOB mRNA</text>
+</svg>

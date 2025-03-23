@@ -1,0 +1,113 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f8f8" stroke="#888888" stroke-width="2" />
+  
+  <!-- Cell compartments -->
+  <ellipse cx="400" cy="300" rx="150" ry="100" fill="#e6eff6" stroke="#888888" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="400" y="300" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Nucleus</text>
+
+  <!-- Viral dsRNA -->
+  <path d="M100,180 C120,160 130,200 150,180 C170,160 180,200 200,180" stroke="#cc0000" stroke-width="4" fill="none" />
+  <text x="150" y="150" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Viral dsRNA</text>
+
+  <!-- Viral DNA -->
+  <path d="M100,280 C120,260 130,300 150,280 C170,260 180,300 200,280" stroke="#0000cc" stroke-width="4" fill="none" />
+  <text x="150" y="250" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Viral DNA</text>
+
+  <!-- cGlr1 protein -->
+  <rect x="240" y="160" width="90" height="50" rx="10" ry="10" fill="#a6d854" stroke="#000000" stroke-width="2" />
+  <text x="285" y="185" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">cGlr1</text>
+  <text x="285" y="202" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">dsRNA binding</text>
+
+  <!-- cGlr2 protein -->
+  <rect x="240" y="260" width="90" height="50" rx="10" ry="10" fill="#a6d854" stroke="#000000" stroke-width="2" />
+  <text x="285" y="285" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">cGlr2</text>
+  <text x="285" y="302" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">cGAMP synthase</text>
+
+  <!-- cGlr1 activation -->
+  <path d="M200,180 L240,180" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="220" y="173" font-family="Arial" font-size="10" fill="#444444">Binding</text>
+
+  <!-- cGlr2 activation -->
+  <path d="M200,280 L240,280" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="220" y="273" font-family="Arial" font-size="10" fill="#444444">Binding</text>
+
+  <!-- 2',3'-cGAMP molecule from cGlr2 -->
+  <circle cx="360" cy="260" r="25" fill="#fdae61" stroke="#000000" stroke-width="1.5" />
+  <text x="360" y="257" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">2',3'</text>
+  <text x="360" y="272" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">cGAMP</text>
+
+  <!-- 3',2'-cGAMP molecule from cGlr1 -->
+  <circle cx="360" cy="160" r="25" fill="#fdae61" stroke="#000000" stroke-width="1.5" />
+  <text x="360" y="157" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">3',2'</text>
+  <text x="360" y="172" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">cGAMP</text>
+
+  <!-- cGAMP synthesis arrows -->
+  <path d="M330,180 L335,180" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="345" y="173" font-family="Arial" font-size="10" fill="#444444">Synthesis</text>
+  
+  <path d="M330,280 L335,280" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="345" y="273" font-family="Arial" font-size="10" fill="#444444">Synthesis</text>
+
+  <!-- Sting protein -->
+  <rect x="440" y="210" width="90" height="50" rx="10" ry="10" fill="#8da0cb" stroke="#000000" stroke-width="2" />
+  <text x="485" y="235" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Sting</text>
+  <text x="485" y="252" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">cGAMP binding</text>
+
+  <!-- cGAMP binding to Sting -->
+  <path d="M385,160 C405,160 425,180 440,210" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="415" y="175" font-family="Arial" font-size="10" fill="#444444">Binding</text>
+  
+  <path d="M385,260 C405,260 425,240 440,235" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="415" y="255" font-family="Arial" font-size="10" fill="#444444">Binding</text>
+
+  <!-- Sting activation -->
+  <path d="M530,230 L570,230" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="550" y="223" font-family="Arial" font-size="10" fill="#444444">Activates</text>
+
+  <!-- Rel transcription factor -->
+  <rect x="570" y="210" width="90" height="50" rx="10" ry="10" fill="#fc8d62" stroke="#000000" stroke-width="2" />
+  <text x="615" y="235" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Rel</text>
+  <text x="615" y="252" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">TF activity</text>
+
+  <!-- Rel moving to nucleus -->
+  <path d="M615,260 C615,280 500,290 450,300" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3" />
+  <text x="520" y="290" font-family="Arial" font-size="10" fill="#444444">Nuclear translocation</text>
+
+  <!-- Gene transcription -->
+  <rect x="350" y="340" width="100" height="30" rx="0" ry="0" fill="#ffffb3" stroke="#000000" stroke-width="1.5" />
+  <text x="400" y="361" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">Antiviral genes</text>
+
+  <!-- Rel binding to DNA -->
+  <path d="M400,300 L400,340" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="425" y="320" font-family="Arial" font-size="10" fill="#444444">Transcription</text>
+
+  <!-- Immune response -->
+  <text x="400" y="400" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#000000">Defense response to virus</text>
+
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+
+  <!-- Pathway title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="26" font-weight="bold" fill="#000000">cGAS-Sting Pathway (Drosophila)</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="430" width="230" height="150" fill="white" stroke="#888888" stroke-width="1" />
+  <text x="565" y="450" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Legend</text>
+  
+  <rect x="565" y="465" width="20" height="20" rx="10" ry="10" fill="#a6d854" stroke="#000000" stroke-width="1" />
+  <text x="595" y="480" font-family="Arial" font-size="14" fill="#000000">cGAS-like receptors (cGlr1, cGlr2)</text>
+  
+  <rect x="565" y="495" width="20" height="20" rx="10" ry="10" fill="#8da0cb" stroke="#000000" stroke-width="1" />
+  <text x="595" y="510" font-family="Arial" font-size="14" fill="#000000">Sting adaptor protein</text>
+  
+  <rect x="565" y="525" width="20" height="20" rx="10" ry="10" fill="#fc8d62" stroke="#000000" stroke-width="1" />
+  <text x="595" y="540" font-family="Arial" font-size="14" fill="#000000">Rel transcription factor</text>
+  
+  <circle cx="575" cy="555" r="10" fill="#fdae61" stroke="#000000" stroke-width="1" />
+  <text x="595" y="560" font-family="Arial" font-size="14" fill="#000000">cGAMP signaling molecules</text>
+</svg>

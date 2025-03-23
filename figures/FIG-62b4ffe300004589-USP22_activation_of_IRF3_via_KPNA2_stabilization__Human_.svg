@@ -1,0 +1,95 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="100" ry="100" fill="#f0f0f0" stroke="#666" stroke-width="3"/>
+  
+  <!-- Cytoplasm -->
+  <rect x="70" y="70" width="660" height="460" rx="90" ry="90" fill="#e5eedc" stroke="none"/>
+  <text x="200" y="110" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="550" cy="350" rx="180" ry="160" fill="#d9e5f2" stroke="#666" stroke-width="3"/>
+  <text x="550" y="520" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Nucleus</text>
+  
+  <!-- Nuclear membrane -->
+  <ellipse cx="550" cy="350" rx="190" ry="170" fill="none" stroke="#666" stroke-width="4" stroke-dasharray="5,3"/>
+  <text x="380" y="250" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Nuclear Membrane</text>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="180" cy="200" rx="70" ry="40" fill="#f2d9da" stroke="#666" stroke-width="3"/>
+  <text x="180" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Mitochondrion</text>
+  
+  <!-- Proteins and interactions -->
+  
+  <!-- TRAF3 in mitochondrion -->
+  <circle cx="180" cy="200" r="30" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="180" y="195" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">TRAF3</text>
+  <text x="180" y="210" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">ubiquitin transferase</text>
+  
+  <!-- TBK1 in cytoplasm -->
+  <circle cx="300" cy="300" r="30" fill="#99cc99" stroke="#333" stroke-width="2"/>
+  <text x="300" y="295" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">TBK1</text>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">protein kinase</text>
+  
+  <!-- USP22 in cytoplasm -->
+  <circle cx="250" cy="400" r="30" fill="#9999ff" stroke="#333" stroke-width="2"/>
+  <text x="250" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">USP22</text>
+  <text x="250" y="410" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">deubiquitinase</text>
+  
+  <!-- KPNA2 at nuclear membrane -->
+  <circle cx="390" cy="350" r="30" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="390" y="345" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">KPNA2</text>
+  <text x="390" y="360" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">import receptor</text>
+  
+  <!-- IRF3 in nucleus -->
+  <circle cx="550" cy="350" r="30" fill="#cc99ff" stroke="#333" stroke-width="2"/>
+  <text x="550" y="345" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">IRF3</text>
+  <text x="550" y="360" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">transcription factor</text>
+  
+  <!-- Arrow: TRAF3 -> TBK1 -->
+  <path d="M205 215 Q 240 260 275 285" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="240" y="260" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Activates</text>
+  
+  <!-- Arrow: TBK1 -> KPNA2 -->
+  <path d="M325 315 Q 350 330 365 335" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="345" y="315" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Phosphorylates</text>
+  
+  <!-- Arrow: USP22 -> KPNA2 -->
+  <path d="M275 385 Q 315 375 365 360" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="320" y="390" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Deubiquitinates</text>
+  
+  <!-- Arrow: KPNA2 -> IRF3 -->
+  <path d="M420 350 L 515 350" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="465" y="340" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Nuclear Import</text>
+  
+  <!-- IRF3 activation of type I interferon -->
+  <text x="550" y="425" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Type I Interferon Production</text>
+  
+  <!-- Legends -->
+  <rect x="600" y="100" width="120" height="160" fill="#ffffff" stroke="#666" stroke-width="2"/>
+  <text x="660" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  <circle cx="620" cy="140" r="10" fill="#ff9999"/>
+  <text x="670" y="145" font-family="Arial" font-size="12" fill="#333">TRAF3</text>
+  <circle cx="620" cy="165" r="10" fill="#99cc99"/>
+  <text x="670" y="170" font-family="Arial" font-size="12" fill="#333">TBK1</text>
+  <circle cx="620" cy="190" r="10" fill="#9999ff"/>
+  <text x="670" y="195" font-family="Arial" font-size="12" fill="#333">USP22</text>
+  <circle cx="620" cy="215" r="10" fill="#ffcc99"/>
+  <text x="670" y="220" font-family="Arial" font-size="12" fill="#333">KPNA2</text>
+  <circle cx="620" cy="240" r="10" fill="#cc99ff"/>
+  <text x="670" y="245" font-family="Arial" font-size="12" fill="#333">IRF3</text>
+  
+  <!-- Compartment legend -->
+  <rect x="120" y="100" width="20" height="20" fill="#e5eedc" stroke="#666" stroke-width="1"/>
+  <rect x="120" y="130" width="20" height="20" fill="#d9e5f2" stroke="#666" stroke-width="1"/>
+  <rect x="120" y="160" width="20" height="20" fill="#f2d9da" stroke="#666" stroke-width="1"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#333">USP22 Activation of IRF3 via KPNA2 Stabilization</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

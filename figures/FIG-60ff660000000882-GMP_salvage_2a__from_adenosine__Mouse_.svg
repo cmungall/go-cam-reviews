@@ -1,0 +1,108 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">GMP Salvage Pathway in Mouse</text>
+  <text x="400" y="65" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle">Conversion of adenosine to GMP</text>
+  
+  <!-- Molecules -->
+  <!-- Adenosine -->
+  <circle cx="100" cy="200" r="40" fill="#c2e0ff" stroke="#000000" stroke-width="2" />
+  <text x="100" y="200" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Adenosine</text>
+  
+  <!-- Inosine -->
+  <circle cx="250" cy="200" r="40" fill="#c2e0ff" stroke="#000000" stroke-width="2" />
+  <text x="250" y="200" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Inosine</text>
+  
+  <!-- Hypoxanthine -->
+  <circle cx="400" cy="200" r="40" fill="#c2e0ff" stroke="#000000" stroke-width="2" />
+  <text x="400" y="195" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Hypo-</text>
+  <text x="400" y="215" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">xanthine</text>
+  
+  <!-- IMP -->
+  <circle cx="550" cy="200" r="40" fill="#c2e0ff" stroke="#000000" stroke-width="2" />
+  <text x="550" y="200" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">IMP</text>
+  
+  <!-- XMP -->
+  <circle cx="550" cy="350" r="40" fill="#c2e0ff" stroke="#000000" stroke-width="2" />
+  <text x="550" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">XMP</text>
+  
+  <!-- GMP -->
+  <circle cx="550" cy="500" r="40" fill="#c2e0ff" stroke="#000000" stroke-width="2" />
+  <text x="550" y="500" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">GMP</text>
+  
+  <!-- Reaction Arrows -->
+  <!-- Adenosine to Inosine -->
+  <line x1="140" y1="200" x2="210" y2="200" stroke="#000000" stroke-width="2" />
+  <polygon points="210,200 200,195 200,205" fill="#000000" />
+  
+  <!-- Inosine to Hypoxanthine -->
+  <line x1="290" y1="200" x2="360" y2="200" stroke="#000000" stroke-width="2" />
+  <polygon points="360,200 350,195 350,205" fill="#000000" />
+  
+  <!-- Hypoxanthine to IMP -->
+  <line x1="440" y1="200" x2="510" y2="200" stroke="#000000" stroke-width="2" />
+  <polygon points="510,200 500,195 500,205" fill="#000000" />
+  
+  <!-- IMP to XMP -->
+  <line x1="550" y1="240" x2="550" y2="310" stroke="#000000" stroke-width="2" />
+  <polygon points="550,310 545,300 555,300" fill="#000000" />
+  
+  <!-- XMP to GMP -->
+  <line x1="550" y1="390" x2="550" y2="460" stroke="#000000" stroke-width="2" />
+  <polygon points="550,460 545,450 555,450" fill="#000000" />
+  
+  <!-- Enzymes -->
+  <!-- Ada -->
+  <rect x="130" y="150" width="90" height="30" fill="#ffd6c2" stroke="#000000" stroke-width="2" rx="10" ry="10" />
+  <text x="175" y="170" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Ada</text>
+  
+  <!-- Pnp -->
+  <rect x="280" y="150" width="90" height="30" fill="#ffd6c2" stroke="#000000" stroke-width="2" rx="10" ry="10" />
+  <text x="325" y="170" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Pnp</text>
+  
+  <!-- Hprt1 -->
+  <rect x="430" y="150" width="90" height="30" fill="#ffd6c2" stroke="#000000" stroke-width="2" rx="10" ry="10" />
+  <text x="475" y="170" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Hprt1</text>
+  
+  <!-- Impdh1/2 -->
+  <rect x="600" y="275" width="90" height="45" fill="#ffd6c2" stroke="#000000" stroke-width="2" rx="10" ry="10" />
+  <text x="645" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Impdh1</text>
+  <text x="645" y="315" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Impdh2</text>
+  
+  <!-- Gmps -->
+  <rect x="600" y="425" width="90" height="30" fill="#ffd6c2" stroke="#000000" stroke-width="2" rx="10" ry="10" />
+  <text x="645" y="445" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Gmps</text>
+  
+  <!-- Connect Enzymes to Reactions with dotted lines -->
+  <line x1="175" y1="180" x2="175" y2="200" stroke="#666666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="325" y1="180" x2="325" y2="200" stroke="#666666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="475" y1="180" x2="475" y2="200" stroke="#666666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="600" y1="297" x2="550" y2="297" stroke="#666666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="600" y1="440" x2="550" y2="440" stroke="#666666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- Process Label -->
+  <rect x="100" y="500" width="200" height="30" fill="#e0f0e0" stroke="#000000" stroke-width="1" rx="5" ry="5" />
+  <text x="200" y="520" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">GO:0032263 - GMP salvage</text>
+  
+  <!-- Enzyme Function Labels -->
+  <text x="174" y="135" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">adenosine deaminase</text>
+  <text x="325" y="135" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">purine-nucleoside phosphorylase</text>
+  <text x="475" y="135" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">hypoxanthine phosphoribosyltransferase</text>
+  <text x="645" y="260" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">IMP dehydrogenase</text>
+  <text x="645" y="410" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">GMP synthase</text>
+  
+  <!-- Legend -->
+  <rect x="630" y="500" width="150" height="90" fill="#f8f8f8" stroke="#000000" stroke-width="1" />
+  <text x="705" y="520" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <circle cx="650" y="540" r="10" fill="#c2e0ff" stroke="#000000" stroke-width="1" />
+  <text x="715" y="545" font-family="Arial" font-size="12" text-anchor="middle">Metabolite</text>
+  
+  <rect x="640" y="560" width="20" height="10" fill="#ffd6c2" stroke="#000000" stroke-width="1" rx="3" ry="3" />
+  <text x="715" y="565" font-family="Arial" font-size="12" text-anchor="middle">Enzyme</text>
+  
+  <line x1="640" y1="580" x2="660" y2="580" stroke="#666666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="715" y="585" font-family="Arial" font-size="12" text-anchor="middle">Catalysis</text>
+</svg>

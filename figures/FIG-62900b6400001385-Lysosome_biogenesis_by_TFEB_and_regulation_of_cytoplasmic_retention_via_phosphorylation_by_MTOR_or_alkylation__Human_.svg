@@ -1,0 +1,140 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline (macrophage) -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  <text x="720" y="300" font-family="Arial" font-size="20" font-weight="bold" fill="#333">Macrophage</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="300" rx="150" ry="120" fill="#e6f2ff" stroke="#333" stroke-width="2"/>
+  <text x="250" y="300" font-family="Arial" font-size="20" font-weight="bold" fill="#333" text-anchor="middle">Nucleus</text>
+  
+  <!-- Cytosol -->
+  <text x="450" y="180" font-family="Arial" font-size="20" font-weight="bold" fill="#333" text-anchor="middle">Cytosol</text>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="590" cy="350" rx="80" ry="50" fill="#ffebe6" stroke="#333" stroke-width="2"/>
+  <path d="M530,330 Q590,310 650,330" stroke="#333" stroke-width="1" fill="none"/>
+  <path d="M530,340 Q590,320 650,340" stroke="#333" stroke-width="1" fill="none"/>
+  <path d="M530,350 Q590,330 650,350" stroke="#333" stroke-width="1" fill="none"/>
+  <path d="M530,360 Q590,340 650,360" stroke="#333" stroke-width="1" fill="none"/>
+  <path d="M530,370 Q590,350 650,370" stroke="#333" stroke-width="1" fill="none"/>
+  <text x="590" y="350" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Mitochondrion</text>
+  
+  <!-- TFEB in nucleus -->
+  <rect x="200" y="240" width="60" height="30" rx="5" fill="#b3d9ff" stroke="#333" stroke-width="1.5"/>
+  <text x="230" y="260" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">TFEB</text>
+  
+  <!-- DNA binding activity -->
+  <rect x="190" y="200" width="80" height="20" rx="5" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="230" y="215" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">DNA binding TF</text>
+  
+  <!-- Lysosome organization -->
+  <rect x="160" y="160" width="140" height="20" rx="5" fill="#d9f2d9" stroke="#333" stroke-width="1.5"/>
+  <text x="230" y="175" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Lysosome organization</text>
+  
+  <!-- MTOR in cytosol -->
+  <rect x="390" y="250" width="60" height="30" rx="5" fill="#b3d9ff" stroke="#333" stroke-width="1.5"/>
+  <text x="420" y="270" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">MTOR</text>
+  
+  <!-- Kinase activity -->
+  <rect x="370" y="290" width="100" height="20" rx="5" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="420" y="305" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Ser/Thr kinase</text>
+  
+  <!-- YWHAZ (phospho-binding) -->
+  <rect x="390" y="340" width="60" height="30" rx="5" fill="#b3d9ff" stroke="#333" stroke-width="1.5"/>
+  <text x="420" y="360" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">YWHAZ</text>
+  
+  <!-- Phosphoserine binding -->
+  <rect x="370" y="380" width="100" height="20" rx="5" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="420" y="395" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">pSer binding</text>
+  
+  <!-- TFEB in cytosol (sequestered) -->
+  <rect x="300" y="340" width="60" height="30" rx="5" fill="#b3d9ff" stroke="#333" stroke-width="1.5"/>
+  <text x="330" y="360" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">TFEB</text>
+  <circle cx="310" y="350" r="4" fill="#ff0000"/>  <!-- Phosphorylation mark -->
+  
+  <!-- YWHAZ sequestering -->
+  <rect x="345" y="420" width="100" height="20" rx="5" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="395" y="435" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Sequestering</text>
+  
+  <!-- ACOD1 in mitochondrion -->
+  <rect x="560" y="330" width="60" height="30" rx="5" fill="#b3d9ff" stroke="#333" stroke-width="1.5"/>
+  <text x="590" y="350" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">ACOD1</text>
+  
+  <!-- Aconitate decarboxylase activity -->
+  <rect x="545" y="370" width="90" height="20" rx="5" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="590" y="385" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Decarboxylase</text>
+  
+  <!-- Itaconate production -->
+  <ellipse cx="590" cy="410" rx="30" ry="15" fill="#ffff99" stroke="#333" stroke-width="1.5"/>
+  <text x="590" y="415" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Itaconate</text>
+  
+  <!-- LPS signaling -->
+  <ellipse cx="700" cy="350" rx="40" ry="20" fill="#ffcc99" stroke="#333" stroke-width="1.5"/>
+  <text x="700" y="355" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">LPS</text>
+  
+  <!-- Arrows and connections -->
+  <!-- TFEB to DNA binding -->
+  <line x1="230" y1="240" x2="230" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- DNA binding to lysosome organization -->
+  <line x1="230" y1="200" x2="230" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MTOR to kinase activity -->
+  <line x1="420" y1="280" x2="420" y2="290" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Kinase to phosphorylated TFEB -->
+  <path d="M390,300 Q350,320 330,340" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="340" y="315" font-family="Arial" font-size="12" fill="#333">P</text>
+  
+  <!-- YWHAZ to phosphoserine binding -->
+  <line x1="420" y1="370" x2="420" y2="380" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Phosphoserine binding to sequestering -->
+  <line x1="420" y1="400" x2="395" y2="420" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Sequestering connecting YWHAZ and TFEB -->
+  <path d="M360,420 Q340,400 330,370" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- ACOD1 to decarboxylase activity -->
+  <line x1="590" y1="360" x2="590" y2="370" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Decarboxylase to itaconate -->
+  <line x1="590" y1="390" x2="590" y2="395" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- LPS to ACOD1 signaling -->
+  <path d="M660,350 Q625,350 620,350" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Itaconate to cytosol (implicit, marked as not in source) -->
+  <path d="M560,410 Q500,390 450,370" stroke="#333" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="500" y="385" font-family="Arial" font-size="12" fill="#666" text-anchor="middle" font-style="italic">Not in source</text>
+  
+  <!-- TFEB cytosol to nucleus translocation (blocked) -->
+  <path d="M300,340 Q280,320 260,300" stroke="#ff0000" stroke-width="2" fill="none"/>
+  <line x1="270" y1="310" x2="290" y2="330" stroke="#ff0000" stroke-width="2.5"/>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="20" y="480" width="160" height="110" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="30" y="500" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  
+  <rect x="30" y="510" width="20" height="10" fill="#b3d9ff" stroke="#333" stroke-width="1.5"/>
+  <text x="60" y="520" font-family="Arial" font-size="12" fill="#333">Protein</text>
+  
+  <rect x="30" y="530" width="20" height="10" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="60" y="540" font-family="Arial" font-size="12" fill="#333">Activity</text>
+  
+  <rect x="30" y="550" width="20" height="10" fill="#d9f2d9" stroke="#333" stroke-width="1.5"/>
+  <text x="60" y="560" font-family="Arial" font-size="12" fill="#333">Process</text>
+  
+  <ellipse cx="40" cy="570" rx="10" ry="5" fill="#ffff99" stroke="#333" stroke-width="1.5"/>
+  <text x="60" y="575" font-family="Arial" font-size="12" fill="#333">Molecule</text>
+  
+  <line x1="30" y1="585" x2="50" y2="585" stroke="#ff0000" stroke-width="2.5"/>
+  <text x="90" y="590" font-family="Arial" font-size="12" fill="#333">Inhibition</text>
+</svg>

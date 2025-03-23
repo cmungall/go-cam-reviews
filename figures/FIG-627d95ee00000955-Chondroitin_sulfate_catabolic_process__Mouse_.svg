@@ -1,0 +1,111 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="650" fill="#f8f8f8" />
+  
+  <!-- Cell outline with lysosome -->
+  <ellipse cx="400" cy="330" rx="380" ry="300" fill="#f9f9ff" stroke="#aaaaaa" stroke-width="2" />
+  <text x="150" y="100" font-family="Arial" font-size="16" fill="#666666">Cell</text>
+  
+  <!-- Lysosome compartment -->
+  <ellipse cx="400" cy="350" rx="320" ry="260" fill="#f2e6ff" stroke="#9966cc" stroke-width="2" stroke-dasharray="5,2" />
+  <text x="400" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#9966cc">Lysosome (GO:0005764)</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Chondroitin Sulfate Catabolic Process in Mouse</text>
+  <text x="400" y="65" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">GO:0030207</text>
+  
+  <!-- Brief description of the pathway -->
+  <rect x="120" y="80" width="560" height="40" rx="5" ry="5" fill="#fff9e6" stroke="#e6cc99" stroke-width="1" />
+  <text x="400" y="105" font-family="Arial" font-size="12" text-anchor="middle">Sequential degradation of chondroitin sulfate in lysosomes involves multiple enzymes that remove specific components</text>
+  
+  <!-- Chondroitin sulfate substrate at the top -->
+  <rect x="250" y="180" width="300" height="50" rx="10" ry="10" fill="#d1e7dd" stroke="#20aa66" stroke-width="2" />
+  <text x="400" y="210" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Chondroitin Sulfate (CHEBI:37397)</text>
+  
+  <!-- First level enzymes: Galns and Arsb -->
+  <rect x="150" y="280" width="150" height="50" rx="5" ry="5" fill="#e7f2fa" stroke="#4c8dae" stroke-width="2" />
+  <text x="225" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Galns (MGI:1355303)</text>
+  <text x="225" y="320" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">N-acetylgalactosamine-6-sulfatase</text>
+  
+  <rect x="500" y="280" width="150" height="50" rx="5" ry="5" fill="#e7f2fa" stroke="#4c8dae" stroke-width="2" />
+  <text x="575" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Arsb (MGI:88075)</text>
+  <text x="575" y="320" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">N-acetylgalactosamine-4-sulfatase</text>
+  
+  <!-- Arrows from substrate to first level enzymes -->
+  <path d="M 350 230 L 225 280" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M 450 230 L 575 280" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Second level enzymes: Hyal1, Hyal3, Hyal4 -->
+  <rect x="70" y="360" width="150" height="50" rx="5" ry="5" fill="#e7f2fa" stroke="#4c8dae" stroke-width="2" />
+  <text x="145" y="380" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Hyal1 (MGI:96298)</text>
+  <text x="145" y="400" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">Chondroitin hydrolase</text>
+  
+  <rect x="250" y="360" width="150" height="50" rx="5" ry="5" fill="#e7f2fa" stroke="#4c8dae" stroke-width="2" />
+  <text x="325" y="380" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Hyal3 (MGI:1330288)</text>
+  <text x="325" y="400" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">Chondroitin hydrolase</text>
+  
+  <rect x="430" y="360" width="150" height="50" rx="5" ry="5" fill="#e7f2fa" stroke="#4c8dae" stroke-width="2" />
+  <text x="505" y="380" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Hyal4 (MGI:1924292)</text>
+  <text x="505" y="400" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">Chondroitin hydrolase</text>
+  
+  <!-- Arrows from first level to second level -->
+  <path d="M 180 330 L 145 360" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M 225 330 L 325 360" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M 550 330 L 505 360" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M 575 330 L 325 360" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M 525 330 L 145 360" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Third level enzyme: Gusb -->
+  <rect x="250" y="440" width="150" height="50" rx="5" ry="5" fill="#e7f2fa" stroke="#4c8dae" stroke-width="2" />
+  <text x="325" y="460" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Gusb (MGI:95872)</text>
+  <text x="325" y="480" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">Beta-glucuronidase</text>
+  
+  <!-- Arrows from second level to third level -->
+  <path d="M 145 410 L 300 440" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M 325 410 L 325 440" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M 505 410 L 350 440" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Fourth level enzyme: Hexb -->
+  <rect x="250" y="520" width="150" height="50" rx="5" ry="5" fill="#e7f2fa" stroke="#4c8dae" stroke-width="2" />
+  <text x="325" y="540" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Hexb (MGI:96074)</text>
+  <text x="325" y="560" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">Hexosaminidase</text>
+  
+  <!-- Arrow from third level to fourth level -->
+  <path d="M 325 490 L 325 520" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Degradation products at the bottom -->
+  <rect x="500" y="520" width="200" height="50" rx="10" ry="10" fill="#ffe6e6" stroke="#cc6666" stroke-width="2" />
+  <text x="600" y="550" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Degradation Products</text>
+  
+  <!-- Arrow from Hexb to degradation products -->
+  <path d="M 400 545 L 500 545" stroke="#888888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Sequential pathway description -->
+  <text x="130" y="600" font-family="Arial" font-size="12" font-style="italic" fill="#555555">Step 1: Sulfate removal by Galns and Arsb</text>
+  <text x="130" y="620" font-family="Arial" font-size="12" font-style="italic" fill="#555555">Step 2: Chain hydrolysis by multiple Hyal enzymes</text>
+  <text x="430" y="600" font-family="Arial" font-size="12" font-style="italic" fill="#555555">Step 3: Removal of glucuronic acid by Gusb</text>
+  <text x="430" y="620" font-family="Arial" font-size="12" font-style="italic" fill="#555555">Step 4: Hexosaminidase action by Hexb</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="180" width="180" height="120" rx="5" ry="5" fill="white" stroke="#cccccc" stroke-width="1" />
+  <text x="690" y="200" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <rect x="610" y="210" width="20" height="15" rx="2" ry="2" fill="#e7f2fa" stroke="#4c8dae" stroke-width="1" />
+  <text x="635" y="222" font-family="Arial" font-size="12" text-anchor="start">Enzyme</text>
+  
+  <rect x="610" y="235" width="20" height="15" rx="2" ry="2" fill="#d1e7dd" stroke="#20aa66" stroke-width="1" />
+  <text x="635" y="247" font-family="Arial" font-size="12" text-anchor="start">Substrate</text>
+  
+  <rect x="610" y="260" width="20" height="15" rx="2" ry="2" fill="#ffe6e6" stroke="#cc6666" stroke-width="1" />
+  <text x="635" y="272" font-family="Arial" font-size="12" text-anchor="start">Products</text>
+  
+  <ellipse cx="620" y="285" rx="10" ry="7" fill="none" stroke="#9966cc" stroke-width="1" stroke-dasharray="3,1" />
+  <text x="635" y="288" font-family="Arial" font-size="12" text-anchor="start">Compartment</text>
+  
+  <!-- Arrow head definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#888888" />
+    </marker>
+  </defs>
+</svg>

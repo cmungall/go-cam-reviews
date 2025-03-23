@@ -1,0 +1,162 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#f8f8f8" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Inhibition of GSDMD-mediated Pyroptosis by M. tuberculosis PtpB Phosphatase</text>
+  
+  <!-- Host cell outline -->
+  <ellipse cx="400" cy="330" rx="320" ry="200" fill="#e6f2ff" stroke="#666" stroke-width="2"/>
+  <text x="170" y="180" font-family="Arial" font-size="14" font-weight="bold">Host Cell</text>
+  
+  <!-- M. tuberculosis bacterial cell -->
+  <ellipse cx="120" cy="120" rx="60" ry="40" fill="#d4a76a" stroke="#8b4513" stroke-width="2"/>
+  <text x="120" y="125" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">M. tuberculosis</text>
+  
+  <!-- Plasma membrane -->
+  <ellipse cx="400" cy="330" rx="300" ry="180" fill="none" stroke="#0066cc" stroke-width="4" stroke-dasharray="5,3"/>
+  <text x="650" y="330" font-family="Arial" font-size="12" fill="#0066cc" font-weight="bold">Plasma Membrane</text>
+  <text x="650" y="345" font-family="Arial" font-size="11" fill="#0066cc">(GO:0005886)</text>
+  
+  <!-- Step 1: PtpB secretion from bacterium -->
+  <text x="90" y="90" font-family="Arial" font-size="12" font-weight="bold">Step 1</text>
+  <path d="M160,140 Q220,180 240,220" fill="none" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <circle cx="240" cy="220" r="15" fill="#cc0000"/>
+  <text x="240" y="220" font-family="Arial" font-size="10" text-anchor="middle" fill="white">PtpB</text>
+  <text x="240" y="240" font-family="Arial" font-size="10" text-anchor="middle">(I6WXK4)</text>
+  <text x="200" y="190" font-family="Arial" font-size="12">M.tb PtpB secretion</text>
+  
+  <!-- Step 2: PtpB ubiquitin binding -->
+  <text x="285" y="235" font-family="Arial" font-size="12" font-weight="bold">Step 2</text>
+  <circle cx="300" cy="260" r="15" fill="#00cc00"/>
+  <text x="300" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Ub</text>
+  <path d="M250,230 Q270,250 290,255" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="270" y="235" font-family="Arial" font-size="11" transform="rotate(-15,270,235)">Ubiquitin binding</text>
+  <text x="272" y="247" font-family="Arial" font-size="9" transform="rotate(-15,272,247)">(GO:0043130)</text>
+  
+  <!-- Step 3: PtpB movement to membrane -->
+  <text x="290" y="275" font-family="Arial" font-size="12" font-weight="bold">Step 3</text>
+  <path d="M255,235 Q300,300 350,320" fill="none" stroke="#cc0000" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrowhead)"/>
+  <text x="290" y="290" font-family="Arial" font-size="12">PtpB translocation</text>
+  
+  <!-- Phospholipids in membrane -->
+  <circle cx="400" cy="330" r="280" fill="none" stroke="#0066cc" stroke-width="8"/>
+  
+  <!-- Step 4: PtpB acts on phospholipids -->
+  <text x="310" y="280" font-family="Arial" font-size="12" font-weight="bold">Step 4</text>
+  
+  <!-- PI(4,5)P2 in membrane -->
+  <circle cx="380" cy="320" r="12" fill="#ffcc00"/>
+  <text x="380" y="320" font-family="Arial" font-size="9" text-anchor="middle">PI(4,5)P2</text>
+  
+  <!-- PI(4)P in membrane -->
+  <circle cx="420" cy="320" r="12" fill="#ff9900"/>
+  <text x="420" y="320" font-family="Arial" font-size="9" text-anchor="middle">PI(4)P</text>
+  
+  <!-- PtpB phosphatase activity -->
+  <circle cx="350" cy="320" r="15" fill="#cc0000"/>
+  <text x="350" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="white">PtpB</text>
+  
+  <!-- PtpB activity on PI(4,5)P2 -->
+  <path d="M360,315 Q370,315 375,318" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="340" y="300" font-family="Arial" font-size="11">PI(4,5)P2 phosphatase</text>
+  <text x="340" y="312" font-family="Arial" font-size="9">(GO:0106019)</text>
+  
+  <!-- PtpB activity on PI(4)P -->
+  <path d="M360,325 Q380,335 410,325" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="365" y="345" font-family="Arial" font-size="11">PI(4)P phosphatase</text>
+  <text x="365" y="357" font-family="Arial" font-size="9">(GO:0043812)</text>
+  
+  <!-- Step 5: GSDMD inhibition -->
+  <text x="480" y="280" font-family="Arial" font-size="12" font-weight="bold">Step 5</text>
+  
+  <!-- GSDMD -->
+  <rect x="500" y="300" width="60" height="30" rx="5" ry="5" fill="#9966ff" stroke="#333" stroke-width="1"/>
+  <text x="530" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="white">GSDMD</text>
+  <text x="530" y="335" font-family="Arial" font-size="9" text-anchor="middle">(P57764)</text>
+  
+  <!-- GSDMD binding to PI(4,5)P2 -->
+  <path d="M495,310 Q450,305 395,320" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="445" y="295" font-family="Arial" font-size="11">PI(4,5)P2 binding</text>
+  <text x="445" y="307" font-family="Arial" font-size="9">(GO:0005546)</text>
+  
+  <!-- GSDMD binding to PI(4)P -->
+  <path d="M495,320 Q470,330 430,325" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="460" y="345" font-family="Arial" font-size="11">PI(4)P binding</text>
+  <text x="460" y="357" font-family="Arial" font-size="9">(GO:0070273)</text>
+  
+  <!-- Inhibition of GSDMD binding -->
+  <line x1="430" y1="310" x2="470" y2="310" stroke="#cc0000" stroke-width="3"/>
+  <text x="450" y="280" font-family="Arial" font-size="12" font-weight="bold">INHIBITS</text>
+  
+  <!-- Two contrasting outcomes -->
+  <!-- 1. Normal pyroptosis (crossed out) -->
+  <g transform="translate(600,400)">
+    <rect x="0" y="0" width="150" height="120" rx="10" ry="10" fill="#ffcccc" stroke="#cc0000" stroke-width="2"/>
+    <text x="75" y="20" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Normal Pyroptosis</text>
+    <text x="75" y="35" font-family="Arial" font-size="10" text-anchor="middle">(GO:0070269)</text>
+    
+    <circle cx="40" cy="60" r="20" fill="#9966ff"/>
+    <text x="40" y="60" font-family="Arial" font-size="10" text-anchor="middle" fill="white">GSDMD</text>
+    <path d="M45,70 Q60,80 75,70" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <rect x="75" y="50" width="60" height="30" rx="5" ry="5" fill="#9966ff" stroke="#333" stroke-width="1"/>
+    <text x="105" y="70" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Pore</text>
+    <text x="105" y="82" font-family="Arial" font-size="8" text-anchor="middle">(GO:0022829)</text>
+    
+    <path d="M110,80 Q110,90 110,100" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <text x="105" y="105" font-family="Arial" font-size="9" text-anchor="middle">IL-1β/IL-18 release</text>
+    <text x="105" y="115" font-family="Arial" font-size="9" text-anchor="middle">(GO:0009306)</text>
+    
+    <line x1="10" y1="10" x2="140" y2="110" stroke="#cc0000" stroke-width="4"/>
+    <line x1="10" y1="110" x2="140" y2="10" stroke="#cc0000" stroke-width="4"/>
+  </g>
+  
+  <!-- 2. Inhibited pyroptosis -->
+  <g transform="translate(50,400)">
+    <rect x="0" y="0" width="150" height="120" rx="10" ry="10" fill="#ccffcc" stroke="#009900" stroke-width="2"/>
+    <text x="75" y="20" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Inhibited Pyroptosis</text>
+    <text x="75" y="35" font-family="Arial" font-size="9" text-anchor="middle">(GO:0034054)</text>
+    
+    <circle cx="40" cy="60" r="20" fill="#cc0000"/>
+    <text x="40" y="60" font-family="Arial" font-size="10" text-anchor="middle" fill="white">PtpB</text>
+    <path d="M45,70 Q60,80 75,70" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <circle cx="90" cy="60" r="12" fill="#ffcc00"/>
+    <text x="90" y="60" font-family="Arial" font-size="8" text-anchor="middle">PI(4,5)P2</text>
+    <line x1="65" y1="75" x2="115" y2="75" stroke="#cc0000" stroke-width="3"/>
+    
+    <text x="75" y="100" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">Bacterial Survival</text>
+    <text x="75" y="115" font-family="Arial" font-size="9" text-anchor="middle">Host Defense Suppression</text>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="50" y="550" width="700" height="80" rx="5" ry="5" fill="#f0f0f0" stroke="#666" stroke-width="1"/>
+  <text x="400" y="570" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">LEGEND</text>
+  
+  <!-- Legend items -->
+  <circle cx="80" cy="590" r="10" fill="#cc0000"/>
+  <text x="100" y="595" font-family="Arial" font-size="12">PtpB (M. tuberculosis)</text>
+  
+  <circle cx="220" cy="590" r="10" fill="#9966ff"/>
+  <text x="240" y="595" font-family="Arial" font-size="12">GSDMD (Human)</text>
+  
+  <circle cx="350" cy="590" r="10" fill="#ffcc00"/>
+  <text x="370" y="595" font-family="Arial" font-size="12">PI(4,5)P2</text>
+  
+  <circle cx="450" cy="590" r="10" fill="#ff9900"/>
+  <text x="470" y="595" font-family="Arial" font-size="12">PI(4)P</text>
+  
+  <circle cx="550" cy="590" r="10" fill="#00cc00"/>
+  <text x="570" y="595" font-family="Arial" font-size="12">Ubiquitin</text>
+  
+  <line x1="630" y1="590" x2="650" y2="590" stroke="#cc0000" stroke-width="3"/>
+  <text x="675" y="595" font-family="Arial" font-size="12">Inhibition</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+</svg>

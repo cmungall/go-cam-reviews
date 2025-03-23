@@ -1,0 +1,159 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#ffffff" />
+  
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="480" rx="50" ry="50" fill="#ffffff" stroke="#888888" stroke-width="2" />
+  
+  <!-- Cytosol Label -->
+  <text x="110" y="90" font-family="Arial" font-size="16" font-weight="bold" fill="#555555">Cytosol</text>
+  
+  <!-- Pathway Steps -->
+  
+  <!-- Initial substrate -->
+  <ellipse cx="100" cy="180" rx="50" ry="25" fill="#fffce6" stroke="#aa8800" stroke-width="2" />
+  <text x="100" y="185" font-family="Arial" font-size="14" text-anchor="middle">PRPP</text>
+  
+  <!-- Step 1: PPAT -->
+  <rect x="170" y="150" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="230" y="172" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">PPAT</text>
+  <text x="230" y="192" font-family="Arial" font-size="11" text-anchor="middle">(MGI:2387203)</text>
+  <text x="230" y="208" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">amidophosphoribosyltransferase</text>
+  
+  <!-- Intermediate 1 -->
+  <ellipse cx="320" cy="180" rx="30" ry="20" fill="#f0f0f0" stroke="#888888" stroke-width="1.5" />
+  <text x="320" y="185" font-family="Arial" font-size="12" text-anchor="middle">PRA</text>
+  
+  <!-- Step 2: GART (phosphoribosylamine-glycine ligase) -->
+  <rect x="170" y="250" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="230" y="272" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">GART</text>
+  <text x="230" y="292" font-family="Arial" font-size="11" text-anchor="middle">(MGI:95654)</text>
+  <text x="230" y="308" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">phosphoribosylamine-glycine ligase</text>
+  
+  <!-- Intermediate 2 -->
+  <ellipse cx="320" cy="280" rx="30" ry="20" fill="#f0f0f0" stroke="#888888" stroke-width="1.5" />
+  <text x="320" y="285" font-family="Arial" font-size="12" text-anchor="middle">GAR</text>
+  
+  <!-- Step 3: GART (phosphoribosylglycinamide formyltransferase) -->
+  <rect x="170" y="350" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="230" y="372" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">GART</text>
+  <text x="230" y="392" font-family="Arial" font-size="11" text-anchor="middle">(MGI:95654)</text>
+  <text x="230" y="408" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">phosphoribosylglycinamide</text>
+  <text x="230" y="418" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">formyltransferase</text>
+  
+  <!-- Intermediate 3 -->
+  <ellipse cx="320" cy="380" rx="30" ry="20" fill="#f0f0f0" stroke="#888888" stroke-width="1.5" />
+  <text x="320" y="385" font-family="Arial" font-size="12" text-anchor="middle">FGAR</text>
+  
+  <!-- Step 4: PFAS -->
+  <rect x="370" y="150" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="430" y="172" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">PFAS</text>
+  <text x="430" y="192" font-family="Arial" font-size="11" text-anchor="middle">(MGI:2684864)</text>
+  <text x="430" y="208" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">phosphoribosylformylglycinamidine</text>
+  <text x="430" y="218" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">synthase</text>
+  
+  <!-- Intermediate 4 -->
+  <ellipse cx="520" cy="180" rx="30" ry="20" fill="#f0f0f0" stroke="#888888" stroke-width="1.5" />
+  <text x="520" y="185" font-family="Arial" font-size="12" text-anchor="middle">FGAM</text>
+  
+  <!-- Step 5: GART (phosphoribosylformylglycinamidine cyclo-ligase) -->
+  <rect x="370" y="250" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="430" y="272" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">GART</text>
+  <text x="430" y="292" font-family="Arial" font-size="11" text-anchor="middle">(MGI:95654)</text>
+  <text x="430" y="308" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">phosphoribosylformylglycinamidine</text>
+  <text x="430" y="318" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">cyclo-ligase</text>
+  
+  <!-- Intermediate 5 -->
+  <ellipse cx="520" cy="280" rx="30" ry="20" fill="#f0f0f0" stroke="#888888" stroke-width="1.5" />
+  <text x="520" y="285" font-family="Arial" font-size="12" text-anchor="middle">AIR</text>
+  
+  <!-- Step 6: PAICS -->
+  <rect x="370" y="350" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="430" y="372" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">PAICS</text>
+  <text x="430" y="392" font-family="Arial" font-size="11" text-anchor="middle">(MGI:1914304)</text>
+  <text x="430" y="408" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">phosphoribosylaminoimidazole</text>
+  <text x="430" y="418" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">succinocarboxamide synthase</text>
+  
+  <!-- Intermediate 6 -->
+  <ellipse cx="520" cy="380" rx="30" ry="20" fill="#f0f0f0" stroke="#888888" stroke-width="1.5" />
+  <text x="520" y="385" font-family="Arial" font-size="12" text-anchor="middle">SAICAR</text>
+  
+  <!-- Step 7: ADSL -->
+  <rect x="570" y="150" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="630" y="172" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">ADSL</text>
+  <text x="630" y="192" font-family="Arial" font-size="11" text-anchor="middle">(MGI:103202)</text>
+  <text x="630" y="208" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">adenylosuccinate lyase</text>
+  
+  <!-- Intermediate 7 -->
+  <ellipse cx="630" cy="230" rx="30" ry="20" fill="#f0f0f0" stroke="#888888" stroke-width="1.5" />
+  <text x="630" y="235" font-family="Arial" font-size="12" text-anchor="middle">AICAR</text>
+  
+  <!-- Step 8: ATIC (phosphoribosylaminoimidazolecarboxamide formyltransferase) -->
+  <rect x="570" y="250" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="630" y="272" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">ATIC</text>
+  <text x="630" y="292" font-family="Arial" font-size="11" text-anchor="middle">(MGI:1351352)</text>
+  <text x="630" y="308" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">phosphoribosylaminoimidazole</text>
+  <text x="630" y="318" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">carboxamide formyltransferase</text>
+  
+  <!-- Intermediate 8 -->
+  <ellipse cx="630" cy="330" rx="30" ry="20" fill="#f0f0f0" stroke="#888888" stroke-width="1.5" />
+  <text x="630" y="335" font-family="Arial" font-size="12" text-anchor="middle">FAICAR</text>
+  
+  <!-- Step 9: ATIC (IMP cyclohydrolase) -->
+  <rect x="570" y="350" width="120" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" />
+  <text x="630" y="372" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">ATIC</text>
+  <text x="630" y="392" font-family="Arial" font-size="11" text-anchor="middle">(MGI:1351352)</text>
+  <text x="630" y="408" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">IMP cyclohydrolase</text>
+  
+  <!-- Product: IMP -->
+  <ellipse cx="630" cy="450" rx="60" ry="30" fill="#e6ffe6" stroke="#009900" stroke-width="2" />
+  <text x="630" y="455" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">IMP</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <line x1="150" y1="180" x2="170" y2="180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="290" y1="180" x2="320" y2="180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="none" />
+  <line x1="320" y1="200" x2="320" y2="260" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="290" y1="280" x2="320" y2="280" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="320" y1="300" x2="320" y2="360" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="290" y1="380" x2="320" y2="380" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="350" y1="380" x2="370" y2="180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="490" y1="180" x2="520" y2="180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="520" y1="200" x2="520" y2="260" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="490" y1="280" x2="520" y2="280" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="520" y1="300" x2="520" y2="360" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="490" y1="380" x2="520" y2="380" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="550" y1="380" x2="570" y2="180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="630" y1="210" x2="630" y2="230" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="630" y1="250" x2="630" y2="270" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="630" y1="310" x2="630" y2="330" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="630" y1="350" x2="630" y2="370" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="630" y1="410" x2="630" y2="420" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">'de novo' IMP Biosynthetic Process (Mouse)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="490" width="700" height="40" fill="#f8f8f8" stroke="#888888" stroke-width="1" rx="5" ry="5" />
+  <text x="70" y="515" font-family="Arial" font-size="12" font-weight="bold">Legend:</text>
+  
+  <!-- Legend items -->
+  <rect x="140" y="505" width="20" height="15" fill="#e6f7ff" stroke="#0066cc" stroke-width="1" rx="2" ry="2" />
+  <text x="165" y="517" font-family="Arial" font-size="12">Enzyme</text>
+  
+  <ellipse cx="220" cy="512" rx="10" ry="7" fill="#f0f0f0" stroke="#888888" stroke-width="1" />
+  <text x="240" y="517" font-family="Arial" font-size="12">Intermediate</text>
+  
+  <ellipse cx="320" cy="512" rx="10" ry="7" fill="#fffce6" stroke="#aa8800" stroke-width="1" />
+  <text x="340" y="517" font-family="Arial" font-size="12">Substrate</text>
+  
+  <ellipse cx="410" cy="512" rx="10" ry="7" fill="#e6ffe6" stroke="#009900" stroke-width="1" />
+  <text x="430" y="517" font-family="Arial" font-size="12">Product</text>
+  
+  <text x="490" y="517" font-family="Arial" font-size="12">GO:0006189</text>
+</svg>

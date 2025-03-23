@@ -1,0 +1,109 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nuclear membrane -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f0ff" stroke="#6666aa" stroke-width="3" />
+  <text x="400" y="80" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#555599">Nucleus</text>
+  
+  <!-- DNA damage site -->
+  <path d="M200,200 C250,180 300,220 350,200 C400,180 450,220 500,200 C550,180 600,220 650,200" 
+        stroke="#333" stroke-width="4" fill="none" />
+  <path d="M225,240 L275,240" stroke="#ff0000" stroke-width="6" fill="none" />
+  <text x="250" y="265" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle" fill="#333">DNA damage site</text>
+  <text x="250" y="282" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">(GO:0090734)</text>
+  
+  <!-- PARP1 -->
+  <rect x="200" y="300" width="70" height="40" rx="10" ry="10" fill="#8ecbf0" stroke="#333" stroke-width="2" />
+  <text x="235" y="325" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle" fill="#333">PARP1</text>
+  
+  <!-- PARP2 -->
+  <rect x="350" y="300" width="70" height="40" rx="10" ry="10" fill="#8ef0cb" stroke="#333" stroke-width="2" />
+  <text x="385" y="325" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle" fill="#333">PARP2</text>
+  
+  <!-- APLF -->
+  <rect x="500" y="300" width="70" height="40" rx="10" ry="10" fill="#f0cb8e" stroke="#333" stroke-width="2" />
+  <text x="535" y="325" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle" fill="#333">APLF</text>
+  
+  <!-- MACROH2A1 -->
+  <rect x="500" y="420" width="100" height="40" rx="10" ry="10" fill="#cb8ef0" stroke="#333" stroke-width="2" />
+  <text x="550" y="445" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle" fill="#333">MACROH2A1</text>
+  
+  <!-- PAR chains visual representation -->
+  <path d="M270,305 C290,295 300,315 310,305 C320,295 330,315 340,305" stroke="#ff6600" stroke-width="3" fill="none" />
+  <path d="M420,305 C440,295 450,315 460,305 C470,295 480,315 490,305" stroke="#ff6600" stroke-width="3" fill="none" />
+  
+  <!-- Arrows and interactions -->
+  <!-- PARP1 to PARP2 -->
+  <path d="M270,320 L350,320" stroke="#333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="310" y="310" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">activates</text>
+  
+  <!-- PARP2 to APLF -->
+  <path d="M420,320 L500,320" stroke="#333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="460" y="310" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">poly-ADP-ribosylates</text>
+  
+  <!-- APLF to MACROH2A1 -->
+  <path d="M535,340 L535,420" stroke="#333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="580" y="380" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">histone chaperone</text>
+  <text x="580" y="395" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">activity</text>
+  
+  <!-- PARP1 activity annotation -->
+  <text x="235" y="358" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">NAD+-protein</text>
+  <text x="235" y="372" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">poly-ADP-ribosyltransferase</text>
+  <text x="235" y="386" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">(GO:0003950)</text>
+  
+  <!-- PARP2 activity annotation -->
+  <text x="385" y="358" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">NAD+-protein</text>
+  <text x="385" y="372" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">poly-ADP-ribosyltransferase</text>
+  <text x="385" y="386" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">(GO:0003950)</text>
+  
+  <!-- APLF activity annotation -->
+  <text x="535" y="358" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">poly-ADP-D-ribose</text>
+  <text x="535" y="372" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">binding</text>
+  <text x="535" y="386" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">(GO:0072572)</text>
+  
+  <!-- MACROH2A1 activity annotation -->
+  <text x="550" y="470" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">structural constituent</text>
+  <text x="550" y="484" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">of chromatin</text>
+  <text x="550" y="498" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">(GO:0030527)</text>
+  
+  <!-- Process annotation -->
+  <text x="400" y="500" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">DNA Repair Process (GO:0006281)</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Regulation of PARP2 Activity by PARP1 and Recruitment of APLF to DNA Damage Sites</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="550" width="700" height="120" rx="10" ry="10" fill="#f9f9f9" stroke="#333" stroke-width="1" />
+  <text x="400" y="570" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">LEGEND</text>
+  
+  <!-- Protein legend -->
+  <rect x="70" y="590" width="20" height="15" rx="3" ry="3" fill="#8ecbf0" stroke="#333" stroke-width="1" />
+  <text x="100" y="602" font-family="Arial" font-size="13" fill="#333">PARP1 (UniProtKB:P09874)</text>
+  
+  <rect x="70" y="615" width="20" height="15" rx="3" ry="3" fill="#8ef0cb" stroke="#333" stroke-width="1" />
+  <text x="100" y="627" font-family="Arial" font-size="13" fill="#333">PARP2 (UniProtKB:Q9UGN5)</text>
+  
+  <rect x="70" y="640" width="20" height="15" rx="3" ry="3" fill="#f0cb8e" stroke="#333" stroke-width="1" />
+  <text x="100" y="652" font-family="Arial" font-size="13" fill="#333">APLF (UniProtKB:Q8IW19)</text>
+  
+  <rect x="270" y="590" width="20" height="15" rx="3" ry="3" fill="#cb8ef0" stroke="#333" stroke-width="1" />
+  <text x="300" y="602" font-family="Arial" font-size="13" fill="#333">MACROH2A1 (UniProtKB:O75367)</text>
+  
+  <!-- Activity legend -->
+  <path d="M270,620 C280,615 285,625 290,620" stroke="#ff6600" stroke-width="3" fill="none" />
+  <text x="345" y="623" font-family="Arial" font-size="13" fill="#333">Poly-ADP-ribose chains</text>
+  
+  <path d="M270,645 L290,645" stroke="#333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="335" y="648" font-family="Arial" font-size="13" fill="#333">Regulation/activation</text>
+  
+  <path d="M500,615 L520,615" stroke="#ff0000" stroke-width="4" fill="none" />
+  <text x="560" y="618" font-family="Arial" font-size="13" fill="#333">DNA damage</text>
+  
+  <text x="480" y="640" font-family="Arial" font-size="13" fill="#333">All events occur in DNA damage site</text>
+  <text x="480" y="655" font-family="Arial" font-size="13" fill="#333">during DNA repair process</text>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

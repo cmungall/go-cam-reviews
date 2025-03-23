@@ -1,0 +1,160 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background cytosol -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f0f9ff" stroke="#aad4e5" stroke-width="2"/>
+  <text x="400" y="80" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">De novo AMP Biosynthetic Process (Mouse)</text>
+  <text x="100" y="80" font-family="Arial" font-size="14" fill="#666666">Cytosol</text>
+  
+  <!-- Pathway components -->
+  <!-- Starting substrate -->
+  <circle cx="120" cy="150" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="120" y="155" font-family="Arial" font-size="12" text-anchor="middle">PRPP</text>
+  
+  <!-- First enzyme - PPAT -->
+  <rect x="200" y="120" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="250" y="145" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Ppat</text>
+  <text x="250" y="165" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004044)</text>
+  
+  <!-- First intermediate -->
+  <circle cx="350" cy="150" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="350" y="155" font-family="Arial" font-size="12" text-anchor="middle">PRA</text>
+  
+  <!-- Second enzyme - GART (phosphoribosylamine-glycine ligase) -->
+  <rect x="200" y="220" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="250" y="245" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Gart</text>
+  <text x="250" y="265" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004637)</text>
+  
+  <!-- Second intermediate -->
+  <circle cx="350" cy="250" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="350" y="255" font-family="Arial" font-size="12" text-anchor="middle">GAR</text>
+  
+  <!-- Third enzyme - GART (formyltransferase) -->
+  <rect x="200" y="320" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="250" y="345" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Gart</text>
+  <text x="250" y="365" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004644)</text>
+  
+  <!-- Third intermediate -->
+  <circle cx="350" cy="350" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="350" y="355" font-family="Arial" font-size="12" text-anchor="middle">FGAR</text>
+  
+  <!-- Fourth enzyme - PFAS -->
+  <rect x="200" y="420" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="250" y="445" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Pfas</text>
+  <text x="250" y="465" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004642)</text>
+  
+  <!-- Fourth intermediate -->
+  <circle cx="350" cy="450" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="350" y="455" font-family="Arial" font-size="12" text-anchor="middle">FGAM</text>
+  
+  <!-- Fifth enzyme - GART (cyclo-ligase) -->
+  <rect x="420" y="120" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="470" y="145" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Gart</text>
+  <text x="470" y="165" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004641)</text>
+  
+  <!-- Fifth intermediate -->
+  <circle cx="570" cy="150" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="570" y="155" font-family="Arial" font-size="12" text-anchor="middle">AIR</text>
+  
+  <!-- Sixth enzyme - PAICS (carboxylase) -->
+  <rect x="420" y="220" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="470" y="245" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Paics</text>
+  <text x="470" y="265" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004638)</text>
+  
+  <!-- Sixth intermediate -->
+  <circle cx="570" cy="250" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="570" y="255" font-family="Arial" font-size="12" text-anchor="middle">CAIR</text>
+  
+  <!-- Seventh enzyme - PAICS (synthase) -->
+  <rect x="420" y="320" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="470" y="345" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Paics</text>
+  <text x="470" y="365" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004639)</text>
+  
+  <!-- Seventh intermediate -->
+  <circle cx="570" cy="350" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="570" y="355" font-family="Arial" font-size="12" text-anchor="middle">SAICAR</text>
+  
+  <!-- Eighth enzyme - ADSL -->
+  <rect x="420" y="420" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="470" y="445" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Adsl</text>
+  <text x="470" y="465" font-family="Arial" font-size="10" text-anchor="middle">(GO:0070626)</text>
+  
+  <!-- Eighth intermediate -->
+  <circle cx="570" cy="450" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="570" y="455" font-family="Arial" font-size="12" text-anchor="middle">AICAR</text>
+  
+  <!-- Ninth enzyme - ATIC (formyltransferase) -->
+  <rect x="640" y="180" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="690" y="205" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Atic</text>
+  <text x="690" y="225" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004643)</text>
+  
+  <!-- Ninth intermediate -->
+  <circle cx="690" cy="290" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="690" y="295" font-family="Arial" font-size="12" text-anchor="middle">FAICAR</text>
+  
+  <!-- Tenth enzyme - ATIC (cyclohydrolase) -->
+  <rect x="640" y="340" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="690" y="365" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Atic</text>
+  <text x="690" y="385" font-family="Arial" font-size="10" text-anchor="middle">(GO:0003937)</text>
+  
+  <!-- Tenth intermediate - IMP -->
+  <circle cx="690" cy="450" r="25" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="690" y="455" font-family="Arial" font-size="12" text-anchor="middle">IMP</text>
+  
+  <!-- Final enzyme - ADSS2 -->
+  <rect x="640" y="500" width="100" height="60" rx="10" ry="10" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="690" y="525" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Adss2</text>
+  <text x="690" y="545" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004019)</text>
+  
+  <!-- Final product - AMP -->
+  <circle cx="570" cy="530" r="30" fill="#cfe2ff" stroke="#0d6efd" stroke-width="3"/>
+  <text x="570" y="535" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">AMP</text>
+  
+  <!-- Connection arrows - All using consistent arrowheads and thicker for main pathway -->
+  <line x1="145" y1="150" x2="190" y2="150" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="300" y1="150" x2="325" y2="150" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="175" x2="350" y2="225" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="250" x2="325" y2="250" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="275" x2="350" y2="325" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="350" x2="325" y2="350" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="375" x2="350" y2="425" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="450" x2="325" y2="450" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="375" y1="450" x2="410" y2="170" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="150" x2="545" y2="150" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="570" y1="175" x2="570" y2="225" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="250" x2="545" y2="250" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="570" y1="275" x2="570" y2="325" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="350" x2="545" y2="350" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="570" y1="375" x2="570" y2="425" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="450" x2="545" y2="450" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="595" y1="450" x2="630" y2="240" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="690" y1="240" x2="690" y2="265" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="690" y1="315" x2="690" y2="340" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="690" y1="400" x2="690" y2="425" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="690" y1="475" x2="690" y2="500" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="640" y1="530" x2="600" y2="530" stroke="#005073" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend section -->
+  <rect x="50" y="560" width="700" height="80" rx="10" ry="10" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="70" y="580" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Molecule legend -->
+  <circle cx="80" cy="600" r="15" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="105" y="605" font-family="Arial" font-size="12" text-anchor="start">Metabolic intermediate</text>
+  
+  <!-- Enzyme legend -->
+  <rect x="240" y="585" width="60" height="30" rx="5" ry="5" fill="#ffecb3" stroke="#ffc107" stroke-width="2"/>
+  <text x="310" y="605" font-family="Arial" font-size="12" text-anchor="start">Enzyme</text>
+  
+  <!-- Final product legend -->
+  <circle cx="400" cy="600" r="15" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2"/>
+  <text x="425" y="605" font-family="Arial" font-size="12" text-anchor="start">Final product (AMP)</text>
+  
+  <!-- GO term explanation -->
+  <text x="570" y="605" font-family="Arial" font-size="12" text-anchor="start">(GO:XXXXXXX): Gene Ontology molecular function ID</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#005073"/>
+    </marker>
+  </defs>
+</svg>

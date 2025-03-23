@@ -1,0 +1,122 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9f9" stroke="#666" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="320" rx="250" ry="200" fill="#e6f2ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus</text>
+  
+  <!-- DNA damage site -->
+  <path d="M350,350 C380,330 420,330 450,350" stroke="#ff6666" stroke-width="5" fill="none"/>
+  <path d="M350,350 C380,370 420,370 450,350" stroke="#ff6666" stroke-width="5" fill="none"/>
+  <text x="400" y="400" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">DNA Damage Site</text>
+  
+  <!-- Parp1 at DNA damage site -->
+  <rect x="380" y="320" width="40" height="20" rx="5" ry="5" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="334" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Parp1</text>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="12">DNA Repair (GO:0006281)</text>
+  
+  <!-- Cytosolic proteins -->
+  <!-- Setd7 -->
+  <rect x="120" y="100" width="60" height="30" rx="5" ry="5" fill="#99ccff" stroke="#333" stroke-width="1.5"/>
+  <text x="150" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Setd7</text>
+  <text x="150" y="140" text-anchor="middle" font-family="Arial" font-size="11">Methyltransferase</text>
+  <text x="150" y="155" text-anchor="middle" font-family="Arial" font-size="11">(GO:0016279)</text>
+  
+  <!-- Sgf29 -->
+  <rect x="250" y="100" width="60" height="30" rx="5" ry="5" fill="#99ff99" stroke="#333" stroke-width="1.5"/>
+  <text x="280" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Sgf29</text>
+  <text x="280" y="140" text-anchor="middle" font-family="Arial" font-size="11">Methyl-binding</text>
+  <text x="280" y="155" text-anchor="middle" font-family="Arial" font-size="11">(GO:0140034)</text>
+  
+  <!-- Riox1 -->
+  <rect x="550" y="100" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="1.5"/>
+  <text x="580" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Riox1</text>
+  <text x="580" y="140" text-anchor="middle" font-family="Arial" font-size="11">Demethylase</text>
+  <text x="580" y="155" text-anchor="middle" font-family="Arial" font-size="11">(GO:0016706)</text>
+  
+  <!-- Cgas -->
+  <rect x="400" y="200" width="60" height="30" rx="5" ry="5" fill="#ffff99" stroke="#333" stroke-width="1.5"/>
+  <text x="430" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Cgas</text>
+  <text x="430" y="240" text-anchor="middle" font-family="Arial" font-size="11">PAR-binding</text>
+  <text x="430" y="255" text-anchor="middle" font-family="Arial" font-size="11">(GO:0160004)</text>
+  
+  <!-- Arrows and regulatory relationships -->
+  <!-- Setd7 to methylated target -->
+  <circle cx="200" y="100" r="10" fill="#99ccff" opacity="0.5" stroke="#333" stroke-width="1.5"/>
+  <text x="200" y="85" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">CH3</text>
+  <line x1="180" y1="100" x2="190" y2="100" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Sgf29 recognizes methylation -->
+  <line x1="210" y1="100" x2="240" y2="100" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="225" y="90" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">binds</text>
+  
+  <!-- Sgf29 regulates Cgas -->
+  <line x1="280" y1="130" x2="400" y2="200" stroke="#ff3333" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="330" y="170" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#ff3333">negatively regulates</text>
+  <text x="330" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="#ff3333">(RO:0002630)</text>
+  
+  <!-- Riox1 to demethylated target -->
+  <circle cx="500" y="100" r="10" fill="#ffcc99" opacity="0.5" stroke="#333" stroke-width="1.5"/>
+  <text x="500" y="85" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">demethyl</text>
+  <line x1="550" y1="100" x2="510" y2="100" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Demethylated target affects Cgas -->
+  <line x1="500" y1="110" x2="430" y2="195" stroke="#33cc33" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="480" y="150" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#33cc33">positively regulates</text>
+  <text x="480" y="165" text-anchor="middle" font-family="Arial" font-size="11" fill="#33cc33">(RO:0002629)</text>
+  
+  <!-- Cgas regulates Parp1 -->
+  <line x1="430" y1="230" x2="400" y2="315" stroke="#ff3333" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="450" y="275" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#ff3333">negatively regulates</text>
+  <text x="450" y="290" text-anchor="middle" font-family="Arial" font-size="12" fill="#ff3333">DNA repair</text>
+  <text x="450" y="305" text-anchor="middle" font-family="Arial" font-size="11" fill="#ff3333">(RO:0002630)</text>
+  
+  <!-- PAR polymer from Parp1 activity -->
+  <path d="M420,330 Q450,340 470,320 Q490,300 510,320" stroke="#cc66ff" stroke-width="3" fill="none"/>
+  <text x="510" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">PAR</text>
+  <text x="510" y="345" text-anchor="middle" font-family="Arial" font-size="11">(GO:0003950)</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Regulation of Parp1 activity by Cgas, Setd7 and Riox1 (Mouse)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="700" height="80" rx="5" ry="5" fill="#f9f9f9" stroke="#333" stroke-width="1"/>
+  <text x="60" y="520" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Protein functions -->
+  <rect x="120" y="510" width="20" height="10" fill="#99ccff"/>
+  <text x="145" y="520" font-family="Arial" font-size="12">Methyltransferase (Setd7): adds methyl groups to proteins</text>
+  
+  <rect x="120" y="530" width="20" height="10" fill="#99ff99"/>
+  <text x="145" y="540" font-family="Arial" font-size="12">Methyl-binding (Sgf29): recognizes and binds to methylated proteins</text>
+  
+  <rect x="120" y="550" width="20" height="10" fill="#ffcc99"/>
+  <text x="145" y="560" font-family="Arial" font-size="12">Demethylase (Riox1): removes methyl groups from proteins</text>
+  
+  <rect x="450" y="510" width="20" height="10" fill="#ffff99"/>
+  <text x="475" y="520" font-family="Arial" font-size="12">PAR-binding (Cgas): binds to poly-ADP-ribose modified proteins</text>
+  
+  <rect x="450" y="530" width="20" height="10" fill="#ff9999"/>
+  <text x="475" y="540" font-family="Arial" font-size="12">DNA repair enzyme (Parp1): modifies proteins with poly-ADP-ribose</text>
+  
+  <!-- Regulatory relationships -->
+  <line x1="450" y1="560" x2="480" y2="560" stroke="#33cc33" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="510" y="564" font-family="Arial" font-size="12">Positive regulation</text>
+  
+  <line x1="580" y1="560" x2="610" y2="560" stroke="#ff3333" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="640" y="564" font-family="Arial" font-size="12">Negative regulation</text>
+  
+  <line x1="120" y1="570" x2="150" y2="570" stroke="#333" stroke-width="2"/>
+  <text x="180" y="574" font-family="Arial" font-size="12">Direct interaction</text>
+  
+  <path d="M250,570 Q265,575 280,570" stroke="#cc66ff" stroke-width="2" fill="none"/>
+  <text x="305" y="574" font-family="Arial" font-size="12">PAR modification</text>
+</svg>

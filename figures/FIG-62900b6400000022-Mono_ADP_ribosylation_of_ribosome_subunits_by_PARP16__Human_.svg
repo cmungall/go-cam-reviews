@@ -1,0 +1,113 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f9fa" stroke="#000" stroke-width="2" opacity="0.7"/>
+  <text x="700" y="80" font-family="Arial" font-size="16" font-weight="bold" fill="#555">Human Cell</text>
+  
+  <!-- Cytosolic area -->
+  <rect x="100" y="150" width="600" height="300" rx="20" ry="20" fill="#e6f3ff" stroke="#6495ED" stroke-width="1" opacity="0.3"/>
+  <text x="120" y="180" font-family="Arial" font-size="16" font-weight="bold" fill="#555">Cytosol</text>
+  
+  <!-- Cytosolic Ribosome -->
+  <ellipse cx="400" cy="350" rx="120" ry="70" fill="#ffe9cc" stroke="#ff9933" stroke-width="2"/>
+  <text x="400" y="350" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">Cytosolic Ribosome</text>
+  <text x="400" y="375" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(GO:0022626)</text>
+  
+  <!-- RPS6 - 40S ribosomal subunit -->
+  <circle cx="350" cy="330" r="35" fill="#ffcccc" stroke="#cc0000" stroke-width="2"/>
+  <text x="350" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">RPS6</text>
+  <text x="350" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(P62753)</text>
+  
+  <!-- RPL24 - 60S ribosomal subunit -->
+  <circle cx="450" cy="330" r="35" fill="#ccffcc" stroke="#00cc00" stroke-width="2"/>
+  <text x="450" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">RPL24</text>
+  <text x="450" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(P83731)</text>
+  
+  <!-- PARP16 -->
+  <rect x="250" y="200" width="100" height="60" rx="10" ry="10" fill="#d9d2e9" stroke="#7030a0" stroke-width="2"/>
+  <text x="300" y="230" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">PARP16</text>
+  <text x="300" y="250" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Q8N5Y8)</text>
+  
+  <!-- NMNAT2 -->
+  <rect x="500" y="200" width="100" height="60" rx="10" ry="10" fill="#cfe2f3" stroke="#3d85c6" stroke-width="2"/>
+  <text x="550" y="230" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">NMNAT2</text>
+  <text x="550" y="250" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Q9BZQ4)</text>
+  
+  <!-- NAD+ (not explicitly in source, but needed for clarity) -->
+  <polygon points="380,210 400,190 420,210 400,230" fill="#ffff99" stroke="#d6b656" stroke-width="1.5"/>
+  <text x="400" y="215" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">NAD+</text>
+  <text x="400" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#666" font-style="italic">(Not in source)</text>
+  
+  <!-- Biological process label -->
+  <text x="400" y="450" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">Negative Regulation of Cytoplasmic Translation</text>
+  <text x="400" y="475" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(GO:2000766)</text>
+  
+  <!-- ADP-ribosylation sites (not explicitly in source, but helps illustrate the process) -->
+  <circle cx="365" cy="305" r="8" fill="#ff6666" stroke="none"/>
+  <text x="365" y="285" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">ADP-ribose</text>
+  
+  <circle cx="435" cy="305" r="8" fill="#ff6666" stroke="none"/>
+  <text x="435" y="285" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">ADP-ribose</text>
+  
+  <!-- Interaction arrows -->
+  <!-- NMNAT2 positive regulation of PARP16 -->
+  <path d="M500,230 C450,230 400,230 350,230" stroke="#3d85c6" stroke-width="3" fill="none" marker-end="url(#arrowhead-blue)"/>
+  <text x="425" y="220" font-family="Arial" font-size="14" fill="#3d85c6" font-weight="bold">Positive regulation</text>
+  
+  <!-- PARP16 to RPS6 -->
+  <path d="M300,260 C310,290 330,310 350,310" stroke="#7030a0" stroke-width="3" fill="none" marker-end="url(#arrowhead-purple)"/>
+  <text x="290" y="295" font-family="Arial" font-size="14" fill="#7030a0" font-weight="bold">ADP-ribosylation</text>
+  
+  <!-- PARP16 to RPL24 -->
+  <path d="M300,260 C350,280 400,310 435,310" stroke="#7030a0" stroke-width="3" fill="none" marker-end="url(#arrowhead-purple)"/>
+  
+  <!-- NAD+ to PARP16 -->
+  <path d="M395,220 C370,220 350,220 335,220" stroke="#d6b656" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead-gold)"/>
+  
+  <!-- RPS6 and RPL24 participating in translation -->
+  <path d="M350,365 C350,385 380,405 400,405" stroke="#333" stroke-width="2" stroke-dasharray="3,2" fill="none"/>
+  <path d="M450,365 C450,385 420,405 400,405" stroke="#333" stroke-width="2" stroke-dasharray="3,2" fill="none"/>
+  <text x="400" y="425" font-family="Arial" font-size="14" fill="#333">Cytoplasmic Translation (GO:0002181)</text>
+  
+  <!-- Inhibition to translation -->
+  <path d="M400,385 C400,395 400,405 400,420" stroke="#cc0000" stroke-width="3" fill="none" marker-end="url(#inhibition)"/>
+  
+  <!-- Arrowhead and inhibition markers -->
+  <defs>
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7030a0"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3d85c6"/>
+    </marker>
+    <marker id="arrowhead-gold" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d6b656"/>
+    </marker>
+    <marker id="inhibition" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <line x1="0" y1="0" x2="10" y2="10" stroke="#cc0000" stroke-width="2"/>
+      <line x1="0" y1="10" x2="10" y2="0" stroke="#cc0000" stroke-width="2"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">Mono-ADP-ribosylation of Ribosome Subunits by PARP16</text>
+  <text x="400" y="70" font-family="Arial" font-size="18" text-anchor="middle" fill="#555">Negative Regulation of Cytoplasmic Translation in Human Cells</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="490" width="210" height="100" rx="5" ry="5" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="560" y="510" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  
+  <line x1="560" y1="520" x2="580" y2="520" stroke="#3d85c6" stroke-width="3"/>
+  <polygon points="580,520 585,517 585,523" fill="#3d85c6"/>
+  <text x="590" y="525" font-family="Arial" font-size="12" fill="#333">Positive regulation</text>
+  
+  <line x1="560" y1="540" x2="580" y2="540" stroke="#7030a0" stroke-width="3"/>
+  <polygon points="580,540 585,537 585,543" fill="#7030a0"/>
+  <text x="590" y="545" font-family="Arial" font-size="12" fill="#333">ADP-ribosylation</text>
+  
+  <line x1="560" y1="560" x2="580" y2="560" stroke="#cc0000" stroke-width="3"/>
+  <text x="575" y="565" font-family="Arial" font-size="16" fill="#cc0000">⊣</text>
+  <text x="590" y="565" font-family="Arial" font-size="12" fill="#333">Negative regulation</text>
+  
+  <line x1="560" y1="580" x2="580" y2="580" stroke="#333" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="590" y="585" font-family="Arial" font-size="12" fill="#333">Participation</text>
+</svg>

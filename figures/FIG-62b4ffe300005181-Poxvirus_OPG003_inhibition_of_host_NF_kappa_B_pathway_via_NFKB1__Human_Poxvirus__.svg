@@ -1,0 +1,123 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="320" rx="150" ry="120" fill="#e6f0fa" stroke="#333" stroke-width="2"/>
+  <text x="400" y="320" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Nucleus</text>
+  
+  <!-- Chromatin -->
+  <path d="M340,270 C350,260 370,260 380,270 S400,290 410,280 S430,260 440,270" 
+        stroke="#663366" stroke-width="3" fill="none"/>
+  <path d="M330,300 C345,290 365,290 380,300 S400,320 420,310 S440,290 450,300" 
+        stroke="#663366" stroke-width="3" fill="none"/>
+  <text x="390" y="250" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Chromatin</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="200" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Cytoplasm</text>
+  
+  <!-- IKBKB in cytoplasm -->
+  <rect x="200" y="200" width="80" height="40" rx="10" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="240" y="225" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">IKBKB</text>
+  
+  <!-- NFKBIA in cytoplasm -->
+  <rect x="350" y="200" width="80" height="40" rx="10" fill="#ccffcc" stroke="#333" stroke-width="1.5"/>
+  <text x="390" y="225" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">NFKBIA</text>
+  
+  <!-- RELA in cytoplasm initially -->
+  <rect x="300" y="150" width="80" height="40" rx="10" fill="#ccccff" stroke="#333" stroke-width="1.5"/>
+  <text x="340" y="175" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">RELA</text>
+  
+  <!-- NFKB1 in cytoplasm initially -->
+  <rect x="420" y="150" width="80" height="40" rx="10" fill="#ffccff" stroke="#333" stroke-width="1.5"/>
+  <text x="460" y="175" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">NFKB1</text>
+  
+  <!-- Arrow from IKBKB to NFKBIA (IKK phosphorylates IκBα) -->
+  <path d="M280,220 L350,220" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="315" y="210" font-family="Arial" font-size="12" text-anchor="middle">phosphorylates</text>
+  
+  <!-- Arrow from NFKBIA to RELA/NFKB1 (inhibition) -->
+  <path d="M390,200 L340,190" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <path d="M390,200 L450,190" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="405" y="180" font-family="Arial" font-size="12" text-anchor="middle">sequesters</text>
+  
+  <!-- RELA and NFKB1 in nucleus (after activation) -->
+  <rect x="330" y="350" width="80" height="40" rx="10" fill="#ccccff" stroke="#333" stroke-width="1.5"/>
+  <text x="370" y="375" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">RELA</text>
+  
+  <rect x="450" y="350" width="80" height="40" rx="10" fill="#ffccff" stroke="#333" stroke-width="1.5"/>
+  <text x="490" y="375" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">NFKB1</text>
+  
+  <!-- Nuclear translocation arrows -->
+  <path d="M340,190 C320,230 320,280 330,350" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M460,190 C480,240 480,290 460,350" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="280" y="270" font-family="Arial" font-size="12" text-anchor="middle">nuclear</text>
+  <text x="280" y="285" font-family="Arial" font-size="12" text-anchor="middle">translocation</text>
+  
+  <!-- Binding to Chromatin -->
+  <path d="M370,350 L370,300" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M490,350 L430,300" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="390" y="330" font-family="Arial" font-size="12" text-anchor="middle">DNA binding</text>
+  
+  <!-- Viral component (G3R) -->
+  <polygon points="650,250 680,270 650,290 620,270" fill="#ff9966" stroke="#333" stroke-width="2"/>
+  <text x="650" y="275" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">G3R</text>
+  <text x="650" y="245" font-family="Arial" font-size="12" text-anchor="middle">Poxvirus protein</text>
+  
+  <!-- Arrow showing G3R entry into nucleus -->
+  <path d="M650,290 C600,320 550,330 500,350" stroke="#f00" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowheadRed)"/>
+  <text x="590" y="315" font-family="Arial" font-size="12" fill="#f00" text-anchor="middle">inhibits</text>
+  
+  <!-- Process Labels -->
+  <rect x="150" y="450" width="220" height="30" rx="5" fill="#ffffcc" stroke="#333" stroke-width="1"/>
+  <text x="260" y="470" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Canonical NF-κB Signaling</text>
+  
+  <rect x="430" y="450" width="220" height="30" rx="5" fill="#ffccff" stroke="#333" stroke-width="1"/>
+  <text x="540" y="470" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Non-canonical NF-κB Signaling</text>
+  
+  <path d="M370,375 L260,450" stroke="#333" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M490,375 L540,450" stroke="#333" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+    <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f00"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Poxvirus Inhibition of Host NF-κB Pathway</text>
+  <text x="400" y="65" font-family="Arial" font-size="18" text-anchor="middle">G3R-mediated suppression of NFKB1 activity</text>
+  
+  <!-- Legend -->
+  <rect x="60" y="510" width="680" height="75" rx="5" fill="#f9f9f9" stroke="#333" stroke-width="1"/>
+  <text x="400" y="530" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">LEGEND</text>
+  
+  <!-- Legend items -->
+  <rect x="80" y="545" width="24" height="24" fill="#ffcccc" stroke="#333" stroke-width="1"/>
+  <text x="114" y="562" font-family="Arial" font-size="13" text-anchor="start">Kinase (IKBKB)</text>
+  
+  <rect x="210" y="545" width="24" height="24" fill="#ccffcc" stroke="#333" stroke-width="1"/>
+  <text x="244" y="562" font-family="Arial" font-size="13" text-anchor="start">Inhibitor (NFKBIA)</text>
+  
+  <rect x="370" y="545" width="24" height="24" fill="#ccccff" stroke="#333" stroke-width="1"/>
+  <text x="404" y="562" font-family="Arial" font-size="13" text-anchor="start">RELA</text>
+  
+  <rect x="470" y="545" width="24" height="24" fill="#ffccff" stroke="#333" stroke-width="1"/>
+  <text x="504" y="562" font-family="Arial" font-size="13" text-anchor="start">NFKB1</text>
+  
+  <polygon points="570,545 594,545 582,569" fill="#ff9966" stroke="#333" stroke-width="1"/>
+  <text x="604" y="562" font-family="Arial" font-size="13" text-anchor="start">Viral protein</text>
+  
+  <line x1="80" y1="580" x2="110" y2="580" stroke="#000" stroke-width="2"/>
+  <text x="140" y="584" font-family="Arial" font-size="13" text-anchor="start">Activation</text>
+  
+  <line x1="210" y1="580" x2="240" y2="580" stroke="#000" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="270" y="584" font-family="Arial" font-size="13" text-anchor="start">Inhibition</text>
+  
+  <line x1="370" y1="580" x2="400" y2="580" stroke="#f00" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="430" y="584" font-family="Arial" font-size="13" text-anchor="start">Viral inhibition</text>
+</svg>

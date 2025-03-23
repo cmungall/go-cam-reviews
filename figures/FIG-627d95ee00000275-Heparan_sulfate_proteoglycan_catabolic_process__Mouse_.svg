@@ -1,0 +1,135 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and title -->
+  <rect width="800" height="600" fill="white"/>
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Heparan Sulfate Proteoglycan Catabolic Process (Mouse)</text>
+  
+  <!-- Cell Plasma Membrane -->
+  <rect x="100" y="60" width="600" height="30" fill="#D4F0F0" stroke="black" stroke-width="2"/>
+  <text x="400" y="80" font-family="Arial" font-size="14" text-anchor="middle">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Endocytosis and initial processing -->
+  <circle cx="250" cy="75" r="15" fill="#FFA07A" stroke="black"/>
+  <text x="250" y="79" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Sdc1</text>
+  <text x="250" y="100" font-family="Arial" font-size="11" text-anchor="middle">Cargo receptor activity</text>
+  
+  <circle cx="350" cy="75" r="15" fill="#87CEEB" stroke="black"/>
+  <text x="350" y="79" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Hpse</text>
+  <text x="350" y="100" font-family="Arial" font-size="11" text-anchor="middle">Cargo receptor ligand</text>
+  
+  <!-- Endocytosis arrow -->
+  <path d="M 300 90 L 300 130" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="320" y="120" font-family="Arial" font-size="12">Endocytosis</text>
+  
+  <!-- Lysosomes -->
+  <rect x="100" y="150" width="600" height="400" rx="20" ry="20" fill="#FFECE6" stroke="black" stroke-width="2"/>
+  <text x="400" y="170" font-family="Arial" font-size="14" text-anchor="middle">Lysosomal Lumen (GO:0043202)</text>
+  
+  <!-- Pathway elements - Initial cleavage -->
+  <circle cx="300" cy="200" r="20" fill="#87CEEB" stroke="black"/>
+  <text x="300" y="204" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Hpse</text>
+  <text x="300" y="230" font-family="Arial" font-size="12" text-anchor="middle">Heparanase activity</text>
+  <text x="300" y="245" font-family="Arial" font-size="10" text-anchor="middle">(GO:0030305)</text>
+  
+  <circle cx="180" cy="200" r="20" fill="#D3D3D3" stroke="black"/>
+  <text x="180" y="204" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Ctsl</text>
+  <text x="180" y="230" font-family="Arial" font-size="12" text-anchor="middle">Endopeptidase</text>
+  <text x="180" y="245" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004175)</text>
+  
+  <path d="M 180 220 L 280 220" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="230" y="215" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  
+  <!-- Sequential enzymatic steps in the catabolic process -->
+  <!-- 1st enzyme -->
+  <circle cx="300" cy="280" r="20" fill="#98FB98" stroke="black"/>
+  <text x="300" y="284" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Idua</text>
+  <text x="300" y="310" font-family="Arial" font-size="12" text-anchor="middle">L-iduronidase</text>
+  <text x="300" y="325" font-family="Arial" font-size="10" text-anchor="middle">(GO:0003940)</text>
+  
+  <path d="M 300 220 L 300 260" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 2nd enzyme -->
+  <circle cx="300" cy="360" r="20" fill="#FFD700" stroke="black"/>
+  <text x="300" y="364" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Sgsh</text>
+  <text x="300" y="390" font-family="Arial" font-size="12" text-anchor="middle">N-sulfoglucosamine</text>
+  <text x="300" y="405" font-family="Arial" font-size="12" text-anchor="middle">sulfohydrolase</text>
+  <text x="300" y="420" font-family="Arial" font-size="10" text-anchor="middle">(GO:0016250)</text>
+  
+  <path d="M 300 300 L 300 340" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 3rd enzyme -->
+  <circle cx="420" cy="360" r="20" fill="#FF7F50" stroke="black"/>
+  <text x="420" y="364" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Hgsnat</text>
+  <text x="420" y="390" font-family="Arial" font-size="12" text-anchor="middle">N-acetyltransferase</text>
+  <text x="420" y="405" font-family="Arial" font-size="10" text-anchor="middle">(GO:0015019)</text>
+  
+  <path d="M 320 360 L 400 360" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 4th enzyme -->
+  <circle cx="530" cy="280" r="20" fill="#BA55D3" stroke="black"/>
+  <text x="530" y="284" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Naglu</text>
+  <text x="530" y="310" font-family="Arial" font-size="12" text-anchor="middle">α-N-acetyl-</text>
+  <text x="530" y="325" font-family="Arial" font-size="12" text-anchor="middle">glucosaminidase</text>
+  <text x="530" y="340" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004561)</text>
+  
+  <path d="M 440 360 L 530 300" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 5th enzyme -->
+  <circle cx="420" cy="200" r="20" fill="#6495ED" stroke="black"/>
+  <text x="420" y="204" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Ids</text>
+  <text x="420" y="230" font-family="Arial" font-size="12" text-anchor="middle">Iduronate-2-sulfatase</text>
+  <text x="420" y="245" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004423)</text>
+  
+  <path d="M 530 260 L 440 220" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 6th enzyme - Second Idua application -->
+  <circle cx="300" cy="440" r="20" fill="#98FB98" stroke="black"/>
+  <text x="300" y="444" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Idua</text>
+  <text x="300" y="470" font-family="Arial" font-size="12" text-anchor="middle">L-iduronidase</text>
+  <text x="300" y="485" font-family="Arial" font-size="10" text-anchor="middle">(GO:0003940)</text>
+  
+  <path d="M 420 220 L 320 440" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 7th enzyme -->
+  <circle cx="420" cy="440" r="20" fill="#F08080" stroke="black"/>
+  <text x="420" y="444" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Gusb</text>
+  <text x="420" y="470" font-family="Arial" font-size="12" text-anchor="middle">β-glucuronidase</text>
+  <text x="420" y="485" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004566)</text>
+  
+  <path d="M 320 440 L 400 440" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 8th enzyme -->
+  <circle cx="530" cy="440" r="20" fill="#20B2AA" stroke="black"/>
+  <text x="530" y="444" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Glb1</text>
+  <text x="530" y="470" font-family="Arial" font-size="12" text-anchor="middle">β-galactosidase</text>
+  <text x="530" y="485" font-family="Arial" font-size="10" text-anchor="middle">(GO:0004565)</text>
+  
+  <path d="M 440 440 L 510 440" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Process label -->
+  <text x="400" y="520" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Heparan sulfate proteoglycan catabolic process (GO:0030200)</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="480" width="150" height="115" fill="white" stroke="black"/>
+  <text x="675" y="495" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <circle cx="620" cy="510" r="5" fill="#FFA07A"/>
+  <text x="680" y="514" font-family="Arial" font-size="10" text-anchor="middle">Receptor</text>
+  
+  <circle cx="620" cy="530" r="5" fill="#87CEEB"/>
+  <text x="680" y="534" font-family="Arial" font-size="10" text-anchor="middle">Enzyme (initial)</text>
+  
+  <circle cx="620" cy="550" r="5" fill="#D3D3D3"/>
+  <text x="680" y="554" font-family="Arial" font-size="10" text-anchor="middle">Activator</text>
+  
+  <circle cx="620" cy="570" r="5" fill="#98FB98"/>
+  <text x="680" y="574" font-family="Arial" font-size="10" text-anchor="middle">Catabolic enzyme</text>
+  
+  <text x="675" y="590" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Mouse genes shown</text>
+</svg>

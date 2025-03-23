@@ -1,0 +1,112 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" stroke="#333" stroke-width="3" fill="#f8f8f8" />
+  
+  <!-- Plasma membrane -->
+  <ellipse cx="400" cy="300" rx="320" ry="220" stroke="#555" stroke-width="5" fill="none" stroke-dasharray="10,5" />
+  <text x="120" y="180" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="350" y="160" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Extracellular space label -->
+  <text x="50" y="80" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Virion -->
+  <circle cx="150" cy="100" r="20" fill="#ff9999" stroke="#333" stroke-width="2" />
+  <text x="150" y="105" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Virion</text>
+  
+  <!-- Pathway components -->
+  <!-- SIGLEC1 -->
+  <rect x="150" cy="240" y="210" width="80" height="30" rx="15" fill="#66aaff" stroke="#333" stroke-width="2" />
+  <text x="190" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white">SIGLEC1</text>
+  
+  <!-- TYROBP -->
+  <rect x="300" y="210" width="80" height="30" rx="15" fill="#66aaff" stroke="#333" stroke-width="2" />
+  <text x="340" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white">TYROBP</text>
+  
+  <!-- PTPN11 -->
+  <rect x="300" y="280" width="80" height="30" rx="15" fill="#99cc66" stroke="#333" stroke-width="2" />
+  <text x="340" y="300" font-family="Arial" font-size="14" text-anchor="middle" fill="white">PTPN11</text>
+  
+  <!-- TRIM27 -->
+  <rect x="300" y="350" width="80" height="30" rx="15" fill="#99cc66" stroke="#333" stroke-width="2" />
+  <text x="340" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="white">TRIM27</text>
+  
+  <!-- TBK1 -->
+  <rect x="500" y="350" width="80" height="30" rx="15" fill="#99cc66" stroke="#333" stroke-width="2" />
+  <text x="540" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="white">TBK1</text>
+  
+  <!-- Type I Interferon Production - inhibited -->
+  <rect x="500" y="430" width="200" height="40" rx="5" fill="#ffcc66" stroke="#333" stroke-width="2" />
+  <text x="600" y="455" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Type I Interferon Production</text>
+  
+  <!-- Connections/Arrows - BOLDER -->
+  <!-- Virion to SIGLEC1 -->
+  <line x1="160" y1="120" x2="180" y2="210" stroke="#333" stroke-width="3" marker-end="url(#arrowhead-activate)" />
+  <text x="155" y="170" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Binding</text>
+  
+  <!-- SIGLEC1 to TYROBP -->
+  <line x1="230" y1="225" x2="300" y2="225" stroke="#1a75ff" stroke-width="3" marker-end="url(#arrowhead-activate)" />
+  <text x="255" y="215" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Activates</text>
+  
+  <!-- TYROBP to PTPN11 -->
+  <line x1="340" y1="240" x2="340" y2="280" stroke="#1a75ff" stroke-width="3" marker-end="url(#arrowhead-activate)" />
+  <text x="350" y="260" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Activates</text>
+  
+  <!-- PTPN11 to TRIM27 -->
+  <line x1="340" y1="310" x2="340" y2="350" stroke="#1a75ff" stroke-width="3" marker-end="url(#arrowhead-activate)" />
+  <text x="350" y="330" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Activates</text>
+  
+  <!-- TRIM27 to TBK1 -->
+  <line x1="380" y1="365" x2="500" y2="365" stroke="#333" stroke-width="3" marker-end="url(#arrowhead-activate)" />
+  <text x="430" y="355" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Ubiquitinates</text>
+  
+  <!-- TBK1 to Process -->
+  <line x1="540" y1="380" x2="540" y2="430" stroke="#cc0000" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowhead-inhibit)" />
+  <text x="550" y="410" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Inhibits</text>
+  
+  <!-- Ubiquitin symbol near TRIM27 action -->
+  <circle cx="450" y="380" r="10" fill="#ff6600" stroke="#333" stroke-width="1" />
+  <text x="450" y="384" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Ub</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <!-- Activation arrow -->
+    <marker id="arrowhead-activate" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a75ff" />
+    </marker>
+    <!-- Inhibition arrow -->
+    <marker id="arrowhead-inhibit" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="80" width="180" height="180" rx="5" fill="white" stroke="#333" stroke-width="1" />
+  <text x="690" y="100" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">Legend</text>
+  
+  <rect x="610" y="110" width="20" height="15" rx="7.5" fill="#66aaff" stroke="#333" stroke-width="1" />
+  <text x="640" y="122" font-family="Arial" font-size="12" fill="#333">Membrane proteins</text>
+  
+  <rect x="610" y="135" width="20" height="15" rx="7.5" fill="#99cc66" stroke="#333" stroke-width="1" />
+  <text x="650" y="147" font-family="Arial" font-size="12" fill="#333">Cytoplasmic proteins</text>
+  
+  <circle cx="620" y="160" r="10" fill="#ff9999" stroke="#333" stroke-width="1" />
+  <text x="645" y="165" font-family="Arial" font-size="12" fill="#333">Virion</text>
+  
+  <circle cx="620" y="180" r="7" fill="#ff6600" stroke="#333" stroke-width="1" />
+  <text x="620" y="183" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Ub</text>
+  <text x="645" y="183" font-family="Arial" font-size="12" fill="#333">Ubiquitin</text>
+  
+  <!-- Added pathway symbols to legend with colored arrows -->
+  <line x1="610" y1="200" x2="630" y2="200" stroke="#1a75ff" stroke-width="3" marker-end="url(#arrowhead-activate)" />
+  <text x="655" y="203" font-family="Arial" font-size="12" fill="#333">Activates</text>
+  
+  <line x1="610" y1="220" x2="630" y2="220" stroke="#cc0000" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowhead-inhibit)" />
+  <text x="655" y="223" font-family="Arial" font-size="12" fill="#333">Inhibits</text>
+  
+  <!-- Main title -->
+  <text x="400" y="40" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">TRIM27-mediated Ubiquitination and Degradation of TBK1</text>
+  <text x="400" y="60" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Regulation of Type I Interferon Production</text>
+</svg>

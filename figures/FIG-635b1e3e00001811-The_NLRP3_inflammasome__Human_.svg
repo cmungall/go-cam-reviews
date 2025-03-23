@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="100" width="700" height="400" rx="20" ry="20" fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  
+  <!-- Labels for cellular compartments -->
+  <text x="400" y="80" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">NLRP3 Inflammasome (Human)</text>
+  <text x="80" y="130" font-family="Arial" font-size="16" text-anchor="start" font-weight="bold">Extracellular space</text>
+  <text x="85" y="320" font-family="Arial" font-size="16" text-anchor="start" font-weight="bold">Cytosol</text>
+  <text x="420" y="250" font-family="Arial" font-size="16" text-anchor="start" font-weight="bold">Microtubule Organizing Center</text>
+  
+  <!-- Cell membrane -->
+  <path d="M50,150 H750" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- MTOC (Microtubule Organizing Center) -->
+  <ellipse cx="400" cy="230" rx="90" ry="45" fill="#e6e6fa" stroke="#6666cc" stroke-width="1.5"/>
+  
+  <!-- NEK7 in MTOC -->
+  <circle cx="420" cy="230" r="25" fill="#9999ff" stroke="#6666cc" stroke-width="1.5"/>
+  <text x="420" y="235" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">NEK7</text>
+  
+  <!-- Initial NLRP3 activation at membrane -->
+  <circle cx="200" cy="170" r="25" fill="#ff9999" stroke="#cc6666" stroke-width="1.5"/>
+  <text x="200" y="173" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">NLRP3</text>
+  <text x="200" y="188" font-family="Arial" font-size="11" text-anchor="middle">sensor</text>
+  
+  <!-- NLRP3 at MTOC -->
+  <circle cx="340" cy="230" r="25" fill="#ff9999" stroke="#cc6666" stroke-width="1.5"/>
+  <text x="340" y="235" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">NLRP3</text>
+  
+  <!-- NLRP3 in cytosol -->
+  <circle cx="280" cy="300" r="25" fill="#ff9999" stroke="#cc6666" stroke-width="1.5"/>
+  <text x="280" y="303" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">NLRP3</text>
+  <text x="280" y="318" font-family="Arial" font-size="11" text-anchor="middle">adaptor</text>
+  
+  <!-- NLRP3 inflammasome complex -->
+  <circle cx="440" cy="300" r="40" fill="#ffcccc" stroke="#cc6666" stroke-width="2" opacity="0.8"/>
+  <circle cx="440" cy="300" r="25" fill="#ff9999" stroke="#cc6666" stroke-width="1.5"/>
+  <text x="440" y="305" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">NLRP3</text>
+  
+  <!-- Caspase-1 -->
+  <rect x="530" y="280" width="60" height="35" rx="5" ry="5" fill="#99ccff" stroke="#6699cc" stroke-width="1.5"/>
+  <text x="560" y="303" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">CASP1</text>
+  
+  <!-- Pro-IL-1β and Pro-IL-18 -->
+  <rect x="400" y="380" width="60" height="35" rx="5" ry="5" fill="#ccffcc" stroke="#66cc66" stroke-width="1.5"/>
+  <text x="430" y="403" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">pro-IL1β</text>
+  <rect x="490" y="380" width="60" height="35" rx="5" ry="5" fill="#ccffcc" stroke="#66cc66" stroke-width="1.5"/>
+  <text x="520" y="403" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">pro-IL18</text>
+  
+  <!-- GSDMD -->
+  <rect x="600" y="150" width="60" height="35" rx="5" ry="5" fill="#ffcc99" stroke="#cc9966" stroke-width="1.5"/>
+  <text x="630" y="173" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">GSDMD</text>
+  
+  <!-- GSDMD pore -->
+  <path d="M590,150 Q630,135 670,150" stroke="#cc9966" stroke-width="3" fill="none"/>
+  <path d="M590,150 Q630,165 670,150" stroke="#cc9966" stroke-width="3" fill="none"/>
+  
+  <!-- Mature IL-1β and IL-18 -->
+  <rect x="480" y="80" width="60" height="35" rx="15" ry="15" fill="#99ff99" stroke="#66cc66" stroke-width="1.5"/>
+  <text x="510" y="103" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">IL-1β</text>
+  <rect x="600" y="80" width="60" height="35" rx="15" ry="15" fill="#99ff99" stroke="#66cc66" stroke-width="1.5"/>
+  <text x="630" y="103" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">IL-18</text>
+  
+  <!-- Arrows for pathway -->
+  <!-- NEK7 to NLRP3 -->
+  <path d="M395,230 L370,230" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- NLRP3 membrane to MTOC -->
+  <path d="M225,180 C255,195 290,210 315,230" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- NLRP3 MTOC to cytosol -->
+  <path d="M330,250 C310,265 290,285 290,285" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- NLRP3 cytosol to inflammasome -->
+  <path d="M305,300 L395,300" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Inflammasome to Caspase-1 -->
+  <path d="M480,300 L525,297" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Caspase-1 to pro-IL1β/IL18 -->
+  <path d="M560,315 C530,345 480,360 440,380" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M560,315 C550,345 530,360 520,377" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Caspase-1 to GSDMD -->
+  <path d="M560,280 C575,240 595,200 620,185" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- GSDMD to pore -->
+  <path d="M630,150 L630,150" stroke="#000" stroke-width="1.5" fill="none"/>
+  
+  <!-- Pro-cytokines to mature cytokines -->
+  <path d="M430,380 C430,320 470,180 510,115" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M520,380 C520,320 580,180 630,115" stroke="#000" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Define arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="700" height="70" rx="5" ry="5" fill="#fff" stroke="#333" stroke-width="1.5"/>
+  <text x="60" y="540" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <!-- Legend items -->
+  <circle cx="80" cy="560" r="10" fill="#ff9999" stroke="#cc6666" stroke-width="1.5"/>
+  <text x="98" y="565" font-family="Arial" font-size="13" font-weight="bold">NLRP3</text>
+  <text x="140" y="565" font-family="Arial" font-size="13">(Q96P20)</text>
+  
+  <circle cx="200" cy="560" r="10" fill="#9999ff" stroke="#6666cc" stroke-width="1.5"/>
+  <text x="218" y="565" font-family="Arial" font-size="13" font-weight="bold">NEK7</text>
+  <text x="255" y="565" font-family="Arial" font-size="13">(Q8TDX7)</text>
+  
+  <rect x="300" y="553" width="20" height="15" rx="3" ry="3" fill="#99ccff" stroke="#6699cc" stroke-width="1.5"/>
+  <text x="328" y="565" font-family="Arial" font-size="13" font-weight="bold">CASP1</text>
+  <text x="370" y="565" font-family="Arial" font-size="13">(P29466)</text>
+  
+  <rect x="420" y="553" width="20" height="15" rx="3" ry="3" fill="#ffcc99" stroke="#cc9966" stroke-width="1.5"/>
+  <text x="448" y="565" font-family="Arial" font-size="13" font-weight="bold">GSDMD</text>
+  <text x="498" y="565" font-family="Arial" font-size="13">(P57764)</text>
+  
+  <rect x="545" y="553" width="20" height="15" rx="5" ry="5" fill="#99ff99" stroke="#66cc66" stroke-width="1.5"/>
+  <text x="573" y="565" font-family="Arial" font-size="13" font-weight="bold">IL-1β</text>
+  <text x="598" y="565" font-family="Arial" font-size="13">(P01584)</text>
+  
+  <rect x="630" y="553" width="20" height="15" rx="5" ry="5" fill="#99ff99" stroke="#66cc66" stroke-width="1.5"/>
+  <text x="658" y="565" font-family="Arial" font-size="13" font-weight="bold">IL-18</text>
+  <text x="690" y="565" font-family="Arial" font-size="13">(Q14116)</text>
+</svg>

@@ -1,0 +1,125 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">'de novo' UMP Biosynthetic Process (Mouse)</text>
+  
+  <!-- Substrate/Product Molecules and pathway flow -->
+  <rect x="100" y="150" width="120" height="40" rx="5" fill="#e6f2ff" stroke="#000000" stroke-width="1" />
+  <text x="160" y="175" font-family="Arial" font-size="14" text-anchor="middle">Carbamoyl-phosphate</text>
+  
+  <line x1="160" y1="190" x2="160" y2="230" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <rect x="100" y="230" width="120" height="40" rx="5" fill="#e6f2ff" stroke="#000000" stroke-width="1" />
+  <text x="160" y="255" font-family="Arial" font-size="14" text-anchor="middle">Carbamoyl-aspartate</text>
+  
+  <line x1="160" y1="270" x2="160" y2="310" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <rect x="100" y="310" width="120" height="40" rx="5" fill="#e6f2ff" stroke="#000000" stroke-width="1" />
+  <text x="160" y="335" font-family="Arial" font-size="14" text-anchor="middle">L-dihydroorotate</text>
+  
+  <line x1="220" y1="330" x2="400" y2="170" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)" stroke-dasharray="4,2" />
+  
+  <rect x="400" y="150" width="120" height="40" rx="5" fill="#e6f2ff" stroke="#000000" stroke-width="1" />
+  <text x="460" y="175" font-family="Arial" font-size="14" text-anchor="middle">Orotate</text>
+  
+  <line x1="460" y1="190" x2="460" y2="230" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <rect x="400" y="230" width="120" height="40" rx="5" fill="#e6f2ff" stroke="#000000" stroke-width="1" />
+  <text x="460" y="255" font-family="Arial" font-size="14" text-anchor="middle">Orotidine-5'-phosphate</text>
+  
+  <line x1="460" y1="270" x2="460" y2="310" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <rect x="400" y="310" width="120" height="40" rx="5" fill="#e6f2ff" stroke="#000000" stroke-width="1" />
+  <text x="460" y="335" font-family="Arial" font-size="14" text-anchor="middle">UMP</text>
+  
+  <!-- Enzymes -->
+  <rect x="280" y="120" width="60" height="180" rx="10" fill="#ffd9b3" stroke="#000000" stroke-width="2" />
+  <text x="310" y="150" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CAD</text>
+  <text x="310" y="170" font-family="Arial" font-size="12" text-anchor="middle">MGI:1916969</text>
+  
+  <text x="310" y="200" font-family="Arial" font-size="12" text-anchor="middle">1. CPS</text>
+  <text x="310" y="215" font-family="Arial" font-size="11" text-anchor="middle">GO:0004088</text>
+  
+  <text x="310" y="240" font-family="Arial" font-size="12" text-anchor="middle">2. ATC</text>
+  <text x="310" y="255" font-family="Arial" font-size="11" text-anchor="middle">GO:0004070</text>
+  
+  <text x="310" y="280" font-family="Arial" font-size="12" text-anchor="middle">3. DHO</text>
+  <text x="310" y="295" font-family="Arial" font-size="11" text-anchor="middle">GO:0004151</text>
+  
+  <rect x="280" y="340" width="60" height="60" rx="10" fill="#b3e6cc" stroke="#000000" stroke-width="2" />
+  <text x="310" y="365" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">DHODH</text>
+  <text x="310" y="380" font-family="Arial" font-size="11" text-anchor="middle">MGI:1928378</text>
+  <text x="310" y="395" font-family="Arial" font-size="11" text-anchor="middle">GO:0004152</text>
+  
+  <rect x="580" y="180" width="60" height="100" rx="10" fill="#d9b3ff" stroke="#000000" stroke-width="2" />
+  <text x="610" y="210" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">UMPS</text>
+  <text x="610" y="225" font-family="Arial" font-size="11" text-anchor="middle">MGI:1298388</text>
+  
+  <text x="610" y="245" font-family="Arial" font-size="12" text-anchor="middle">1. OPRT</text>
+  <text x="610" y="260" font-family="Arial" font-size="11" text-anchor="middle">GO:0004588</text>
+  
+  <text x="610" y="280" font-family="Arial" font-size="12" text-anchor="middle">2. ODC</text>
+  <text x="610" y="295" font-family="Arial" font-size="11" text-anchor="middle">GO:0004590</text>
+  
+  <!-- Reaction Arrows -->
+  <line x1="220" y1="170" x2="280" y2="170" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="220" y1="250" x2="280" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="220" y1="330" x2="280" y2="330" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <line x1="340" y1="170" x2="400" y2="170" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="340" y1="250" x2="400" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="340" y1="330" x2="400" y2="330" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <line x1="520" y1="170" x2="580" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="520" y1="250" x2="580" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Causal Arrows -->
+  <path d="M 310 220 C 330 220, 330 235, 310 235" fill="none" stroke="#ff0000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <path d="M 310 260 C 330 260, 330 275, 310 275" fill="none" stroke="#ff0000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <path d="M 310 300 C 350 300, 350 350, 310 350" fill="none" stroke="#ff0000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <path d="M 310 400 C 450 400, 450 220, 580 220" fill="none" stroke="#ff0000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <path d="M 610 265 C 635 265, 635 275, 610 275" fill="none" stroke="#ff0000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Cell Compartment -->
+  <rect x="80" y="100" width="640" height="350" rx="20" fill="none" stroke="#cccccc" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="100" y="125" font-family="Arial" font-size="16" fill="#666666">Cytoplasm</text>
+  
+  <!-- Mitochondrial Membrane -->
+  <ellipse cx="310" cy="370" rx="100" ry="50" fill="none" stroke="#999999" stroke-width="2" stroke-dasharray="5,3" />
+  <text x="310" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="#666666">Mitochondrion</text>
+  
+  <!-- Process Label -->
+  <rect x="620" y="410" width="100" height="30" rx="5" fill="#ffffcc" stroke="#000000" stroke-width="1" />
+  <text x="670" y="430" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">GO:0044205</text>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="100" y="470" width="600" height="105" rx="5" fill="#f9f9f9" stroke="#666666" stroke-width="1" />
+  <text x="120" y="495" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <rect x="120" y="505" width="20" height="20" fill="#ffd9b3" stroke="#000000" stroke-width="1" />
+  <text x="150" y="520" font-family="Arial" font-size="14">CAD - Trifunctional protein</text>
+  
+  <rect x="120" y="530" width="20" height="20" fill="#b3e6cc" stroke="#000000" stroke-width="1" />
+  <text x="150" y="545" font-family="Arial" font-size="14">DHODH - Dihydroorotate dehydrogenase</text>
+  
+  <rect x="120" y="555" width="20" height="20" fill="#d9b3ff" stroke="#000000" stroke-width="1" />
+  <text x="150" y="570" font-family="Arial" font-size="14">UMPS - Bifunctional enzyme</text>
+  
+  <line x1="350" y1="515" x2="380" y2="515" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="410" y="520" font-family="Arial" font-size="14">Metabolic reaction</text>
+  
+  <line x1="350" y1="540" x2="380" y2="540" stroke="#ff0000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="410" y="545" font-family="Arial" font-size="14">Causal relationship (RO:0002413)</text>
+  
+  <rect x="350" y="555" width="20" height="20" fill="#e6f2ff" stroke="#000000" stroke-width="1" />
+  <text x="410" y="570" font-family="Arial" font-size="14">Metabolites</text>
+</svg>

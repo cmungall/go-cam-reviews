@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cell compartments -->
+  <rect x="50" y="140" width="570" height="300" rx="20" fill="#eef7ff" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="150" y="160" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Golgi apparatus -->
+  <g id="golgi">
+    <path d="M550,250 C600,230 630,260 620,290 C610,320 580,330 550,320 C520,310 510,280 530,260 Z" fill="#ffccaa" stroke="#333" stroke-width="2"/>
+    <path d="M540,260 C590,240 620,270 610,300 C600,330 570,340 540,330 C510,320 500,290 520,270 Z" fill="#ffccaa" stroke="#333" stroke-width="2"/>
+    <path d="M530,270 C580,250 610,280 600,310 C590,340 560,350 530,340 C500,330 490,300 510,280 Z" fill="#ffccaa" stroke="#333" stroke-width="2"/>
+    <text x="570" y="290" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Golgi apparatus</text>
+  </g>
+  
+  <!-- Proteins and interactions -->
+  
+  <!-- SKP1 -->
+  <g id="skp1">
+    <rect x="100" y="220" width="120" height="60" rx="10" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+    <text x="160" y="245" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">SKP1</text>
+    <text x="160" y="265" font-family="Arial" font-size="12" text-anchor="middle">Molecular function</text>
+    <text x="160" y="280" font-family="Arial" font-size="12" text-anchor="middle">activator</text>
+  </g>
+  
+  <!-- FBXO45 -->
+  <g id="fbxo45">
+    <rect x="300" y="220" width="120" height="60" rx="10" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+    <text x="360" y="245" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">FBXO45</text>
+    <text x="360" y="265" font-family="Arial" font-size="12" text-anchor="middle">Ubiquitin-like ligase</text>
+    <text x="360" y="280" font-family="Arial" font-size="12" text-anchor="middle">substrate adaptor</text>
+  </g>
+  
+  <!-- MYCBP2 -->
+  <g id="mycbp2">
+    <rect x="500" y="220" width="120" height="60" rx="10" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+    <text x="560" y="245" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">MYCBP2</text>
+    <text x="560" y="265" font-family="Arial" font-size="12" text-anchor="middle">Ubiquitin protein</text>
+    <text x="560" y="280" font-family="Arial" font-size="12" text-anchor="middle">ligase</text>
+  </g>
+  
+  <!-- NMNAT2 -->
+  <g id="nmnat2">
+    <rect x="570" y="320" width="120" height="60" rx="10" fill="#ffb3b3" stroke="#333" stroke-width="2"/>
+    <text x="630" y="345" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">NMNAT2</text>
+    <text x="630" y="365" font-family="Arial" font-size="12" text-anchor="middle">Nicotinate-nucleotide</text>
+    <text x="630" y="380" font-family="Arial" font-size="12" text-anchor="middle">adenylyltransferase</text>
+  </g>
+  
+  <!-- Arrows for interactions -->
+  <!-- SKP1 to FBXO45 -->
+  <path d="M220,250 L300,250" stroke="#00aa00" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <text x="260" y="240" font-family="Arial" font-size="14" text-anchor="middle">activates</text>
+  
+  <!-- FBXO45 to MYCBP2 -->
+  <path d="M420,250 L500,250" stroke="#00aa00" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <text x="460" y="240" font-family="Arial" font-size="14" text-anchor="middle">activates</text>
+  
+  <!-- MYCBP2 to NMNAT2 -->
+  <path d="M560,280 L610,320" stroke="#aa0000" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="570" y="310" font-family="Arial" font-size="14" text-anchor="middle">inhibits</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#00aa00"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#aa0000"/>
+    </marker>
+  </defs>
+  
+  <!-- Ubiquitination process -->
+  <g id="ubiquitination">
+    <ellipse cx="320" cy="160" rx="180" ry="40" fill="#ffffcc" stroke="#333" stroke-width="1.5"/>
+    <text x="320" y="165" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Protein K48-linked ubiquitination</text>
+  </g>
+  
+  <!-- Process connecting lines -->
+  <path d="M160,220 L160,180 L200,160" stroke="#666" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <path d="M360,220 L360,160" stroke="#666" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <path d="M560,220 L560,180 L440,160" stroke="#666" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Axon development process -->
+  <g id="axon_development">
+    <ellipse cx="680" y="350" rx="100" ry="30" fill="#d1ffcc" stroke="#333" stroke-width="1.5"/>
+    <text x="680" y="355" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Axon development</text>
+  </g>
+  
+  <!-- Connect NMNAT2 to axon development -->
+  <path d="M690,350 L660,350" stroke="#666" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Ubiquitin tag representation -->
+  <g id="ubiquitin_tag">
+    <circle cx="650" y="300" r="15" fill="#ffff00" stroke="#333" stroke-width="1.5"/>
+    <text x="650" y="305" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Ub</text>
+  </g>
+  
+  <!-- PAM complex label -->
+  <path d="M160,350 L560,350" stroke="#333" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="360" y="370" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">PAM (SKP1-FBXO45-MYCBP2) E3 ligase complex</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">Degradation of NMNAT2 via the PAM E3 ligase complex</text>
+  <text x="400" y="70" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">(SKP1-FBXO45-MYCBP2)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="700" height="80" rx="10" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="60" y="520" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <rect x="60" y="530" width="20" height="20" fill="#b3e0ff" stroke="#333"/>
+  <text x="90" y="545" font-family="Arial" font-size="14">Cytoplasmic proteins</text>
+  
+  <rect x="250" y="530" width="20" height="20" fill="#ffb3b3" stroke="#333"/>
+  <text x="280" y="545" font-family="Arial" font-size="14">Golgi proteins</text>
+  
+  <line x1="400" y1="540" x2="440" y2="540" stroke="#00aa00" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <text x="470" y="545" font-family="Arial" font-size="14">Positive regulation</text>
+  
+  <line x1="570" y1="540" x2="610" y2="540" stroke="#aa0000" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="640" y="545" font-family="Arial" font-size="14">Negative regulation</text>
+  
+  <circle cx="70" y="570" r="15" fill="#ffff00" stroke="#333" stroke-width="1.5"/>
+  <text x="70" y="575" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Ub</text>
+  <text x="120" y="575" font-family="Arial" font-size="14">Ubiquitin tag</text>
+</svg>

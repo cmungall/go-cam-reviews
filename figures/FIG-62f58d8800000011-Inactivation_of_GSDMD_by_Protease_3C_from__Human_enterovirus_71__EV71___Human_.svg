@@ -1,0 +1,117 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Outline -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  
+  <!-- Plasma Membrane -->
+  <path d="M75,300 Q 400,150 725,300 Q 400,450 75,300" fill="none" stroke="#333" stroke-width="4" stroke-dasharray="5,3"/>
+  <text x="740" y="300" font-family="Arial" font-size="14" text-anchor="start" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Cytosol Label -->
+  <text x="400" y="380" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Cytosol</text>
+  
+  <!-- GSDMD in Membrane -->
+  <g id="gsdmd">
+    <rect x="300" y="290" width="60" height="20" fill="#8dd3c7" stroke="#333" stroke-width="1.5"/>
+    <text x="330" y="305" font-family="Arial" font-size="12" text-anchor="middle">GSDMD</text>
+  </g>
+  
+  <!-- GSDMD Pore Formation -->
+  <g id="gsdmd_pore">
+    <path d="M450,250 Q470,265 450,280 Q430,265 450,250 Z" fill="#8dd3c7" stroke="#333" stroke-width="1.5"/>
+    <path d="M470,250 Q490,265 470,280 Q450,265 470,250 Z" fill="#8dd3c7" stroke="#333" stroke-width="1.5"/>
+    <path d="M490,250 Q510,265 490,280 Q470,265 490,250 Z" fill="#8dd3c7" stroke="#333" stroke-width="1.5"/>
+    <path d="M510,250 Q530,265 510,280 Q490,265 510,250 Z" fill="#8dd3c7" stroke="#333" stroke-width="1.5"/>
+    <path d="M450,280 L510,280" stroke="#333" stroke-width="1.5" fill="none"/>
+    <path d="M450,250 L510,250" stroke="#333" stroke-width="1.5" fill="none"/>
+    <text x="480" y="240" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">GSDMD Pore</text>
+    <text x="480" y="305" font-family="Arial" font-size="10" text-anchor="middle">(wide pore channel activity)</text>
+  </g>
+  
+  <!-- PIP2 in Membrane -->
+  <g id="pip2">
+    <circle cx="310" cy="250" r="10" fill="#fb8072" stroke="#333" stroke-width="1.5"/>
+    <text x="310" y="230" font-family="Arial" font-size="12" text-anchor="middle">PIP2</text>
+  </g>
+  
+  <!-- PIP2 Binding Arrow -->
+  <path d="M310,260 C310,275 320,285 330,290" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="315" y="275" font-family="Arial" font-size="10" text-anchor="middle" fill="#333" font-weight="bold">binds</text>
+  
+  <!-- CASP1 in Cytosol -->
+  <g id="casp1">
+    <rect x="200" y="350" width="60" height="25" fill="#bebada" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+    <text x="230" y="367" font-family="Arial" font-size="12" text-anchor="middle">CASP1</text>
+  </g>
+  
+  <!-- CASP1 Activation Arrow -->
+  <path d="M260,350 C280,330 290,310 330,310" stroke="#008000" stroke-width="2" marker-end="url(#arrowhead_green)" fill="none"/>
+  <text x="290" y="335" font-family="Arial" font-size="10" text-anchor="middle" fill="#008000" font-weight="bold">activates</text>
+  <text x="280" y="320" font-family="Arial" font-size="9" text-anchor="middle">(cysteine-type endopeptidase)</text>
+  
+  <!-- Viral Protease 3C -->
+  <g id="protease3c">
+    <rect x="500" y="360" width="80" height="25" fill="#fdb462" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+    <text x="540" y="377" font-family="Arial" font-size="12" text-anchor="middle">Protease 3C</text>
+    <text x="540" y="390" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(EV71)</text>
+  </g>
+  
+  <!-- Inhibition Arrow -->
+  <path d="M500,360 C450,340 400,330 370,290" stroke="#f00" stroke-width="2" marker-end="url(#inhibition)" stroke-dasharray="5,2" fill="none"/>
+  <text x="420" y="360" font-family="Arial" font-size="12" text-anchor="middle" fill="#f00" font-weight="bold">inhibits</text>
+  
+  <!-- Pyroptosis Label -->
+  <g id="pyroptosis">
+    <text x="550" y="220" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Pyroptotic</text>
+    <text x="550" y="240" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Inflammatory Response</text>
+  </g>
+  
+  <!-- Pyroptosis Arrow -->
+  <path d="M510,265 C520,260 535,250 545,240" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- Viral Suppression Label -->
+  <g id="suppression">
+    <text x="600" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="#f00">Symbiont-mediated suppression</text>
+    <text x="600" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#f00">of host programmed cell death</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Inactivation of GSDMD by Protease 3C from Human enterovirus 71</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="700" height="80" fill="#f8f8f8" stroke="#333" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="520" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend Items -->
+  <rect x="80" y="535" width="20" height="20" fill="#8dd3c7" stroke="#333" stroke-width="1"/>
+  <text x="110" y="550" font-family="Arial" font-size="12" text-anchor="start">GSDMD Protein</text>
+  
+  <rect x="220" y="535" width="20" height="20" fill="#bebada" stroke="#333" stroke-width="1" rx="5" ry="5"/>
+  <text x="250" y="550" font-family="Arial" font-size="12" text-anchor="start">CASP1 Protein</text>
+  
+  <rect x="360" y="535" width="20" height="20" fill="#fdb462" stroke="#333" stroke-width="1" rx="5" ry="5"/>
+  <text x="390" y="550" font-family="Arial" font-size="12" text-anchor="start">Viral Protease 3C</text>
+  
+  <circle cx="500" y="545" r="10" fill="#fb8072" stroke="#333" stroke-width="1"/>
+  <text x="520" y="550" font-family="Arial" font-size="12" text-anchor="start">Phosphatidylinositol-4,5-bisphosphate (PIP2)</text>
+  
+  <line x1="610" y1="535" x2="640" y2="535" stroke="#008000" stroke-width="2"/>
+  <polygon points="640,535 635,532 635,538" fill="#008000"/>
+  <text x="655" y="540" font-family="Arial" font-size="12" text-anchor="start">Activation</text>
+  
+  <line x1="610" y1="555" x2="640" y2="555" stroke="#f00" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="655" y="560" font-family="Arial" font-size="12" text-anchor="start">Inhibition</text>
+  
+  <!-- Arrows and Markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="arrowhead_green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#008000"/>
+    </marker>
+    <marker id="inhibition" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <line x1="0" y1="0" x2="12" y2="12" stroke="#f00" stroke-width="2"/>
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#f00" stroke-width="2"/>
+    </marker>
+  </defs>
+</svg>

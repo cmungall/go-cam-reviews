@@ -1,0 +1,109 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Zygote Cell -->
+  <ellipse cx="400" cy="300" rx="360" ry="260" fill="#f9f9f9" stroke="#666" stroke-width="2"/>
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Zygote Cell</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="310" rx="280" ry="200" fill="#e6f3ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="135" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus</text>
+  <text x="400" y="155" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">(GO:0005634)</text>
+  
+  <!-- Nucleolus -->
+  <ellipse cx="320" cy="290" rx="80" ry="60" fill="#d9e6f2" stroke="#333" stroke-width="1.5" stroke-dasharray="5,2"/>
+  <text x="320" y="240" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Nucleolus</text>
+  <text x="320" y="258" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">(GO:0005730)</text>
+  
+  <!-- Process: epigenetic programming -->
+  <rect x="550" y="400" width="200" height="40" rx="10" ry="10" fill="#ffedb3" stroke="#333" stroke-width="1.5"/>
+  <text x="650" y="420" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Epigenetic Programming</text>
+  <text x="650" y="438" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic">in Zygotic Pronuclei (GO:0044725)</text>
+  
+  <!-- Protein Components -->
+  <!-- DDB1 -->
+  <rect x="460" y="260" width="90" height="40" rx="5" ry="5" fill="#a6d8a8" stroke="#333" stroke-width="1.5"/>
+  <text x="505" y="280" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">DDB1</text>
+  <text x="505" y="295" text-anchor="middle" font-family="Arial" font-size="10">Scaffold Activity</text>
+  
+  <!-- DCAF13 -->
+  <rect x="320" y="320" width="90" height="40" rx="5" ry="5" fill="#ffb380" stroke="#333" stroke-width="1.5"/>
+  <text x="365" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">DCAF13</text>
+  <text x="365" y="355" text-anchor="middle" font-family="Arial" font-size="10">Substrate Adaptor</text>
+  
+  <!-- SUV39H1 -->
+  <rect x="160" y="260" width="90" height="40" rx="5" ry="5" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="205" y="280" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">SUV39H1</text>
+  <text x="205" y="295" text-anchor="middle" font-family="Arial" font-size="10">H3K9 Methyltransferase</text>
+  
+  <!-- SUV39H2 -->
+  <rect x="160" y="320" width="90" height="40" rx="5" ry="5" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="205" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">SUV39H2</text>
+  <text x="205" y="355" text-anchor="middle" font-family="Arial" font-size="10">H3K9 Methyltransferase</text>
+  
+  <!-- H3K9me3 Target (implicit) -->
+  <rect x="100" y="400" width="100" height="30" rx="5" ry="5" fill="#ccccff" stroke="#333" stroke-width="1.5" stroke-dasharray="5,2"/>
+  <text x="150" y="420" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">H3K9me3</text>
+  
+  <!-- Proteasome (implicit) -->
+  <rect x="380" y="400" width="100" height="30" rx="15" ry="15" fill="#d9d9d9" stroke="#333" stroke-width="1.5" stroke-dasharray="5,2"/>
+  <text x="430" y="420" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Proteasome</text>
+  
+  <!-- Ubiquitin Ligase Complex -->
+  <ellipse cx="430" cy="290" rx="130" ry="70" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="430" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Ubiquitin Ligase Complex</text>
+  <text x="430" y="238" text-anchor="middle" font-family="Arial" font-size="10" font-style="italic">Proteasome-mediated protein degradation</text>
+  
+  <!-- Process Arrows -->
+  <!-- DDB1 acts as scaffold -->
+  <path d="M 485,300 L 385,320" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="440" y="295" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">scaffolds</text>
+  
+  <!-- DCAF13 targets SUV39H1 -->
+  <path d="M 320,325 L 250,280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="280" y="290" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">targets for</text>
+  <text x="280" y="305" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">degradation</text>
+  
+  <!-- DCAF13 targets SUV39H2 -->
+  <path d="M 320,340 L 250,340" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="280" y="360" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">targets for</text>
+  <text x="280" y="375" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">degradation</text>
+  
+  <!-- SUV39H1 regulates H3K9 trimethylation -->
+  <path d="M 180,300 L 150,400" stroke="#333" stroke-width="2" stroke-dasharray="4,2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="150" y="345" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(-75, 150, 345)" font-style="italic">methylates</text>
+  
+  <!-- SUV39H2 regulates H3K9 trimethylation -->
+  <path d="M 190,360 L 170,400" stroke="#333" stroke-width="2" stroke-dasharray="4,2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="190" y="375" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic">methylates</text>
+  
+  <!-- SUVs to proteasome -->
+  <path d="M 210,280 C 280,300 330,370 380,410" stroke="#333" stroke-width="2" stroke-dasharray="4,2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 210,340 C 270,350 330,390 380,410" stroke="#333" stroke-width="2" stroke-dasharray="4,2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="300" y="390" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic">degradation</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="530" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">DCAF13 Regulates Chromatin Reprogramming in Zygote</text>
+  <text x="400" y="555" text-anchor="middle" font-family="Arial" font-size="16">Through SUV39H1 and SUV39H2 Degradation</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="490" width="210" height="100" fill="#f9f9f9" stroke="#666" stroke-width="1.5"/>
+  <text x="125" y="505" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <rect x="30" y="515" width="15" height="15" fill="#a6d8a8" stroke="#333" stroke-width="1"/>
+  <text x="55" y="525" text-anchor="start" font-family="Arial" font-size="12">Scaffold protein (DDB1)</text>
+  
+  <rect x="30" y="535" width="15" height="15" fill="#ffb380" stroke="#333" stroke-width="1"/>
+  <text x="55" y="545" text-anchor="start" font-family="Arial" font-size="12">Adaptor protein (DCAF13)</text>
+  
+  <rect x="30" y="555" width="15" height="15" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="55" y="565" text-anchor="start" font-family="Arial" font-size="12">Target proteins (SUV39H1/2)</text>
+  
+  <rect x="30" y="575" width="15" height="15" fill="#ccccff" stroke="#333" stroke-width="1" stroke-dasharray="5,1"/>
+  <text x="55" y="585" text-anchor="start" font-family="Arial" font-size="12">Implicit components (not in source)</text>
+</svg>

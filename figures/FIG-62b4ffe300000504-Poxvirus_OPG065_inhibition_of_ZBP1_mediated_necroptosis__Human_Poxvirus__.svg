@@ -1,0 +1,107 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="300" cy="280" rx="120" ry="100" fill="#d9e6ff" stroke="#000000" stroke-width="2"/>
+  <text x="300" y="280" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Nucleus</text>
+  
+  <!-- Plasma membrane label -->
+  <text x="620" y="170" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Plasma membrane</text>
+  <path d="M570 170 L650 170" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Cytoplasm label -->
+  <text x="450" y="230" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Cytoplasm</text>
+  
+  <!-- VACWR059 (Poxvirus protein) -->
+  <rect x="500" y="320" width="120" height="40" rx="10" ry="10" fill="#ff9999" stroke="#000000" stroke-width="2"/>
+  <text x="560" y="345" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">VACWR059</text>
+  <text x="560" y="365" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#000000">(Poxvirus)</text>
+  
+  <!-- ZBP1 -->
+  <rect x="500" y="220" width="80" height="40" rx="10" ry="10" fill="#99cc99" stroke="#000000" stroke-width="2"/>
+  <text x="540" y="245" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">ZBP1</text>
+  
+  <!-- RIPK3 -->
+  <rect x="270" y="220" width="80" height="40" rx="10" ry="10" fill="#9999ff" stroke="#000000" stroke-width="2"/>
+  <text x="310" y="245" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">RIPK3</text>
+  
+  <!-- MLKL -->
+  <rect x="190" y="400" width="80" height="40" rx="10" ry="10" fill="#cc99cc" stroke="#000000" stroke-width="2"/>
+  <text x="230" y="425" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">MLKL</text>
+  
+  <!-- Execution at membrane -->
+  <path d="M180 480 Q230 520 280 480" stroke="#cc00cc" stroke-width="8" fill="none" opacity="0.7"/>
+  <text x="230" y="515" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">Membrane disruption</text>
+  
+  <!-- Arrows and inhibition -->
+  <!-- VACWR059 inhibiting ZBP1 -->
+  <line x1="540" y1="320" x2="540" y2="270" stroke="#ff0000" stroke-width="4"/>
+  <line x1="532" y1="270" x2="548" y2="270" stroke="#ff0000" stroke-width="4"/>
+  
+  <!-- ZBP1 to RIPK3 -->
+  <path d="M 500 240 L 360 240" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <rect x="400" y="215" width="100" height="40" rx="5" ry="5" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+  <text x="425" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#006600" font-weight="bold">Activates</text>
+  <text x="425" y="250" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#cc0000" font-weight="bold">(Inhibited)</text>
+  
+  <!-- RIPK3 to MLKL -->
+  <path d="M 290 260 L 230 390" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <rect x="240" y="310" width="80" height="25" rx="5" ry="5" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+  <text x="240" y="327" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#006600" font-weight="bold">Activates</text>
+  
+  <!-- MLKL to membrane -->
+  <path d="M 230 440 L 230 470" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Process labels with descriptions -->
+  <rect x="100" y="110" width="200" height="45" rx="15" ry="15" fill="#ffffaa" stroke="#000000" stroke-width="1"/>
+  <text x="200" y="130" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Necroptotic signaling pathway</text>
+  <text x="200" y="147" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(Cell death program activation)</text>
+  
+  <rect x="500" y="110" width="200" height="45" rx="15" ry="15" fill="#ffffaa" stroke="#000000" stroke-width="1"/>
+  <text x="600" y="130" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Antiviral innate immune response</text>
+  <text x="600" y="147" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(Host defense against viral infection)</text>
+  
+  <rect x="100" y="450" width="200" height="45" rx="15" ry="15" fill="#ffffaa" stroke="#000000" stroke-width="1"/>
+  <text x="200" y="470" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Execution phase of necroptosis</text>
+  <text x="200" y="487" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(Final membrane disruption stage)</text>
+  
+  <!-- RNA binding annotations -->
+  <rect x="520" y="195" width="100" height="20" rx="5" ry="5" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+  <text x="570" y="210" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic" fill="#000000">RNA binding</text>
+  
+  <!-- Title -->
+  <rect x="150" y="20" width="500" height="60" rx="5" ry="5" fill="#ffffff" fill-opacity="0.9" stroke="#000000" stroke-width="1"/>
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Poxvirus-OPG065 inhibition of ZBP1-mediated necroptosis</text>
+  <text x="400" y="65" font-family="Arial" font-size="16" text-anchor="middle">(Human-Poxvirus interaction)</text>
+  
+  <!-- Markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="580" y="380" width="180" height="180" rx="10" ry="10" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="670" y="400" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" text-decoration="underline">Legend</text>
+  
+  <rect x="600" y="415" width="16" height="16" fill="#99cc99" stroke="#000000" stroke-width="1"/>
+  <text x="625" y="427" font-family="Arial" font-size="12" text-anchor="start">Human protein (ZBP1, RIPK3, MLKL)</text>
+  
+  <rect x="600" y="440" width="16" height="16" fill="#ff9999" stroke="#000000" stroke-width="1"/>
+  <text x="625" y="452" font-family="Arial" font-size="12" text-anchor="start">Viral protein (VACWR059)</text>
+  
+  <line x1="600" y1="472" x2="616" y2="472" stroke="#ff0000" stroke-width="3"/>
+  <line x1="608" y1="466" x2="608" y2="478" stroke="#ff0000" stroke-width="3"/>
+  <text x="625" y="477" font-family="Arial" font-size="12" text-anchor="start">Inhibition</text>
+  
+  <line x1="600" y1="497" x2="616" y2="497" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="625" y="502" font-family="Arial" font-size="12" text-anchor="start">Activation</text>
+  
+  <line x1="600" y1="522" x2="616" y2="522" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <text x="625" y="527" font-family="Arial" font-size="12" text-anchor="start">Inhibited activation</text>
+  
+  <path d="M600 544 Q605 547 610 544" stroke="#cc00cc" stroke-width="4" fill="none"/>
+  <text x="625" y="549" font-family="Arial" font-size="12" text-anchor="start">Membrane disruption</text>
+</svg>

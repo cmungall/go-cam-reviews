@@ -1,0 +1,95 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline - T cell -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#666" stroke-width="2"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">T Cell Activation</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="300" rx="120" ry="100" fill="#e6e6fa" stroke="#666" stroke-width="2"/>
+  <text x="250" y="300" text-anchor="middle" font-family="Arial" font-size="16">Nucleus</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="450" y="150" text-anchor="middle" font-family="Arial" font-size="16" font-style="italic">Cytoplasm</text>
+  
+  <!-- MOV10 protein -->
+  <rect x="400" y="250" width="100" height="50" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="450" y="280" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">MOV10</text>
+  <text x="450" y="300" text-anchor="middle" font-family="Arial" font-size="10">5'-3' RNA helicase activity</text>
+  
+  <!-- miRNA context -->
+  <ellipse cx="550" cy="220" rx="70" ry="30" fill="#ffffcc" stroke="#333" stroke-width="1" stroke-dasharray="5,2"/>
+  <text x="550" y="225" text-anchor="middle" font-family="Arial" font-size="12">miRNA-mediated gene</text>
+  <text x="550" y="240" text-anchor="middle" font-family="Arial" font-size="12">silencing by mRNA destabilization</text>
+  
+  <!-- CUL4A protein -->
+  <rect x="520" y="350" width="100" height="50" rx="10" ry="10" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="570" y="380" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">CUL4A</text>
+  <text x="570" y="400" text-anchor="middle" font-family="Arial" font-size="10">Ubiquitin ligase complex scaffold</text>
+  
+  <!-- DCAF12 protein -->
+  <rect x="400" y="430" width="100" height="50" rx="10" ry="10" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="450" y="460" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">DCAF12</text>
+  <text x="450" y="480" text-anchor="middle" font-family="Arial" font-size="10">Ligase-substrate adaptor</text>
+  
+  <!-- RBX1 protein -->
+  <rect x="600" y="430" width="100" height="50" rx="10" ry="10" fill="#cc99ff" stroke="#333" stroke-width="2"/>
+  <text x="650" y="460" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">RBX1</text>
+  <text x="650" y="480" text-anchor="middle" font-family="Arial" font-size="10">Ubiquitin protein ligase</text>
+  
+  <!-- Ubiquitin -->
+  <circle cx="580" cy="500" r="15" fill="#ffcc00" stroke="#333" stroke-width="1"/>
+  <text x="580" y="505" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ub</text>
+  
+  <!-- Arrows -->
+  <!-- CUL4A negatively regulates DCAF12 -->
+  <path d="M 520 375 L 460 430" stroke="#e74c3c" stroke-width="2" marker-end="url(#inhibitArrow)" fill="none"/>
+  <text x="480" y="410" text-anchor="middle" font-family="Arial" font-size="12" fill="#e74c3c">negatively regulates</text>
+  
+  <!-- DCAF12 positively regulates RBX1 -->
+  <path d="M 500 450 L 600 450" stroke="#27ae60" stroke-width="2" marker-end="url(#activateArrow)" fill="none"/>
+  <text x="550" y="440" text-anchor="middle" font-family="Arial" font-size="12" fill="#27ae60">positively regulates</text>
+  
+  <!-- RBX1 causes MOV10 ubiquitination -->
+  <path d="M 650 430 C 650 380 550 350 480 300" stroke="#3498db" stroke-width="2" marker-end="url(#causeArrow)" fill="none"/>
+  <text x="610" y="350" text-anchor="middle" font-family="Arial" font-size="12" fill="#3498db">causes ubiquitination</text>
+  
+  <!-- MOV10 to miRNA function -->
+  <path d="M 450 250 C 480 220 520 210 550 220" stroke="#f39c12" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#partOfArrow)" fill="none"/>
+  <text x="500" y="210" text-anchor="middle" font-family="Arial" font-size="12" fill="#f39c12">part of</text>
+  
+  <!-- Ubiquitin-dependent protein catabolic process label -->
+  <rect x="500" y="150" width="220" height="40" rx="10" ry="10" fill="#eeeeee" stroke="#666" stroke-width="1"/>
+  <text x="610" y="170" text-anchor="middle" font-family="Arial" font-size="12">Ubiquitin-dependent protein</text>
+  <text x="610" y="185" text-anchor="middle" font-family="Arial" font-size="12">catabolic process (C-end degron)</text>
+  
+  <!-- Legend - moved to upper left for better reference -->
+  <rect x="100" y="100" width="200" height="100" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1" fill-opacity="0.9"/>
+  <text x="200" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <line x1="110" y1="135" x2="140" y2="135" stroke="#e74c3c" stroke-width="2" marker-end="url(#inhibitArrow)"/>
+  <text x="220" y="140" text-anchor="start" font-family="Arial" font-size="12">Negative regulation</text>
+  
+  <line x1="110" y1="155" x2="140" y2="155" stroke="#27ae60" stroke-width="2" marker-end="url(#activateArrow)"/>
+  <text x="220" y="160" text-anchor="start" font-family="Arial" font-size="12">Positive regulation</text>
+  
+  <line x1="110" y1="175" x2="140" y2="175" stroke="#3498db" stroke-width="2" marker-end="url(#causeArrow)"/>
+  <text x="220" y="180" text-anchor="start" font-family="Arial" font-size="12">Causal relation</text>
+  
+  <line x1="110" y1="195" x2="140" y2="195" stroke="#f39c12" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#partOfArrow)"/>
+  <text x="220" y="200" text-anchor="start" font-family="Arial" font-size="12">Part of</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="inhibitArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+    <marker id="activateArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+    <marker id="causeArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3498db"/>
+    </marker>
+    <marker id="partOfArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f39c12"/>
+    </marker>
+  </defs>
+</svg>

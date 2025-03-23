@@ -1,0 +1,143 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outline -->
+  <ellipse cx="400" cy="300" rx="390" ry="290" fill="#f8f9fa" stroke="#333" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Microtubule Polyglutamylation Regulation (Human)</text>
+  
+  <!-- Microtubule structure -->
+  <rect x="100" y="200" width="600" height="40" rx="20" ry="20" fill="#d9edf7" stroke="#31708f" stroke-width="2" />
+  <text x="400" y="225" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Microtubule (GO:0005874)</text>
+  
+  <!-- Centriolar satellite -->
+  <circle cx="180" cy="400" r="70" fill="#dff0d8" stroke="#3c763d" stroke-width="2" />
+  <text x="180" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Centriolar Satellite</text>
+  <text x="180" y="415" text-anchor="middle" font-family="Arial" font-size="12">(GO:0034451)</text>
+  
+  <!-- PCM1 on centriolar satellite -->
+  <rect x="130" y="350" width="90" height="30" rx="5" ry="5" fill="#fcf8e3" stroke="#8a6d3b" stroke-width="2" />
+  <text x="175" y="370" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">PCM1</text>
+  
+  <!-- CSTPP1 on centriolar satellite -->
+  <rect x="110" y="430" width="90" height="30" rx="5" ry="5" fill="#fcf8e3" stroke="#8a6d3b" stroke-width="2" />
+  <text x="155" y="450" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">CSTPP1</text>
+  
+  <!-- Draw Proteins on microtubule -->
+  <!-- TTLL1 -->
+  <rect x="350" y="140" width="90" height="35" rx="5" ry="5" fill="#fce3e3" stroke="#8a6d3b" stroke-width="2" />
+  <text x="395" y="163" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TTLL1</text>
+  
+  <!-- MAP4 -->
+  <rect x="550" y="140" width="90" height="35" rx="5" ry="5" fill="#e3f0fc" stroke="#8a6d3b" stroke-width="2" />
+  <text x="595" y="163" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">MAP4</text>
+  
+  <!-- CDK1 -->
+  <rect x="640" y="250" width="90" height="35" rx="5" ry="5" fill="#fcf8e3" stroke="#8a6d3b" stroke-width="2" />
+  <text x="685" y="273" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">CDK1</text>
+  
+  <!-- MARK4 -->
+  <rect x="500" y="260" width="90" height="35" rx="5" ry="5" fill="#fcf8e3" stroke="#8a6d3b" stroke-width="2" />
+  <text x="545" y="283" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">MARK4</text>
+  
+  <!-- TPGS1 -->
+  <rect x="240" y="120" width="90" height="35" rx="5" ry="5" fill="#e3fcf0" stroke="#8a6d3b" stroke-width="2" />
+  <text x="285" y="143" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TPGS1</text>
+  
+  <!-- TPGS2 -->
+  <rect x="240" y="260" width="90" height="35" rx="5" ry="5" fill="#e3fcf0" stroke="#8a6d3b" stroke-width="2" />
+  <text x="285" y="283" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TPGS2</text>
+  
+  <!-- LRRC49 -->
+  <rect x="140" y="120" width="90" height="35" rx="5" ry="5" fill="#e3fcf0" stroke="#8a6d3b" stroke-width="2" />
+  <text x="185" y="143" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">LRRC49</text>
+  
+  <!-- Pathway labels with borders -->
+  <rect x="250" y="65" width="200" height="30" rx="15" ry="15" fill="white" fill-opacity="0.7" stroke="#333" stroke-width="1" />
+  <text x="350" y="85" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Polyglutamylation Pathway</text>
+  
+  <rect x="550" y="65" width="200" height="30" rx="15" ry="15" fill="white" fill-opacity="0.7" stroke="#333" stroke-width="1" />
+  <text x="650" y="85" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Microtubule Stabilization</text>
+  
+  <!-- Process labels with borders -->
+  <rect x="300" y="310" width="380" height="30" rx="15" ry="15" fill="white" fill-opacity="0.7" stroke="#333" stroke-width="1" />
+  <text x="490" y="330" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Microtubule Cytoskeleton Organization (GO:0000226)</text>
+  
+  <!-- Arrows for interactions -->
+  <!-- PCM1 to CSTPP1 (positive) -->
+  <path d="M175,380 Q175,395 155,430" stroke="#5cb85c" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-positive)" />
+  
+  <!-- CSTPP1 to adaptor proteins (positive) - positioned to reduce overlap -->
+  <path d="M140,430 Q100,300 185,155" stroke="#5cb85c" stroke-width="2.5" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead-positive)" />
+  <path d="M155,430 Q170,300 285,143" stroke="#5cb85c" stroke-width="2.5" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead-positive)" />
+  <path d="M155,430 Q200,350 285,283" stroke="#5cb85c" stroke-width="2.5" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead-positive)" />
+  <path d="M170,430 Q250,300 395,163" stroke="#5cb85c" stroke-width="2.5" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead-positive)" />
+  
+  <!-- TTLL1 to MAP4 (negative) -->
+  <path d="M440,157 Q490,140 550,157" stroke="#d9534f" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-negative)" />
+  
+  <!-- Adaptor proteins to TTLL1 (positive) -->
+  <path d="M230,120 Q300,110 350,145" stroke="#5cb85c" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-positive)" />
+  <path d="M330,120 Q340,130 350,145" stroke="#5cb85c" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-positive)" />
+  <path d="M330,260 Q340,200 365,175" stroke="#5cb85c" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-positive)" />
+  
+  <!-- CDK1 to MAP4 (negative) -->
+  <path d="M640,267 Q600,220 595,175" stroke="#d9534f" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-negative)" />
+  
+  <!-- MARK4 to MAP4 (negative) -->
+  <path d="M545,260 Q560,210 595,175" stroke="#d9534f" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-negative)" />
+  
+  <!-- Function labels -->
+  <text x="395" y="120" text-anchor="middle" font-family="Arial" font-size="12">Tubulin-glutamic</text>
+  <text x="395" y="132" text-anchor="middle" font-family="Arial" font-size="12">acid ligase activity</text>
+  
+  <text x="595" y="118" text-anchor="middle" font-family="Arial" font-size="12">Microtubule</text>
+  <text x="595" y="130" text-anchor="middle" font-family="Arial" font-size="12">stabilizing activity</text>
+  
+  <text x="685" y="235" text-anchor="middle" font-family="Arial" font-size="12">CDK activity</text>
+  
+  <text x="545" y="245" text-anchor="middle" font-family="Arial" font-size="12">Ser/Thr kinase</text>
+  
+  <text x="180" y="335" text-anchor="middle" font-family="Arial" font-size="12">Molecular adaptor</text>
+  
+  <text x="155" y="415" text-anchor="middle" font-family="Arial" font-size="12">Adaptor activity</text>
+  
+  <text x="235" y="100" text-anchor="middle" font-family="Arial" font-size="12">Adaptor proteins</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="400" width="180" height="180" fill="white" stroke="#333" stroke-width="1" />
+  <text x="690" y="420" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <rect x="610" y="435" width="15" height="15" fill="#fce3e3" stroke="#8a6d3b" stroke-width="2" />
+  <text x="710" y="448" font-family="Arial" font-size="14">Ligase</text>
+  
+  <rect x="610" y="455" width="15" height="15" fill="#e3f0fc" stroke="#8a6d3b" stroke-width="2" />
+  <text x="710" y="468" font-family="Arial" font-size="14">Target Protein</text>
+  
+  <rect x="610" y="475" width="15" height="15" fill="#e3fcf0" stroke="#8a6d3b" stroke-width="2" />
+  <text x="710" y="488" font-family="Arial" font-size="14">Adaptor Protein</text>
+  
+  <rect x="610" y="495" width="15" height="15" fill="#fcf8e3" stroke="#8a6d3b" stroke-width="2" />
+  <text x="710" y="508" font-family="Arial" font-size="14">Kinase</text>
+  
+  <rect x="610" y="515" width="15" height="15" fill="#d9edf7" stroke="#31708f" stroke-width="2" />
+  <text x="710" y="528" font-family="Arial" font-size="14">Microtubule</text>
+  
+  <circle cx="618" cy="543" r="8" fill="#dff0d8" stroke="#3c763d" stroke-width="2" />
+  <text x="710" y="546" font-family="Arial" font-size="14">Centriolar Satellite</text>
+  
+  <line x1="610" y1="560" x2="630" y2="560" stroke="#5cb85c" stroke-width="2.5" marker-end="url(#arrowhead-positive)" />
+  <text x="710" y="563" font-family="Arial" font-size="14">Positive Regulation</text>
+  
+  <line x1="610" y1="580" x2="630" y2="580" stroke="#d9534f" stroke-width="2.5" marker-end="url(#arrowhead-negative)" />
+  <text x="710" y="583" font-family="Arial" font-size="14">Negative Regulation</text>
+  
+  <!-- Define arrowheads -->
+  <defs>
+    <marker id="arrowhead-positive" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5cb85c" />
+    </marker>
+    <marker id="arrowhead-negative" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d9534f" />
+    </marker>
+  </defs>
+</svg>

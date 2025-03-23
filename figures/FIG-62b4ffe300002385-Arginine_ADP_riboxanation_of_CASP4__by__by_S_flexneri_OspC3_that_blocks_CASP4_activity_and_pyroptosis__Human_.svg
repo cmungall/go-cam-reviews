@@ -1,0 +1,118 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f0f9ff" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- Cell membrane -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="none" stroke="#2c3e50" stroke-width="6" stroke-dasharray="10,5"/>
+  
+  <!-- Label the cell -->
+  <rect x="20" y="70" width="160" height="30" rx="5" ry="5" fill="white" fill-opacity="0.8"/>
+  <text x="30" y="90" fill="#2c3e50" font-family="Arial" font-size="20" font-weight="bold">Human Host Cell</text>
+  
+  <!-- Plasma membrane annotation -->
+  <rect x="650" y="270" width="140" height="25" rx="5" ry="5" fill="white" fill-opacity="0.8"/>
+  <text x="670" y="288" fill="#2c3e50" font-family="Arial" font-size="16">Plasma Membrane</text>
+  <line x1="650" y1="280" x2="600" y2="280" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Bacterial cell -->
+  <ellipse cx="200" cy="300" rx="60" ry="40" fill="#a3c9d9" stroke="#2c3e50" stroke-width="2"/>
+  <text x="200" y="305" fill="#2c3e50" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">S. flexneri</text>
+  
+  <!-- Arrow from bacteria to OspC3 -->
+  <path d="M 260 300 Q 270 300 280 300" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="270" y="290" fill="#2c3e50" font-family="Arial" font-size="12">Secretes</text>
+  
+  <!-- OspC3 protein -->
+  <circle cx="300" cy="300" r="30" fill="#f39c12" stroke="#2c3e50" stroke-width="2"/>
+  <text x="300" y="305" fill="white" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">OspC3</text>
+  
+  <!-- Calmodulin -->
+  <rect x="360" y="250" width="60" height="30" rx="10" ry="10" fill="#3498db" stroke="#2c3e50" stroke-width="2"/>
+  <text x="390" y="270" fill="white" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">CALM1</text>
+  
+  <!-- CASP4 - Inactive -->
+  <rect x="450" y="280" width="60" height="30" rx="5" ry="5" fill="#95a5a6" stroke="#2c3e50" stroke-width="2"/>
+  <text x="480" y="300" fill="white" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">CASP4</text>
+  
+  <!-- CASP4 - Active (crossed-out to indicate inhibition) -->
+  <rect x="450" y="350" width="60" height="30" rx="5" ry="5" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" opacity="0.5"/>
+  <text x="480" y="370" fill="white" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">CASP4</text>
+  <line x1="440" y1="340" x2="520" y2="390" stroke="#c0392b" stroke-width="3"/>
+  <line x1="520" y1="340" x2="440" y2="390" stroke="#c0392b" stroke-width="3"/>
+  
+  <!-- GSDMD - Inactive -->
+  <polygon points="550,350 580,330 610,350 580,370" fill="#9b59b6" stroke="#2c3e50" stroke-width="2"/>
+  <text x="580" y="355" fill="white" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">GSDMD</text>
+  
+  <!-- Potential pore (blocked/not forming) -->
+  <circle cx="650" cy="300" r="25" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="625" y1="275" x2="675" y2="325" stroke="#e74c3c" stroke-width="3"/>
+  <line x1="675" y1="275" x2="625" y2="325" stroke="#e74c3c" stroke-width="3"/>
+  <text x="650" y="260" fill="#e74c3c" font-family="Arial" font-size="12" text-anchor="middle">Blocked Pore</text>
+  
+  <!-- ADP-ribosylation symbol -->
+  <circle cx="400" cy="330" r="15" fill="#f1c40f" stroke="#2c3e50" stroke-width="1"/>
+  <text x="400" y="335" fill="#2c3e50" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">ADP-R</text>
+  
+  <!-- Arrows for the pathway -->
+  <!-- OspC3 to calmodulin (binding) -->
+  <path d="M 330 300 Q 345 280 360 270" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="340" y="275" fill="#2c3e50" font-family="Arial" font-size="12">Binds</text>
+  
+  <!-- OspC3+calmodulin to CASP4 (modification) -->
+  <path d="M 390 280 Q 410 295 450 295" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="410" y="285" fill="#2c3e50" font-family="Arial" font-size="12">ADP-riboxanates</text>
+  
+  <!-- CASP4 inhibition arrow -->
+  <path d="M 480 310 Q 480 330 480 350" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#inhibitionMarker)"/>
+  <text x="490" y="330" fill="#e74c3c" font-family="Arial" font-size="12">Inhibits</text>
+  
+  <!-- CASP4 to GSDMD (blocked pathway) -->
+  <path d="M 510 365 Q 530 365 550 355" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#inhibitionMarker)"/>
+  <text x="520" y="380" fill="#e74c3c" font-family="Arial" font-size="12">Can't activate</text>
+  
+  <!-- GSDMD to pore (blocked pathway) -->
+  <path d="M 610 350 Q 630 330 650 300" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#inhibitionMarker)"/>
+  <text x="620" y="340" fill="#e74c3c" font-family="Arial" font-size="12">No pore formation</text>
+  
+  <!-- Host cytoplasm label -->
+  <rect x="100" y="350" width="140" height="25" rx="5" ry="5" fill="white" fill-opacity="0.8"/>
+  <text x="110" y="368" fill="#2c3e50" font-family="Arial" font-size="14">Host Cytoplasm</text>
+  
+  <!-- Caption explaining the process -->
+  <rect x="50" y="450" width="700" height="100" rx="10" ry="10" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1"/>
+  <text x="60" y="470" fill="#2c3e50" font-family="Arial" font-size="14">
+    <tspan x="60" y="470">S. flexneri OspC3 inhibits pyroptosis through:</tspan>
+    <tspan x="60" y="490">1. OspC3 binds calmodulin (CALM1) in host cytoplasm</tspan>
+    <tspan x="60" y="510">2. OspC3 ADP-riboxanates CASP4, inhibiting its cysteine-type endopeptidase activity</tspan>
+    <tspan x="60" y="530">3. Inhibited CASP4 can't activate GSDMD, preventing pore formation and pyroptotic cell death</tspan>
+  </text>
+  
+  <!-- Legend title -->
+  <text x="50" y="560" fill="#2c3e50" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Legend for symbols -->
+  <rect x="50" y="565" width="700" height="30" rx="5" ry="5" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1"/>
+  <text x="60" y="585" fill="#2c3e50" font-family="Arial" font-size="12">
+    <tspan x="60" y="585">ADP-R: ADP-riboxanation modification | </tspan>
+    <tspan x="300" y="585">X symbol: Inhibition/blockage | </tspan>
+    <tspan x="500" y="585">Dashed red arrows: Blocked pathways</tspan>
+  </text>
+  
+  <!-- Defs for markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+    <marker id="inhibitionMarker" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <line x1="0" y1="0" x2="10" y2="10" stroke="#e74c3c" stroke-width="2"/>
+      <line x1="0" y1="10" x2="10" y2="0" stroke="#e74c3c" stroke-width="2"/>
+    </marker>
+  </defs>
+  
+  <!-- Title with background to ensure visibility -->
+  <rect x="150" y="20" width="500" height="40" rx="5" ry="5" fill="white" fill-opacity="0.8"/>
+  <text x="400" y="48" fill="#2c3e50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">
+    Inhibition of CASP4-mediated Pyroptosis by S. flexneri OspC3
+  </text>
+</svg>

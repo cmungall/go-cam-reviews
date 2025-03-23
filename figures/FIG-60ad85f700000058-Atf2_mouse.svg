@@ -1,0 +1,199 @@
+<svg width="900" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell compartments -->
+  <!-- Nucleus -->
+  <ellipse cx="450" cy="400" rx="250" ry="200" fill="#f0f8ff" stroke="#000" stroke-width="2"/>
+  <text x="450" y="230" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus</text>
+  
+  <!-- Cytoplasm -->
+  <ellipse cx="450" cy="400" rx="350" ry="300" fill="#e6f7ff" stroke="#000" stroke-width="2" opacity="0.5"/>
+  <text x="450" y="130" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Cell membrane -->
+  <ellipse cx="450" cy="400" rx="370" ry="320" fill="none" stroke="#000" stroke-width="3"/>
+  
+  <!-- Cell type labels -->
+  <rect x="580" y="80" width="170" height="30" rx="5" ry="5" fill="#ffffff" stroke="#000" stroke-width="1.5"/>
+  <text x="665" y="100" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Multiple cell types</text>
+  
+  <!-- Key Molecules -->
+  <!-- ATF2 in nucleus -->
+  <circle cx="450" cy="380" r="40" fill="#ff9999" stroke="#000" stroke-width="2.5"/>
+  <text x="450" y="385" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#000">ATF2</text>
+  
+  <!-- JDP2 -->
+  <circle cx="350" cy="320" r="28" fill="#99ccff" stroke="#000" stroke-width="2"/>
+  <text x="350" y="325" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">JDP2</text>
+  
+  <!-- JUN -->
+  <circle cx="550" cy="320" r="28" fill="#99ccff" stroke="#000" stroke-width="2"/>
+  <text x="550" y="325" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">JUN</text>
+  
+  <!-- FOS -->
+  <circle cx="600" cy="380" r="28" fill="#99ccff" stroke="#000" stroke-width="2"/>
+  <text x="600" y="385" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">FOS</text>
+  
+  <!-- MAPK14 (p38) -->
+  <circle cx="380" cy="500" r="28" fill="#ffcc99" stroke="#000" stroke-width="2"/>
+  <text x="380" y="505" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">p38</text>
+  
+  <!-- MAPK8 (JNK) -->
+  <circle cx="520" cy="500" r="28" fill="#ffcc99" stroke="#000" stroke-width="2"/>
+  <text x="520" y="505" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">JNK</text>
+  
+  <!-- CREB5 -->
+  <circle cx="300" cy="400" r="28" fill="#ccff99" stroke="#000" stroke-width="2"/>
+  <text x="300" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">CREB5</text>
+  
+  <!-- IRF3 -->
+  <circle cx="360" cy="450" r="28" fill="#ccff99" stroke="#000" stroke-width="2"/>
+  <text x="360" y="455" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">IRF3</text>
+  
+  <!-- SMAD3 -->
+  <circle cx="540" cy="450" r="28" fill="#ccff99" stroke="#000" stroke-width="2"/>
+  <text x="540" y="455" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">SMAD3</text>
+  
+  <!-- ATF4 -->
+  <circle cx="600" cy="450" r="28" fill="#ccff99" stroke="#000" stroke-width="2"/>
+  <text x="600" y="455" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">ATF4</text>
+  
+  <!-- TLR3/7 in membrane -->
+  <rect x="250" y="120" width="80" height="40" rx="10" ry="10" fill="#ff99cc" stroke="#000" stroke-width="2"/>
+  <text x="290" y="145" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">TLR3/7</text>
+  
+  <!-- TGFB1 outside cell -->
+  <circle cx="600" cy="100" r="28" fill="#cc99ff" stroke="#000" stroke-width="2"/>
+  <text x="600" y="105" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">TGFB1</text>
+  
+  <!-- SQSTM1 -->
+  <circle cx="330" cy="200" r="28" fill="#99ccff" stroke="#000" stroke-width="2"/>
+  <text x="330" y="205" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">SQSTM1</text>
+  
+  <!-- RB1 -->
+  <circle cx="520" cy="280" r="28" fill="#99ccff" stroke="#000" stroke-width="2"/>
+  <text x="520" y="285" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">RB1</text>
+  
+  <!-- DNA binding -->
+  <rect x="400" y="300" width="110" height="30" rx="5" ry="5" fill="#ffffcc" stroke="#000" stroke-width="1.5"/>
+  <text x="455" y="320" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">DNA binding</text>
+  
+  <!-- Interactions -->
+  <!-- ATF2 homodimerization -->
+  <path d="M450,345 Q475,325 480,360 Q485,395 450,415" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="510" y="370" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#000">Homodimerization</text>
+  
+  <!-- ATF2-JUN interaction -->
+  <line x1="450" y1="365" x2="550" y2="330" stroke="#000" stroke-width="2.5"/>
+  <text x="500" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#000">Binding</text>
+  
+  <!-- ATF2-JDP2 interaction -->
+  <line x1="450" y1="365" x2="350" y2="330" stroke="#000" stroke-width="2.5"/>
+  <text x="390" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#000">Binding</text>
+  
+  <!-- JNK to ATF2 -->
+  <line x1="505" y1="480" x2="460" y2="410" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="470" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#000">Phosphorylation</text>
+  
+  <!-- p38 to ATF2 -->
+  <line x1="395" y1="480" x2="435" y2="410" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cellular processes -->
+  <!-- Gene expression -->
+  <rect x="650" y="250" width="160" height="40" rx="10" ry="10" fill="#f2f2f2" stroke="#000" stroke-width="1.5"/>
+  <text x="730" y="275" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">Gene Expression</text>
+  <line x1="485" y1="380" x2="650" y2="270" stroke="#000" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Apoptosis -->
+  <rect x="650" y="300" width="160" height="40" rx="10" ry="10" fill="#f2f2f2" stroke="#000" stroke-width="1.5"/>
+  <text x="730" y="325" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">Apoptosis</text>
+  <line x1="485" y1="390" x2="650" y2="320" stroke="#000" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Cell differentiation -->
+  <rect x="650" y="350" width="160" height="40" rx="10" ry="10" fill="#f2f2f2" stroke="#000" stroke-width="1.5"/>
+  <text x="730" y="375" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">Cell Differentiation</text>
+  <line x1="485" y1="395" x2="650" y2="370" stroke="#000" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Stress response -->
+  <rect x="650" y="400" width="160" height="40" rx="10" ry="10" fill="#f2f2f2" stroke="#000" stroke-width="1.5"/>
+  <text x="730" y="425" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">Stress Response</text>
+  <line x1="485" y1="400" x2="650" y2="420" stroke="#000" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Immune response -->
+  <rect x="650" y="450" width="160" height="40" rx="10" ry="10" fill="#f2f2f2" stroke="#000" stroke-width="1.5"/>
+  <text x="730" y="475" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">Immune Response</text>
+  <line x1="485" y1="405" x2="650" y2="470" stroke="#000" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Tissue-specific processes -->
+  <!-- Melanocyte -->
+  <rect x="130" y="320" width="110" height="35" rx="5" ry="5" fill="#ffe6cc" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="342" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Melanocyte</text>
+  <line x1="415" y1="380" x2="240" y2="337" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- Neuron -->
+  <rect x="130" y="365" width="110" height="35" rx="5" ry="5" fill="#ffe6cc" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="387" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Neuron</text>
+  <line x1="415" y1="385" x2="240" y2="382" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- Macrophage -->
+  <rect x="130" y="410" width="110" height="35" rx="5" ry="5" fill="#ffe6cc" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="432" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Macrophage</text>
+  <line x1="415" y1="390" x2="240" y2="427" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- Chondrocyte -->
+  <rect x="130" y="455" width="110" height="35" rx="5" ry="5" fill="#ffe6cc" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="477" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Chondrocyte</text>
+  <line x1="415" y1="395" x2="240" y2="472" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- Keratinocyte -->
+  <rect x="130" y="500" width="110" height="35" rx="5" ry="5" fill="#ffe6cc" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="522" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Keratinocyte</text>
+  <line x1="415" y1="400" x2="240" y2="517" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- Adipocyte -->
+  <rect x="130" y="545" width="110" height="35" rx="5" ry="5" fill="#ffe6cc" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="567" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Adipocyte</text>
+  <line x1="415" y1="405" x2="240" y2="562" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- Cell process summary -->
+  <rect x="100" y="600" width="700" height="70" rx="15" ry="15" fill="#eeeeff" stroke="#000" stroke-width="1.5"/>
+  <text x="450" y="625" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">ATF2 regulates multiple cellular processes including transcription, stress response,</text>
+  <text x="450" y="650" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000">cell differentiation, and apoptosis across various cell types</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="690" width="700" height="150" rx="10" ry="10" fill="#f9f9f9" stroke="#000" stroke-width="1.5"/>
+  <text x="450" y="715" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#000">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="160" cy="740" r="12" fill="#ff9999" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="745" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">ATF2 (Main focus protein)</text>
+  
+  <circle cx="160" cy="770" r="12" fill="#99ccff" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="775" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Transcription factors/DNA-binding proteins</text>
+  
+  <circle cx="160" cy="800" r="12" fill="#ffcc99" stroke="#000" stroke-width="1.5"/>
+  <text x="185" y="805" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Kinases (signaling molecules)</text>
+  
+  <circle cx="450" cy="740" r="12" fill="#ccff99" stroke="#000" stroke-width="1.5"/>
+  <text x="475" y="745" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Regulatory proteins</text>
+  
+  <rect x="440" y="760" width="20" height="15" rx="5" ry="5" fill="#ffe6cc" stroke="#000" stroke-width="1.5"/>
+  <text x="475" y="775" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Cell types</text>
+  
+  <rect x="440" y="790" width="20" height="15" rx="5" ry="5" fill="#f2f2f2" stroke="#000" stroke-width="1.5"/>
+  <text x="475" y="805" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Biological processes</text>
+  
+  <line x1="620" y1="740" x2="670" y2="740" stroke="#000" stroke-width="2.5"/>
+  <text x="710" y="745" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Protein interaction</text>
+  
+  <line x1="620" y1="770" x2="670" y2="770" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="710" y="775" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Signaling/Modification</text>
+  
+  <line x1="620" y1="800" x2="670" y2="800" stroke="#000" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="710" y="805" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#000">Process association</text>
+  
+  <!-- Marker definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+</svg>

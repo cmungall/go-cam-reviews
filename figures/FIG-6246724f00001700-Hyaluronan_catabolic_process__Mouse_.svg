@@ -1,0 +1,152 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">Hyaluronan Catabolic Process (Mouse)</text>
+  
+  <!-- Cell membrane -->
+  <path d="M50,180 Q400,130 750,180 Q400,230 50,180" fill="#d9f0ff" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Extracellular space label -->
+  <text x="400" y="100" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Hyaluronan polymer -->
+  <path d="M100,150 Q150,120 200,150 Q250,120 300,150 Q350,120 400,150 Q450,120 500,150 Q550,120 600,150 Q650,120 700,150" stroke="#ff9900" stroke-width="5" fill="none"/>
+  <text x="400" y="70" font-family="Arial" font-size="16" text-anchor="middle">Hyaluronan</text>
+  
+  <!-- Cell cytoplasm -->
+  <rect x="50" y="180" width="700" height="420" fill="#f2f2f2" rx="20" ry="20" stroke="#333333" stroke-width="2"/>
+  <text x="400" y="210" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Membrane raft -->
+  <ellipse cx="250" cy="180" rx="170" ry="35" fill="#ffe6cc" stroke="#ff9933" stroke-width="2"/>
+  <text x="250" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Membrane Raft</text>
+  
+  <!-- Lysosome -->
+  <ellipse cx="400" cy="400" rx="200" ry="130" fill="#ffcccc" stroke="#cc0000" stroke-width="2"/>
+  <text x="400" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Lysosome</text>
+  
+  <!-- Membrane Proteins -->
+  <!-- CD44 -->
+  <rect x="150" y="160" width="45" height="35" fill="#66b3ff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="172" y="183" font-family="Arial" font-size="12" text-anchor="middle">CD44</text>
+  <text x="172" y="145" font-family="Arial" font-size="11" text-anchor="middle">Cargo receptor</text>
+  
+  <!-- LYVE1 -->
+  <rect x="205" y="160" width="45" height="35" fill="#66b3ff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="227" y="183" font-family="Arial" font-size="12" text-anchor="middle">LYVE1</text>
+  <text x="227" y="145" font-family="Arial" font-size="11" text-anchor="middle">Cargo receptor</text>
+  
+  <!-- STAB2 -->
+  <rect x="260" y="160" width="45" height="35" fill="#66b3ff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="282" y="183" font-family="Arial" font-size="12" text-anchor="middle">STAB2</text>
+  <text x="282" y="145" font-family="Arial" font-size="11" text-anchor="middle">Cargo receptor</text>
+  
+  <!-- HMMR -->
+  <rect x="315" y="160" width="45" height="35" fill="#66b3ff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="337" y="183" font-family="Arial" font-size="12" text-anchor="middle">HMMR</text>
+  <text x="337" y="145" font-family="Arial" font-size="11" text-anchor="middle">Cargo receptor</text>
+  
+  <!-- Antiporters -->
+  <!-- SLC9A1 -->
+  <rect x="90" y="160" width="50" height="35" fill="#99cc99" stroke="#339933" stroke-width="2" rx="5" ry="5"/>
+  <text x="115" y="183" font-family="Arial" font-size="12" text-anchor="middle">SLC9A1</text>
+  <text x="115" y="145" font-family="Arial" font-size="11" text-anchor="middle">Na+/H+ antiporter</text>
+  
+  <!-- CHP1 -->
+  <rect x="370" y="160" width="50" height="35" fill="#99cc99" stroke="#339933" stroke-width="2" rx="5" ry="5"/>
+  <text x="395" y="183" font-family="Arial" font-size="12" text-anchor="middle">CHP1</text>
+  <text x="395" y="145" font-family="Arial" font-size="11" text-anchor="middle">Na+/H+ antiporter</text>
+  
+  <!-- HYAL2 in membrane raft -->
+  <rect x="250" y="220" width="60" height="35" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="280" y="242" font-family="Arial" font-size="12" text-anchor="middle">HYAL2</text>
+  <text x="280" y="260" font-family="Arial" font-size="11" text-anchor="middle">Hyaluronidase</text>
+  
+  <!-- Lysosomal enzymes -->
+  <!-- HYAL1 -->
+  <rect x="300" y="370" width="45" height="35" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="322" y="392" font-family="Arial" font-size="12" text-anchor="middle">HYAL1</text>
+  <text x="322" y="412" font-family="Arial" font-size="11" text-anchor="middle">Hyaluronidase</text>
+  
+  <!-- GUSB -->
+  <rect x="355" y="370" width="45" height="35" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="377" y="392" font-family="Arial" font-size="12" text-anchor="middle">GUSB</text>
+  <text x="377" y="412" font-family="Arial" font-size="11" text-anchor="middle">β-glucuronidase</text>
+  
+  <!-- HEXA -->
+  <rect x="410" y="370" width="45" height="35" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="432" y="392" font-family="Arial" font-size="12" text-anchor="middle">HEXA</text>
+  <text x="432" y="412" font-family="Arial" font-size="11" text-anchor="middle">Hexosaminidase</text>
+  
+  <!-- HEXB -->
+  <rect x="465" y="370" width="45" height="35" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="487" y="392" font-family="Arial" font-size="12" text-anchor="middle">HEXB</text>
+  <text x="487" y="412" font-family="Arial" font-size="11" text-anchor="middle">Hexosaminidase</text>
+  
+  <!-- SLC17A5 -->
+  <rect x="500" y="430" width="60" height="35" fill="#cc99ff" stroke="#6600cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="530" y="452" font-family="Arial" font-size="12" text-anchor="middle">SLC17A5</text>
+  <text x="530" y="472" font-family="Arial" font-size="11" text-anchor="middle">Transporter</text>
+  
+  <!-- Process arrows -->
+  <!-- Hyaluronan to membrane receptors -->
+  <path d="M400,150 L250,165" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Membrane receptor to HYAL2 -->
+  <path d="M250,195 L250,220" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- HYAL2 to lysosome -->
+  <path d="M280,255 Q330,290 322,370" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Sequential processing in lysosome -->
+  <path d="M345,387 L355,387" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M400,387 L410,387" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M455,387 L465,387" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M510,387 Q525,410 530,430" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Degradation products -->
+  <text x="530" y="490" font-family="Arial" font-size="14" text-anchor="middle">Catabolites</text>
+  <path d="M530,475 L570,500" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="620" y="480" width="150" height="150" fill="#ffffff" stroke="#333333" stroke-width="1"/>
+  <text x="695" y="500" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="630" y="510" width="20" height="15" fill="#66b3ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="700" y="522" font-family="Arial" font-size="12" text-anchor="middle">Cargo Receptors</text>
+  
+  <rect x="630" y="535" width="20" height="15" fill="#99cc99" stroke="#339933" stroke-width="1"/>
+  <text x="700" y="547" font-family="Arial" font-size="12" text-anchor="middle">Na+/H+ Antiporters</text>
+  
+  <rect x="630" y="560" width="20" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="700" y="572" font-family="Arial" font-size="12" text-anchor="middle">Hydrolytic Enzymes</text>
+  
+  <rect x="630" y="585" width="20" height="15" fill="#cc99ff" stroke="#6600cc" stroke-width="1"/>
+  <text x="700" y="597" font-family="Arial" font-size="12" text-anchor="middle">Transporter</text>
+  
+  <path d="M630,610 L650,610" stroke="#ff9900" stroke-width="3"/>
+  <text x="700" y="613" font-family="Arial" font-size="12" text-anchor="middle">Hyaluronan</text>
+  
+  <!-- Process stage labels -->
+  <circle cx="400" cy="150" r="5" fill="red"/>
+  <text x="440" cy="150" font-family="Arial" font-size="13" font-weight="bold">1. Receptor Binding</text>
+  
+  <circle cx="250" cy="220" r="5" fill="red"/>
+  <text x="175" cy="220" font-family="Arial" font-size="13" font-weight="bold" text-anchor="end">2. Initial Cleavage</text>
+  
+  <circle cx="322" cy="370" r="5" fill="red"/>
+  <text x="265" cy="350" font-family="Arial" font-size="13" font-weight="bold" text-anchor="end">3. Lysosomal Degradation</text>
+  
+  <circle cx="530" cy="430" r="5" fill="red"/>
+  <text x="610" cy="430" font-family="Arial" font-size="13" font-weight="bold">4. Export</text>
+</svg>

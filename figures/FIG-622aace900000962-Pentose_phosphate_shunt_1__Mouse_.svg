@@ -1,0 +1,129 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane outline -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  <text x="60" y="80" font-family="Arial" font-size="16" fill="#333">Mouse Cell</text>
+
+  <!-- Cytosol label -->
+  <text x="350" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#555">Cytosol (GO:0005829)</text>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#000">Pentose-Phosphate Shunt (Mouse)</text>
+
+  <!-- Pathway Section Labels -->
+  <rect x="100" y="110" width="240" height="30" rx="10" ry="10" fill="#d1e7dd" stroke="#333" stroke-width="1"/>
+  <text x="220" y="130" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Oxidative Branch (GO:0009051)</text>
+  
+  <rect x="460" y="110" width="240" height="30" rx="10" ry="10" fill="#f8d7da" stroke="#333" stroke-width="1"/>
+  <text x="580" y="130" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Non-oxidative Branch (GO:0006098)</text>
+
+  <!-- Pathway Diagram - Oxidative Branch -->
+  <!-- Enzyme 1: G6pd2 or G6pdx -->
+  <rect x="120" y="170" width="120" height="40" rx="5" ry="5" fill="#a8d1ff" stroke="#333" stroke-width="1.5"/>
+  <text x="180" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">G6pd2/G6pdx</text>
+  <text x="180" y="210" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">(GO:0004345)</text>
+
+  <!-- Enzyme 2: Pgls -->
+  <rect x="120" y="270" width="120" height="40" rx="5" ry="5" fill="#a8d1ff" stroke="#333" stroke-width="1.5"/>
+  <text x="180" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Pgls</text>
+  <text x="180" y="310" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">(GO:0017057)</text>
+
+  <!-- Enzyme 3: Pgd -->
+  <rect x="120" y="370" width="120" height="40" rx="5" ry="5" fill="#a8d1ff" stroke="#333" stroke-width="1.5"/>
+  <text x="180" y="395" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Pgd</text>
+  <text x="180" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">(GO:0004616)</text>
+
+  <!-- Flow arrows for oxidative branch -->
+  <path d="M180 210 L180 270" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M180 310 L180 370" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- NADPH production indicators -->
+  <circle cx="240" y="230" r="15" fill="#ffcc80" stroke="#333" stroke-width="1"/>
+  <text x="240" y="234" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">NADPH</text>
+  <path d="M200 210 L240 230" stroke="#333" stroke-width="1" stroke-dasharray="4,2" fill="none"/>
+  
+  <circle cx="240" y="330" r="15" fill="#ffcc80" stroke="#333" stroke-width="1"/>
+  <text x="240" y="334" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">NADPH</text>
+  <path d="M200 370 L240 330" stroke="#333" stroke-width="1" stroke-dasharray="4,2" fill="none"/>
+
+  <!-- Connection to non-oxidative branch -->
+  <path d="M180 410 L180 450 L340 450" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Pathway Diagram - Non-oxidative Branch -->
+  <!-- Split line for two parallel reactions -->
+  <path d="M340 450 L460 450 L460 400" stroke="#333" stroke-width="2" fill="none"/>
+  <path d="M340 450 L460 450 L460 500" stroke="#333" stroke-width="2" fill="none"/>
+
+  <!-- Enzyme 4: Rpia -->
+  <rect x="400" y="360" width="120" height="40" rx="5" ry="5" fill="#ffadad" stroke="#333" stroke-width="1.5"/>
+  <text x="460" y="385" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Rpia</text>
+  <text x="460" y="400" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">(GO:0004751)</text>
+
+  <!-- Enzyme 5: Rpe -->
+  <rect x="400" y="460" width="120" height="40" rx="5" ry="5" fill="#ffadad" stroke="#333" stroke-width="1.5"/>
+  <text x="460" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Rpe</text>
+  <text x="460" y="500" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">(GO:0004750)</text>
+
+  <!-- Flow arrows to central enzymes -->
+  <path d="M520 380 L560 380" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M520 480 L560 480" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Enzyme 6: Tkt (shown twice) -->
+  <rect x="560" y="360" width="120" height="40" rx="5" ry="5" fill="#ffadad" stroke="#333" stroke-width="1.5"/>
+  <text x="620" y="385" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Tkt</text>
+  <text x="620" y="400" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">(GO:0004802)</text>
+
+  <rect x="560" y="460" width="120" height="40" rx="5" ry="5" fill="#ffadad" stroke="#333" stroke-width="1.5"/>
+  <text x="620" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Tkt</text>
+  <text x="620" y="500" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">(GO:0004802)</text>
+
+  <!-- Enzyme 7: Taldo1 -->
+  <rect x="560" y="270" width="120" height="40" rx="5" ry="5" fill="#ffadad" stroke="#333" stroke-width="1.5"/>
+  <text x="620" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Taldo1</text>
+  <text x="620" y="310" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">(GO:0004801)</text>
+
+  <!-- Feedback loops and connections -->
+  <path d="M620 360 L620 310" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M620 270 L620 210 L180 170" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M620 500 L620 530 L80 530 L80 190 L120 190" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Output molecule: Fructose-6-P -->
+  <ellipse cx="660" y="190" rx="60" ry="20" fill="#d1c4e9" stroke="#333" stroke-width="1"/>
+  <text x="660" y="195" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Fructose-6-P (CHEBI:57634)</text>
+
+  <!-- Input molecule -->
+  <ellipse cx="60" y="190" rx="45" ry="20" fill="#d1c4e9" stroke="#333" stroke-width="1"/>
+  <text x="60" y="195" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Glucose-6-P</text>
+
+  <!-- Intermediate metabolites -->
+  <ellipse cx="180" y="240" rx="30" ry="15" fill="#d1c4e9" stroke="#333" stroke-width="1" opacity="0.7"/>
+  <text x="180" y="244" font-family="Arial" font-size="8" text-anchor="middle" fill="#000">6-PG-lactone</text>
+  
+  <ellipse cx="180" y="340" rx="30" ry="15" fill="#d1c4e9" stroke="#333" stroke-width="1" opacity="0.7"/>
+  <text x="180" y="344" font-family="Arial" font-size="8" text-anchor="middle" fill="#000">6-phosphogluconate</text>
+  
+  <ellipse cx="280" y="450" rx="30" ry="15" fill="#d1c4e9" stroke="#333" stroke-width="1" opacity="0.7"/>
+  <text x="280" y="454" font-family="Arial" font-size="8" text-anchor="middle" fill="#000">Ribulose-5P</text>
+
+  <!-- Legend -->
+  <rect x="60" y="545" width="680" height="45" rx="5" ry="5" fill="#f5f5f5" stroke="#333" stroke-width="1"/>
+  <text x="70" y="565" font-family="Arial" font-size="12" font-weight="bold" fill="#000">Legend:</text>
+  
+  <rect x="130" y="555" width="20" height="20" fill="#a8d1ff" stroke="#333" stroke-width="1"/>
+  <text x="155" y="570" font-family="Arial" font-size="11" fill="#000">Oxidative branch enzymes</text>
+  
+  <rect x="320" y="555" width="20" height="20" fill="#ffadad" stroke="#333" stroke-width="1"/>
+  <text x="345" y="570" font-family="Arial" font-size="11" fill="#000">Non-oxidative branch enzymes</text>
+  
+  <circle cx="480" y="565" r="10" fill="#ffcc80" stroke="#333" stroke-width="1"/>
+  <text x="495" y="570" font-family="Arial" font-size="11" fill="#000">NADPH (CHEBI:57783)</text>
+  
+  <ellipse cx="600" y="565" rx="20" ry="10" fill="#d1c4e9" stroke="#333" stroke-width="1"/>
+  <text x="625" y="570" font-family="Arial" font-size="11" fill="#000">Metabolites</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

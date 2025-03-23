@@ -1,0 +1,137 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <path d="M100,100 Q400,50 700,100 Q750,300 700,500 Q400,550 100,500 Q50,300 100,100" fill="#f8f9fa" stroke="#333" stroke-width="3"/>
+  
+  <!-- Background organelles (subtle) -->
+  <ellipse cx="200" cy="250" rx="50" ry="30" fill="#e6e6fa" stroke="#d0d0d0" stroke-width="1" opacity="0.7"/>
+  <ellipse cx="600" cy="350" rx="60" ry="40" fill="#e6e6fa" stroke="#d0d0d0" stroke-width="1" opacity="0.7"/>
+  <ellipse cx="300" cy="400" rx="40" ry="25" fill="#e6e6fa" stroke="#d0d0d0" stroke-width="1" opacity="0.7"/>
+  
+  <!-- NLRP3 inflammasome assembly -->
+  <g id="nlrp3-assembly">
+    <circle cx="250" cy="200" r="15" fill="#f58f29" stroke="#333" stroke-width="2"/>
+    <text x="250" y="205" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">NLRP3</text>
+    
+    <circle cx="290" cy="180" r="15" fill="#db5461" stroke="#333" stroke-width="2"/>
+    <text x="290" y="185" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">ASC</text>
+    
+    <rect x="310" y="190" width="80" height="30" rx="5" ry="5" fill="#ffd166" stroke="#333" stroke-width="2"/>
+    <text x="350" y="210" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">NLRP3 Complex</text>
+    
+    <!-- Assembly arrow -->
+    <path d="M270,190 Q310,170 320,200" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <text x="280" y="170" font-family="Arial" font-size="9" text-anchor="middle" fill="#000">Complex Assembly</text>
+  </g>
+  
+  <!-- Caspases and pathway -->
+  <rect x="310" y="240" width="70" height="30" rx="5" ry="5" fill="#118ab2" stroke="#333" stroke-width="2"/>
+  <text x="345" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Caspa</text>
+  
+  <rect x="310" y="300" width="70" height="30" rx="5" ry="5" fill="#118ab2" stroke="#333" stroke-width="2"/>
+  <text x="345" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Caspb</text>
+  
+  <!-- Complex to Caspase activation -->
+  <path d="M350,220 Q350,230 350,240" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="370" y="230" font-family="Arial" font-size="9" text-anchor="middle" fill="#000">activates</text>
+  
+  <!-- Caspa to Caspb activation -->
+  <path d="M345,270 Q345,285 345,300" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Self proteolysis arrows - dashed lines with distinct arrows -->
+  <path d="M320,240 Q305,220 305,210" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="4" marker-end="url(#selfArrow)"/>
+  <text x="280" y="225" font-family="Arial" font-size="9" text-anchor="middle" fill="#000">self-proteolysis</text>
+  
+  <path d="M320,300 Q305,280 305,270" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="4" marker-end="url(#selfArrow)"/>
+  <text x="280" y="285" font-family="Arial" font-size="9" text-anchor="middle" fill="#000">self-proteolysis</text>
+  
+  <!-- Gasdermins -->
+  <rect x="450" y="270" width="70" height="30" rx="5" ry="5" fill="#06d6a0" stroke="#333" stroke-width="2"/>
+  <text x="485" y="290" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Gsdmea</text>
+  
+  <rect x="450" y="330" width="70" height="30" rx="5" ry="5" fill="#06d6a0" stroke="#333" stroke-width="2"/>
+  <text x="485" y="350" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Gsdmeb</text>
+  
+  <!-- Causal arrows - distinct style -->
+  <path d="M380,255 Q415,260 450,285" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#positiveArrow)"/>
+  <text x="415" y="260" font-family="Arial" font-size="9" text-anchor="middle" fill="#000">activates</text>
+  
+  <path d="M380,315 Q415,325 450,340" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#positiveArrow)"/>
+  <text x="415" y="340" font-family="Arial" font-size="9" text-anchor="middle" fill="#000">activates</text>
+  
+  <!-- IL-1β activation (marked as not in source) -->
+  <rect x="450" y="210" width="70" height="30" rx="5" ry="5" fill="#dbd56e" stroke="#333" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="485" y="230" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">IL-1β</text>
+  <path d="M380,245 Q415,225 450,225" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="5,2" marker-end="url(#arrowhead)"/>
+  <text x="415" y="215" font-family="Arial" font-size="9" text-anchor="middle" fill="#000" font-style="italic">not in source</text>
+  
+  <!-- Pyroptosis outcome -->
+  <path d="M520,285 Q550,300 565,325" fill="none" stroke="#ff595e" stroke-width="2" marker-end="url(#effectArrow)"/>
+  <path d="M520,340 Q550,345 565,325" fill="none" stroke="#ff595e" stroke-width="2" marker-end="url(#effectArrow)"/>
+  
+  <rect x="550" y="330" width="100" height="40" rx="8" ry="8" fill="#ff595e" stroke="#333" stroke-width="2"/>
+  <text x="600" y="355" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">PYROPTOSIS</text>
+  
+  <!-- Cell membrane pores (depicting pyroptosis) -->
+  <g id="pores">
+    <path d="M680,100 Q685,95 690,100" fill="none" stroke="#ff595e" stroke-width="2"/>
+    <path d="M650,105 Q655,100 660,105" fill="none" stroke="#ff595e" stroke-width="2"/>
+    <path d="M620,500 Q625,495 630,500" fill="none" stroke="#ff595e" stroke-width="2"/>
+    <path d="M670,490 Q675,485 680,490" fill="none" stroke="#ff595e" stroke-width="2"/>
+  </g>
+  
+  <!-- IL-1β release through pores -->
+  <circle cx="680" cy="100" r="8" fill="#dbd56e" stroke="#333" stroke-width="1"/>
+  <text x="680" y="103" font-family="Arial" font-size="6" text-anchor="middle" fill="#000">IL-1β</text>
+  <circle cx="650" cy="105" r="8" fill="#dbd56e" stroke="#333" stroke-width="1"/>
+  <text x="650" y="108" font-family="Arial" font-size="6" text-anchor="middle" fill="#000">IL-1β</text>
+  
+  <!-- Membrane rupture effect -->
+  <path d="M600,450 Q620,440 650,450 Q670,465 690,450" fill="none" stroke="#ff595e" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="645" y="480" font-family="Arial" font-size="10" text-anchor="middle" fill="#ff595e">Cell lysis</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#000">NLRP3 Inflammasome Pathway in Pyroptosis</text>
+  <text x="400" y="75" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle" fill="#000">Danio rerio</text>
+  
+  <!-- Legend -->
+  <rect x="90" y="520" width="620" height="70" rx="5" ry="5" fill="#f8f9fa" stroke="#333" stroke-width="1"/>
+  <text x="150" y="535" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">LEGEND</text>
+  
+  <!-- Legend items -->
+  <circle cx="120" cy="550" r="8" fill="#f58f29" stroke="#333" stroke-width="1"/>
+  <text x="135" y="554" font-family="Arial" font-size="10" text-anchor="start" fill="#000">Proteins</text>
+  
+  <rect x="170" cy="545" width="16" height="10" fill="#ffd166" stroke="#333" stroke-width="1"/>
+  <text x="195" y="554" font-family="Arial" font-size="10" text-anchor="start" fill="#000">Protein complex</text>
+  
+  <rect x="270" y="545" width="16" height="10" fill="#06d6a0" stroke="#333" stroke-width="1"/>
+  <text x="295" y="554" font-family="Arial" font-size="10" text-anchor="start" fill="#000">Gasdermin proteins</text>
+  
+  <path d="M350,550 L370,550" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="410" y="554" font-family="Arial" font-size="10" text-anchor="start" fill="#000">Activation</text>
+  
+  <path d="M450,550 L470,550" stroke="#333" stroke-width="1.5" stroke-dasharray="4" marker-end="url(#selfArrow)"/>
+  <text x="510" y="554" font-family="Arial" font-size="10" text-anchor="start" fill="#000">Self-proteolysis</text>
+  
+  <path d="M550,550 L570,550" stroke="#ff595e" stroke-width="1.5" marker-end="url(#effectArrow)"/>
+  <text x="610" y="554" font-family="Arial" font-size="10" text-anchor="start" fill="#000">Leads to pyroptosis</text>
+  
+  <rect x="120" y="565" width="16" height="10" fill="#dbd56e" stroke="#333" stroke-width="1" stroke-dasharray="5,2"/>
+  <text x="210" y="574" font-family="Arial" font-size="10" text-anchor="start" fill="#000">Element not explicitly in source data</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="selfArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="positiveArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="effectArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff595e"/>
+    </marker>
+  </defs>
+</svg>

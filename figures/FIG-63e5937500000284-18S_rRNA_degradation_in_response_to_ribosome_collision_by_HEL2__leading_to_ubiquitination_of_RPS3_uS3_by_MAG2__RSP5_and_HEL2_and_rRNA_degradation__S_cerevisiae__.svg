@@ -1,0 +1,132 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">18S rRNA Degradation Pathway in Response to Ribosome Collision (S. cerevisiae)</text>
+  
+  <!-- Cytosol background -->
+  <rect x="50" y="70" width="700" height="480" fill="#f5f5f5" rx="20" ry="20" stroke="#888888" stroke-width="2" />
+  <text x="80" y="100" font-family="Arial" font-size="16" font-weight="bold">Cytosol</text>
+  
+  <!-- Stalled ribosomes -->
+  <g transform="translate(150, 200)">
+    <!-- First ribosome (colliding) -->
+    <ellipse cx="0" cy="0" rx="65" ry="45" fill="#cce5ff" stroke="#0066cc" stroke-width="3" />
+    <ellipse cx="0" cy="0" rx="50" ry="35" fill="#e6f2ff" stroke="#0066cc" stroke-width="1" />
+    <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Stalled</text>
+    <text x="0" y="20" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Ribosome</text>
+    
+    <!-- Second ribosome (colliding) -->
+    <ellipse cx="90" cy="0" rx="65" ry="45" fill="#cce5ff" stroke="#0066cc" stroke-width="3" />
+    <ellipse cx="90" cy="0" rx="50" ry="35" fill="#e6f2ff" stroke="#0066cc" stroke-width="1" />
+    <text x="90" y="5" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Colliding</text>
+    <text x="90" y="20" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Ribosome</text>
+    
+    <!-- mRNA -->
+    <path d="M-80,-10 C-40,-5 40,-15 100,-10 C150,-5 240,-15 260,-10" stroke="#ff9900" stroke-width="4" fill="none" />
+    <text x="90" y="-25" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">mRNA</text>
+    
+    <!-- RPS3 protein -->
+    <circle cx="20" cy="-25" r="18" fill="#ffcccc" stroke="#cc0000" stroke-width="2.5" />
+    <text x="20" y="-21" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">RPS3</text>
+  </g>
+  
+  <!-- HEL2 sensing -->
+  <g transform="translate(350, 150)">
+    <rect x="-50" y="-25" width="100" height="50" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="3" />
+    <text x="0" y="5" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">HEL2</text>
+    <text x="0" y="25" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">stalled ribosome sensor</text>
+    
+    <!-- Arrow to sensing -->
+    <path d="M-90, 50 C-70, 30 -50, 10 -30, 0" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  </g>
+  
+  <!-- Ubiquitin ligases -->
+  <g transform="translate(450, 260)">
+    <!-- MAG2 -->
+    <rect x="-190" y="-5" width="90" height="50" rx="15" ry="15" fill="#c2f0c2" stroke="#006600" stroke-width="3" />
+    <text x="-145" y="25" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">MAG2</text>
+    
+    <!-- RSP5 -->
+    <rect x="-65" y="-5" width="90" height="50" rx="15" ry="15" fill="#c2f0c2" stroke="#006600" stroke-width="3" />
+    <text x="-20" y="25" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">RSP5</text>
+    
+    <!-- HEL2 (ubiquitin ligase) -->
+    <rect x="60" y="-5" width="90" height="50" rx="15" ry="15" fill="#c2f0c2" stroke="#006600" stroke-width="3" />
+    <text x="105" y="25" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">HEL2</text>
+    
+    <!-- Ubiquitin ligase label -->
+    <text x="-50" y="-20" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">ubiquitin protein ligase activity</text>
+  </g>
+  
+  <!-- Ubiquitinated RPS3 -->
+  <g transform="translate(300, 370)">
+    <circle cx="0" cy="0" r="30" fill="#ffcccc" stroke="#cc0000" stroke-width="3" />
+    <text x="0" y="5" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RPS3</text>
+    
+    <!-- Ubiquitin chains -->
+    <circle cx="-20" cy="-25" r="12" fill="#ffffcc" stroke="#cccc00" stroke-width="2.5" />
+    <text x="-20" y="-22" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">Ub</text>
+    
+    <circle cx="0" cy="-32" r="12" fill="#ffffcc" stroke="#cccc00" stroke-width="2.5" />
+    <text x="0" y="-29" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">Ub</text>
+    
+    <circle cx="20" cy="-25" r="12" fill="#ffffcc" stroke="#cccc00" stroke-width="2.5" />
+    <text x="20" y="-22" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">Ub</text>
+    
+    <!-- K63-linked ubiquitination label -->
+    <text x="0" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">K63-linked ubiquitination</text>
+  </g>
+  
+  <!-- rRNA degradation -->
+  <g transform="translate(500, 420)">
+    <path d="M-120,-50 C-100,-30 -80,0 -60,0" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+    
+    <rect x="-45" y="-30" width="160" height="60" rx="15" ry="15" fill="#e6ccff" stroke="#6600cc" stroke-width="3" />
+    <text x="35" y="0" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">18S rRNA Degradation</text>
+    <text x="35" y="25" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">nonfunctional rRNA decay</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(630, 480)">
+    <rect x="0" y="0" width="150" height="100" fill="white" stroke="#888888" stroke-width="1.5" />
+    <text x="75" y="20" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+    
+    <!-- Protein -->
+    <rect x="10" y="35" width="25" height="15" rx="5" ry="5" fill="#c2f0c2" stroke="#006600" stroke-width="2" />
+    <text x="50" y="47" font-family="Arial" font-size="12" text-anchor="left">Ubiquitin ligase</text>
+    
+    <!-- Ribosome -->
+    <ellipse cx="22" cy="65" rx="15" ry="10" fill="#cce5ff" stroke="#0066cc" stroke-width="2" />
+    <text x="50" y="69" font-family="Arial" font-size="12" text-anchor="left">Ribosome</text>
+    
+    <!-- Ubiquitin -->
+    <circle cx="22" cy="85" r="8" fill="#ffffcc" stroke="#cccc00" stroke-width="2" />
+    <text x="50" y="89" font-family="Arial" font-size="12" text-anchor="left">Ubiquitin</text>
+  </g>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Arrows connecting events -->
+  <path d="M350,190 C350,220 270,240 270,260" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M350,190 C350,220 390,240 390,260" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M350,190 C350,220 500,240 500,260" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  
+  <path d="M270,300 C270,320 280,340 290,350" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M390,300 C390,320 330,340 310,350" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M500,300 C500,330 350,350 330,360" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  
+  <path d="M330,370 C400,390 430,400 460,420" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+
+  <!-- Process labels -->
+  <text x="230" y="130" font-family="Arial" font-size="14" font-style="italic" font-weight="bold">1. Ribosome collision detection</text>
+  <text x="230" y="230" font-family="Arial" font-size="14" font-style="italic" font-weight="bold">2. Recruitment of ubiquitin ligases</text>
+  <text x="230" y="330" font-family="Arial" font-size="14" font-style="italic" font-weight="bold">3. RPS3/uS3 ubiquitination</text>
+  <text x="230" y="430" font-family="Arial" font-size="14" font-style="italic" font-weight="bold">4. 18S rRNA degradation</text>
+</svg>

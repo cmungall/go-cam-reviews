@@ -1,0 +1,121 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline - Type B pancreatic cell -->
+  <ellipse cx="400" cy="320" rx="380" ry="280" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
+  <text x="50" y="70" font-family="Arial" font-size="16" font-weight="bold">Type B Pancreatic Cell (CL:0000169)</text>
+  
+  <!-- Endoplasmic Reticulum -->
+  <path d="M150,200 C200,180 220,220 270,200 C320,180 340,220 390,200 C440,180 460,220 510,200 C560,180 580,220 630,200 C680,180 690,200 690,220 C690,240 680,260 630,240 C580,260 560,220 510,240 C460,260 440,220 390,240 C340,260 320,220 270,240 C220,260 200,220 150,240 C100,260 90,240 90,220 C90,200 100,180 150,200" fill="#deeaee" stroke="#333" stroke-width="2"/>
+  <text x="200" y="225" font-family="Arial" font-size="14" font-weight="bold">Endoplasmic Reticulum</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="400" rx="150" ry="100" fill="#e1f5e0" stroke="#333" stroke-width="2"/>
+  <text x="370" y="400" font-family="Arial" font-size="14" font-weight="bold">Nucleus</text>
+  <text x="340" y="420" font-family="Arial" font-size="12" fill="#333">(GO:0005634)</text>
+  
+  <!-- Main process label -->
+  <rect x="250" y="30" width="300" height="40" rx="5" ry="5" fill="#cfe2f3" stroke="#333" stroke-width="2"/>
+  <text x="270" y="55" font-family="Arial" font-size="14" font-weight="bold">ER Unfolded Protein Response (GO:0030968)</text>
+  
+  <!-- Gene products and interactions -->
+  
+  <!-- Xbp1 -->
+  <rect x="140" y="150" width="80" height="30" rx="5" ry="5" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+  <text x="155" y="170" font-family="Arial" font-size="12" font-weight="bold">Xbp1</text>
+  
+  <!-- Wfs1 initial -->
+  <rect x="280" y="150" width="80" height="30" rx="5" ry="5" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+  <text x="295" y="170" font-family="Arial" font-size="12" font-weight="bold">Wfs1</text>
+  
+  <!-- Ern1 -->
+  <rect x="420" y="150" width="80" height="30" rx="5" ry="5" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+  <text x="435" y="170" font-family="Arial" font-size="12" font-weight="bold">Ern1</text>
+  
+  <!-- Eif2ak3 -->
+  <rect x="560" y="150" width="80" height="30" rx="5" ry="5" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+  <text x="575" y="170" font-family="Arial" font-size="12" font-weight="bold">Eif2ak3</text>
+  
+  <!-- Eif2a -->
+  <rect x="560" y="280" width="80" height="30" rx="5" ry="5" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+  <text x="575" y="300" font-family="Arial" font-size="12" font-weight="bold">Eif2a</text>
+  
+  <!-- Transcription regulator complex -->
+  <rect x="330" y="350" width="140" height="40" rx="5" ry="5" fill="#bfe3bc" stroke="#333" stroke-width="2"/>
+  <text x="338" y="370" font-family="Arial" font-size="11" font-weight="bold">Aatf/Stat3 Complex</text>
+  <text x="350" y="385" font-family="Arial" font-size="9">(GO:0005667)</text>
+  
+  <!-- Akt1 -->
+  <rect x="330" y="480" width="80" height="30" rx="5" ry="5" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+  <text x="345" y="500" font-family="Arial" font-size="12" font-weight="bold">Akt1</text>
+  
+  <!-- Wfs1 (second instance) -->
+  <rect x="190" y="350" width="80" height="30" rx="5" ry="5" fill="#ffe6cc" stroke="#333" stroke-width="2"/>
+  <text x="205" y="370" font-family="Arial" font-size="12" font-weight="bold">Wfs1</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- Xbp1 to Wfs1 -->
+  <path d="M220,165 L280,165" stroke="#333" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead)"/>
+  <text x="235" y="160" font-family="Arial" font-size="10">activates</text>
+  
+  <!-- Eif2ak3 to Eif2a -->
+  <path d="M600,180 L600,280" stroke="#333" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead)"/>
+  <text x="605" y="230" font-family="Arial" font-size="10">activates</text>
+  
+  <!-- Eif2a to Complex -->
+  <path d="M560,295 C500,300 490,340 470,350" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="485" y="320" font-family="Arial" font-size="10">inhibits</text>
+  
+  <!-- Wfs1 and Ern1 to Complex -->
+  <path d="M320,180 C330,250 340,280 350,350" stroke="#333" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead)"/>
+  <path d="M460,180 C450,250 440,280 430,350" stroke="#333" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead)"/>
+  <text x="325" y="265" font-family="Arial" font-size="10">activates</text>
+  <text x="435" y="265" font-family="Arial" font-size="10">activates</text>
+  
+  <!-- Complex to Akt1 -->
+  <path d="M400,390 L400,480" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead_blue)"/>
+  <text x="410" y="435" font-family="Arial" font-size="10">positively regulates</text>
+  
+  <!-- Complex to Wfs1 (second instance) -->
+  <path d="M330,370 L270,370" stroke="#333" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead)"/>
+  <text x="280" y="360" font-family="Arial" font-size="10">activates</text>
+  
+  <!-- Final outcome -->
+  <rect x="280" y="530" width="240" height="40" rx="5" ry="5" fill="#f8cecc" stroke="#333" stroke-width="2"/>
+  <text x="290" y="553" font-family="Arial" font-size="12" font-weight="bold">Negative regulation of intrinsic apoptotic</text>
+  <text x="320" y="568" font-family="Arial" font-size="12" font-weight="bold">signaling pathway (GO:2001243)</text>
+  
+  <!-- Connection to final outcome -->
+  <path d="M370,510 L370,530" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead_blue)"/>
+  
+  <!-- Legend -->
+  <rect x="500" y="450" width="240" height="155" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="520" y="470" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="520" y="480" width="20" height="15" fill="#ffe6cc" stroke="#333" stroke-width="1"/>
+  <text x="550" y="492" font-family="Arial" font-size="12">Gene Product</text>
+  
+  <rect x="520" y="505" width="20" height="15" fill="#bfe3bc" stroke="#333" stroke-width="1"/>
+  <text x="550" y="517" font-family="Arial" font-size="12">Protein Complex</text>
+  
+  <line x1="520" y1="535" x2="540" y2="535" stroke="#333" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead)"/>
+  <text x="550" y="538" font-family="Arial" font-size="12">Activates (RO:0002304)</text>
+  
+  <line x1="520" y1="555" x2="540" y2="555" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="0" marker-end="url(#arrowhead_blue)"/>
+  <text x="550" y="558" font-family="Arial" font-size="12">Positively Regulates (RO:0002629)</text>
+  
+  <line x1="520" y1="575" x2="540" y2="575" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="550" y="578" font-family="Arial" font-size="12">Inhibits (RO:0004047)</text>
+  
+  <rect x="520" y="590" width="20" height="15" fill="#f8cecc" stroke="#333" stroke-width="1"/>
+  <text x="550" y="602" font-family="Arial" font-size="12">Biological Process</text>
+  
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="arrowhead_blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4285F4"/>
+    </marker>
+  </defs>
+</svg>

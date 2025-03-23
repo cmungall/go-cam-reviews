@@ -1,0 +1,119 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <path d="M 50,300 H 750" stroke="#888888" stroke-width="8" stroke-linecap="round" fill="none" stroke-dasharray="2,4"/>
+  <text x="60" y="290" font-family="Arial" font-size="14" fill="#666" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Extracellular space -->
+  <text x="60" y="250" font-family="Arial" font-size="14" fill="#666" font-weight="bold">Extracellular</text>
+  
+  <!-- Cytoplasm -->
+  <text x="60" y="340" font-family="Arial" font-size="14" fill="#666" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Insulin Ligands -->
+  <circle cx="150" cy="220" r="20" fill="#f9d5e5" stroke="#000000" stroke-width="2"/>
+  <text x="150" y="220" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ins1</text>
+  <text x="150" y="235" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">Ligand</text>
+  
+  <circle cx="200" cy="220" r="20" fill="#f9d5e5" stroke="#000000" stroke-width="2"/>
+  <text x="200" y="220" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ins2</text>
+  <text x="200" y="235" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">Ligand</text>
+  
+  <!-- Insulin Receptor -->
+  <rect x="250" y="270" width="100" height="60" rx="10" ry="10" fill="#ade8f4" stroke="#000000" stroke-width="2"/>
+  <text x="300" y="295" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Insr</text>
+  <text x="300" y="315" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">Receptor/Kinase</text>
+  
+  <!-- Arrows from insulin to receptor with labels -->
+  <path d="M 165,235 L 265,280" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 215,235 L 285,280" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="210" y="250" font-family="Arial" font-size="11" fill="#444" text-anchor="middle">Binding</text>
+  
+  <!-- IRS1 & IRS2 -->
+  <rect x="200" y="380" width="80" height="40" rx="5" ry="5" fill="#a0c4ff" stroke="#000000" stroke-width="2"/>
+  <text x="240" y="400" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Irs1</text>
+  <text x="240" y="415" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">Adaptor</text>
+  
+  <rect x="320" y="380" width="80" height="40" rx="5" ry="5" fill="#a0c4ff" stroke="#000000" stroke-width="2"/>
+  <text x="360" y="400" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Irs2</text>
+  <text x="360" y="415" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">Adaptor</text>
+  
+  <!-- Arrows from receptor to IRS with labels -->
+  <path d="M 280,330 L 240,380" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 320,330 L 360,380" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="275" y="355" font-family="Arial" font-size="11" fill="#444" text-anchor="middle">Phosphorylation</text>
+  
+  <!-- Grb2 -->
+  <polygon points="350,460 380,480 350,500 320,480" fill="#bdb2ff" stroke="#000000" stroke-width="2"/>
+  <text x="350" y="480" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Grb2</text>
+  <text x="350" y="495" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">Adaptor</text>
+  
+  <!-- Arrows to Grb2 with labels -->
+  <path d="M 240,420 L 340,470" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 360,420 L 350,460" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="290" y="445" font-family="Arial" font-size="11" fill="#444" text-anchor="middle">Recruitment</text>
+  
+  <!-- SOS1 & SOS2 -->
+  <rect x="450" y="440" width="80" height="40" rx="5" ry="5" fill="#caffbf" stroke="#000000" stroke-width="2"/>
+  <text x="490" y="460" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sos1</text>
+  <text x="490" y="475" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">GEF</text>
+  
+  <rect x="450" y="500" width="80" height="40" rx="5" ry="5" fill="#caffbf" stroke="#000000" stroke-width="2"/>
+  <text x="490" y="520" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sos2</text>
+  <text x="490" y="535" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">GEF</text>
+  
+  <!-- Arrows from Grb2 to SOS with labels -->
+  <path d="M 380,480 L 450,460" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 370,490 L 450,520" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="415" y="470" font-family="Arial" font-size="11" fill="#444" text-anchor="middle">Activation</text>
+  
+  <!-- Hras -->
+  <circle cx="600" cy="470" r="25" fill="#fdffb6" stroke="#000000" stroke-width="2"/>
+  <text x="600" y="470" font-family="Arial" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Hras</text>
+  <text x="600" y="485" font-family="Arial" font-size="11" text-anchor="middle" dominant-baseline="middle">GTPase</text>
+  
+  <!-- Arrows to Hras with labels -->
+  <path d="M 530,460 L 575,470" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 530,520 L 580,480" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="555" y="450" font-family="Arial" font-size="11" fill="#444" text-anchor="middle">Activation</text>
+  
+  <!-- Flow arrow to indicate downstream signaling -->
+  <path d="M 625,470 C 665,470 650,470 680,470" stroke="#000000" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="670" y="460" font-family="Arial" font-size="11" fill="#444" text-anchor="middle">Downstream</text>
+  <text x="670" y="472" font-family="Arial" font-size="11" fill="#444" text-anchor="middle">Signaling</text>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Insulin Receptor Signaling Pathway (Mouse)</text>
+  <text x="400" y="65" font-family="Arial" font-size="14" text-anchor="middle">GO:0008286</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="100" width="180" height="160" rx="5" ry="5" fill="white" stroke="black" stroke-width="1"/>
+  <text x="670" y="120" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <circle cx="600" cy="140" r="10" fill="#f9d5e5" stroke="#000000" stroke-width="1"/>
+  <text x="670" y="145" font-family="Arial" font-size="12" dominant-baseline="middle">Ligand (Receptor Binding)</text>
+  
+  <rect x="590" y="160" width="20" height="15" rx="5" ry="5" fill="#ade8f4" stroke="#000000" stroke-width="1"/>
+  <text x="670" y="170" font-family="Arial" font-size="12" dominant-baseline="middle">Receptor/Kinase</text>
+  
+  <rect x="590" y="185" width="20" height="15" rx="5" ry="5" fill="#a0c4ff" stroke="#000000" stroke-width="1"/>
+  <text x="670" y="195" font-family="Arial" font-size="12" dominant-baseline="middle">Adaptor Protein</text>
+  
+  <rect x="590" y="210" width="20" height="15" rx="5" ry="5" fill="#caffbf" stroke="#000000" stroke-width="1"/>
+  <text x="670" y="220" font-family="Arial" font-size="12" dominant-baseline="middle">GEF (Guanine Exchange Factor)</text>
+  
+  <circle cx="600" cy="240" r="10" fill="#fdffb6" stroke="#000000" stroke-width="1"/>
+  <text x="660" y="245" font-family="Arial" font-size="12" dominant-baseline="middle">GTPase</text>
+  
+  <!-- Pathway flow indicator arrow -->
+  <path d="M 570,135 L 570,245" stroke="#000000" stroke-width="1" fill="none" stroke-dasharray="1,1"/>
+  <path d="M 570,245 L 575,240" stroke="#000000" stroke-width="1" fill="none"/>
+  <path d="M 570,245 L 565,240" stroke="#000000" stroke-width="1" fill="none"/>
+  <text x="545" y="190" font-family="Arial" font-size="11" fill="#444" text-anchor="middle" transform="rotate(-90 545 190)">Signaling Flow</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,167 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Nuclear membrane -->
+  <ellipse cx="400" cy="350" rx="180" ry="140" fill="#e6f2ff" stroke="#333" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Nucleus</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="250" y="100" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Cytoplasm</text>
+  
+  <!-- 1. MAP3K7 activating IKBKB -->
+  <circle cx="150" cy="150" r="25" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="150" y="148" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold">MAP3K7</text>
+  <text x="150" y="162" text-anchor="middle" font-family="Arial" font-size="8">(O43318)</text>
+  
+  <circle cx="250" cy="150" r="25" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="250" y="148" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold">IKBKB</text>
+  <text x="250" y="162" text-anchor="middle" font-family="Arial" font-size="8">(O14920)</text>
+  
+  <line x1="175" y1="150" x2="225" y2="150" stroke="#d32f2f" stroke-width="2" marker-end="url(#phosphoArrow)" stroke-dasharray="3,2"/>
+  <text x="200" y="140" text-anchor="middle" font-family="Arial" font-size="10">phosphorylates</text>
+  
+  <!-- Step number 1 -->
+  <circle cx="200" y="120" r="12" fill="#333" stroke="none"/>
+  <text x="200" y="124" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">1</text>
+  
+  <!-- 2. E3 ubiquitin ligase complex -->
+  <rect x="350" y="120" width="150" height="80" rx="10" ry="10" fill="#d1e7dd" stroke="#333" stroke-width="1.5"/>
+  <text x="425" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">E3 Ubiquitin Ligase</text>
+  <text x="425" y="155" text-anchor="middle" font-family="Arial" font-size="10">Complex</text>
+  <text x="425" y="175" text-anchor="middle" font-family="Arial" font-size="9">CUL1 (Q13616) - Scaffold</text>
+  <text x="425" y="190" text-anchor="middle" font-family="Arial" font-size="9">FBXW11 (Q9UKB1) - Adaptor</text>
+  <text x="425" y="205" text-anchor="middle" font-family="Arial" font-size="9">RBX1 (P62877) - Ligase</text>
+  
+  <line x1="275" y1="150" x2="350" y2="150" stroke="#2e7d32" stroke-width="2" marker-end="url(#activateArrow)"/>
+  <text x="313" y="140" text-anchor="middle" font-family="Arial" font-size="10">activates</text>
+  
+  <!-- Step number 2 -->
+  <circle cx="313" y="120" r="12" fill="#333" stroke="none"/>
+  <text x="313" y="124" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">2</text>
+  
+  <!-- 3. NF-kB inhibitor (NFKBIA) -->
+  <rect x="450" y="250" width="30" height="30" fill="#ffeb99" stroke="#333" stroke-width="1.5"/>
+  <text x="465" y="265" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">IκBα</text>
+  <text x="465" y="275" text-anchor="middle" font-family="Arial" font-size="7">(P25963)</text>
+  
+  <!-- NF-kB complex with inhibitor -->
+  <rect x="400" y="250" width="50" height="30" fill="#c2dbf0" stroke="#333" stroke-width="1.5"/>
+  <text x="425" y="265" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">NF-κB</text>
+  <text x="425" y="275" text-anchor="middle" font-family="Arial" font-size="7">(RELA+NFKB1)</text>
+  <text x="425" y="285" text-anchor="middle" font-family="Arial" font-size="7">(P19838+Q04206)</text>
+  
+  <!-- Ubiquitination of NFKBIA -->
+  <line x1="425" y1="200" x2="465" y2="250" stroke="#ff6f00" stroke-width="2" marker-end="url(#ubiquitinArrow)"/>
+  <circle cx="460" cy="235" r="10" fill="#ffd700" stroke="#333" stroke-width="1"/>
+  <text x="460" y="239" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ub</text>
+  <text x="500" y="230" text-anchor="middle" font-family="Arial" font-size="10">ubiquitinates</text>
+  
+  <!-- Step number 3 -->
+  <circle cx="490" y="210" r="12" fill="#333" stroke="none"/>
+  <text x="490" y="214" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">3</text>
+  
+  <!-- 4. Degradation of NFKBIA -->
+  <path d="M 480 260 L 510 260 L 530 290 L 510 320 L 480 320 Z" fill="#eeeeee" stroke="#333" stroke-width="1.5"/>
+  <text x="505" y="285" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">Proteasome</text>
+  <text x="505" y="300" text-anchor="middle" font-family="Arial" font-size="9">Degradation</text>
+  <line x1="480" y1="265" x2="450" y2="265" stroke="#7b1fa2" stroke-width="2" marker-start="url(#degradeArrow)"/>
+  
+  <!-- Step number 4 -->
+  <circle cx="465" y="290" r="12" fill="#333" stroke="none"/>
+  <text x="465" y="294" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">4</text>
+  
+  <!-- 5. Released NF-kB -->
+  <rect x="400" y="320" width="50" height="30" fill="#c2dbf0" stroke="#333" stroke-width="1.5"/>
+  <text x="425" y="330" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">NF-κB</text>
+  <text x="425" y="340" text-anchor="middle" font-family="Arial" font-size="7">(RELA+NFKB1)</text>
+  <text x="425" y="350" text-anchor="middle" font-family="Arial" font-size="7">(P19838+Q04206)</text>
+  <line x1="425" y1="280" x2="425" y2="320" stroke="#0277bd" stroke-width="2" marker-end="url(#releaseArrow)"/>
+  <text x="380" y="300" text-anchor="middle" font-family="Arial" font-size="10">release</text>
+  
+  <!-- Step number 5 -->
+  <circle cx="380" y="280" r="12" fill="#333" stroke="none"/>
+  <text x="380" y="284" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">5</text>
+  
+  <!-- 6. NF-kB nuclear translocation -->
+  <line x1="425" y1="350" x2="425" y2="390" stroke="#0277bd" stroke-width="2" marker-end="url(#translocateArrow)" stroke-dasharray="5,3"/>
+  <text x="455" y="370" text-anchor="middle" font-family="Arial" font-size="11">translocation</text>
+  
+  <!-- Step number 6 -->
+  <circle cx="455" y="350" r="12" fill="#333" stroke="none"/>
+  <text x="455" y="354" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">6</text>
+  
+  <!-- 7. NF-kB binding to DNA -->
+  <rect x="400" y="390" width="50" height="30" fill="#c2dbf0" stroke="#333" stroke-width="1.5"/>
+  <text x="425" y="400" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">NF-κB</text>
+  <text x="425" y="410" text-anchor="middle" font-family="Arial" font-size="7">(RELA+NFKB1)</text>
+  <text x="425" y="420" text-anchor="middle" font-family="Arial" font-size="7">(P19838+Q04206)</text>
+  
+  <!-- DNA in nucleus -->
+  <path d="M 325,430 C 340,420 355,440 370,430 C 385,420 400,440 415,430 C 430,420 445,440 460,430 C 475,420 490,440 505,430" 
+        fill="none" stroke="#6600cc" stroke-width="3"/>
+  <text x="415" y="450" text-anchor="middle" font-family="Arial" font-size="11">Chromatin (GO:0000785)</text>
+  
+  <!-- Step number 7 -->
+  <circle cx="505" y="400" r="12" fill="#333" stroke="none"/>
+  <text x="505" y="404" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">7</text>
+  
+  <!-- 8. Gene activation -->
+  <rect x="345" y="470" width="150" height="25" fill="#fce4ec" stroke="#333" stroke-width="1.5"/>
+  <text x="420" y="487" text-anchor="middle" font-family="Arial" font-size="12">Gene Transcription</text>
+  <line x1="425" y1="430" x2="425" y2="470" stroke="#388e3c" stroke-width="2" marker-end="url(#transcriptionArrow)"/>
+  
+  <!-- Step number 8 -->
+  <circle cx="440" y="450" r="12" fill="#333" stroke="none"/>
+  <text x="440" y="454" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">8</text>
+  
+  <!-- Legend -->
+  <rect x="570" y="430" width="170" height="115" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="580" y="445" font-family="Arial" font-size="12" font-weight="bold">Legend:</text>
+  <circle cx="590" cy="460" r="6" fill="#ffcccc" stroke="#333" stroke-width="1"/>
+  <text x="610" y="463" font-family="Arial" font-size="11">Kinase</text>
+  <rect x="580" y="470" width="12" height="10" fill="#c2dbf0" stroke="#333" stroke-width="1"/>
+  <text x="610" y="478" font-family="Arial" font-size="11">Transcription Factor</text>
+  <rect x="580" y="485" width="12" height="10" fill="#ffeb99" stroke="#333" stroke-width="1"/>
+  <text x="613" y="493" font-family="Arial" font-size="11">NF-κB Inhibitor</text>
+  <rect x="580" y="500" width="12" height="10" fill="#d1e7dd" stroke="#333" stroke-width="1"/>
+  <text x="615" y="508" font-family="Arial" font-size="11">Protein Complex</text>
+  <rect x="580" y="515" width="12" height="10" fill="#fce4ec" stroke="#333" stroke-width="1"/>
+  <text x="620" y="523" font-family="Arial" font-size="11">Transcriptional Output</text>
+  
+  <line x1="580" y1="535" x2="592" y2="535" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="630" y="538" font-family="Arial" font-size="11">Phosphorylation</text>
+  
+  <circle cx="586" cy="550" r="5" fill="#333" stroke="none"/>
+  <text x="586" y="553" text-anchor="middle" font-family="Arial" font-size="9" fill="white">1</text>
+  <text x="615" y="553" font-family="Arial" font-size="11">Numbered Steps</text>
+  
+  <!-- Title -->
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Activation of NF-κB via Ubiquitination and Degradation of IκBα</text>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">GO-CAM: gomodel:641ce4dc00000914</text>
+  
+  <!-- Arrows definition -->
+  <defs>
+    <marker id="phosphoArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f"/>
+    </marker>
+    <marker id="activateArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2e7d32"/>
+    </marker>
+    <marker id="ubiquitinArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6f00"/>
+    </marker>
+    <marker id="degradeArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#7b1fa2"/>
+    </marker>
+    <marker id="releaseArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0277bd"/>
+    </marker>
+    <marker id="translocateArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0277bd"/>
+    </marker>
+    <marker id="transcriptionArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#388e3c"/>
+    </marker>
+  </defs>
+</svg>

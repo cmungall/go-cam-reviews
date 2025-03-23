@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="550" rx="50" ry="50" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  
+  <!-- Lysosomal membrane -->
+  <ellipse cx="350" cy="280" rx="170" ry="110" fill="#ffebcd" stroke="#8b4513" stroke-width="3" stroke-dasharray="5,3"/>
+  <text x="350" y="160" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Lysosomal Membrane (GO:0005765)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="100" y="100" font-family="Arial" font-size="16" font-weight="bold">Cytoplasm (GO:0005737)</text>
+  
+  <!-- SESN2 in cytoplasm -->
+  <circle cx="200" cy="400" r="45" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="200" y="400" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SESN2</text>
+  <text x="200" y="420" text-anchor="middle" font-family="Arial" font-size="14">(P58004)</text>
+  
+  <!-- L-leucine binding arrow -->
+  <line x1="100" y1="400" x2="155" y2="400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="110" y="380" font-family="Arial" font-size="14">L-leucine</text>
+  <text x="110" y="425" font-family="Arial" font-size="14" font-style="italic">binding</text>
+  
+  <!-- SESN2 in lysosomal membrane -->
+  <circle cx="270" cy="280" r="45" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="270" y="280" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SESN2</text>
+  <text x="270" y="300" text-anchor="middle" font-family="Arial" font-size="14">(P58004)</text>
+  
+  <!-- SESN2 movement arrow -->
+  <path d="M220 365 Q240 335 245 325" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="200" y="335" font-family="Arial" font-size="14" font-style="italic">translocation</text>
+  
+  <!-- RNF167 -->
+  <rect x="430" y="220" width="90" height="45" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="475" y="245" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">RNF167</text>
+  <text x="475" y="265" text-anchor="middle" font-family="Arial" font-size="14">(Q9H6Y7)</text>
+  
+  <!-- STAMBPL1 -->
+  <rect x="430" y="340" width="90" height="45" rx="10" ry="10" fill="#99cc99" stroke="#333" stroke-width="2"/>
+  <text x="475" y="365" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">STAMBPL1</text>
+  <text x="475" y="385" text-anchor="middle" font-family="Arial" font-size="14">(Q96FJ0)</text>
+  
+  <!-- WDR24 -->
+  <rect x="430" y="280" width="90" height="45" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="475" y="305" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">WDR24</text>
+  <text x="475" y="325" text-anchor="middle" font-family="Arial" font-size="14">(Q96S15)</text>
+  
+  <!-- Ubiquitination by RNF167 -->
+  <path d="M430 225 Q370 235 315 265" stroke="#d32f2f" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="360" y="215" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">K63-linked</text>
+  <text x="360" y="235" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">ubiquitination</text>
+  
+  <!-- Deubiquitination by STAMBPL1 -->
+  <path d="M430 355 Q370 335 315 295" stroke="#388e3c" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="350" y="345" font-family="Arial" font-size="14" fill="#388e3c" font-weight="bold">K63-linked</text>
+  <text x="350" y="365" font-family="Arial" font-size="14" fill="#388e3c" font-weight="bold">deubiquitination</text>
+  
+  <!-- K6-linked ubiquitination by WDR24 -->
+  <path d="M430 295 Q390 290 315 285" stroke="#d32f2f" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="360" y="275" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">K6-linked</text>
+  <text x="360" y="295" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">ubiquitination</text>
+  
+  <!-- mTORC1 -->
+  <polygon points="600,280 630,250 660,280 630,310" fill="#e6ccff" stroke="#333" stroke-width="2"/>
+  <text x="630" y="285" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">mTORC1</text>
+  
+  <!-- mTORC1 regulation arrows -->
+  <path d="M315 280 Q450 230 600 270" stroke="#388e3c" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="420" y="200" font-family="Arial" font-size="14" fill="#388e3c" font-weight="bold">Positive regulation</text>
+  <text x="420" y="220" font-family="Arial" font-size="14" fill="#388e3c" font-weight="bold">(GO:1904263)</text>
+  
+  <path d="M245 400 Q450 450 600 300" stroke="#d32f2f" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="390" y="465" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">Negative regulation</text>
+  <text x="390" y="485" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">(GO:1904262)</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="450" width="150" height="130" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="615" y="470" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <circle cx="620" cy="490" r="10" fill="#b3e0ff" stroke="#333" stroke-width="1"/>
+  <text x="640" y="495" font-family="Arial" font-size="14">SESN2</text>
+  
+  <rect x="610" y="510" width="20" height="15" rx="3" ry="3" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="640" y="520" font-family="Arial" font-size="14">E3 Ubiquitin ligase</text>
+  
+  <rect x="610" y="535" width="20" height="15" rx="3" ry="3" fill="#99cc99" stroke="#333" stroke-width="1"/>
+  <text x="640" y="545" font-family="Arial" font-size="14">Deubiquitinase</text>
+  
+  <polygon points="610,560 620,550 630,560 620,570" fill="#e6ccff" stroke="#333" stroke-width="1"/>
+  <text x="640" y="565" font-family="Arial" font-size="14">mTORC1 complex</text>
+  
+  <!-- Arrows for legend -->
+  <line x1="610" y1="585" x2="630" y2="585" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="640" y="590" font-family="Arial" font-size="14">Inhibition</text>
+  
+  <line x1="680" y1="585" x2="700" y2="585" stroke="#388e3c" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="710" y="590" font-family="Arial" font-size="14">Activation</text>
+  
+  <!-- Title -->
+  <text x="400" y="85" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Regulation of mTORC1 Signaling via Ubiquitination</text>
+  <text x="400" y="115" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">and Deubiquitination of SESN2</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

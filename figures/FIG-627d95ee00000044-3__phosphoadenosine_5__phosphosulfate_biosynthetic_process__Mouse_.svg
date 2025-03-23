@@ -1,0 +1,146 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="white"/>
+  
+  <!-- Cell compartments -->
+  <!-- Extracellular region -->
+  <rect x="50" y="50" width="700" height="100" fill="#e6f7ff" stroke="#000000" stroke-width="2"/>
+  <text x="70" y="80" font-family="Arial" font-size="16" font-weight="bold">Extracellular region</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="50" y="150" width="700" height="40" fill="#ffcc99" stroke="#000000" stroke-width="2"/>
+  <text x="70" y="175" font-family="Arial" font-size="16" font-weight="bold">Plasma membrane</text>
+  
+  <!-- Cytosol -->
+  <rect x="50" y="190" width="700" height="220" fill="#e6ffe6" stroke="#000000" stroke-width="2"/>
+  <text x="70" y="220" font-family="Arial" font-size="16" font-weight="bold">Cytosol</text>
+  
+  <!-- Golgi apparatus -->
+  <rect x="250" y="440" width="300" height="150" fill="#ffe6cc" stroke="#000000" stroke-width="2"/>
+  <text x="350" y="465" font-family="Arial" font-size="16" font-weight="bold">Golgi apparatus</text>
+  
+  <!-- Golgi membrane -->
+  <rect x="250" y="440" width="300" height="30" fill="#ffcc99" stroke="#000000" stroke-width="2"/>
+  <text x="330" y="460" font-family="Arial" font-size="12" font-weight="bold">Golgi membrane</text>
+  
+  <!-- Molecules and reactions -->
+  <!-- Extracellular sulfate -->
+  <circle cx="200" cy="100" r="20" fill="#ffff99" stroke="#000000" stroke-width="2"/>
+  <text x="190" y="105" font-family="Arial" font-size="14" font-weight="bold">SO₄²⁻</text>
+  
+  <circle cx="320" cy="100" r="20" fill="#ffff99" stroke="#000000" stroke-width="2"/>
+  <text x="310" y="105" font-family="Arial" font-size="14" font-weight="bold">SO₄²⁻</text>
+  
+  <!-- Sulfate transporters -->
+  <rect x="180" y="150" width="80" height="40" fill="#ff9999" stroke="#000000" stroke-width="2" rx="10" ry="10"/>
+  <text x="190" y="175" font-family="Arial" font-size="12" font-weight="bold">Slc26a1</text>
+  
+  <rect x="320" y="150" width="80" height="40" fill="#ff9999" stroke="#000000" stroke-width="2" rx="10" ry="10"/>
+  <text x="330" y="175" font-family="Arial" font-size="12" font-weight="bold">Slc26a2</text>
+  
+  <!-- Cytosolic sulfate -->
+  <circle cx="200" cy="230" r="20" fill="#ffff99" stroke="#000000" stroke-width="2"/>
+  <text x="190" y="235" font-family="Arial" font-size="14" font-weight="bold">SO₄²⁻</text>
+  
+  <circle cx="320" cy="230" r="20" fill="#ffff99" stroke="#000000" stroke-width="2"/>
+  <text x="310" y="235" font-family="Arial" font-size="14" font-weight="bold">SO₄²⁻</text>
+  
+  <!-- Arrows for sulfate transport -->
+  <line x1="200" y1="120" x2="200" y2="150" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="160" y="140" font-family="Arial" font-size="10" font-style="italic">transport</text>
+  
+  <line x1="200" y1="190" x2="200" y2="210" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <line x1="320" y1="120" x2="320" y2="150" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="330" y="140" font-family="Arial" font-size="10" font-style="italic">transport</text>
+  
+  <line x1="320" y1="190" x2="320" y2="210" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- ATP and APS -->
+  <circle cx="250" cy="290" r="20" fill="#ccffcc" stroke="#000000" stroke-width="2"/>
+  <text x="240" y="295" font-family="Arial" font-size="14" font-weight="bold">ATP</text>
+  
+  <circle cx="350" cy="290" r="20" fill="#ccffff" stroke="#000000" stroke-width="2"/>
+  <text x="340" y="295" font-family="Arial" font-size="14" font-weight="bold">APS</text>
+  
+  <circle cx="370" cy="340" r="20" fill="#ccffcc" stroke="#000000" stroke-width="2"/>
+  <text x="360" y="345" font-family="Arial" font-size="14" font-weight="bold">ATP</text>
+  
+  <!-- PAPS -->
+  <circle cx="450" cy="340" r="20" fill="#ffccff" stroke="#000000" stroke-width="2"/>
+  <text x="430" y="345" font-family="Arial" font-size="14" font-weight="bold">PAPS</text>
+  
+  <!-- Papss1 (sulfate adenylyltransferase) -->
+  <rect x="270" y="240" width="80" height="40" fill="#99ccff" stroke="#000000" stroke-width="2" rx="10" ry="10"/>
+  <text x="285" y="260" font-family="Arial" font-size="12" font-weight="bold">Papss1</text>
+  <text x="275" y="275" font-family="Arial" font-size="9">Sulfate adenylyltransferase</text>
+  
+  <!-- Papss2 (adenylylsulfate kinase) -->
+  <rect x="380" y="290" width="80" height="40" fill="#99ccff" stroke="#000000" stroke-width="2" rx="10" ry="10"/>
+  <text x="395" y="310" font-family="Arial" font-size="12" font-weight="bold">Papss2</text>
+  <text x="390" y="325" font-family="Arial" font-size="9">Adenylylsulfate kinase</text>
+  
+  <!-- Reaction 1: SO4 + ATP -> APS (catalyzed by Papss1) -->
+  <line x1="220" y1="240" x2="270" y2="260" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="250" y1="270" x2="270" y2="260" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="260" x2="350" y2="270" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="225" y="260" font-family="Arial" font-size="10" font-style="italic">Step 1</text>
+  
+  <!-- Reaction 2: APS + ATP -> PAPS (catalyzed by Papss2) -->
+  <line x1="350" y1="310" x2="380" y2="300" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="320" x2="380" y2="300" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="460" y1="300" x2="450" y2="320" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="370" y="280" font-family="Arial" font-size="10" font-style="italic">Step 2</text>
+  
+  <!-- PAPS transporters -->
+  <rect x="300" y="440" width="80" height="30" fill="#ff9999" stroke="#000000" stroke-width="2" rx="10" ry="10"/>
+  <text x="315" y="460" font-family="Arial" font-size="12" font-weight="bold">Slc35b2</text>
+  
+  <rect x="420" y="440" width="80" height="30" fill="#ff9999" stroke="#000000" stroke-width="2" rx="10" ry="10"/>
+  <text x="435" y="460" font-family="Arial" font-size="12" font-weight="bold">Slc35b3</text>
+  
+  <!-- Golgi PAPS -->
+  <circle cx="400" cy="520" r="20" fill="#ffccff" stroke="#000000" stroke-width="2"/>
+  <text x="380" y="525" font-family="Arial" font-size="14" font-weight="bold">PAPS</text>
+  
+  <!-- Arrows for PAPS transport -->
+  <line x1="450" y1="360" x2="340" y2="440" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="360" x2="460" y2="440" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="380" y="410" font-family="Arial" font-size="10" font-style="italic">transport</text>
+  
+  <line x1="340" y1="470" x2="390" y2="500" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="460" y1="470" x2="410" y2="500" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">3'-phosphoadenosine 5'-phosphosulfate biosynthetic process (Mouse)</text>
+  
+  <!-- Detailed Legend -->
+  <rect x="50" y="600" width="700" height="40" fill="#f9f9f9" stroke="#000000" stroke-width="1"/>
+  <text x="60" y="620" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Legend items -->
+  <circle cx="130" cy="620" r="8" fill="#ffff99" stroke="#000000" stroke-width="1"/>
+  <text x="145" y="625" font-family="Arial" font-size="12">SO₄²⁻</text>
+  
+  <circle cx="200" cy="620" r="8" fill="#ccffcc" stroke="#000000" stroke-width="1"/>
+  <text x="215" y="625" font-family="Arial" font-size="12">ATP</text>
+  
+  <circle cx="270" cy="620" r="8" fill="#ccffff" stroke="#000000" stroke-width="1"/>
+  <text x="285" y="625" font-family="Arial" font-size="12">APS</text>
+  
+  <circle cx="350" cy="620" r="8" fill="#ffccff" stroke="#000000" stroke-width="1"/>
+  <text x="365" y="625" font-family="Arial" font-size="12">PAPS</text>
+  
+  <rect x="450" cy="615" width="16" height="10" fill="#ff9999" stroke="#000000" stroke-width="1" rx="3" ry="3"/>
+  <text x="475" y="625" font-family="Arial" font-size="12">Transporters</text>
+  
+  <rect x="570" cy="615" width="16" height="10" fill="#99ccff" stroke="#000000" stroke-width="1" rx="3" ry="3"/>
+  <text x="595" y="625" font-family="Arial" font-size="12">Enzymes</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,124 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Cell Boundary -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#ffffff" stroke="#333333" stroke-width="1.5" opacity="0.8" />
+  
+  <!-- Cytoplasm Label -->
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="18" fill="#333333" font-weight="bold">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Cytosolic Ribosome Area -->
+  <ellipse cx="400" cy="200" rx="200" ry="100" fill="#e6f2ff" stroke="#3399ff" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="400" y="150" text-anchor="middle" font-family="Arial" font-size="16" fill="#0066cc" font-weight="bold">Cytosolic Ribosome (GO:0022626)</text>
+  
+  <!-- Stalled Ribosomes (collided) -->
+  <g transform="translate(350, 200)">
+    <ellipse cx="0" cy="0" rx="40" ry="25" fill="#b3d9ff" stroke="#0066cc" stroke-width="1.5" />
+    <ellipse cx="30" cy="0" rx="40" ry="25" fill="#b3d9ff" stroke="#0066cc" stroke-width="1.5" />
+    <text x="15" y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333">Collided</text>
+    <text x="15" y="22" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333">Ribosomes</text>
+  </g>
+  
+  <!-- GCN1 - Stalled Ribosome Sensor -->
+  <rect x="220" y="180" width="80" height="40" rx="10" ry="10" fill="#ffcccc" stroke="#ff6666" stroke-width="1.5" />
+  <text x="260" y="205" text-anchor="middle" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">GCN1</text>
+  
+  <!-- HEL2 - Stalled Ribosome Sensor -->
+  <rect x="450" y="180" width="80" height="40" rx="10" ry="10" fill="#ffcccc" stroke="#ff6666" stroke-width="1.5" />
+  <text x="490" y="205" text-anchor="middle" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">HEL2</text>
+  
+  <!-- GCN2 Kinase -->
+  <rect x="300" y="300" width="80" height="40" rx="10" ry="10" fill="#ccffcc" stroke="#66cc66" stroke-width="1.5" />
+  <text x="340" y="325" text-anchor="middle" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">GCN2</text>
+  
+  <!-- SUI2 (eIF2α) -->
+  <rect x="500" y="370" width="80" height="40" rx="10" ry="10" fill="#ffffcc" stroke="#cccc66" stroke-width="1.5" />
+  <text x="540" y="385" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">SUI2</text>
+  <text x="540" y="400" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">(eIF2α)</text>
+  
+  <!-- Translational Initiation Area -->
+  <rect x="480" y="450" width="120" height="60" rx="10" ry="10" fill="#e6ccff" stroke="#9966ff" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="540" y="485" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">Translational</text>
+  <text x="540" y="505" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">Initiation</text>
+  
+  <!-- Arrows and Interactions -->
+  <!-- GCN1 senses stalled ribosomes -->
+  <path d="M 260 180 L 320 170" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="290" y="160" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">Detects</text>
+  
+  <!-- HEL2 senses stalled ribosomes -->
+  <path d="M 490 180 L 410 170" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="450" y="160" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">Detects</text>
+  
+  <!-- GCN1 activates GCN2 -->
+  <path d="M 260 220 L 320 300" stroke="#009900" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="270" y="260" text-anchor="middle" font-family="Arial" font-size="14" fill="#009900" font-weight="bold">Activates</text>
+  <text x="270" y="275" text-anchor="middle" font-family="Arial" font-size="12" fill="#009900">RO:0002629</text>
+  
+  <!-- HEL2 inhibits GCN2 -->
+  <path d="M 490 220 L 360 300" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="445" y="260" text-anchor="middle" font-family="Arial" font-size="14" fill="#cc0000" font-weight="bold">Inhibits</text>
+  <text x="445" y="275" text-anchor="middle" font-family="Arial" font-size="12" fill="#cc0000">RO:0002305</text>
+  
+  <!-- GCN2 phosphorylates SUI2 -->
+  <path d="M 380 320 L 500 370" stroke="#009900" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="430" y="335" text-anchor="middle" font-family="Arial" font-size="14" fill="#009900" font-weight="bold">Phosphorylates</text>
+  <text x="430" y="350" text-anchor="middle" font-family="Arial" font-size="12" fill="#009900">RO:0002630</text>
+  
+  <!-- SUI2 participates in translational initiation -->
+  <path d="M 540 410 L 540 450" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Process Labels -->
+  <text x="120" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">GCN2-mediated</text>
+  <text x="120" y="360" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">signaling</text>
+  <text x="120" y="380" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">(GO:0140469)</text>
+  
+  <text x="200" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">Rescue of</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">stalled ribosome</text>
+  <text x="200" y="290" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">(GO:0072344)</text>
+  
+  <text x="650" y="370" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">Translational</text>
+  <text x="650" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">initiation</text>
+  <text x="650" y="410" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">(GO:0006413)</text>
+  
+  <!-- Functional annotations -->
+  <text x="260" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333" font-style="italic">Ribosome sensor</text>
+  <text x="260" y="235" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666" font-style="italic">GO:0170011</text>
+  
+  <text x="490" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333" font-style="italic">Ribosome sensor</text>
+  <text x="490" y="235" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666" font-style="italic">GO:0170011</text>
+  
+  <text x="340" y="285" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333" font-style="italic">eIF2α kinase</text>
+  <text x="340" y="355" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666" font-style="italic">GO:0004694</text>
+  
+  <text x="540" y="360" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333" font-style="italic">Translation</text>
+  <text x="540" y="420" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666" font-style="italic">GO:0003743</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#333333" font-weight="bold">Activation of GCN2-mediated Signaling by GCN1 in Response to Ribosome Collisions</text>
+  <text x="400" y="55" text-anchor="middle" font-family="Arial" font-size="16" fill="#333333">and Inhibition of GCN2 by HEL2 (S. cerevisiae)</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="100" width="20" height="10" fill="#ffcccc" stroke="#ff6666" stroke-width="1" />
+  <text x="630" y="110" font-family="Arial" font-size="14" fill="#333333">Ribosome Sensor</text>
+  
+  <rect x="600" y="125" width="20" height="10" fill="#ccffcc" stroke="#66cc66" stroke-width="1" />
+  <text x="630" y="135" font-family="Arial" font-size="14" fill="#333333">Kinase</text>
+  
+  <rect x="600" y="150" width="20" height="10" fill="#ffffcc" stroke="#cccc66" stroke-width="1" />
+  <text x="630" y="160" font-family="Arial" font-size="14" fill="#333333">Translation Factor</text>
+  
+  <line x1="600" y1="175" x2="620" y2="175" stroke="#009900" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="640" y="180" font-family="Arial" font-size="14" fill="#333333">Activation</text>
+  
+  <line x1="600" y1="195" x2="620" y2="195" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="640" y="200" font-family="Arial" font-size="14" fill="#333333">Inhibition</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

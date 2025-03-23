@@ -1,0 +1,88 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell background -->
+  <rect x="50" y="50" width="700" height="400" rx="20" ry="20" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cytosol label -->
+  <text x="90" y="90" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Cytosol (GO:0005829)</text>
+  
+  <!-- Pathway title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Glucuronate Catabolic Process to Xylulose 5-phosphate (Mouse)</text>
+  
+  <!-- Molecules and reactions -->
+  <!-- First reaction: L-glucuronate → L-gulonate -->
+  <rect x="120" y="180" width="100" height="50" rx="5" ry="5" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="170" y="210" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">L-glucuronate</text>
+  
+  <line x1="220" y1="205" x2="270" y2="205" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <ellipse cx="195" cy="160" rx="60" ry="25" fill="#c6def3" stroke="#3182bd" stroke-width="2"/>
+  <text x="195" y="165" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Akr1a1</text>
+  
+  <!-- Second reaction: L-gulonate → 3-Dehydro-L-gulonate -->
+  <rect x="270" y="180" width="100" height="50" rx="5" ry="5" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="320" y="210" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">L-gulonate</text>
+  
+  <line x1="370" y1="205" x2="420" y2="205" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <ellipse cx="345" cy="160" rx="60" ry="25" fill="#e6c5d0" stroke="#8c6bb1" stroke-width="2"/>
+  <text x="345" y="165" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Cryl1</text>
+  
+  <!-- Third reaction: 3-Dehydro-L-gulonate → L-xylulose -->
+  <rect x="420" y="180" width="120" height="50" rx="5" ry="5" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="480" y="205" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">3-Dehydro-</text>
+  <text x="480" y="220" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">L-gulonate</text>
+  
+  <line x1="540" y1="205" x2="590" y2="205" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <ellipse cx="525" cy="160" rx="60" ry="25" fill="#c7e9c0" stroke="#41ab5d" stroke-width="2"/>
+  <text x="525" y="165" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Dcxr</text>
+  
+  <!-- Fourth reaction: L-xylulose → D-xylulose -->
+  <rect x="590" y="180" width="100" height="50" rx="5" ry="5" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="640" y="210" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">L-xylulose</text>
+  
+  <line x1="640" y1="230" x2="640" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <ellipse cx="595" cy="245" rx="60" ry="25" fill="#fdd0a2" stroke="#fd8d3c" stroke-width="2"/>
+  <text x="595" y="250" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Sord</text>
+  
+  <!-- Fifth reaction: D-xylulose → D-xylulose 5-phosphate -->
+  <rect x="590" y="280" width="100" height="50" rx="5" ry="5" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="640" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">D-xylulose</text>
+  
+  <line x1="590" y1="305" x2="540" y2="305" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <ellipse cx="595" cy="345" rx="60" ry="25" fill="#fed9a6" stroke="#f16913" stroke-width="2"/>
+  <text x="595" y="350" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Xylb</text>
+  
+  <!-- Final product -->
+  <rect x="400" y="280" width="140" height="50" rx="5" ry="5" fill="#f8d7da" stroke="#dc3545" stroke-width="2"/>
+  <text x="470" y="305" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">D-xylulose</text>
+  <text x="470" y="320" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">5-phosphate</text>
+  
+  <!-- Add molecular function labels -->
+  <text x="195" y="180" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">L-glucuronate reductase</text>
+  <text x="345" y="180" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">L-gulonate 3-dehydrogenase</text>
+  <text x="525" y="180" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">L-xylulose reductase</text>
+  <text x="595" y="270" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">D-xylulose reductase</text>
+  <text x="595" y="370" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">D-xylulokinase</text>
+  
+  <!-- Process label -->
+  <text x="400" y="400" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle" fill="#333">D-glucuronate catabolic process to D-xylulose 5-phosphate (GO:0019640)</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="60" width="130" height="110" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="665" y="80" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <ellipse cx="620" cy="100" rx="10" ry="8" fill="#c6def3" stroke="#3182bd" stroke-width="2"/>
+  <text x="665" y="103" font-family="Arial" font-size="12" fill="#333">Enzyme</text>
+  
+  <rect x="610" y="120" width="20" height="15" rx="2" ry="2" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="665" y="130" font-family="Arial" font-size="12" fill="#333">Metabolite</text>
+  
+  <rect x="610" y="145" width="20" height="15" rx="2" ry="2" fill="#f8d7da" stroke="#dc3545" stroke-width="2"/>
+  <text x="665" y="155" font-family="Arial" font-size="12" fill="#333">Final product</text>
+</svg>

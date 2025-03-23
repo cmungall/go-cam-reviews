@@ -1,0 +1,130 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#ffffff" />
+  
+  <!-- Cell compartments and boundaries -->
+  <rect x="50" y="100" width="700" height="100" fill="#e6f7ff" stroke="none"/>
+  <path d="M50,250 Q400,200 750,250 Q400,300 50,250" stroke="#666666" stroke-width="3" fill="#f9f9f9" />
+  <rect x="50" y="250" width="700" height="150" fill="#f2ffed" stroke="none"/>
+  <ellipse cx="400" cy="500" rx="230" ry="90" fill="#fff9e6" stroke="#999999" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Compartment labels -->
+  <text x="100" y="130" font-family="Arial" font-size="16" text-anchor="start" font-weight="bold" fill="#333333">Extracellular Region</text>
+  <text x="100" y="330" font-family="Arial" font-size="16" text-anchor="start" font-weight="bold" fill="#333333">Cytosol</text>
+  <text x="250" y="450" font-family="Arial" font-size="16" text-anchor="start" font-weight="bold" fill="#333333">Nucleus</text>
+  
+  <!-- BMP2 in extracellular space -->
+  <circle cx="400" cy="180" r="25" fill="#ff7f7f" stroke="#333333" stroke-width="2"/>
+  <text x="400" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">BMP2</text>
+  
+  <!-- BMP Receptors complex on membrane -->
+  <rect x="350" y="240" width="40" height="20" fill="#7fbfff" stroke="#333333" stroke-width="2"/>
+  <text x="370" y="254" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">BMPR1A</text>
+  
+  <rect x="395" y="240" width="40" height="20" fill="#7fbfff" stroke="#333333" stroke-width="2"/>
+  <text x="415" y="254" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">BMPR1B</text>
+  
+  <rect x="380" y="220" width="40" height="20" fill="#7fbfff" stroke="#333333" stroke-width="2"/>
+  <text x="400" y="234" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">BMPR2</text>
+  
+  <!-- Binding arrows -->
+  <path d="M400,205 L400,220" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MAP3K7 -->
+  <rect x="400" y="300" width="60" height="25" fill="#7fff7f" stroke="#333333" stroke-width="2" rx="5" ry="5"/>
+  <text x="430" y="317" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">MAP3K7</text>
+  
+  <!-- Connection from receptors to MAP3K7 -->
+  <path d="M400,260 L400,300" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MAP2K6 -->
+  <rect x="400" y="350" width="60" height="25" fill="#7fff7f" stroke="#333333" stroke-width="2" rx="5" ry="5"/>
+  <text x="430" y="367" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">MAP2K6</text>
+  
+  <!-- Connection from MAP3K7 to MAP2K6 -->
+  <path d="M430,325 L430,350" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MAPK11 and MAPK14 -->
+  <rect x="350" y="400" width="60" height="25" fill="#7fff7f" stroke="#333333" stroke-width="2" rx="5" ry="5"/>
+  <text x="380" y="417" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">MAPK11</text>
+  
+  <rect x="450" y="400" width="60" height="25" fill="#7fff7f" stroke="#333333" stroke-width="2" rx="5" ry="5"/>
+  <text x="480" y="417" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">MAPK14</text>
+  
+  <!-- Connections from MAP2K6 to MAPKs -->
+  <path d="M415,375 L380,400" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M445,375 L480,400" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- RUNX2 -->
+  <ellipse cx="400" cy="470" rx="50" ry="25" fill="#ffbf7f" stroke="#333333" stroke-width="2"/>
+  <text x="400" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">RUNX2</text>
+  
+  <!-- Connections from MAPKs to RUNX2 -->
+  <path d="M380,425 L390,445" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M480,425 L410,445" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Target genes -->
+  <rect x="250" y="530" width="50" height="25" fill="#bf7fff" stroke="#333333" stroke-width="2"/>
+  <text x="275" y="547" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">SP7</text>
+  
+  <rect x="320" y="530" width="50" height="25" fill="#bf7fff" stroke="#333333" stroke-width="2"/>
+  <text x="345" y="547" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">IBSP</text>
+  
+  <rect x="390" y="530" width="50" height="25" fill="#bf7fff" stroke="#333333" stroke-width="2"/>
+  <text x="415" y="547" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">ALPL</text>
+  
+  <rect x="460" y="530" width="50" height="25" fill="#bf7fff" stroke="#333333" stroke-width="2"/>
+  <text x="485" y="547" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">BGLAP</text>
+  
+  <!-- Connections from RUNX2 to target genes -->
+  <path d="M370,490 L275,530" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M385,490 L345,530" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M415,490 L415,530" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M430,490 L485,530" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Process labels -->
+  <text x="500" y="230" font-family="Arial" font-size="12" font-style="italic" fill="#666666">BMP signaling pathway</text>
+  <text x="500" y="380" font-family="Arial" font-size="12" font-style="italic" fill="#666666">MAPK cascade</text>
+  <text x="520" y="480" font-family="Arial" font-size="12" font-style="italic" fill="#666666">Osteoblast differentiation</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#000000">BMP2-MAPK Signaling Pathway in Mouse</text>
+  <text x="400" y="55" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#666666">Regulating Osteoblast Differentiation and Bone Development</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="570" width="700" height="70" fill="#f9f9f9" stroke="#666666" stroke-width="1" rx="5" ry="5"/>
+  <text x="80" y="590" font-family="Arial" font-size="14" font-weight="bold" text-anchor="start" fill="#333333">Legend:</text>
+  
+  <!-- Legend items -->
+  <circle cx="80" cy="610" r="10" fill="#ff7f7f" stroke="#333333" stroke-width="1"/>
+  <text x="95" y="615" font-family="Arial" font-size="12" fill="#333333" text-anchor="start">Ligand (BMP2) - Receptor ligand activity</text>
+  
+  <rect x="320" cy="610" width="20" height="10" fill="#7fbfff" stroke="#333333" stroke-width="1"/>
+  <text x="345" y="615" font-family="Arial" font-size="12" fill="#333333" text-anchor="start">Receptors - BMP receptor activity</text>
+  
+  <rect x="530" cy="610" width="20" height="10" fill="#7fff7f" stroke="#333333" stroke-width="1" rx="2" ry="2"/>
+  <text x="555" y="615" font-family="Arial" font-size="12" fill="#333333" text-anchor="start">Kinases - MAP kinase activity</text>
+  
+  <line x1="60" y1="630" x2="75" y2="630" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="95" y="635" font-family="Arial" font-size="12" fill="#333333" text-anchor="start">Activation</text>
+  
+  <ellipse cx="180" cy="630" rx="15" ry="10" fill="#ffbf7f" stroke="#333333" stroke-width="1"/>
+  <text x="205" y="635" font-family="Arial" font-size="12" fill="#333333" text-anchor="start">Transcription Factor</text>
+  
+  <rect x="360" cy="630" width="20" height="10" fill="#bf7fff" stroke="#333333" stroke-width="1"/>
+  <text x="385" y="635" font-family="Arial" font-size="12" fill="#333333" text-anchor="start">Target Genes - Bone development</text>
+  
+  <!-- Compartment colors in legend -->
+  <rect x="570" cy="630" width="15" height="10" fill="#e6f7ff" stroke="#333333" stroke-width="1"/>
+  <text x="590" y="635" font-family="Arial" font-size="12" fill="#333333" text-anchor="start">Extracellular</text>
+  
+  <rect x="670" cy="630" width="15" height="10" fill="#fff9e6" stroke="#333333" stroke-width="1"/>
+  <text x="690" y="635" font-family="Arial" font-size="12" fill="#333333" text-anchor="start">Nuclear</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333" />
+    </marker>
+  </defs>
+</svg>

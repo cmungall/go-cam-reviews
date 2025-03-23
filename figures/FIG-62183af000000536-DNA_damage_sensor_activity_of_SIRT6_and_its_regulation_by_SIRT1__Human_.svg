@@ -1,0 +1,86 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell nucleus background -->
+  <ellipse cx="400" cy="320" rx="350" ry="250" fill="#f0f8ff" stroke="#666" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus</text>
+  
+  <!-- DNA double-strand break site -->
+  <path d="M250,320 C300,290 350,350 390,320 L400,320 L410,310 L420,330 L430,310 L440,330 L450,320 L460,320 C500,350 550,290 600,320" stroke="#333" stroke-width="4" fill="none"/>
+  <ellipse cx="425" cy="320" rx="50" ry="30" fill="rgba(255,200,200,0.3)" stroke="#ff6666" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="425" y="315" text-anchor="middle" font-family="Arial" font-size="14">Double-strand</text>
+  <text x="425" y="335" text-anchor="middle" font-family="Arial" font-size="14">break site</text>
+  
+  <!-- SIRT1 protein -->
+  <rect x="170" y="180" width="100" height="50" rx="10" ry="10" fill="#8cc6ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="220" y="210" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SIRT1</text>
+  
+  <!-- SIRT6 protein initially -->
+  <rect x="370" y="180" width="100" height="50" rx="10" ry="10" fill="#ffcc88" stroke="#ff9933" stroke-width="2"/>
+  <text x="420" y="210" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SIRT6</text>
+  <text x="420" y="230" text-anchor="middle" font-family="Arial" font-size="12">(Acetylated)</text>
+  
+  <!-- Arrow for deacetylation -->
+  <path d="M270,205 L370,205" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="320" y="190" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Deacetylates</text>
+  <text x="320" y="245" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" fill="#666">NAD-dependent protein lysine deacetylase activity</text>
+  
+  <!-- SIRT6 activated -->
+  <rect x="370" y="260" width="100" height="50" rx="10" ry="10" fill="#ffcc88" stroke="#ff9933" stroke-width="2"/>
+  <text x="420" y="290" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SIRT6</text>
+  <text x="420" y="310" text-anchor="middle" font-family="Arial" font-size="12">(Active)</text>
+  
+  <!-- Arrow for SIRT6 activation -->
+  <path d="M420,230 L420,260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- SIRT6 at DNA damage site - left side (sensing) -->
+  <rect x="300" y="400" width="100" height="50" rx="10" ry="10" fill="#ffcc88" stroke="#ff9933" stroke-width="2"/>
+  <text x="350" y="425" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SIRT6</text>
+  <text x="350" y="445" text-anchor="middle" font-family="Arial" font-size="12">(DNA sensing)</text>
+  
+  <!-- SIRT6 at DNA damage site - right side (deacetylating) -->
+  <rect x="500" y="400" width="100" height="50" rx="10" ry="10" fill="#ffcc88" stroke="#ff9933" stroke-width="2"/>
+  <text x="550" y="425" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SIRT6</text>
+  <text x="550" y="445" text-anchor="middle" font-family="Arial" font-size="12">(Deacetylating)</text>
+  
+  <!-- Arrow for SIRT6 movement to DNA sensing -->
+  <path d="M400,310 L350,400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="365" y="370" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Damaged DNA</text>
+  <text x="365" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">binding</text>
+  
+  <!-- Arrow for SIRT6 movement to deacetylation -->
+  <path d="M440,310 L540,400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="515" y="370" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">H3K56</text>
+  <text x="515" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">deacetylation</text>
+  
+  <!-- DNA damage sensing arrow -->
+  <path d="M350,450 C350,470 380,500 425,500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="360" y="485" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">DNA damage</text>
+  <text x="360" y="505" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">sensor activity</text>
+  
+  <!-- Histone deacetylation arrow -->
+  <path d="M550,450 C550,470 520,500 475,500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="540" y="485" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">NAD-dependent</text>
+  <text x="540" y="505" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">deacetylase activity</text>
+  
+  <!-- Histone -->
+  <circle cx="470" cy="330" r="20" fill="#ffff99" stroke="#cc9900" stroke-width="2"/>
+  <text x="470" y="335" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">H3K56</text>
+  
+  <!-- Result: DSB repair -->
+  <rect x="375" y="500" width="100" height="60" rx="10" ry="10" fill="#ccffcc" stroke="#33cc33" stroke-width="2"/>
+  <text x="425" y="525" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Double-strand</text>
+  <text x="425" y="545" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">break repair</text>
+  
+  <!-- DNA strand labels -->
+  <text x="270" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">DNA strand</text>
+  <text x="580" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">DNA strand</text>
+  
+  <!-- Markers and definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">DNA damage sensor activity of SIRT6 and its regulation by SIRT1</text>
+</svg>

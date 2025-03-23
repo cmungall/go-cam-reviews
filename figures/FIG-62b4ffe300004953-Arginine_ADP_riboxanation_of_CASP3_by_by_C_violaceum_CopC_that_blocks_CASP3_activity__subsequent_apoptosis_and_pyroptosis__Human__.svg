@@ -1,0 +1,114 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f5f5f5" stroke="#333" stroke-width="2" />
+  <path d="M50,300 Q225,250 400,300 Q575,350 750,300" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="5,5" />
+  <text x="50" y="280" font-family="Arial" font-size="16" fill="#333">Cell membrane</text>
+  <text x="680" y="280" font-family="Arial" font-size="14" fill="#333">(GO:0016020)</text>
+
+  <!-- Cytoplasm label -->
+  <text x="320" y="180" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Host Cell Cytoplasm (GO:0030430)</text>
+  
+  <!-- Cytosol compartment -->
+  <ellipse cx="400" cy="350" rx="250" ry="150" fill="#e6f7ff" stroke="#333" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="260" y="440" font-family="Arial" font-size="16" fill="#333">Cytosol (GO:0005829)</text>
+  
+  <!-- C. violaceum CopC entry and function -->
+  <circle cx="100" cy="300" r="25" fill="#9c27b0" stroke="#333" stroke-width="2" />
+  <text x="80" y="305" font-family="Arial" font-size="14" fill="white" font-weight="bold">CopC</text>
+  <text x="65" y="350" font-family="Arial" font-size="14" fill="#333">(Q7NWF2)</text>
+  
+  <path d="M120,300 Q200,250 260,270" fill="none" stroke="#9c27b0" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="150" y="240" font-family="Arial" font-size="14" fill="#333">Cell invasion</text>
+  <text x="140" y="255" font-family="Arial" font-size="14" fill="#333">(GO:0052040)</text>
+  
+  <!-- Calmodulin -->
+  <rect x="260" y="240" width="90" height="40" rx="5" ry="5" fill="#ff9800" stroke="#333" stroke-width="2" />
+  <text x="265" y="265" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Calmodulin</text>
+  <text x="280" y="290" font-family="Arial" font-size="14" fill="#333">(P0DP23)</text>
+  
+  <!-- CopC binding to calmodulin -->
+  <circle cx="260" cy="320" r="25" fill="#9c27b0" stroke="#333" stroke-width="2" />
+  <text x="240" y="325" font-family="Arial" font-size="14" fill="white" font-weight="bold">CopC</text>
+  <text x="225" y="370" font-family="Arial" font-size="14" fill="#333">(Q7NWF2)</text>
+  
+  <path d="M260,290 L260,295" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="210" y="310" font-family="Arial" font-size="14" fill="#333">Binding</text>
+  <text x="190" y="325" font-family="Arial" font-size="14" fill="#333">(GO:0005516)</text>
+  
+  <!-- CASP3 -->
+  <polygon points="400,300 435,335 400,370 365,335" fill="#4caf50" stroke="#333" stroke-width="2" />
+  <text x="382" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#333">CASP3</text>
+  <text x="382" y="355" font-family="Arial" font-size="14" fill="#333">(P42574)</text>
+  
+  <!-- ADP-riboxanation of CASP3 -->
+  <path d="M280,320 Q340,340 365,335" fill="none" stroke="#9c27b0" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="290" y="380" font-family="Arial" font-size="14" fill="#333">ADP-riboxanation</text>
+  <text x="300" y="395" font-family="Arial" font-size="14" fill="#333">(GO:0140740)</text>
+  
+  <!-- Blocked CASP3 activity -->
+  <polygon points="500,300 535,335 500,370 465,335" fill="#4caf50" stroke="#333" stroke-width="2" />
+  <path d="M500,300 L535,370 M500,370 L535,300" fill="none" stroke="red" stroke-width="3" />
+  <text x="470" y="390" font-family="Arial" font-size="14" fill="#333">Inhibited CASP3</text>
+  <text x="470" y="405" font-family="Arial" font-size="14" fill="#333">(Blocked GO:0004197)</text>
+  
+  <path d="M435,335 L465,335" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="435" y="320" font-family="Arial" font-size="14" fill="#333">Inhibition</text>
+  
+  <!-- Normal CASP3 pathway (crossed out) -->
+  <path d="M435,335 Q500,400 570,380" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <path d="M460,340 L520,400" fill="none" stroke="red" stroke-width="3" />
+  <text x="450" y="420" font-family="Arial" font-size="14" fill="#333">Protein maturation</text>
+  <text x="460" y="435" font-family="Arial" font-size="14" fill="#333">(GO:0051604)</text>
+  
+  <!-- GSDME -->
+  <rect x="570" y="360" width="90" height="40" rx="10" ry="10" fill="#2196f3" stroke="#333" stroke-width="2" />
+  <text x="585" y="385" font-family="Arial" font-size="14" font-weight="bold" fill="#333">GSDME</text>
+  <text x="585" y="400" font-family="Arial" font-size="14" fill="#333">(O60443)</text>
+  
+  <!-- Membrane pore formation (blocked) -->
+  <path d="M660,380 Q700,350 730,300" fill="none" stroke="#2196f3" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <path d="M670,350 L710,380" fill="none" stroke="red" stroke-width="3" />
+  <text x="670" y="340" font-family="Arial" font-size="14" fill="#333">Pore formation</text>
+  <text x="665" y="355" font-family="Arial" font-size="14" fill="#333">(GO:0022829)</text>
+  
+  <!-- Pyroptosis label (blocked) -->
+  <text x="640" y="430" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Pyroptosis</text>
+  <text x="625" y="445" font-family="Arial" font-size="14" fill="#333">(GO:0070269)</text>
+  <path d="M630,430 L670,430" fill="none" stroke="red" stroke-width="3" />
+  
+  <!-- Apoptosis label (blocked) -->
+  <text x="500" y="480" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Apoptosis</text>
+  <text x="480" y="495" font-family="Arial" font-size="14" fill="#333">(GO:0097194)</text>
+  <path d="M490,480 L530,480" fill="none" stroke="red" stroke-width="3" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">
+    Arginine ADP-riboxanation of CASP3 by C. violaceum CopC
+  </text>
+  <text x="400" y="55" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic" fill="#333">
+    Inhibition of apoptosis and pyroptosis in human cells
+  </text>
+  
+  <!-- Legend -->
+  <rect x="40" y="485" width="240" height="100" rx="5" ry="5" fill="#f8f8f8" stroke="#333" stroke-width="1" />
+  <text x="50" y="505" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Legend</text>
+  
+  <circle cx="60" cy="525" r="10" fill="#9c27b0" stroke="#333" stroke-width="1" />
+  <text x="75" y="530" font-family="Arial" font-size="14" fill="#333">C. violaceum CopC</text>
+  
+  <rect x="50" y="540" width="20" height="10" fill="#ff9800" stroke="#333" stroke-width="1" />
+  <text x="75" y="550" font-family="Arial" font-size="14" fill="#333">Calmodulin</text>
+  
+  <polygon points="50,565 60,570 50,575 40,570" fill="#4caf50" stroke="#333" stroke-width="1" />
+  <text x="65" y="575" font-family="Arial" font-size="14" fill="#333">CASP3</text>
+  
+  <rect x="50" y="585" width="20" height="10" rx="5" ry="5" fill="#2196f3" stroke="#333" stroke-width="1" />
+  <text x="75" y="595" font-family="Arial" font-size="14" fill="#333">GSDME</text>
+  
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

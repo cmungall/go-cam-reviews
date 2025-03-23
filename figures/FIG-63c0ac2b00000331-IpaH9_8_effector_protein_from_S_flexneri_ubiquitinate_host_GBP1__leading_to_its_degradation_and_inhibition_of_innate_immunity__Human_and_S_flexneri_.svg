@@ -1,0 +1,124 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">
+    S. flexneri IpaH9.8 Targeting of Host GBP1 to Inhibit Innate Immunity
+  </text>
+  
+  <!-- Cell membrane and compartments -->
+  <rect x="100" y="80" width="600" height="420" rx="20" ry="20" fill="#e6f2ff" stroke="#2c3e50" stroke-width="2" />
+  
+  <!-- Cytosol label -->
+  <text x="150" y="110" font-family="Arial" font-size="16" font-weight="bold">Host Cell Cytosol (GO:0044164/GO:0005829)</text>
+  
+  <!-- Cytoplasmic vesicle -->
+  <ellipse cx="250" cy="300" rx="90" ry="70" fill="#d4e6f1" stroke="#2c3e50" stroke-width="2" />
+  <text x="250" y="295" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Cytoplasmic Vesicle</text>
+  <text x="250" y="315" font-family="Arial" font-size="12" text-anchor="middle">(GO:0031410)</text>
+  
+  <!-- GBP1 in vesicle -->
+  <circle cx="230" cy="280" r="25" fill="#58d68d" stroke="#2c3e50" stroke-width="2" />
+  <text x="230" y="285" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">GBP1</text>
+  
+  <!-- S. flexneri bacteria -->
+  <ellipse cx="550" cy="180" rx="80" ry="45" fill="#f5b7b1" stroke="#c0392b" stroke-width="2" />
+  <text x="550" y="185" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">S. flexneri</text>
+  
+  <!-- IpaH9.8 secretion -->
+  <path d="M 490 190 C 450 200, 430 230, 420 270" stroke="#e74c3c" stroke-width="3" fill="none" stroke-dasharray="5,3" />
+  <polygon points="420,275 415,265 425,265" fill="#e74c3c" />
+  <text x="455" y="230" font-family="Arial" font-size="12" text-anchor="middle">Type III secretion</text>
+  
+  <!-- IpaH9.8 protein -->
+  <rect x="390" y="280" width="70" height="35" rx="5" ry="5" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" />
+  <text x="425" y="302" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">IpaH9.8</text>
+  <text x="425" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">(Q8VSC3)</text>
+  
+  <!-- GBP1 protein -->
+  <circle cx="330" cy="380" r="30" fill="#58d68d" stroke="#2c3e50" stroke-width="2" />
+  <text x="330" y="384" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">GBP1</text>
+  <text x="330" y="400" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">(P32455)</text>
+  
+  <!-- CASP4 protein -->
+  <rect x="540" y="350" width="70" height="35" rx="5" ry="5" fill="#3498db" stroke="#2c3e50" stroke-width="2" />
+  <text x="575" y="372" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">CASP4</text>
+  <text x="575" y="388" font-family="Arial" font-size="10" text-anchor="middle" fill="white">(P49662)</text>
+  
+  <!-- Lipid A -->
+  <polygon points="610,310 630,310 635,325 625,340 615,340 605,325" fill="#f39c12" stroke="#2c3e50" stroke-width="2" />
+  <text x="620" y="328" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Lipid A</text>
+  <text x="620" y="342" font-family="Arial" font-size="8" text-anchor="middle">(CHEBI:58712)</text>
+  
+  <!-- Ubiquitin icon -->
+  <circle cx="380" cy="335" r="12" fill="#9b59b6" stroke="#2c3e50" stroke-width="1" />
+  <text x="380" y="339" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Ub</text>
+  
+  <!-- Ubiquitination process -->
+  <path d="M 400 315 C 380 335, 350 350, 340 365" stroke="#2c3e50" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="390" y="350" font-family="Arial" font-size="12" font-weight="bold" transform="rotate(-30, 390, 350)">Ubiquitination</text>
+  <text x="390" y="365" font-family="Arial" font-size="10" transform="rotate(-30, 390, 365)">(GO:0070936)</text>
+  
+  <!-- GBP1 degradation -->
+  <path d="M 330 410 C 330 440, 330 460, 300 480" stroke="#2c3e50" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-dasharray="5,3" />
+  <text x="340" y="460" font-family="Arial" font-size="14" font-weight="bold">Degradation</text>
+  <text x="340" y="475" font-family="Arial" font-size="10">(GO:0006511)</text>
+  
+  <!-- CASP4 activation suppression -->
+  <path d="M 350 380 C 410 410, 480 390, 535 370" stroke="#2c3e50" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="440" y="410" font-family="Arial" font-size="14" font-weight="bold">Suppresses</text>
+  <text x="440" y="425" font-family="Arial" font-size="10">(RO:0002630)</text>
+  
+  <!-- Lipid A binding to CASP4 -->
+  <path d="M 605 335 C 595 340, 590 345, 580 350" stroke="#2c3e50" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="590" y="365" font-family="Arial" font-size="12" font-weight="bold">Binds</text>
+  <text x="590" y="380" font-family="Arial" font-size="10">(GO:0001530)</text>
+  
+  <!-- GBP1 GTPase activity -->
+  <path d="M 255 290 C 280 320, 310 340, 320 365" stroke="#2c3e50" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="275" y="335" font-family="Arial" font-size="12" font-weight="bold">GTPase activity</text>
+  <text x="275" y="350" font-family="Arial" font-size="10">(GO:0003924)</text>
+  
+  <!-- Inflammasome suppression -->
+  <ellipse cx="600" cy="460" rx="80" ry="35" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="5,3" />
+  <text x="600" y="465" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#c0392b">Inhibited Inflammasome</text>
+  <text x="600" y="480" font-family="Arial" font-size="10" text-anchor="middle" fill="#c0392b">(GO:0160075)</text>
+  <path d="M 570 385 C 580 405, 590 425, 590 435" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#arrow)" stroke-dasharray="5,3" />
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="80" y="510" width="640" height="80" fill="white" stroke="#2c3e50" stroke-width="1.5" />
+  <text x="400" y="525" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">LEGEND - Molecular Components and Interactions</text>
+  
+  <!-- Legend items -->
+  <rect x="100" y="535" width="15" height="15" fill="#e74c3c" />
+  <text x="125" y="547" font-family="Arial" font-size="12" text-anchor="start">IpaH9.8 (S. flexneri)</text>
+  
+  <circle cx="250" cy="542" r="7" fill="#58d68d" />
+  <text x="265" y="547" font-family="Arial" font-size="12" text-anchor="start">GBP1 (Human)</text>
+  
+  <rect x="350" y="535" width="15" height="15" fill="#3498db" />
+  <text x="375" y="547" font-family="Arial" font-size="12" text-anchor="start">CASP4 (Human)</text>
+  
+  <polygon points="450,535 460,535 462,542 456,550 450,550 448,542" fill="#f39c12" />
+  <text x="475" y="547" font-family="Arial" font-size="12" text-anchor="start">Lipid A</text>
+  
+  <circle cx="525" cy="542" r="7" fill="#9b59b6" />
+  <text x="535" y="547" font-family="Arial" font-size="12" text-anchor="start">Ubiquitin</text>
+  
+  <line x1="590" y1="542" x2="620" y2="542" stroke="#2c3e50" stroke-width="2.5" stroke-dasharray="5,3" />
+  <text x="630" y="547" font-family="Arial" font-size="12" text-anchor="start">Inhibition/Degradation</text>
+  
+  <line x1="100" y1="565" x2="130" y2="565" stroke="#2c3e50" stroke-width="2.5" />
+  <text x="140" y="570" font-family="Arial" font-size="12" text-anchor="start">Pathway/Interaction</text>
+  
+  <ellipse cx="210" cy="565" rx="15" ry="10" fill="#d4e6f1" stroke="#2c3e50" stroke-width="1.5" />
+  <text x="240" y="570" font-family="Arial" font-size="12" text-anchor="start">Cell Compartment</text>
+</svg>

@@ -1,0 +1,109 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#888" stroke-width="2"/>
+  
+  <!-- Cell components -->
+  <!-- Cytosol area with subtle pattern -->
+  <pattern id="cytosol_pattern" patternUnits="userSpaceOnUse" width="10" height="10">
+    <rect width="10" height="10" fill="#f0f8ff" />
+    <circle cx="5" cy="5" r="1" fill="#e6f2ff" />
+  </pattern>
+  <rect x="70" y="70" width="660" height="460" rx="40" ry="40" fill="url(#cytosol_pattern)" stroke="none"/>
+  <text x="400" y="100" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Cytosol</text>
+  
+  <!-- Endoplasmic Reticulum Membrane -->
+  <pattern id="er_pattern" patternUnits="userSpaceOnUse" width="20" height="20">
+    <rect width="20" height="20" fill="#fff4e6" />
+    <path d="M0,10 L20,10" stroke="#ffcc99" stroke-width="1" />
+  </pattern>
+  <path d="M100,200 C150,150 250,250 300,200 S400,150 450,200 S550,250 600,200 S700,150 750,200" 
+        fill="none" stroke="#d4a76a" stroke-width="15" stroke-opacity="0.8"/>
+  <path d="M100,200 C150,150 250,250 300,200 S400,150 450,200 S550,250 600,200 S700,150 750,200" 
+        fill="none" stroke="#8B4513" stroke-width="2"/>
+  <text x="115" y="160" font-family="Arial" font-size="14" font-weight="bold" fill="#8B4513">Endoplasmic Reticulum Membrane</text>
+  
+  <!-- Mitochondrial Outer Membrane -->
+  <ellipse cx="200" cy="400" rx="90" ry="60" fill="#fff0d1" opacity="0.8" stroke="#FF8C00" stroke-width="3"/>
+  <text x="200" y="385" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#B8860B">Mitochondrial</text>
+  <text x="200" y="405" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#B8860B">Outer Membrane</text>
+  
+  <!-- Pathway components -->
+  <!-- Agmo on ER membrane -->
+  <circle cx="150" cy="200" r="25" fill="#FF6347" stroke="#333" stroke-width="1.5"/>
+  <text x="150" y="205" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Agmo</text>
+  
+  <!-- Gk in cytosol -->
+  <circle cx="300" cy="300" r="25" fill="#4682B4" stroke="#333" stroke-width="1.5"/>
+  <text x="300" y="305" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Gk</text>
+  
+  <!-- Gpam on mitochondrial membrane -->
+  <circle cx="200" cy="400" r="25" fill="#9ACD32" stroke="#333" stroke-width="1.5"/>
+  <text x="200" y="405" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Gpam</text>
+  
+  <!-- Agpat2 on ER membrane -->
+  <circle cx="400" cy="200" r="25" fill="#FF69B4" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="205" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Agpat2</text>
+  
+  <!-- Lpin2 on ER membrane -->
+  <circle cx="500" cy="200" r="25" fill="#BA55D3" stroke="#333" stroke-width="1.5"/>
+  <text x="500" y="205" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Lpin2</text>
+  
+  <!-- Dgat2 on ER membrane -->
+  <circle cx="600" cy="200" r="25" fill="#20B2AA" stroke="#333" stroke-width="1.5"/>
+  <text x="600" y="205" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Dgat2</text>
+  
+  <!-- Pathway arrows -->
+  <path d="M175,200 L375,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M325,300 C350,270 360,250 375,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M225,380 C300,340 350,250 375,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M425,200 L475,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M525,200 L575,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Substrate labels - positioned to avoid overlaps -->
+  <text x="275" y="180" font-family="Arial" font-size="12" font-weight="bold">Glycerol ether</text>
+  <text x="315" y="335" font-family="Arial" font-size="12" font-weight="bold">Glycerol-3-P</text>
+  <text x="290" y="360" font-family="Arial" font-size="12" font-weight="bold">Acyl transfer</text>
+  <text x="450" y="175" font-family="Arial" font-size="12" font-weight="bold">PA</text>
+  <text x="550" y="175" font-family="Arial" font-size="12" font-weight="bold">DAG</text>
+  <text x="625" y="175" font-family="Arial" font-size="12" font-weight="bold">TAG</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Triglyceride Biosynthetic Pathway (Mouse)</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend with larger text -->
+  <rect x="580" y="380" width="160" height="160" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="650" y="400" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <circle cx="600" y="425" r="8" fill="#FF6347"/>
+  <text x="615" y="429" font-family="Arial" font-size="13">Agmo (MGI:2442495)</text>
+  
+  <circle cx="600" y="450" r="8" fill="#4682B4"/>
+  <text x="615" y="454" font-family="Arial" font-size="13">Gk (MGI:106594)</text>
+  
+  <circle cx="600" y="475" r="8" fill="#9ACD32"/>
+  <text x="615" y="479" font-family="Arial" font-size="13">Gpam (MGI:109162)</text>
+  
+  <circle cx="600" y="500" r="8" fill="#FF69B4"/>
+  <text x="615" y="504" font-family="Arial" font-size="13">Agpat2 (MGI:1914762)</text>
+  
+  <circle cx="600" y="525" r="8" fill="#BA55D3"/>
+  <text x="615" y="529" font-family="Arial" font-size="13">Lpin2 (MGI:1891341)</text>
+  
+  <text x="730" y="429" font-family="Arial" font-size="13" text-anchor="middle">Dgat2</text>
+  <circle cx="730" y="445" r="8" fill="#20B2AA"/>
+  <text x="730" y="465" font-family="Arial" font-size="13" text-anchor="middle">(MGI:1915050)</text>
+  
+  <!-- Abbreviations -->
+  <text x="120" y="520" font-family="Arial" font-size="13" font-weight="bold">Abbreviations:</text>
+  <text x="120" y="540" font-family="Arial" font-size="13">PA - Phosphatidic Acid</text>
+  <text x="120" y="560" font-family="Arial" font-size="13">DAG - Diacylglycerol</text>
+  <text x="300" y="540" font-family="Arial" font-size="13">TAG - Triacylglycerol/Triglyceride</text>
+  
+</svg>

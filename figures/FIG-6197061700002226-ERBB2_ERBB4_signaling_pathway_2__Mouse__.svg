@@ -1,0 +1,97 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">ERBB2-ERBB4 Signaling Pathway (Mouse)</text>
+  
+  <!-- Cellular compartments -->
+  <!-- Extracellular space -->
+  <rect x="50" y="70" width="700" height="230" fill="#E0F7FA" stroke="#90A4AE" stroke-width="2" rx="5" />
+  <text x="70" y="95" font-family="Arial" font-size="16" fill="#37474F">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="50" y="300" width="700" height="120" fill="#E8F5E9" stroke="#90A4AE" stroke-width="2" rx="5" />
+  <text x="70" y="325" font-family="Arial" font-size="16" fill="#37474F">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="50" y="420" width="700" height="120" fill="#FFF3E0" stroke="#90A4AE" stroke-width="2" rx="5" />
+  <text x="70" y="445" font-family="Arial" font-size="16" fill="#37474F">Cytoplasm</text>
+  
+  <!-- ADAM17 (MGI:1096335) - metallopeptidase -->
+  <rect x="200" y="320" width="120" height="60" fill="#FFB74D" stroke="#E65100" stroke-width="2" rx="5" />
+  <text x="260" y="350" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000" font-weight="bold">ADAM17</text>
+  <text x="260" y="370" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">metallopeptidase</text>
+  
+  <!-- Ereg (MGI:107508) - receptor ligand -->
+  <circle cx="400" cy="150" r="40" fill="#81D4FA" stroke="#01579B" stroke-width="2" />
+  <text x="400" y="150" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000" font-weight="bold">Ereg</text>
+  <text x="400" y="170" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">receptor ligand</text>
+  
+  <!-- Ereg precursor (implied) -->
+  <circle cx="260" cy="200" r="40" fill="#BBDEFB" stroke="#01579B" stroke-width="2" />
+  <text x="260" y="200" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000" font-weight="bold">Ereg</text>
+  <text x="260" y="220" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">precursor</text>
+  <text x="260" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#D32F2F" font-style="italic">(not in source)</text>
+  
+  <!-- ERBB4 receptor (MGI:104771) -->
+  <rect x="340" y="300" width="120" height="80" fill="#9575CD" stroke="#4527A0" stroke-width="2" rx="5" />
+  <text x="400" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="#FFFFFF" font-weight="bold">ERBB4</text>
+  <text x="400" y="355" font-family="Arial" font-size="11" text-anchor="middle" fill="#FFFFFF">receptor tyrosine</text>
+  <text x="400" y="370" font-family="Arial" font-size="11" text-anchor="middle" fill="#FFFFFF">kinase</text>
+  
+  <!-- ERBB2 receptor (MGI:95410) -->
+  <rect x="480" y="300" width="120" height="80" fill="#7986CB" stroke="#3949AB" stroke-width="2" rx="5" />
+  <text x="540" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="#FFFFFF" font-weight="bold">ERBB2</text>
+  <text x="540" y="355" font-family="Arial" font-size="11" text-anchor="middle" fill="#FFFFFF">tyrosine kinase</text>
+  
+  <!-- Heterodimer formation (implied) -->
+  <rect x="400" y="440" width="120" height="60" fill="#CE93D8" stroke="#6A1B9A" stroke-width="2" rx="5" />
+  <text x="460" y="470" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000" font-weight="bold">ERBB2-ERBB4</text>
+  <text x="460" y="485" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">signaling complex</text>
+  <text x="460" y="500" font-family="Arial" font-size="10" text-anchor="middle" fill="#D32F2F" font-style="italic">(heterodimerization not in source)</text>
+  
+  <!-- Arrows and relationships -->
+  <!-- ADAM17 cleaves Ereg precursor -->
+  <path d="M 260 240 L 260 280 L 200 320" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="230" y="270" font-family="Arial" font-size="11" fill="#000000">cleaves</text>
+  
+  <!-- Ereg binds to ERBB4 -->
+  <path d="M 400 190 L 400 300" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="410" y="245" font-family="Arial" font-size="11" fill="#000000">binds</text>
+  
+  <!-- ERBB4 activates ERBB2 -->
+  <path d="M 460 350 L 480 350" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="470" y="340" font-family="Arial" font-size="11" fill="#000000">activates</text>
+  
+  <!-- ERBB2-ERBB4 signaling -->
+  <path d="M 400 380 L 400 410 L 450 440" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 540 380 L 540 410 L 470 440" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="550" width="700" height="90" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1" rx="5" />
+  <text x="70" y="570" font-family="Arial" font-size="14" fill="#000000" font-weight="bold">Legend:</text>
+  
+  <!-- Protein symbols -->
+  <rect x="70" y="580" width="20" height="15" fill="#FFB74D" stroke="#E65100" stroke-width="1" rx="2" />
+  <text x="100" y="593" font-family="Arial" font-size="12" fill="#000000">Metallopeptidase</text>
+  
+  <circle cx="180" cy="588" r="8" fill="#81D4FA" stroke="#01579B" stroke-width="1" />
+  <text x="195" y="593" font-family="Arial" font-size="12" fill="#000000">Receptor ligand</text>
+  
+  <rect x="280" y="580" width="20" height="15" fill="#9575CD" stroke="#4527A0" stroke-width="1" rx="2" />
+  <text x="310" y="593" font-family="Arial" font-size="12" fill="#000000">Receptor</text>
+  
+  <rect x="380" y="580" width="20" height="15" fill="#CE93D8" stroke="#6A1B9A" stroke-width="1" rx="2" />
+  <text x="410" y="593" font-family="Arial" font-size="12" fill="#000000">Signaling complex</text>
+  
+  <text x="70" y="620" font-family="Arial" font-size="12" fill="#D32F2F" font-style="italic">(not in source)</text>
+  <text x="170" y="620" font-family="Arial" font-size="12" fill="#000000">: Component or process implied by the pathway but not explicitly in the source data</text>
+</svg>

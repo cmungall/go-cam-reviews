@@ -1,0 +1,142 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="320" rx="380" ry="280" fill="#f8f8f8" stroke="#666" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Nucleus - for cell orientation -->
+  <circle cx="250" cy="300" r="80" fill="#e6f2ff" stroke="#666" stroke-width="2" opacity="0.7"/>
+  <text x="250" y="300" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle">Nucleus</text>
+  
+  <!-- Cytosol label -->
+  <text x="400" y="190" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Cytosol (GO:0005829)</text>
+  
+  <!-- Lipid droplet -->
+  <circle cx="550" y="370" r="100" fill="#ffeb99" stroke="#666" stroke-width="2"/>
+  <text x="550" y="370" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Lipid Droplet</text>
+  <text x="550" y="395" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle">(GO:0005811)</text>
+  
+  <!-- Glucose starvation stimulus -->
+  <rect x="100" y="70" width="180" height="60" rx="10" ry="10" fill="#ffcccc" stroke="#666" stroke-width="2"/>
+  <text x="190" y="105" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Glucose Starvation</text>
+  <text x="190" y="125" font-family="Arial" font-size="14" text-anchor="middle">(GO:0042149)</text>
+  
+  <!-- PRKAA1/2 (AMPK) activation -->
+  <rect x="100" y="170" width="180" height="70" rx="15" ry="15" fill="#cce5ff" stroke="#666" stroke-width="2"/>
+  <text x="190" y="195" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PRKAA1/PRKAA2</text>
+  <text x="190" y="215" font-family="Arial" font-size="14" text-anchor="middle">(UniProtKB:Q13131/P54646)</text>
+  <text x="190" y="235" font-family="Arial" font-size="14" text-anchor="middle">Protein S/T kinase activity</text>
+  
+  <!-- KAT5 activation -->
+  <rect x="350" y="170" width="150" height="70" rx="15" ry="15" fill="#ccffcc" stroke="#666" stroke-width="2"/>
+  <text x="425" y="195" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle" font-weight="bold">KAT5</text>
+  <text x="425" y="215" font-family="Arial" font-size="14" text-anchor="middle">(UniProtKB:Q92993)</text>
+  <text x="425" y="235" font-family="Arial" font-size="14" text-anchor="middle">N-acetyltransferase</text>
+  
+  <!-- CHKA homodimerization in cytosol -->
+  <rect x="350" y="270" width="150" height="70" rx="15" ry="15" fill="#ffccff" stroke="#666" stroke-width="2"/>
+  <text x="425" y="295" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CHKA</text>
+  <text x="425" y="315" font-family="Arial" font-size="14" text-anchor="middle">(UniProtKB:P35790-1)</text>
+  <text x="425" y="335" font-family="Arial" font-size="14" text-anchor="middle">Homodimerization</text>
+  
+  <!-- CHKA choline/ethanolamine kinase activity -->
+  <rect x="250" y="370" width="170" height="70" rx="15" ry="15" fill="#ffccff" stroke="#666" stroke-width="2"/>
+  <text x="335" y="395" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CHKA</text>
+  <text x="335" y="415" font-family="Arial" font-size="14" text-anchor="middle">Choline/Ethanolamine</text>
+  <text x="335" y="435" font-family="Arial" font-size="14" text-anchor="middle">Kinase Activity</text>
+  
+  <!-- CHKA at lipid droplet -->
+  <rect x="550" y="450" width="150" height="70" rx="15" ry="15" fill="#ffccff" stroke="#666" stroke-width="2"/>
+  <text x="625" y="475" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle" font-weight="bold">CHKA</text>
+  <text x="625" y="495" font-family="Arial" font-size="14" text-anchor="middle">(UniProtKB:P35790-1)</text>
+  <text x="625" y="515" font-family="Arial" font-size="14" text-anchor="middle">Protein binding/Tyr kinase</text>
+  
+  <!-- Lipid droplet disassembly -->
+  <rect x="650" y="270" width="120" height="70" rx="10" ry="10" fill="#ffffcc" stroke="#666" stroke-width="2"/>
+  <text x="710" y="295" font-family="Arial" font-size="18" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Lipid Droplet</text>
+  <text x="710" y="315" font-family="Arial" font-size="14" text-anchor="middle">Disassembly</text>
+  <text x="710" y="335" font-family="Arial" font-size="14" text-anchor="middle">(GO:1905691)</text>
+  
+  <!-- Phosphatidylcholine biosynthesis -->
+  <rect x="100" y="370" width="120" height="70" rx="10" ry="10" fill="#d9f2d9" stroke="#666" stroke-width="2"/>
+  <text x="160" y="395" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle">PC Biosynthesis</text>
+  <text x="160" y="415" font-family="Arial" font-size="14" text-anchor="middle">(GO:0006656)</text>
+  
+  <!-- Phosphatidylethanolamine biosynthesis -->
+  <rect x="100" y="460" width="120" height="70" rx="10" ry="10" fill="#d9f2d9" stroke="#666" stroke-width="2"/>
+  <text x="160" y="485" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle">PE Biosynthesis</text>
+  <text x="160" y="505" font-family="Arial" font-size="14" text-anchor="middle">(GO:0006646)</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="inhibit" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#ff0000" stroke-width="3"/>
+    </marker>
+  </defs>
+  
+  <!-- Arrows with enhanced labels -->
+  <!-- Glucose starvation to AMPK -->
+  <line x1="190" y1="130" x2="190" y2="170" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="210" y="150" font-family="Arial" font-size="16" text-anchor="start" font-weight="bold">Activates</text>
+  
+  <!-- AMPK to KAT5 -->
+  <line x1="280" y1="200" x2="350" y2="200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="315" y="185" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Activates</text>
+  
+  <!-- KAT5 to CHKA homodimerization (inhibits) -->
+  <line x1="425" y1="240" x2="425" y2="270" stroke="#ff0000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="455" y="255" font-family="Arial" font-size="16" text-anchor="start" fill="#ff0000" font-weight="bold">Inhibits</text>
+  
+  <!-- CHKA homodimerization to PC biosynthesis -->
+  <line x1="350" y1="305" x2="230" y2="370" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="280" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Enables</text>
+  
+  <!-- CHKA homodimerization to PE biosynthesis -->
+  <line x1="350" y1="325" x2="230" y2="460" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="280" y="380" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Enables</text>
+  
+  <!-- AMPK to CHKA at lipid droplet -->
+  <path d="M 280 205 Q 400 270 500 370 Q 550 420 600 450" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="430" y="340" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Activates</text>
+  
+  <!-- KAT5 to CHKA at lipid droplet -->
+  <path d="M 500 205 Q 550 270 600 450" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="550" y="300" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Promotes</text>
+  
+  <!-- CHKA at lipid droplet to lipid droplet disassembly -->
+  <line x1="650" y1="450" x2="710" y2="340" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="705" y="400" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Causes</text>
+  
+  <!-- Figure title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">KAT5 Regulation of Lipid Droplet Disassembly (Human)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="560" width="700" height="75" rx="5" ry="5" fill="#f0f0f0" stroke="#666" stroke-width="1"/>
+  <text x="400" y="575" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="70" y="585" width="25" height="20" fill="#cce5ff"/>
+  <text x="105" y="600" font-family="Arial" font-size="14" text-anchor="start">AMPK Proteins</text>
+  
+  <rect x="200" y="585" width="25" height="20" fill="#ccffcc"/>
+  <text x="235" y="600" font-family="Arial" font-size="14" text-anchor="start">KAT5</text>
+  
+  <rect x="300" y="585" width="25" height="20" fill="#ffccff"/>
+  <text x="335" y="600" font-family="Arial" font-size="14" text-anchor="start">CHKA</text>
+  
+  <rect x="400" y="585" width="25" height="20" fill="#d9f2d9"/>
+  <text x="435" y="600" font-family="Arial" font-size="14" text-anchor="start">Biosynthetic Processes</text>
+  
+  <rect x="70" y="615" width="25" height="20" fill="#ffeb99"/>
+  <text x="105" y="630" font-family="Arial" font-size="14" text-anchor="start">Lipid Droplet</text>
+  
+  <rect x="200" y="615" width="25" height="20" fill="#ffffcc"/>
+  <text x="235" y="630" font-family="Arial" font-size="14" text-anchor="start">Process Outcomes</text>
+  
+  <line x1="300" y1="623" x2="335" y2="623" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="345" y="628" font-family="Arial" font-size="14" text-anchor="start">Activation/Causation</text>
+  
+  <line x1="500" y1="623" x2="535" y2="623" stroke="#ff0000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="545" y="628" font-family="Arial" font-size="14" text-anchor="start">Inhibition</text>
+</svg>

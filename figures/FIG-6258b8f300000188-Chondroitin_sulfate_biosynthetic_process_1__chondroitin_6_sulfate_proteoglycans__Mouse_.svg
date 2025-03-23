@@ -1,0 +1,137 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Golgi apparatus background -->
+  <ellipse cx="400" cy="350" rx="380" ry="300" fill="#f5f5dc" stroke="#707070" stroke-width="2" opacity="0.7"/>
+  <text x="400" y="100" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Golgi Apparatus</text>
+  <text x="400" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">(GO:0005794)</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">Chondroitin Sulfate Biosynthetic Process in Mouse</text>
+  <text x="400" y="75" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">(GO:0030206)</text>
+  
+  <!-- Starting substrates -->
+  <rect x="150" y="170" width="120" height="40" rx="10" ry="10" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <text x="210" y="195" font-family="Arial" font-size="14" text-anchor="middle">Initial Substrate</text>
+  
+  <!-- First layer of enzymes - initial transferases -->
+  <rect x="80" y="250" width="100" height="50" rx="10" ry="10" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="130" y="270" font-family="Arial" font-size="16" text-anchor="middle">Csgalnact1</text>
+  <text x="130" y="290" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0047238</text>
+  
+  <rect x="200" y="250" width="100" height="50" rx="10" ry="10" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="250" y="270" font-family="Arial" font-size="16" text-anchor="middle">Csgalnact2</text>
+  <text x="250" y="290" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0047238</text>
+  
+  <!-- Arrows from substrate to enzymes -->
+  <line x1="190" y1="210" x2="130" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="210" y1="210" x2="250" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Intermediate product -->
+  <rect x="330" y="250" width="140" height="40" rx="10" ry="10" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <text x="400" y="275" font-family="Arial" font-size="14" text-anchor="middle">Elongation Intermediate</text>
+  
+  <!-- Arrows from first enzymes to intermediate -->
+  <line x1="180" y1="275" x2="330" y2="275" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="300" y1="275" x2="330" y2="275" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Reaction steps labels -->
+  <text x="165" y="235" font-family="Arial" font-size="14" text-anchor="middle">Step 1:</text>
+  <text x="165" y="250" font-family="Arial" font-size="14" text-anchor="middle">Chain Initiation</text>
+  
+  <!-- Second layer of enzymes -->
+  <rect x="200" y="350" width="100" height="50" rx="10" ry="10" fill="#ccffcc" stroke="#66cc66" stroke-width="2"/>
+  <text x="250" y="370" font-family="Arial" font-size="16" text-anchor="middle">Chpf</text>
+  <text x="250" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0050510</text>
+  
+  <rect x="330" y="350" width="100" height="50" rx="10" ry="10" fill="#ccffcc" stroke="#66cc66" stroke-width="2"/>
+  <text x="380" y="370" font-family="Arial" font-size="16" text-anchor="middle">Chpf2</text>
+  <text x="380" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0050510</text>
+  
+  <rect x="460" y="350" width="100" height="50" rx="10" ry="10" fill="#ccffcc" stroke="#66cc66" stroke-width="2"/>
+  <text x="510" y="370" font-family="Arial" font-size="16" text-anchor="middle">Chsy1</text>
+  <text x="510" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0050510</text>
+  
+  <rect x="590" y="350" width="100" height="50" rx="10" ry="10" fill="#ccffcc" stroke="#66cc66" stroke-width="2"/>
+  <text x="640" y="370" font-family="Arial" font-size="16" text-anchor="middle">Chsy3</text>
+  <text x="640" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0050510</text>
+  
+  <!-- Reaction steps labels -->
+  <text x="450" y="330" font-family="Arial" font-size="14" text-anchor="middle">Step 2: Chain Polymerization</text>
+  
+  <!-- Arrows from intermediate to second layer enzymes -->
+  <line x1="380" y1="290" x2="250" y2="350" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="390" y1="290" x2="380" y2="350" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="410" y1="290" x2="510" y2="350" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="420" y1="290" x2="640" y2="350" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Second intermediate product -->
+  <rect x="330" y="430" width="140" height="40" rx="10" ry="10" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <text x="400" y="455" font-family="Arial" font-size="14" text-anchor="middle">Elongated Polymer</text>
+  
+  <!-- Arrows from second layer enzymes to second intermediate -->
+  <line x1="250" y1="400" x2="360" y2="430" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="380" y1="400" x2="390" y2="430" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="400" x2="410" y2="430" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="640" y1="400" x2="440" y2="430" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final layer enzymes - sulfotransferases -->
+  <rect x="250" y="500" width="100" height="50" rx="10" ry="10" fill="#ffccff" stroke="#cc66cc" stroke-width="2"/>
+  <text x="300" y="520" font-family="Arial" font-size="16" text-anchor="middle">Chst3</text>
+  <text x="300" y="540" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0008459</text>
+  
+  <rect x="450" y="500" width="100" height="50" rx="10" ry="10" fill="#ffccff" stroke="#cc66cc" stroke-width="2"/>
+  <text x="500" y="520" font-family="Arial" font-size="16" text-anchor="middle">Chst7</text>
+  <text x="500" y="540" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0008459</text>
+  
+  <!-- Reaction steps labels -->
+  <text x="400" y="485" font-family="Arial" font-size="14" text-anchor="middle">Step 3: Sulfation</text>
+  
+  <!-- Arrows from second intermediate to final enzymes -->
+  <line x1="380" y1="470" x2="300" y2="500" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="420" y1="470" x2="500" y2="500" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final product -->
+  <rect x="330" y="580" width="140" height="50" rx="10" ry="10" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <text x="400" y="605" font-family="Arial" font-size="16" text-anchor="middle">Chondroitin Sulfate</text>
+  <text x="400" y="625" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Proteoglycan</text>
+  
+  <!-- Arrows from final enzymes to product -->
+  <line x1="300" y1="550" x2="380" y2="580" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="550" x2="430" y2="580" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="530" width="180" height="150" fill="white" stroke="black" stroke-width="1" opacity="0.9"/>
+  <text x="140" y="550" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="65" y="560" width="20" height="20" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="95" y="575" font-family="Arial" font-size="12" text-anchor="start">N-acetylgalactosaminyltransferase</text>
+  
+  <rect x="65" y="590" width="20" height="20" fill="#ccffcc" stroke="#66cc66" stroke-width="2"/>
+  <text x="95" y="605" font-family="Arial" font-size="12" text-anchor="start">Glucuronosyltransferase</text>
+  
+  <rect x="65" y="620" width="20" height="20" fill="#ffccff" stroke="#cc66cc" stroke-width="2"/>
+  <text x="95" y="635" font-family="Arial" font-size="12" text-anchor="start">Sulfotransferase</text>
+  
+  <rect x="65" y="650" width="20" height="20" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <text x="95" y="665" font-family="Arial" font-size="12" text-anchor="start">Substrate/Product</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Description of activities -->
+  <text x="600" y="200" font-family="Arial" font-size="14" text-anchor="start" font-weight="bold">Enzyme Activities:</text>
+  <text x="600" y="220" font-family="Arial" font-size="12" text-anchor="start">GO:0047238 - glucuronosyl-N-acetylgalactosaminyl-</text>
+  <text x="600" y="235" font-family="Arial" font-size="12" text-anchor="start">proteoglycan 4-beta-N-acetylgalactosaminyltransferase</text>
+  
+  <text x="600" y="255" font-family="Arial" font-size="12" text-anchor="start">GO:0050510 - N-acetylgalactosaminyl-proteoglycan</text>
+  <text x="600" y="270" font-family="Arial" font-size="12" text-anchor="start">3-beta-glucuronosyltransferase activity</text>
+  
+  <text x="600" y="290" font-family="Arial" font-size="12" text-anchor="start">GO:0008459 - chondroitin 6-sulfotransferase activity</text>
+  
+  <!-- Process name and location annotations -->
+  <text x="600" y="155" font-family="Arial" font-size="14" text-anchor="start" font-weight="bold">Process:</text>
+  <text x="600" y="175" font-family="Arial" font-size="12" text-anchor="start">GO:0030206 - chondroitin sulfate biosynthetic process</text>
+</svg>

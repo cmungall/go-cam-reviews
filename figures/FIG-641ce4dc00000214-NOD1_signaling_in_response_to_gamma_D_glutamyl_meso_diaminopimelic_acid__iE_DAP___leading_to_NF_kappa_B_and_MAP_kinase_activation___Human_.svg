@@ -1,0 +1,175 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Cell Compartments -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f8f8" />
+  
+  <!-- Cell Membrane -->
+  <path d="M 50,150 C 50,120 750,120 750,150 C 750,180 50,180 50,150 Z" fill="#D6EAF8" stroke="#2E86C1" stroke-width="2" />
+  <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2E86C1">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="50" y="180" width="700" height="280" fill="#E8F8F5" stroke="#2E86C1" stroke-width="2" rx="20" ry="20" />
+  <text x="100" y="200" font-family="Arial" font-size="16" font-weight="bold" fill="#2E86C1">Cytoplasm</text>
+  
+  <!-- Cytosol (inside cytoplasm) -->
+  <rect x="70" y="220" width="660" height="220" fill="#D1F2EB" stroke="#2E86C1" stroke-width="1" rx="10" ry="10" />
+  <text x="120" y="240" font-family="Arial" font-size="16" font-weight="bold" fill="#2E86C1">Cytosol</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="520" rx="150" ry="60" fill="#E8DAEF" stroke="#8E44AD" stroke-width="2" />
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#8E44AD">Nucleus</text>
+  <ellipse cx="400" cy="520" rx="120" ry="40" fill="none" stroke="#8E44AD" stroke-width="1" stroke-dasharray="5,2" />
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="14" fill="#8E44AD">Chromatin</text>
+  
+  <!-- Pathway Elements -->
+  
+  <!-- iE-DAP (Ligand) -->
+  <circle cx="250" cy="100" r="20" fill="#FFD700" stroke="#D35400" stroke-width="2" />
+  <text x="250" y="100" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">iE-DAP</text>
+  <text x="250" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#D35400">Bacterial Peptidoglycan</text>
+  
+  <!-- NOD1 Receptor -->
+  <rect x="230" y="150" width="40" height="30" fill="#FF7F50" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="250" y="170" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">NOD1</text>
+  
+  <!-- Activation arrow from ligand to receptor -->
+  <path d="M 250,120 L 250,150" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- RIPK2 -->
+  <rect x="230" y="230" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="250" y="250" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">RIPK2</text>
+  
+  <!-- Activation arrow from NOD1 to RIPK2 -->
+  <path d="M 250,180 L 250,230" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="280" y="210" font-family="Arial" font-size="12" fill="#000">Signal Adaptor Activity</text>
+  
+  <!-- XIAP -->
+  <rect x="230" y="310" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="250" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">XIAP</text>
+  
+  <!-- Activation arrow from RIPK2 to XIAP -->
+  <path d="M 250,260 L 250,310" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="310" y="290" font-family="Arial" font-size="12" fill="#000">Ubiquitin Ligase Activity</text>
+  <text x="310" y="305" font-family="Arial" font-size="10" fill="#000">(E3 ligase for K63-linked ubiquitination)</text>
+  <path d="M 275,290 C 290,290 290,290 300,290" stroke="#000" stroke-width="1" />
+  
+  <!-- RNF31 (Linear Ubiquitination) -->
+  <rect x="150" y="310" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="170" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">RNF31</text>
+  
+  <!-- Arrow from RIPK2 to RNF31 -->
+  <path d="M 230,245 C 200,245 200,310 190,310" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- TAB2/TAB3 Complex -->
+  <rect x="310" y="310" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="330" y="325" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">TAB2/</text>
+  <text x="330" y="335" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">TAB3</text>
+  
+  <!-- Arrow from XIAP to TAB2/TAB3 (K63-linked ubiquitination) -->
+  <path d="M 270,325 L 310,325" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="290" y="315" font-family="Arial" font-size="12" fill="#000">K63-Ub</text>
+  
+  <!-- IKBKG (NEMO) -->
+  <rect x="150" y="380" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="170" y="400" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">IKBKG</text>
+  
+  <!-- Arrow from RNF31 to IKBKG -->
+  <path d="M 170,340 L 170,380" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="200" y="365" font-family="Arial" font-size="12" fill="#000">Linear Polyubiquitination</text>
+  
+  <!-- MAP3K7 (TAK1) -->
+  <rect x="310" y="380" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="330" y="400" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">MAP3K7</text>
+  
+  <!-- Arrow from TAB2/TAB3 to MAP3K7 -->
+  <path d="M 330,340 L 330,380" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="370" y="365" font-family="Arial" font-size="12" fill="#000">MAP3K Activity</text>
+  
+  <!-- Branching pathways with different arrow styles -->
+  
+  <!-- Left branch - NF-κB pathway (dashed arrows) -->
+  
+  <!-- IKBKB (IKKβ) -->
+  <rect x="150" y="440" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="170" y="460" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">IKBKB</text>
+  
+  <!-- Arrow from IKBKG to IKBKB (dashed) -->
+  <path d="M 170,410 L 170,440" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow from MAP3K7 to IKBKB (cross-talk, dashed) -->
+  <path d="M 310,395 C 250,395 250,440 190,440" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="250" y="385" font-family="Arial" font-size="12" fill="#000">IKK Activation</text>
+  
+  <!-- NFKBIA (IκBα) -->
+  <rect x="230" y="440" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="250" y="460" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">NFKBIA</text>
+  
+  <!-- Arrow from IKBKB to NFKBIA (dashed) -->
+  <path d="M 190,455 L 230,455" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="210" y="445" font-family="Arial" font-size="12" fill="#000">Phosphorylation</text>
+  
+  <!-- NF-κB complex (p65/p50) -->
+  <rect x="350" y="480" width="60" height="30" fill="#9999FF" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="380" y="495" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">RELA/</text>
+  <text x="380" y="505" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">NFKB1</text>
+  
+  <!-- Arrow from NFKBIA to NF-κB (inhibition released, dashed) -->
+  <path d="M 270,455 C 320,455 320,495 350,495" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="320" y="445" font-family="Arial" font-size="12" fill="#000">Release from sequestration</text>
+  
+  <!-- Arrow from NF-κB to nucleus (dashed) -->
+  <path d="M 380,510 L 380,520" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="400" y="530" font-family="Arial" font-size="12" fill="#000">Transcription Factor Activity</text>
+  
+  <!-- Right branch - MAPK pathway (solid arrows) -->
+  
+  <!-- MAP2K6 -->
+  <rect x="440" y="380" width="40" height="30" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="460" y="400" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">MAP2K6</text>
+  
+  <!-- Arrow from MAP3K7 to MAP2K6 (solid) -->
+  <path d="M 350,395 L 440,395" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="395" y="385" font-family="Arial" font-size="12" fill="#000">MAPKK Activation</text>
+  
+  <!-- p38 MAPK (MAPK14/MAPK11) -->
+  <rect x="440" y="440" width="60" height="30" fill="#9999FF" stroke="#000" stroke-width="2" rx="5" ry="5" />
+  <text x="470" y="455" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">MAPK14/</text>
+  <text x="470" y="465" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000">MAPK11</text>
+  
+  <!-- Arrow from MAP2K6 to p38 MAPK (solid) -->
+  <path d="M 460,410 L 460,440" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="490" y="430" font-family="Arial" font-size="12" fill="#000">MAPK Activation</text>
+  
+  <!-- Enhanced Legend -->
+  <rect x="600" y="450" width="180" height="130" fill="white" stroke="#000" stroke-width="1" />
+  <text x="610" y="470" font-family="Arial" font-weight="bold" font-size="14" fill="#000">LEGEND</text>
+  
+  <rect x="610" y="480" width="20" height="15" fill="#FF7F50" stroke="#000" stroke-width="1" />
+  <text x="635" y="490" font-family="Arial" font-size="12" fill="#000">Receptor</text>
+  
+  <rect x="610" y="500" width="20" height="15" fill="#FF9999" stroke="#000" stroke-width="1" />
+  <text x="635" y="510" font-family="Arial" font-size="12" fill="#000">Adaptor/Kinase/E3 Ligase</text>
+  
+  <rect x="610" y="520" width="20" height="15" fill="#9999FF" stroke="#000" stroke-width="1" />
+  <text x="635" y="530" font-family="Arial" font-size="12" fill="#000">Transcription Factor/MAPK</text>
+  
+  <circle cx="620" y="545" r="10" fill="#FFD700" stroke="#D35400" stroke-width="1" />
+  <text x="635" y="550" font-family="Arial" font-size="12" fill="#000">Bacterial Ligand (iE-DAP)</text>
+  
+  <!-- Add pathway arrow styles to legend -->
+  <path d="M 610,565 L 630,565" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <text x="635" y="570" font-family="Arial" font-size="12" fill="#000">MAPK Pathway</text>
+  
+  <path d="M 610,585 L 630,585" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="635" y="590" font-family="Arial" font-size="12" fill="#000">NF-κB Pathway</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#000">NOD1 Signaling in Response to iE-DAP</text>
+  <text x="400" y="55" text-anchor="middle" font-family="Arial" font-size="16" fill="#000">Leading to NF-κB and p38 MAPK Activation</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+</svg>

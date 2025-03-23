@@ -1,0 +1,142 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Cell Components -->
+  <rect x="50" y="50" width="700" height="550" rx="20" ry="20" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">Negative Regulation of Inflammatory Response to Wounding by REG3A</text>
+  
+  <!-- Cell compartments -->
+  <!-- Extracellular Space -->
+  <rect x="100" y="80" width="600" height="100" rx="5" ry="5" fill="#f2f2f2" stroke="#333" stroke-width="1.5"/>
+  <text x="120" y="100" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Extracellular Space</text>
+  
+  <!-- Plasma Membrane -->
+  <rect x="100" y="180" width="600" height="50" rx="0" ry="0" fill="#b3d9ff" stroke="#333" stroke-width="1.5"/>
+  <text x="120" y="210" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="100" y="230" width="600" height="220" rx="0" ry="0" fill="#e6ffe6" stroke="#333" stroke-width="1.5"/>
+  <text x="120" y="250" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <rect x="250" y="300" width="300" height="120" rx="10" ry="10" fill="#ffe6e6" stroke="#333" stroke-width="1.5"/>
+  <text x="270" y="320" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Nucleus</text>
+  
+  <!-- Molecules and Interactions -->
+  
+  <!-- IL-33 (Extracellular) -->
+  <circle cx="150" cy="130" r="20" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="150" cy="130" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">IL-33</text>
+  <text x="150" cy="155" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">Cytokine Activity</text>
+  
+  <!-- REG3A (Extracellular) -->
+  <circle cx="250" cy="130" r="20" fill="#99ff99" stroke="#333" stroke-width="1.5"/>
+  <text x="250" cy="130" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">REG3A</text>
+  <text x="250" cy="155" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">Hormone Activity</text>
+  
+  <!-- Activation arrow from IL-33 to REG3A -->
+  <line x1="175" y1="130" x2="225" y2="130" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="200" y="125" font-family="Arial" font-size="10" fill="#333">activates</text>
+  
+  <!-- EXTL3 receptor (Membrane) -->
+  <rect x="230" y="180" width="40" height="30" fill="#9999ff" stroke="#333" stroke-width="1.5"/>
+  <text x="250" y="200" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">EXTL3</text>
+  
+  <!-- REG3A binding to EXTL3 -->
+  <line x1="250" y1="150" x2="250" y2="180" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- PI3K/Akt signaling from EXTL3 -->
+  <line x1="250" y1="210" x2="250" y2="260" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="255" y="230" width="85" height="15" fill="#e6ffe6" stroke="none"/>
+  <text x="295" y="242" font-family="Arial" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">PI3K/Akt signaling</text>
+  
+  <!-- STAT3 in cytoplasm -->
+  <polygon points="230,260 270,260 250,290" fill="#ff99cc" stroke="#333" stroke-width="1.5"/>
+  <text x="250" y="275" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">STAT3</text>
+  
+  <!-- STAT3 translocation to nucleus -->
+  <line x1="250" y1="290" x2="250" y2="330" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="220" y="310" font-family="Arial" font-size="10" fill="#333">translocation</text>
+  
+  <!-- STAT3 in nucleus -->
+  <polygon points="230,330 270,330 250,360" fill="#ff99cc" stroke="#333" stroke-width="1.5"/>
+  <text x="250" y="345" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">STAT3</text>
+  <text x="250" y="375" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">Transcription Factor</text>
+  
+  <!-- STAT3 activation of PTPN6 -->
+  <line x1="270" y1="345" x2="370" y2="380" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- PTPN6 in cytoplasm -->
+  <rect x="380" y="370" width="40" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="390" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">PTPN6</text>
+  <text x="400" y="410" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">Phosphatase</text>
+  
+  <!-- PTPN6 inhibition of JNK -->
+  <line x1="420" y1="385" x2="480" y2="300" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="460" y="340" font-family="Arial" font-size="10" fill="#333">inhibits</text>
+  
+  <!-- TLR3 receptor (Membrane) -->
+  <rect x="500" y="180" width="40" height="30" fill="#ffff99" stroke="#333" stroke-width="1.5"/>
+  <text x="520" y="200" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">TLR3</text>
+  
+  <!-- JNK signaling cascade from TLR3 -->
+  <line x1="520" y1="210" x2="520" y2="270" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="525" y="235" width="70" height="15" fill="#e6ffe6" stroke="none"/>
+  <text x="560" y="247" font-family="Arial" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">JNK cascade</text>
+  
+  <!-- JNK in cytoplasm -->
+  <rect x="500" y="270" width="40" height="30" rx="5" ry="5" fill="#cc99ff" stroke="#333" stroke-width="1.5"/>
+  <text x="520" y="290" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">JNK</text>
+  <text x="520" y="310" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">Kinase</text>
+  
+  <!-- Inflammatory cytokines (Extracellular) -->
+  <circle cx="550" cy="130" r="20" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="550" cy="130" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">TNF</text>
+  
+  <circle cx="620" cy="130" r="20" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="620" cy="130" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">IL-6</text>
+  
+  <!-- JNK activation of inflammatory cytokines -->
+  <line x1="520" y1="270" x2="550" y2="155" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="270" x2="620" y2="155" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Clearer text for inflammatory response -->
+  <rect x="560" y="165" width="140" height="25" fill="#f2f2f2" stroke="none"/>
+  <text x="630" y="175" font-family="Arial" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">Inflammatory Response</text>
+  <text x="630" y="187" font-family="Arial" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">to Wounding</text>
+  
+  <!-- Summary of the pathway -->
+  <rect x="100" y="480" width="600" height="70" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="110" y="500" font-family="Arial" font-size="12" fill="#333">Pathway Summary: IL-33 activates REG3A, which binds to EXTL3 receptor, activating PI3K/Akt pathway.</text>
+  <text x="110" y="520" font-family="Arial" font-size="12" fill="#333">This leads to STAT3 activation and upregulation of PTPN6, which inhibits JNK signaling.</text>
+  <text x="110" y="540" font-family="Arial" font-size="12" fill="#333">The inhibition of JNK prevents excessive production of inflammatory cytokines (TNF, IL-6).</text>
+  
+  <!-- Legend box -->
+  <rect x="550" y="350" width="150" height="120" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="570" y="365" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Legend</text>
+  
+  <circle cx="565" cy="380" r="5" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="575" y="383" font-family="Arial" font-size="10" fill="#333">Cytokines</text>
+  
+  <circle cx="565" cy="400" r="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="575" y="403" font-family="Arial" font-size="10" fill="#333">REG3A Hormone</text>
+  
+  <rect x="560" y="410" width="10" height="10" fill="#9999ff" stroke="#333" stroke-width="1"/>
+  <text x="575" y="418" font-family="Arial" font-size="10" fill="#333">Receptors</text>
+  
+  <polygon points="560,425 570,425 565,435" fill="#ff99cc" stroke="#333" stroke-width="1"/>
+  <text x="575" y="433" font-family="Arial" font-size="10" fill="#333">STAT3 TF</text>
+  
+  <rect x="560" y="440" width="10" height="10" rx="2" ry="2" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="575" y="448" font-family="Arial" font-size="10" fill="#333">Phosphatase</text>
+  
+  <rect x="560" y="455" width="10" height="10" rx="2" ry="2" fill="#cc99ff" stroke="#333" stroke-width="1"/>
+  <text x="575" y="463" font-family="Arial" font-size="10" fill="#333">Kinase</text>
+  
+  <!-- Definitions for markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

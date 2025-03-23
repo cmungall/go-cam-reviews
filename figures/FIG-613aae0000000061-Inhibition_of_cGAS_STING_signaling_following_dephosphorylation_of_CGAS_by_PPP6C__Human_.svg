@@ -1,0 +1,97 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell background -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f9fa" stroke="#343a40" stroke-width="2" />
+  
+  <!-- Title -->
+  <text x="400" y="85" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Inhibition of cGAS-STING Signaling by PPP6C</text>
+  
+  <!-- Endoplasmic reticulum membrane -->
+  <path d="M100,250 Q150,200 200,250 Q250,300 300,250 Q350,200 400,250 Q450,300 500,250 Q550,200 600,250 Q650,300 700,250" 
+        fill="none" stroke="#5a189a" stroke-width="8" />
+  <text x="400" y="200" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#5a189a">Endoplasmic Reticulum Membrane</text>
+  <text x="400" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#5a189a">(GO:0005789)</text>
+  
+  <!-- cGAS Protein -->
+  <circle cx="250" cy="400" r="60" fill="#72efdd" stroke="#343a40" stroke-width="2" />
+  <text x="250" y="395" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">cGAS</text>
+  <text x="250" y="415" text-anchor="middle" font-family="Arial" font-size="12">(Q8N884)</text>
+  
+  <!-- cGAS phosphorylation state -->
+  <circle cx="270" cy="370" r="10" fill="#ffff3f" stroke="#343a40" stroke-width="1" />
+  <text x="270" y="374" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">P</text>
+  
+  <!-- STING1 Protein -->
+  <rect x="450" y="270" width="120" height="50" rx="15" ry="15" fill="#ff9e00" stroke="#343a40" stroke-width="2" />
+  <text x="510" y="295" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">STING1</text>
+  <text x="510" y="315" text-anchor="middle" font-family="Arial" font-size="12">(Q86WV6)</text>
+  
+  <!-- PPP6C Protein -->
+  <polygon points="120,320 180,320 150,390" fill="#fb6f92" stroke="#343a40" stroke-width="2" />
+  <text x="150" y="340" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">PPP6C</text>
+  <text x="150" y="360" text-anchor="middle" font-family="Arial" font-size="12">(O00743)</text>
+  
+  <!-- 2',3'-cyclic GMP-AMP molecule -->
+  <ellipse cx="380" cy="370" rx="40" ry="20" fill="#80ffdb" stroke="#343a40" stroke-width="2" />
+  <text x="380" y="375" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">cGAMP</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- cGAS to cGAMP (synthesis) -->
+  <path d="M300,380 L340,370" fill="none" stroke="#343a40" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="320" y="365" text-anchor="middle" font-family="Arial" font-size="12" fill="#343a40">Synthesizes</text>
+  
+  <!-- cGAMP to STING1 (binding) -->
+  <path d="M420,370 L450,320" fill="none" stroke="#343a40" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="445" y="355" text-anchor="middle" font-family="Arial" font-size="12" fill="#343a40">Binds</text>
+  
+  <!-- PPP6C to cGAS (dephosphorylation) -->
+  <path d="M170,390 L200,390" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#inhibitarrow)" />
+  <text x="185" y="410" text-anchor="middle" font-family="Arial" font-size="12" fill="#cc0000">Dephosphorylates</text>
+  
+  <!-- Markers for arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#343a40" />
+    </marker>
+    <marker id="inhibitarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000" />
+    </marker>
+  </defs>
+  
+  <!-- Process labels -->
+  <rect x="80" y="130" width="250" height="30" rx="15" ry="15" fill="#e9ecef" stroke="#343a40" stroke-width="1" />
+  <text x="205" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">cGAS/STING Signaling Pathway</text>
+  <text x="205" y="170" text-anchor="middle" font-family="Arial" font-size="12">(GO:0140896)</text>
+  
+  <rect x="350" y="130" width="350" height="30" rx="15" ry="15" fill="#e9ecef" stroke="#343a40" stroke-width="1" />
+  <text x="525" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Negative Regulation of cGAS/STING Signaling</text>
+  <text x="525" y="170" text-anchor="middle" font-family="Arial" font-size="12">(GO:0160049)</text>
+  
+  <!-- Activity labels with icons -->
+  <!-- cGAS molecular condensate scaffold activity -->
+  <rect x="80" y="470" width="200" height="60" rx="5" ry="5" fill="#ffffff" stroke="#72efdd" stroke-width="2" opacity="0.9" />
+  <circle cx="100" cy="500" r="15" fill="#72efdd" stroke="#343a40" stroke-width="1" />
+  <text x="100" y="505" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">⊕</text>
+  <text x="190" y="490" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Molecular condensate</text>
+  <text x="190" y="510" text-anchor="middle" font-family="Arial" font-size="12">scaffold activity</text>
+  <text x="190" y="525" text-anchor="middle" font-family="Arial" font-size="11">(GO:0140693)</text>
+  
+  <!-- cGAS synthase activity -->
+  <rect x="300" y="470" width="200" height="60" rx="5" ry="5" fill="#ffffff" stroke="#80ffdb" stroke-width="2" opacity="0.9" />
+  <circle cx="320" cy="500" r="15" fill="#80ffdb" stroke="#343a40" stroke-width="1" />
+  <text x="320" y="505" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">⚙️</text>
+  <text x="410" y="490" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">2',3'-cyclic GMP-AMP</text>
+  <text x="410" y="510" text-anchor="middle" font-family="Arial" font-size="12">synthase activity</text>
+  <text x="410" y="525" text-anchor="middle" font-family="Arial" font-size="11">(GO:0061501)</text>
+  
+  <!-- STING1 binding activity -->
+  <rect x="520" y="470" width="200" height="60" rx="5" ry="5" fill="#ffffff" stroke="#ff9e00" stroke-width="2" opacity="0.9" />
+  <circle cx="540" cy="500" r="15" fill="#ff9e00" stroke="#343a40" stroke-width="1" />
+  <text x="540" y="505" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">🔒</text>
+  <text x="630" y="490" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">2',3'-cyclic GMP-AMP</text>
+  <text x="630" y="510" text-anchor="middle" font-family="Arial" font-size="12">binding</text>
+  <text x="630" y="525" text-anchor="middle" font-family="Arial" font-size="11">(GO:0061507)</text>
+  
+  <!-- PPP6C phosphatase activity -->
+  <rect x="80" y="540" width="200" height="20" rx="5" ry="5" fill="#ffffff" stroke="#fb6f92" stroke-width="1" opacity="0.9" />
+  <text x="180" y="555" text-anchor="middle" font-family="Arial" font-size="12">Protein phosphatase activity (GO:0004722)</text>
+</svg>

@@ -1,0 +1,142 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Background and cytosol -->
+  <rect x="50" y="50" width="700" height="530" rx="20" ry="20" fill="#f8f9fa" stroke="#ccc" stroke-width="2"/>
+  <text x="400" y="85" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">CMP Catabolic Process (Mouse)</text>
+  
+  <!-- Cytosol label -->
+  <rect x="680" y="100" width="60" height="30" rx="5" ry="5" fill="#e6f3ff" stroke="#333" stroke-width="1"/>
+  <text x="710" y="120" font-family="Arial" font-size="14" text-anchor="middle">Cytosol</text>
+  
+  <!-- Steps Labels -->
+  <text x="70" y="200" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Step 1</text>
+  <text x="70" y="350" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Step 3</text>
+  <text x="70" y="500" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Step 5</text>
+  <text x="400" y="280" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Step 2</text>
+  <text x="110" y="420" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Step 4</text>
+  <text x="400" y="430" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Step 6</text>
+  
+  <!-- Pathway components -->
+  <!-- CMP start -->
+  <circle cx="150" cy="200" r="30" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="150" y="205" font-family="Arial" font-size="16" text-anchor="middle">CMP</text>
+  
+  <!-- Nt5c3 -->
+  <rect x="250" y="170" width="100" height="60" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="300" y="195" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Nt5c3</text>
+  <text x="300" y="215" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(5'-nucleotidase)</text>
+  
+  <!-- Nt5c3 function -->
+  <text x="300" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Removes phosphate from CMP</text>
+  
+  <!-- Cytidine -->
+  <circle cx="400" cy="200" r="30" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="195" font-family="Arial" font-size="16" text-anchor="middle">Cytidine</text>
+  <text x="400" y="210" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">+ Pi</text>
+  
+  <!-- Cda -->
+  <rect x="500" y="170" width="100" height="60" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="550" y="195" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Cda</text>
+  <text x="550" y="215" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(cytidine deaminase)</text>
+  
+  <!-- Cda function -->
+  <text x="550" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Deaminates cytidine to uridine</text>
+  
+  <!-- Uridine -->
+  <circle cx="650" cy="200" r="30" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="650" y="195" font-family="Arial" font-size="16" text-anchor="middle">Uridine</text>
+  <text x="650" y="210" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">+ NH₃</text>
+  
+  <!-- Split path for Upp1 and Upp2 -->
+  <rect x="600" y="280" width="100" height="60" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="650" y="305" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Upp1/Upp2</text>
+  <text x="650" y="325" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(uridine phosphorylase)</text>
+  
+  <!-- Upp function -->
+  <text x="650" y="265" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Cleaves ribose from uridine</text>
+  
+  <!-- Uracil -->
+  <circle cx="500" cy="350" r="30" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="500" y="345" font-family="Arial" font-size="16" text-anchor="middle">Uracil</text>
+  <text x="500" y="360" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">+ ribose-1-P</text>
+  
+  <!-- Dpyd -->
+  <rect x="350" y="320" width="100" height="60" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="400" y="345" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Dpyd</text>
+  <text x="400" y="365" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(dihydropyrimidine</text>
+  <text x="400" y="380" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">dehydrogenase)</text>
+  
+  <!-- Dpyd function -->
+  <text x="400" y="310" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Reduces uracil to dihydrouracil</text>
+  
+  <!-- Dihydrouracil -->
+  <circle cx="200" cy="350" r="30" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="200" y="345" font-family="Arial" font-size="16" text-anchor="middle">Dihydro-</text>
+  <text x="200" y="360" font-family="Arial" font-size="16" text-anchor="middle">uracil</text>
+  
+  <!-- Dpys -->
+  <rect x="150" y="420" width="100" height="60" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="200" y="445" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Dpys</text>
+  <text x="200" y="465" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(dihydropyrimidinase)</text>
+  
+  <!-- Dpys function -->
+  <text x="200" y="410" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Hydrolyzes dihydrouracil ring</text>
+  
+  <!-- N-carbamoyl-β-alanine -->
+  <circle cx="300" cy="500" r="35" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="300" y="490" font-family="Arial" font-size="16" text-anchor="middle">N-carbamoyl-</text>
+  <text x="300" y="505" font-family="Arial" font-size="16" text-anchor="middle">β-alanine</text>
+  
+  <!-- Upb1 -->
+  <rect x="400" y="470" width="100" height="60" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="450" y="495" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Upb1</text>
+  <text x="450" y="515" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(beta-ureidopropionase)</text>
+  
+  <!-- Upb1 function -->
+  <text x="450" y="460" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Cleaves carbamoyl group</text>
+  
+  <!-- Final products -->
+  <circle cx="550" cy="500" r="30" fill="#b3e0ff" stroke="#333" stroke-width="2"/>
+  <text x="550" y="495" font-family="Arial" font-size="16" text-anchor="middle">β-alanine</text>
+  <text x="550" y="510" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">+ CO₂ + NH₃</text>
+  
+  <!-- Arrows -->
+  <line x1="180" y1="200" x2="240" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="200" x2="370" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="430" y1="200" x2="490" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="200" x2="620" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="650" y1="230" x2="650" y2="270" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="310" x2="540" y2="335" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="470" y1="350" x2="450" y2="350" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="350" x2="240" y2="350" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="380" x2="200" y2="410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="225" y1="470" x2="275" y2="490" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="335" y1="500" x2="390" y2="500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="500" x2="520" y2="500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Enzyme activity zones - subtle background coloring -->
+  <rect x="120" y="150" width="310" height="100" rx="10" ry="10" fill="#f9f9ff" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+  <rect x="380" y="150" width="300" height="100" rx="10" ry="10" fill="#f9f9ff" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+  <rect x="470" y="260" width="250" height="130" rx="10" ry="10" fill="#f9f9ff" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+  <rect x="170" y="300" width="300" height="100" rx="10" ry="10" fill="#f9f9ff" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+  <rect x="120" y="400" width="210" height="120" rx="10" ry="10" fill="#f9f9ff" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+  <rect x="280" y="440" width="300" height="100" rx="10" ry="10" fill="#f9f9ff" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="590" width="700" height="50" rx="5" ry="5" fill="#f0f0f0" stroke="#ccc" stroke-width="1"/>
+  <text x="60" y="610" font-family="Arial" font-size="11" font-weight="bold">Legend:</text>
+  <rect x="110" y="600" width="15" height="15" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="130" y="612" font-family="Arial" font-size="11">Enzymes</text>
+  <circle cx="175" y="608" r="7" fill="#b3e0ff" stroke="#333" stroke-width="1"/>
+  <text x="187" y="612" font-family="Arial" font-size="11">Metabolites</text>
+  <rect x="250" y="600" width="40" height="15" fill="#e6f3ff" stroke="#333" stroke-width="1"/>
+  <text x="295" y="612" font-family="Arial" font-size="11">Cellular compartment</text>
+  <rect x="360" y="600" width="15" height="15" fill="#f9f9ff" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="380" y="612" font-family="Arial" font-size="11">Reaction zones</text>
+  <text x="470" y="612" font-family="Arial" font-size="11" font-style="italic">All elements shown are present in the GO-CAM source data</text>
+</svg>

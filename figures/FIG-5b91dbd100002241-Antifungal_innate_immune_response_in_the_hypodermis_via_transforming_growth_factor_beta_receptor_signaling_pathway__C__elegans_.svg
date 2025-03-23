@@ -1,0 +1,112 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Antifungal Innate Immune Response in C. elegans Hypodermis via TGF-β Signaling</text>
+  
+  <!-- Cell Membrane -->
+  <path d="M100,150 C150,130 650,130 700,150 C750,170 750,450 700,470 C650,490 150,490 100,470 C50,450 50,170 100,150" fill="#f0f5ff" stroke="#333" stroke-width="2" />
+  
+  <!-- Hypodermis label -->
+  <text x="400" y="475" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Hypodermis</text>
+  
+  <!-- Extracellular Space label -->
+  <text x="400" y="120" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="350" rx="120" ry="80" fill="#e6f2ff" stroke="#333" stroke-width="2" />
+  <text x="400" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Nucleus</text>
+  
+  <!-- Fungal Pathogen -->
+  <path d="M180,80 C190,60 220,60 230,80 C240,95 250,80 260,95 C270,110 240,120 230,105 C220,90 210,115 190,100 C170,85 170,100 180,80" fill="#d9c7ab" stroke="#333" stroke-width="2" />
+  <text x="220" y="90" font-family="Arial" font-size="12" text-anchor="middle">Fungal Pathogen</text>
+  
+  <!-- DBL-1 ligand -->
+  <circle cx="400" cy="80" r="25" fill="#ff9999" stroke="#333" stroke-width="2" />
+  <text x="400" y="85" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">DBL-1</text>
+  
+  <!-- Receptor complex -->
+  <rect x="370" y="160" width="60" height="30" fill="#99cc99" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="180" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">DAF-4</text>
+  
+  <rect x="450" y="160" width="60" height="30" fill="#99cc99" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="480" y="180" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SMA-6</text>
+  
+  <!-- Receptor Label -->
+  <text x="440" y="205" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Type I and II TGF-β receptors</text>
+  
+  <!-- SMA-3 -->
+  <polygon points="400,330 425,350 400,370 375,350" fill="#9999ff" stroke="#333" stroke-width="2" />
+  <text x="400" y="355" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SMA-3</text>
+  <text x="400" y="380" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">SMAD transcription factor</text>
+  
+  <!-- Target genes -->
+  <rect x="500" y="340" width="80" height="25" fill="#e6e6e6" stroke="#333" stroke-width="1" rx="5" ry="5" />
+  <text x="540" y="357" font-family="Arial" font-size="12" text-anchor="middle">Target genes</text>
+  
+  <!-- CNC-2 -->
+  <rect x="200" y="280" width="60" height="30" fill="#ffcc99" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="230" y="300" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">CNC-2</text>
+  <text x="230" y="315" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Caenacin antimicrobial</text>
+  
+  <!-- Defense response to fungus -->
+  <rect x="300" y="520" width="200" height="40" fill="#e1dbff" stroke="#662299" stroke-width="2" rx="10" ry="10" />
+  <text x="400" y="545" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Defense Response to Fungus</text>
+  
+  <!-- Arrows and connections -->
+  <!-- DBL-1 to receptors -->
+  <path d="M400,105 L400,150" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)" fill="none" />
+  <text x="430" y="130" font-family="Arial" font-size="12" font-style="italic">BMP receptor binding</text>
+  <text x="430" y="142" font-family="Arial" font-size="12" font-style="italic">(GO:0070700)</text>
+  <text x="350" y="135" font-family="Arial" font-size="12">Activates</text>
+  
+  <!-- Receptor signaling -->
+  <path d="M410,190 L410,240 C410,260 390,260 390,280 L390,320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="440" y="240" font-family="Arial" font-size="12" font-style="italic">Transmembrane receptor</text>
+  <text x="440" y="252" font-family="Arial" font-size="12" font-style="italic">serine/threonine kinase</text>
+  <text x="440" y="264" font-family="Arial" font-size="12" font-style="italic">(GO:0004675)</text>
+  <text x="350" y="260" font-family="Arial" font-size="12">Signals to</text>
+  
+  <!-- SMA-3 to target genes -->
+  <path d="M425,350 L490,350" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" fill="none" />
+  <text x="457" y="340" font-family="Arial" font-size="12">Regulates</text>
+  
+  <!-- SMA-3 to defense response -->
+  <path d="M400,380 L400,510" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="420" y="450" font-family="Arial" font-size="12" font-style="italic">DNA-binding transcription</text>
+  <text x="420" y="462" font-family="Arial" font-size="12" font-style="italic">factor activity (GO:0000981)</text>
+  <text x="330" y="430" font-family="Arial" font-size="12">Mediates response</text>
+  
+  <!-- CNC-2 to defense response -->
+  <path d="M230,310 L230,400 C230,450 300,500 300,520" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" fill="none" />
+  <text x="180" y="400" font-family="Arial" font-size="12" font-style="italic">Part of defense</text>
+  <text x="180" y="412" font-family="Arial" font-size="12" font-style="italic">response</text>
+  
+  <!-- DBL-1 to SMA-6 direct connection -->
+  <path d="M420,105 C440,120 460,130 470,160" stroke="#333" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="455" y="125" font-family="Arial" font-size="12">Binds</text>
+  
+  <!-- Marker definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="580" y="490" width="200" height="100" fill="white" stroke="#333" stroke-width="1" />
+  <text x="590" y="510" font-family="Arial" font-size="12" font-weight="bold">Legend:</text>
+  <circle cx="600" cy="525" r="8" fill="#ff9999" stroke="#333" stroke-width="1" />
+  <text x="615" y="528" font-family="Arial" font-size="12">DBL-1 (TGF-β ligand)</text>
+  <rect x="590" y="540" width="16" height="10" fill="#99cc99" stroke="#333" stroke-width="1" />
+  <text x="615" y="548" font-family="Arial" font-size="12">TGF-β Receptors</text>
+  <polygon points="592,560 600,555 592,550 584,555" fill="#9999ff" stroke="#333" stroke-width="1" />
+  <text x="615" y="560" font-family="Arial" font-size="12">SMA-3 (Transcription factor)</text>
+  <rect x="590" y="570" width="16" height="10" fill="#ffcc99" stroke="#333" stroke-width="1" />
+  <text x="615" y="578" font-family="Arial" font-size="12">CNC-2 (Antimicrobial)</text>
+  <line x1="585" y1="590" x2="605" y2="590" stroke="#333" stroke-width="2" />
+  <text x="615" y="593" font-family="Arial" font-size="12">Direct interaction</text>
+  <line x1="585" y1="605" x2="605" y2="605" stroke="#333" stroke-width="2" stroke-dasharray="5,3" />
+  <text x="615" y="608" font-family="Arial" font-size="12">Indirect/part of pathway</text>
+</svg>

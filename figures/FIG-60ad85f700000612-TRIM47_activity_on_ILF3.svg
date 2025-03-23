@@ -1,0 +1,84 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="350" rx="350" ry="220" fill="#f9f9f9" stroke="#888888" stroke-width="2" />
+  
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="350" rx="100" ry="80" fill="#e6e6fa" stroke="#888888" stroke-width="2" />
+  <text x="250" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Nucleus</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="450" y="200" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Cell membrane label -->
+  <text x="400" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cell membrane</text>
+  
+  <!-- HAVCR2 protein -->
+  <rect x="100" y="130" width="100" height="50" rx="10" ry="10" fill="#a7c7e7" stroke="#000000" stroke-width="2" />
+  <text x="150" y="160" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">HAVCR2</text>
+  
+  <!-- TRIM47 protein -->
+  <rect x="250" y="180" width="100" height="50" rx="10" ry="10" fill="#ffb6c1" stroke="#000000" stroke-width="2" />
+  <text x="300" y="210" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TRIM47</text>
+  
+  <!-- ILF3 protein -->
+  <rect x="400" y="300" width="100" height="50" rx="10" ry="10" fill="#98fb98" stroke="#000000" stroke-width="2" />
+  <text x="450" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">ILF3</text>
+  
+  <!-- EIF2AK2 protein -->
+  <rect x="550" y="250" width="100" height="50" rx="10" ry="10" fill="#ffff99" stroke="#000000" stroke-width="2" />
+  <text x="600" y="280" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">EIF2AK2</text>
+  
+  <!-- Virus representation -->
+  <circle cx="650" cy="400" r="35" fill="#ff9999" stroke="#000000" stroke-width="2" />
+  <text x="650" y="405" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Virus</text>
+  
+  <!-- Interaction arrows and labels -->
+  <!-- HAVCR2 to TRIM47 binding -->
+  <path d="M200,155 Q225,167 250,180" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <rect x="200" y="140" width="90" height="25" rx="10" ry="10" fill="white" stroke="#000000" stroke-width="1" />
+  <text x="245" y="158" font-family="Arial" font-size="14" text-anchor="middle">GO:0005515</text>
+  
+  <!-- TRIM47 to ILF3 ubiquitination -->
+  <path d="M350,200 Q375,250 400,300" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <rect x="340" y="230" width="90" height="25" rx="10" ry="10" fill="white" stroke="#000000" stroke-width="1" />
+  <text x="385" y="248" font-family="Arial" font-size="14" text-anchor="middle">GO:0061630</text>
+  
+  <!-- EIF2AK2 to ILF3 phosphorylation -->
+  <path d="M550,275 Q515,287 490,300" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <rect x="490" y="260" width="90" height="25" rx="10" ry="10" fill="white" stroke="#000000" stroke-width="1" />
+  <text x="535" y="278" font-family="Arial" font-size="14" text-anchor="middle">GO:0016301</text>
+  
+  <!-- ILF3 to Virus receptor activity -->
+  <path d="M500,325 Q560,357 615,390" stroke="#000000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <rect x="535" y="335" width="90" height="25" rx="10" ry="10" fill="white" stroke="#000000" stroke-width="1" />
+  <text x="580" y="353" font-family="Arial" font-size="14" text-anchor="middle">GO:0001618</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="470" width="700" height="110" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="60" y="490" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <!-- Protein color codes -->
+  <rect x="60" y="505" width="25" height="18" fill="#a7c7e7" stroke="#000000" stroke-width="1" />
+  <text x="90" y="520" font-family="Arial" font-size="14">HAVCR2 (UniProtKB:Q8TDQ0) - Protein binding (GO:0005515)</text>
+  
+  <rect x="60" y="530" width="25" height="18" fill="#ffb6c1" stroke="#000000" stroke-width="1" />
+  <text x="90" y="545" font-family="Arial" font-size="14">TRIM47 (UniProtKB:Q96LD4-1) - Ubiquitin ligase activity (GO:0061630)</text>
+  
+  <rect x="60" y="555" width="25" height="18" fill="#98fb98" stroke="#000000" stroke-width="1" />
+  <text x="90" y="570" font-family="Arial" font-size="14">ILF3 (UniProtKB:Q12906) - Virus receptor activity (GO:0001618)</text>
+  
+  <rect x="400" y="505" width="25" height="18" fill="#ffff99" stroke="#000000" stroke-width="1" />
+  <text x="430" y="520" font-family="Arial" font-size="14">EIF2AK2 (UniProtKB:P19525) - Kinase activity (GO:0016301)</text>
+  
+  <circle cx="400" cy="545" r="12" fill="#ff9999" stroke="#000000" stroke-width="1" />
+  <text x="430" y="550" font-family="Arial" font-size="14">Virus (not in source)</text>
+  
+  <text x="400" y="570" font-family="Arial" font-size="14" font-style="italic">Evidence from: PMID:34110282, PMID:21123651</text>
+</svg>

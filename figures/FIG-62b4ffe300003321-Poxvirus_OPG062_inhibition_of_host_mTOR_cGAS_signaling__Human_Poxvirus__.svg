@@ -1,0 +1,124 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outlines -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f8f8" stroke="#888" stroke-width="2"/>
+  
+  <!-- Subcellular compartments -->
+  <ellipse cx="600" cy="200" rx="100" ry="60" fill="#ffddbb" stroke="#996633" stroke-width="2"/>
+  <rect x="550" y="190" width="100" height="20" fill="#ffddbb" stroke="none"/>
+  <text x="600" y="205" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Golgi apparatus</text>
+  
+  <rect x="100" y="150" width="500" height="300" rx="20" ry="20" fill="#eeeeff" stroke="#9999cc" stroke-width="2" opacity="0.7"/>
+  <rect x="120" y="170" width="100" height="20" fill="#eeeeff" stroke="none"/>
+  <text x="170" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Cytoplasm</text>
+
+  <rect x="150" y="200" width="400" height="200" rx="10" ry="10" fill="#ddffdd" stroke="#66aa66" stroke-width="2" opacity="0.7"/>
+  <rect x="170" y="210" width="70" height="20" fill="#ddffdd" stroke="none"/>
+  <text x="205" y="225" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Cytosol</text>
+  
+  <!-- Viral entry -->
+  <circle cx="80" cy="110" r="20" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="80" y="110" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Poxvirus</text>
+  
+  <!-- Viral protein VACWR056 -->
+  <circle cx="200" cy="300" r="30" fill="#ff6666" stroke="#cc0000" stroke-width="2"/>
+  <text x="200" y="295" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">VACWR056</text>
+  <text x="200" y="310" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">(P07396)</text>
+  
+  <!-- RICTOR -->
+  <rect x="550" y="200" width="60" height="40" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="580" y="220" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">RICTOR</text>
+  <text x="580" y="235" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">(Q6R327)</text>
+  
+  <!-- AKT1 -->
+  <rect x="400" y="300" width="60" height="40" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="430" y="320" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">AKT1</text>
+  <text x="430" y="335" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">(P31749)</text>
+  
+  <!-- CGAS -->
+  <rect x="300" y="400" width="60" height="40" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="330" y="420" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">CGAS</text>
+  <text x="330" y="435" font-family="Arial" font-size="10" text-anchor="middle" dominant-baseline="middle">(Q8N884)</text>
+  
+  <!-- TORC2 complex - implicit, not in source -->
+  <rect x="500" y="150" width="70" height="30" rx="5" ry="5" fill="#cccccc" stroke="#666666" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="535" y="170" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">TORC2</text>
+  
+  <!-- Pathway arrows and interactions -->
+  <path d="M 100 110 L 170 270" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- VACWR056 to RICTOR - activation -->
+  <path d="M 230 300 C 300 280, 400 200, 545 210" stroke="#009900" stroke-width="2" fill="none" marker-end="url(#arrowhead_green)"/>
+  <rect x="350" y="230" width="120" height="20" fill="#ffffff" stroke="#009900" stroke-width="1" rx="5" ry="5"/>
+  <text x="410" y="245" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#009900">activates (RO:0002629)</text>
+  
+  <!-- RICTOR to AKT1 - activation -->
+  <path d="M 550 220 C 530 250, 480 270, 460 300" stroke="#009900" stroke-width="2" fill="none" marker-end="url(#arrowhead_green)"/>
+  <rect x="490" y="260" width="120" height="20" fill="#ffffff" stroke="#009900" stroke-width="1" rx="5" ry="5"/>
+  <text x="550" y="275" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#009900">activates (RO:0002629)</text>
+  
+  <!-- AKT1 to CGAS - inhibition -->
+  <path d="M 400 320 C 370 340, 350 360, 330 395" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead_red)"/>
+  <rect x="340" y="350" width="120" height="20" fill="#ffffff" stroke="#cc0000" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="365" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#cc0000">inhibits (RO:0002630)</text>
+  
+  <!-- Process labels -->
+  <rect x="150" y="75" width="500" height="30" fill="#ffffff" stroke="#333333" stroke-width="1" rx="10" ry="10"/>
+  <text x="400" y="95" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">Poxvirus-OPG062 inhibition of host mTOR/cGAS signaling</text>
+  
+  <!-- Process indicators -->
+  <rect x="100" y="480" width="150" height="25" fill="#ddffdd" stroke="#66aa66" stroke-width="1" rx="5" ry="5"/>
+  <text x="175" y="497" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Innate Immune Response</text>
+  
+  <rect x="300" y="480" width="200" height="25" fill="#eeeeff" stroke="#9999cc" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="497" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Virus-mediated perturbation of host defense</text>
+  
+  <rect x="550" y="480" width="150" height="25" fill="#ffddbb" stroke="#996633" stroke-width="1" rx="5" ry="5"/>
+  <text x="625" y="497" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">TORC2 signaling</text>
+  
+  <!-- Molecular function labels - with background for better contrast -->
+  <rect x="140" y="350" width="100" height="50" fill="white" stroke="#666666" stroke-width="1" opacity="0.8" rx="5" ry="5"/>
+  <text x="190" y="370" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">molecular</text>
+  <text x="190" y="385" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">sequestering</text>
+  <text x="190" y="400" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">activity</text>
+  
+  <rect x="610" y="250" width="100" height="40" fill="white" stroke="#666666" stroke-width="1" opacity="0.8" rx="5" ry="5"/>
+  <text x="660" y="270" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">protein kinase</text>
+  <text x="660" y="285" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">activator activity</text>
+  
+  <rect x="470" y="350" width="100" height="40" fill="white" stroke="#666666" stroke-width="1" opacity="0.8" rx="5" ry="5"/>
+  <text x="520" y="370" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">serine/threonine</text>
+  <text x="520" y="385" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">kinase activity</text>
+  
+  <rect x="230" y="450" width="130" height="40" fill="white" stroke="#666666" stroke-width="1" opacity="0.8" rx="5" ry="5"/>
+  <text x="295" y="470" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">2',3'-cyclic GMP-AMP</text>
+  <text x="295" y="485" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">synthase activity</text>
+  
+  <!-- Legend for types -->
+  <rect x="100" y="520" width="160" height="20" fill="#cccccc" stroke="#666666" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="210" y="535" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Implicit (not in source)</text>
+  
+  <rect x="300" y="520" width="90" height="20" fill="white" stroke="#009900" stroke-width="1" rx="5" ry="5"/>
+  <text x="345" y="535" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#009900">Activation</text>
+  
+  <rect x="420" y="520" width="90" height="20" fill="white" stroke="#cc0000" stroke-width="1" rx="5" ry="5"/>
+  <text x="465" y="535" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#cc0000">Inhibition</text>
+  
+  <rect x="540" y="520" width="130" height="20" fill="#ff6666" stroke="#cc0000" stroke-width="1"/>
+  <text x="605" y="535" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Viral protein</text>
+  
+  <rect x="680" y="520" width="100" height="20" fill="#99ccff" stroke="#0066cc" stroke-width="1"/>
+  <text x="730" y="535" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Host protein</text>
+  
+  <!-- Arrowhead marker definitions with different colors -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+    <marker id="arrowhead_green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#009900" />
+    </marker>
+    <marker id="arrowhead_red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000" />
+    </marker>
+  </defs>
+</svg>

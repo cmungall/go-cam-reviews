@@ -1,0 +1,138 @@
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cytosol -->
+  <rect x="75" y="75" width="450" height="450" rx="10" ry="10" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <text x="250" y="100" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Cytosol</text>
+  
+  <!-- Peroxisome -->
+  <ellipse cx="600" cy="300" rx="125" ry="200" fill="#ffebcc" stroke="#ff9933" stroke-width="2"/>
+  <text x="600" y="120" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Peroxisome</text>
+  
+  <!-- Metabolites and Enzymes -->
+  <!-- IMP -->
+  <circle cx="150" cy="150" r="20" fill="#b3e6b3" stroke="#339933" stroke-width="2"/>
+  <text x="150" y="155" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">IMP</text>
+  
+  <!-- Nt5c, Nt5c2, Nt5c1a -->
+  <rect x="150" y="200" width="100" height="40" rx="5" ry="5" fill="#c6e2ff" stroke="#3366cc" stroke-width="2"/>
+  <text x="200" y="225" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Nt5c/Nt5c2/Nt5c1a</text>
+  
+  <!-- Hypoxanthine -->
+  <circle cx="150" cy="280" r="20" fill="#b3e6b3" stroke="#339933" stroke-width="2"/>
+  <text x="150" y="285" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Hypoxanthine</text>
+  
+  <!-- Xdh (Hypoxanthine oxidase/dehydrogenase) -->
+  <rect x="220" y="280" width="70" height="40" rx="5" ry="5" fill="#c6e2ff" stroke="#3366cc" stroke-width="2"/>
+  <text x="255" y="305" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Xdh</text>
+  
+  <!-- Xanthine -->
+  <circle cx="150" cy="360" r="20" fill="#b3e6b3" stroke="#339933" stroke-width="2"/>
+  <text x="150" y="365" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Xanthine</text>
+  
+  <!-- Xdh (Xanthine oxidase/dehydrogenase) -->
+  <rect x="220" y="360" width="70" height="40" rx="5" ry="5" fill="#c6e2ff" stroke="#3366cc" stroke-width="2"/>
+  <text x="255" y="385" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Xdh</text>
+  
+  <!-- Urate -->
+  <circle cx="150" cy="440" r="20" fill="#b3e6b3" stroke="#339933" stroke-width="2"/>
+  <text x="150" y="445" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Urate</text>
+  
+  <!-- Transport to Peroxisome (implicit) -->
+  <path d="M 170 440 Q 350 440, 475 300" stroke="#666" stroke-width="3" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <text x="300" y="420" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">Transport (implicit)</text>
+  
+  <!-- Urate in Peroxisome -->
+  <circle cx="500" cy="300" r="20" fill="#b3e6b3" stroke="#339933" stroke-width="2"/>
+  <text x="500" y="305" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Urate</text>
+  
+  <!-- Uox -->
+  <rect x="550" y="250" width="70" height="40" rx="5" ry="5" fill="#c6e2ff" stroke="#3366cc" stroke-width="2"/>
+  <text x="585" y="275" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Uox</text>
+  
+  <!-- 5-HIU (implicit) -->
+  <circle cx="500" cy="200" r="20" fill="#e6ccff" stroke="#9966cc" stroke-width="2"/>
+  <text x="500" y="205" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">5-HIU</text>
+  <text x="500" y="220" font-family="Arial" font-size="8" font-style="italic" text-anchor="middle">(implicit)</text>
+  
+  <!-- Urah -->
+  <rect x="550" y="200" width="70" height="40" rx="5" ry="5" fill="#c6e2ff" stroke="#3366cc" stroke-width="2"/>
+  <text x="585" y="225" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Urah</text>
+  
+  <!-- OHCU (implicit) -->
+  <circle cx="650" cy="200" r="20" fill="#e6ccff" stroke="#9966cc" stroke-width="2"/>
+  <text x="650" y="205" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">OHCU</text>
+  <text x="650" y="220" font-family="Arial" font-size="8" font-style="italic" text-anchor="middle">(implicit)</text>
+  
+  <!-- Urad -->
+  <rect x="650" y="250" width="70" height="40" rx="5" ry="5" fill="#c6e2ff" stroke="#3366cc" stroke-width="2"/>
+  <text x="685" y="275" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Urad</text>
+  
+  <!-- Allantoin -->
+  <circle cx="650" cy="320" r="20" fill="#ffb3b3" stroke="#cc3333" stroke-width="2"/>
+  <text x="650" y="325" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Allantoin</text>
+  
+  <!-- Reaction Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <line x1="150" y1="170" x2="150" y2="200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="120" y="185" font-family="Arial" font-size="10" text-anchor="start">IMP 5'-nucleotidase</text>
+  
+  <line x1="150" y1="240" x2="150" y2="260" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <line x1="170" y1="280" x2="220" y2="280" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="180" y="270" font-family="Arial" font-size="10" text-anchor="start">Hypoxanthine oxidation</text>
+  
+  <line x1="220" y1="320" x2="170" y2="340" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <line x1="170" y1="360" x2="220" y2="360" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="180" y="350" font-family="Arial" font-size="10" text-anchor="start">Xanthine oxidation</text>
+  
+  <line x1="220" y1="400" x2="170" y2="420" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <line x1="520" y1="300" x2="550" y2="275" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="520" y="275" font-family="Arial" font-size="10" text-anchor="start">Urate oxidation</text>
+  
+  <line x1="550" y1="250" x2="520" y2="220" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <line x1="520" y1="200" x2="550" y2="200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="530" y="190" font-family="Arial" font-size="10" text-anchor="start">Hydrolysis</text>
+  
+  <line x1="620" y1="200" x2="630" y2="200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <line x1="670" y1="220" x2="670" y2="250" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="680" y="235" font-family="Arial" font-size="10" text-anchor="start">Decarboxylation</text>
+  
+  <line x1="670" y1="290" x2="670" y2="300" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">IMP Catabolic Process to Allantoin (Mouse)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="570" width="700" height="90" rx="5" ry="5" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  <text x="400" y="590" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <text x="70" y="610" font-family="Arial" font-size="12" text-anchor="start">Nt5c - 5'-nucleotidase, cytosolic (MGI:1354954)</text>
+  <text x="70" y="630" font-family="Arial" font-size="12" text-anchor="start">Nt5c2 - Cytosolic purine 5'-nucleotidase (MGI:2178563)</text>
+  <text x="70" y="650" font-family="Arial" font-size="12" text-anchor="start">Nt5c1a - Cytosolic 5'-nucleotidase 1A (MGI:2155700)</text>
+  
+  <text x="400" y="610" font-family="Arial" font-size="12" text-anchor="start">Xdh - Xanthine dehydrogenase/oxidase (MGI:98973)</text>
+  <text x="400" y="630" font-family="Arial" font-size="12" text-anchor="start">Uox - Urate oxidase (MGI:98907)</text>
+  <text x="400" y="650" font-family="Arial" font-size="12" text-anchor="start">Urah - Hydroxyisourate hydrolase (MGI:1916142)</text>
+  <text x="400" y="670" font-family="Arial" font-size="12" text-anchor="start">Urad - OHCU decarboxylase (MGI:3647519)</text>
+  
+  <!-- Symbols Legend -->
+  <circle cx="680" y="610" r="10" fill="#b3e6b3" stroke="#339933" stroke-width="1.5"/>
+  <text x="695" y="614" font-family="Arial" font-size="12" text-anchor="start">Metabolite</text>
+  
+  <rect x="670" y="625" width="20" height="15" rx="3" ry="3" fill="#c6e2ff" stroke="#3366cc" stroke-width="1.5"/>
+  <text x="695" y="635" font-family="Arial" font-size="12" text-anchor="start">Enzyme</text>
+  
+  <circle cx="680" y="650" r="10" fill="#e6ccff" stroke="#9966cc" stroke-width="1.5"/>
+  <text x="695" y="654" font-family="Arial" font-size="12" text-anchor="start">Implicit metabolite</text>
+</svg>

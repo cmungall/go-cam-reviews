@@ -1,0 +1,126 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">TBK1 activation via TRAF3 autoubiquitination (Human)</text>
+  
+  <!-- Cell outline -->
+  <rect x="50" y="70" width="700" height="480" rx="10" ry="10" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Cellular compartments -->
+  
+  <!-- Cytoplasm label -->
+  <text x="400" y="100" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Endosome -->
+  <ellipse cx="200" cy="200" rx="100" ry="70" fill="#d1e0ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="200" y="190" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Endosome</text>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="600" cy="200" rx="100" ry="70" fill="#ffcccc" stroke="#cc0000" stroke-width="2"/>
+  <text x="600" y="190" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Mitochondrion</text>
+  
+  <!-- Endosomal pathway proteins -->
+  <rect x="160" y="210" width="80" height="30" rx="15" ry="15" fill="#b3d9ff" stroke="#0000cc" stroke-width="1.5"/>
+  <text x="200" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">TICAM2</text>
+  
+  <rect x="160" y="270" width="80" height="30" rx="15" ry="15" fill="#b3d9ff" stroke="#0000cc" stroke-width="1.5"/>
+  <text x="200" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">TICAM1</text>
+  
+  <rect x="160" y="330" width="80" height="30" rx="15" ry="15" fill="#b3d9ff" stroke="#0000cc" stroke-width="1.5"/>
+  <text x="200" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">TRAF3</text>
+  
+  <!-- Mitochondrial pathway proteins -->
+  <rect x="560" y="210" width="80" height="30" rx="15" ry="15" fill="#ffb3b3" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="600" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MAVS</text>
+  
+  <rect x="560" y="270" width="80" height="30" rx="15" ry="15" fill="#ffb3b3" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="600" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">TRAF3IP3</text>
+  
+  <rect x="560" y="330" width="80" height="30" rx="15" ry="15" fill="#ffb3b3" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="600" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">TRAF3</text>
+  
+  <!-- TBK1 -->
+  <rect x="360" y="400" width="80" height="30" rx="15" ry="15" fill="#d9f2d9" stroke="#007700" stroke-width="2"/>
+  <text x="400" y="420" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TBK1</text>
+  
+  <!-- Interferon production box -->
+  <rect x="280" y="480" width="240" height="40" rx="5" ry="5" fill="#ffffcc" stroke="#cccc00" stroke-width="2"/>
+  <text x="400" y="505" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Positive regulation of type I interferon production</text>
+  
+  <!-- Arrows -->
+  <!-- Endosomal pathway - Adaptor interactions (dotted lines) -->
+  <line x1="200" y1="240" x2="200" y2="270" stroke="#000000" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="200,270 195,260 205,260" fill="#000000"/>
+  
+  <text x="230" y="255" font-family="Arial" font-size="12" font-weight="bold">Adaptor</text>
+  
+  <line x1="200" y1="300" x2="200" y2="330" stroke="#000000" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="200,330 195,320 205,320" fill="#000000"/>
+  
+  <text x="230" y="315" font-family="Arial" font-size="12" font-weight="bold">Adaptor</text>
+  
+  <!-- TRAF3 autoubiquitination arrow (endosomal) - curvy dashed lines -->
+  <path d="M 210,330 Q 230,310 210,290 T 190,270" stroke="#4a86e8" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+  <polygon points="190,270 192,280 198,275" fill="#4a86e8"/>
+  <text x="245" y="300" font-family="Arial" font-size="12" font-weight="bold" fill="#4a86e8">Auto-Ub</text>
+  
+  <!-- Mitochondrial pathway - Adaptor interactions (dotted lines) -->
+  <line x1="600" y1="240" x2="600" y2="270" stroke="#000000" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="600,270 595,260 605,260" fill="#000000"/>
+  
+  <text x="630" y="255" font-family="Arial" font-size="12" font-weight="bold">Adaptor</text>
+  
+  <line x1="600" y1="300" x2="600" y2="330" stroke="#000000" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="600,330 595,320 605,320" fill="#000000"/>
+  
+  <text x="630" y="315" font-family="Arial" font-size="12" font-weight="bold">Adaptor</text>
+  
+  <!-- TRAF3 autoubiquitination arrow (mitochondrial) - curvy dashed lines -->
+  <path d="M 610,330 Q 630,310 610,290 T 590,270" stroke="#4a86e8" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+  <polygon points="590,270 592,280 598,275" fill="#4a86e8"/>
+  <text x="645" y="300" font-family="Arial" font-size="12" font-weight="bold" fill="#4a86e8">Auto-Ub</text>
+  
+  <!-- TRAF3 to TBK1 - Activation (solid thick lines) -->
+  <line x1="240" y1="345" x2="360" y2="400" stroke="#ff6600" stroke-width="3"/>
+  <polygon points="360,400 350,392 356,386" fill="#ff6600"/>
+  <text x="290" y="380" font-family="Arial" font-size="12" font-weight="bold" fill="#ff6600">Activation</text>
+  
+  <line x1="560" y1="345" x2="440" y2="400" stroke="#ff6600" stroke-width="3"/>
+  <polygon points="440,400 450,392 444,386" fill="#ff6600"/>
+  <text x="510" y="380" font-family="Arial" font-size="12" font-weight="bold" fill="#ff6600">Activation</text>
+  
+  <!-- TBK1 to IFN production - Activation (solid thick lines) -->
+  <line x1="400" y1="430" x2="400" y2="480" stroke="#ff6600" stroke-width="3"/>
+  <polygon points="400,480 395,470 405,470" fill="#ff6600"/>
+  <text x="440" y="455" font-family="Arial" font-size="12" font-weight="bold" fill="#ff6600">Activation</text>
+  
+  <!-- Ubiquitin symbols on TRAF3 -->
+  <circle cx="180" cy="330" r="8" fill="#4a86e8" stroke="#000000" stroke-width="1"/>
+  <text x="180" y="334" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Ub</text>
+  
+  <circle cx="580" cy="330" r="8" fill="#4a86e8" stroke="#000000" stroke-width="1"/>
+  <text x="580" y="334" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Ub</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="410" width="140" height="130" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="670" y="430" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="610" y="440" width="16" height="16" fill="#b3d9ff" stroke="#0000cc" stroke-width="1"/>
+  <text x="675" y="453" font-family="Arial" font-size="13" text-anchor="middle">Endosomal proteins</text>
+  
+  <rect x="610" y="465" width="16" height="16" fill="#ffb3b3" stroke="#cc0000" stroke-width="1"/>
+  <text x="675" y="478" font-family="Arial" font-size="13" text-anchor="middle">Mitochondrial proteins</text>
+  
+  <rect x="610" y="490" width="16" height="16" fill="#d9f2d9" stroke="#007700" stroke-width="1"/>
+  <text x="675" y="503" font-family="Arial" font-size="13" text-anchor="middle">TBK1 kinase</text>
+  
+  <line x1="610" y1="515" x2="625" y2="515" stroke="#ff6600" stroke-width="3"/>
+  <polygon points="625,515 620,512 620,518" fill="#ff6600"/>
+  <text x="675" y="518" font-family="Arial" font-size="13" text-anchor="middle">Activation</text>
+  
+  <circle cx="610" cy="535" r="6" fill="#4a86e8" stroke="#000000" stroke-width="1"/>
+  <text x="610" y="539" font-family="Arial" font-size="8" text-anchor="middle" fill="white" font-weight="bold">Ub</text>
+  <text x="675" y="538" font-family="Arial" font-size="13" text-anchor="middle">Ubiquitination</text>
+</svg>

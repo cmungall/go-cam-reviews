@@ -1,0 +1,119 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+    
+    <!-- Cell outline -->
+    <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#000000" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Nucleus -->
+    <ellipse cx="400" cy="300" rx="250" ry="180" fill="#e6f3ff" stroke="#000000" stroke-width="2"/>
+    <text x="400" y="150" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Nucleus (GO:0005634)</text>
+    
+    <!-- SCF Complex -->
+    <g id="scf_complex">
+        <!-- CUL1 -->
+        <rect x="250" y="250" width="100" height="50" rx="5" ry="5" fill="#b3d9ff" stroke="#000000" stroke-width="2"/>
+        <text x="300" y="280" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CUL1</text>
+        
+        <!-- SKP1 -->
+        <rect x="350" y="230" width="80" height="40" rx="5" ry="5" fill="#b3d9ff" stroke="#000000" stroke-width="2"/>
+        <text x="390" y="255" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">SKP1</text>
+        
+        <!-- FBXO7 -->
+        <rect x="430" y="250" width="90" height="50" rx="5" ry="5" fill="#b3d9ff" stroke="#000000" stroke-width="2"/>
+        <text x="475" y="280" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">FBXO7</text>
+        
+        <!-- RBX1 -->
+        <rect x="220" y="300" width="80" height="40" rx="5" ry="5" fill="#b3d9ff" stroke="#000000" stroke-width="2"/>
+        <text x="260" y="325" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">RBX1</text>
+        
+        <!-- Scaffold activities connections -->
+        <line x1="300" y1="300" x2="300" y2="320" stroke="#000000" stroke-width="2"/>
+        <line x1="390" y1="270" x2="390" y2="320" stroke="#000000" stroke-width="2"/>
+        <line x1="475" y1="300" x2="475" y2="320" stroke="#000000" stroke-width="2"/>
+        <line x1="260" y1="340" x2="260" y2="360" stroke="#000000" stroke-width="2"/>
+    </g>
+    
+    <!-- SIRT7 -->
+    <ellipse cx="550" cy="350" rx="60" ry="40" fill="#ff9999" stroke="#000000" stroke-width="2"/>
+    <text x="550" y="355" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">SIRT7</text>
+    
+    <!-- Activities and functional annotations -->
+    <rect x="200" y="360" width="360" height="30" rx="5" ry="5" fill="#e6ffe6" stroke="#000000" stroke-width="1"/>
+    <text x="380" y="380" font-family="Arial" font-size="14" text-anchor="middle">SCF Complex: Protein K48-linked ubiquitination (GO:0070936)</text>
+    
+    <rect x="500" y="400" width="200" height="30" rx="5" ry="5" fill="#e6ffe6" stroke="#000000" stroke-width="1"/>
+    <text x="600" y="420" font-family="Arial" font-size="14" text-anchor="middle">Protein methyltransferase activity</text>
+    
+    <!-- Ubiquitination -->
+    <path d="M 300 360 Q 400 420 530 390" stroke="#ff0000" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <text x="380" y="445" font-family="Arial" font-size="16" text-anchor="middle" fill="#ff0000" font-weight="bold">Ubiquitination</text>
+    
+    <!-- Ubiquitin tags -->
+    <circle cx="550" cy="320" r="8" fill="#ffcc00" stroke="#000000" stroke-width="1"/>
+    <text x="550" y="323" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">Ub</text>
+    <circle cx="565" cy="315" r="8" fill="#ffcc00" stroke="#000000" stroke-width="1"/>
+    <text x="565" y="318" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">Ub</text>
+    <circle cx="535" cy="315" r="8" fill="#ffcc00" stroke="#000000" stroke-width="1"/>
+    <text x="535" y="318" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">Ub</text>
+    
+    <!-- To proteasome and cell death (implicit) -->
+    <rect x="600" y="450" width="150" height="40" rx="5" ry="5" fill="#ffcccc" stroke="#000000" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="675" y="470" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" font-weight="bold">Proteasomal degradation</text>
+    <text x="675" y="485" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(implicit - not in GO-CAM)</text>
+    
+    <path d="M 550 390 Q 600 420 650 450" stroke="#000000" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+    
+    <rect x="600" y="510" width="150" height="40" rx="5" ry="5" fill="#ffcccc" stroke="#000000" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="675" y="530" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" font-weight="bold">Cell death</text>
+    <text x="675" y="545" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(implicit - not in GO-CAM)</text>
+    
+    <path d="M 675 490 Q 675 500 675 510" stroke="#000000" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">FBXO7-mediated degradation of SIRT7</text>
+    <text x="400" y="70" font-family="Arial" font-size="18" text-anchor="middle">Leading to cell death in response to hydrogen peroxide (Human)</text>
+    
+    <!-- Specific activity labels -->
+    <text x="260" y="380" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Ubiquitin ligase</text>
+    <text x="260" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">activity</text>
+    
+    <text x="475" y="380" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Ubiquitin-like ligase</text>
+    <text x="475" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">adaptor activity</text>
+    
+    <text x="300" y="240" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Scaffold activity</text>
+    <text x="390" y="220" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Scaffold activity</text>
+    
+    <!-- Hydrogen peroxide stimulus (implied) -->
+    <rect x="100" y="100" width="140" height="40" rx="5" ry="5" fill="#e6ccff" stroke="#000000" stroke-width="1"/>
+    <text x="170" y="125" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">H₂O₂ stimulus</text>
+    
+    <path d="M 170 140 Q 250 200 300 250" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- SCF complex label -->
+    <text x="320" y="210" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">SCF E3 Ubiquitin Ligase Complex</text>
+    
+    <!-- Legend -->
+    <rect x="50" y="480" width="240" height="100" rx="5" ry="5" fill="#f8f8f8" stroke="#000000" stroke-width="1"/>
+    <text x="170" y="500" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+    
+    <!-- Legend items -->
+    <circle cx="70" y="520" r="8" fill="#ffcc00" stroke="#000000" stroke-width="1"/>
+    <text x="85" y="524" font-family="Arial" font-size="14" text-anchor="start">Ub - Ubiquitin</text>
+    
+    <line x1="50" y1="535" x2="80" y2="535" stroke="#ff0000" stroke-width="2"/>
+    <text x="85" y="539" font-family="Arial" font-size="14" text-anchor="start">Inhibition/Degradation</text>
+    
+    <line x1="50" y1="550" x2="80" y2="550" stroke="#000000" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="85" y="554" font-family="Arial" font-size="14" text-anchor="start">Implicit process (not in GO-CAM)</text>
+    
+    <line x1="50" y1="565" x2="80" y2="565" stroke="#000000" stroke-width="2"/>
+    <text x="85" y="569" font-family="Arial" font-size="14" text-anchor="start">Process in GO-CAM</text>
+    
+    <!-- Arrow marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#000000"/>
+        </marker>
+    </defs>
+</svg>

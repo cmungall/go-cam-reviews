@@ -1,0 +1,118 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="100" width="700" height="400" rx="20" ry="20" fill="#f8f9fa" stroke="#343a40" stroke-width="2"/>
+  
+  <!-- Cytosol label -->
+  <text x="400" y="130" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#343a40">Cytosol (GO:0005829)</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="50" y="100" width="700" height="25" rx="10" ry="10" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="400" y="118" text-anchor="middle" font-family="Arial" font-size="16" fill="#2e7d32">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Extracellular space -->
+  <rect x="50" y="50" width="700" height="50" rx="5" ry="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="16" fill="#1565c0">Extracellular Region (GO:0005576)</text>
+  
+  <!-- Molecules and Reactions -->
+  <!-- Glycolysis pathway input -->
+  <rect x="120" y="180" width="120" height="40" rx="5" ry="5" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="180" y="205" text-anchor="middle" font-family="Arial" font-size="16" fill="#e65100">Glycolytic Process</text>
+  <text x="180" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#e65100">(GO:0006096)</text>
+  
+  <!-- Pyruvate Kinase -->
+  <rect x="160" y="260" width="100" height="40" rx="5" ry="5" fill="#f1f8e9" stroke="#33691e" stroke-width="2"/>
+  <text x="210" y="283" text-anchor="middle" font-family="Arial" font-size="16" fill="#33691e">Pkm</text>
+  <text x="210" y="298" text-anchor="middle" font-family="Arial" font-size="12" fill="#33691e">(MGI:97591)</text>
+  
+  <!-- Pyruvate -->
+  <ellipse cx="300" cy="320" rx="60" ry="25" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2"/>
+  <text x="300" y="325" text-anchor="middle" font-family="Arial" font-size="16" fill="#3f51b5">Pyruvate</text>
+  
+  <!-- Lactate Dehydrogenases - repositioned for clarity -->
+  <rect x="190" y="400" width="100" height="40" rx="5" ry="5" fill="#f1f8e9" stroke="#33691e" stroke-width="2"/>
+  <text x="240" y="420" text-anchor="middle" font-family="Arial" font-size="16" fill="#33691e">Ldha</text>
+  <text x="240" y="435" text-anchor="middle" font-family="Arial" font-size="12" fill="#33691e">(MGI:96759)</text>
+  
+  <rect x="320" y="400" width="100" height="40" rx="5" ry="5" fill="#f1f8e9" stroke="#33691e" stroke-width="2"/>
+  <text x="370" y="420" text-anchor="middle" font-family="Arial" font-size="16" fill="#33691e">Ldhb</text>
+  <text x="370" y="435" text-anchor="middle" font-family="Arial" font-size="12" fill="#33691e">(MGI:96763)</text>
+  
+  <rect x="450" y="400" width="100" height="40" rx="5" ry="5" fill="#f1f8e9" stroke="#33691e" stroke-width="2"/>
+  <text x="500" y="420" text-anchor="middle" font-family="Arial" font-size="16" fill="#33691e">Ldhc</text>
+  <text x="500" y="435" text-anchor="middle" font-family="Arial" font-size="12" fill="#33691e">(MGI:96764)</text>
+  
+  <!-- Lactate -->
+  <ellipse cx="500" cy="320" rx="60" ry="25" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2"/>
+  <text x="500" y="325" text-anchor="middle" font-family="Arial" font-size="16" fill="#3f51b5">Lactate</text>
+  
+  <!-- Transporters -->
+  <rect x="350" y="150" width="100" height="40" rx="5" ry="5" fill="#f1f8e9" stroke="#33691e" stroke-width="2"/>
+  <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="16" fill="#33691e">Slc16a1</text>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial" font-size="12" fill="#33691e">(MGI:106013)</text>
+  
+  <rect x="490" y="150" width="100" height="40" rx="5" ry="5" fill="#f1f8e9" stroke="#33691e" stroke-width="2"/>
+  <text x="540" y="170" text-anchor="middle" font-family="Arial" font-size="16" fill="#33691e">Slc16a3</text>
+  <text x="540" y="185" text-anchor="middle" font-family="Arial" font-size="12" fill="#33691e">(MGI:1933438)</text>
+  
+  <!-- Extracellular Lactate -->
+  <ellipse cx="450" y="75" rx="60" ry="20" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2"/>
+  <text x="450" y="80" text-anchor="middle" font-family="Arial" font-size="16" fill="#3f51b5">Lactate</text>
+  
+  <!-- Arrows - simplified and reorganized -->
+  <!-- Glycolysis to Pkm -->
+  <line x1="180" y1="220" x2="205" y2="260" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Pkm to Pyruvate -->
+  <line x1="260" y1="280" x2="275" y2="305" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Pyruvate to LDHs - repositioned arrows -->
+  <path d="M 300,345 Q 280,375 240,400" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 300,345 Q 330,375 370,400" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 300,345 Q 380,375 490,400" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- LDHs to Lactate - reorganized for clarity -->
+  <path d="M 240,400 Q 350,370 470,325" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 370,400 Q 420,365 480,330" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 500,400 Q 510,365 500,345" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Lactate to Transporters -->
+  <path d="M 470,300 Q 430,240 400,190" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 530,300 Q 550,240 540,190" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Transporters to Extracellular Lactate -->
+  <path d="M 400,150 Q 420,120 435,95" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 540,150 Q 510,120 470,95" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Process Label -->
+  <text x="400" y="515" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#000000">Pyruvate Catabolic Process (GO:0042867)</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#000000">Pyruvate Catabolic Process in Mouse</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="180" width="130" height="160" rx="5" ry="5" fill="white" stroke="#343a40" stroke-width="1"/>
+  <text x="665" y="200" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Legend</text>
+  
+  <!-- Legend Items -->
+  <rect x="610" y="210" width="20" height="20" fill="#f1f8e9" stroke="#33691e" stroke-width="1"/>
+  <text x="635" y="225" text-anchor="start" font-family="Arial" font-size="14" fill="#000000">Proteins</text>
+  
+  <ellipse cx="620" cy="250" rx="10" ry="10" fill="#e8eaf6" stroke="#3f51b5" stroke-width="1"/>
+  <text x="635" y="255" text-anchor="start" font-family="Arial" font-size="14" fill="#000000">Metabolites</text>
+  
+  <rect x="610" y="270" width="20" height="20" fill="#fff3e0" stroke="#e65100" stroke-width="1"/>
+  <text x="635" y="285" text-anchor="start" font-family="Arial" font-size="14" fill="#000000">Processes</text>
+  
+  <rect x="610" y="300" width="20" height="10" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1"/>
+  <text x="635" y="308" text-anchor="start" font-family="Arial" font-size="14" fill="#000000">Membranes</text>
+  
+  <line x1="610" y1="330" x2="630" y2="330" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="635" y="335" text-anchor="start" font-family="Arial" font-size="14" fill="#000000">Reactions</text>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+</svg>

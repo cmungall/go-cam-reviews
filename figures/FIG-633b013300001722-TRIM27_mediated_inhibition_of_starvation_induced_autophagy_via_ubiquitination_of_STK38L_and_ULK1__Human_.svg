@@ -1,0 +1,97 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#cccccc" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="300" rx="100" ry="90" fill="#e6e6fa" stroke="#9999cc" stroke-width="2"/>
+  <text x="250" y="300" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle">Nucleus</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="400" y="170" font-family="Arial" font-size="18" font-style="italic" text-anchor="middle" dominant-baseline="middle">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Proteins and interactions -->
+  <!-- TRIM27 -->
+  <rect x="350" y="250" width="100" height="50" rx="10" ry="10" fill="#ff9999" stroke="#cc6666" stroke-width="2"/>
+  <text x="400" y="275" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">TRIM27</text>
+  <text x="400" y="295" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">(Ubiquitin ligase)</text>
+  
+  <!-- STK38L -->
+  <rect x="200" y="400" width="100" height="50" rx="10" ry="10" fill="#99ccff" stroke="#6699cc" stroke-width="2"/>
+  <text x="250" y="420" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">STK38L</text>
+  <text x="250" y="440" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">(Ser/Thr kinase)</text>
+  
+  <!-- ULK1 -->
+  <rect x="500" y="400" width="100" height="50" rx="10" ry="10" fill="#99cc99" stroke="#669966" stroke-width="2"/>
+  <text x="550" y="420" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">ULK1</text>
+  <text x="550" y="440" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">(Ser/Thr kinase)</text>
+  
+  <!-- Autophagy process -->
+  <rect x="500" y="500" width="120" height="50" rx="10" ry="10" fill="#ffcc99" stroke="#cc9966" stroke-width="2"/>
+  <text x="560" y="525" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Autophagy</text>
+  <text x="560" y="545" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle">Cellular process</text>
+  
+  <!-- Ubiquitination symbols for TRIM27 action -->
+  <circle cx="430" y="360" r="10" fill="#ffdd00" stroke="#cc9900" stroke-width="1"/>
+  <text x="430" y="364" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Ub</text>
+  
+  <circle cx="510" y="360" r="10" fill="#ffdd00" stroke="#cc9900" stroke-width="1"/>
+  <text x="510" y="364" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Ub</text>
+  
+  <!-- Arrows -->
+  <!-- STK38L activates TRIM27 -->
+  <line x1="280" y1="400" x2="350" y2="300" stroke="#009900" stroke-width="2" marker-end="url(#arrowhead_green)" />
+  <text x="290" y="350" font-family="Arial" font-size="14" text-anchor="middle" dominant-baseline="middle">Activates</text>
+  <text x="290" y="370" font-family="Arial" font-size="14" text-anchor="middle" dominant-baseline="middle">(Phosphorylation)</text>
+  
+  <!-- TRIM27 inhibits STK38L (ubiquitination) -->
+  <line x1="375" y1="300" x2="280" y2="400" stroke="#ff0000" stroke-width="2" marker-end="url(#arrowhead_red)" stroke-dasharray="5,3" />
+  <line x1="373" y1="310" x2="430" y2="360" stroke="#ff0000" stroke-width="1" stroke-dasharray="3,2" />
+  
+  <!-- TRIM27 inhibits ULK1 (ubiquitination) -->
+  <line x1="425" y1="300" x2="520" y2="400" stroke="#ff0000" stroke-width="2" marker-end="url(#arrowhead_red)" stroke-dasharray="5,3" />
+  <line x1="427" y1="310" x2="510" y2="360" stroke="#ff0000" stroke-width="1" stroke-dasharray="3,2" />
+  
+  <!-- ULK1 promotes autophagy -->
+  <line x1="550" y1="450" x2="550" y2="500" stroke="#009900" stroke-width="2" marker-end="url(#arrowhead_green)" />
+  <text x="580" y="475" font-family="Arial" font-size="14" text-anchor="middle" dominant-baseline="middle">Promotes</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead_green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#009900" />
+    </marker>
+    <marker id="arrowhead_red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff0000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="180" width="180" height="190" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="690" y="200" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Legend</text>
+  
+  <rect x="610" y="215" width="20" height="15" fill="#ff9999" stroke="#cc6666" stroke-width="1"/>
+  <text x="670" y="225" font-family="Arial" font-size="12" dominant-baseline="middle">TRIM27 (P14373)</text>
+  
+  <rect x="610" y="240" width="20" height="15" fill="#99ccff" stroke="#6699cc" stroke-width="1"/>
+  <text x="670" y="250" font-family="Arial" font-size="12" dominant-baseline="middle">STK38L (Q9Y2H1)</text>
+  
+  <rect x="610" y="265" width="20" height="15" fill="#99cc99" stroke="#669966" stroke-width="1"/>
+  <text x="670" y="275" font-family="Arial" font-size="12" dominant-baseline="middle">ULK1 (O75385)</text>
+  
+  <rect x="610" y="290" width="20" height="15" fill="#ffcc99" stroke="#cc9966" stroke-width="1"/>
+  <text x="670" y="300" font-family="Arial" font-size="12" dominant-baseline="middle">Autophagy</text>
+  
+  <circle cx="620" y="320" r="10" fill="#ffdd00" stroke="#cc9900" stroke-width="1"/>
+  <text x="620" y="324" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Ub</text>
+  <text x="670" y="325" font-family="Arial" font-size="12" dominant-baseline="middle">Ubiquitination</text>
+  
+  <line x1="610" y1="345" x2="630" y2="345" stroke="#009900" stroke-width="2" marker-end="url(#arrowhead_green)" />
+  <text x="670" y="350" font-family="Arial" font-size="12" dominant-baseline="middle">Activation</text>
+  
+  <line x1="610" y1="370" x2="630" y2="370" stroke="#ff0000" stroke-width="2" marker-end="url(#arrowhead_red)" stroke-dasharray="5,3" />
+  <text x="670" y="375" font-family="Arial" font-size="12" dominant-baseline="middle">Inhibition</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">TRIM27-mediated Inhibition of Starvation-induced Autophagy</text>
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle">via Ubiquitination of STK38L and ULK1</text>
+</svg>

@@ -1,0 +1,148 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background layers -->
+  <rect x="0" y="0" width="800" height="600" fill="#f9f9f9"/>
+  
+  <!-- Compartment regions with subtle coloring -->
+  <rect x="0" y="0" width="800" height="120" fill="#E6F3FF" opacity="0.5"/>
+  <rect x="0" y="120" width="800" height="100" fill="#D1E8E2" opacity="0.5"/>
+  <rect x="0" y="220" width="800" height="230" fill="#FFF9E6" opacity="0.5"/>
+  <rect x="0" y="450" width="800" height="150" fill="#FFE6E6" opacity="0.5"/>
+  
+  <!-- Compartment labels -->
+  <text x="20" y="75" font-family="Arial" font-size="18" font-weight="bold">Extracellular Space</text>
+  <text x="20" y="175" font-family="Arial" font-size="18" font-weight="bold">Plasma Membrane</text>
+  <text x="20" y="325" font-family="Arial" font-size="18" font-weight="bold">Cytosol</text>
+  <text x="20" y="525" font-family="Arial" font-size="18" font-weight="bold">Nucleus</text>
+  
+  <!-- Compartment lines -->
+  <line x1="0" y1="120" x2="800" y2="120" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="0" y1="220" x2="800" y2="220" stroke="#333" stroke-width="3"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#333" stroke-width="3" stroke-dasharray="10,5"/>
+  
+  <!-- Extracellular space - Wingless (wg) - Ligand -->
+  <circle cx="200" cy="80" r="25" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <text x="200" y="85" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">wg</text>
+  
+  <!-- Plasma membrane - Receptors -->
+  <!-- Frizzled 2 (fz2) - Receptor -->
+  <rect x="150" y="190" width="40" height="60" rx="5" fill="#4682B4" stroke="#333" stroke-width="2"/>
+  <text x="170" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">fz2</text>
+  
+  <!-- Arrow (arr) - Co-receptor -->
+  <rect x="210" y="190" width="40" height="60" rx="5" fill="#6495ED" stroke="#333" stroke-width="2"/>
+  <text x="230" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">arr</text>
+  
+  <!-- Dishevelled (dsh) - Adaptor protein -->
+  <polygon points="180,270 230,270 215,300 165,300" fill="#9370DB" stroke="#333" stroke-width="2"/>
+  <text x="197" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">dsh</text>
+  
+  <!-- Cytosol - Destruction complex and signaling -->
+  <!-- Destruction complex box -->
+  <rect x="310" y="280" width="200" height="110" rx="10" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="410" y="270" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic" font-weight="bold">Destruction Complex</text>
+  
+  <!-- Axin (Axn) - Scaffold protein -->
+  <rect x="350" y="300" width="50" height="30" rx="5" fill="#CD5C5C" stroke="#333" stroke-width="2"/>
+  <text x="375" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Axn</text>
+  
+  <!-- APC2 - Complex component -->
+  <rect x="420" y="300" width="50" height="30" rx="5" fill="#CD5C5C" stroke="#333" stroke-width="2"/>
+  <text x="445" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">APC2</text>
+  
+  <!-- Shaggy (sgg) - Kinase -->
+  <polygon points="385,350 435,350 425,380 375,380" fill="#FF6347" stroke="#333" stroke-width="2"/>
+  <text x="405" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">sgg</text>
+  
+  <!-- CKIalpha - Kinase -->
+  <polygon points="320,350 370,350 360,380 310,380" fill="#FF7F50" stroke="#333" stroke-width="2"/>
+  <text x="340" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">CKIα</text>
+  
+  <!-- Roc1a - Ligase -->
+  <ellipse cx="480" cy="365" rx="30" ry="20" fill="#8B4513" stroke="#333" stroke-width="2"/>
+  <text x="480" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Roc1a</text>
+  
+  <!-- Armadillo (arm) - Signaling protein/Transcription factor -->
+  <circle cx="250" cy="370" r="25" fill="#32CD32" stroke="#333" stroke-width="2"/>
+  <text x="250" y="375" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">arm</text>
+  
+  <!-- Nucleus - Transcription -->
+  <circle cx="350" cy="500" r="25" fill="#32CD32" stroke="#333" stroke-width="2"/>
+  <text x="350" y="505" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">arm</text>
+  
+  <!-- Target gene activation -->
+  <rect x="420" y="485" width="90" height="30" rx="5" fill="#FF99CC" stroke="#333" stroke-width="2"/>
+  <text x="465" y="505" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Target Genes</text>
+  
+  <!-- Arrows and interactions with color coding -->
+  <!-- wg to receptors - Activation -->
+  <line x1="200" y1="105" x2="200" y2="180" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- fz2-arr activation of dsh - Activation -->
+  <path d="M 190 250 Q 197 260 197 270" fill="none" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- dsh inhibition of destruction complex - Inhibition -->
+  <path d="M 230 285 Q 290 285 310 300" fill="none" stroke="#CC0000" stroke-width="3" marker-end="url(#arrowhead-red)" stroke-dasharray="5,3"/>
+  
+  <!-- sgg phosphorylation of arm - Negative Regulation -->
+  <path d="M 375 365 Q 330 380 275 370" fill="none" stroke="#CC0000" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+  
+  <!-- CKIalpha to sgg - Coordination -->
+  <path d="M 360 365 L 375 365" fill="none" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- Roc1a ubiquitination of arm - Negative Regulation -->
+  <path d="M 450 365 Q 370 395 275 370" fill="none" stroke="#CC0000" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+  
+  <!-- arm to nucleus when not degraded - Positive Regulation -->
+  <path d="M 250 395 Q 250 440 350 475" fill="none" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- arm activating target genes - Activation -->
+  <path d="M 375 500 L 415 500" fill="none" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- Destruction complex components interaction -->
+  <path d="M 400 300 L 420 300" fill="none" stroke="#333" stroke-width="1.5"/>
+  <path d="M 400 330 L 420 330" fill="none" stroke="#333" stroke-width="1.5"/>
+  <path d="M 405 330 L 405 350" fill="none" stroke="#333" stroke-width="1.5"/>
+  <path d="M 355 350 Q 375 335 410 335" fill="none" stroke="#333" stroke-width="1.5"/>
+  <path d="M 450 365 Q 440 340 420 330" fill="none" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Arrowhead definitions for different interaction types -->
+  <defs>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#006600"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#CC0000"/>
+    </marker>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="570" y="280" width="210" height="180" rx="10" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="675" y="300" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="590" cy="325" r="10" fill="#FFD700" stroke="#333" stroke-width="1.5"/>
+  <text x="615" y="330" font-family="Arial" font-size="14" dx="10">Ligand (wg)</text>
+  
+  <rect x="590" y="345" width="20" height="20" rx="3" fill="#4682B4" stroke="#333" stroke-width="1.5"/>
+  <text x="615" y="360" font-family="Arial" font-size="14" dx="15">Receptor (fz2, arr)</text>
+  
+  <polygon points="580,375 600,375 595,390 575,390" fill="#FF6347" stroke="#333" stroke-width="1.5"/>
+  <text x="620" y="387" font-family="Arial" font-size="14" dx="20">Kinase (sgg, CKIα)</text>
+  
+  <circle cx="590" cy="410" r="10" fill="#32CD32" stroke="#333" stroke-width="1.5"/>
+  <text x="620" y="415" font-family="Arial" font-size="14" dx="28">Armadillo (arm)</text>
+  
+  <line x1="580" y1="430" x2="600" y2="430" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  <text x="620" y="435" font-family="Arial" font-size="14" dx="25">Activation</text>
+  
+  <line x1="580" y1="450" x2="600" y2="450" stroke="#CC0000" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+  <text x="620" y="455" font-family="Arial" font-size="14" dx="25">Inhibition</text>
+  
+  <!-- Title -->
+  <rect x="150" y="10" width="500" height="40" rx="10" fill="#E6E6E6" opacity="0.7"/>
+  <text x="400" y="35" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Canonical Wnt Signaling Pathway in Drosophila melanogaster</text>
+  <text x="400" y="60" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Negative Regulation of Wnt Signaling</text>
+</svg>

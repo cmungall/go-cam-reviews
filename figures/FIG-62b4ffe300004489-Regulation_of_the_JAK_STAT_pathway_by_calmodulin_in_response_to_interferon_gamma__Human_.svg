@@ -1,0 +1,104 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane and compartments -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  <ellipse cx="400" cy="350" rx="180" ry="120" fill="#e6f2ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="350" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#333">Nucleus</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Regulation of the JAK-STAT Pathway by Calmodulin in Response to Interferon-gamma</text>
+  
+  <!-- Pathway elements -->
+  <!-- IFNG receptor (implied) -->
+  <rect x="200" y="80" width="100" height="40" rx="5" ry="5" fill="#d4e6ff" stroke="#333" stroke-width="1.5" opacity="0.7"/>
+  <text x="250" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">IFNG Receptor*</text>
+  
+  <!-- Calcium Ion -->
+  <circle cx="150" cy="200" r="25" fill="#ff9999" stroke="#333" stroke-width="1.5"/>
+  <text x="150" y="205" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Ca²⁺</text>
+  
+  <!-- CALM1 (Calmodulin) -->
+  <rect x="250" y="200" width="100" height="40" rx="5" ry="5" fill="#99cc99" stroke="#333" stroke-width="1.5"/>
+  <text x="300" y="225" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">CALM1</text>
+  
+  <!-- CAMK2A -->
+  <rect x="400" y="200" width="100" height="40" rx="5" ry="5" fill="#9999cc" stroke="#333" stroke-width="1.5"/>
+  <text x="450" y="225" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">CAMK2A</text>
+  
+  <!-- STAT1 -->
+  <rect x="300" y="300" width="100" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="1.5"/>
+  <text x="350" y="325" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">STAT1</text>
+  
+  <!-- EP300 -->
+  <rect x="500" y="300" width="100" height="40" rx="5" ry="5" fill="#cc99cc" stroke="#333" stroke-width="1.5"/>
+  <text x="550" y="325" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">EP300</text>
+  
+  <!-- JAK-STAT pathway output -->
+  <rect x="400" y="400" width="150" height="40" rx="5" ry="5" fill="#ffffcc" stroke="#333" stroke-width="1.5"/>
+  <text x="475" y="425" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">JAK-STAT Pathway</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- IFNG to cascade (implied) -->
+  <line x1="250" y1="120" x2="250" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="270" y="150" font-family="Arial" font-size="14" fill="#333">Interferon-γ</text>
+  
+  <!-- Ca2+ binding to Calmodulin -->
+  <line x1="175" y1="200" x2="250" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="213" y="190" font-family="Arial" font-size="14" fill="#333">Binding</text>
+  <text x="213" y="175" font-family="Arial" font-size="12" fill="#777" font-style="italic">GO:0005509</text>
+  
+  <!-- Calmodulin activating CAMK2A -->
+  <line x1="350" y1="220" x2="400" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="375" y="205" font-family="Arial" font-size="14" fill="#333">Activates</text>
+  <text x="375" y="190" font-family="Arial" font-size="12" fill="#777" font-style="italic">GO:0043539</text>
+  
+  <!-- CAMK2A phosphorylating STAT1 -->
+  <line x1="450" y1="240" x2="350" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="385" y="260" font-family="Arial" font-size="14" fill="#333">Phosphorylates</text>
+  <text x="385" y="275" font-family="Arial" font-size="12" fill="#777" font-style="italic">GO:0004683</text>
+  
+  <!-- STAT1 activating EP300 -->
+  <line x1="400" y1="320" x2="500" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="450" y="310" font-family="Arial" font-size="14" fill="#333">Activates</text>
+  <text x="450" y="295" font-family="Arial" font-size="12" fill="#777" font-style="italic">GO:0000981</text>
+  
+  <!-- EP300 regulating JAK-STAT pathway -->
+  <line x1="550" y1="340" x2="500" y2="400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="535" y="380" font-family="Arial" font-size="14" fill="#333">Positively regulates</text>
+  <text x="535" y="395" font-family="Arial" font-size="12" fill="#777" font-style="italic">GO:0003713</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Biological process annotations -->
+  <text x="115" y="75" font-family="Arial" font-size="14" fill="#555" font-style="italic">GO:0071346: Cellular response to type II interferon</text>
+  <text x="600" y="375" font-family="Arial" font-size="14" fill="#555" font-style="italic">GO:0046427: Positive regulation of JAK-STAT</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="450" width="170" height="150" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="665" y="470" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="590" y="480" width="15" height="15" fill="#99cc99" stroke="#333" stroke-width="1"/>
+  <text x="615" y="493" font-family="Arial" font-size="14" text-anchor="start">CALM1 (Calmodulin)</text>
+  
+  <rect x="590" y="500" width="15" height="15" fill="#9999cc" stroke="#333" stroke-width="1"/>
+  <text x="615" y="513" font-family="Arial" font-size="14" text-anchor="start">CAMK2A</text>
+  
+  <rect x="590" y="520" width="15" height="15" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="615" y="533" font-family="Arial" font-size="14" text-anchor="start">STAT1</text>
+  
+  <rect x="590" y="540" width="15" height="15" fill="#cc99cc" stroke="#333" stroke-width="1"/>
+  <text x="615" y="553" font-family="Arial" font-size="14" text-anchor="start">EP300</text>
+  
+  <circle cx="597" cy="565" r="7.5" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="615" y="570" font-family="Arial" font-size="14" text-anchor="start">Ca²⁺</text>
+
+  <rect x="590" y="580" width="15" height="15" fill="#ffffcc" stroke="#333" stroke-width="1"/>
+  <text x="615" y="593" font-family="Arial" font-size="14" text-anchor="start">Pathway Output</text>
+  
+  <text x="590" y="613" font-family="Arial" font-size="12" text-anchor="start" fill="#777">* Not explicitly in GO-CAM</text>
+</svg>

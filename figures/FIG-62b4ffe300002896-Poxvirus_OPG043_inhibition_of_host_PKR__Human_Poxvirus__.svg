@@ -1,0 +1,100 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f8f8" stroke="#666" stroke-width="2" />
+  
+  <!-- Cell cytoplasm label -->
+  <text x="680" y="150" font-family="Arial" font-size="18" fill="#444">Cytoplasm</text>
+  <text x="680" y="170" font-family="Arial" font-size="16" font-style="italic" fill="#444">(GO:0005737)</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#000">Poxvirus-OPG043 Inhibition of Host PKR Pathway</text>
+  
+  <!-- Host proteins -->
+  <!-- EIF2AK2/PKR -->
+  <rect x="350" y="250" width="120" height="60" rx="10" ry="10" fill="#ff9999" stroke="#000" stroke-width="2" />
+  <text x="410" y="280" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">EIF2AK2/PKR</text>
+  <text x="410" y="300" font-family="Arial" font-size="14" text-anchor="middle">(P19525)</text>
+  
+  <!-- EIF2A -->
+  <rect x="350" y="400" width="120" height="60" rx="10" ry="10" fill="#99ccff" stroke="#000" stroke-width="2" />
+  <text x="410" y="430" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">EIF2A</text>
+  <text x="410" y="450" font-family="Arial" font-size="14" text-anchor="middle">(Q9BY44)</text>
+  
+  <!-- EIF2S2 -->
+  <rect x="600" y="400" width="120" height="60" rx="10" ry="10" fill="#99ccff" stroke="#000" stroke-width="2" />
+  <text x="660" y="430" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">EIF2S2</text>
+  <text x="660" y="450" font-family="Arial" font-size="14" text-anchor="middle">(P20042)</text>
+  
+  <!-- Viral protein -->
+  <rect x="150" y="250" width="120" height="60" rx="10" ry="10" fill="#99ff99" stroke="#000" stroke-width="2" />
+  <text x="210" y="275" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">VACWR034</text>
+  <text x="210" y="295" font-family="Arial" font-size="14" text-anchor="middle">(P18378)</text>
+  
+  <!-- Process labels -->
+  <rect x="325" y="180" width="170" height="40" rx="5" ry="5" fill="#ffffcc" stroke="#000" stroke-width="1" />
+  <text x="410" y="205" font-family="Arial" font-size="15" text-anchor="middle">Antiviral Immune Response</text>
+  <text x="410" y="225" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GO:0140374)</text>
+  
+  <rect x="100" y="180" width="200" height="40" rx="5" ry="5" fill="#ccffcc" stroke="#000" stroke-width="1" />
+  <text x="200" y="205" font-family="Arial" font-size="15" text-anchor="middle">Suppression of Host PKR Signaling</text>
+  <text x="200" y="225" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GO:0039580)</text>
+  
+  <rect x="475" y="500" width="170" height="40" rx="5" ry="5" fill="#ccccff" stroke="#000" stroke-width="1" />
+  <text x="560" y="525" font-family="Arial" font-size="15" text-anchor="middle">Translational Initiation</text>
+  <text x="560" y="545" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GO:0006413)</text>
+  
+  <!-- Arrows and connections -->
+  <!-- Viral protein inhibits PKR -->
+  <line x1="270" y1="280" x2="350" y2="280" stroke="#f00" stroke-width="3" />
+  <polygon points="340,275 350,280 340,285" fill="#f00" />
+  <text x="310" y="270" font-family="Arial" font-size="16" fill="#f00">Inhibits</text>
+  
+  <!-- PKR inhibits EIF2A -->
+  <line x1="410" y1="310" x2="410" y2="400" stroke="#f00" stroke-width="3" />
+  <polygon points="405,390 410,400 415,390" fill="#f00" />
+  <text x="425" y="350" font-family="Arial" font-size="16" fill="#f00">Inhibits</text>
+  
+  <!-- EIF2A activates EIF2S2 -->
+  <line x1="470" y1="430" x2="600" y2="430" stroke="#080" stroke-width="3" />
+  <polygon points="590,425 600,430 590,435" fill="#080" />
+  <text x="535" y="420" font-family="Arial" font-size="16" fill="#080">Activates</text>
+  
+  <!-- Activity labels - positioned better to avoid overlaps -->
+  <text x="180" y="335" font-family="Arial" font-size="14" font-style="italic" fill="#444">Protein Sequestering</text>
+  <text x="180" y="350" font-family="Arial" font-size="14" font-style="italic" fill="#444">Activity (GO:0140311)</text>
+  
+  <text x="380" y="335" font-family="Arial" font-size="14" font-style="italic" fill="#444">Protein Kinase</text>
+  <text x="380" y="350" font-family="Arial" font-size="14" font-style="italic" fill="#444">Activity (GO:0004672)</text>
+  
+  <text x="340" y="485" font-family="Arial" font-size="14" font-style="italic" fill="#444">Translation Initiation Factor</text>
+  <text x="340" y="500" font-family="Arial" font-size="14" font-style="italic" fill="#444">Activity (GO:0003743)</text>
+  
+  <text x="590" y="485" font-family="Arial" font-size="14" font-style="italic" fill="#444">Translation Initiation Factor</text>
+  <text x="590" y="500" font-family="Arial" font-size="14" font-style="italic" fill="#444">Activity (GO:0003743)</text>
+  
+  <!-- Dotted line to process -->
+  <line x1="560" y1="460" x2="560" y2="500" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3" />
+  
+  <!-- Virus entry indication -->
+  <path d="M50,150 C80,120 120,120 150,150" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,3" />
+  <text x="100" y="110" font-family="Arial" font-size="16" fill="#666">Poxvirus</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="220" height="90" rx="5" ry="5" fill="#ffffff" stroke="#666" stroke-width="1" />
+  <text x="60" y="520" font-family="Arial" font-size="16" font-weight="bold" fill="#000">Legend</text>
+  
+  <rect x="60" y="530" width="15" height="15" fill="#99ff99" stroke="#000" stroke-width="1" />
+  <text x="85" y="543" font-family="Arial" font-size="14" fill="#000">Viral protein</text>
+  
+  <rect x="60" y="550" width="15" height="15" fill="#ff9999" stroke="#000" stroke-width="1" />
+  <text x="85" y="563" font-family="Arial" font-size="14" fill="#000">Host immune protein</text>
+  
+  <rect x="60" y="570" width="15" height="15" fill="#99ccff" stroke="#000" stroke-width="1" />
+  <text x="85" y="583" font-family="Arial" font-size="14" fill="#000">Translation factors</text>
+  
+  <!-- Pathway context annotation -->
+  <rect x="50" y="50" width="220" height="60" rx="5" ry="5" fill="#ffffff" stroke="#666" stroke-width="1" opacity="0.9" />
+  <text x="60" y="70" font-family="Arial" font-size="14" fill="#000" font-style="italic">Viral evasion of host</text>
+  <text x="60" y="90" font-family="Arial" font-size="14" fill="#000" font-style="italic">antiviral response through</text>
+  <text x="60" y="110" font-family="Arial" font-size="14" fill="#000" font-style="italic">inhibition of translation</text>
+</svg>

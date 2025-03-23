@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Nucleus -->
+  <ellipse cx="400" cy="340" rx="350" ry="250" fill="#f0f0ff" stroke="#000" stroke-width="2"/>
+  <text x="400" y="140" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Nucleus</text>
+  
+  <!-- Chromatin -->
+  <g id="chromatin">
+    <path d="M200,290 C250,270 300,320 350,300 C400,280 450,330 500,310 C550,290 600,340 650,320" stroke="#8A4F7D" stroke-width="8" fill="none"/>
+    <text x="425" y="260" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Chromatin (GO:0000785)</text>
+  </g>
+  
+  <!-- PARP1 bound to chromatin -->
+  <g id="parp1-chromatin">
+    <circle cx="350" cy="300" r="25" fill="#FF9966" stroke="#000" stroke-width="2"/>
+    <text x="350" y="305" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">PARP1</text>
+    <text x="350" y="335" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">chromatin binding (GO:0003682)</text>
+  </g>
+  
+  <!-- PIAS4 with SUMO ligase activity -->
+  <g id="pias4">
+    <rect x="180" y="390" width="90" height="40" rx="10" ry="10" fill="#66CCFF" stroke="#000" stroke-width="2"/>
+    <text x="225" y="415" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="middle">PIAS4</text>
+    <text x="225" y="445" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">SUMO ligase activity (GO:0061665)</text>
+  </g>
+  
+  <!-- SUMO tag on PARP1 -->
+  <g id="sumo-tag">
+    <circle cx="350" cy="280" r="12" fill="#00AAFF" stroke="#000" stroke-width="1.5"/>
+    <text x="350" y="284" font-family="Arial" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="middle">SUMO</text>
+  </g>
+  
+  <!-- RNF4 with SUMO polymer binding and ubiquitin ligase activity -->
+  <g id="rnf4">
+    <rect x="480" y="390" width="90" height="40" rx="10" ry="10" fill="#99CC66" stroke="#000" stroke-width="2"/>
+    <text x="525" y="415" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="middle">RNF4</text>
+    <text x="525" y="445" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">SUMO binding (GO:0032184)</text>
+    <text x="525" y="460" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Ubiquitin ligase (GO:0061630)</text>
+  </g>
+  
+  <!-- Ubiquitin tag on PARP1 -->
+  <g id="ubiquitin-tag">
+    <circle cx="370" cy="270" r="12" fill="#99CC66" stroke="#000" stroke-width="1.5"/>
+    <text x="370" y="274" font-family="Arial" font-size="11" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Ub</text>
+  </g>
+  
+  <!-- VCP/p97 -->
+  <g id="vcp">
+    <rect x="610" y="310" width="90" height="40" rx="10" ry="10" fill="#FF6666" stroke="#000" stroke-width="2"/>
+    <text x="655" y="335" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" dominant-baseline="middle">VCP/p97</text>
+    <text x="655" y="360" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Ub reader (GO:0140036)</text>
+  </g>
+  
+  <!-- PARP1 being extracted -->
+  <g id="parp1-extracted">
+    <circle cx="650" cy="240" r="25" fill="#FF9966" stroke="#000" stroke-width="2" opacity="0.7"/>
+    <text x="650" y="245" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">PARP1</text>
+  </g>
+  
+  <!-- Arrows for the pathway -->
+  <g id="arrows" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)">
+    <!-- PIAS4 to PARP1 (SUMOylation) -->
+    <path d="M270,390 C290,350 320,330 335,315" stroke="#00AAFF"/>
+    <text x="275" y="360" font-family="Arial" font-size="16" font-weight="bold" fill="#00AAFF">SUMOylation</text>
+    
+    <!-- RNF4 SUMO binding -->
+    <path d="M480,400 C440,390 400,360 370,320" stroke="#99CC66" stroke-dasharray="5,3"/>
+    <text x="400" y="380" font-family="Arial" font-size="16" font-weight="bold" fill="#99CC66">SUMO recognition</text>
+    
+    <!-- RNF4 to PARP1 (Ubiquitination) -->
+    <path d="M480,410 C440,380 410,340 380,310" stroke="#99CC66"/>
+    <text x="440" y="350" font-family="Arial" font-size="16" font-weight="bold" fill="#99CC66">Ubiquitination</text>
+    
+    <!-- VCP to PARP1 (Extraction) -->
+    <path d="M610,320 C550,300 500,290 450,290" stroke="#FF6666"/>
+    <text x="520" y="280" font-family="Arial" font-size="16" font-weight="bold" fill="#FF6666">Extraction</text>
+    
+    <!-- PARP1 being extracted -->
+    <path d="M400,280 C500,240 600,220 650,240" stroke="#FF6666" stroke-dasharray="5,3"/>
+    <text x="500" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="#FF6666">PARP1 removal</text>
+  </g>
+  
+  <!-- DNA damage marker -->
+  <g id="dna-damage">
+    <path d="M380,300 L390,310 L370,310 Z" fill="yellow" stroke="red" stroke-width="1.5"/>
+    <text x="400" y="320" font-family="Arial" font-size="14" font-weight="bold" fill="red">DNA damage (GO:0006974)</text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Pathway title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">PARP1 Extraction from Chromatin Following SUMO/Ubiquitin Modifications</text>
+  <text x="400" y="70" font-family="Arial" font-size="18" text-anchor="middle">Negative regulation of protein localization to chromatin (GO:0120186)</text>
+
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="50" y="550" width="700" height="80" rx="5" ry="5" fill="#f8f8f8" stroke="#000" stroke-width="1"/>
+    <text x="60" y="570" font-family="Arial" font-size="18" font-weight="bold">Legend:</text>
+    
+    <!-- SUMO symbol -->
+    <circle cx="80" cy="590" r="10" fill="#00AAFF" stroke="#000" stroke-width="1"/>
+    <text x="95" y="595" font-family="Arial" font-size="16">SUMO tag</text>
+    
+    <!-- Ub symbol -->
+    <circle cx="200" cy="590" r="10" fill="#99CC66" stroke="#000" stroke-width="1"/>
+    <text x="215" y="595" font-family="Arial" font-size="16">Ubiquitin tag</text>
+    
+    <!-- Protein -->
+    <circle cx="320" cy="590" r="15" fill="#FF9966" stroke="#000" stroke-width="1.5"/>
+    <text x="345" y="595" font-family="Arial" font-size="16">Protein</text>
+    
+    <!-- Enzyme -->
+    <rect x="420" y="580" width="60" height="20" rx="5" ry="5" fill="#66CCFF" stroke="#000" stroke-width="1.5"/>
+    <text x="495" y="595" font-family="Arial" font-size="16">Enzyme</text>
+    
+    <!-- DNA damage -->
+    <path d="M570,590 L580,600 L560,600 Z" fill="yellow" stroke="red" stroke-width="1.5"/>
+    <text x="590" y="595" font-family="Arial" font-size="16">DNA damage site</text>
+  </g>
+</svg>

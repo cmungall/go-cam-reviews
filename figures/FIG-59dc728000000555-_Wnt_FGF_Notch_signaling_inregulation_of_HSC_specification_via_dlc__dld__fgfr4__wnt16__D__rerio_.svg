@@ -1,0 +1,90 @@
+<svg width="700" height="580" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Cell Compartments -->
+  <!-- Somite region -->
+  <rect x="50" y="100" width="600" height="200" rx="20" ry="20" fill="#f0f5fa" stroke="#aabdd0" stroke-width="2"/>
+  <text x="75" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#546e87">Somite</text>
+  
+  <!-- Posterior Lateral Mesoderm region -->
+  <rect x="50" y="325" width="600" height="175" rx="20" ry="20" fill="#f2f5e9" stroke="#bcd0aa" stroke-width="2"/>
+  <text x="75" y="355" font-family="Arial" font-size="18" font-weight="bold" fill="#5a7a40">Posterior Lateral Mesoderm</text>
+  
+  <!-- Pathway Molecules and Interactions -->
+  <!-- Wnt16 -->
+  <circle cx="150" cy="200" r="40" fill="#ff9966" stroke="#cc6633" stroke-width="2"/>
+  <text x="150" y="205" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">Wnt16</text>
+  
+  <!-- FGFR4 -->
+  <circle cx="340" cy="200" r="40" fill="#66b3ff" stroke="#3380cc" stroke-width="2"/>
+  <text x="340" y="205" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">FGFR4</text>
+  
+  <!-- DLD -->
+  <circle cx="530" cy="200" r="40" fill="#cc99ff" stroke="#9966cc" stroke-width="2"/>
+  <text x="530" y="205" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">DLD</text>
+  
+  <!-- DLC -->
+  <circle cx="330" cy="400" r="40" fill="#cc99ff" stroke="#9966cc" stroke-width="2"/>
+  <text x="330" y="405" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">DLC</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- Wnt16 to FGFR4 -->
+  <path d="M190 200 L 290 200" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="240" y="190" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">activates</text>
+  
+  <!-- Wnt16 to DLD -->
+  <path d="M190 210 C 250 260, 450 260, 510 220" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="350" y="270" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">activates</text>
+  
+  <!-- FGFR4 to DLC -->
+  <path d="M340 240 L 330 350" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="365" y="300" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">activates</text>
+  
+  <!-- Notch Signaling Pathway -->
+  <rect x="450" y="380" width="150" height="60" rx="10" ry="10" fill="#b3e6cc" stroke="#53a67a" stroke-width="2"/>
+  <text x="525" y="410" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">Notch Signaling</text>
+  <text x="525" y="430" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Pathway</text>
+  
+  <!-- DLC to Notch signaling -->
+  <path d="M370 400 L 440 400" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- DLD to Notch signaling -->
+  <path d="M530 240 C 560 300, 560 320, 540 370" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- HSC Specification -->
+  <ellipse cx="525" cy="500" rx="100" ry="30" fill="#ffcccc" stroke="#ff9999" stroke-width="2"/>
+  <text x="525" y="505" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">HSC Specification</text>
+  
+  <!-- Notch to HSC -->
+  <path d="M525 440 L 525 460" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="610" y="455" font-family="Arial" font-size="12" font-style="italic" fill="#777777">implied (not in GO-CAM)</text>
+  
+  <!-- FGF Signaling label -->
+  <text x="340" y="160" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#3380cc">FGF Signaling</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <rect x="50" y="30" width="600" height="40" rx="5" ry="5" fill="#f9f9f9" stroke="#cccccc" stroke-width="1"/>
+  <text x="350" y="55" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333333">Wnt-FGF-Notch Signaling in HSC Specification (D. rerio)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="600" height="40" rx="5" ry="5" fill="#f9f9f9" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="80" cy="540" r="8" fill="#ff9966" stroke="#cc6633" stroke-width="1"/>
+  <text x="95" y="545" font-family="Arial" font-size="12" fill="#000000">Wnt protein</text>
+  
+  <circle cx="180" cy="540" r="8" fill="#66b3ff" stroke="#3380cc" stroke-width="1"/>
+  <text x="195" y="545" font-family="Arial" font-size="12" fill="#000000">FGF receptor</text>
+  
+  <circle cx="290" cy="540" r="8" fill="#cc99ff" stroke="#9966cc" stroke-width="1"/>
+  <text x="305" y="545" font-family="Arial" font-size="12" fill="#000000">Delta-like proteins</text>
+  
+  <rect x="390" cy="540" y="532" width="35" height="16" rx="3" ry="3" fill="#b3e6cc" stroke="#53a67a" stroke-width="1"/>
+  <text x="442" y="545" font-family="Arial" font-size="12" fill="#000000">Signaling pathway</text>
+  
+  <line x1="520" y1="540" x2="550" y2="540" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="580" y="545" font-family="Arial" font-size="12" fill="#000000">Activation</text>
+</svg>

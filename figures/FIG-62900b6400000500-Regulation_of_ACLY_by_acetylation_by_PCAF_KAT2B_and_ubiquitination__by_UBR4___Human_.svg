@@ -1,0 +1,116 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background - Cytosol -->
+    <rect x="0" y="0" width="800" height="650" fill="#F8F9FA" stroke="#333333" stroke-width="2"/>
+    <text x="40" y="40" font-family="Arial" font-size="20" font-weight="bold">Regulation of ACLY by Acetylation and Ubiquitination (Human)</text>
+    
+    <!-- Cytosol label -->
+    <text x="720" y="620" font-family="Arial" font-size="24" font-style="italic" fill="#555555">Cytosol</text>
+    
+    <!-- Central ACLY protein -->
+    <circle cx="400" cy="300" r="70" fill="#A8D5BA" stroke="#333333" stroke-width="2"/>
+    <text x="400" y="300" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">ACLY</text>
+    <text x="400" y="325" font-family="Arial" font-size="14" text-anchor="middle">(P53396)</text>
+    
+    <!-- Acetylated ACLY (active state) -->
+    <circle cx="550" cy="200" r="50" fill="#A8D5BA" stroke="#333333" stroke-width="2"/>
+    <text x="550" y="195" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">ACLY</text>
+    <text x="550" y="220" font-family="Arial" font-size="12" text-anchor="middle">(Acetylated)</text>
+    <!-- Acetyl group -->
+    <circle cx="575" cy="175" r="10" fill="#FFD700" stroke="#333333" stroke-width="1"/>
+    <text x="575" y="178" font-family="Arial" font-size="10" text-anchor="middle">Ac</text>
+    
+    <!-- KAT2B - Acetyltransferase -->
+    <rect x="200" y="150" width="100" height="50" rx="10" fill="#FF9E80" stroke="#333333" stroke-width="2"/>
+    <text x="250" y="180" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">KAT2B</text>
+    <text x="250" y="195" font-family="Arial" font-size="10" text-anchor="middle">(Q92831)</text>
+    
+    <!-- SIRT2 - Deacetylase -->
+    <rect x="200" y="250" width="100" height="50" rx="10" fill="#80CBC4" stroke="#333333" stroke-width="2"/>
+    <text x="250" y="280" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">SIRT2</text>
+    <text x="250" y="295" font-family="Arial" font-size="10" text-anchor="middle">(Q8IXJ6)</text>
+    
+    <!-- UBR4 - Ubiquitin Ligase -->
+    <rect x="200" y="350" width="100" height="50" rx="10" fill="#B39DDB" stroke="#333333" stroke-width="2"/>
+    <text x="250" y="380" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">UBR4</text>
+    <text x="250" y="395" font-family="Arial" font-size="10" text-anchor="middle">(Q5T4S7)</text>
+    
+    <!-- Ubiquitinated ACLY (for degradation) -->
+    <circle cx="550" cy="400" r="50" fill="#A8D5BA" stroke="#333333" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="550" y="395" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">ACLY</text>
+    <text x="550" y="420" font-family="Arial" font-size="12" text-anchor="middle">(Ubiquitinated)</text>
+    <!-- Ubiquitin tag -->
+    <circle cx="575" cy="375" r="10" fill="#E040FB" stroke="#333333" stroke-width="1"/>
+    <text x="575" y="378" font-family="Arial" font-size="10" text-anchor="middle">Ub</text>
+    
+    <!-- Fatty Acid Synthesis -->
+    <rect x="650" y="300" width="120" height="60" rx="10" fill="#BBDEFB" stroke="#333333" stroke-width="2"/>
+    <text x="710" y="330" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Fatty Acid</text>
+    <text x="710" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Biosynthesis</text>
+    
+    <!-- Proteasome (implied, not in source) -->
+    <polygon points="550,500 580,470 610,500 580,530" fill="#FFCDD2" stroke="#333333" stroke-width="2"/>
+    <text x="580" y="505" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Proteasome</text>
+    <text x="580" y="520" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">(not in source)</text>
+    
+    <!-- Arrows -->
+    <!-- KAT2B to ACLY (acetylation) -->
+    <line x1="300" y1="175" x2="350" y2="260" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="330" y="200" font-family="Arial" font-size="12" text-anchor="middle">Acetylates</text>
+    
+    <!-- ACLY to Acetylated ACLY -->
+    <line x1="450" y1="260" x2="510" y2="220" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Acetylated ACLY to Fatty Acid Synthesis (positive) -->
+    <line x1="600" y1="210" x2="650" y2="300" stroke="#009900" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="640" y="240" font-family="Arial" font-size="12" fill="#009900" font-weight="bold">+</text>
+    
+    <!-- SIRT2 to ACLY (deacetylation) -->
+    <line x1="300" y1="275" x2="330" y2="290" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="330" y="270" font-family="Arial" font-size="12" text-anchor="middle">Deacetylates</text>
+    
+    <!-- UBR4 to ACLY (ubiquitination) -->
+    <line x1="300" y1="375" x2="350" y2="340" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="330" y="370" font-family="Arial" font-size="12" text-anchor="middle">Ubiquitinates</text>
+    
+    <!-- ACLY to Ubiquitinated ACLY -->
+    <line x1="450" y1="340" x2="510" y2="380" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Ubiquitinated ACLY to Proteasome -->
+    <line x1="550" y1="450" x2="550" y2="470" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="565" y="460" font-family="Arial" font-size="12">Degradation</text>
+    
+    <!-- Ubiquitinated ACLY to Fatty Acid Synthesis (negative) -->
+    <line x1="600" y1="390" x2="650" y2="340" stroke="#CC0000" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="640" y="380" font-family="Arial" font-size="12" fill="#CC0000" font-weight="bold">-</text>
+    
+    <!-- Arrowhead marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+        </marker>
+    </defs>
+    
+    <!-- Legend -->
+    <rect x="50" y="550" width="700" height="80" fill="#FFFFFF" stroke="#333333" stroke-width="1"/>
+    <text x="60" y="570" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+    
+    <!-- Legend items -->
+    <circle cx="80" cy="590" r="10" fill="#FFD700" stroke="#333333" stroke-width="1"/>
+    <text x="80" y="593" font-family="Arial" font-size="10" text-anchor="middle">Ac</text>
+    <text x="140" y="593" font-family="Arial" font-size="12">Acetyl group</text>
+    
+    <circle cx="220" cy="590" r="10" fill="#E040FB" stroke="#333333" stroke-width="1"/>
+    <text x="220" y="593" font-family="Arial" font-size="10" text-anchor="middle">Ub</text>
+    <text x="280" y="593" font-family="Arial" font-size="12">Ubiquitin tag</text>
+    
+    <line x1="350" y1="590" x2="400" y2="590" stroke="#009900" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="390" y="575" font-family="Arial" font-size="12" fill="#009900" font-weight="bold">+</text>
+    <text x="440" y="593" font-family="Arial" font-size="12">Positive regulation</text>
+    
+    <line x1="550" y1="590" x2="600" y2="590" stroke="#CC0000" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="590" y="575" font-family="Arial" font-size="12" fill="#CC0000" font-weight="bold">-</text>
+    <text x="640" y="593" font-family="Arial" font-size="12">Negative regulation</text>
+    
+    <rect x="80" y="610" width="20" height="10" fill="#FFFFFF" stroke="#333333" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="140" y="618" font-family="Arial" font-size="12">Protein marked for degradation</text>
+</svg>

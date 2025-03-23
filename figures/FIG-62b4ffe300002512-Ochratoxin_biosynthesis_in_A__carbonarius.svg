@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell background -->
+    <ellipse cx="400" cy="330" rx="380" ry="280" fill="#f9f9f9" stroke="#666" stroke-width="2" />
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Ochratoxin A Biosynthesis Pathway in Aspergillus carbonarius</text>
+    
+    <!-- Pathway elements -->
+    
+    <!-- Starting compounds -->
+    <rect x="100" y="200" width="130" height="60" rx="10" fill="#d1e7dd" stroke="#198754" stroke-width="2" />
+    <text x="165" y="235" font-family="Arial" font-size="14" text-anchor="middle">Acetyl-CoA</text>
+    <text x="165" y="255" font-family="Arial" font-size="12" text-anchor="middle">(CHEBI:15351)</text>
+    
+    <rect x="100" y="300" width="130" height="60" rx="10" fill="#d1e7dd" stroke="#198754" stroke-width="2" />
+    <text x="165" y="335" font-family="Arial" font-size="14" text-anchor="middle">Malonyl-CoA</text>
+    <text x="165" y="355" font-family="Arial" font-size="12" text-anchor="middle">(CHEBI:15531)</text>
+    
+    <!-- Arrows to first enzyme -->
+    <line x1="230" y1="230" x2="270" y2="260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <line x1="230" y1="330" x2="270" y2="280" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <!-- First enzyme - OtaA -->
+    <rect x="270" y="240" width="130" height="60" rx="10" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" />
+    <text x="335" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">OtaA</text>
+    <text x="335" y="285" font-family="Arial" font-size="12" text-anchor="middle">Polyketide synthase</text>
+    
+    <!-- Arrow to second enzyme -->
+    <line x1="400" y1="270" x2="440" y2="270" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <!-- Second enzyme - OtaC -->
+    <rect x="440" y="240" width="130" height="60" rx="10" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" />
+    <text x="505" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">OtaC</text>
+    <text x="505" y="285" font-family="Arial" font-size="12" text-anchor="middle">Oxidoreductase</text>
+    
+    <!-- L-Phenylalanine input -->
+    <rect x="440" y="400" width="130" height="60" rx="10" fill="#d1e7dd" stroke="#198754" stroke-width="2" />
+    <text x="505" y="435" font-family="Arial" font-size="14" text-anchor="middle">L-Phenylalanine</text>
+    <text x="505" y="455" font-family="Arial" font-size="12" text-anchor="middle">(CHEBI:17295)</text>
+    
+    <!-- Arrow from L-Phenylalanine -->
+    <line x1="505" y1="400" x2="505" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <!-- Arrow to third enzyme -->
+    <line x1="570" y1="270" x2="610" y2="270" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <!-- Third enzyme - OtaB -->
+    <rect x="610" y="240" width="130" height="60" rx="10" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" />
+    <text x="675" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">OtaB</text>
+    <text x="675" y="285" font-family="Arial" font-size="12" text-anchor="middle">NRPS</text>
+    
+    <!-- Arrow to fourth enzyme -->
+    <line x1="675" y1="300" x2="675" y2="350" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <!-- Fourth enzyme - OtaD -->
+    <rect x="610" y="350" width="130" height="60" rx="10" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" />
+    <text x="675" y="375" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">OtaD</text>
+    <text x="675" y="395" font-family="Arial" font-size="12" text-anchor="middle">Catalytic activity</text>
+    
+    <!-- Arrow to final product -->
+    <line x1="675" y1="410" x2="675" y2="460" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <!-- Final product - Ochratoxin A -->
+    <rect x="610" y="460" width="130" height="60" rx="10" fill="#f8d7da" stroke="#dc3545" stroke-width="2" />
+    <text x="675" y="495" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Ochratoxin A</text>
+    <text x="675" y="515" font-family="Arial" font-size="12" text-anchor="middle">(CHEBI:7719)</text>
+    
+    <!-- Overall process label -->
+    <rect x="270" y="140" width="260" height="40" rx="5" fill="#fff3cd" stroke="#ffc107" stroke-width="2" />
+    <text x="400" y="165" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Ochratoxin A biosynthetic process</text>
+    
+    <!-- Legend -->
+    <rect x="100" y="540" width="600" height="80" rx="5" fill="white" stroke="#333" stroke-width="1" />
+    <text x="400" y="560" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+    
+    <!-- Legend items -->
+    <rect x="120" y="570" width="20" height="20" fill="#d1e7dd" stroke="#198754" stroke-width="1" />
+    <text x="150" y="585" font-family="Arial" font-size="12" text-anchor="start">Substrates</text>
+    
+    <rect x="230" y="570" width="20" height="20" fill="#cfe2ff" stroke="#0d6efd" stroke-width="1" />
+    <text x="260" y="585" font-family="Arial" font-size="12" text-anchor="start">Enzymes</text>
+    
+    <rect x="340" y="570" width="20" height="20" fill="#f8d7da" stroke="#dc3545" stroke-width="1" />
+    <text x="370" y="585" font-family="Arial" font-size="12" text-anchor="start">Final Product</text>
+    
+    <rect x="470" y="570" width="20" height="20" fill="#fff3cd" stroke="#ffc107" stroke-width="1" />
+    <text x="500" y="585" font-family="Arial" font-size="12" text-anchor="start">Biological Process</text>
+    
+    <!-- Arrowhead definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+        </marker>
+    </defs>
+    
+    <!-- Cell membrane label -->
+    <text x="400" y="610" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">Aspergillus carbonarius cell</text>
+</svg>

@@ -1,0 +1,124 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Galactose Catabolic Process via UDP-galactose (Mus musculus)</text>
+  
+  <!-- Metabolites -->
+  <!-- Hexagon shape for sugars -->
+  <polygon id="beta-D-galactose" points="100,200 115,180 145,180 160,200 145,220 115,220" fill="#e6f2ff" stroke="#000000" stroke-width="2"/>
+  <text x="130" y="205" font-family="Arial" font-size="14" text-anchor="middle">β-D-galactose</text>
+  
+  <polygon id="alpha-D-galactose" points="240,200 255,180 285,180 300,200 285,220 255,220" fill="#e6f2ff" stroke="#000000" stroke-width="2"/>
+  <text x="270" y="205" font-family="Arial" font-size="14" text-anchor="middle">α-D-galactose</text>
+  
+  <polygon id="galactose-1-P" points="380,200 395,180 425,180 440,200 425,220 395,220" fill="#e6f2ff" stroke="#000000" stroke-width="2"/>
+  <text x="410" y="205" font-family="Arial" font-size="14" text-anchor="middle">Galactose-1-P</text>
+  
+  <polygon id="UDP-galactose" points="520,200 535,180 565,180 580,200 565,220 535,220" fill="#e6f2ff" stroke="#000000" stroke-width="2"/>
+  <text x="550" y="205" font-family="Arial" font-size="14" text-anchor="middle">UDP-galactose</text>
+  
+  <polygon id="UDP-glucose" points="660,200 675,180 705,180 720,200 705,220 675,220" fill="#e6f2ff" stroke="#000000" stroke-width="2"/>
+  <text x="690" y="205" font-family="Arial" font-size="14" text-anchor="middle">UDP-glucose</text>
+  
+  <!-- Glucose-1-P and Glucose-6-P (implicit) -->
+  <polygon id="glucose-1-P" points="520,320 535,300 565,300 580,320 565,340 535,340" fill="#e6f2ff" stroke="#000000" stroke-width="2"/>
+  <text x="550" y="325" font-family="Arial" font-size="14" text-anchor="middle">Glucose-1-P</text>
+  
+  <polygon id="glucose-6-P" points="660,320 675,300 705,300 720,320 705,340 675,340" fill="#e6f2ff" stroke="#000000" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="690" y="325" font-family="Arial" font-size="14" text-anchor="middle">Glucose-6-P</text>
+  <text x="690" y="355" font-family="Arial" font-size="12" fill="#666666" text-anchor="middle">(implicit intermediate)</text>
+  
+  <!-- Enzyme boxes -->
+  <rect x="165" y="150" width="80" height="40" rx="10" ry="10" fill="#ffcc99" stroke="#000000" stroke-width="2"/>
+  <text x="205" y="175" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Galm</text>
+  <text x="205" y="140" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">aldose 1-epimerase</text>
+  
+  <rect x="305" y="150" width="80" height="40" rx="10" ry="10" fill="#ffcc99" stroke="#000000" stroke-width="2"/>
+  <text x="345" y="175" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Galk1</text>
+  <text x="345" y="140" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">galactokinase</text>
+  
+  <rect x="445" y="150" width="80" height="40" rx="10" ry="10" fill="#ffcc99" stroke="#000000" stroke-width="2"/>
+  <text x="485" y="175" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Galt</text>
+  <text x="485" y="140" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">UDP-glucose:hexose-1-P uridylyltransferase</text>
+  
+  <rect x="585" y="150" width="80" height="40" rx="10" ry="10" fill="#ffcc99" stroke="#000000" stroke-width="2"/>
+  <text x="625" y="175" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Gale</text>
+  <text x="625" y="140" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">UDP-glucose 4-epimerase</text>
+  
+  <rect x="585" y="270" width="80" height="40" rx="10" ry="10" fill="#ffcc99" stroke="#000000" stroke-width="2"/>
+  <text x="625" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Pgm1/Pgm2</text>
+  <text x="625" y="260" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">phosphoglucomutase</text>
+  
+  <!-- Role explanation for Pgm1/Pgm2 -->
+  <rect x="520" y="380" width="200" height="60" rx="10" ry="10" fill="#f9f9f9" stroke="#666666" stroke-width="1" stroke-dasharray="3,1"/>
+  <text x="620" y="400" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Pgm1/Pgm2 enables glucose metabolism</text>
+  <text x="620" y="415" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">by converting Glucose-1-P to</text>
+  <text x="620" y="430" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Glucose-6-P for further glycolysis</text>
+  
+  <!-- Reaction arrows -->
+  <line x1="160" y1="200" x2="240" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="300" y1="200" x2="380" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="200" x2="520" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="580" y1="200" x2="660" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="580" y1="320" x2="660" y2="320" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Feedback loops -->
+  <line x1="690" y1="220" x2="690" y2="250" stroke="#000000" stroke-width="2" stroke-dasharray="5,2"/>
+  <line x1="690" y1="250" x2="550" y2="250" stroke="#000000" stroke-width="2" stroke-dasharray="5,2"/>
+  <line x1="550" y1="250" x2="550" y2="300" stroke="#000000" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <line x1="550" y1="340" x2="550" y2="460" stroke="#000000" stroke-width="2" stroke-dasharray="5,2"/>
+  <line x1="550" y1="460" x2="205" y2="460" stroke="#000000" stroke-width="2" stroke-dasharray="5,2"/>
+  <line x1="205" y1="460" x2="205" y2="220" stroke="#000000" stroke-width="2" stroke-dasharray="5,2" marker-end="url(#dashedarrow)"/>
+  
+  <!-- Arrowhead markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+    <marker id="dashedarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Process label -->
+  <rect x="250" y="500" width="300" height="60" rx="10" ry="10" fill="#e6ffe6" stroke="#000000" stroke-width="2"/>
+  <text x="400" y="525" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">GO:0033499</text>
+  <text x="400" y="545" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Galactose catabolic process via UDP-galactose</text>
+  
+  <!-- Connecting the process to all reactions -->
+  <line x1="400" y1="500" x2="400" y2="480" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="400" y1="480" x2="150" y2="480" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="400" y1="480" x2="650" y2="480" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="150" y1="480" x2="150" y2="230" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="270" y1="480" x2="270" y2="230" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="410" y1="480" x2="410" y2="230" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="550" y1="480" x2="550" y2="350" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="650" y1="480" x2="650" y2="230" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="680" y1="480" x2="680" y2="350" stroke="#000000" stroke-width="1" stroke-dasharray="4,2"/>
+  
+  <!-- Legend -->
+  <rect x="40" y="570" width="720" height="60" fill="#f9f9f9" stroke="#000000" stroke-width="1"/>
+  <text x="400" y="590" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">LEGEND</text>
+  
+  <!-- Legend items -->
+  <rect x="70" y="600" width="15" height="15" fill="#ffcc99" stroke="#000000" stroke-width="1"/>
+  <text x="95" y="612" font-family="Arial" font-size="12" text-anchor="start">Enzyme</text>
+  
+  <polygon points="150,607 155,600 165,600 170,607 165,614 155,614" fill="#e6f2ff" stroke="#000000" stroke-width="1"/>
+  <text x="180" y="612" font-family="Arial" font-size="12" text-anchor="start">Metabolite</text>
+  
+  <line x1="240" y1="607" x2="270" y2="607" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="285" y="612" font-family="Arial" font-size="12" text-anchor="start">Reaction</text>
+  
+  <line x1="340" y1="607" x2="370" y2="607" stroke="#000000" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="385" y="612" font-family="Arial" font-size="12" text-anchor="start">Implicit pathway</text>
+  
+  <rect x="480" y="600" width="15" height="15" fill="#e6ffe6" stroke="#000000" stroke-width="1"/>
+  <text x="505" y="612" font-family="Arial" font-size="12" text-anchor="start">GO Biological Process</text>
+  
+  <polygon points="620,607 625,600 635,600 640,607 635,614 625,614" fill="#e6f2ff" stroke="#000000" stroke-width="1" stroke-dasharray="5,2"/>
+  <text x="650" y="612" font-family="Arial" font-size="12" text-anchor="start">Implicit metabolite</text>
+</svg>

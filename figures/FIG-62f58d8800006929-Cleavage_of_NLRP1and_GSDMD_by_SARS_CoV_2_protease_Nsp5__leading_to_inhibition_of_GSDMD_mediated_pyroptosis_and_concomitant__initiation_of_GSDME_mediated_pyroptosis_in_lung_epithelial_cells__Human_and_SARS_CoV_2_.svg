@@ -1,0 +1,158 @@
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell outline -->
+  <rect x="0" y="0" width="900" height="700" fill="#f9f9f9"/>
+  <ellipse cx="450" cy="350" rx="420" ry="320" fill="#f7f7ff" stroke="#333" stroke-width="3"/>
+  
+  <!-- Cell title -->
+  <text x="450" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Lung Epithelial Cell (CL:0000082)</text>
+  
+  <!-- Subcellular compartments -->
+  <rect x="120" y="100" width="650" height="400" rx="10" ry="10" fill="#e6f2ff" stroke="#666" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="140" y="130" font-family="Arial" font-size="18" font-weight="bold">Cytosol (GO:0005829)</text>
+  
+  <rect x="70" y="520" width="750" height="100" rx="5" ry="5" fill="#ffe6e6" stroke="#666" stroke-width="2"/>
+  <text x="90" y="545" font-family="Arial" font-size="18" font-weight="bold">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- SARS-CoV-2 entry into cell -->
+  <ellipse cx="170" cy="75" rx="70" ry="40" fill="#ffcccc" stroke="#cc0000" stroke-width="3"/>
+  <text x="170" y="75" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">SARS-CoV-2</text>
+  <path d="M170 115 L170 160" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- SARS-CoV-2 Nsp5 in cytoplasm -->
+  <circle cx="170" cy="195" r="35" fill="#ff9999" stroke="#cc0000" stroke-width="2.5"/>
+  <text x="170" y="190" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Nsp5</text>
+  <text x="170" y="210" font-family="Arial" font-size="11" text-anchor="middle">P0DTD1-PRO</text>
+  <text x="240" y="180" font-family="Arial" font-size="14" fill="#666">Viral protease</text>
+  <text x="240" y="200" font-family="Arial" font-size="14" fill="#666">GO:0004197</text>
+  
+  <!-- NLRP1 pathway -->
+  <rect x="270" y="160" width="90" height="40" rx="5" ry="5" fill="#ccffcc" stroke="#339933" stroke-width="2.5"/>
+  <text x="315" y="185" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">NLRP1</text>
+  
+  <!-- Nsp5 cleaving NLRP1 -->
+  <path d="M205 195 L270 180" stroke="#ff0000" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrowhead_red)"/>
+  <text x="240" y="170" font-family="Arial" font-size="14" fill="#ff0000" text-anchor="middle" font-weight="bold">Cleaves</text>
+  
+  <!-- NLRP1 downstream effects -->
+  <rect x="400" y="160" width="90" height="40" rx="5" ry="5" fill="#ccffcc" stroke="#339933" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <text x="445" y="185" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">NLRP1*</text>
+  <path d="M360 180 L400 180" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- CASP1 activation -->
+  <rect x="400" y="240" width="90" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#996633" stroke-width="2.5"/>
+  <text x="445" y="265" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">CASP1</text>
+  <path d="M445 200 L445 240" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="460" y="225" font-family="Arial" font-size="14" text-anchor="left">Activation</text>
+  
+  <!-- GSDMD pathway -->
+  <rect x="250" y="300" width="90" height="40" rx="5" ry="5" fill="#99ccff" stroke="#336699" stroke-width="2.5"/>
+  <text x="295" y="325" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">GSDMD</text>
+  
+  <!-- CASP1 cleaving GSDMD -->
+  <path d="M400 260 L295 300" stroke="#00aa00" stroke-width="2.5" marker-end="url(#arrowhead_green)"/>
+  <text x="335" y="270" font-family="Arial" font-size="14" fill="#00aa00" text-anchor="middle" font-weight="bold">Cleaves</text>
+  
+  <!-- Nsp5 cleaving GSDMD -->
+  <path d="M170 230 L250 300" stroke="#ff0000" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrowhead_red)"/>
+  <text x="185" y="260" font-family="Arial" font-size="14" fill="#ff0000" text-anchor="middle" font-weight="bold">Cleaves</text>
+  
+  <!-- GSDMD N-terminal fragment -->
+  <rect x="250" y="380" width="90" height="40" rx="5" ry="5" fill="#99ccff" stroke="#336699" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <text x="295" y="400" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">GSDMD-N</text>
+  <text x="295" y="420" font-family="Arial" font-size="12" text-anchor="middle">(Cleaved)</text>
+  <path d="M295 340 L295 380" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- GSDMD pore in membrane - inhibited by Nsp5 -->
+  <path d="M295 420 L295 520" stroke="#333" stroke-width="2.5" stroke-dasharray="7,3"/>
+  <circle cx="295" cy="570" r="30" fill="#99ccff" stroke="#336699" stroke-width="2.5" stroke-dasharray="7,3" opacity="0.6"/>
+  <text x="295" y="575" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="middle">PORE</text>
+  <line x1="265" y1="570" x2="325" y2="570" stroke="red" stroke-width="4"/>
+  <text x="295" y="480" font-family="Arial" font-size="18" fill="red" text-anchor="middle" font-weight="bold">INHIBITED</text>
+  <text x="295" y="500" font-family="Arial" font-size="14" fill="red" text-anchor="middle">by Nsp5 cleavage</text>
+  
+  <!-- CASP8 pathway -->
+  <rect x="520" y="240" width="90" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#996633" stroke-width="2.5"/>
+  <text x="565" y="265" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">CASP8</text>
+  <path d="M490 260 L520 260" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- CASP3 activation -->
+  <rect x="520" y="320" width="90" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#996633" stroke-width="2.5"/>
+  <text x="565" y="345" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">CASP3</text>
+  <path d="M565 280 L565 320" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="580" y="305" font-family="Arial" font-size="14" text-anchor="left">Activation</text>
+  
+  <!-- GSDME pathway -->
+  <rect x="680" y="320" width="90" height="40" rx="5" ry="5" fill="#cc99ff" stroke="#663399" stroke-width="2.5"/>
+  <text x="725" y="345" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">GSDME</text>
+  
+  <!-- CASP3 cleaving GSDME -->
+  <path d="M610 340 L680 340" stroke="#00aa00" stroke-width="2.5" marker-end="url(#arrowhead_green)"/>
+  <text x="645" y="330" font-family="Arial" font-size="14" fill="#00aa00" text-anchor="middle" font-weight="bold">Cleaves</text>
+  
+  <!-- GSDME N-terminal fragment -->
+  <rect x="680" y="400" width="90" height="40" rx="5" ry="5" fill="#cc99ff" stroke="#663399" stroke-width="2.5"/>
+  <text x="725" y="420" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">GSDME-N</text>
+  <text x="725" y="440" font-family="Arial" font-size="12" text-anchor="middle">(Cleaved)</text>
+  <path d="M725 360 L725 400" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- GSDME pore in membrane -->
+  <path d="M725 440 L725 520" stroke="#333" stroke-width="2.5"/>
+  <circle cx="725" cy="570" r="30" fill="#cc99ff" stroke="#663399" stroke-width="2.5"/>
+  <text x="725" y="575" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="middle">PORE</text>
+  
+  <!-- Outcomes -->
+  <rect x="220" y="630" width="180" height="40" rx="5" ry="5" fill="#ffcccc" stroke="#cc0000" stroke-width="2.5" stroke-dasharray="7,3" opacity="0.7"/>
+  <text x="310" y="655" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">GSDMD Pyroptosis ✗</text>
+  
+  <rect x="635" y="630" width="180" height="40" rx="5" ry="5" fill="#ffcccc" stroke="#cc0000" stroke-width="2.5"/>
+  <text x="725" y="655" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">GSDME Pyroptosis ✓</text>
+  
+  <!-- TITLE -->
+  <text x="450" y="680" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">
+    SARS-CoV-2 Nsp5 redirects pyroptosis from GSDMD to GSDME pathway
+  </text>
+
+  <!-- Improved Legend with Process Symbols -->
+  <!-- Rectangle with title -->
+  <rect x="610" y="65" width="210" height="190" rx="10" ry="10" fill="#ffffff" fill-opacity="0.7" stroke="#444" stroke-width="1"/>
+  <text x="715" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">LEGEND</text>
+  
+  <!-- Protein types -->
+  <rect x="620" y="95" width="15" height="15" fill="#ccffcc" stroke="#339933" stroke-width="1.5"/>
+  <text x="645" y="108" font-family="Arial" font-size="13">NLRP1 (Q9C000)</text>
+  
+  <rect x="620" y="115" width="15" height="15" fill="#99ccff" stroke="#336699" stroke-width="1.5"/>
+  <text x="645" y="128" font-family="Arial" font-size="13">GSDMD (P57764)</text>
+  
+  <rect x="620" y="135" width="15" height="15" fill="#ffcc99" stroke="#996633" stroke-width="1.5"/>
+  <text x="645" y="148" font-family="Arial" font-size="13">Caspases (Various)</text>
+  
+  <rect x="620" y="155" width="15" height="15" fill="#cc99ff" stroke="#663399" stroke-width="1.5"/>
+  <text x="645" y="168" font-family="Arial" font-size="13">GSDME (O60443)</text>
+  
+  <rect x="620" y="175" width="15" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="645" y="188" font-family="Arial" font-size="13">SARS-CoV-2 Nsp5</text>
+  
+  <!-- Process types -->
+  <line x1="620" y1="200" x2="640" y2="200" stroke="#00aa00" stroke-width="2.5" marker-end="url(#arrowhead_green)"/>
+  <text x="645" y="204" font-family="Arial" font-size="13">Host cleavage</text>
+  
+  <line x1="620" y1="220" x2="640" y2="220" stroke="#ff0000" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrowhead_red)"/>
+  <text x="645" y="224" font-family="Arial" font-size="13">Viral cleavage</text>
+  
+  <line x1="620" y1="240" x2="640" y2="240" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="645" y="244" font-family="Arial" font-size="13">Activation</text>
+
+  <!-- Arrowhead definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="arrowhead_red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff0000"/>
+    </marker>
+    <marker id="arrowhead_green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00aa00"/>
+    </marker>
+  </defs>
+</svg>

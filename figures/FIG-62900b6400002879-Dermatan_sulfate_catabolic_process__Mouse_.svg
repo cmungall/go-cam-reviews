@@ -1,0 +1,121 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Title -->
+  <rect width="800" height="600" fill="white"/>
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Dermatan Sulfate Catabolic Process (Mouse)</text>
+  
+  <!-- Cell outline representation -->
+  <rect x="100" y="80" width="600" height="450" rx="20" ry="20" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Pathway description -->
+  <text x="400" y="70" font-family="Arial" font-size="15" text-anchor="middle" font-style="italic">Sequential enzymatic degradation of dermatan sulfate within lysosomes</text>
+  
+  <!-- Lysosome outline -->
+  <ellipse cx="400" cy="300" rx="250" ry="180" fill="#ffe6e6" stroke="#990000" stroke-width="3" stroke-dasharray="none"/>
+  <text x="400" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#990000">Lysosome (GO:0005764)</text>
+  
+  <!-- Dermatan sulfate substrate -->
+  <rect x="270" y="200" width="260" height="30" rx="5" ry="5" fill="#d1e7ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="220" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">Dermatan Sulfate (CHEBI:18376)</text>
+  
+  <!-- Enzyme 1: ARSB -->
+  <rect x="150" y="280" width="120" height="40" rx="5" ry="5" fill="#e6ffe6" stroke="#009900" stroke-width="2"/>
+  <text x="210" y="305" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">ARSB (MGI:88075)</text>
+  
+  <!-- Enzyme 2: IDS -->
+  <rect x="320" y="280" width="120" height="40" rx="5" ry="5" fill="#e6ffe6" stroke="#009900" stroke-width="2"/>
+  <text x="380" y="305" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">IDS (MGI:96417)</text>
+  
+  <!-- Enzyme 3: HEXA -->
+  <rect x="490" y="280" width="120" height="40" rx="5" ry="5" fill="#e6ffe6" stroke="#009900" stroke-width="2"/>
+  <text x="550" y="305" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">HEXA (MGI:96073)</text>
+  
+  <!-- Enzyme 4: HEXB -->
+  <rect x="230" y="360" width="120" height="40" rx="5" ry="5" fill="#e6ffe6" stroke="#009900" stroke-width="2"/>
+  <text x="290" y="385" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">HEXB (MGI:96074)</text>
+  
+  <!-- Enzyme 5: IDUA -->
+  <rect x="410" y="360" width="120" height="40" rx="5" ry="5" fill="#e6ffe6" stroke="#009900" stroke-width="2"/>
+  <text x="470" y="385" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">IDUA (MGI:96418)</text>
+  
+  <!-- Enzyme functions with increased font size -->
+  <text x="210" y="335" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">N-acetylgalactosamine-</text>
+  <text x="210" y="348" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">6-sulfatase activity</text>
+  
+  <text x="380" y="335" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">iduronate-2-sulfatase</text>
+  <text x="380" y="348" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">activity</text>
+  
+  <text x="550" y="335" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">beta-N-acetyl-</text>
+  <text x="550" y="348" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">hexosaminidase activity</text>
+  
+  <text x="290" y="415" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">beta-N-acetyl-</text>
+  <text x="290" y="428" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">hexosaminidase activity</text>
+  
+  <text x="470" y="415" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">L-iduronidase</text>
+  <text x="470" y="428" font-family="Arial" font-size="13" text-anchor="middle" fill="#006600" font-weight="bold">activity</text>
+  
+  <!-- Substrate arrow -->
+  <path d="M 400 230 L 400 260 L 210 260 L 210 280" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead1)"/>
+  
+  <!-- Reaction arrows representing causal relationships with high-contrast color coding -->
+  <!-- ARSB to IDS -->
+  <path d="M 270 300 L 320 300" stroke="#7700cc" stroke-width="3" marker-end="url(#arrowhead2)"/>
+  
+  <!-- IDS to HEXB and HEXA -->
+  <path d="M 380 320 L 380 380 L 350 380" stroke="#dd5500" stroke-width="3" marker-end="url(#arrowhead3)"/>
+  <path d="M 380 320 L 380 340 L 550 340 L 550 320" stroke="#dd5500" stroke-width="3" marker-end="url(#arrowhead3)"/>
+  
+  <!-- HEXB to IDUA -->
+  <path d="M 350 380 L 410 380" stroke="#008800" stroke-width="3" marker-end="url(#arrowhead4)"/>
+  
+  <!-- HEXA to IDUA -->
+  <path d="M 550 320 L 550 360 L 530 360" stroke="#008800" stroke-width="3" marker-end="url(#arrowhead4)"/>
+  
+  <!-- Arrow marker definitions with different high-contrast colors -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7700cc"/>
+    </marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dd5500"/>
+    </marker>
+    <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#008800"/>
+    </marker>
+    <marker id="arrowhead5" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc9900"/>
+    </marker>
+  </defs>
+  
+  <!-- Final product representation -->
+  <rect x="320" y="450" width="160" height="30" rx="5" ry="5" fill="#ffecb3" stroke="#cc9900" stroke-width="2"/>
+  <text x="400" y="470" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">Catabolized Products</text>
+  <path d="M 470 400 L 470 430 L 400 430 L 400 450" stroke="#cc9900" stroke-width="3" marker-end="url(#arrowhead5)"/>
+  
+  <!-- Process annotation -->
+  <text x="400" y="500" font-family="Arial" font-size="15" font-weight="bold" font-style="italic" text-anchor="middle">GO:0030209 - Dermatan Sulfate Catabolic Process</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="480" width="180" height="125" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="670" y="495" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <rect x="590" y="505" width="20" height="10" fill="#e6ffe6" stroke="#009900" stroke-width="1"/>
+  <text x="615" y="515" font-family="Arial" font-size="12" text-anchor="start">Enzyme</text>
+  
+  <rect x="590" y="525" width="20" height="10" fill="#d1e7ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="615" y="535" font-family="Arial" font-size="12" text-anchor="start">Substrate</text>
+  
+  <rect x="590" y="545" width="20" height="10" fill="#ffecb3" stroke="#cc9900" stroke-width="1"/>
+  <text x="615" y="555" font-family="Arial" font-size="12" text-anchor="start">Products</text>
+  
+  <line x1="590" y1="565" x2="610" y2="565" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead1)"/>
+  <text x="615" y="570" font-family="Arial" font-size="12" text-anchor="start">Substrate flow</text>
+  
+  <line x1="590" y1="585" x2="610" y2="585" stroke="#7700cc" stroke-width="3" marker-end="url(#arrowhead2)"/>
+  <text x="615" y="590" font-family="Arial" font-size="12" text-anchor="start">ARSB → IDS</text>
+  
+  <line x1="590" y1="600" x2="610" y2="600" stroke="#dd5500" stroke-width="3" marker-end="url(#arrowhead3)"/>
+  <text x="615" y="605" font-family="Arial" font-size="12" text-anchor="start">IDS → HEXA/HEXB</text>
+</svg>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background representing a hepatocyte -->
+  <rect x="0" y="0" width="800" height="600" fill="#F9F4E8" stroke="none"/>
+  <text x="20" y="30" font-family="Arial" font-size="22" font-weight="bold" fill="#333">Liver Apoptosis Regulation by CASP6 (Human)</text>
+  
+  <!-- Cell membrane -->
+  <path d="M50,100 L750,100 L750,550 L50,550 Z" fill="none" stroke="#888" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="60" y="90" font-family="Arial" font-size="18" font-weight="bold" fill="#666">Hepatocyte</text>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="650" cy="400" rx="80" ry="50" fill="#FFD6CC" stroke="#D86C70" stroke-width="3"/>
+  <path d="M600,380 Q650,350 700,380 Q650,400 700,420 Q650,450 600,420 Q650,400 600,380" fill="#FFB7A8" stroke="none"/>
+  <text x="650" y="400" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Mitochondrion</text>
+  
+  <!-- Cytochrome c -->
+  <circle cx="660" cy="390" r="12" fill="#E74C3C" stroke="#922B21" stroke-width="2"/>
+  <text x="720" y="390" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Cytochrome c</text>
+  
+  <!-- Proteins and their activities -->
+  <!-- PRKAA1 -->
+  <rect x="150" y="200" width="120" height="60" rx="10" ry="10" fill="#AED6F1" stroke="#2E86C1" stroke-width="3"/>
+  <text x="210" y="235" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">PRKAA1</text>
+  <text x="210" y="190" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Protein Ser/Thr Kinase</text>
+  
+  <!-- PRKAA2 -->
+  <rect x="150" y="320" width="120" height="60" rx="10" ry="10" fill="#AED6F1" stroke="#2E86C1" stroke-width="3"/>
+  <text x="210" y="355" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">PRKAA2</text>
+  <text x="210" y="310" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Protein Ser/Thr Kinase</text>
+  
+  <!-- CASP6 -->
+  <rect x="350" y="260" width="120" height="60" rx="10" ry="10" fill="#D5F5E3" stroke="#27AE60" stroke-width="3"/>
+  <text x="410" y="295" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">CASP6</text>
+  <text x="410" y="250" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Cysteine Endopeptidase</text>
+  
+  <!-- BID -->
+  <rect x="550" y="260" width="120" height="60" rx="10" ry="10" fill="#FADBD8" stroke="#E74C3C" stroke-width="3"/>
+  <text x="610" y="295" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">BID</text>
+  <text x="610" y="250" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Endopeptidase Regulator</text>
+  
+  <!-- Arrows and Pathways - Now color-coded -->
+  <!-- PRKAA1 to CASP6 inhibition - Red for inhibition -->
+  <line x1="270" y1="230" x2="340" y2="260" stroke="#D35400" stroke-width="3"/>
+  <polygon points="340,260 328,248 320,265" fill="#D35400" stroke="none"/>
+  <text x="305" y="235" font-family="Arial" font-size="14" font-weight="bold" fill="#D35400" text-anchor="middle">Inhibits</text>
+  <text x="305" y="250" font-family="Arial" font-size="12" fill="#666" font-weight="bold" text-anchor="middle">GO:1903944</text>
+  
+  <!-- PRKAA2 to CASP6 inhibition - Red for inhibition -->
+  <line x1="270" y1="350" x2="340" y2="320" stroke="#D35400" stroke-width="3"/>
+  <polygon points="340,320 328,332 320,315" fill="#D35400" stroke="none"/>
+  <text x="305" y="355" font-family="Arial" font-size="14" font-weight="bold" fill="#D35400" text-anchor="middle">Inhibits</text>
+  <text x="305" y="370" font-family="Arial" font-size="12" fill="#666" font-weight="bold" text-anchor="middle">GO:1903944</text>
+  
+  <!-- CASP6 to BID activation - Green for activation -->
+  <line x1="470" y1="290" x2="540" y2="290" stroke="#27AE60" stroke-width="3"/>
+  <polygon points="540,290 528,282 528,298" fill="#27AE60" stroke="none"/>
+  <text x="505" y="280" font-family="Arial" font-size="14" font-weight="bold" fill="#27AE60" text-anchor="middle">Activates</text>
+  <text x="505" y="295" font-family="Arial" font-size="12" fill="#666" font-weight="bold" text-anchor="middle">GO:0097284</text>
+  
+  <!-- BID to Cytochrome c release - Purple for promotion -->
+  <line x1="610" y1="320" x2="650" y2="380" stroke="#8E44AD" stroke-width="3"/>
+  <polygon points="650,380 638,368 630,385" fill="#8E44AD" stroke="none"/>
+  <text x="640" y="350" font-family="Arial" font-size="14" font-weight="bold" fill="#8E44AD" text-anchor="middle">Promotes release</text>
+  <text x="640" y="365" font-family="Arial" font-size="12" fill="#666" font-weight="bold" text-anchor="middle">GO:0090200</text>
+  
+  <!-- Apoptosis text -->
+  <text x="400" y="500" font-family="Arial" font-size="20" font-weight="bold" fill="#B03A2E" text-anchor="middle">Hepatocyte Apoptotic Process</text>
+  <path d="M400,510 Q480,530 560,510 Q480,550 400,510" fill="none" stroke="#B03A2E" stroke-width="3" stroke-dasharray="5,3"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="300" height="120" fill="white" stroke="#888" stroke-width="2"/>
+  <text x="60" y="540" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Legend:</text>
+  
+  <!-- Protein types -->
+  <rect x="60" y="550" width="20" height="10" fill="#AED6F1" stroke="#2E86C1" stroke-width="2"/>
+  <text x="85" y="560" font-family="Arial" font-size="14" fill="#333">Kinases (PRKAA1/2)</text>
+  
+  <rect x="60" y="570" width="20" height="10" fill="#D5F5E3" stroke="#27AE60" stroke-width="2"/>
+  <text x="85" y="580" font-family="Arial" font-size="14" fill="#333">Caspase (CASP6)</text>
+  
+  <rect x="60" y="590" width="20" height="10" fill="#FADBD8" stroke="#E74C3C" stroke-width="2"/>
+  <text x="85" y="600" font-family="Arial" font-size="14" fill="#333">BID</text>
+  
+  <!-- Pathway types -->
+  <line x1="200" y1="555" x2="230" y2="555" stroke="#D35400" stroke-width="2"/>
+  <polygon points="230,555 225,550 225,560" fill="#D35400" stroke="none"/>
+  <text x="260" y="560" font-family="Arial" font-size="14" fill="#333">Inhibition</text>
+  
+  <line x1="200" y1="575" x2="230" y2="575" stroke="#27AE60" stroke-width="2"/>
+  <polygon points="230,575 225,570 225,580" fill="#27AE60" stroke="none"/>
+  <text x="260" y="580" font-family="Arial" font-size="14" fill="#333">Activation</text>
+  
+  <line x1="200" y1="595" x2="230" y2="595" stroke="#8E44AD" stroke-width="2"/>
+  <polygon points="230,595 225,590 225,600" fill="#8E44AD" stroke="none"/>
+  <text x="260" y="600" font-family="Arial" font-size="14" fill="#333">Promotion</text>
+</svg>

@@ -1,0 +1,128 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Nucleus -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f0ff" stroke="#000" stroke-width="2"/>
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Nucleus (GO:0005634)</text>
+  
+  <!-- Chromatin -->
+  <path d="M250,180 C300,150 350,200 400,170 C450,140 500,190 550,160" stroke="#8888aa" stroke-width="10" fill="none"/>
+  <text x="400" y="140" font-family="Arial" font-size="14" text-anchor="middle">Chromatin (GO:0000785)</text>
+  
+  <!-- PARP1 -->
+  <rect x="100" y="280" width="120" height="60" rx="10" ry="10" fill="#ff9999" stroke="#000" stroke-width="2"/>
+  <text x="160" y="305" font-family="Arial" font-size="14" text-anchor="middle">PARP1</text>
+  <text x="160" y="323" font-family="Arial" font-size="10" text-anchor="middle">(UniProtKB:P09874)</text>
+  <text x="160" y="335" font-family="Arial" font-size="8" text-anchor="middle">ADP-ribosyltransferase activity</text>
+  
+  <!-- NELFE -->
+  <rect x="340" y="280" width="120" height="60" rx="10" ry="10" fill="#99ff99" stroke="#000" stroke-width="2"/>
+  <text x="400" y="305" font-family="Arial" font-size="14" text-anchor="middle">NELFE</text>
+  <text x="400" y="323" font-family="Arial" font-size="10" text-anchor="middle">(UniProtKB:P18615)</text>
+  <text x="400" y="335" font-family="Arial" font-size="8" text-anchor="middle">mRNA binding (GO:0003729)</text>
+  
+  <!-- P-TEFb Complex -->
+  <rect x="550" y="240" width="180" height="80" rx="10" ry="10" fill="#9999ff" stroke="#000" stroke-width="2"/>
+  <text x="640" y="265" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">P-TEFb Complex</text>
+  
+  <!-- CDK9 -->
+  <rect x="560" y="280" width="80" height="30" rx="5" ry="5" fill="#aaaaff" stroke="#000" stroke-width="1"/>
+  <text x="600" y="297" font-family="Arial" font-size="12" text-anchor="middle">CDK9</text>
+  <text x="600" y="308" font-family="Arial" font-size="7" text-anchor="middle">(UniProtKB:P50750)</text>
+  
+  <!-- CCNT1 -->
+  <rect x="645" y="280" width="80" height="30" rx="5" ry="5" fill="#aaaaff" stroke="#000" stroke-width="1"/>
+  <text x="685" y="297" font-family="Arial" font-size="12" text-anchor="middle">CCNT1</text>
+  <text x="685" y="308" font-family="Arial" font-size="7" text-anchor="middle">(UniProtKB:O60563)</text>
+  
+  <!-- RNA Polymerase II -->
+  <rect x="340" y="400" width="120" height="60" rx="10" ry="10" fill="#ffcc99" stroke="#000" stroke-width="2"/>
+  <text x="400" y="425" font-family="Arial" font-size="14" text-anchor="middle">POLR2A</text>
+  <text x="400" y="443" font-family="Arial" font-size="10" text-anchor="middle">(UniProtKB:P24928-2)</text>
+  <text x="400" y="455" font-family="Arial" font-size="8" text-anchor="middle">RNA polymerase activity (GO:0003899)</text>
+  
+  <!-- Activities and Connections -->
+  <!-- PARP1 to NELFE -->
+  <path d="M220,300 C260,300 300,300 340,300" stroke="#e00" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#inhibit)" fill="none"/>
+  <text x="280" y="290" font-family="Arial" font-size="10" text-anchor="middle">inhibits</text>
+  
+  <!-- PARP1 functions -->
+  <path d="M120,280 C100,240 90,210 110,190" stroke="#080" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="75" y="220" font-family="Arial" font-size="9" text-anchor="middle">ADP-ribosylation</text>
+  <text x="75" y="232" font-family="Arial" font-size="9" text-anchor="middle">during DNA damage</text>
+  <text x="75" y="244" font-family="Arial" font-size="9" text-anchor="middle">(GO:0006974)</text>
+  
+  <path d="M190,280 C210,240 220,210 200,190" stroke="#080" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="230" y="220" font-family="Arial" font-size="9" text-anchor="middle">Positive regulation</text>
+  <text x="230" y="232" font-family="Arial" font-size="9" text-anchor="middle">of transcription</text>
+  <text x="230" y="244" font-family="Arial" font-size="9" text-anchor="middle">(GO:0032786)</text>
+  
+  <!-- NELFE activities -->
+  <path d="M400,280 C400,240 400,210 400,180" stroke="#080" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="430" y="230" font-family="Arial" font-size="10" text-anchor="middle">chromatin binding</text>
+  <text x="430" y="245" font-family="Arial" font-size="9" text-anchor="middle">(GO:0003682)</text>
+  
+  <!-- NELFE to RNA Pol II -->
+  <path d="M400,340 C400,360 400,380 400,400" stroke="#e00" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#inhibit)" fill="none"/>
+  <text x="450" y="370" font-family="Arial" font-size="9" text-anchor="middle">inhibits transcription</text>
+  <text x="450" y="382" font-family="Arial" font-size="9" text-anchor="middle">(GO:0034244)</text>
+  
+  <!-- CDK9 activities -->
+  <path d="M580,310 C500,340 460,370 400,400" stroke="#080" stroke-width="2" marker-end="url(#phosphorylate)" fill="none"/>
+  <text x="510" y="350" font-family="Arial" font-size="9" text-anchor="middle">CTD kinase activity</text>
+  <text x="510" y="362" font-family="Arial" font-size="9" text-anchor="middle">(GO:0008353)</text>
+  
+  <!-- CDK9 to NELFE -->
+  <path d="M560,290 C520,290 480,290 460,290" stroke="#080" stroke-width="2" marker-end="url(#phosphorylate)" fill="none"/>
+  <text x="510" y="280" font-family="Arial" font-size="9" text-anchor="middle">phosphorylates</text>
+  <text x="510" y="262" font-family="Arial" font-size="9" text-anchor="middle">(GO:0004693)</text>
+  
+  <!-- CCNT1 activity -->
+  <path d="M660,310 C620,350 550,380 460,410" stroke="#080" stroke-width="2" marker-end="url(#activate)" fill="none"/>
+  <text x="580" y="390" font-family="Arial" font-size="9" text-anchor="middle">scaffold activity</text>
+  <text x="580" y="402" font-family="Arial" font-size="9" text-anchor="middle">(GO:0140693)</text>
+  
+  <!-- Positive regulation pathway -->
+  <path d="M400,460 C400,480 480,500 560,480 C640,460 670,430 680,370" stroke="#088" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  <text x="550" y="490" font-family="Arial" font-size="10" text-anchor="middle" fill="#088">positive regulation of transcription elongation</text>
+  <text x="550" y="505" font-family="Arial" font-size="10" text-anchor="middle" fill="#088">(GO:0032968)</text>
+  
+  <!-- Transcription label -->
+  <text x="300" y="470" font-family="Arial" font-size="9" text-anchor="middle">transcription by</text>
+  <text x="300" y="482" font-family="Arial" font-size="9" text-anchor="middle">RNA polymerase II</text>
+  <text x="300" y="494" font-family="Arial" font-size="9" text-anchor="middle">(GO:0006366)</text>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 Z" fill="#080"/>
+    </marker>
+    <marker id="inhibit" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L0,10 M10,0 L10,10" stroke="#e00" stroke-width="1.5"/>
+    </marker>
+    <marker id="activate" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 Z" fill="#080"/>
+    </marker>
+    <marker id="phosphorylate" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto">
+      <circle cx="6" cy="6" r="5" fill="#d80" fill-opacity="0.6"/>
+      <path d="M0,6 L12,6" stroke="#080" stroke-width="1.5"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Regulation of Transcription Elongation by the P-TEFb Complex, NELFE and PARP1</text>
+  
+  <!-- Legend -->
+  <rect x="40" y="490" width="250" height="90" rx="5" ry="5" fill="#ffffff" stroke="#000" stroke-width="1"/>
+  <text x="165" y="510" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Activation arrow -->
+  <line x1="60" y1="530" x2="100" y2="530" stroke="#080" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="170" y="533" font-family="Arial" font-size="12" text-anchor="start">Activation</text>
+  
+  <!-- Inhibition arrow -->
+  <line x1="60" y1="550" x2="100" y2="550" stroke="#e00" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#inhibit)"/>
+  <text x="170" y="553" font-family="Arial" font-size="12" text-anchor="start">Inhibition</text>
+  
+  <!-- Phosphorylation arrow -->
+  <line x1="60" y1="570" x2="100" y2="570" stroke="#080" stroke-width="2" marker-end="url(#phosphorylate)"/>
+  <text x="170" y="573" font-family="Arial" font-size="12" text-anchor="start">Phosphorylation</text>
+</svg>

@@ -1,0 +1,135 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline and compartments -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f8f8" stroke="#000" stroke-width="2"/>
+  
+  <!-- Compartment Labels -->
+  <rect x="600" y="80" width="120" height="25" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="660" y="97" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CYTOPLASM</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="350" rx="120" ry="100" fill="#e6f2ff" stroke="#000" stroke-width="2"/>
+  <rect x="220" y="290" width="80" height="25" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="260" y="308" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">NUCLEUS</text>
+  
+  <!-- ER -->
+  <path d="M380,150 Q500,100 620,150 Q670,200 620,250 Q500,300 380,250 Q330,200 380,150" fill="#ffe6cc" stroke="#000" stroke-width="2"/>
+  <rect x="450" y="160" width="200" height="25" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="550" y="178" font-family="Arial" font-size="15" text-anchor="middle" font-weight="bold">ENDOPLASMIC RETICULUM</text>
+  
+  <!-- Golgi -->
+  <path d="M500,350 Q550,320 600,350 Q620,380 600,410 Q550,440 500,410 Q480,380 500,350" fill="#e6ccff" stroke="#000" stroke-width="2"/>
+  <rect x="520" y="370" width="60" height="25" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="550" y="388" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">GOLGI</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="70" width="180" height="160" fill="white" stroke="#000" stroke-width="1" rx="5" ry="5"/>
+  <text x="140" y="90" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">LEGEND</text>
+  
+  <circle cx="70" cy="115" r="10" fill="#ff9999" stroke="#000" stroke-width="1"/>
+  <text x="140" y="120" font-family="Arial" font-size="14">Kinases/Enzymes</text>
+  
+  <rect x="60" y="135" width="20" height="20" fill="#99ccff" stroke="#000" stroke-width="1"/>
+  <text x="140" y="150" font-family="Arial" font-size="14">Regulatory Proteins</text>
+  
+  <ellipse cx="70" cy="175" rx="12" ry="9" fill="#ffcc99" stroke="#000" stroke-width="1"/>
+  <text x="140" y="180" font-family="Arial" font-size="14">Transcription Factors</text>
+  
+  <line x1="60" y1="200" x2="90" y2="200" stroke="#000" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="140" y="205" font-family="Arial" font-size="14">Transport</text>
+  
+  <!-- ER Components -->
+  <!-- PCK1 -->
+  <circle cx="420" cy="200" r="22" fill="#ff9999" stroke="#000" stroke-width="1.5"/>
+  <text x="420" y="205" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PCK1</text>
+  
+  <!-- INSIG1 -->
+  <rect x="480" y="190" width="45" height="22" fill="#99ccff" stroke="#000" stroke-width="1.5"/>
+  <text x="502" y="206" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">INSIG1</text>
+  
+  <!-- INSIG2 -->
+  <rect x="530" y="190" width="45" height="22" fill="#99ccff" stroke="#000" stroke-width="1.5"/>
+  <text x="552" y="206" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">INSIG2</text>
+  
+  <!-- SREBP-SCAP Complex -->
+  <ellipse cx="505" cy="235" rx="48" ry="22" fill="#ffcc99" stroke="#000" stroke-width="1.5"/>
+  <text x="505" y="240" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SREBP-SCAP</text>
+  
+  <!-- Cytosolic AKT1 -->
+  <circle cx="400" cy="290" r="22" fill="#ff9999" stroke="#000" stroke-width="1.5"/>
+  <text x="400" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">AKT1</text>
+  
+  <!-- Golgi Components -->
+  <!-- MBTPS1 -->
+  <rect x="510" y="320" width="45" height="22" fill="#99ccff" stroke="#000" stroke-width="1.5"/>
+  <text x="532" y="335" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">MBTPS1</text>
+  
+  <!-- MBTPS2 -->
+  <rect x="560" y="320" width="45" height="22" fill="#99ccff" stroke="#000" stroke-width="1.5"/>
+  <text x="582" y="335" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">MBTPS2</text>
+  
+  <!-- Nuclear Components -->
+  <!-- KPNB1 -->
+  <rect x="170" y="320" width="45" height="22" fill="#99ccff" stroke="#000" stroke-width="1.5"/>
+  <text x="192" y="335" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">KPNB1</text>
+  
+  <!-- SREBF1 -->
+  <ellipse cx="220" cy="370" rx="32" ry="22" fill="#ffcc99" stroke="#000" stroke-width="1.5"/>
+  <text x="220" y="375" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SREBF1</text>
+  
+  <!-- SREBF2 -->
+  <ellipse cx="280" cy="370" rx="32" ry="22" fill="#ffcc99" stroke="#000" stroke-width="1.5"/>
+  <text x="280" y="375" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SREBF2</text>
+  
+  <!-- Process Arrows and Interactions -->
+  
+  <!-- PCK1 regulating lipid biosynthesis -->
+  <path d="M420,178 L420,140" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="430" y="150" width="115" height="20" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="490" y="165" font-family="Arial" font-size="12" text-anchor="middle">+Lipid biosynthesis</text>
+  
+  <!-- AKT1 phosphorylating PCK1 -->
+  <path d="M400,268 L420,222" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="390" y="240" width="25" height="20" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="402" y="255" font-family="Arial" font-size="12" text-anchor="middle">+P</text>
+  
+  <!-- INSIG1/2 sequestering SREBP-SCAP -->
+  <path d="M505,212 L505,213" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="510" y="210" width="70" height="20" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="545" y="225" font-family="Arial" font-size="12" text-anchor="middle">Sequester</text>
+  
+  <!-- SREBP-SCAP to Golgi -->
+  <path d="M505,257 Q510,300 530,320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,2"/>
+  <rect x="520" y="280" width="70" height="20" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="555" y="295" font-family="Arial" font-size="12" text-anchor="middle">Transport</text>
+  
+  <!-- MBTPS1/2 cleaving SREBP -->
+  <path d="M550,342 L550,360" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="555" y="345" width="45" height="20" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="578" y="360" font-family="Arial" font-size="12" text-anchor="middle">Cleave</text>
+  
+  <!-- SREBP fragment to nucleus -->
+  <path d="M550,360 Q450,400 300,370" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,2"/>
+  <rect x="400" y="390" width="100" height="20" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="450" y="405" font-family="Arial" font-size="12" text-anchor="middle">Cleaved SREBP</text>
+  
+  <!-- KPNB1 importing SREBP -->
+  <path d="M215,320 Q240,320 240,348" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="210" y="300" width="50" height="20" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="235" y="315" font-family="Arial" font-size="12" text-anchor="middle">Import</text>
+  
+  <!-- SREBF1/2 activating gene expression -->
+  <path d="M250,392 Q250,420 250,430" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="150" y="410" width="200" height="20" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="250" y="425" font-family="Arial" font-size="12" text-anchor="middle">+Cholesterol biosynthesis genes</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <rect x="200" y="10" width="400" height="30" fill="white" opacity="0.8" rx="5" ry="5"/>
+  <text x="400" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Regulation of Cholesterol Biosynthesis by SREBP</text>
+</svg>

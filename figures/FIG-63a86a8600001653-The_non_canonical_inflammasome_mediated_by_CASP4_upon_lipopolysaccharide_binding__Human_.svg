@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#ffffff"/>
+  
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="350" rx="350" ry="220" fill="#f8f9fa" stroke="#333333" stroke-width="3"/>
+  
+  <!-- Plasma membrane -->
+  <ellipse cx="400" cy="350" rx="350" ry="220" fill="none" stroke="#333333" stroke-width="5" stroke-dasharray="5,5"/>
+  
+  <!-- Cytosol label -->
+  <text x="400" y="200" font-family="Arial" font-size="20" text-anchor="middle" fill="#000000">Cytosol</text>
+  
+  <!-- Extracellular space label -->
+  <text x="400" y="80" font-family="Arial" font-size="20" text-anchor="middle" fill="#000000">Extracellular Space</text>
+  
+  <!-- 1. Lipid A binding to CASP4 -->
+  <circle cx="200" cy="300" r="30" fill="#a6d8f0" stroke="#000000" stroke-width="2"/>
+  <text x="200" y="305" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">Lipid A</text>
+  
+  <circle cx="300" cy="300" r="35" fill="#f8c471" stroke="#000000" stroke-width="2"/>
+  <text x="300" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">CASP4</text>
+  <text x="300" y="313" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">(inactive)</text>
+  
+  <line x1="230" y1="300" x2="265" y2="300" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="248" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">binds</text>
+  
+  <!-- 2. CASP4 activation -->
+  <circle cx="400" cy="300" r="35" fill="#f8c471" stroke="#000000" stroke-width="2"/>
+  <text x="400" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">CASP4</text>
+  <text x="400" y="313" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">(active)</text>
+  
+  <line x1="335" y1="300" x2="365" y2="300" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="350" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">auto-activation</text>
+  
+  <!-- 3. CASP4 cleaves GSDMD -->
+  <circle cx="500" cy="300" r="35" fill="#c39bd3" stroke="#000000" stroke-width="2"/>
+  <text x="500" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">GSDMD</text>
+  <text x="500" y="313" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">(inactive)</text>
+  
+  <line x1="435" y1="300" x2="465" y2="300" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="450" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">cleaves</text>
+  
+  <!-- 4. GSDMD translocation and pore formation -->
+  <circle cx="600" cy="300" r="35" fill="#c39bd3" stroke="#000000" stroke-width="2"/>
+  <text x="600" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">GSDMD</text>
+  <text x="600" y="313" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">(active)</text>
+  
+  <line x1="535" y1="300" x2="565" y2="300" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="550" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">activates</text>
+  
+  <path d="M600,265 C600,230 600,230 640,200" stroke="#000000" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="640" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">translocates</text>
+  
+  <!-- 5. GSDMD pores in membrane -->
+  <circle cx="650" cy="130" r="35" fill="#c39bd3" stroke="#000000" stroke-width="2"/>
+  <text x="650" y="125" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">GSDMD</text>
+  <text x="650" y="143" font-family="Arial" font-size="11" text-anchor="middle" fill="#000000">pores</text>
+  
+  <!-- 6. IL-18 secretion -->
+  <circle cx="500" cy="400" r="30" fill="#82e0aa" stroke="#000000" stroke-width="2"/>
+  <text x="500" y="405" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">IL-18</text>
+  
+  <path d="M500,370 C500,330 550,200 650,165" stroke="#000000" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="580" y="250" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">secretion</text>
+  
+  <!-- 7. IL-18 in extracellular space -->
+  <circle cx="650" cy="80" r="30" fill="#82e0aa" stroke="#000000" stroke-width="2"/>
+  <text x="650" y="85" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">IL-18</text>
+  
+  <!-- 8. NLRP3 signaling -->
+  <circle cx="300" cy="400" r="35" fill="#f9e79f" stroke="#000000" stroke-width="2"/>
+  <text x="300" y="405" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000000">NLRP3</text>
+  
+  <line x1="335" y1="400" x2="380" y2="400" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="350" y="390" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">signals</text>
+  
+  <!-- Add PYCARD protein -->
+  <circle cx="400" cy="400" r="25" fill="#f5b7b1" stroke="#000000" stroke-width="2"/>
+  <text x="400" y="405" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">PYCARD</text>
+  
+  <!-- Connection from NLRP3/PYCARD to pathway -->
+  <path d="M425,400 C450,400 450,350 450,320" stroke="#000000" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="450" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">inflammasome</text>
+  <text x="450" y="365" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000" font-weight="bold">assembly</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="#000000">Non-canonical Inflammasome Pathway Mediated by CASP4</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="700" height="120" fill="#f8f9fa" stroke="#000000" stroke-width="1"/>
+  <text x="400" y="520" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#000000">LEGEND</text>
+  
+  <!-- Legend items - aligned and concise -->
+  <circle cx="100" cy="540" r="10" fill="#a6d8f0" stroke="#000000" stroke-width="1"/>
+  <text x="120" y="544" font-family="Arial" font-size="14" text-anchor="start" fill="#000000">Lipid A (CHEBI:58712) - Bacterial endotoxin component</text>
+  
+  <circle cx="100" cy="565" r="10" fill="#f8c471" stroke="#000000" stroke-width="1"/>
+  <text x="120" y="569" font-family="Arial" font-size="14" text-anchor="start" fill="#000000">CASP4 (P49662) - Caspase-4, processes GSDMD</text>
+  
+  <circle cx="100" cy="590" r="10" fill="#c39bd3" stroke="#000000" stroke-width="1"/>
+  <text x="120" y="594" font-family="Arial" font-size="14" text-anchor="start" fill="#000000">GSDMD (P57764) - Gasdermin-D, forms membrane pores</text>
+  
+  <circle cx="450" cy="540" r="10" fill="#82e0aa" stroke="#000000" stroke-width="1"/>
+  <text x="470" y="544" font-family="Arial" font-size="14" text-anchor="start" fill="#000000">IL-18 (Q14116) - Interleukin-18, secreted cytokine</text>
+  
+  <circle cx="450" cy="565" r="10" fill="#f9e79f" stroke="#000000" stroke-width="1"/>
+  <text x="470" y="569" font-family="Arial" font-size="14" text-anchor="start" fill="#000000">NLRP3 (Q96P20) - Sensor component of inflammasome</text>
+  
+  <circle cx="450" cy="590" r="10" fill="#f5b7b1" stroke="#000000" stroke-width="1"/>
+  <text x="470" y="594" font-family="Arial" font-size="14" text-anchor="start" fill="#000000">PYCARD - Adaptor protein (not in original GO-CAM data)</text>
+</svg>

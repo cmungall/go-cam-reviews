@@ -1,0 +1,104 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background - Nuclear environment -->
+    <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f8f9fa" stroke="#2c3e50" stroke-width="2"/>
+    <text x="400" y="90" font-family="Arial" font-size="20" text-anchor="middle" fill="#2c3e50">KAT5 Chromatin Localization (Human)</text>
+    
+    <!-- Chromatin region -->
+    <path d="M150,350 C200,330 250,370 300,350 S350,330 400,350 S450,370 500,350 S550,330 600,350" stroke="#8e44ad" stroke-width="8" fill="none"/>
+    <text x="375" y="390" font-family="Arial" font-size="14" text-anchor="middle" fill="#8e44ad">Chromatin (GO:0000785)</text>
+    
+    <!-- First pathway: CDK9 → KAT5 → Chromatin binding → Histone acetyltransferase -->
+    <!-- CDK9 protein -->
+    <circle cx="150" cy="180" r="30" fill="#3498db" stroke="#2c3e50" stroke-width="2"/>
+    <text x="150" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="white">CDK9</text>
+    
+    <!-- Arrow from CDK9 to KAT5 -->
+    <path d="M180,180 L240,180" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="210" y="170" font-family="Arial" font-size="10" text-anchor="middle" fill="#2c3e50">phosphorylates</text>
+    <text x="210" y="200" font-family="Arial" font-size="9" text-anchor="middle" fill="#34495e">GO:0004674</text>
+    
+    <!-- KAT5 protein (phosphorylated) -->
+    <circle cx="270" cy="180" r="30" fill="#e74c3c" stroke="#2c3e50" stroke-width="2"/>
+    <text x="270" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="white">KAT5</text>
+    <circle cx="285" cy="170" r="8" fill="#f39c12" stroke="#2c3e50" stroke-width="1"/>
+    <text x="285" y="173" font-family="Arial" font-size="10" text-anchor="middle" fill="#2c3e50">P</text>
+    
+    <!-- Arrow from KAT5 to chromatin binding -->
+    <path d="M270,210 L270,280 L350,320" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="290" y="270" font-family="Arial" font-size="10" text-anchor="middle" fill="#2c3e50">chromatin binding</text>
+    <text x="290" y="290" font-family="Arial" font-size="9" text-anchor="middle" fill="#34495e">GO:0003682</text>
+
+    <!-- KAT5 acetyltransferase activity -->
+    <path d="M270,210 L270,450 L350,450" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+    <text x="310" y="430" font-family="Arial" font-size="10" text-anchor="middle" fill="#2c3e50">acetylates histones</text>
+    <text x="310" y="450" font-family="Arial" font-size="9" text-anchor="middle" fill="#34495e">GO:0004402</text>
+    
+    <!-- Second pathway: VRK1 → KAT5 → Chromatin binding → H4K16 acetylation -->
+    <!-- DNA damage response context -->
+    <path d="M580,120 Q680,100 680,200 Q680,300 580,280 Z" stroke="#e67e22" stroke-width="2" fill="#fef9e7" fill-opacity="0.5"/>
+    <text x="630" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#e67e22">DNA Damage Response</text>
+    <text x="630" y="210" font-family="Arial" font-size="9" text-anchor="middle" fill="#e67e22">GO:0006974</text>
+    
+    <!-- VRK1 protein -->
+    <circle cx="580" cy="180" r="30" fill="#3498db" stroke="#2c3e50" stroke-width="2"/>
+    <text x="580" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="white">VRK1</text>
+    
+    <!-- Arrow from VRK1 to KAT5 -->
+    <path d="M550,180 L490,180" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="520" y="170" font-family="Arial" font-size="10" text-anchor="middle" fill="#2c3e50">phosphorylates</text>
+    <text x="520" y="200" font-family="Arial" font-size="9" text-anchor="middle" fill="#34495e">GO:0004674</text>
+    
+    <!-- KAT5 protein (phosphorylated) in DNA damage response -->
+    <circle cx="460" cy="180" r="30" fill="#e74c3c" stroke="#2c3e50" stroke-width="2"/>
+    <text x="460" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="white">KAT5</text>
+    <circle cx="475" cy="170" r="8" fill="#f39c12" stroke="#2c3e50" stroke-width="1"/>
+    <text x="475" y="173" font-family="Arial" font-size="10" text-anchor="middle" fill="#2c3e50">P</text>
+    
+    <!-- Arrow from KAT5 to chromatin binding in DNA damage response -->
+    <path d="M460,210 L460,280 L400,320" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="440" y="270" font-family="Arial" font-size="10" text-anchor="middle" fill="#2c3e50">chromatin binding</text>
+    <text x="440" y="290" font-family="Arial" font-size="9" text-anchor="middle" fill="#34495e">GO:0003682</text>
+    
+    <!-- KAT5 H4K16 specific acetyltransferase activity -->
+    <path d="M460,210 L460,450 L400,450" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+    <text x="460" y="430" font-family="Arial" font-size="10" text-anchor="middle" fill="#2c3e50">acetylates H4K16</text>
+    <text x="460" y="450" font-family="Arial" font-size="9" text-anchor="middle" fill="#34495e">GO:0046972</text>
+    
+    <!-- Histone tail with acetylation sites -->
+    <line x1="300" y1="450" x2="450" y2="450" stroke="#8e44ad" stroke-width="6"/>
+    <circle cx="375" cy="450" r="8" fill="#27ae60" stroke="#2c3e50" stroke-width="1"/>
+    <text x="375" y="453" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Ac</text>
+    
+    <!-- Positive regulation of transcription result -->
+    <rect x="300" y="500" width="200" height="40" rx="10" ry="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="400" y="525" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Positive Regulation of Transcription</text>
+    <text x="400" y="540" font-family="Arial" font-size="9" text-anchor="middle" fill="white">by RNA Polymerase II (GO:0045944)</text>
+    
+    <!-- Arrow from acetylation to transcription activation -->
+    <path d="M375,460 L375,500" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- Process labels -->
+    <text x="160" y="150" font-family="Arial" font-size="10" text-anchor="middle" fill="#34495e">Part of GO:0120187</text>
+    <text x="580" y="150" font-family="Arial" font-size="10" text-anchor="middle" fill="#34495e">Part of GO:0120187</text>
+    
+    <!-- Legend -->
+    <rect x="600" y="480" width="140" height="60" rx="5" ry="5" fill="white" stroke="#2c3e50" stroke-width="1"/>
+    <text x="670" y="495" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#2c3e50">Legend</text>
+    
+    <!-- Legend items -->
+    <circle cx="615" cy="510" r="5" fill="#3498db"/>
+    <text x="665" y="513" font-family="Arial" font-size="9" fill="#2c3e50">Kinase</text>
+    
+    <circle cx="615" cy="525" r="5" fill="#e74c3c"/>
+    <text x="665" y="528" font-family="Arial" font-size="9" fill="#2c3e50">KAT5</text>
+    
+    <line x1="640" y1="510" x2="660" y2="510" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="700" y="513" font-family="Arial" font-size="9" fill="#2c3e50">Enzymatic action</text>
+    
+    <!-- Arrow definitions -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+        </marker>
+    </defs>
+</svg>

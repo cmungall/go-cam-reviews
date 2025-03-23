@@ -1,0 +1,113 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <ellipse cx="400" cy="330" rx="350" ry="250" fill="#f8f8f8" stroke="#666" stroke-width="3"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="330" rx="150" ry="120" fill="#e6e6fa" stroke="#666" stroke-width="2"/>
+  <text x="400" y="330" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Nucleus</text>
+  
+  <!-- Chromatin regions -->
+  <path d="M350,280 C370,270 390,275 410,265 C430,255 450,260 470,270" stroke="#6a0dad" stroke-width="4" fill="none"/>
+  <path d="M330,320 C350,310 370,315 390,305 C410,295 430,300 450,310" stroke="#6a0dad" stroke-width="4" fill="none"/>
+  <path d="M340,360 C360,350 380,355 400,345 C420,335 440,340 460,350" stroke="#6a0dad" stroke-width="4" fill="none"/>
+  <text x="400" y="390" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Chromatin (GO:0000785)</text>
+
+  <!-- Cytoplasm label -->
+  <text x="400" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Cytoplasm (GO:0005737)</text>
+
+  <!-- IKBKB -->
+  <rect x="150" y="280" width="100" height="40" rx="5" ry="5" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="200" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">IKBKB</text>
+  <text x="200" y="265" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">(UniProtKB:O14920)</text>
+  <text x="200" y="325" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">IkappaB kinase activity</text>
+  <text x="200" y="337" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">(GO:0008384)</text>
+
+  <!-- NFKBIA -->
+  <rect x="300" y="180" width="100" height="40" rx="5" ry="5" fill="#ffb3b3" stroke="#cc0000" stroke-width="2"/>
+  <text x="350" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">NFKBIA</text>
+  <text x="350" y="165" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">(UniProtKB:P25963)</text>
+  <text x="350" y="225" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">Protein sequestering activity</text>
+  <text x="350" y="237" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">(GO:0140311)</text>
+
+  <!-- RELA -->
+  <rect x="320" y="280" width="80" height="40" rx="5" ry="5" fill="#b3ffb3" stroke="#009900" stroke-width="2"/>
+  <text x="360" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">RELA</text>
+  <text x="360" y="270" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">(UniProtKB:Q04206)</text>
+
+  <!-- NFKB1 -->
+  <rect x="420" y="280" width="80" height="40" rx="5" ry="5" fill="#b3ffb3" stroke="#009900" stroke-width="2"/>
+  <text x="460" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">NFKB1</text>
+  <text x="460" y="270" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">(UniProtKB:P19838)</text>
+
+  <!-- VACWR196 (viral protein) -->
+  <polygon points="70,230 100,200 130,230 100,260" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="100" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">VACWR196</text>
+  <text x="100" y="190" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">(UniProtKB:P24772)</text>
+  <text x="100" y="280" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">Molecular sequestering</text>
+  <text x="100" y="292" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">activity (GO:0140313)</text>
+
+  <!-- Pathway arrows -->
+  <!-- IKBKB to NFKBIA -->
+  <line x1="200" y1="280" x2="300" y2="210" stroke="#000" stroke-width="2" marker-end="url(#arrowheadInhibit)" stroke-dasharray="5,3"/>
+  <text x="235" y="225" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">negatively regulates</text>
+  
+  <!-- NFKBIA to RELA -->
+  <line x1="350" y1="220" x2="360" y2="280" stroke="#000" stroke-width="2" marker-end="url(#arrowheadInhibit)" stroke-dasharray="5,3"/>
+  <text x="375" y="250" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">negatively regulates</text>
+  
+  <!-- NFKBIA to NFKB1 -->
+  <line x1="385" y1="200" x2="450" y2="280" stroke="#000" stroke-width="2" marker-end="url(#arrowheadInhibit)" stroke-dasharray="5,3"/>
+  <text x="440" y="250" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">negatively regulates</text>
+  
+  <!-- VACWR196 to IKBKB -->
+  <line x1="130" y1="245" x2="150" y2="280" stroke="#ff6600" stroke-width="2.5" marker-end="url(#arrowheadViralInhibit)" stroke-dasharray="5,3"/>
+  <text x="110" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff6600">inhibits</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowheadInhibit" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+    <marker id="arrowheadViralInhibit" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6600"/>
+    </marker>
+  </defs>
+  
+  <!-- Pathway title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Poxvirus-OPG200 inhibition of host IKBKE-mediated NF-Kappa-B</text>
+  <text x="400" y="55" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">Part of canonical NF-kappaB signal transduction (GO:0007249)</text>
+  
+  <!-- Viral process label -->
+  <text x="100" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff6600">Symbiont-mediated suppression</text>
+  <text x="100" y="365" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff6600">of host NF-kappaB cascade</text>
+  <text x="100" y="380" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff6600">(GO:0085034)</text>
+
+  <!-- DNA binding activity labels -->
+  <text x="390" y="350" font-family="Arial" font-size="11" text-anchor="middle" fill="#009900">DNA-binding transcription activator activity,</text>
+  <text x="390" y="365" font-family="Arial" font-size="11" text-anchor="middle" fill="#009900">RNA polymerase II-specific (GO:0001228)</text>
+
+  <!-- LEGEND -->
+  <rect x="580" y="150" width="190" height="180" fill="#f9f9f9" stroke="#333" stroke-width="1"/>
+  <text x="675" y="170" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">LEGEND</text>
+  
+  <!-- Host proteins -->
+  <rect x="590" y="185" width="20" height="15" fill="#b3d9ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="675" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Host kinase (IKBKB)</text>
+  
+  <rect x="590" y="210" width="20" height="15" fill="#ffb3b3" stroke="#cc0000" stroke-width="1"/>
+  <text x="675" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Host inhibitor (NFKBIA)</text>
+  
+  <rect x="590" y="235" width="20" height="15" fill="#b3ffb3" stroke="#009900" stroke-width="1"/>
+  <text x="675" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Host transcription factors</text>
+  
+  <!-- Viral protein -->
+  <polygon points="590,260 600,255 610,260 600,265" fill="#ffcc99" stroke="#ff6600" stroke-width="1"/>
+  <text x="675" y="265" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Viral protein (VACWR196)</text>
+  
+  <!-- Interactions -->
+  <line x1="590" y1="285" x2="620" y2="285" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowheadInhibit)"/>
+  <text x="675" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Host negative regulation</text>
+  
+  <line x1="590" y1="310" x2="620" y2="310" stroke="#ff6600" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowheadViralInhibit)"/>
+  <text x="675" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Viral inhibition</text>
+</svg>

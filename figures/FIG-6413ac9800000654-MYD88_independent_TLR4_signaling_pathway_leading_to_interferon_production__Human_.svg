@@ -1,0 +1,135 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f9fa" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="650" cy="350" rx="120" ry="100" fill="#e6f7ff" stroke="#2c3e50" stroke-width="2"/>
+  <text x="650" y="350" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Nucleus</text>
+  
+  <!-- Chromatin in nucleus -->
+  <path d="M600,320 Q625,300 650,320 Q675,340 700,320" stroke="#7f8c8d" stroke-width="3" fill="none"/>
+  <path d="M600,330 Q625,350 650,330 Q675,310 700,330" stroke="#7f8c8d" stroke-width="3" fill="none"/>
+  <path d="M600,340 Q625,320 650,340 Q675,360 700,340" stroke="#7f8c8d" stroke-width="3" fill="none"/>
+  <text x="650" y="380" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">Chromatin (GO:0000785)</text>
+  
+  <!-- Endosome -->
+  <ellipse cx="200" cy="250" rx="100" ry="80" fill="#ffecb3" stroke="#2c3e50" stroke-width="2"/>
+  <text x="200" y="250" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Endosome</text>
+  
+  <!-- Endosome membrane -->
+  <ellipse cx="200" cy="250" rx="80" ry="60" fill="none" stroke="#e67e22" stroke-width="3" stroke-dasharray="5,3"/>
+  <text x="200" y="210" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#e67e22">Endosome membrane (GO:0010008)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="150" y="100" font-family="Arial" font-size="18" font-weight="bold" fill="#2c3e50">Cytoplasm (GO:0005737)</text>
+  
+  <!-- TLR4 Receptor on endosome membrane -->
+  <rect x="160" y="200" width="40" height="20" rx="5" ry="5" fill="#3498db" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="180" y="214" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">TLR4</text>
+  <text x="180" y="185" font-family="Arial" font-size="10" text-anchor="middle" fill="#3498db">(UniProtKB:O00206)</text>
+  
+  <!-- TICAM2 -->
+  <rect x="270" y="200" width="50" height="20" rx="5" ry="5" fill="#9b59b6" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="295" y="214" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">TICAM2</text>
+  <text x="295" y="185" font-family="Arial" font-size="10" text-anchor="middle" fill="#9b59b6">(UniProtKB:Q86XR7)</text>
+  
+  <!-- TICAM1 -->
+  <rect x="350" y="250" width="50" height="20" rx="5" ry="5" fill="#9b59b6" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="375" y="264" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">TICAM1</text>
+  <text x="375" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#9b59b6">(UniProtKB:Q8IUC6)</text>
+  
+  <!-- TRAF3 -->
+  <rect x="430" y="300" width="50" height="20" rx="5" ry="5" fill="#e74c3c" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="455" y="314" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">TRAF3</text>
+  <text x="455" y="285" font-family="Arial" font-size="10" text-anchor="middle" fill="#e74c3c">(UniProtKB:Q13114)</text>
+  
+  <!-- TBK1 -->
+  <rect x="510" y="350" width="50" height="20" rx="5" ry="5" fill="#27ae60" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="535" y="364" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">TBK1</text>
+  <text x="535" y="335" font-family="Arial" font-size="10" text-anchor="middle" fill="#27ae60">(UniProtKB:Q9UHD2)</text>
+  
+  <!-- IRF3 in cytoplasm -->
+  <rect x="600" y="400" width="50" height="20" rx="5" ry="5" fill="#f1c40f" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="625" y="414" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">IRF3</text>
+  <text x="625" y="385" font-family="Arial" font-size="10" text-anchor="middle" fill="#f1c40f">(UniProtKB:Q14653)</text>
+  
+  <!-- Activated IRF3 binding to chromatin -->
+  <rect x="650" y="320" width="50" height="20" rx="5" ry="5" fill="#f1c40f" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="675" y="334" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">IRF3</text>
+  
+  <!-- Pathway arrows -->
+  <path d="M200,210 L270,210" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M320,210 Q335,230 350,250" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M400,250 Q415,275 430,300" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M480,300 Q495,325 510,350" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M560,350 Q580,375 600,400" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M625,400 Q640,370 650,340" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Molecular function annotations -->
+  <text x="180" y="230" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">signaling receptor</text>
+  <text x="180" y="240" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">activity</text>
+  
+  <text x="295" y="230" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">molecular adaptor</text>
+  <text x="295" y="240" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">activity</text>
+  
+  <text x="375" y="280" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">molecular adaptor</text>
+  <text x="375" y="290" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">activity</text>
+  
+  <text x="455" y="330" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">ubiquitin protein</text>
+  <text x="455" y="340" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">ligase activity</text>
+  
+  <text x="535" y="380" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">protein Ser/Thr</text>
+  <text x="535" y="390" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">kinase activity</text>
+  
+  <text x="650" y="300" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">DNA-binding TF</text>
+  <text x="650" y="310" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#2c3e50">activity</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">MYD88-independent TLR4 Signaling Pathway</text>
+  <text x="400" y="55" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic" fill="#2c3e50">Leading to Interferon Production (Human)</text>
+  
+  <!-- Legend section -->
+  <rect x="50" y="570" width="700" height="120" rx="10" ry="10" fill="#f5f5f5" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="400" y="590" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">LEGEND</text>
+  
+  <!-- Protein Function Legend -->
+  <rect x="70" y="605" width="20" height="10" rx="3" ry="3" fill="#3498db" stroke="#2c3e50" stroke-width="1"/>
+  <text x="100" y="615" font-family="Arial" font-size="12" fill="#2c3e50">Receptor (TLR4)</text>
+  
+  <rect x="70" y="625" width="20" height="10" rx="3" ry="3" fill="#9b59b6" stroke="#2c3e50" stroke-width="1"/>
+  <text x="100" y="635" font-family="Arial" font-size="12" fill="#2c3e50">Adaptor (TICAM1/2)</text>
+  
+  <rect x="70" y="645" width="20" height="10" rx="3" ry="3" fill="#e74c3c" stroke="#2c3e50" stroke-width="1"/>
+  <text x="100" y="655" font-family="Arial" font-size="12" fill="#2c3e50">Ubiquitin Ligase (TRAF3)</text>
+  
+  <rect x="70" y="665" width="20" height="10" rx="3" ry="3" fill="#27ae60" stroke="#2c3e50" stroke-width="1"/>
+  <text x="100" y="675" font-family="Arial" font-size="12" fill="#2c3e50">Kinase (TBK1)</text>
+  
+  <rect x="300" y="605" width="20" height="10" rx="3" ry="3" fill="#f1c40f" stroke="#2c3e50" stroke-width="1"/>
+  <text x="330" y="615" font-family="Arial" font-size="12" fill="#2c3e50">Transcription Factor (IRF3)</text>
+  
+  <!-- Compartment Legend -->
+  <ellipse cx="310" cy="635" rx="15" ry="10" fill="#ffecb3" stroke="#2c3e50" stroke-width="1"/>
+  <text x="340" y="639" font-family="Arial" font-size="12" fill="#2c3e50">Endosome</text>
+  
+  <ellipse cx="310" cy="655" rx="15" ry="10" fill="#e6f7ff" stroke="#2c3e50" stroke-width="1"/>
+  <text x="340" y="659" font-family="Arial" font-size="12" fill="#2c3e50">Nucleus</text>
+  
+  <rect x="300" y="670" width="20" height="10" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1"/>
+  <text x="340" y="679" font-family="Arial" font-size="12" fill="#2c3e50">Cytoplasm</text>
+  
+  <!-- Pathway Direction Legend -->
+  <line x1="530" y1="635" x2="570" y2="635" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="600" y="639" font-family="Arial" font-size="12" fill="#2c3e50">Signaling Direction</text>
+  
+  <!-- Pathway Description -->
+  <text x="400" y="665" font-family="Arial" font-size="11" text-anchor="middle" fill="#2c3e50">This pathway depicts TLR4-mediated signaling that occurs independently of MYD88,</text>
+  <text x="400" y="680" font-family="Arial" font-size="11" text-anchor="middle" fill="#2c3e50">leading to the activation of IRF3 and subsequent production of type I interferons.</text>
+</svg>

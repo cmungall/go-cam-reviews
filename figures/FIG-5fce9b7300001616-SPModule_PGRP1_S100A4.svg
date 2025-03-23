@@ -1,0 +1,94 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">PGLYRP1-S100A4 Signaling Pathway</text>
+  
+  <!-- Extracellular Space Label -->
+  <text x="400" y="70" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Cell Membrane -->
+  <path d="M 50,300 H 750" stroke="#333" stroke-width="3" fill="none"/>
+  <text x="400" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Cell Surface (GO:0009986)</text>
+  
+  <!-- PGLYRP1 Protein -->
+  <circle cx="200" cy="180" r="40" fill="#8ecae6" stroke="#333" stroke-width="2"/>
+  <text x="200" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PGLYRP1</text>
+  <text x="200" y="200" font-family="Arial" font-size="12" text-anchor="middle">(O75594)</text>
+  
+  <!-- Function annotation for PGLYRP1 -->
+  <rect x="120" y="110" width="160" height="30" rx="15" fill="#e9c46a" stroke="#333" stroke-width="1"/>
+  <text x="200" y="130" font-family="Arial" font-size="12" text-anchor="middle">Molecular adaptor activity</text>
+  
+  <!-- S100A4 Protein -->
+  <circle cx="400" cy="180" r="40" fill="#ffb703" stroke="#333" stroke-width="2"/>
+  <text x="400" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">S100A4</text>
+  <text x="400" y="200" font-family="Arial" font-size="12" text-anchor="middle">(P26447)</text>
+  
+  <!-- Function annotation for S100A4 -->
+  <rect x="320" y="110" width="160" height="30" rx="15" fill="#e9c46a" stroke="#333" stroke-width="1"/>
+  <text x="400" y="130" font-family="Arial" font-size="12" text-anchor="middle">Chemoattractant activity</text>
+  
+  <!-- CXCR3 Receptor -->
+  <rect x="250" y="290" width="120" height="60" rx="10" fill="#219ebc" stroke="#333" stroke-width="2"/>
+  <text x="310" y="320" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CXCR3</text>
+  <text x="310" y="340" font-family="Arial" font-size="12" text-anchor="middle">(P49682)</text>
+  
+  <!-- CCR5 Receptor -->
+  <rect x="450" y="290" width="120" height="60" rx="10" fill="#219ebc" stroke="#333" stroke-width="2"/>
+  <text x="510" y="320" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CCR5</text>
+  <text x="510" y="340" font-family="Arial" font-size="12" text-anchor="middle">(P51681)</text>
+  
+  <!-- Function annotation for receptors -->
+  <rect x="250" y="370" width="320" height="30" rx="15" fill="#e9c46a" stroke="#333" stroke-width="1"/>
+  <text x="410" y="390" font-family="Arial" font-size="12" text-anchor="middle">C-C chemokine receptor activity</text>
+  
+  <!-- Interaction Arrows -->
+  <!-- PGLYRP1 to S100A4 -->
+  <path d="M 240,180 H 360" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="300" y="170" font-family="Arial" font-size="12" text-anchor="middle">Positively regulates</text>
+  
+  <!-- S100A4 to CXCR3 -->
+  <path d="M 380,220 L 320,290" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="330" y="260" font-family="Arial" font-size="12" text-anchor="middle">Positively regulates</text>
+  
+  <!-- S100A4 to CCR5 -->
+  <path d="M 420,220 L 480,290" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="470" y="260" font-family="Arial" font-size="12" text-anchor="middle">Positively regulates</text>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Cell outline -->
+  <path d="M 50,300 v 250 h 700 v -250" stroke="#333" stroke-width="2" stroke-dasharray="5,5" fill="#f8f9fa" fill-opacity="0.5"/>
+  
+  <!-- Legend -->
+  <rect x="550" y="100" width="220" height="190" rx="10" fill="#f8f9fa" stroke="#333" stroke-width="1"/>
+  <text x="660" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <circle cx="570" y="140" r="10" fill="#8ecae6" stroke="#333" stroke-width="1"/>
+  <text x="660" y="145" font-family="Arial" font-size="12" text-anchor="middle">PGLYRP1 - Peptidoglycan recognition protein</text>
+  
+  <circle cx="570" y="165" r="10" fill="#ffb703" stroke="#333" stroke-width="1"/>
+  <text x="660" y="170" font-family="Arial" font-size="12" text-anchor="middle">S100A4 - S100 calcium binding protein</text>
+  
+  <rect x="560" y="185" width="20" height="10" rx="2" fill="#219ebc" stroke="#333" stroke-width="1"/>
+  <text x="660" y="195" font-family="Arial" font-size="12" text-anchor="middle">CXCR3/CCR5 - Chemokine receptors</text>
+  
+  <rect x="560" y="210" width="20" height="10" rx="5" fill="#e9c46a" stroke="#333" stroke-width="1"/>
+  <text x="660" y="220" font-family="Arial" font-size="12" text-anchor="middle">Molecular Function (GO term)</text>
+  
+  <line x1="560" y1="235" x2="580" y2="235" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="660" y="240" font-family="Arial" font-size="12" text-anchor="middle">Positive regulation (RO:0002629)</text>
+  
+  <rect x="560" y="255" width="20" height="10" fill="#f8f9fa" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="660" y="265" font-family="Arial" font-size="12" text-anchor="middle">Cell membrane/compartment</text>
+  
+  <!-- Source info -->
+  <text x="400" y="570" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Source: gomodel:5fce9b7300001616 (SPModule-PGRP1-S100A4)</text>
+</svg>
