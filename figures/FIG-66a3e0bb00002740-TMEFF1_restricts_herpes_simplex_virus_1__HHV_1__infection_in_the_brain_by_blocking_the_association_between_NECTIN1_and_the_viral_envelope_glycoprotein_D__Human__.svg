@@ -1,0 +1,72 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f8f8" />
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">TMEFF1 Restricts HSV-1 Infection in Brain Neurons</text>
+  
+  <!-- Neuron cell -->
+  <ellipse cx="400" cy="350" rx="300" ry="180" fill="#e6f2ff" stroke="#2c3e50" stroke-width="2" opacity="0.8" />
+  <text x="400" y="510" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">Neuron</text>
+  
+  <!-- Plasma membrane -->
+  <ellipse cx="400" cy="350" rx="300" ry="180" fill="none" stroke="#3498db" stroke-width="4" />
+  <text x="670" y="350" font-family="Arial" font-size="16" font-weight="bold" fill="#3498db">Plasma Membrane</text>
+  
+  <!-- HSV-1 Virus particle -->
+  <g transform="translate(180, 150)">
+    <circle cx="0" cy="0" r="45" fill="#f1c40f" stroke="#e67e22" stroke-width="3" />
+    <text x="0" y="-60" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#e67e22">HSV-1 Virus</text>
+    <!-- Virion membrane -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#e74c3c" stroke-width="2" />
+    <text x="0" y="-75" text-anchor="middle" font-family="Arial" font-size="14" fill="#e74c3c">Virion Membrane</text>
+    <!-- Glycoprotein D -->
+    <circle cx="35" cy="0" r="15" fill="#e74c3c" />
+    <text x="35" y="5" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">gD</text>
+  </g>
+  
+  <!-- NECTIN1 on plasma membrane -->
+  <g transform="translate(400, 170)">
+    <rect x="-50" y="0" width="100" height="25" rx="8" ry="8" fill="#9b59b6" />
+    <text x="0" y="17" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">NECTIN1</text>
+  </g>
+  
+  <!-- TMEFF1 on plasma membrane -->
+  <g transform="translate(550, 170)">
+    <rect x="-50" y="0" width="100" height="25" rx="8" ry="8" fill="#27ae60" />
+    <text x="0" y="17" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">TMEFF1</text>
+  </g>
+  
+  <!-- Interaction between gD and NECTIN1 -->
+  <path d="M215 150 L350 170" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrow1)" />
+  <text x="280" y="140" font-family="Arial" font-size="14" font-weight="bold" fill="#e74c3c">Receptor Binding</text>
+  
+  <!-- TMEFF1 inhibiting the interaction -->
+  <line x1="500" y1="170" x2="280" y2="158" stroke="#27ae60" stroke-width="4" marker-end="url(#blockarrow)" />
+  <text x="420" y="135" font-family="Arial" font-size="14" font-weight="bold" fill="#27ae60">Inhibits Binding</text>
+  
+  <!-- Viral Entry Process with red X showing blocked entry -->
+  <path d="M215 170 C 230 270, 300 320, 380 350" stroke="#e67e22" stroke-width="3" stroke-dasharray="5,3" />
+  <text x="270" y="290" font-family="Arial" font-size="14" font-weight="bold" fill="#e67e22">Viral Entry</text>
+  
+  <!-- Red X marking blocked viral entry -->
+  <g transform="translate(280, 250)">
+    <line x1="-20" y1="-20" x2="20" y2="20" stroke="red" stroke-width="4" />
+    <line x1="-20" y1="20" x2="20" y2="-20" stroke="red" stroke-width="4" />
+  </g>
+  
+  <!-- Negative regulation process -->
+  <path d="M550 195 C 500 250, 450 280, 350 320" stroke="#27ae60" stroke-width="3" marker-end="url(#greenarrow)" />
+  <text x="500" y="250" font-family="Arial" font-size="14" font-weight="bold" fill="#27ae60">Prevents Viral Entry</text>
+  
+  <!-- Definitions and markers -->
+  <defs>
+    <marker id="arrow1" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e74c3c" />
+    </marker>
+    <marker id="blockarrow" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#27ae60" />
+    </marker>
+    <marker id="greenarrow" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#27ae60" />
+    </marker>
+  </defs>
+</svg>

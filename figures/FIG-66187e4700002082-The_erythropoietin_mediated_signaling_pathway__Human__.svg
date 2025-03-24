@@ -1,0 +1,202 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background layers with gradients -->
+    <!-- Extracellular space with gradient -->
+    <defs>
+        <linearGradient id="extracellularGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#d6ebff;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="cytoplasmGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#e6f2ff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#c9e3ff;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="nucleusGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#e6e6fa;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#d8d8f0;stop-opacity:1" />
+        </linearGradient>
+        <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+            <feOffset dx="2" dy="2" result="offsetblur" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <!-- Glow effect for activation -->
+        <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feFlood flood-color="#ffcc00" flood-opacity="0.7" result="glow" />
+            <feComposite in="glow" in2="blur" operator="in" result="coloredBlur" />
+            <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Extracellular space -->
+    <rect x="0" y="0" width="800" height="200" fill="url(#extracellularGradient)" stroke="none" />
+    <text x="20" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Extracellular Space (GO:0005615)</text>
+    
+    <!-- Plasma membrane with more realistic appearance -->
+    <rect x="0" y="200" width="800" height="30" fill="#b3d9ff" stroke="#0066cc" stroke-width="2" />
+    <rect x="0" y="210" width="800" height="10" fill="#80bfff" stroke="none" /> <!-- Membrane shade -->
+    <text x="20" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc">Plasma Membrane (GO:0005886)</text>
+    
+    <!-- Cytoplasm -->
+    <rect x="0" y="230" width="800" height="220" fill="url(#cytoplasmGradient)" stroke="none" />
+    <text x="20" y="250" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Cytoplasm</text>
+    
+    <!-- Nuclear envelope with double membrane representation -->
+    <rect x="200" y="450" width="400" height="5" fill="#9966cc" stroke="none" />
+    <rect x="200" y="455" width="400" height="2" fill="#e6e6fa" stroke="none" />
+    <rect x="200" y="457" width="400" height="3" fill="#9966cc" stroke="none" />
+    
+    <!-- Nucleus -->
+    <rect x="200" y="460" width="400" height="130" fill="url(#nucleusGradient)" stroke="#9966cc" stroke-width="2" />
+    <text x="220" y="480" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Nucleus (GO:0005634)</text>
+    
+    <!-- Stage 1: EPO-EPOR Interaction (highlighted in red tones) -->
+    <!-- EPO in extracellular space with glow effect -->
+    <circle cx="400" cy="120" r="35" fill="#ff9999" stroke="#cc0000" stroke-width="2" filter="url(#dropShadow)" />
+    <text x="400" y="118" font-family="Arial" font-size="16" font-weight="bold" fill="#000" text-anchor="middle">EPO</text>
+    <text x="400" y="135" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(P01588)</text>
+    
+    <!-- EPOR in plasma membrane -->
+    <rect x="370" y="180" width="60" height="70" rx="10" ry="10" fill="#99ccff" stroke="#0066cc" stroke-width="2" filter="url(#dropShadow)" />
+    <text x="400" y="210" font-family="Arial" font-size="16" font-weight="bold" fill="#000" text-anchor="middle">EPOR</text>
+    <text x="400" y="225" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(P19235)</text>
+    
+    <!-- Stage highlight - Stage 1 -->
+    <rect x="10" y="110" width="130" height="60" rx="10" ry="10" fill="#ffe6e6" stroke="#cc0000" stroke-width="1" opacity="0.9" />
+    <text x="75" y="135" font-family="Arial" font-size="14" font-weight="bold" fill="#cc0000" text-anchor="middle">STAGE 1:</text>
+    <text x="75" y="155" font-family="Arial" font-size="12" fill="#cc0000" text-anchor="middle">Ligand Binding</text>
+    
+    <!-- Stage 2: JAK2 Activation (highlighted in orange tones) -->
+    <!-- JAK2 on cytoplasmic side of membrane -->
+    <rect x="370" y="250" width="60" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#ff6600" stroke-width="2" filter="url(#dropShadow)" />
+    <text x="400" y="275" font-family="Arial" font-size="16" font-weight="bold" fill="#000" text-anchor="middle">JAK2</text>
+    <text x="400" y="290" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(O60674)</text>
+    
+    <!-- Stage highlight - Stage 2 -->
+    <rect x="10" y="270" width="130" height="60" rx="10" ry="10" fill="#fff2e6" stroke="#ff6600" stroke-width="1" opacity="0.9" />
+    <text x="75" y="295" font-family="Arial" font-size="14" font-weight="bold" fill="#ff6600" text-anchor="middle">STAGE 2:</text>
+    <text x="75" y="315" font-family="Arial" font-size="12" fill="#ff6600" text-anchor="middle">Receptor Activation</text>
+    
+    <!-- Stage 3: STAT5B Signaling (highlighted in green tones) -->
+    <!-- STAT5B in cytoplasm -->
+    <rect x="370" y="350" width="60" height="40" rx="5" ry="5" fill="#99ff99" stroke="#009900" stroke-width="2" filter="url(#dropShadow)" />
+    <text x="400" y="375" font-family="Arial" font-size="16" font-weight="bold" fill="#000" text-anchor="middle">STAT5B</text>
+    <text x="400" y="390" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(P51692)</text>
+    
+    <!-- Stage highlight - Stage 3 -->
+    <rect x="10" y="380" width="130" height="60" rx="10" ry="10" fill="#e6ffe6" stroke="#009900" stroke-width="1" opacity="0.9" />
+    <text x="75" y="405" font-family="Arial" font-size="14" font-weight="bold" fill="#009900" text-anchor="middle">STAGE 3:</text>
+    <text x="75" y="425" font-family="Arial" font-size="12" fill="#009900" text-anchor="middle">Signal Transduction</text>
+    
+    <!-- Stage 4: Nuclear Translocation & Transcription (highlighted in purple tones) -->
+    <!-- STAT5B in nucleus -->
+    <rect x="370" y="500" width="60" height="40" rx="5" ry="5" fill="#99ff99" stroke="#009900" stroke-width="2" filter="url(#dropShadow)" />
+    <text x="400" y="525" font-family="Arial" font-size="16" font-weight="bold" fill="#000" text-anchor="middle">STAT5B</text>
+    <text x="400" y="540" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(P51692)</text>
+    
+    <!-- DNA binding site - more detailed -->
+    <rect x="300" y="550" width="200" height="20" rx="3" ry="3" fill="#dddddd" stroke="#666666" stroke-width="1" />
+    <path d="M300,560 Q350,550 400,560 Q450,570 500,560" stroke="#666666" stroke-width="1" fill="none" />
+    <text x="400" y="565" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">DNA</text>
+    
+    <!-- Stage highlight - Stage 4 -->
+    <rect x="10" y="520" width="130" height="60" rx="10" ry="10" fill="#e6e6ff" stroke="#6600cc" stroke-width="1" opacity="0.9" />
+    <text x="75" y="545" font-family="Arial" font-size="14" font-weight="bold" fill="#6600cc" text-anchor="middle">STAGE 4:</text>
+    <text x="75" y="565" font-family="Arial" font-size="12" fill="#6600cc" text-anchor="middle">Transcription</text>
+    
+    <!-- Interactions and arrows with enhanced styling -->
+    <!-- EPO to EPOR with binding visualization -->
+    <line x1="400" y1="155" x2="400" y2="180" stroke="#cc0000" stroke-width="3" marker-end="url(#redArrow)" />
+    <circle cx="400" cy="165" r="5" fill="#cc0000" opacity="0.5"/>
+    <text x="430" y="170" font-family="Arial" font-size="12" fill="#cc0000" font-weight="bold">binds</text>
+    
+    <!-- EPOR to JAK2 activation -->
+    <line x1="400" y1="250" x2="400" y2="250" stroke="#ff6600" stroke-width="3" marker-end="url(#orangeArrow)" />
+    <circle cx="400" cy="260" r="10" fill="#ff6600" opacity="0.2" filter="url(#glow)"/>
+    <text x="430" y="240" font-family="Arial" font-size="12" fill="#ff6600" font-weight="bold">activates</text>
+    
+    <!-- JAK2 to STAT5B -->
+    <line x1="400" y1="290" x2="400" y2="350" stroke="#009900" stroke-width="3" marker-end="url(#greenArrow)" />
+    <circle cx="400" cy="320" r="5" fill="#009900" opacity="0.5"/>
+    <text x="430" y="320" font-family="Arial" font-size="12" fill="#009900" font-weight="bold">phosphorylates</text>
+    <circle cx="385" cy="340" r="5" fill="#ffcc00" opacity="0.8"/>
+    <text x="385" y="343" font-family="Arial" font-size="10" fill="#000">P</text>
+    
+    <!-- STAT5B translocation with enhanced visualization -->
+    <path d="M400,390 C470,420 470,470 400,500" stroke="#6600cc" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#purpleArrow)" />
+    <text x="450" y="450" font-family="Arial" font-size="12" fill="#6600cc" font-weight="bold">translocates</text>
+    
+    <!-- STAT5B to DNA -->
+    <line x1="400" y1="540" x2="400" y2="550" stroke="#6600cc" stroke-width="3" marker-end="url(#purpleArrow)" />
+    <text x="430" y="550" font-family="Arial" font-size="12" fill="#6600cc" font-weight="bold">binds</text>
+    
+    <!-- Arrowhead marker definitions with colors -->
+    <defs>
+        <marker id="redArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000" />
+        </marker>
+        <marker id="orangeArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff6600" />
+        </marker>
+        <marker id="greenArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#009900" />
+        </marker>
+        <marker id="purpleArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#6600cc" />
+        </marker>
+    </defs>
+    
+    <!-- Activity annotations with improved styling -->
+    <rect x="480" y="100" width="170" height="40" rx="5" ry="5" fill="#ffebeb" stroke="#cc0000" stroke-width="1" opacity="0.8" />
+    <text x="485" y="120" font-family="Arial" font-size="12" font-weight="bold" fill="#cc0000">cytokine activity</text>
+    <text x="485" y="135" font-family="Arial" font-size="10" fill="#cc0000">(GO:0005125)</text>
+    
+    <rect x="480" y="190" width="240" height="40" rx="5" ry="5" fill="#e6f2ff" stroke="#0066cc" stroke-width="1" opacity="0.8" />
+    <text x="485" y="210" font-family="Arial" font-size="12" font-weight="bold" fill="#0066cc">erythropoietin receptor activity</text>
+    <text x="485" y="225" font-family="Arial" font-size="10" fill="#0066cc">(GO:0004900)</text>
+    
+    <rect x="480" y="260" width="240" height="50" rx="5" ry="5" fill="#fff2e6" stroke="#ff6600" stroke-width="1" opacity="0.8" />
+    <text x="485" y="275" font-family="Arial" font-size="12" font-weight="bold" fill="#ff6600">non-membrane spanning protein</text>
+    <text x="485" y="290" font-family="Arial" font-size="12" font-weight="bold" fill="#ff6600">tyrosine kinase activity</text>
+    <text x="485" y="305" font-family="Arial" font-size="10" fill="#ff6600">(GO:0004715)</text>
+    
+    <rect x="480" y="510" width="240" height="50" rx="5" ry="5" fill="#e6ffe6" stroke="#009900" stroke-width="1" opacity="0.8" />
+    <text x="485" y="525" font-family="Arial" font-size="12" font-weight="bold" fill="#009900">DNA-binding transcription</text>
+    <text x="485" y="540" font-family="Arial" font-size="12" font-weight="bold" fill="#009900">factor activity</text>
+    <text x="485" y="555" font-family="Arial" font-size="10" fill="#009900">(GO:0003700)</text>
+    
+    <!-- Legend for color coding -->
+    <rect x="550" y="350" width="220" height="120" rx="10" ry="10" fill="white" stroke="#333" stroke-width="1" opacity="0.9" />
+    <text x="660" y="370" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">COLOR LEGEND</text>
+    
+    <rect x="560" y="380" width="15" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="1" />
+    <text x="585" y="392" font-family="Arial" font-size="12" fill="#cc0000" text-anchor="start">Stage 1: Ligand Binding</text>
+    
+    <rect x="560" y="400" width="15" height="15" fill="#ffcc99" stroke="#ff6600" stroke-width="1" />
+    <text x="585" y="412" font-family="Arial" font-size="12" fill="#ff6600" text-anchor="start">Stage 2: Receptor Activation</text>
+    
+    <rect x="560" y="420" width="15" height="15" fill="#99ff99" stroke="#009900" stroke-width="1" />
+    <text x="585" y="432" font-family="Arial" font-size="12" fill="#009900" text-anchor="start">Stage 3: Signal Transduction</text>
+    
+    <rect x="560" y="440" width="15" height="15" fill="#e6e6ff" stroke="#6600cc" stroke-width="1" />
+    <text x="585" y="452" font-family="Arial" font-size="12" fill="#6600cc" text-anchor="start">Stage 4: Transcription</text>
+    
+    <!-- Pathway title with enhanced styling -->
+    <rect x="150" y="10" width="500" height="60" rx="10" ry="10" fill="#ffffff" stroke="#333333" stroke-width="2" opacity="0.8" filter="url(#dropShadow)" />
+    <text x="400" y="35" font-family="Arial" font-size="20" font-weight="bold" fill="#000" text-anchor="middle">Erythropoietin-Mediated Signaling Pathway</text>
+    <text x="400" y="55" font-family="Arial" font-size="14" font-weight="bold" fill="#666" text-anchor="middle">(Human) - GO:0038162</text>
+    
+    <!-- Footer with source information -->
+    <rect x="0" y="600" width="800" height="50" fill="#f5f5f5" stroke="#333" stroke-width="1" />
+    <text x="400" y="625" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Based on GO-CAM model: gomodel:66187e4700002082</text>
+    <text x="400" y="640" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">The erythropoietin-mediated signaling pathway (Human) - NCBITaxon:9606</text>
+</svg>

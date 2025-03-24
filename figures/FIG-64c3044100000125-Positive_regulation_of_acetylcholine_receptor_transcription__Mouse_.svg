@@ -1,0 +1,117 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Cell membrane outline -->
+  <path d="M 50,150 Q 400,50 750,150 V 550 Q 400,650 50,550 Z" fill="#f9f9f9" stroke="#333333" stroke-width="2" />
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="400" rx="150" ry="100" fill="#e6f2ff" stroke="#333333" stroke-width="2" />
+  <text x="400" y="390" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Nucleus</text>
+  
+  <!-- Postsynaptic membrane region -->
+  <path d="M 150,150 Q 400,100 650,150 V 200 Q 400,250 150,200 Z" fill="#ffe6cc" stroke="#333333" stroke-width="2" />
+  <text x="400" y="170" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Postsynaptic Membrane</text>
+  
+  <!-- Extracellular space -->
+  <text x="400" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Extracellular Space</text>
+  
+  <!-- Nrg1 ligand -->
+  <circle cx="400" cy="90" r="20" fill="#ffcc99" stroke="#333333" stroke-width="2" />
+  <text x="400" y="95" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#333333">Nrg1</text>
+  
+  <!-- ErbB2/3 receptor complex -->
+  <rect x="370" y="140" width="60" height="30" fill="#ff9999" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="160" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" fill="#333333">ErbB2/ErbB3</text>
+  
+  <!-- MAPK Cascade components -->
+  <!-- Raf1 -->
+  <rect x="350" y="220" width="40" height="25" fill="#99ccff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="370" y="237" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" fill="#333333">Raf1</text>
+  
+  <!-- Map2k1/4 -->
+  <rect x="350" y="280" width="40" height="25" fill="#cc99ff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="370" y="295" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#333333">Map2k1/4</text>
+  
+  <!-- Mapk8 -->
+  <rect x="350" y="340" width="40" height="25" fill="#9999ff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="370" y="357" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" fill="#333333">Mapk8</text>
+  
+  <!-- Transcription factor -->
+  <polygon points="370,425 390,425 400,440 410,425 430,425 430,460 370,460" fill="#99ff99" stroke="#333333" stroke-width="2" />
+  <text x="400" y="447" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" fill="#333333">Gabpa</text>
+  
+  <!-- Target gene -->
+  <rect x="350" y="480" width="100" height="20" fill="#ffffff" stroke="#333333" stroke-width="2" />
+  <text x="400" y="494" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" fill="#333333">Chrne</text>
+  
+  <!-- Acetylcholine receptor at membrane -->
+  <path d="M 500,150 L 520,130 L 540,150 L 520,170 Z" fill="#ffff99" stroke="#333333" stroke-width="2" />
+  <text x="520" y="155" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold" fill="#333333">AChR</text>
+  
+  <!-- Process labels -->
+  <text x="470" y="130" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">Ligand Binding</text>
+  <text x="500" y="215" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">Receptor Activation</text>
+  <text x="500" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">MAPKKK Activation</text>
+  <text x="500" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">MAPKK Activation</text>
+  <text x="500" y="380" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">MAPK Activation</text>
+  <text x="520" y="430" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">TF Activation</text>
+  <text x="510" y="490" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">Gene Transcription</text>
+  <text x="600" y="300" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">Protein Expression</text>
+  
+  <!-- Binding arrow with enhanced visibility -->
+  <line x1="400" y1="110" x2="400" y2="140" stroke="#ff6600" stroke-width="3" marker-end="url(#arrowhead)" />
+  
+  <!-- Signaling cascade arrows with enhanced visibility -->
+  <line x1="400" y1="170" x2="370" y2="220" stroke="#ff6600" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="370" y1="245" x2="370" y2="280" stroke="#ff6600" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="370" y1="305" x2="370" y2="340" stroke="#ff6600" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="370" y1="365" x2="370" y2="425" stroke="#ff6600" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="460" x2="400" y2="480" stroke="#ff6600" stroke-width="3" marker-end="url(#arrowhead)" />
+  <path d="M 450,490 C 550,490 600,300 540,170" stroke="#ff6600" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead)" fill="none" />
+  
+  <!-- Pathway label -->
+  <text x="200" y="300" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">MAPK Cascade</text>
+  <text x="200" y="350" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Positive Regulation of</text>
+  <text x="200" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">JNK Cascade</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#333333">Positive Regulation of Acetylcholine Receptor Transcription</text>
+  <text x="400" y="50" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#333333">Mouse (Mus musculus)</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6600" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="400" width="180" height="180" fill="#ffffff" stroke="#333333" stroke-width="1" />
+  <text x="690" y="420" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="620" cy="440" r="8" fill="#ffcc99" stroke="#333333" stroke-width="1" />
+  <text x="680" y="444" font-family="Arial" font-size="10" fill="#333333">Ligand (Nrg1)</text>
+  
+  <rect x="610" y="455" width="16" height="10" fill="#ff9999" stroke="#333333" stroke-width="1" rx="2" ry="2" />
+  <text x="680" y="464" font-family="Arial" font-size="10" fill="#333333">Receptor (ErbB2/ErbB3)</text>
+  
+  <rect x="610" y="475" width="16" height="10" fill="#99ccff" stroke="#333333" stroke-width="1" rx="2" ry="2" />
+  <text x="680" y="484" font-family="Arial" font-size="10" fill="#333333">MAPKKK (Raf1)</text>
+  
+  <rect x="610" y="495" width="16" height="10" fill="#cc99ff" stroke="#333333" stroke-width="1" rx="2" ry="2" />
+  <text x="680" y="504" font-family="Arial" font-size="10" fill="#333333">MAPKK (Map2k1/4)</text>
+  
+  <rect x="610" y="515" width="16" height="10" fill="#9999ff" stroke="#333333" stroke-width="1" rx="2" ry="2" />
+  <text x="680" y="524" font-family="Arial" font-size="10" fill="#333333">MAPK (Mapk8)</text>
+  
+  <polygon points="612,535 620,535 624,540 628,535 636,535 636,545 612,545" fill="#99ff99" stroke="#333333" stroke-width="1" />
+  <text x="680" y="544" font-family="Arial" font-size="10" fill="#333333">Transcription Factor (Gabpa)</text>
+  
+  <path d="M 612,560 L 620,555 L 628,560 L 620,565 Z" fill="#ffff99" stroke="#333333" stroke-width="1" />
+  <text x="680" y="564" font-family="Arial" font-size="10" fill="#333333">Acetylcholine Receptor (Chrne)</text>
+  
+  <line x1="610" y1="575" x2="636" y2="575" stroke="#ff6600" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="680" y="579" font-family="Arial" font-size="10" fill="#333333">Signal Flow</text>
+</svg>

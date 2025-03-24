@@ -1,0 +1,187 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">SUCNR1 in adipocytes controls energy homeostasis by modulating circadian clock and LEP expression</text>
+  
+  <!-- Cell outline (white adipocyte) -->
+  <ellipse cx="400" cy="350" rx="320" ry="230" fill="#fef9f3" stroke="#333" stroke-width="2"/>
+  <text x="110" y="350" font-family="Arial" font-size="14" font-style="italic" text-anchor="start">White adipocyte (CL:0000448)</text>
+  
+  <!-- Nucleus -->
+  <circle cx="340" cy="350" r="100" fill="#e6eeff" stroke="#333" stroke-width="2"/>
+  <text x="340" y="270" font-family="Arial" font-size="14" text-anchor="middle">Nucleus</text>
+  <text x="340" y="285" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">(GO:0005634)</text>
+  
+  <!-- Plasma membrane label -->
+  <text x="400" y="135" font-family="Arial" font-size="14" text-anchor="middle">Plasma membrane</text>
+  <text x="400" y="150" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">(GO:0005886)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="550" y="230" font-family="Arial" font-size="14" text-anchor="middle">Cytoplasm</text>
+  <text x="550" y="245" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">(GO:0005737)</text>
+  
+  <!-- Extracellular space label -->
+  <text x="150" y="150" font-family="Arial" font-size="14" text-anchor="middle">Extracellular space</text>
+  <text x="150" y="165" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">(GO:0005615)</text>
+  
+  <!-- SUCNR1 receptor in plasma membrane -->
+  <rect x="370" y="110" width="60" height="30" rx="15" fill="#8FBC8F" stroke="#333" stroke-width="2"/>
+  <text x="400" y="130" font-family="Arial" font-size="12" text-anchor="middle">SUCNR1</text>
+  <text x="400" y="105" font-family="Arial" font-size="9" font-style="italic" text-anchor="middle">G protein-coupled receptor (UniProtKB:Q9BXA5)</text>
+  
+  <!-- Succinate ligand -->
+  <circle cx="400" y="70" r="15" fill="#FDA172" stroke="#333" stroke-width="2"/>
+  <text x="400" y="73" font-family="Arial" font-size="9" text-anchor="middle">Succinate</text>
+  <text x="400" y="55" font-family="Arial" font-size="8" font-style="italic" text-anchor="middle">(CHEBI:30031)</text>
+  
+  <!-- Binding arrow -->
+  <line x1="400" y1="85" x2="400" y2="110" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="420" y="100" font-family="Arial" font-size="10" text-anchor="middle">Binding</text>
+  
+  <!-- PRKAA1 in cytoplasm -->
+  <rect x="400" y="200" width="60" height="30" rx="5" fill="#90CAF9" stroke="#333" stroke-width="2"/>
+  <text x="430" y="220" font-family="Arial" font-size="12" text-anchor="middle">PRKAA1</text>
+  <text x="430" y="195" font-family="Arial" font-size="9" font-style="italic" text-anchor="middle">AMP-activated protein kinase (UniProtKB:Q13131)</text>
+  
+  <!-- SUCNR1 to PRKAA1 activation -->
+  <path d="M400,140 Q400,170 400,200" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="425" y="175" font-family="Arial" font-size="10" text-anchor="middle">activates</text>
+  <text x="450" y="175" font-family="Arial" font-size="8" font-style="italic" text-anchor="start">(RO:0002407)</text>
+  
+  <!-- Annotation for PRKAA1 role -->
+  <rect x="470" y="200" width="120" height="30" rx="5" fill="#f0f0f0" stroke="#aaa" stroke-width="1" opacity="0.9"/>
+  <text x="530" y="215" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Energy sensor kinase</text>
+  <text x="530" y="225" font-family="Arial" font-size="9" text-anchor="middle" fill="#555">(GO:0004679)</text>
+  
+  <!-- MAPK8/JNK in cytoplasm -->
+  <rect x="500" y="270" width="60" height="30" rx="5" fill="#90CAF9" stroke="#333" stroke-width="2"/>
+  <text x="530" y="290" font-family="Arial" font-size="12" text-anchor="middle">MAPK8</text>
+  <text x="530" y="265" font-family="Arial" font-size="9" font-style="italic" text-anchor="middle">JUN kinase (UniProtKB:P45983)</text>
+  
+  <!-- PRKAA1 to MAPK8 activation -->
+  <path d="M460,215 Q490,240 500,270" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="490" y="245" font-family="Arial" font-size="10" text-anchor="middle">activates</text>
+  <text x="515" y="245" font-family="Arial" font-size="8" font-style="italic" text-anchor="start">(RO:0002407)</text>
+  
+  <!-- Annotation for MAPK8 role -->
+  <rect x="570" y="270" width="130" height="30" rx="5" fill="#f0f0f0" stroke="#aaa" stroke-width="1" opacity="0.9"/>
+  <text x="635" y="285" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Stress-activated kinase</text>
+  <text x="635" y="295" font-family="Arial" font-size="9" text-anchor="middle" fill="#555">(GO:0004705)</text>
+  
+  <!-- BMAL1 in nucleus -->
+  <rect x="270" y="320" width="60" height="30" rx="5" fill="#FFCC80" stroke="#333" stroke-width="2"/>
+  <text x="300" y="340" font-family="Arial" font-size="12" text-anchor="middle">BMAL1</text>
+  <text x="300" y="315" font-family="Arial" font-size="9" font-style="italic" text-anchor="middle">Transcription coregulator (UniProtKB:O00327)</text>
+  
+  <!-- MAPK8 to BMAL1 activation -->
+  <path d="M500,285 Q420,295 330,320" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="425" y="295" font-family="Arial" font-size="10" text-anchor="middle">activates</text>
+  <text x="450" y="295" font-family="Arial" font-size="8" font-style="italic" text-anchor="start">(RO:0002407)</text>
+  
+  <!-- Circadian regulation label with background -->
+  <rect x="190" y="300" width="100" height="35" rx="5" fill="#f0f0f0" stroke="#aaa" stroke-width="1" opacity="0.9"/>
+  <text x="240" y="315" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Circadian regulation</text>
+  <text x="240" y="327" font-family="Arial" font-size="8" text-anchor="middle" fill="#555">(GO:0032922)</text>
+  
+  <!-- CEBPA in nucleus -->
+  <rect x="350" y="380" width="60" height="30" rx="5" fill="#FFCC80" stroke="#333" stroke-width="2"/>
+  <text x="380" y="400" font-family="Arial" font-size="12" text-anchor="middle">CEBPA</text>
+  <text x="380" y="375" font-family="Arial" font-size="9" font-style="italic" text-anchor="middle">Transcription activator (UniProtKB:P49715)</text>
+  
+  <!-- BMAL1 to CEBPA activation -->
+  <path d="M330,350 Q340,365 350,380" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="355" y="365" font-family="Arial" font-size="10" text-anchor="middle">activates</text>
+  <text x="380" y="365" font-family="Arial" font-size="8" font-style="italic" text-anchor="start">(RO:0002629)</text>
+  
+  <!-- Annotation for CEBPA function -->
+  <rect x="420" y="385" width="140" height="35" rx="5" fill="#f0f0f0" stroke="#aaa" stroke-width="1" opacity="0.9"/>
+  <text x="490" y="400" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">RNA polymerase II-specific</text>
+  <text x="490" y="412" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">DNA-binding activator</text>
+  <text x="490" y="422" font-family="Arial" font-size="8" text-anchor="middle" fill="#555">(GO:0001228)</text>
+  
+  <!-- LEP gene in nucleus -->
+  <rect x="270" y="420" width="60" height="30" rx="5" fill="#E1BEE7" stroke="#333" stroke-width="2"/>
+  <text x="300" y="440" font-family="Arial" font-size="12" text-anchor="middle">LEP</text>
+  <text x="300" y="415" font-family="Arial" font-size="9" font-style="italic" text-anchor="middle">Leptin (UniProtKB:P41159)</text>
+  
+  <!-- CEBPA to LEP activation -->
+  <path d="M350,395 Q320,405 300,420" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="320" y="405" font-family="Arial" font-size="10" text-anchor="middle">activates</text>
+  <text x="345" y="405" font-family="Arial" font-size="8" font-style="italic" text-anchor="start">(RO:0002407)</text>
+  
+  <!-- LEP hormone secretion -->
+  <circle cx="150" y="230" r="25" fill="#E1BEE7" stroke="#333" stroke-width="2"/>
+  <text x="150" y="235" font-family="Arial" font-size="12" text-anchor="middle">LEP</text>
+  <text x="150" y="247" font-family="Arial" font-size="9" font-style="italic" text-anchor="middle">Hormone activity</text>
+  <text x="150" y="257" font-family="Arial" font-size="8" font-style="italic" text-anchor="middle">(GO:0005179)</text>
+  
+  <!-- LEP secretion path -->
+  <path d="M270,420 Q200,350 150,255" stroke="#E1BEE7" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="200" y="350" font-family="Arial" font-size="11" text-anchor="middle">secreted</text>
+  <text x="200" y="362" font-family="Arial" font-size="9" text-anchor="middle">to extracellular space</text>
+  
+  <!-- Energy homeostasis label with background -->
+  <rect x="70" y="180" width="160" height="50" rx="5" fill="#f0f0f0" stroke="#aaa" stroke-width="1" opacity="0.9"/>
+  <text x="150" y="195" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Energy homeostasis</text>
+  <text x="150" y="210" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">(GO:0097009)</text>
+  <text x="150" y="223" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Pathway endpoint</text>
+  
+  <!-- LEP function annotation -->
+  <rect x="70" y="290" width="160" height="50" rx="5" fill="#f0f0f0" stroke="#aaa" stroke-width="1" opacity="0.9"/>
+  <text x="150" y="305" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">LEP regulates appetite,</text>
+  <text x="150" y="320" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">metabolism and</text>
+  <text x="150" y="335" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">fat storage</text>
+  
+  <!-- Overall process annotation with background -->
+  <rect x="500" y="430" width="250" height="60" rx="10" fill="#f0f0f0" stroke="#aaa" stroke-width="1" opacity="0.9"/>
+  <text x="625" y="445" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">This pathway shows how the metabolite</text>
+  <text x="625" y="460" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">succinate signals through SUCNR1 to</text>
+  <text x="625" y="475" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">ultimately control LEP expression and</text>
+  <text x="625" y="490" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">energy homeostasis</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="80" y="500" width="650" height="180" rx="10" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="405" y="520" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Legend items - left column -->
+  <rect x="100" y="535" width="20" height="15" rx="7.5" fill="#8FBC8F" stroke="#333" stroke-width="1"/>
+  <text x="130" y="547" font-family="Arial" font-size="12" text-anchor="start">Receptor: SUCNR1 (Q9BXA5)</text>
+  <text x="130" y="562" font-family="Arial" font-size="10" text-anchor="start" fill="#555">G protein-coupled receptor that binds succinate</text>
+  
+  <rect x="100" y="580" width="20" height="15" rx="3" fill="#90CAF9" stroke="#333" stroke-width="1"/>
+  <text x="130" y="592" font-family="Arial" font-size="12" text-anchor="start">Kinases:</text>
+  <text x="145" y="607" font-family="Arial" font-size="12" text-anchor="start">• PRKAA1/AMPK (Q13131) - Energy sensor kinase</text>
+  <text x="145" y="622" font-family="Arial" font-size="12" text-anchor="start">• MAPK8/JNK (P45983) - Stress-activated kinase</text>
+  
+  <rect x="100" y="640" width="20" height="15" rx="3" fill="#FFCC80" stroke="#333" stroke-width="1"/>
+  <text x="130" y="652" font-family="Arial" font-size="12" text-anchor="start">Transcription factors:</text>
+  <text x="145" y="667" font-family="Arial" font-size="12" text-anchor="start">• BMAL1 (O00327) - Circadian rhythm regulator</text>
+  <text x="145" y="682" font-family="Arial" font-size="12" text-anchor="start">• CEBPA (P49715) - Transcriptional activator</text>
+  
+  <!-- Legend items - right column -->
+  <circle cx="420" y="540" r="7" fill="#FDA172" stroke="#333" stroke-width="1"/>
+  <text x="440" y="545" font-family="Arial" font-size="12" text-anchor="start">Metabolite: Succinate (CHEBI:30031)</text>
+  <text x="440" y="560" font-family="Arial" font-size="10" text-anchor="start" fill="#555">TCA cycle intermediate acting as signaling molecule</text>
+  
+  <circle cx="420" y="580" r="7" fill="#E1BEE7" stroke="#333" stroke-width="1"/>
+  <text x="440" y="585" font-family="Arial" font-size="12" text-anchor="start">Hormone: LEP/Leptin (P41159)</text>
+  <text x="440" y="600" font-family="Arial" font-size="10" text-anchor="start" fill="#555">Regulates energy balance by inhibiting hunger</text>
+  
+  <line x1="420" y1="625" x2="440" y2="625" stroke="#333" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="460" y="630" font-family="Arial" font-size="12" text-anchor="start">Secretion/Transport</text>
+  
+  <path d="M420,650 L430,650 L440,650" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="460" y="655" font-family="Arial" font-size="12" text-anchor="start">Activation/Causality</text>
+  
+  <rect x="420" y="670" width="20" height="15" rx="5" fill="#f0f0f0" stroke="#aaa" stroke-width="1"/>
+  <text x="460" y="682" font-family="Arial" font-size="12" text-anchor="start">Annotation/Process description</text>
+</svg>

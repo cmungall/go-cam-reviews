@@ -1,0 +1,83 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell outline -->
+    <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+    
+    <!-- Cellular Compartments -->
+    <!-- Golgi apparatus -->
+    <path d="M150,150 C180,130 220,135 250,145 C280,155 290,170 320,175 C350,180 370,170 390,180 C410,190 420,210 400,230 C380,250 350,245 320,240 C290,235 270,220 240,215 C210,210 190,220 170,210 C150,200 140,170 150,150Z" fill="#add8e6" stroke="#333" stroke-width="2"/>
+    <text x="270" y="130" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Golgi apparatus</text>
+    
+    <!-- Early endosome -->
+    <ellipse cx="500" cy="220" rx="80" ry="60" fill="#ffcccc" stroke="#333" stroke-width="2"/>
+    <text x="500" y="180" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Early endosome</text>
+    
+    <!-- Lysosomal membrane -->
+    <ellipse cx="300" cy="400" rx="90" ry="70" fill="#d8bfd8" stroke="#333" stroke-width="2"/>
+    <text x="300" y="360" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Lysosomal membrane</text>
+    
+    <!-- Proteins -->
+    <!-- ZDHHC3 in Golgi -->
+    <rect x="200" y="170" width="80" height="30" rx="5" ry="5" fill="#90ee90" stroke="#333" stroke-width="2"/>
+    <text x="240" y="190" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">ZDHHC3</text>
+    
+    <!-- UNC93B1 with molecular carrier activity -->
+    <rect x="350" y="300" width="80" height="30" rx="5" ry="5" fill="#ffff99" stroke="#333" stroke-width="2"/>
+    <text x="390" y="320" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">UNC93B1</text>
+    
+    <!-- TLR9 in early endosome -->
+    <rect x="480" y="230" width="60" height="30" rx="5" ry="5" fill="#ff9999" stroke="#333" stroke-width="2"/>
+    <text x="510" y="250" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">TLR9</text>
+    
+    <!-- PPT1 in lysosomal membrane -->
+    <rect x="290" y="400" width="60" height="30" rx="5" ry="5" fill="#cc99ff" stroke="#333" stroke-width="2"/>
+    <text x="320" y="420" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PPT1</text>
+    
+    <!-- Activities -->
+    <text x="240" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Palmitoyltransferase activity</text>
+    <text x="390" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Molecular carrier activity</text>
+    <text x="510" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Pattern recognition receptor</text>
+    <text x="320" y="390" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Palmitoyl-hydrolase activity</text>
+    
+    <!-- Pathway flow text -->
+    <text x="150" y="230" font-family="Arial" font-size="12" fill="#333" transform="rotate(-30 150,230)">Adds palmitate</text>
+    <text x="470" y="290" font-family="Arial" font-size="12" fill="#333" transform="rotate(30 470,290)">Transports TLR9</text>
+    <text x="320" y="360" font-family="Arial" font-size="12" fill="#333" transform="rotate(75 320,360)">Removes palmitate</text>
+    
+    <!-- Connections/Arrows -->
+    <!-- ZDHHC3 positively regulates UNC93B1 -->
+    <path d="M250,200 C300,250 320,280 350,300" stroke="#339900" stroke-width="2.5" fill="none" marker-end="url(#arrowPositive)"/>
+    
+    <!-- UNC93B1 positively regulates TLR9 -->
+    <path d="M430,300 C460,280 470,260 480,245" stroke="#339900" stroke-width="2.5" fill="none" marker-end="url(#arrowPositive)"/>
+    
+    <!-- PPT1 negatively regulates UNC93B1 -->
+    <path d="M350,400 C360,370 370,340 370,330" stroke="#cc0000" stroke-width="2.5" fill="none" marker-end="url(#arrowNegative)"/>
+    
+    <!-- Markers for arrows -->
+    <defs>
+        <marker id="arrowPositive" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#339900"/>
+        </marker>
+        <marker id="arrowNegative" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#cc0000"/>
+        </marker>
+    </defs>
+    
+    <!-- Process Labels -->
+    <rect x="560" y="100" width="180" height="100" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+    <text x="650" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Processes:</text>
+    <text x="580" y="145" font-family="Arial" font-size="12">• TLR9 signaling pathway</text>
+    <text x="580" y="170" font-family="Arial" font-size="12">• Positive regulation of TLR9 signaling</text>
+    <text x="580" y="195" font-family="Arial" font-size="12">• Negative regulation of TLR9 signaling</text>
+    
+    <!-- Arrow Legend -->
+    <rect x="560" y="220" width="180" height="80" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+    <text x="650" y="240" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend:</text>
+    <line x1="580" y1="260" x2="620" y2="260" stroke="#339900" stroke-width="2.5" marker-end="url(#arrowPositive)"/>
+    <text x="680" y="265" font-family="Arial" font-size="12">Positive regulation</text>
+    <line x1="580" y1="290" x2="620" y2="290" stroke="#cc0000" stroke-width="2.5" marker-end="url(#arrowNegative)"/>
+    <text x="680" y="295" font-family="Arial" font-size="12">Negative regulation</text>
+    
+    <!-- Title -->
+    <text x="400" y="80" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Regulation of TLR9 by Palmitoylation (Human)</text>
+</svg>

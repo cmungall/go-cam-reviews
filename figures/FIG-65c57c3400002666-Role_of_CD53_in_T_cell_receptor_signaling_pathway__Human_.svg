@@ -1,0 +1,102 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane background -->
+  <rect x="50" y="200" width="700" height="120" fill="#f8f8f8" stroke="#888888" stroke-width="2" rx="5" />
+  <path d="M50,200 Q425,170 750,200" stroke="#888888" stroke-width="2" fill="none" />
+  <path d="M50,320 Q425,350 750,320" stroke="#888888" stroke-width="2" fill="none" />
+  
+  <!-- Title and Cell Label -->
+  <text x="400" y="50" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">Role of CD53 in T-cell Receptor Signaling Pathway</text>
+  <text x="110" y="190" font-family="Arial" font-size="18" font-style="italic">T Cell</text>
+  <text x="400" y="185" font-family="Arial" font-size="16" text-anchor="middle">Plasma Membrane</text>
+
+  <!-- Extracellular and intracellular labels -->
+  <text x="75" y="150" font-family="Arial" font-size="14">Extracellular</text>
+  <text x="75" y="380" font-family="Arial" font-size="14">Intracellular</text>
+
+  <!-- CD53 in membrane - transmembrane protein -->
+  <rect x="110" y="200" width="90" height="120" fill="#a6d8f0" stroke="#3498db" stroke-width="2" rx="15" />
+  <text x="155" y="250" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CD53</text>
+  <text x="155" y="270" font-family="Arial" font-size="12" text-anchor="middle">Adaptor protein</text>
+  <text x="155" y="285" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">GO:0043495</text>
+
+  <!-- PTPRC in membrane - enzyme style -->
+  <path d="M290,200 L330,200 Q350,200 350,220 L350,300 Q350,320 330,320 L290,320 Q270,320 270,300 L270,220 Q270,200 290,200 Z" 
+        fill="#f8c471" stroke="#e67e22" stroke-width="2" />
+  <text x="310" y="235" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">PTPRC</text>
+  <text x="310" y="255" font-family="Arial" font-size="12" text-anchor="middle">Phosphatase</text>
+  <text x="310" y="270" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">GO:0004725</text>
+
+  <!-- LCK in membrane - enzyme shape -->
+  <path d="M440,200 L480,200 Q500,200 500,220 L500,300 Q500,320 480,320 L440,320 Q420,320 420,300 L420,220 Q420,200 440,200 Z" 
+        fill="#aed6b9" stroke="#27ae60" stroke-width="2" />
+  <text x="460" y="235" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">LCK</text>
+  <text x="460" y="255" font-family="Arial" font-size="12" text-anchor="middle">Tyrosine Kinase</text>
+  <text x="460" y="270" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">GO:0004713</text>
+
+  <!-- CD247 (TCR) in membrane - receptor complex -->
+  <path d="M580,170 C590,190 610,190 620,170" stroke="#8e44ad" stroke-width="3" fill="none" />
+  <rect x="570" y="200" width="90" height="120" fill="#d7bde2" stroke="#8e44ad" stroke-width="2" rx="15" />
+  <text x="615" y="235" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CD247</text>
+  <text x="615" y="255" font-family="Arial" font-size="12" text-anchor="middle">TCR component</text>
+  <text x="615" y="270" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">GO:0004888</text>
+
+  <!-- CD53 clustering effect -->
+  <path d="M200,260 Q235,240 270,260" stroke="#3498db" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <circle cx="235" cy="230" r="15" fill="#a6d8f0" stroke="#3498db" stroke-width="1" opacity="0.6" />
+  <circle cx="255" cy="232" r="15" fill="#a6d8f0" stroke="#3498db" stroke-width="1" opacity="0.6" />
+  <text x="235" y="210" font-family="Arial" font-size="13" text-anchor="middle">Receptor</text>
+  <text x="235" y="225" font-family="Arial" font-size="13" text-anchor="middle">clustering</text>
+
+  <!-- PTPRC to LCK - dephosphorylation -->
+  <path d="M350,260 Q385,260 420,260" stroke="#e67e22" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <circle cx="385" cy="260" r="12" fill="white" stroke="#e67e22" stroke-width="1.5" />
+  <text x="385" y="264" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">P</text>
+  <text x="385" y="240" font-family="Arial" font-size="13" text-anchor="middle">Activates</text>
+
+  <!-- LCK to CD247 - phosphorylation -->
+  <path d="M500,260 Q535,260 570,260" stroke="#27ae60" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <circle cx="535" cy="260" r="12" fill="white" stroke="#27ae60" stroke-width="1.5" />
+  <text x="535" y="264" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">P</text>
+  <text x="535" y="240" font-family="Arial" font-size="13" text-anchor="middle">Phosphorylates</text>
+
+  <!-- Process labels -->
+  <text x="150" y="360" font-family="Arial" font-size="12" text-anchor="middle">GO:0043113</text>
+  <text x="310" y="360" font-family="Arial" font-size="12" text-anchor="middle">GO:0050852</text>
+  <text x="460" y="360" font-family="Arial" font-size="12" text-anchor="middle">GO:0050852</text>
+  <text x="615" y="360" font-family="Arial" font-size="12" text-anchor="middle">GO:0050852</text>
+  
+  <!-- T cell receptor signaling pathway label -->
+  <rect x="200" y="400" width="400" height="30" fill="#f5f5f5" stroke="#555555" stroke-width="1" rx="5" />
+  <text x="400" y="420" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">T Cell Receptor Signaling Pathway (GO:0050852)</text>
+
+  <!-- Legend -->
+  <rect x="100" y="445" width="600" height="130" fill="#ffffff" stroke="#888888" stroke-width="1" rx="5" />
+  <text x="110" y="465" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Protein shapes -->
+  <rect x="120" y="475" width="40" height="25" fill="#a6d8f0" stroke="#3498db" stroke-width="1.5" rx="10" />
+  <text x="170" y="490" font-family="Arial" font-size="13">Transmembrane protein</text>
+  
+  <path d="M120,515 L140,515 Q150,515 150,525 L150,535 Q150,545 140,545 L120,545 Q110,545 110,535 L110,525 Q110,515 120,515 Z" 
+        fill="#aed6b9" stroke="#27ae60" stroke-width="1.5" />
+  <text x="170" y="535" font-family="Arial" font-size="13">Enzyme (Kinase/Phosphatase)</text>
+  
+  <!-- Interaction symbols -->
+  <line x1="300" y1="485" x2="340" y2="485" stroke="#3498db" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="380" y="490" font-family="Arial" font-size="13">Activation/Promotion</text>
+  
+  <circle cx="320" cy="525" r="10" fill="white" stroke="#27ae60" stroke-width="1.5" />
+  <text x="320" y="529" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">P</text>
+  <text x="380" y="530" font-family="Arial" font-size="13">(De)phosphorylation event</text>
+  
+  <circle cx="510" cy="485" r="12" fill="#a6d8f0" stroke="#3498db" stroke-width="1" opacity="0.6" />
+  <circle cx="525" cy="485" r="12" fill="#a6d8f0" stroke="#3498db" stroke-width="1" opacity="0.6" />
+  <text x="570" y="490" font-family="Arial" font-size="13">Protein clustering</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+</svg>

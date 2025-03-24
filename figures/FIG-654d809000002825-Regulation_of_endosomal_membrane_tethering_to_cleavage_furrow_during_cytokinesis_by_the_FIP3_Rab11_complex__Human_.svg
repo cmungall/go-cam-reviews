@@ -1,0 +1,113 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline during cytokinesis -->
+  <ellipse cx="250" cy="150" rx="200" ry="120" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <ellipse cx="550" cy="150" rx="200" ry="120" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cleavage furrow -->
+  <path d="M350,150 C375,200 425,200 450,150" fill="#e6e6fa" stroke="#333" stroke-width="2"/>
+  <text x="380" y="250" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Cleavage Furrow</text>
+  <text x="380" y="268" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GO:0032154)</text>
+  
+  <!-- Midbody -->
+  <rect x="370" y="130" width="60" height="40" fill="#d1e0ff" stroke="#333" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="115" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Midbody</text>
+  <text x="400" y="95" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GO:0030496)</text>
+  
+  <!-- Endocytic vesicle membrane -->
+  <circle cx="280" cy="300" r="50" fill="#ffece0" stroke="#333" stroke-width="2"/>
+  <text x="280" y="290" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Endocytic</text>
+  <text x="280" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Vesicle</text>
+  <text x="280" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Membrane</text>
+  <text x="280" y="370" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GO:0030666)</text>
+  
+  <!-- Exocyst complex -->
+  <rect x="500" y="300" r="40" width="100" height="60" fill="#e0f0e0" stroke="#333" stroke-width="2" rx="10" ry="10"/>
+  <text x="550" y="335" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Exocyst</text>
+  <text x="550" y="375" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GO:0000145)</text>
+  
+  <!-- Proteins and their interactions -->
+  <!-- RAB11A in vesicle membrane -->
+  <circle cx="240" cy="250" r="28" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="240" y="255" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RAB11A</text>
+  
+  <!-- RAB11FIP3 (adaptor) -->
+  <rect x="320" y="260" width="90" height="35" fill="#99ccff" stroke="#333" stroke-width="2" rx="5" ry="5"/>
+  <text x="365" y="282" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RAB11FIP3</text>
+  
+  <!-- ARF6 at cleavage furrow -->
+  <circle cx="350" cy="180" r="28" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="350" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ARF6</text>
+  
+  <!-- RACGAP1 at midbody -->
+  <rect x="440" y="190" width="80" height="35" fill="#99ccff" stroke="#333" stroke-width="2" rx="5" ry="5"/>
+  <text x="480" y="212" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RACGAP1</text>
+  
+  <!-- ECT2 at midbody -->
+  <polygon points="440,130 510,130 490,160 420,160" fill="#ff99cc" stroke="#333" stroke-width="2"/>
+  <text x="465" y="150" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ECT2</text>
+  
+  <!-- EXOC7 in exocyst -->
+  <rect x="520" y="315" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="2" rx="5" ry="5"/>
+  <text x="550" y="337" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">EXOC7</text>
+  
+  <!-- Interaction arrows -->
+  <!-- RAB11A activates RAB11FIP3 -->
+  <path d="M268,250 L320,260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="290" y="245" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  
+  <!-- RAB11FIP3 interacts with RACGAP1 -->
+  <path d="M410,260 C430,260 440,230 450,225" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="430" y="242" font-family="Arial" font-size="12" text-anchor="middle">interacts</text>
+  
+  <!-- ARF6 activates RAB11FIP3 -->
+  <path d="M350,208 L350,260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="370" y="235" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  
+  <!-- RAB11FIP3 positively regulates EXOC7 -->
+  <path d="M410,277 C440,290 490,310 520,320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="460" y="295" font-family="Arial" font-size="12" text-anchor="middle">positively regulates</text>
+  
+  <!-- RACGAP1 interacts with ECT2 -->
+  <path d="M480,190 L470,160" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="495" y="175" font-family="Arial" font-size="12" text-anchor="middle">regulates</text>
+  
+  <!-- ECT2 promotes cytokinesis -->
+  <path d="M465,130 C465,100 400,100 400,130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="430" y="85" font-family="Arial" font-size="12" text-anchor="middle">promotes cytokinesis</text>
+  
+  <!-- Molecular function annotations -->
+  <text x="240" y="275" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">G protein activity</text>
+  <text x="365" y="305" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">adaptor activity</text>
+  <text x="350" y="205" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">G protein activity</text>
+  <text x="480" y="230" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">adaptor activity</text>
+  <text x="465" y="170" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">GEF activity</text>
+  <text x="550" y="355" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">adaptor activity</text>
+  
+  <!-- Process labels -->
+  <text x="400" y="420" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Regulation of Endosomal Membrane Tethering to Cleavage Furrow During Cytokinesis</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="460" width="600" height="150" fill="#f8f8f8" stroke="#333" stroke-width="1" rx="10" ry="10"/>
+  <text x="400" y="480" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">LEGEND</text>
+  
+  <rect x="150" y="500" width="25" height="25" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="185" y="517" font-family="Arial" font-size="14" text-anchor="start">G protein (GO:0003925)</text>
+  
+  <rect x="150" y="535" width="25" height="25" fill="#99ccff" stroke="#333" stroke-width="1"/>
+  <text x="185" y="552" font-family="Arial" font-size="14" text-anchor="start">Adaptor protein (GO:0030674)</text>
+  
+  <rect x="150" y="570" width="25" height="25" fill="#ff99cc" stroke="#333" stroke-width="1"/>
+  <text x="185" y="587" font-family="Arial" font-size="14" text-anchor="start">GEF activity (GO:0005085)</text>
+  
+  <text x="400" y="517" font-family="Arial" font-size="14" text-anchor="start">Vesicle-mediated transport (GO:0016192)</text>
+  <text x="400" y="540" font-family="Arial" font-size="14" text-anchor="start">Vesicle docking (GO:0006904)</text>
+  <text x="400" y="563" font-family="Arial" font-size="14" text-anchor="start">Mitotic cytokinesis (GO:0000281)</text>
+  <text x="400" y="586" font-family="Arial" font-size="14" text-anchor="start">Regulation of cytokinetic process (GO:1903438)</text>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

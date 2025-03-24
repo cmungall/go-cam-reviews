@@ -1,0 +1,171 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Cell Components -->
+  <!-- Extracellular Space -->
+  <rect x="0" y="0" width="800" height="600" fill="#f0f9ff" />
+  
+  <!-- Cell outline -->
+  <path d="M 50,150 C 50,100 750,100 750,150 C 800,300 800,400 750,450 C 750,500 50,500 50,450 C 0,400 0,300 50,150 Z" 
+        fill="#e6f5f7" stroke="#333" stroke-width="3" />
+  
+  <!-- Plasma Membrane Label -->
+  <text x="400" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Plasma Membrane</text>
+  
+  <!-- Extracellular Label -->
+  <text x="400" y="80" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Extracellular Space</text>
+  
+  <!-- Cytosol Label -->
+  <text x="400" y="200" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Cytosol</text>
+  
+  <!-- Molecules and Proteins -->
+  <!-- Extracellular Biotin -->
+  <circle cx="300" cy="80" r="20" fill="#FFCC99" stroke="#333" stroke-width="2" />
+  <text x="300" y="85" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Biotin</text>
+  
+  <!-- Sodium -->
+  <circle cx="250" cy="80" r="15" fill="#ADD8E6" stroke="#333" stroke-width="2" />
+  <text x="250" y="85" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Na+</text>
+  
+  <!-- Pdzd11 -->
+  <rect x="350" y="120" width="70" height="30" rx="5" fill="#98FB98" stroke="#333" stroke-width="2" />
+  <text x="385" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Pdzd11</text>
+  
+  <!-- SLC5A6 Transporter -->
+  <rect x="250" y="130" width="80" height="40" rx="5" fill="#ADD8E6" stroke="#333" stroke-width="2" />
+  <text x="290" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Slc5a6</text>
+  
+  <!-- Intracellular Biotin -->
+  <circle cx="300" cy="200" r="20" fill="#FFCC99" stroke="#333" stroke-width="2" />
+  <text x="300" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Biotin</text>
+  
+  <!-- HLCS -->
+  <rect x="400" y="250" width="70" height="30" rx="5" fill="#FFB6C1" stroke="#333" stroke-width="2" />
+  <text x="435" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Hlcs</text>
+  
+  <!-- ACACA -->
+  <rect x="300" y="350" width="70" height="30" rx="5" fill="#9370DB" stroke="#333" stroke-width="2" />
+  <text x="335" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Acaca</text>
+  
+  <!-- PCX -->
+  <rect x="500" y="350" width="70" height="30" rx="5" fill="#9370DB" stroke="#333" stroke-width="2" />
+  <text x="535" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Pcx</text>
+  
+  <!-- Gluconeogenesis Process -->
+  <rect x="500" y="420" width="120" height="30" rx="10" fill="#FAEBD7" stroke="#333" stroke-width="2" />
+  <text x="560" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Gluconeogenesis</text>
+  
+  <!-- Biotin Metabolic Process -->
+  <rect x="100" y="300" width="150" height="30" rx="10" fill="#FAEBD7" stroke="#333" stroke-width="2" />
+  <text x="175" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Biotin Metabolic Process</text>
+  
+  <!-- Arrows and Connections -->
+  <!-- Pdzd11 activates Slc5a6 -->
+  <line x1="350" y1="135" x2="330" y2="135" stroke="#0066CC" stroke-width="2" />
+  <polygon points="330,135 335,130 340,135 335,140" fill="#0066CC" />
+  <text x="340" y="125" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">activates</text>
+  
+  <!-- Sodium and Biotin transport -->
+  <line x1="250" y1="95" x2="250" y2="130" stroke="#333" stroke-width="2" />
+  <polygon points="250,130 245,125 255,125" fill="#333" />
+  
+  <line x1="300" y1="100" x2="300" y2="130" stroke="#333" stroke-width="2" />
+  <polygon points="300,130 295,125 305,125" fill="#333" />
+  
+  <!-- Slc5a6 transports biotin across membrane -->
+  <line x1="300" y1="170" x2="300" y2="180" stroke="#333" stroke-width="2" />
+  <polygon points="300,180 295,175 305,175" fill="#333" />
+  
+  <!-- Biotin to HLCS -->
+  <line x1="320" y1="200" x2="400" y2="250" stroke="#009933" stroke-width="2" />
+  <polygon points="400,250 390,245 395,240" fill="#009933" />
+  <text x="350" y="220" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">input</text>
+  
+  <!-- HLCS to ACACA -->
+  <line x1="400" y1="280" x2="350" y2="350" stroke="#CC6600" stroke-width="2" />
+  <polygon points="350,350 348,340 358,345" fill="#CC6600" />
+  <text x="370" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">positively regulates</text>
+  
+  <!-- HLCS to PCX -->
+  <line x1="470" y1="265" x2="520" y2="350" stroke="#CC6600" stroke-width="2" />
+  <polygon points="520,350 510,345 515,340" fill="#CC6600" />
+  <text x="500" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">positively regulates</text>
+  
+  <!-- PCX to Gluconeogenesis -->
+  <line x1="535" y1="380" x2="535" y2="420" stroke="#663399" stroke-width="2" />
+  <polygon points="535,420 530,410 540,410" fill="#663399" />
+  <text x="550" y="400" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">part of</text>
+  
+  <!-- Process connections - updated to be more clear -->
+  <line x1="300" y1="200" x2="240" y2="300" stroke="#993366" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="240,300 235,290 245,295" fill="#993366" />
+  
+  <line x1="400" y1="250" x2="240" y2="300" stroke="#993366" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="240,300 235,290 245,295" fill="#993366" />
+  
+  <text x="250" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">part of biotin metabolism</text>
+  
+  <!-- Title of the Diagram -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">
+    Biotin Metabolic Process in Mouse
+  </text>
+  
+  <!-- Color Legend -->
+  <rect x="50" y="520" width="700" height="70" rx="5" fill="white" stroke="#333" stroke-width="1" />
+  <text x="400" y="535" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <!-- Legend items - Molecules/Proteins -->
+  <circle cx="90" y="555" r="8" fill="#FFCC99" stroke="#333" stroke-width="1" />
+  <text x="110" y="559" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Biotin</text>
+  
+  <circle cx="170" y="555" r="8" fill="#ADD8E6" stroke="#333" stroke-width="1" />
+  <text x="190" y="559" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Ion/Transporter</text>
+  
+  <rect x="250" y="550" width="16" height="10" rx="2" fill="#98FB98" stroke="#333" stroke-width="1" />
+  <text x="275" y="559" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Activator</text>
+  
+  <rect x="330" y="550" width="16" height="10" rx="2" fill="#FFB6C1" stroke="#333" stroke-width="1" />
+  <text x="355" y="559" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Ligase</text>
+  
+  <rect x="400" y="550" width="16" height="10" rx="2" fill="#9370DB" stroke="#333" stroke-width="1" />
+  <text x="425" y="559" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Carboxylase</text>
+  
+  <rect x="500" y="550" width="16" height="10" rx="2" fill="#FAEBD7" stroke="#333" stroke-width="1" />
+  <text x="525" y="559" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Process</text>
+  
+  <!-- Legend items - Interactions -->
+  <line x1="80" y="575" x2="100" y2="575" stroke="#0066CC" stroke-width="2" />
+  <polygon points="100,575 95,570 95,580" fill="#0066CC" />
+  <text x="130" y="579" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Activation</text>
+  
+  <line x1="180" y="575" x2="200" y2="575" stroke="#009933" stroke-width="2" />
+  <polygon points="200,575 195,570 195,580" fill="#009933" />
+  <text x="230" y="579" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Input</text>
+  
+  <line x1="280" y="575" x2="300" y2="575" stroke="#CC6600" stroke-width="2" />
+  <polygon points="300,575 295,570 295,580" fill="#CC6600" />
+  <text x="345" y="579" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Positive Regulation</text>
+  
+  <line x1="430" y="575" x2="450" y2="575" stroke="#663399" stroke-width="2" />
+  <polygon points="450,575 445,570 445,580" fill="#663399" />
+  <text x="480" y="579" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Part Of</text>
+  
+  <line x1="570" y="575" x2="590" y2="575" stroke="#993366" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="590,575 585,570 585,580" fill="#993366" />
+  <text x="640" y="579" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Process Association</text>
+  
+  <!-- Gene/Protein Function Labels -->
+  <text x="60" y="500" font-family="Arial" font-size="11" text-anchor="start" fill="#333">
+    Slc5a6: Sodium-dependent multivitamin transporter
+  </text>
+  <text x="330" y="500" font-family="Arial" font-size="11" text-anchor="start" fill="#333">
+    Pdzd11: Molecular function activator
+  </text>
+  <text x="590" y="500" font-family="Arial" font-size="11" text-anchor="start" fill="#333">
+    Hlcs: Biotin-[biotin carboxyl-carrier protein] ligase
+  </text>
+  <text x="60" y="515" font-family="Arial" font-size="11" text-anchor="start" fill="#333">
+    Acaca: Acetyl-CoA carboxylase
+  </text>
+  <text x="330" y="515" font-family="Arial" font-size="11" text-anchor="start" fill="#333">
+    Pcx: Pyruvate carboxylase
+  </text>
+</svg>

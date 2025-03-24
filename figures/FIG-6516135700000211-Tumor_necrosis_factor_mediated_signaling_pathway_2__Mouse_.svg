@@ -1,0 +1,106 @@
+<svg width="700" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="700" height="600" fill="#f8f9fa" />
+  
+  <!-- Cell components -->
+  <!-- Extracellular Space -->
+  <rect x="50" y="50" width="600" height="150" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" rx="5" />
+  <text x="60" y="70" font-family="Arial" font-size="14" fill="#0066cc">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Plasma Membrane -->
+  <path d="M50,200 Q350,220 650,200 Q650,220 650,220 L50,220 Q50,220 50,200 Z" fill="#b3d9ff" stroke="#0066cc" stroke-width="2.5" />
+  <text x="320" y="218" font-family="Arial" font-size="14" fill="#0066cc" text-anchor="middle">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="50" y="220" width="600" height="330" fill="#f2f2f2" stroke="#666666" stroke-width="2" rx="5" />
+  <text x="60" y="240" font-family="Arial" font-size="14" fill="#666666">Cytoplasm</text>
+  
+  <!-- TNF cytokine -->
+  <circle cx="150" cy="120" r="30" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="150" y="125" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Tnf</text>
+  <text x="150" y="95" font-family="Arial" font-size="10" fill="#cc0000" text-anchor="middle">Cytokine Activity</text>
+  <text x="150" y="140" font-family="Arial" font-size="10" fill="#cc0000" text-anchor="middle">(MGI:104798)</text>
+  
+  <!-- TNFR receptor -->
+  <rect x="150" y="190" width="50" height="40" fill="#99ccff" stroke="#0066cc" stroke-width="2" rx="5" />
+  <text x="175" y="210" font-family="Arial" font-size="11" fill="#000000" text-anchor="middle">Tnfrsf1a</text>
+  <text x="175" y="222" font-family="Arial" font-size="8" fill="#0066cc" text-anchor="middle">(MGI:1314884)</text>
+  
+  <!-- Signaling adaptor Nsmaf -->
+  <polygon points="175,270 210,300 175,330 140,300" fill="#ccff99" stroke="#66cc00" stroke-width="2" />
+  <text x="175" y="305" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Nsmaf</text>
+  <text x="175" y="290" font-family="Arial" font-size="8" fill="#66cc00" text-anchor="middle">Signaling Adaptor</text>
+  <text x="175" y="320" font-family="Arial" font-size="8" fill="#66cc00" text-anchor="middle">(MGI:1341864)</text>
+  
+  <!-- Signaling adaptor Rack1 -->
+  <polygon points="300,270 335,300 300,330 265,300" fill="#ccff99" stroke="#66cc00" stroke-width="2" />
+  <text x="300" y="305" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Rack1</text>
+  <text x="300" y="290" font-family="Arial" font-size="8" fill="#66cc00" text-anchor="middle">Signaling Adaptor</text>
+  <text x="300" y="320" font-family="Arial" font-size="8" fill="#66cc00" text-anchor="middle">(MGI:101849)</text>
+  
+  <!-- Enzyme activator Eed -->
+  <rect x="425" y="270" width="50" height="60" fill="#ffcc99" stroke="#ff6600" stroke-width="2" rx="5" />
+  <text x="450" y="300" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Eed</text>
+  <text x="450" y="285" font-family="Arial" font-size="8" fill="#ff6600" text-anchor="middle">Enzyme</text>
+  <text x="450" y="315" font-family="Arial" font-size="8" fill="#ff6600" text-anchor="middle">Activator</text>
+  <text x="450" y="325" font-family="Arial" font-size="8" fill="#ff6600" text-anchor="middle">(MGI:95286)</text>
+  
+  <!-- Sphingomyelin phosphodiesterase Smpd2 -->
+  <ellipse cx="550" cy="400" rx="45" ry="35" fill="#cc99ff" stroke="#6600cc" stroke-width="2" />
+  <text x="550" y="395" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Smpd2</text>
+  <text x="550" y="410" font-family="Arial" font-size="8" fill="#6600cc" text-anchor="middle">Sphingomyelinase</text>
+  <text x="550" y="422" font-family="Arial" font-size="8" fill="#6600cc" text-anchor="middle">(MGI:1278330)</text>
+  
+  <!-- Ceramide metabolic process -->
+  <rect x="490" y="470" width="120" height="40" fill="#f2d9e6" stroke="#993366" stroke-width="2" rx="10" />
+  <text x="550" y="495" font-family="Arial" font-size="12" fill="#993366" text-anchor="middle">Ceramide Metabolism</text>
+  <text x="550" y="485" font-family="Arial" font-size="10" fill="#993366" text-anchor="middle">(GO:0006672)</text>
+  
+  <!-- Arrows and connections -->
+  <!-- TNF to receptor -->
+  <line x1="150" y1="150" x2="150" y2="190" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Receptor to Nsmaf -->
+  <line x1="175" y1="230" x2="175" y2="270" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Nsmaf to Rack1 -->
+  <line x1="210" y1="300" x2="265" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Rack1 to Eed -->
+  <line x1="335" y1="300" x2="425" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Eed to Smpd2 -->
+  <path d="M475,300 Q520,320 550,365" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Smpd2 to Ceramide process -->
+  <line x1="550" y1="435" x2="550" y2="470" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Title and pathway label -->
+  <rect x="50" y="10" width="600" height="30" fill="#e6e6e6" stroke="#666666" stroke-width="1" rx="5" />
+  <text x="350" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#333333" text-anchor="middle">Tumor Necrosis Factor-Mediated Signaling Pathway (Mouse)</text>
+  <text x="550" y="260" font-family="Arial" font-size="14" fill="#666666" text-anchor="middle">TNF Signaling Pathway (GO:0033209)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="560" width="600" height="30" fill="#e6e6e6" stroke="#666666" stroke-width="1" rx="5" />
+  <circle cx="70" cy="575" r="7" fill="#ff9999" stroke="#cc0000" stroke-width="1" />
+  <text x="85" y="579" font-family="Arial" font-size="10" fill="#333333">Cytokine</text>
+  <rect x="120" y="568" width="14" height="14" fill="#99ccff" stroke="#0066cc" stroke-width="1" rx="2" />
+  <text x="140" y="579" font-family="Arial" font-size="10" fill="#333333">Receptor</text>
+  <polygon points="180,575 187,568 180,582 173,575" fill="#ccff99" stroke="#66cc00" stroke-width="1" />
+  <text x="195" y="579" font-family="Arial" font-size="10" fill="#333333">Adaptor</text>
+  <rect x="240" y="568" width="14" height="14" fill="#ffcc99" stroke="#ff6600" stroke-width="1" rx="2" />
+  <text x="260" y="579" font-family="Arial" font-size="10" fill="#333333">Enzyme Activator</text>
+  <ellipse cx="310" cy="575" rx="10" ry="7" fill="#cc99ff" stroke="#6600cc" stroke-width="1" />
+  <text x="325" y="579" font-family="Arial" font-size="10" fill="#333333">Enzyme</text>
+  <rect x="360" y="568" width="14" height="14" fill="#f2d9e6" stroke="#993366" stroke-width="1" rx="5" />
+  <text x="380" y="579" font-family="Arial" font-size="10" fill="#333333">Process</text>
+  <line x1="420" y1="575" x2="440" y2="575" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="450" y="579" font-family="Arial" font-size="10" fill="#333333">Activation</text>
+</svg>

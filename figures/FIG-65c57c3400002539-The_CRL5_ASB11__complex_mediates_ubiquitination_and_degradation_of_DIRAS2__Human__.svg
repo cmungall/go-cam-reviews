@@ -1,0 +1,91 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Membrane -->
+  <rect x="50" y="200" width="700" height="30" rx="15" ry="15" fill="#BFD9EF" stroke="#87AFC7" stroke-width="3"/>
+  <text x="400" y="185" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Plasma Membrane</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="400" y="250" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Cytoplasm</text>
+  
+  <!-- DIRAS2 protein at membrane -->
+  <circle cx="150" cy="215" r="30" fill="#FFD700" stroke="#E6B800" stroke-width="3"/>
+  <text x="150" y="220" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">DIRAS2</text>
+  <text x="150" y="170" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">GTPase activity</text>
+  <text x="150" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(Q96HU8)</text>
+  
+  <!-- Signal transduction arrow -->
+  <path d="M150,245 L150,270" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="180" y="260" font-family="Arial" font-size="14" font-weight="bold" fill="#666">Signal transduction</text>
+  
+  <!-- CRL5 Complex components -->
+  <!-- CUL5 -->
+  <rect x="300" y="320" width="130" height="50" rx="8" ry="8" fill="#B0C4DE" stroke="#6082B6" stroke-width="3"/>
+  <text x="365" y="350" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">CUL5</text>
+  <text x="365" y="310" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(Q93034)</text>
+  <text x="365" y="390" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Scaffold activity</text>
+  
+  <!-- ASB11 -->
+  <rect x="230" y="280" width="90" height="50" rx="8" ry="8" fill="#98FB98" stroke="#3CB371" stroke-width="3"/>
+  <text x="275" y="310" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">ASB11</text>
+  <text x="275" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(Q8WXH4)</text>
+  <text x="275" y="340" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Adaptor</text>
+  
+  <!-- RNF7 -->
+  <rect x="410" y="280" width="90" height="50" rx="8" ry="8" fill="#FFA07A" stroke="#E9967A" stroke-width="3"/>
+  <text x="455" y="310" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">RNF7</text>
+  <text x="455" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(Q9UBF6)</text>
+  <text x="455" y="340" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">E3 ligase</text>
+  
+  <!-- Complex label -->
+  <text x="365" y="420" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">CRL5(ASB11) Complex</text>
+  
+  <!-- Ubiquitin -->
+  <circle cx="510" cy="260" r="20" fill="#FF6347" stroke="#CD5C5C" stroke-width="3"/>
+  <text x="510" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Ub</text>
+  
+  <!-- Interactions -->
+  <!-- ASB11 targeting DIRAS2 -->
+  <path d="M230,305 C200,305 200,250 180,240" stroke="#333" stroke-width="3" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+  <text x="180" y="290" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Substrate recognition</text>
+  
+  <!-- RNF7 adding ubiquitin -->
+  <path d="M490,280 C500,260 500,260 490,260" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Ubiquitin transfer to DIRAS2 -->
+  <path d="M510,240 C510,220 250,220 180,215" stroke="#333" stroke-width="3" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+  <rect x="275" y="185" width="210" height="30" rx="15" ry="15" fill="#FFF8DC" stroke="#DEB887" stroke-width="2"/>
+  <text x="380" y="205" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">K11-linked ubiquitination</text>
+  
+  <!-- Degradation pathway -->
+  <rect x="600" y="300" width="130" height="70" rx="15" ry="15" fill="#D3D3D3" stroke="#A9A9A9" stroke-width="3"/>
+  <text x="665" y="345" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Proteasome</text>
+  
+  <!-- Degradation arrow -->
+  <path d="M180,215 C230,210 580,210 580,260 C580,280 590,300 600,330" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <rect x="400" y="230" width="120" height="30" rx="15" ry="15" fill="#FFF8DC" stroke="#DEB887" stroke-width="2"/>
+  <text x="460" y="250" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Degradation</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="#333">CRL5(ASB11) Complex Mediates Ubiquitination and Degradation of DIRAS2</text>
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#666">Human (NCBITaxon:9606)</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="480" width="200" height="100" rx="10" ry="10" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+  <text x="680" y="500" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="600" cy="520" r="8" fill="#FFD700" stroke="#E6B800" stroke-width="2"/>
+  <text x="690" y="525" font-family="Arial" font-size="14" fill="#333">DIRAS2 (GTPase)</text>
+  
+  <rect x="592" y="535" width="16" height="16" rx="3" ry="3" fill="#98FB98" stroke="#3CB371" stroke-width="2"/>
+  <text x="690" y="548" font-family="Arial" font-size="14" fill="#333">ASB11 (Adaptor)</text>
+  
+  <rect x="592" y="555" width="16" height="16" rx="3" ry="3" fill="#FFA07A" stroke="#E9967A" stroke-width="2"/>
+  <text x="690" y="568" font-family="Arial" font-size="14" fill="#333">RNF7 (E3 ligase)</text>
+</svg>

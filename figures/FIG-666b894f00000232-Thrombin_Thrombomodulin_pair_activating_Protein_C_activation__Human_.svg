@@ -1,0 +1,114 @@
+<svg width="700" height="550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="700" height="550" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="350" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Thrombin-Thrombomodulin Activation of Protein C (Human)</text>
+  
+  <!-- Cell components -->
+  <!-- Plasma membrane -->
+  <rect x="50" y="120" width="600" height="50" fill="#c4e6ff" stroke="#2c3e50" stroke-width="2" />
+  <text x="80" y="150" font-family="Arial" font-size="14" fill="#2c3e50">Plasma Membrane</text>
+  
+  <!-- Extracellular space -->
+  <rect x="50" y="50" width="600" height="70" fill="#e6f7ff" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,2" />
+  <text x="80" y="75" font-family="Arial" font-size="14" fill="#2c3e50">Extracellular Space</text>
+  
+  <!-- Molecules -->
+  <!-- Thrombin (F2) -->
+  <circle cx="150" y="90" r="30" fill="#ff9999" stroke="#993333" stroke-width="2" />
+  <text x="150" y="95" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">F2</text>
+  
+  <!-- Thrombomodulin (THBD) -->
+  <rect x="290" y="110" width="70" height="70" fill="#99cc99" stroke="#336633" stroke-width="2" rx="5" ry="5" />
+  <text x="325" y="150" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">THBD</text>
+  
+  <!-- Protein C (PROC) -->
+  <circle cx="480" y="90" r="30" fill="#9999ff" stroke="#333399" stroke-width="2" />
+  <text x="480" y="95" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PROC</text>
+  
+  <!-- Activated Protein C -->
+  <circle cx="480" y="220" r="30" fill="#9999ff" stroke="#333399" stroke-width="4" stroke-dasharray="none" />
+  <text x="480" y="215" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PROC</text>
+  <text x="480" y="230" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">activated</text>
+  
+  <!-- Activity labels for proteins -->
+  <text x="150" y="65" font-family="Arial" font-size="11" text-anchor="middle" fill="#993333">Receptor ligand &amp;</text>
+  <text x="150" y="77" font-family="Arial" font-size="11" text-anchor="middle" fill="#993333">Serine protease</text>
+  
+  <text x="325" y="110" font-family="Arial" font-size="11" text-anchor="middle" fill="#336633">Signaling receptor</text>
+  
+  <text x="480" y="65" font-family="Arial" font-size="11" text-anchor="middle" fill="#333399">Inactive zymogen</text>
+  
+  <!-- Pathway arrows -->
+  <!-- F2 to THBD (receptor ligand activity) -->
+  <line x1="180" y1="90" x2="280" y2="130" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead)" />
+  <rect x="215" y="83" width="90" height="16" fill="#f8f9fa" stroke="none" />
+  <text x="230" y="95" font-family="Arial" font-size="12" fill="#e74c3c" font-weight="bold">Ligand</text>
+  
+  <!-- THBD positively regulates F2 -->
+  <path d="M 325 180 C 325 210, 170 200, 150 170" fill="none" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead)" />
+  <rect x="215" y="195" width="120" height="16" fill="#f8f9fa" stroke="none" />
+  <text x="230" y="208" font-family="Arial" font-size="12" fill="#27ae60" font-weight="bold">Positive regulation</text>
+  
+  <!-- F2 endopeptidase to PROC -->
+  <line x1="180" y1="160" x2="440" y2="160" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)" />
+  <rect x="270" y="140" width="150" height="16" fill="#f8f9fa" stroke="none" />
+  <text x="280" y="153" font-family="Arial" font-size="12" fill="#3498db" font-weight="bold">Endopeptidase activity</text>
+  
+  <!-- PROC to activated PROC -->
+  <line x1="480" y1="120" x2="480" y2="180" stroke="#8e44ad" stroke-width="3" marker-end="url(#arrowhead)" />
+  <rect x="485" y="145" width="80" height="16" fill="#f8f9fa" stroke="none" />
+  <text x="495" y="158" font-family="Arial" font-size="12" fill="#8e44ad" font-weight="bold">Activation</text>
+  
+  <!-- Blood coagulation inhibition -->
+  <rect x="100" y="270" width="500" height="40" rx="15" ry="15" fill="#ffe6cc" stroke="#cc6600" stroke-width="2" />
+  <text x="350" y="295" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Negative Regulation of Blood Coagulation</text>
+  <line x1="480" y1="250" x2="350" y2="270" stroke="#e67e22" stroke-width="3" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9.5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="330" width="600" height="200" fill="#ffffff" stroke="#2c3e50" stroke-width="1" />
+  <text x="350" y="355" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Proteins -->
+  <text x="60" y="380" font-family="Arial" font-size="14" font-weight="bold">Proteins:</text>
+  <circle cx="80" y="405" r="12" fill="#ff9999" stroke="#993333" stroke-width="2" />
+  <text x="105" y="410" font-family="Arial" font-size="13">F2 (Thrombin) - Serine protease that converts fibrinogen to fibrin</text>
+  
+  <rect x="80" y="430" width="24" height="24" fill="#99cc99" stroke="#336633" stroke-width="2" rx="2" ry="2" />
+  <text x="115" y="445" font-family="Arial" font-size="13">THBD (Thrombomodulin) - Endothelial cell receptor for thrombin</text>
+  
+  <circle cx="80" y="465" r="12" fill="#9999ff" stroke="#333399" stroke-width="2" />
+  <text x="105" y="470" font-family="Arial" font-size="13">PROC (Protein C) - Vitamin K-dependent serine protease zymogen</text>
+  
+  <circle cx="80" y="495" r="12" fill="#9999ff" stroke="#333399" stroke-width="4" />
+  <text x="105" y="500" font-family="Arial" font-size="13">Activated PROC - Degrades coagulation factors F5 and F8</text>
+  
+  <!-- Interactions -->
+  <text x="350" y="380" font-family="Arial" font-size="14" font-weight="bold">Interactions:</text>
+  
+  <line x1="350" y1="405" x2="385" y2="405" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="400" y="410" font-family="Arial" font-size="13">Receptor ligand activity (GO:0048018)</text>
+  
+  <line x1="350" y1="430" x2="385" y2="430" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="400" y="435" font-family="Arial" font-size="13">Positive regulation (RO:0002213)</text>
+  
+  <line x1="350" y1="455" x2="385" y2="455" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="400" y="460" font-family="Arial" font-size="13">Enzymatic activity (GO:0004252)</text>
+  
+  <line x1="350" y1="480" x2="385" y2="480" stroke="#8e44ad" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="400" y="485" font-family="Arial" font-size="13">Activation</text>
+  
+  <line x1="350" y1="505" x2="385" y2="505" stroke="#e67e22" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="400" y="510" font-family="Arial" font-size="13">Biological process involvement</text>
+  
+  <!-- Lower credits/reference -->
+  <text x="350" y="535" font-family="Arial" font-size="11" fill="#666666" text-anchor="middle">Part of GO-CAM model: gomodel:666b894f00000232</text>
+</svg>

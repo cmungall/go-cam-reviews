@@ -1,0 +1,105 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cellular compartments -->
+  <!-- Extracellular space -->
+  <rect x="0" y="0" width="800" height="200" fill="#e6f7ff" opacity="0.5" />
+  <text x="20" y="30" font-family="Arial" font-size="18" font-weight="bold">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="0" y="200" width="800" height="60" fill="#b3d9ff" />
+  <text x="20" y="240" font-family="Arial" font-size="18" font-weight="bold">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Cytosol -->
+  <rect x="0" y="260" width="800" height="340" fill="#e6f5e6" opacity="0.5" />
+  <text x="20" y="290" font-family="Arial" font-size="18" font-weight="bold">Cytosol (GO:0005829)</text>
+  
+  <!-- Pathway components -->
+  <!-- CALCB hormone -->
+  <circle cx="400" cy="120" r="35" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+  <text x="400" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CALCB</text>
+  <text x="400" y="145" font-family="Arial" font-size="12" text-anchor="middle">(P10092)</text>
+  
+  <!-- Receptor Complex: CALCRL and RAMP1 -->
+  <rect x="370" y="200" width="60" height="40" fill="#ffcc99" stroke="#ff6600" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CALCRL</text>
+  <text x="400" y="235" font-family="Arial" font-size="12" text-anchor="middle">(Q16602)</text>
+  
+  <rect x="430" y="200" width="60" height="40" fill="#ffeb99" stroke="#ffcc00" stroke-width="2" rx="5" ry="5" />
+  <text x="460" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">RAMP1</text>
+  <text x="460" y="235" font-family="Arial" font-size="12" text-anchor="middle">(O60894)</text>
+  
+  <!-- G protein -->
+  <circle cx="400" cy="350" r="35" fill="#99ccff" stroke="#0066cc" stroke-width="2" />
+  <text x="400" y="355" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">GNAS</text>
+  <text x="400" y="370" font-family="Arial" font-size="12" text-anchor="middle">(Q5JWF2)</text>
+  
+  <!-- Adenylate cyclase -->
+  <circle cx="400" cy="450" r="35" fill="#b3ccff" stroke="#0033cc" stroke-width="2" />
+  <text x="400" y="455" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">ADCY6</text>
+  <text x="400" y="470" font-family="Arial" font-size="12" text-anchor="middle">(O43306)</text>
+  
+  <!-- cAMP production -->
+  <circle cx="400" cy="540" r="30" fill="#ccffcc" stroke="#00cc66" stroke-width="2" />
+  <text x="400" y="545" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">cAMP</text>
+  <text x="400" y="560" font-family="Arial" font-size="12" text-anchor="middle">(CHEBI:17489)</text>
+  
+  <!-- Pathway arrows and interactions -->
+  <!-- CALCB to receptor -->
+  <line x1="400" y1="155" x2="400" y2="195" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="330" y="175" font-family="Arial" font-size="14" text-anchor="end">Ligand binding</text>
+  
+  <!-- Receptor activation -->
+  <line x1="400" y1="240" x2="400" y2="315" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="330" y="280" font-family="Arial" font-size="14" text-anchor="end">Receptor activation</text>
+  
+  <!-- G protein to adenylate cyclase -->
+  <line x1="400" y1="385" x2="400" y2="415" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="330" y="400" font-family="Arial" font-size="14" text-anchor="end">G protein activation</text>
+  
+  <!-- Adenylate cyclase to cAMP -->
+  <line x1="400" y1="485" x2="400" y2="510" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="330" y="500" font-family="Arial" font-size="14" text-anchor="end">cAMP production</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <!-- Pathway labels -->
+  <text x="510" y="120" font-family="Arial" font-size="14" font-style="italic">GO:0005179</text>
+  <text x="510" y="140" font-family="Arial" font-size="14" font-style="italic">hormone activity</text>
+  
+  <text x="550" y="220" font-family="Arial" font-size="14" font-style="italic">GO:0001635/GO:0015026</text>
+  <text x="550" y="240" font-family="Arial" font-size="14" font-style="italic">calcitonin receptor activity/coreceptor activity</text>
+  
+  <text x="510" y="350" font-family="Arial" font-size="14" font-style="italic">GO:0003925</text>
+  <text x="510" y="370" font-family="Arial" font-size="14" font-style="italic">G protein activity</text>
+  
+  <text x="510" y="450" font-family="Arial" font-size="14" font-style="italic">GO:0004016</text>
+  <text x="510" y="470" font-family="Arial" font-size="14" font-style="italic">adenylate cyclase activity</text>
+  
+  <!-- Process labels -->
+  <text x="640" y="280" font-family="Arial" font-size="16" font-weight="bold" fill="#006600">GO:1990408</text>
+  <text x="640" y="300" font-family="Arial" font-size="14" fill="#006600">calcitonin gene-related peptide</text>
+  <text x="640" y="315" font-family="Arial" font-size="14" fill="#006600">receptor signaling pathway</text>
+  
+  <text x="640" y="350" font-family="Arial" font-size="16" font-weight="bold" fill="#006600">GO:0007189</text>
+  <text x="640" y="370" font-family="Arial" font-size="14" fill="#006600">adenylate cyclase-activating</text>
+  <text x="640" y="385" font-family="Arial" font-size="14" fill="#006600">G protein-coupled receptor signaling pathway</text>
+  
+  <!-- Step Explanations -->
+  <rect x="20" y="320" width="280" height="180" fill="white" opacity="0.8" rx="10" ry="10" stroke="#666666" stroke-width="1"/>
+  <text x="30" y="340" font-family="Arial" font-size="14" font-weight="bold">Signaling Pathway Steps:</text>
+  <text x="30" y="365" font-family="Arial" font-size="12">1. CALCB hormone is secreted into extracellular space</text>
+  <text x="30" y="385" font-family="Arial" font-size="12">2. CALCB binds to CALCRL-RAMP1 receptor complex</text>
+  <text x="30" y="405" font-family="Arial" font-size="12">3. Receptor activation triggers G protein (GNAS)</text>
+  <text x="30" y="425" font-family="Arial" font-size="12">4. G protein activates adenylate cyclase (ADCY6)</text>
+  <text x="30" y="445" font-family="Arial" font-size="12">5. Adenylate cyclase produces cAMP</text>
+  <text x="30" y="465" font-family="Arial" font-size="12">6. cAMP acts as second messenger</text>
+  <text x="30" y="485" font-family="Arial" font-size="12" font-style="italic">(downstream effects not shown)</text>
+  
+  <!-- Title -->
+  <text x="400" y="590" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Signaling by Calcitonin/CGRP mediated by CALCB/CGRP2 ligand</text>
+  <text x="400" y="620" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">activating CALCRL-RAMP1 receptor complex</text>
+</svg>

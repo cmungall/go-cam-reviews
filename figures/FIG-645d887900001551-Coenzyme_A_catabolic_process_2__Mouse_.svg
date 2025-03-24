@@ -1,0 +1,126 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <path d="M100,50 Q400,-20 700,50 Q780,300 700,550 Q400,620 100,550 Q20,300 100,50" 
+        fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cell membrane label -->
+  <text x="400" y="35" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Intestinal Epithelial Cell (CL:0000066)</text>
+  <text x="400" y="55" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#333">in intestine (EMAPA:32874)</text>
+  
+  <!-- Extracellular space label -->
+  <rect x="20" y="20" width="160" height="25" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="100" y="37" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Extracellular space (GO:0005615)</text>
+
+  <!-- Extracellular space (shaded area) -->
+  <rect x="20" y="50" width="760" height="70" fill="#e6f7ff" stroke="none" opacity="0.5"/>
+  
+  <!-- Pathway Molecules and Reactions -->
+  
+  <!-- Starting molecule: Coenzyme A -->
+  <rect x="150" y="150" width="120" height="40" rx="5" ry="5" fill="#d9ead3" stroke="#333" stroke-width="1.5"/>
+  <text x="210" y="175" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Coenzyme A</text>
+  <text x="210" y="190" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">(CHEBI:57287)</text>
+  
+  <!-- Reaction arrow 1 with consistent size -->
+  <line x1="210" y1="190" x2="210" y2="240" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Enzyme 1: ALPI -->
+  <rect x="220" y="205" width="150" height="30" rx="12" ry="12" fill="#ffc000" stroke="#333" stroke-width="1.5"/>
+  <text x="295" y="222" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ALPI</text>
+  <text x="295" y="233" font-family="Arial" font-size="10" text-anchor="middle">phosphatase activity (GO:0016791)</text>
+  
+  <!-- First intermediate: 3'-dephospho-CoA -->
+  <rect x="150" y="240" width="120" height="40" rx="5" ry="5" fill="#d9ead3" stroke="#333" stroke-width="1.5"/>
+  <text x="210" y="260" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">3'-dephospho-CoA</text>
+  <text x="210" y="275" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">(CHEBI:57328)</text>
+  
+  <!-- Reaction arrow 2 with consistent size -->
+  <line x1="210" y1="280" x2="210" y2="330" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Enzyme 2: ENPP1 -->
+  <rect x="220" y="295" width="150" height="30" rx="12" ry="12" fill="#ffc000" stroke="#333" stroke-width="1.5"/>
+  <text x="295" y="312" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ENPP1</text>
+  <text x="295" y="323" font-family="Arial" font-size="10" text-anchor="middle">pyrophosphatase activity (GO:0016462)</text>
+  
+  <!-- Second intermediate: D-pantetheine 4'-phosphate -->
+  <rect x="130" y="330" width="160" height="40" rx="5" ry="5" fill="#d9ead3" stroke="#333" stroke-width="1.5"/>
+  <text x="210" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">D-pantetheine 4'-phosphate</text>
+  <text x="210" y="365" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">(CHEBI:61723)</text>
+  
+  <!-- Reaction arrow 3 with consistent size -->
+  <line x1="210" y1="370" x2="210" y2="420" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Enzyme 3: PANK4 -->
+  <rect x="220" y="385" width="150" height="30" rx="12" ry="12" fill="#ffc000" stroke="#333" stroke-width="1.5"/>
+  <text x="295" y="402" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PANK4</text>
+  <text x="295" y="413" font-family="Arial" font-size="10" text-anchor="middle">phosphatase activity (GO:0016791)</text>
+  
+  <!-- Third intermediate: Pantetheine -->
+  <rect x="150" y="420" width="120" height="40" rx="5" ry="5" fill="#d9ead3" stroke="#333" stroke-width="1.5"/>
+  <text x="210" y="445" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Pantetheine</text>
+  <text x="210" y="460" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">(CHEBI:16753)</text>
+  
+  <!-- Reaction arrow 4 with consistent size -->
+  <line x1="210" y1="460" x2="210" y2="500" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Enzyme 4: VNN1 -->
+  <rect x="220" y="475" width="170" height="30" rx="12" ry="12" fill="#ffc000" stroke="#333" stroke-width="1.5"/>
+  <text x="305" y="492" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">VNN1</text>
+  <text x="305" y="503" font-family="Arial" font-size="10" text-anchor="middle">pantetheine hydrolase activity (GO:0017159)</text>
+  
+  <!-- Branching to final products with consistent arrows -->
+  <line x1="210" y1="510" x2="150" y2="540" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="210" y1="510" x2="270" y2="540" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final product 1: (R)-pantothenate -->
+  <rect x="90" y="540" width="120" height="40" rx="5" ry="5" fill="#d9ead3" stroke="#333" stroke-width="1.5"/>
+  <text x="150" y="565" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">(R)-pantothenate</text>
+  <text x="150" y="580" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">(CHEBI:29032)</text>
+  
+  <!-- Final product 2: Cysteaminium -->
+  <rect x="220" y="540" width="120" height="40" rx="5" ry="5" fill="#d9ead3" stroke="#333" stroke-width="1.5"/>
+  <text x="280" y="565" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Cysteaminium</text>
+  <text x="280" y="580" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">(CHEBI:58029)</text>
+  
+  <!-- Title and Process Label -->
+  <text x="400" y="80" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#333">Coenzyme A Catabolic Process (Mouse)</text>
+  <rect x="560" y="120" width="210" height="40" rx="5" ry="5" fill="#cfe2f3" stroke="#333" stroke-width="1.5"/>
+  <text x="665" y="140" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Coenzyme A catabolic process</text>
+  <text x="665" y="155" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0015938)</text>
+  
+  <!-- Process description -->
+  <rect x="520" y="180" width="260" height="120" rx="5" ry="5" fill="#f5f5f5" stroke="#333" stroke-width="1" opacity="0.9"/>
+  <text x="650" y="200" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Pathway Steps:</text>
+  <text x="530" y="225" font-family="Arial" font-size="13" fill="#333">1. ALPI dephosphorylates Coenzyme A</text>
+  <text x="530" y="245" font-family="Arial" font-size="13" fill="#333">2. ENPP1 cleaves pyrophosphate bond in</text>
+  <text x="542" y="260" font-family="Arial" font-size="13" fill="#333">3'-dephospho-CoA</text>
+  <text x="530" y="280" font-family="Arial" font-size="13" fill="#333">3. PANK4 removes phosphate from</text>
+  <text x="542" y="295" font-family="Arial" font-size="13" fill="#333">D-pantetheine 4'-phosphate</text>  
+  
+  <!-- Legend -->
+  <rect x="520" y="420" width="260" height="150" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+  <text x="650" y="440" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="530" y="450" width="20" height="20" fill="#d9ead3" stroke="#333" stroke-width="1"/>
+  <text x="560" y="465" font-family="Arial" font-size="13" fill="#333">Metabolite</text>
+  
+  <rect x="530" y="480" width="80" height="20" rx="10" ry="10" fill="#ffc000" stroke="#333" stroke-width="1"/>
+  <text x="570" y="495" font-family="Arial" font-size="13" text-anchor="middle" fill="#333">Enzyme</text>
+  
+  <line x1="530" y1="520" x2="560" y2="520" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="590" y="525" font-family="Arial" font-size="13" fill="#333">Reaction</text>
+  
+  <rect x="530" y="540" width="20" height="10" fill="#e6f7ff" stroke="none"/>
+  <text x="590" y="548" font-family="Arial" font-size="13" fill="#333">Extracellular space</text>
+  
+  <rect x="530" y="560" width="20" height="10" fill="#f8f8f8" stroke="#333" stroke-width="1"/>
+  <text x="590" y="568" font-family="Arial" font-size="13" fill="#333">Intestinal epithelial cell</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

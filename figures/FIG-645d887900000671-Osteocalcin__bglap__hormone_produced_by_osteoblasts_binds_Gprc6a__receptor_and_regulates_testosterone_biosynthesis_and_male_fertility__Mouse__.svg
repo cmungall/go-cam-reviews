@@ -1,0 +1,139 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Osteocalcin (Bglap) Regulation of Testosterone Biosynthesis</text>
+  
+  <!-- Osteoblast Cell -->
+  <ellipse cx="150" cy="200" rx="120" ry="100" fill="#F8E6FF" stroke="#333333" stroke-width="2"/>
+  <text x="150" y="120" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Osteoblast</text>
+  
+  <!-- Ggcx in Osteoblast -->
+  <rect x="90" y="180" width="80" height="40" rx="5" ry="5" fill="#A0D6B4" stroke="#333333" stroke-width="2"/>
+  <text x="130" y="205" font-family="Arial" font-size="14" text-anchor="middle">Ggcx</text>
+  
+  <!-- Step 1 indicator -->
+  <circle cx="70" cy="190" r="15" fill="#333333" stroke="none"/>
+  <text x="70" y="195" font-family="Arial" font-size="14" fill="white" text-anchor="middle">1</text>
+  
+  <!-- Gamma-carboxylation arrow -->
+  <line x1="130" y1="220" x2="130" y2="250" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="175" y="240" font-family="Arial" font-size="14" text-anchor="middle">Carboxylation</text>
+  <text x="175" y="255" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GO:0017187)</text>
+  
+  <!-- Bglap in Osteoblast -->
+  <ellipse cx="130" cy="270" rx="30" ry="15" fill="#FFD700" stroke="#333333" stroke-width="2"/>
+  <text x="130" y="274" font-family="Arial" font-size="14" text-anchor="middle">Bglap</text>
+  
+  <!-- Step 2 indicator -->
+  <circle cx="85" cy="270" r="15" fill="#333333" stroke="none"/>
+  <text x="85" y="275" font-family="Arial" font-size="14" fill="white" text-anchor="middle">2</text>
+  
+  <!-- Bglap secretion -->
+  <path d="M130,285 L130,320 Q130,340 150,340 L270,340" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="170" y="320" font-family="Arial" font-size="14" text-anchor="middle">Secretion</text>
+  <text x="170" y="335" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(Hormone Activity)</text>
+  
+  <!-- Extracellular Region - highlighted -->
+  <rect x="270" y="320" width="120" height="40" rx="0" ry="0" fill="#E6F9FF" stroke="#333333" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="330" y="315" font-family="Arial" font-size="14" text-anchor="middle">Extracellular Region</text>
+  
+  <!-- Bglap in extracellular space -->
+  <ellipse cx="330" cy="340" rx="30" ry="15" fill="#FFD700" stroke="#333333" stroke-width="2"/>
+  <text x="330" y="344" font-family="Arial" font-size="14" text-anchor="middle">Bglap</text>
+  
+  <!-- Step 3 indicator -->
+  <circle cx="285" cy="340" r="15" fill="#333333" stroke="none"/>
+  <text x="285" y="345" font-family="Arial" font-size="14" fill="white" text-anchor="middle">3</text>
+  
+  <!-- Binding arrow -->
+  <path d="M360,340 L400,340 Q420,340 420,360 L420,380" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="400" y="330" font-family="Arial" font-size="14" text-anchor="middle">Binding</text>
+  
+  <!-- Leydig Cell -->
+  <ellipse cx="500" cy="470" rx="150" ry="140" fill="#FFFFE6" stroke="#333333" stroke-width="2"/>
+  <text x="500" y="360" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Leydig Cell</text>
+  
+  <!-- Plasma Membrane - highlighted -->
+  <path d="M370,385 L630,385" stroke="#FF9999" stroke-width="3" stroke-dasharray="3,1"/>
+  <text x="640" y="385" font-family="Arial" font-size="14" text-anchor="start">Plasma Membrane</text>
+  
+  <!-- Gprc6a Receptor -->
+  <rect x="400" y="380" width="70" height="30" rx="5" ry="5" fill="#FF9999" stroke="#333333" stroke-width="2"/>
+  <text x="435" y="400" font-family="Arial" font-size="14" text-anchor="middle">Gprc6a</text>
+  
+  <!-- Step 4 indicator -->
+  <circle cx="385" cy="380" r="15" fill="#333333" stroke="none"/>
+  <text x="385" y="385" font-family="Arial" font-size="14" fill="white" text-anchor="middle">4</text>
+  
+  <!-- G protein signaling -->
+  <path d="M435,410 L435,440 Q435,460 455,460 L470,460" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="460" y="440" font-family="Arial" font-size="14" text-anchor="middle">Signaling</text>
+  <text x="460" y="455" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle">(GPCR activity)</text>
+  
+  <!-- Nucleus - highlighted -->
+  <ellipse cx="550" cy="480" rx="60" ry="45" fill="#D6EAF8" stroke="#333333" stroke-width="2"/>
+  <text x="550" y="455" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Nucleus</text>
+  
+  <!-- Creb1 in nucleus -->
+  <rect x="525" y="475" width="50" height="25" rx="5" ry="5" fill="#9999FF" stroke="#333333" stroke-width="2"/>
+  <text x="550" y="492" font-family="Arial" font-size="14" text-anchor="middle">Creb1</text>
+  
+  <!-- Step 5 indicator -->
+  <circle cx="510" cy="475" r="15" fill="#333333" stroke="none"/>
+  <text x="510" y="480" font-family="Arial" font-size="14" fill="white" text-anchor="middle">5</text>
+  
+  <!-- Transcription regulation -->
+  <path d="M575,480 Q610,480 610,500 L610,520" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="640" y="505" font-family="Arial" font-size="14" text-anchor="middle">Transcriptional</text>
+  <text x="640" y="520" font-family="Arial" font-size="14" text-anchor="middle">Regulation</text>
+  
+  <!-- Biological Process -->
+  <rect x="550" y="530" width="120" height="40" rx="10" ry="10" fill="#FFE6CC" stroke="#333333" stroke-width="2"/>
+  <text x="610" y="550" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Testosterone</text>
+  <text x="610" y="565" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Biosynthesis</text>
+  
+  <!-- Step 6 indicator -->
+  <circle cx="535" cy="550" r="15" fill="#333333" stroke="none"/>
+  <text x="535" y="555" font-family="Arial" font-size="14" fill="white" text-anchor="middle">6</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="580" width="700" height="100" rx="5" ry="5" fill="#F9F9F9" stroke="#333333" stroke-width="1"/>
+  <text x="400" y="600" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">LEGEND</text>
+  
+  <!-- Protein Symbols -->
+  <rect x="70" y="620" width="40" height="20" rx="5" ry="5" fill="#A0D6B4" stroke="#333333" stroke-width="1"/>
+  <text x="120" y="635" font-family="Arial" font-size="12" text-anchor="start">Ggcx - Gamma-glutamyl carboxylase (MGI:1927655)</text>
+  
+  <ellipse cx="70" cy="650" rx="20" ry="10" fill="#FFD700" stroke="#333333" stroke-width="1"/>
+  <text x="120" y="655" font-family="Arial" font-size="12" text-anchor="start">Bglap - Osteocalcin hormone (MGI:88156)</text>
+  
+  <rect x="270" y="620" width="40" height="20" rx="5" ry="5" fill="#FF9999" stroke="#333333" stroke-width="1"/>
+  <text x="320" y="635" font-family="Arial" font-size="12" text-anchor="start">Gprc6a - G protein-coupled receptor (MGI:2429498)</text>
+  
+  <rect x="270" y="650" width="40" height="20" rx="5" ry="5" fill="#9999FF" stroke="#333333" stroke-width="1"/>
+  <text x="320" y="655" font-family="Arial" font-size="12" text-anchor="start">Creb1 - Transcription factor (MGI:88494)</text>
+  
+  <!-- Cell Compartments -->
+  <rect x="500" y="620" width="20" height="10" fill="#F8E6FF" stroke="#333333" stroke-width="1"/>
+  <text x="530" y="630" font-family="Arial" font-size="12" text-anchor="start">Osteoblast cell</text>
+  
+  <rect x="500" y="640" width="20" height="10" fill="#FFFFE6" stroke="#333333" stroke-width="1"/>
+  <text x="530" y="650" font-family="Arial" font-size="12" text-anchor="start">Leydig cell</text>
+  
+  <rect x="500" y="660" width="20" height="10" fill="#D6EAF8" stroke="#333333" stroke-width="1"/>
+  <text x="530" y="670" font-family="Arial" font-size="12" text-anchor="start">Nucleus</text>
+  
+  <!-- Numbered steps -->
+  <circle cx="570" y="620" r="10" fill="#333333" stroke="none"/>
+  <text x="570" y="624" font-family="Arial" font-size="10" fill="white" text-anchor="middle">1</text>
+  <text x="590" y="624" font-family="Arial" font-size="12" text-anchor="start">Sequential steps in pathway</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>

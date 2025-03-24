@@ -1,0 +1,98 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f8f8" stroke="#555" stroke-width="3"/>
+  
+  <!-- Plasma membrane - distinct -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="none" stroke="#1a75bb" stroke-width="4" stroke-dasharray="7,4"/>
+  <text x="715" y="420" font-family="Arial" font-size="14" font-weight="bold" fill="#1a75bb">Plasma membrane</text>
+  <path d="M670,415 L600,350" stroke="#1a75bb" stroke-width="1.5" fill="none"/>
+  
+  <!-- Cytoplasm label -->
+  <text x="400" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Cytoplasm</text>
+  
+  <!-- TBK1 -->
+  <rect x="200" y="200" width="100" height="40" rx="10" ry="10" fill="#a6cee3" stroke="#333" stroke-width="2"/>
+  <text x="250" y="225" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">TBK1</text>
+  
+  <!-- MTOR -->
+  <rect x="400" y="300" width="100" height="40" rx="10" ry="10" fill="#b2df8a" stroke="#333" stroke-width="2"/>
+  <text x="450" y="325" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">MTOR</text>
+  
+  <!-- PDPK1 -->
+  <rect x="400" y="200" width="100" height="40" rx="10" ry="10" fill="#33a02c" stroke="#333" stroke-width="2"/>
+  <text x="450" y="225" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PDPK1</text>
+  <text x="450" y="240" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(O15530)</text>
+  
+  <!-- AKT1 -->
+  <rect x="600" y="200" width="100" height="40" rx="10" ry="10" fill="#fb9a99" stroke="#333" stroke-width="2"/>
+  <text x="650" y="225" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">AKT1</text>
+  <text x="650" y="240" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(P31749)</text>
+  
+  <!-- Protein IDs -->
+  <text x="250" y="240" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(Q9UHD2)</text>
+  <text x="450" y="340" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(P42345)</text>
+  
+  <!-- Activation arrows with improved spacing and consistent styling -->
+  <!-- TBK1 to MTOR -->
+  <path d="M300,220 L400,300" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="320" y="215" width="90" height="15" fill="#ffffff" fill-opacity="0.7" rx="3" ry="3"/>
+  <text x="365" y="227" font-family="Arial" font-size="12" fill="#333" font-weight="bold" text-anchor="middle">phosphorylates</text>
+  <rect x="300" y="240" width="120" height="30" fill="#ffffff" fill-opacity="0.7" rx="3" ry="3"/>
+  <text x="360" y="255" font-family="Arial" font-size="11" fill="#333" font-style="italic" text-anchor="middle">positive regulation of</text>
+  <text x="360" y="270" font-family="Arial" font-size="11" fill="#333" font-style="italic" text-anchor="middle">TORC2 signaling</text>
+  
+  <!-- MTOR to PDPK1 -->
+  <path d="M450,300 L450,240" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="455" y="260" width="90" height="15" fill="#ffffff" fill-opacity="0.7" rx="3" ry="3"/>
+  <text x="500" y="272" font-family="Arial" font-size="12" fill="#333" font-weight="bold" text-anchor="middle">phosphorylates</text>
+  <rect x="480" y="280" width="90" height="15" fill="#ffffff" fill-opacity="0.7" rx="3" ry="3"/>
+  <text x="525" y="292" font-family="Arial" font-size="11" fill="#333" font-style="italic" text-anchor="middle">TORC2 signaling</text>
+  
+  <!-- PDPK1 to AKT1 -->
+  <path d="M500,220 L600,220" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="520" y="195" width="90" height="15" fill="#ffffff" fill-opacity="0.7" rx="3" ry="3"/>
+  <text x="565" y="207" font-family="Arial" font-size="12" fill="#333" font-weight="bold" text-anchor="middle">phosphorylates</text>
+  <rect x="510" y="240" width="120" height="30" fill="#ffffff" fill-opacity="0.7" rx="3" ry="3"/>
+  <text x="570" y="255" font-family="Arial" font-size="11" fill="#333" font-style="italic" text-anchor="middle">positive regulation of</text>
+  <text x="570" y="270" font-family="Arial" font-size="11" fill="#333" font-style="italic" text-anchor="middle">PI3K/AKT signaling</text>
+  
+  <!-- mTORC2 complex -->
+  <ellipse cx="450" cy="300" rx="70" ry="50" fill="none" stroke="#663399" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <rect x="395" y="365" width="110" height="20" fill="#ffffff" fill-opacity="0.9" rx="3" ry="3"/>
+  <text x="450" y="380" font-family="Arial" font-size="14" fill="#663399" font-style="italic" text-anchor="middle">mTORC2 complex</text>
+  
+  <!-- Label for MTOR at plasma membrane -->
+  <path d="M450,340 L500,370" stroke="#1a75bb" stroke-width="1" fill="none"/>
+  <rect x="500" y="360" width="120" height="20" fill="#ffffff" fill-opacity="0.8" rx="3" ry="3"/>
+  <text x="560" y="375" font-family="Arial" font-size="12" fill="#1a75bb" text-anchor="middle">at plasma membrane</text>
+  
+  <!-- PI3K/AKT Signaling output -->
+  <path d="M650,240 L650,350 L700,350" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="700" y="330" width="90" height="40" rx="5" ry="5" fill="#fdbf6f" stroke="#333" stroke-width="2"/>
+  <text x="745" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PI3K/AKT</text>
+  <text x="745" y="365" font-family="Arial" font-size="12" text-anchor="middle">Signaling</text>
+  
+  <!-- Phosphorylation symbols -->
+  <circle cx="435" cy="290" r="10" fill="#ff7f00" stroke="#333" stroke-width="1.5"/>
+  <text x="435" y="294" font-family="Arial" font-size="12" text-anchor="middle" fill="white" font-weight="bold">P</text>
+  
+  <circle cx="460" cy="190" r="10" fill="#ff7f00" stroke="#333" stroke-width="1.5"/>
+  <text x="460" y="194" font-family="Arial" font-size="12" text-anchor="middle" fill="white" font-weight="bold">P</text>
+  
+  <circle cx="610" cy="190" r="10" fill="#ff7f00" stroke="#333" stroke-width="1.5"/>
+  <text x="610" y="194" font-family="Arial" font-size="12" text-anchor="middle" fill="white" font-weight="bold">P</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">TBK1 Activates mTORC2 Signaling via MTOR Phosphorylation</text>
+  
+  <!-- Definitions for markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Cell outline label -->
+  <text x="120" y="80" font-family="Arial" font-size="14" fill="#555">Cell</text>
+  <path d="M130,85 L150,110" stroke="#555" stroke-width="1" fill="none"/>
+</svg>

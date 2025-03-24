@@ -1,0 +1,218 @@
+<svg width="800" height="720" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="720" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Arginine Biosynthesis Pathway in S. pombe</text>
+  
+  <!-- Cell outline -->
+  <rect x="50" y="80" width="700" height="600" rx="50" ry="50" fill="#f9f9f9" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="400" cy="320" rx="280" ry="170" fill="#ffe0cb" stroke="#ff7f50" stroke-width="2"/>
+  <text x="400" y="190" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Mitochondrion</text>
+  
+  <!-- Cytosol label -->
+  <text x="400" y="100" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Cytosol</text>
+  
+  <!-- Mitochondrial pathway -->
+  <!-- Step 1: arg6 (SPBC725.14) - L-glutamate N-acetyltransferase -->
+  <rect x="210" y="250" width="100" height="40" rx="5" ry="5" fill="#88c4e2" stroke="#333333" stroke-width="1.5"/>
+  <text x="260" y="270" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">arg6</text>
+  <text x="260" y="285" font-family="Arial" font-size="10" text-anchor="middle">(SPBC725.14)</text>
+  <circle cx="190" y="270" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="190" y="274" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">1</text>
+  
+  <!-- Step 2: arg11 (SPAC4G9.09c) - N-acetyl-gamma-glutamyl-phosphate reductase and acetylglutamate kinase -->
+  <rect x="350" y="250" width="100" height="40" rx="5" ry="5" fill="#88c4e2" stroke="#333333" stroke-width="1.5"/>
+  <text x="400" y="270" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">arg11</text>
+  <text x="400" y="285" font-family="Arial" font-size="10" text-anchor="middle">(SPAC4G9.09c)</text>
+  <circle cx="330" y="270" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="330" y="274" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">2</text>
+  
+  <!-- Step 3: arg1 (SPCC777.09c) - N2-acetyl-L-ornithine:2-oxoglutarate 5-aminotransferase -->
+  <rect x="490" y="250" width="100" height="40" rx="5" ry="5" fill="#88c4e2" stroke="#333333" stroke-width="1.5"/>
+  <text x="540" y="270" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">arg1</text>
+  <text x="540" y="285" font-family="Arial" font-size="10" text-anchor="middle">(SPCC777.09c)</text>
+  <circle cx="610" y="270" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="610" y="274" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">3</text>
+  
+  <!-- Step 4: aga1 (SPBC1271.14) - glutamate N-acetyltransferase -->
+  <rect x="210" y="350" width="100" height="40" rx="5" ry="5" fill="#88c4e2" stroke="#333333" stroke-width="1.5"/>
+  <text x="260" y="370" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">aga1</text>
+  <text x="260" y="385" font-family="Arial" font-size="10" text-anchor="middle">(SPBC1271.14)</text>
+  <circle cx="190" y="370" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="190" y="374" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">4</text>
+  
+  <!-- Step 5: arg3 (SPAC4G9.10) - ornithine carbamoyltransferase -->
+  <rect x="490" y="350" width="100" height="40" rx="5" ry="5" fill="#88c4e2" stroke="#333333" stroke-width="1.5"/>
+  <text x="540" y="370" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">arg3</text>
+  <text x="540" y="385" font-family="Arial" font-size="10" text-anchor="middle">(SPAC4G9.10)</text>
+  <circle cx="610" y="370" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="610" y="374" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">5</text>
+  
+  <!-- Step 6: Citrulline transporter (inferred, not in source) -->
+  <rect x="350" y="400" width="100" height="40" rx="5" ry="5" fill="#88c4e2" stroke="#333333" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="400" y="420" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Transporter</text>
+  <text x="400" y="435" font-family="Arial" font-size="10" text-anchor="middle">(CHEBI:33695)</text>
+  <circle cx="330" y="420" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="330" y="424" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">6</text>
+  
+  <!-- Cytosolic pathway -->
+  <!-- Step 7: arg12 (SPBC428.05c) - argininosuccinate synthase -->
+  <rect x="260" y="500" width="100" height="40" rx="5" ry="5" fill="#ff9cb0" stroke="#333333" stroke-width="1.5"/>
+  <text x="310" y="520" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">arg12</text>
+  <text x="310" y="535" font-family="Arial" font-size="10" text-anchor="middle">(SPBC428.05c)</text>
+  <circle cx="240" y="520" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="240" y="524" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">7</text>
+  
+  <!-- Step 8: arg7 (SPBC1773.14) - argininosuccinate lyase -->
+  <rect x="400" y="580" width="100" height="40" rx="5" ry="5" fill="#ff9cb0" stroke="#333333" stroke-width="1.5"/>
+  <text x="450" y="600" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">arg7</text>
+  <text x="450" y="615" font-family="Arial" font-size="10" text-anchor="middle">(SPBC1773.14)</text>
+  <circle cx="380" y="600" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="380" y="604" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">8</text>
+  
+  <!-- Step 9: arg41 (SPBC1539.03c) - argininosuccinate lyase -->
+  <rect x="540" y="500" width="100" height="40" rx="5" ry="5" fill="#ff9cb0" stroke="#333333" stroke-width="1.5"/>
+  <text x="590" y="520" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">arg41</text>
+  <text x="590" y="535" font-family="Arial" font-size="10" text-anchor="middle">(SPBC1539.03c)</text>
+  <circle cx="660" y="520" r="14" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="660" y="524" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">9</text>
+  
+  <!-- Metabolites -->
+  <!-- L-glutamate -->
+  <ellipse cx="150" y="250" rx="45" ry="20" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="150" y="254" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">L-glutamate</text>
+  <text x="150" y="268" font-family="Arial" font-size="8" text-anchor="middle">(CHEBI:29985)</text>
+  
+  <!-- N-acetylglutamate -->
+  <ellipse cx="260" y="200" rx="50" ry="20" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="260" y="204" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">N-acetylglutamate</text>
+  <text x="260" y="218" font-family="Arial" font-size="8" text-anchor="middle">(CHEBI:57805)</text>
+  
+  <!-- N-acetylglutamyl-P -->
+  <ellipse cx="400" y="200" rx="55" ry="20" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="400" y="204" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">N-acetylglutamyl-P</text>
+  
+  <!-- N-acetylglutamate semialdehyde -->
+  <ellipse cx="400" y="300" rx="60" ry="22" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="400" y="297" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">N-acetylglutamate</text>
+  <text x="400" y="310" font-family="Arial" font-size="11" text-anchor="middle" font-weight="bold">semialdehyde</text>
+  
+  <!-- N-acetylornithine -->
+  <ellipse cx="490" y="300" rx="50" ry="20" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="490" y="304" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">N-acetylornithine</text>
+  <text x="490" y="318" font-family="Arial" font-size="8" text-anchor="middle">(CHEBI:16543)</text>
+  
+  <!-- L-ornithine -->
+  <ellipse cx="540" y="400" rx="45" ry="20" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="540" y="404" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">L-ornithine</text>
+  <text x="540" y="418" font-family="Arial" font-size="8" text-anchor="middle">(CHEBI:15729)</text>
+  
+  <!-- Citrulline -->
+  <ellipse cx="400" y="350" rx="45" ry="20" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="400" y="354" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Citrulline</text>
+  
+  <!-- Citrulline (cytosol) -->
+  <ellipse cx="400" y="460" rx="45" ry="20" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="400" y="464" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Citrulline</text>
+  
+  <!-- Argininosuccinate -->
+  <ellipse cx="400" y="520" rx="50" ry="22" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="400" y="524" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Argininosuccinate</text>
+  
+  <!-- Arginine -->
+  <ellipse cx="450" y="640" rx="45" ry="20" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="450" y="644" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Arginine</text>
+  <text x="450" y="658" font-family="Arial" font-size="8" text-anchor="middle">(CHEBI:29016)</text>
+  
+  <!-- Pathway arrows -->
+  <!-- Glutamate to N-acetylglutamate -->
+  <path d="M170 235 Q210 215 230 212" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- N-acetylglutamate to N-acetylglutamyl-P -->
+  <path d="M310 200 L345 200" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- N-acetylglutamyl-P to N-acetylglutamate semialdehyde -->
+  <path d="M400 220 L400 275" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- N-acetylglutamate semialdehyde to N-acetylornithine -->
+  <path d="M460 300 L440 300" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- N-acetylornithine to L-ornithine -->
+  <path d="M490 320 Q515 350 540 380" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- L-ornithine to Citrulline -->
+  <path d="M495 400 L445 400 L445 360" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Citrulline transport -->
+  <path d="M400 370 L400 440" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Citrulline to Argininosuccinate -->
+  <path d="M400 480 L400 498" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Argininosuccinate to Arginine -->
+  <path d="M400 542 Q420 590 450 620" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arg12 to Argininosuccinate -->
+  <path d="M360 520 L350 520" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arg7 to Arginine -->
+  <path d="M450 580 L450 620" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arg41 to Arginine -->
+  <path d="M540 540 Q500 590 470 630" stroke="#333333" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Definitions for markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+  
+  <!-- Enzyme functions for each step -->
+  <text x="65" y="235" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">1. L-glutamate N-acetyltransferase</text>
+  <text x="65" y="255" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">2. Acetylglutamate kinase/reductase</text>
+  <text x="65" y="275" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">3. N2-acetyl-L-ornithine aminotransferase</text>
+  <text x="65" y="295" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">4. Glutamate N-acetyltransferase</text>
+  <text x="65" y="315" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">5. Ornithine carbamoyltransferase</text>
+  <text x="65" y="335" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">6. Dicarboxylic acid transporter</text>
+  <text x="65" y="355" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">7. Argininosuccinate synthase</text>
+  <text x="65" y="375" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">8. Argininosuccinate lyase</text>
+  <text x="65" y="395" font-family="Arial" font-size="10" text-anchor="start" fill="#444444">9. Argininosuccinate lyase</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="80" width="140" height="210" rx="5" ry="5" fill="#ffffff" stroke="#333333" stroke-width="1"/>
+  <text x="670" y="100" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <rect x="615" y="110" width="20" height="15" fill="#88c4e2" stroke="#333333" stroke-width="1"/>
+  <text x="645" y="122" font-family="Arial" font-size="12" text-anchor="start">Mitochondrial</text>
+  <text x="645" y="134" font-family="Arial" font-size="12" text-anchor="start">Enzymes</text>
+  
+  <rect x="615" y="145" width="20" height="15" fill="#ff9cb0" stroke="#333333" stroke-width="1"/>
+  <text x="645" y="157" font-family="Arial" font-size="12" text-anchor="start">Cytosolic</text>
+  <text x="645" y="169" font-family="Arial" font-size="12" text-anchor="start">Enzymes</text>
+  
+  <ellipse cx="625" y="190" rx="10" ry="7" fill="#c0e8a0" stroke="#333333" stroke-width="1"/>
+  <text x="645" y="193" font-family="Arial" font-size="12" text-anchor="start">Metabolites</text>
+  
+  <rect x="615" y="205" width="20" height="15" stroke="#333333" stroke-width="1" stroke-dasharray="5,5" fill="#88c4e2"/>
+  <text x="645" y="217" font-family="Arial" font-size="12" text-anchor="start">Not in source</text>
+  
+  <circle cx="625" y="235" r="10" fill="#ffffff" stroke="#333333" stroke-width="1"/>
+  <text x="625" y="239" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+  <text x="645" y="239" font-family="Arial" font-size="12" text-anchor="start">Reaction steps</text>
+  
+  <text x="670" y="260" font-family="Arial" font-size="11" font-weight="bold" text-anchor="middle">Function key:</text>
+  <text x="670" y="274" font-family="Arial" font-size="9" text-anchor="middle">See numbered enzymes</text>
+  <text x="670" y="283" font-family="Arial" font-size="9" text-anchor="middle">at left for details</text>
+  
+  <!-- Note about pathway -->
+  <text x="400" y="680" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">
+    In S. pombe, arginine biosynthesis occurs across mitochondrial and cytosolic compartments
+  </text>
+  <text x="400" y="700" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">
+    with citrulline export from mitochondria (unlike S. cerevisiae that exports ornithine)
+  </text>
+</svg>

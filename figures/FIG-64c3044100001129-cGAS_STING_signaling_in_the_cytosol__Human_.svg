@@ -1,0 +1,139 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Cell Components -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" stroke="#000" stroke-width="2" />
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">cGAS-STING Signaling Pathway (Human)</text>
+  
+  <!-- Cell Membrane -->
+  <path d="M50,100 L750,100 L750,550 L50,550 Z" fill="#ffffff" stroke="#000" stroke-width="2" />
+  <text x="70" y="125" font-family="Arial" font-size="18" font-weight="bold">Cell</text>
+  
+  <!-- Cytosol Label -->
+  <text x="400" y="130" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#2874A6">Cytosol (GO:0005829)</text>
+  
+  <!-- ER Membrane -->
+  <path d="M150,300 C200,280 300,320 350,300 C400,280 450,320 500,300 C550,280 600,320 650,300" 
+        fill="none" stroke="#C0392B" stroke-width="4" />
+  <text x="400" y="340" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#C0392B">ER Membrane (GO:0005789)</text>
+  
+  <!-- ER-Golgi Intermediate Compartment -->
+  <path d="M250,300 C275,280 300,290 325,300" fill="none" stroke="#8E44AD" stroke-width="4" />
+  <text x="280" y="272" text-anchor="middle" font-family="Arial" font-size="14" fill="#8E44AD">ER-Golgi Intermediate</text>
+  <text x="280" y="290" text-anchor="middle" font-family="Arial" font-size="14" fill="#8E44AD">Compartment (GO:0033116)</text>
+  
+  <!-- Cytosolic DNA -->
+  <path d="M100,200 C110,190 120,210 130,200 C140,190 150,210 160,200" fill="none" stroke="#000" stroke-width="3" />
+  <text x="130" y="180" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Cytosolic dsDNA</text>
+  
+  <!-- cGAS Binding DNA -->
+  <circle cx="200" cy="200" r="35" fill="#1ABC9C" stroke="#000" stroke-width="2" />
+  <text x="200" y="204" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">cGAS</text>
+  <text x="200" y="220" text-anchor="middle" font-family="Arial" font-size="12">Q8N884</text>
+  
+  <!-- DNA Binding Arrow -->
+  <line x1="160" y1="200" x2="165" y2="200" stroke="#000" stroke-width="2" />
+  <polygon points="165,200 170,197 175,200 170,203" fill="#000" />
+  <text x="165" y="190" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">binds</text>
+  <text x="165" y="215" font-size="10" text-anchor="middle" font-family="Arial">GO:0003690</text>
+  
+  <!-- cGAS Condensate Formation -->
+  <circle cx="280" cy="200" r="40" fill="#1ABC9C" fill-opacity="0.7" stroke="#000" stroke-width="2" />
+  <circle cx="300" cy="190" r="15" fill="#1ABC9C" fill-opacity="0.8" stroke="none" />
+  <circle cx="270" cy="180" r="12" fill="#1ABC9C" fill-opacity="0.8" stroke="none" />
+  <circle cx="290" cy="210" r="10" fill="#1ABC9C" fill-opacity="0.8" stroke="none" />
+  <text x="280" y="204" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">cGAS</text>
+  <text x="280" y="220" text-anchor="middle" font-family="Arial" font-size="12">Condensate</text>
+  
+  <!-- Condensate Formation Arrow -->
+  <line x1="235" y1="200" x2="240" y2="200" stroke="#000" stroke-width="2" />
+  <polygon points="240,200 245,197 250,200 245,203" fill="#000" />
+  <text x="240" y="185" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">forms</text>
+  <text x="240" y="230" font-size="10" text-anchor="middle" font-family="Arial">GO:0140693</text>
+  
+  <!-- cGAMP Synthesis -->
+  <circle cx="360" cy="200" r="28" fill="#F39C12" stroke="#000" stroke-width="2" />
+  <text x="360" y="204" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">cGAMP</text>
+  
+  <!-- Synthesis Arrow -->
+  <line x1="320" y1="200" x2="325" y2="200" stroke="#000" stroke-width="2" />
+  <polygon points="325,200 330,197 335,200 330,203" fill="#000" />
+  <text x="328" y="185" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">synthesizes</text>
+  <text x="328" y="230" font-size="10" text-anchor="middle" font-family="Arial">GO:0061501</text>
+  
+  <!-- STING1 Inactive -->
+  <rect x="390" y="280" width="70" height="40" rx="5" ry="5" fill="#3498DB" stroke="#000" stroke-width="2" />
+  <text x="425" y="300" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">STING1</text>
+  <text x="425" y="315" text-anchor="middle" font-family="Arial" font-size="12">Q86WV6</text>
+  
+  <!-- cGAMP Binding to STING -->
+  <line x1="360" y1="228" x2="390" y2="280" stroke="#000" stroke-width="2" />
+  <polygon points="387,273 390,280 381,278" fill="#000" />
+  <text x="365" y="255" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">binds</text>
+  <text x="365" y="270" font-size="10" text-anchor="middle" font-family="Arial">GO:0061507</text>
+  
+  <!-- STING1 Activated -->
+  <rect x="500" y="280" width="70" height="40" rx="5" ry="5" fill="#3498DB" stroke="#E74C3C" stroke-width="3" />
+  <text x="535" y="300" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">STING1</text>
+  <text x="535" y="315" text-anchor="middle" font-family="Arial" font-size="12">Activated</text>
+  
+  <!-- STING Activation Arrow -->
+  <line x1="460" y1="300" x2="465" y2="300" stroke="#000" stroke-width="2" />
+  <polygon points="465,300 495,297 500,300 495,303" fill="#000" />
+  <text x="480" y="285" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">activates</text>
+  <text x="480" y="325" font-size="10" text-anchor="middle" font-family="Arial">GO:0035591</text>
+  
+  <!-- TBK1 Inactive -->
+  <polygon points="520,380 550,380 560,410 510,410" fill="#F1C40F" stroke="#000" stroke-width="2" />
+  <text x="535" y="400" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TBK1</text>
+  <text x="535" y="415" text-anchor="middle" font-family="Arial" font-size="12">Q9UHD2</text>
+  
+  <!-- STING to TBK1 Arrow -->
+  <line x1="535" y1="320" x2="535" y2="375" stroke="#000" stroke-width="2" />
+  <polygon points="532,370 535,380 538,370" fill="#000" />
+  <text x="510" y="350" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">activates</text>
+  
+  <!-- TBK1 Active -->
+  <polygon points="620,380 650,380 660,410 610,410" fill="#F1C40F" stroke="#E74C3C" stroke-width="3" />
+  <text x="635" y="400" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TBK1</text>
+  <text x="635" y="415" text-anchor="middle" font-family="Arial" font-size="12">Active</text>
+  
+  <!-- TBK1 Activation Arrow -->
+  <line x1="565" y1="395" x2="570" y2="395" stroke="#000" stroke-width="2" />
+  <polygon points="570,395 605,392 610,395 605,398" fill="#000" />
+  <text x="590" y="380" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">activates</text>
+  <text x="590" y="420" font-size="10" text-anchor="middle" font-family="Arial">GO:0004674</text>
+  
+  <!-- TBK1 Feedback to STING1 -->
+  <path d="M635,380 Q600,330 550,280" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="550,280 555,285 547,288" fill="#000" />
+  <text x="590" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">phosphorylates</text>
+  <text x="590" y="345" text-anchor="middle" font-family="Arial" font-size="10">GO:0004674</text>
+  
+  <!-- Output: Type I Interferon Production -->
+  <rect x="590" y="480" width="120" height="40" rx="10" ry="10" fill="#E67E22" stroke="#000" stroke-width="2" />
+  <text x="650" y="500" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Type I Interferon</text>
+  <text x="650" y="515" text-anchor="middle" font-family="Arial" font-size="12">Production</text>
+  
+  <!-- TBK1 to Output Arrow -->
+  <line x1="635" y1="410" x2="635" y2="480" stroke="#000" stroke-width="2" />
+  <polygon points="632,475 635,480 638,475" fill="#000" />
+  <text x="665" y="450" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">activates</text>
+  <text x="665" y="465" font-size="10" text-anchor="middle" font-family="Arial">GO:0032481</text>
+  
+  <!-- Process Labels -->
+  <rect x="580" y="120" width="200" height="60" rx="5" ry="5" fill="#ffffff" fill-opacity="0.7" stroke="#2E86C1" stroke-width="2" />
+  <text x="680" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2E86C1">cGAS/STING signaling</text>
+  <text x="680" y="160" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2E86C1">pathway</text>
+  <text x="680" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#2E86C1">(GO:0140896)</text>
+  
+  <!-- Activation Legend -->
+  <rect x="50" y="480" width="200" height="60" rx="5" ry="5" fill="#ffffff" fill-opacity="0.7" stroke="#000" stroke-width="1" />
+  <text x="150" y="500" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  <line x1="70" y1="520" x2="90" y2="520" stroke="#000" stroke-width="2" />
+  <polygon points="90,520 95,517 100,520 95,523" fill="#000" />
+  <text x="170" y="525" text-anchor="middle" font-family="Arial" font-size="12">Activation/Signal Flow</text>
+  
+  <!-- Binding Legend -->
+  <line x1="70" y1="540" x2="90" y2="540" stroke="#000" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="90,540 95,537 100,540 95,543" fill="#000" />
+  <text x="170" y="545" text-anchor="middle" font-family="Arial" font-size="12">Phosphorylation</text>
+</svg>

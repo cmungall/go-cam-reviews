@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background representing neuron -->
+  <rect x="0" y="0" width="800" height="600" fill="#f9f9f9" stroke="none"/>
+  
+  <!-- Cell membrane outline -->
+  <path d="M50,200 Q400,50 750,200 Q400,350 50,200" fill="#e6f2ff" stroke="#333" stroke-width="3"/>
+  
+  <!-- Synaptic cleft -->
+  <path d="M150,200 Q400,120 650,200" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="140" text-anchor="middle" font-family="Arial" font-size="16" fill="#555" font-weight="bold">Synaptic Cleft</text>
+  
+  <!-- Postsynaptic region -->
+  <path d="M150,200 Q400,280 650,200 Q400,350 150,200" fill="#d9ebff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Dopaminergic Neuron (Postsynaptic)</text>
+  
+  <!-- Postsynaptic Density Membrane -->
+  <path d="M200,200 Q400,240 600,200" fill="#c4e0ff" stroke="#555" stroke-width="3"/>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial" font-size="16" fill="#555" font-weight="bold">Postsynaptic Density Membrane</text>
+  
+  <!-- Postsynaptic Cytosol label -->
+  <text x="400" y="290" text-anchor="middle" font-family="Arial" font-size="16" fill="#555" font-weight="bold">Postsynaptic Cytosol</text>
+  
+  <!-- Glutamate in synaptic cleft -->
+  <circle cx="360" cy="170" r="12" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <circle cx="400" cy="160" r="12" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <circle cx="440" cy="175" r="12" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="400" y="165" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#ffffff">Glu</text>
+  <text x="400" y="115" text-anchor="middle" font-family="Arial" font-size="16" fill="#cc0000" font-weight="bold">L-Glutamate</text>
+  
+  <!-- Grm1 receptor - using distinctive receptor shape -->
+  <path d="M280,190 L290,180 L330,180 L340,190 L340,210 L330,220 L290,220 L280,210 Z" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="310" y="208" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">GRM1</text>
+  
+  <!-- Gnaq (G protein) - keeping distinctive circular shape -->
+  <circle cx="310" cy="260" r="22" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="310" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">GNAQ</text>
+  
+  <!-- Plcb3 - using enzyme shape (hexagon) -->
+  <polygon points="370,250 380,240 410,240 420,250 420,270 410,280 380,280 370,270" fill="#b3ffb3" stroke="#339933" stroke-width="2"/>
+  <text x="395" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">PLCB3</text>
+  
+  <!-- PIP2 to IP3 and DAG -->
+  <ellipse cx="460" cy="265" rx="30" ry="15" fill="#ffffb3" stroke="#cccc00" stroke-width="2"/>
+  <text x="460" y="270" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">PIP2</text>
+  
+  <ellipse cx="520" cy="230" rx="25" ry="15" fill="#ffe6b3" stroke="#cc9900" stroke-width="2"/>
+  <text x="520" y="235" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">IP3</text>
+  
+  <ellipse cx="520" cy="300" rx="25" ry="15" fill="#ffe6b3" stroke="#cc9900" stroke-width="2"/>
+  <text x="520" y="305" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">DAG</text>
+  
+  <!-- Prkcg (PKC) - using kinase shape (diamond) -->
+  <polygon points="580,270 610,255 640,270 610,285" fill="#ffb3ff" stroke="#cc00cc" stroke-width="2"/>
+  <text x="610" y="275" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">PRKCG</text>
+  
+  <!-- Grid1 receptor - using distinctive receptor shape like Grm1 -->
+  <path d="M500,190 L510,180 L550,180 L560,190 L560,210 L550,220 L510,220 L500,210 Z" fill="#ff99cc" stroke="#ff3399" stroke-width="2"/>
+  <text x="530" y="208" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">GRID1</text>
+  
+  <!-- Arrows for pathway with improved positioning -->
+  <!-- Glutamate to Grm1 -->
+  <path d="M400,175 L340,190" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Grm1 to Gnaq -->
+  <path d="M310,220 L310,238" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="335" y="230" text-anchor="start" font-family="Arial" font-size="12" font-weight="bold" fill="#333">activates</text>
+  
+  <!-- Gnaq to Plcb3 -->
+  <path d="M332,260 L370,260" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="340" y="250" text-anchor="start" font-family="Arial" font-size="12" font-weight="bold" fill="#333">activates</text>
+  
+  <!-- Plcb3 to PIP2 -->
+  <path d="M420,265 L430,265" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- PIP2 to products -->
+  <path d="M490,260 L500,240" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M490,270 L500,290" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- DAG to PKC -->
+  <path d="M545,300 L580,275" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="550" y="315" text-anchor="start" font-family="Arial" font-size="12" font-weight="bold" fill="#333">activates</text>
+  
+  <!-- PKC to Grid1 -->
+  <path d="M610,255 L560,210" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="575" y="240" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">activates</text>
+  
+  <!-- Step annotations -->
+  <text x="400" y="185" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">1. Ligand binding</text>
+  <text x="310" y="225" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">2. Receptor activation</text>
+  <text x="350" y="275" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">3. G protein activation</text>
+  <text x="450" y="240" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">4. PIP2 hydrolysis</text>
+  <text x="520" y="275" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">5. Second messenger generation</text>
+  <text x="570" y="295" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">6. Kinase activation</text>
+  <text x="565" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">7. Receptor activation</text>
+  
+  <!-- Arrowhead definition with larger size -->
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#333">GRM1 Activates GRID1 via GNAQ in Dopamine Neurons</text>
+  
+  <!-- Pathway name -->
+  <text x="400" y="60" text-anchor="middle" font-family="Arial" font-size="18" fill="#555">Phospholipase C-activating G protein-coupled receptor signaling pathway</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="380" width="180" height="200" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="690" y="400" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Legend</text>
+  
+  <!-- Legend items with distinctive shapes -->
+  <path d="M620,420 L625,415 L635,415 L640,420 L640,430 L635,435 L625,435 L620,430 Z" fill="#ffcc99" stroke="#ff6600" stroke-width="1"/>
+  <text x="650" y="430" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Receptor (GRM1)</text>
+  
+  <path d="M620,450 L625,445 L635,445 L640,450 L640,460 L635,465 L625,465 L620,460 Z" fill="#ff99cc" stroke="#ff3399" stroke-width="1"/>
+  <text x="650" y="460" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Receptor (GRID1)</text>
+  
+  <circle cx="630" cy="480" r="10" fill="#99ccff" stroke="#0066cc" stroke-width="1"/>
+  <text x="650" y="485" text-anchor="start" font-family="Arial" font-size="12" fill="#333">G Protein (GNAQ)</text>
+  
+  <polygon points="620,495 625,490 635,490 640,495 640,505 635,510 625,510 620,505" fill="#b3ffb3" stroke="#339933" stroke-width="1"/>
+  <text x="650" y="505" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Phospholipase C (PLCB3)</text>
+  
+  <polygon points="620,525 630,520 640,525 630,530" fill="#ffb3ff" stroke="#cc00cc" stroke-width="1"/>
+  <text x="650" y="530" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Protein Kinase C (PRKCG)</text>
+  
+  <circle cx="630" cy="545" r="8" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="650" y="550" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Glutamate</text>
+  
+  <ellipse cx="630" cy="565" rx="13" ry="8" fill="#ffe6b3" stroke="#cc9900" stroke-width="1"/>
+  <text x="650" y="570" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Lipid molecules</text>
+</svg>

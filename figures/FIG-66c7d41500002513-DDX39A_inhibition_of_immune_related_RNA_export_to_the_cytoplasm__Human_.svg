@@ -1,0 +1,91 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell outline -->
+    <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9f9" stroke="#333333" stroke-width="2"/>
+    
+    <!-- Nucleus -->
+    <ellipse cx="300" cy="300" rx="200" ry="180" fill="#e6f2ff" stroke="#333333" stroke-width="2"/>
+    <text x="300" y="485" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus</text>
+    
+    <!-- Mitochondrion -->
+    <ellipse cx="550" cy="200" rx="100" ry="50" fill="#ffcccc" stroke="#333333" stroke-width="2"/>
+    <text x="550" y="265" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Mitochondrion</text>
+    
+    <!-- Endosome -->
+    <circle cx="600" cy="400" r="60" fill="#d9f2d9" stroke="#333333" stroke-width="2"/>
+    <text x="600" y="475" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Endosome</text>
+    
+    <!-- Cytoplasm label -->
+    <text x="430" y="120" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cytoplasm</text>
+    
+    <!-- RANBP2 in nucleus -->
+    <rect x="220" y="250" width="80" height="40" rx="5" ry="5" fill="#ffcccc" stroke="#333333" stroke-width="2"/>
+    <text x="260" y="273" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">RANBP2</text>
+    <text x="260" y="288" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">SUMO ligase</text>
+    
+    <!-- DDX39A in nucleus -->
+    <rect x="350" y="250" width="80" height="40" rx="5" ry="5" fill="#ffff99" stroke="#333333" stroke-width="2"/>
+    <text x="390" y="273" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">DDX39A</text>
+    <text x="390" y="288" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">RNA binding</text>
+    
+    <!-- TRAF6 in cytoplasm -->
+    <rect x="450" y="350" width="80" height="40" rx="5" ry="5" fill="#99ccff" stroke="#333333" stroke-width="2"/>
+    <text x="490" y="373" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">TRAF6</text>
+    <text x="490" y="388" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Ubiquitin ligase</text>
+    
+    <!-- MAVS on mitochondria -->
+    <rect x="520" y="180" width="80" height="40" rx="5" ry="5" fill="#cc99ff" stroke="#333333" stroke-width="2"/>
+    <text x="560" y="203" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">MAVS</text>
+    <text x="560" y="218" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Signaling adaptor</text>
+    
+    <!-- TRAF3 in endosome -->
+    <rect x="570" y="380" width="80" height="40" rx="5" ry="5" fill="#ff99cc" stroke="#333333" stroke-width="2"/>
+    <text x="610" y="403" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">TRAF3</text>
+    <text x="610" y="418" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Ubiquitin ligase</text>
+    
+    <!-- RNA in nucleus -->
+    <path d="M 320,200 Q 340,180 360,200 Q 380,220 400,200" stroke="#006600" stroke-width="3" fill="none"/>
+    <text x="360" y="170" text-anchor="middle" font-family="Arial" font-size="16">RNA</text>
+    
+    <!-- Arrows and interactions -->
+    <!-- RANBP2 SUMOylates DDX39A -->
+    <path d="M 300,270 L 350,270" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <text x="325" y="258" text-anchor="middle" font-family="Arial" font-size="14">SUMOylation</text>
+    
+    <!-- DDX39A inhibits RNA export -->
+    <path d="M 390,250 L 390,200" stroke="#FF0000" stroke-width="3" marker-end="url(#redarrowhead)"/>
+    <text x="430" y="225" text-anchor="middle" font-family="Arial" font-size="14">Inhibits export</text>
+    
+    <!-- DDX39A negatively regulates TRAF6 -->
+    <path d="M 400,290 C 420,320 430,340 450,350" stroke="#FF0000" stroke-width="3" marker-end="url(#redarrowhead)"/>
+    <text x="440" y="330" text-anchor="middle" font-family="Arial" font-size="14">Inhibits</text>
+    
+    <!-- DDX39A negatively regulates MAVS -->
+    <path d="M 400,250 C 450,230 480,210 520,200" stroke="#FF0000" stroke-width="3" marker-end="url(#redarrowhead)"/>
+    <text x="470" y="230" text-anchor="middle" font-family="Arial" font-size="14">Inhibits</text>
+    
+    <!-- DDX39A negatively regulates TRAF3 -->
+    <path d="M 400,290 C 450,350 500,380 570,400" stroke="#FF0000" stroke-width="3" marker-end="url(#redarrowhead)"/>
+    <text x="500" y="360" text-anchor="middle" font-family="Arial" font-size="14">Inhibits</text>
+
+    <!-- Arrowhead marker definitions -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+        </marker>
+        <marker id="redarrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#FF0000"/>
+        </marker>
+    </defs>
+    
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">DDX39A Inhibition of Immune-Related RNA Export</text>
+    <text x="400" y="55" text-anchor="middle" font-family="Arial" font-size="16" font-style="italic">Human Pathway (GO-CAM Model)</text>
+    
+    <!-- Legend -->
+    <rect x="20" y="520" width="280" height="70" fill="white" stroke="#333333" stroke-width="1"/>
+    <text x="30" y="540" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+    <path d="M 30,555 L 50,555" stroke="#FF0000" stroke-width="3" marker-end="url(#redarrowhead)"/>
+    <text x="60" y="560" font-family="Arial" font-size="14">Negative regulation (inhibition)</text>
+    <path d="M 30,580 L 50,580" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <text x="60" y="585" font-family="Arial" font-size="14">Activation</text>
+</svg>

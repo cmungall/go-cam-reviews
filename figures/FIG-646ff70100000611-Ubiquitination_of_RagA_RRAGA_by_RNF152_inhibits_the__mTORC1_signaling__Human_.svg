@@ -1,0 +1,116 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9f9" stroke="#888888" stroke-width="2"/>
+  
+  <!-- Lysosomal membrane -->
+  <ellipse cx="400" cy="320" rx="200" ry="150" fill="#f3e5ab" stroke="#555555" stroke-width="3"/>
+  <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Lysosomal Membrane</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Ubiquitination of RagA/RRAGA by RNF152 inhibits mTORC1 signaling</text>
+  
+  <!-- RagA in GDP state -->
+  <circle cx="300" cy="300" r="30" fill="#b3d9ff" stroke="#333333" stroke-width="2"/>
+  <text x="300" y="300" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">RagA</text>
+  <text x="300" y="315" text-anchor="middle" font-family="Arial" font-size="12">(GDP)</text>
+  
+  <!-- RagA in GTP state -->
+  <circle cx="500" cy="300" r="30" fill="#6699cc" stroke="#333333" stroke-width="2"/>
+  <text x="500" y="300" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">RagA</text>
+  <text x="500" y="315" text-anchor="middle" font-family="Arial" font-size="12">(GTP)</text>
+  
+  <!-- RNF152 -->
+  <rect x="220" y="240" width="70" height="40" rx="10" ry="10" fill="#f08080" stroke="#333333" stroke-width="2"/>
+  <text x="255" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">RNF152</text>
+  
+  <!-- GATOR1 Complex -->
+  <rect x="340" y="240" width="80" height="40" rx="10" ry="10" fill="#90ee90" stroke="#333333" stroke-width="2"/>
+  <text x="380" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">GATOR1</text>
+  
+  <!-- mTORC1 Complex -->
+  <rect x="520" y="230" width="90" height="40" rx="10" ry="10" fill="#ffa500" stroke="#333333" stroke-width="2"/>
+  <text x="565" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">mTORC1</text>
+  
+  <!-- Ubiquitin -->
+  <circle cx="290" cy="260" r="10" fill="#ff99cc" stroke="#333333" stroke-width="1"/>
+  <text x="290" y="264" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">Ub</text>
+  
+  <!-- Arrow from RNF152 to RagA with Ubiquitin -->
+  <path d="M255 280 Q 270 290 290 300" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="240" y="300" text-anchor="start" font-family="Arial" font-size="12">K63-linked</text>
+  <text x="240" y="315" text-anchor="start" font-family="Arial" font-size="12">ubiquitination</text>
+  
+  <!-- Arrow from GATOR1 to RagA -->
+  <path d="M380 280 Q 360 290 330 300" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="350" y="280" text-anchor="middle" font-family="Arial" font-size="12">GTPase</text>
+  <text x="350" y="295" text-anchor="middle" font-family="Arial" font-size="12">activator</text>
+  
+  <!-- Arrow from RagA GTP to mTORC1 -->
+  <path d="M530 300 Q 550 270 565 270" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="560" y="290" text-anchor="middle" font-family="Arial" font-size="12">recruits</text>
+  
+  <!-- Arrow from GDP to GTP RagA -->
+  <path d="M330 300 Q 400 370 470 300" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="400" y="380" text-anchor="middle" font-family="Arial" font-size="14">GTP binding</text>
+  
+  <!-- mTORC1 signaling arrow -->
+  <path d="M590 230 Q 610 200 610 170" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="650" y="200" text-anchor="middle" font-family="Arial" font-size="14">mTORC1</text>
+  <text x="650" y="220" text-anchor="middle" font-family="Arial" font-size="14">signaling</text>
+  
+  <!-- Inhibition symbols -->
+  <line x1="310" y1="240" x2="330" y2="220" stroke="#ff0000" stroke-width="3"/>
+  <line x1="330" y1="240" x2="310" y2="220" stroke="#ff0000" stroke-width="3"/>
+  
+  <line x1="450" y1="370" x2="470" y2="350" stroke="#ff0000" stroke-width="3"/>
+  <line x1="470" y1="370" x2="450" y2="350" stroke="#ff0000" stroke-width="3"/>
+  
+  <!-- Amino acid starvation -->
+  <path d="M100 200 Q 160 220 200 240" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="130" y="180" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Amino acid</text>
+  <text x="130" y="200" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">starvation</text>
+  
+  <!-- Position info -->
+  <text x="530" y="400" text-anchor="middle" font-family="Arial" font-size="14">Prevents mTORC1 recruitment</text>
+  <text x="530" y="420" text-anchor="middle" font-family="Arial" font-size="14">to lysosomal membrane</text>
+  
+  <!-- Annotations -->
+  <text x="150" y="240" text-anchor="middle" font-family="Arial" font-size="13" fill="#555555">1. Starvation activates</text>
+  <text x="150" y="255" text-anchor="middle" font-family="Arial" font-size="13" fill="#555555">RNF152</text>
+  
+  <text x="330" y="215" text-anchor="middle" font-family="Arial" font-size="13" fill="#555555">2. RNF152 ubiquitinates RagA</text>
+  
+  <text x="420" y="215" text-anchor="middle" font-family="Arial" font-size="13" fill="#555555">3. GATOR1 acts as a</text>
+  <text x="420" y="230" text-anchor="middle" font-family="Arial" font-size="13" fill="#555555">GAP for RagA</text>
+  
+  <text x="400" y="410" text-anchor="middle" font-family="Arial" font-size="13" fill="#555555">4. Inhibition of GTP binding</text>
+  
+  <text x="650" y="380" text-anchor="middle" font-family="Arial" font-size="13" fill="#555555">5. GTP-bound RagA is required</text>
+  <text x="650" y="395" text-anchor="middle" font-family="Arial" font-size="13" fill="#555555">for mTORC1 recruitment</text>
+
+  <!-- Legend -->
+  <rect x="600" y="450" width="180" height="130" fill="#f0f0f0" stroke="#333333" stroke-width="1"/>
+  <text x="690" y="470" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <rect x="620" y="480" width="15" height="15" fill="#f08080" stroke="#333333" stroke-width="1"/>
+  <text x="650" y="493" text-anchor="start" font-family="Arial" font-size="12">RNF152 (E3 ligase)</text>
+  
+  <rect x="620" y="505" width="15" height="15" fill="#90ee90" stroke="#333333" stroke-width="1"/>
+  <text x="650" y="518" text-anchor="start" font-family="Arial" font-size="12">GATOR1 complex</text>
+  
+  <circle cx="627" cy="535" r="7.5" fill="#b3d9ff" stroke="#333333" stroke-width="1"/>
+  <text x="650" y="538" text-anchor="start" font-family="Arial" font-size="12">RagA (GDP)</text>
+  
+  <circle cx="627" cy="555" r="7.5" fill="#6699cc" stroke="#333333" stroke-width="1"/>
+  <text x="650" y="558" text-anchor="start" font-family="Arial" font-size="12">RagA (GTP)</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>

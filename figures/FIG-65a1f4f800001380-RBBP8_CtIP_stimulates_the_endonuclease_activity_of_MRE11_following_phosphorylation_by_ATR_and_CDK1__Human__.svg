@@ -1,0 +1,94 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell nucleus background -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8f8" stroke="#666" stroke-width="2"/>
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cell Nucleus</text>
+  
+  <!-- DNA double-strand break site -->
+  <rect x="200" y="250" width="400" height="60" rx="5" ry="5" fill="#e6f3ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="240" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Site of Double-Strand Break (GO:0035861)</text>
+  
+  <!-- DNA strands with break -->
+  <path d="M220,270 H380 M420,270 H580" stroke="#0066cc" stroke-width="4"/>
+  <path d="M220,290 H380 M420,290 H580" stroke="#0066cc" stroke-width="4"/>
+  
+  <!-- ATR protein (Kinase 1) -->
+  <circle cx="200" cy="150" r="35" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">ATR</text>
+  <text x="200" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Protein Kinase</text>
+  
+  <!-- CDK1 protein (Kinase 2) -->
+  <circle cx="600" cy="150" r="35" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="600" y="155" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">CDK1</text>
+  <text x="600" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Cyclin-dependent Kinase</text>
+  
+  <!-- NBN protein -->
+  <rect x="370" y="180" width="60" height="30" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="200" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">NBN</text>
+  
+  <!-- RBBP8/CtIP protein -->
+  <rect x="280" y="320" width="60" height="30" rx="5" ry="5" fill="#99cc99" stroke="#006600" stroke-width="2"/>
+  <text x="310" y="340" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">RBBP8</text>
+  
+  <!-- MRE11 protein -->
+  <rect x="460" y="320" width="60" height="30" rx="5" ry="5" fill="#9999cc" stroke="#000066" stroke-width="2"/>
+  <text x="490" y="340" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">MRE11</text>
+  
+  <!-- Phosphorylation arrows from kinases to NBN -->
+  <path d="M225,165 Q310,170 370,190" stroke="#cc0000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="280" y="170" text-anchor="middle" font-family="Arial" font-size="14" fill="#cc0000">Phosphorylates</text>
+  
+  <path d="M575,165 Q490,170 430,190" stroke="#cc0000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="520" y="170" text-anchor="middle" font-family="Arial" font-size="14" fill="#cc0000">Phosphorylates</text>
+  
+  <!-- NBN localization to break site -->
+  <path d="M400,210 L400,250" stroke="#0066cc" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="430" y="230" text-anchor="start" font-family="Arial" font-size="14" fill="#0066cc">Localizes</text>
+  
+  <!-- RBBP8 stimulation of MRE11 -->
+  <path d="M340,335 L460,335" stroke="#006600" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial" font-size="14" fill="#006600">Stimulates</text>
+  
+  <!-- MRE11 activities -->
+  <path d="M490,350 L490,380 Q490,400 470,410" stroke="#000066" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="440" y="415" text-anchor="middle" font-family="Arial" font-size="14" fill="#000066">3'-5' Exonuclease</text>
+  
+  <path d="M490,350 L490,380 Q490,400 510,410" stroke="#000066" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="540" y="415" text-anchor="middle" font-family="Arial" font-size="14" fill="#000066">Endonuclease</text>
+  
+  <!-- RBBP8 activity -->
+  <path d="M310,350 L310,380 Q310,400 330,410" stroke="#006600" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="330" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#006600">ssDNA Endodeoxyribonuclease</text>
+  
+  <!-- DNA repair process -->
+  <path d="M400,310 L400,450" stroke="#333" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <rect x="300" y="450" width="200" height="40" rx="5" ry="5" fill="#ffffcc" stroke="#cc9900" stroke-width="2"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">DNA Strand Resection</text>
+  <text x="400" y="490" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Replication Fork Processing</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="13" markerHeight="13" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Title of the diagram -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">RBBP8/CtIP Stimulation of MRE11 Endonuclease Activity</text>
+  <text x="400" y="55" text-anchor="middle" font-family="Arial" font-size="18" fill="#666">Following Phosphorylation by ATR and CDK1 (Human)</text>
+
+  <!-- Color coding legend -->
+  <rect x="50" y="520" width="20" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="80" y="532" font-family="Arial" font-size="14" text-anchor="start">Kinases</text>
+  
+  <rect x="150" y="520" width="20" height="15" fill="#99ccff" stroke="#0066cc" stroke-width="1"/>
+  <text x="180" y="532" font-family="Arial" font-size="14" text-anchor="start">Adapter Protein</text>
+  
+  <rect x="300" y="520" width="20" height="15" fill="#99cc99" stroke="#006600" stroke-width="1"/>
+  <text x="330" y="532" font-family="Arial" font-size="14" text-anchor="start">Endonuclease Regulator</text>
+  
+  <rect x="500" y="520" width="20" height="15" fill="#9999cc" stroke="#000066" stroke-width="1"/>
+  <text x="530" y="532" font-family="Arial" font-size="14" text-anchor="start">Nuclease Activity</text>
+  
+  <rect x="650" y="520" width="20" height="15" fill="#ffffcc" stroke="#cc9900" stroke-width="1"/>
+  <text x="680" y="532" font-family="Arial" font-size="14" text-anchor="start">Biological Process</text>
+</svg>

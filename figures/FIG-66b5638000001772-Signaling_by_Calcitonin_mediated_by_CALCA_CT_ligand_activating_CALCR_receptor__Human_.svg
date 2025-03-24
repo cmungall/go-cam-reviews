@@ -1,0 +1,94 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background layers -->
+  <rect x="0" y="0" width="800" height="650" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="24">Signaling by Calcitonin mediated by CALCA/CT ligand activating CALCR receptor (Human)</text>
+  
+  <!-- Cell compartments -->
+  <!-- Extracellular space -->
+  <rect x="100" y="100" width="600" height="150" fill="#e6f3ff" stroke="#aad4ff" stroke-width="2"/>
+  <text x="120" y="125" font-family="Arial" font-size="18" font-weight="bold" fill="#555">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="100" y="250" width="600" height="50" fill="#ffd9b3" stroke="#ffb366" stroke-width="2"/>
+  <text x="120" y="280" font-family="Arial" font-size="18" font-weight="bold" fill="#555">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Cytosol -->
+  <rect x="100" y="300" width="600" height="250" fill="#e6ffe6" stroke="#b3ffb3" stroke-width="2"/>
+  <text x="120" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#555">Cytosol (GO:0005829)</text>
+  
+  <!-- CALCA hormone in extracellular space -->
+  <circle cx="300" cy="170" r="40" fill="#ff9999" stroke="#ff6666" stroke-width="2"/>
+  <text x="300" y="170" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-weight="bold">CALCA</text>
+  <text x="300" y="190" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">P01258</text>
+  <text x="300" y="150" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">Hormone activity</text>
+  
+  <!-- CALCR receptor on plasma membrane -->
+  <rect x="280" y="235" width="80" height="80" fill="#99ccff" stroke="#3399ff" stroke-width="2" rx="5" ry="5"/>
+  <text x="320" y="265" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-weight="bold">CALCR</text>
+  <text x="320" y="285" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">P30988</text>
+  <text x="320" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-style="italic">Receptor activity</text>
+  
+  <!-- G protein GNAS in cytosol -->
+  <rect x="320" y="350" width="80" height="50" fill="#ffcc99" stroke="#ff9933" stroke-width="2" rx="5" ry="5"/>
+  <text x="360" y="375" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-weight="bold">GNAS</text>
+  <text x="360" y="395" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Q5JWF2</text>
+  
+  <!-- ADCY6 adenylate cyclase -->
+  <rect x="450" y="400" width="80" height="50" fill="#cc99ff" stroke="#9933ff" stroke-width="2" rx="5" ry="5"/>
+  <text x="490" y="425" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-weight="bold">ADCY6</text>
+  <text x="490" y="445" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">O43306</text>
+  
+  <!-- cAMP output -->
+  <circle cx="600" cy="450" r="30" fill="#99ff99" stroke="#33cc33" stroke-width="2"/>
+  <text x="600" y="455" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-weight="bold">cAMP</text>
+  <text x="600" y="475" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">CHEBI:17489</text>
+  
+  <!-- Signaling arrows -->
+  <!-- CALCA to CALCR -->
+  <line x1="300" y1="210" x2="300" y2="235" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="320" y="225" font-family="Arial" font-size="12" fill="#333">Ligand binding</text>
+  
+  <!-- CALCR to GNAS -->
+  <path d="M 320 315 Q 340 330 340 350" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="260" y="340" font-family="Arial" font-size="12" fill="#333">G protein activation</text>
+  
+  <!-- GNAS to ADCY6 -->
+  <line x1="400" y1="375" x2="450" y2="425" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="385" y="385" font-family="Arial" font-size="12" fill="#333">Adenylate cyclase activation</text>
+  
+  <!-- ADCY6 to cAMP -->
+  <line x1="530" y1="425" x2="570" y2="450" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="540" y="420" font-family="Arial" font-size="12" fill="#333">cAMP production</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Pathway labels -->
+  <text x="400" y="495" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-style="italic">Adenylate cyclase-activating G protein-coupled receptor signaling pathway (GO:0007189)</text>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-style="italic">Calcitonin family receptor signaling pathway (GO:0097646)</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="540" width="600" height="1" fill="#777"/>
+  <text x="100" y="560" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Legend:</text>
+  
+  <circle cx="120" cy="580" r="10" fill="#ff9999" stroke="#ff6666" stroke-width="1"/>
+  <text x="140" y="585" font-family="Arial" font-size="14" fill="#333">CALCA (P01258): Calcitonin hormone with binding activity</text>
+  
+  <rect x="120" y="600" width="20" height="20" fill="#99ccff" stroke="#3399ff" stroke-width="1" rx="2" ry="2"/>
+  <text x="150" y="615" font-family="Arial" font-size="14" fill="#333">CALCR (P30988): Calcitonin receptor in plasma membrane</text>
+  
+  <rect x="450" y="580" width="20" height="20" fill="#ffcc99" stroke="#ff9933" stroke-width="1" rx="2" ry="2"/>
+  <text x="480" y="595" font-family="Arial" font-size="14" fill="#333">GNAS (Q5JWF2): G protein with GTPase activity</text>
+  
+  <rect x="450" y="610" width="20" height="20" fill="#cc99ff" stroke="#9933ff" stroke-width="1" rx="2" ry="2"/>
+  <text x="480" y="625" font-family="Arial" font-size="14" fill="#333">ADCY6 (O43306): Adenylate cyclase enzyme</text>
+  
+  <circle cx="120" cy="635" r="10" fill="#99ff99" stroke="#33cc33" stroke-width="1"/>
+  <text x="140" y="640" font-family="Arial" font-size="14" fill="#333">cAMP (CHEBI:17489): 3',5'-cyclic AMP (signaling molecule)</text>
+</svg>

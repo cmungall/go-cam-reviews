@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="750" viewBox="0 0 800 750">
+  <!-- Background and cell compartments -->
+  <rect fill="#f9f9f9" width="800" height="750" rx="5" ry="5"/>
+  
+  <!-- Extracellular space -->
+  <rect x="50" y="50" width="700" height="120" rx="5" ry="5" fill="#e6f7ff" stroke="#aad4e6" stroke-width="2"/>
+  <text x="60" y="70" font-family="Arial" font-size="16" fill="#666">Extracellular Space</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="50" y="170" width="700" height="60" rx="0" ry="0" fill="#ffd591" stroke="#e8b26d" stroke-width="2"/>
+  <text x="60" y="195" font-family="Arial" font-size="16" fill="#666">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="50" y="230" width="700" height="320" rx="0" ry="0" fill="#e6ffe6" stroke="#c1e0c1" stroke-width="2"/>
+  <text x="60" y="250" font-family="Arial" font-size="16" fill="#666">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <rect x="50" y="550" width="700" height="150" rx="5" ry="5" fill="#ffe6f0" stroke="#edc1d3" stroke-width="2"/>
+  <text x="60" y="570" font-family="Arial" font-size="16" fill="#666">Nucleus</text>
+  
+  <!-- Growth Hormone in extracellular space -->
+  <circle cx="200" cy="110" r="25" fill="#84baff" stroke="#5c8a99" stroke-width="2"/>
+  <text x="200" y="115" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">GH1</text>
+  <text x="200" y="135" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">(growth factor)</text>
+  
+  <!-- GHR on plasma membrane -->
+  <rect x="190" y="170" width="40" height="90" rx="5" ry="5" fill="#ffb366" stroke="#cc8800" stroke-width="2"/>
+  <text x="210" y="210" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">GHR</text>
+  <text x="210" y="230" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">receptor</text>
+  
+  <!-- JAK2 at cytoplasmic side -->
+  <rect x="245" y="240" width="60" height="40" rx="5" ry="5" fill="#ccff99" stroke="#99cc00" stroke-width="2"/>
+  <text x="275" y="260" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">JAK2</text>
+  <text x="275" y="280" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">tyrosine kinase</text>
+  
+  <!-- STAT5B in cytoplasm -->
+  <polygon points="320,330 360,330 380,355 360,380 320,380 300,355" fill="#ff99cc" stroke="#cc0066" stroke-width="2"/>
+  <text x="340" y="360" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">STAT5B</text>
+  <text x="340" y="395" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">signaling protein</text>
+  
+  <!-- STAT5B in nucleus -->
+  <polygon points="320,590 360,590 380,615 360,640 320,640 300,615" fill="#ff99cc" stroke="#cc0066" stroke-width="2"/>
+  <text x="340" y="620" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">STAT5B</text>
+  <text x="340" y="655" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">transcription factor</text>
+  
+  <!-- SOCS2 in cytoplasm -->
+  <rect x="440" y="310" width="60" height="40" rx="5" ry="5" fill="#ffff99" stroke="#cccc00" stroke-width="2"/>
+  <text x="470" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">SOCS2</text>
+  <text x="470" y="350" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">adaptor</text>
+  
+  <!-- CUL5 in cytoplasm -->
+  <rect x="510" y="380" width="60" height="40" rx="5" ry="5" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="540" y="400" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">CUL5</text>
+  <text x="540" y="420" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">scaffold</text>
+  
+  <!-- RNF7 in cytoplasm -->
+  <rect x="580" y="310" width="60" height="40" rx="5" ry="5" fill="#cc99ff" stroke="#6600cc" stroke-width="2"/>
+  <text x="610" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">RNF7</text>
+  <text x="610" y="350" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">E3 ligase</text>
+  
+  <!-- ECS Complex annotation -->
+  <ellipse cx="520" cy="350" rx="130" ry="80" fill="none" stroke="#999999" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="520" y="450" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">ECS(SOCS2) Complex</text>
+  
+  <!-- GHR Ubiquitinated -->
+  <rect x="300" y="170" width="40" height="90" rx="5" ry="5" fill="#ffb366" stroke="#cc8800" stroke-width="2" fill-opacity="0.7"/>
+  <text x="320" y="200" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">GHR</text>
+  <text x="320" y="220" font-family="Arial" font-size="12" fill="#cc0000" text-anchor="middle">Ub</text>
+  <text x="320" y="235" font-family="Arial" font-size="12" fill="#cc0000" text-anchor="middle">Ub</text>
+  <text x="320" y="250" font-family="Arial" font-size="12" fill="#cc0000" text-anchor="middle">Ub</text>
+  
+  <!-- Proteasome -->
+  <rect x="390" y="450" width="80" height="50" rx="10" ry="10" fill="#ba7ed0" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="430" y="475" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">Proteasome</text>
+  <text x="430" y="495" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">protein degradation</text>
+  
+  <!-- GHR Degradation Representation -->
+  <rect x="410" y="180" width="40" height="80" rx="5" ry="5" fill="#ffb366" stroke="#cc8800" stroke-width="2" fill-opacity="0.3" stroke-dasharray="5,3"/>
+  <text x="430" y="215" font-family="Arial" font-size="14" font-weight="bold" fill="#000" text-anchor="middle">GHR</text>
+  <text x="430" y="235" font-family="Arial" font-size="11" fill="#cc0000" text-anchor="middle">degradation</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- GH1 to GHR -->
+  <line x1="200" y1="135" x2="210" y2="170" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="170" y="155" font-family="Arial" font-size="12" font-weight="bold" fill="#333">1. Binding</text>
+  
+  <!-- GHR to JAK2 activation -->
+  <line x1="230" y1="230" x2="245" y2="250" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="220" y="265" font-family="Arial" font-size="12" font-weight="bold" fill="#333">2. Activation</text>
+  
+  <!-- JAK2 to STAT5B activation -->
+  <path d="M 305,260 Q 320,300 325,330" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="280" y="310" font-family="Arial" font-size="12" font-weight="bold" fill="#333">3. Phosphorylation</text>
+  
+  <!-- STAT5B translocation to nucleus -->
+  <line x1="340" y1="380" x2="340" y2="590" stroke="#000" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrowhead)"/>
+  <text x="355" y="490" font-family="Arial" font-size="12" font-weight="bold" fill="#333">4. Translocation</text>
+  
+  <!-- JAK2 to SOCS2 activation -->
+  <path d="M 305,260 Q 370,290 440,320" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="355" y="300" font-family="Arial" font-size="12" font-weight="bold" fill="#333">5. Induces</text>
+  
+  <!-- ECS complex to GHR ubiquitination -->
+  <path d="M 470,290 Q 400,240 340,220" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#ubarrowhead)"/>
+  <text x="390" y="270" font-family="Arial" font-size="12" font-weight="bold" fill="#cc0000">6. Ubiquitination</text>
+  
+  <!-- GHR ubiquitination to proteasome -->
+  <path d="M 320,260 Q 350,360 390,450" stroke="#cc0000" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#ubarrowhead)"/>
+  <text x="330" y="380" font-family="Arial" font-size="12" font-weight="bold" fill="#cc0000">7. Targeted for degradation</text>
+  
+  <!-- GHR ubiquitination to degradation representation -->
+  <line x1="340" y1="220" x2="410" y2="220" stroke="#cc0000" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#ubarrowhead)"/>
+  
+  <!-- Negative feedback loop illustration -->
+  <path d="M 410,190 Q 520,140 210,140" fill="none" stroke="#cc0000" stroke-width="4" stroke-dasharray="10,5" marker-end="url(#redarrowhead)"/>
+  <rect x="350" y="120" width="160" height="25" rx="5" ry="5" fill="#ffd6d6" fill-opacity="0.7" stroke="#cc0000" stroke-width="1"/>
+  <text x="430" y="138" font-family="Arial" font-size="14" font-weight="bold" fill="#cc0000" text-anchor="middle">8. NEGATIVE FEEDBACK</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+    <marker id="ubarrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000"/>
+    </marker>
+    <marker id="redarrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000"/>
+    </marker>
+  </defs>
+  
+  <!-- Pathway Labels -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#000" text-anchor="middle">Feedback Regulation of Growth Hormone Receptor Signaling Pathway</text>
+  <text x="400" y="55" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">via Ubiquitination and Degradation of GHR by the ECS(SOCS2) Complex in Humans</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="650" width="200" height="80" rx="5" ry="5" fill="#f0f0f0" stroke="#999" stroke-width="1"/>
+  <text x="680" y="670" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Legend</text>
+  <line x1="595" y1="685" x2="625" y2="685" stroke="#000" stroke-width="2"/>
+  <text x="700" y="690" font-family="Arial" font-size="12" fill="#333">Activation/Induction</text>
+  <line x1="595" y1="705" x2="625" y2="705" stroke="#cc0000" stroke-width="3"/>
+  <text x="700" y="710" font-family="Arial" font-size="12" fill="#333">Ubiquitination/Degradation</text>
+  <line x1="595" y1="725" x2="625" y2="725" stroke="#000" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="700" y="730" font-family="Arial" font-size="12" fill="#333">Protein Translocation</text>
+</svg>

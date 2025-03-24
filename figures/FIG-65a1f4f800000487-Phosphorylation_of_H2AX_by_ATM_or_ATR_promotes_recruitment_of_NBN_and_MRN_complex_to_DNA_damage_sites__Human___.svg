@@ -1,0 +1,124 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Nucleus Background -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f0ff" stroke="#6666aa" stroke-width="2" opacity="0.7"/>
+  <text x="400" y="80" font-family="Arial" font-size="14" text-anchor="middle" fill="#444466" font-weight="bold">Nucleus</text>
+  
+  <!-- DNA Double Strand Break -->
+  <path d="M200,300 L350,300 M450,300 L600,300" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+  <path d="M200,330 L340,330 M460,330 L600,330" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+  <rect x="330" y="340" width="140" height="40" fill="white" fill-opacity="0.9" rx="5" ry="5" stroke="#999" stroke-width="1"/>
+  <text x="400" y="355" font-family="Arial" font-size="16" text-anchor="middle" fill="#AA0000" font-weight="bold">DNA Double-Strand Break</text>
+  <text x="400" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">GO:0035861</text>
+  
+  <!-- H2AX Histones -->
+  <rect x="320" y="270" width="30" height="30" fill="#c6e48b" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="335" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">H2AX</text>
+  
+  <rect x="480" y="270" width="30" height="30" fill="#c6e48b" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="495" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">H2AX</text>
+  
+  <!-- ATM and ATR Kinases -->
+  <circle cx="230" cy="180" r="35" fill="#ffb347" stroke="#333" stroke-width="1.5"/>
+  <text x="230" y="175" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">ATM</text>
+  <text x="230" y="195" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Q13315</text>
+  
+  <circle cx="550" cy="180" r="35" fill="#ffb347" stroke="#333" stroke-width="1.5"/>
+  <text x="550" y="175" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">ATR</text>
+  <text x="550" y="195" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Q13535</text>
+  
+  <!-- Phosphorylation Activity Arrows -->
+  <defs>
+    <marker id="redArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000"/>
+    </marker>
+    <marker id="blackArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc"/>
+    </marker>
+  </defs>
+  
+  <path d="M240,210 L325,265" stroke="#cc0000" stroke-width="3" marker-end="url(#redArrow)" stroke-dasharray="5,3"/>
+  <rect x="245" y="220" width="90" height="18" fill="white" fill-opacity="0.9" rx="5" ry="5" stroke="#999" stroke-width="1"/>
+  <text x="290" y="233" font-family="Arial" font-size="12" text-anchor="middle" fill="#cc0000" font-weight="bold">Phosphorylates</text>
+  
+  <path d="M540,210 L495,265" stroke="#cc0000" stroke-width="3" marker-end="url(#redArrow)" stroke-dasharray="5,3"/>
+  <rect x="475" y="220" width="90" height="18" fill="white" fill-opacity="0.9" rx="5" ry="5" stroke="#999" stroke-width="1"/>
+  <text x="520" y="233" font-family="Arial" font-size="12" text-anchor="middle" fill="#cc0000" font-weight="bold">Phosphorylates</text>
+  
+  <!-- Phosphorylated H2AX (γ-H2AX) -->
+  <rect x="320" y="220" width="30" height="30" fill="#c6e48b" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="335" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#333" font-weight="bold">γ-H2AX</text>
+  <circle cx="345" y="215" r="5" fill="#cc0000"/>
+  <text x="345" y="212" font-family="Arial" font-size="9" text-anchor="middle" fill="white">P</text>
+  
+  <rect x="480" y="220" width="30" height="30" fill="#c6e48b" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="495" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#333" font-weight="bold">γ-H2AX</text>
+  <circle cx="505" y="215" r="5" fill="#cc0000"/>
+  <text x="505" y="212" font-family="Arial" font-size="9" text-anchor="middle" fill="white">P</text>
+  
+  <!-- NBN Protein -->
+  <rect x="380" y="170" width="40" height="30" fill="#85c1e9" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="400" y="187" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">NBN</text>
+  <text x="400" y="198" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">O60934</text>
+  
+  <!-- MRN Complex -->
+  <path d="M400,130 m-40,0 a40,15 0 1,0 80,0 a40,15 0 1,0 -80,0" fill="#58d68d" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">MRN Complex</text>
+  <text x="400" y="148" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">GO:0030870</text>
+  
+  <!-- Recruitment Arrows -->
+  <path d="M345,210 C360,190 380,180 390,170" stroke="#0066cc" stroke-width="2" marker-end="url(#blueArrow)"/>
+  <path d="M485,210 C470,190 420,180 410,170" stroke="#0066cc" stroke-width="2" marker-end="url(#blueArrow)"/>
+  <rect x="345" y="173" width="70" height="18" fill="white" fill-opacity="0.9" rx="5" ry="5" stroke="#999" stroke-width="1"/>
+  <text x="380" y="186" font-family="Arial" font-size="10" text-anchor="middle" fill="#0066cc" font-weight="bold">Recruits</text>
+  
+  <path d="M400,170 L400,145" stroke="#0066cc" stroke-width="2" marker-end="url(#blueArrow)"/>
+  <rect x="405" y="150" width="55" height="18" fill="white" fill-opacity="0.9" rx="5" ry="5" stroke="#999" stroke-width="1"/>
+  <text x="432" y="163" font-family="Arial" font-size="10" text-anchor="middle" fill="#0066cc" font-weight="bold">Recruits</text>
+  
+  <!-- Biological Process Labels -->
+  <rect x="130" y="410" width="180" height="40" fill="#ffcc99" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="220" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">DNA Damage Response</text>
+  <text x="220" y="440" font-family="Arial" font-size="10" text-anchor="middle" fill="#666">GO:0006974</text>
+  
+  <rect x="340" y="410" width="260" height="40" fill="#ffcc99" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="470" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">Protein Localization to Site of Double-Strand Break</text>
+  <text x="470" y="440" font-family="Arial" font-size="10" text-anchor="middle" fill="#666">GO:1990166</text>
+  
+  <path d="M220,410 L220,370 L320,370 L320,300" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <path d="M470,410 L470,390 L400,390 L400,300" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- Molecular Function Labels -->
+  <rect x="130" y="470" width="180" height="40" fill="#c0d6e4" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="220" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">H2AX S139 Kinase Activity</text>
+  <text x="220" y="500" font-family="Arial" font-size="10" text-anchor="middle" fill="#666">GO:0035979</text>
+  
+  <rect x="340" y="470" width="260" height="40" fill="#c0d6e4" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="470" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">Chromatin-Protein Adaptor Activity</text>
+  <text x="470" y="500" font-family="Arial" font-size="10" text-anchor="middle" fill="#666">GO:0140463</text>
+  
+  <path d="M220,470 C220,450 230,440 230,350 L230,210" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <path d="M470,470 C470,450 500,440 500,350 L500,300" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- Title -->
+  <rect x="50" y="20" width="700" height="50" fill="white" fill-opacity="0.9" rx="10" ry="10" stroke="#999" stroke-width="1"/>
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" fill="#333" font-weight="bold">Phosphorylation of H2AX by ATM or ATR Promotes Recruitment</text>
+  <text x="400" y="65" font-family="Arial" font-size="20" text-anchor="middle" fill="#333" font-weight="bold">of NBN and MRN Complex to DNA Damage Sites</text>
+  
+  <!-- Legend -->
+  <rect x="620" y="510" width="150" height="80" fill="white" fill-opacity="0.9" stroke="#666" stroke-width="1" rx="5" ry="5"/>
+  <text x="695" y="525" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">Legend</text>
+  
+  <line x1="630" y1="535" x2="660" y2="535" stroke="#cc0000" stroke-width="3" stroke-dasharray="5,3"/>
+  <polygon points="660,535 670,538.5 660,542" fill="#cc0000"/>
+  <text x="710" y="539" font-family="Arial" font-size="10" fill="#333">Phosphorylation</text>
+  
+  <line x1="630" y1="555" x2="660" y2="555" stroke="#0066cc" stroke-width="2"/>
+  <polygon points="660,555 670,558.5 660,562" fill="#0066cc"/>
+  <text x="710" y="559" font-family="Arial" font-size="10" fill="#333">Recruitment</text>
+  
+  <line x1="630" y1="575" x2="660" y2="575" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="710" y="579" font-family="Arial" font-size="10" fill="#333">Associated with</text>
+</svg>

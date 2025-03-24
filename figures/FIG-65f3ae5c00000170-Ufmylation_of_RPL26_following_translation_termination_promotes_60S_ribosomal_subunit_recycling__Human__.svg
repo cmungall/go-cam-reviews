@@ -1,0 +1,139 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cellular compartments -->
+  <!-- Cytosol -->
+  <rect x="0" y="0" width="800" height="450" fill="#f8f9fa" stroke="none"/>
+  <text x="40" y="30" font-family="Arial" font-size="18" fill="#666">Cytosol (GO:0005829)</text>
+  
+  <!-- ER Membrane -->
+  <rect x="0" y="450" width="800" height="150" fill="#e6f2ff" stroke="none"/>
+  <path d="M0,450 H800" stroke="#0066cc" stroke-width="3" stroke-dasharray="5,3"/>
+  <text x="40" y="480" font-family="Arial" font-size="18" fill="#0066cc">ER Membrane (GO:0005789)</text>
+  
+  <!-- Title - moved down to avoid overlap -->
+  <rect x="150" y="45" width="500" height="30" fill="#f8f9fa" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="400" y="67" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333333">Ufmylation of RPL26 Promotes 60S Ribosomal Subunit Recycling</text>
+  
+  <!-- Step 1: Translation Termination and ABCE1 Action -->
+  <g transform="translate(100,150)">
+    <!-- Cytosolic Ribosome -->
+    <ellipse cx="80" cy="50" rx="70" ry="40" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+    <text x="80" y="55" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Cytosolic Ribosome</text>
+    <text x="80" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#666666">(GO:0022626)</text>
+    
+    <!-- ABCE1 Protein -->
+    <rect x="160" y="30" width="80" height="40" rx="10" ry="10" fill="#99cc99" stroke="#339933" stroke-width="2"/>
+    <text x="200" y="55" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">ABCE1</text>
+    
+    <!-- Arrow -->
+    <path d="M250,50 L300,50" stroke="#000" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="275" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">ATP hydrolysis</text>
+    <text x="275" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#666666">(GO:0017111)</text>
+    
+    <!-- 60S Subunit after dissociation -->
+    <ellipse cx="350" cy="50" rx="40" ry="30" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+    <text x="350" y="55" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">60S</text>
+  </g>
+  
+  <!-- Step 2: Move to ER and Ufmylation -->
+  <g transform="translate(400,160)">
+    <!-- Arrow to ER -->
+    <path d="M50,40 L50,250" stroke="#000" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+    <text x="70" y="150" font-family="Arial" font-size="16" fill="#333333">Transport to ER</text>
+    
+    <!-- 60S at ER -->
+    <ellipse cx="100" cy="300" rx="40" ry="30" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+    <text x="100" y="305" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">60S</text>
+    <!-- RPL26 highlight -->
+    <circle cx="115" cy="285" r="12" fill="#ff6666" stroke="#cc0000" stroke-width="2"/>
+    <text x="115" y="289" font-family="Arial" font-size="10" text-anchor="middle" fill="white">RPL26</text>
+    
+    <!-- Ufmylation Machinery at ER -->
+    <rect x="180" y="270" width="90" height="30" rx="5" ry="5" fill="#9999ff" stroke="#6666cc" stroke-width="2"/>
+    <text x="225" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">CDK5RAP3</text>
+    
+    <rect x="180" y="320" width="90" height="30" rx="5" ry="5" fill="#9999ff" stroke="#6666cc" stroke-width="2"/>
+    <text x="225" y="340" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">UFL1</text>
+    
+    <!-- UFM1 molecule -->
+    <circle cx="150" cy="330" r="15" fill="#ffcc00" stroke="#cc9900" stroke-width="2"/>
+    <text x="150" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">UFM1</text>
+    
+    <!-- Arrows showing interaction -->
+    <path d="M140,300 L170,285" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M225,310 L225,320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M170,330 L180,330" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <text x="225" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">UFM1 ligase activity</text>
+    <text x="225" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#666666">(GO:0061666)</text>
+  </g>
+  
+  <!-- Step 3: UFM1-modified protein reading and 60S recycling -->
+  <g transform="translate(550,160)">
+    <!-- UFM1 tagged 60S -->
+    <ellipse cx="80" cy="300" rx="40" ry="30" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+    <text x="80" y="305" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">60S</text>
+    <!-- RPL26-UFM1 highlight -->
+    <circle cx="95" cy="285" r="12" fill="#ff6666" stroke="#cc0000" stroke-width="2"/>
+    <circle cx="100" cy="280" r="6" fill="#ffcc00" stroke="#cc9900" stroke-width="1.5"/>
+    <text x="95" y="289" font-family="Arial" font-size="10" text-anchor="middle" fill="white">RPL26</text>
+    
+    <!-- DDRGK1 UFM1 reader -->
+    <rect x="150" y="280" width="90" height="40" rx="5" ry="5" fill="#cc99ff" stroke="#9966cc" stroke-width="2"/>
+    <text x="195" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">DDRGK1</text>
+    
+    <!-- Arrow showing binding -->
+    <path d="M120,300 L150,300" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="135" y="290" font-family="Arial" font-size="12" fill="#333333">reads</text>
+    
+    <!-- Arrow back to cytosol -->
+    <path d="M80,260 L80,100" stroke="#000" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+    <text x="100" y="180" font-family="Arial" font-size="16" fill="#333333">Return to cytosol</text>
+    
+    <!-- 60S in cytosol ready for recycling -->
+    <ellipse cx="80" cy="70" rx="40" ry="30" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+    <text x="80" y="75" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">60S</text>
+    
+    <!-- DeUFMylase -->
+    <rect x="150" y="50" width="90" height="40" rx="5" ry="5" fill="#ff99cc" stroke="#cc6699" stroke-width="2"/>
+    <text x="195" y="75" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">UFSP2</text>
+    
+    <!-- Arrow showing deUFMylation -->
+    <path d="M120,70 L150,70" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="135" y="60" font-family="Arial" font-size="12" fill="#333333">deUFMylates</text>
+    
+    <!-- Final recycling arrow -->
+    <path d="M40,70 C10,70 10,200 40,200" stroke="#000" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="15" y="140" font-family="Arial" font-size="16" transform="rotate(-90 15,140)" fill="#333333">Recycling</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(620,20)">
+    <rect x="0" y="0" width="170" height="125" fill="white" fill-opacity="0.9" stroke="#666" stroke-width="1"/>
+    <text x="10" y="20" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Legend</text>
+    
+    <rect x="10" y="30" width="20" height="15" rx="3" ry="3" fill="#99cc99"/>
+    <text x="40" y="42" font-family="Arial" font-size="12" fill="#333333">ABCE1 (P61221)</text>
+    
+    <rect x="10" y="50" width="20" height="15" rx="3" ry="3" fill="#9999ff"/>
+    <text x="40" y="62" font-family="Arial" font-size="12" fill="#333333">UFL1 (O94874)/CDK5RAP3 (Q96JB5)</text>
+    
+    <rect x="10" y="70" width="20" height="15" rx="3" ry="3" fill="#cc99ff"/>
+    <text x="40" y="82" font-family="Arial" font-size="12" fill="#333333">DDRGK1 (Q96HY6)</text>
+    
+    <rect x="10" y="90" width="20" height="15" rx="3" ry="3" fill="#ff99cc"/>
+    <text x="40" y="102" font-family="Arial" font-size="12" fill="#333333">UFSP2 (Q9NUQ7)</text>
+    
+    <circle cx="20" cy="115" r="8" fill="#ffcc00"/>
+    <text x="40" y="120" font-family="Arial" font-size="12" fill="#333333">UFM1</text>
+  </g>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Process Title -->
+  <text x="400" y="580" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">Ribosome Disassembly (GO:0032790)</text>
+</svg>

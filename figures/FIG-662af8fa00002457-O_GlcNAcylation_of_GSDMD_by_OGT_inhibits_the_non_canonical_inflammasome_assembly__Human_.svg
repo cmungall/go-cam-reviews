@@ -1,0 +1,132 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Cell Structure -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" />
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#e6f7ff" stroke="#87CEFA" stroke-width="2" />
+  
+  <!-- Plasma Membrane -->
+  <path d="M 50,300 Q 400,100 750,300 Q 400,500 50,300" fill="none" stroke="#2F4F4F" stroke-width="4" />
+  <text x="720" y="280" font-family="Arial" font-size="16" font-weight="bold" fill="#2F4F4F">Plasma Membrane</text>
+  
+  <!-- Cell Compartment Labels -->
+  <text x="100" y="150" font-family="Arial" font-size="18" font-weight="bold" fill="#000000">Cytosol</text>
+  <text x="650" y="150" font-family="Arial" font-size="18" font-weight="bold" fill="#000000">Extracellular Space</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#000000">O-GlcNAcylation of GSDMD by OGT Inhibits Non-canonical Inflammasome Assembly</text>
+  
+  <!-- Pathway Components -->
+  <!-- OGT -->
+  <circle cx="200" cy="250" r="40" fill="#FFD700" stroke="#000000" stroke-width="2" />
+  <text x="200" y="255" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">OGT</text>
+  <text x="200" y="275" font-family="Arial" font-size="14" text-anchor="middle">(O15294)</text>
+  
+  <!-- GSDMD -->
+  <rect x="350" y="250" width="100" height="50" rx="10" ry="10" fill="#87CEEB" stroke="#000000" stroke-width="2" />
+  <text x="400" y="280" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">GSDMD</text>
+  <text x="400" y="300" font-family="Arial" font-size="14" text-anchor="middle">(P57764)</text>
+  
+  <!-- CASP4 -->
+  <polygon points="200,380 240,350 240,410" fill="#FF6347" stroke="#000000" stroke-width="2" />
+  <text x="220" y="380" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">CASP4</text>
+  <text x="220" y="400" font-family="Arial" font-size="14" text-anchor="middle">(P49662)</text>
+  
+  <!-- O-GlcNAcylation Arrow -->
+  <path d="M 240,250 L 340,260" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <circle cx="290" cy="240" r="15" fill="#A020F0" />
+  <text x="290" y="245" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">G</text>
+  <text x="290" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">O-GlcNAc</text>
+  
+  <!-- CASP4 Cleavage (inhibited) -->
+  <path d="M 240,380 L 350,300" stroke="#FF0000" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="330" y1="290" x2="360" y2="320" stroke="#FF0000" stroke-width="3" />
+  <text x="290" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#FF0000">Cleavage inhibited</text>
+  
+  <!-- GSDMD at Membrane (Inactive due to O-GlcNAcylation) -->
+  <rect x="450" y="180" width="100" height="50" rx="10" ry="10" fill="#87CEEB" stroke="#000000" stroke-width="2" />
+  <text x="500" y="210" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">GSDMD</text>
+  <circle cx="480" cy="190" r="10" fill="#A020F0" />
+  <text x="480" y="194" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="white">G</text>
+  <path d="M 450,210 L 410,250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="430" y="215" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Translocation</text>
+  <text x="430" y="230" font-family="Arial" font-size="14" text-anchor="middle">↑</text>
+  
+  <!-- Alternative pathway (without O-GlcNAcylation) -->
+  <rect x="400" y="380" width="100" height="50" rx="10" ry="10" fill="#87CEEB" stroke="#000000" stroke-width="2" opacity="0.7" />
+  <text x="450" y="410" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">GSDMD</text>
+  <path d="M 240,380 L 390,400" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="320" y="425" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Cleavage</text>
+  <text x="320" y="440" font-family="Arial" font-size="14" text-anchor="middle">→</text>
+  
+  <!-- Cleaved GSDMD forming pores -->
+  <path d="M 500,380 L 600,350" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <rect x="600" y="320" width="80" height="40" rx="5" ry="5" fill="#87CEEB" stroke="#000000" stroke-width="2" />
+  <text x="640" y="345" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">N-GSDMD</text>
+  
+  <!-- Pore Formation -->
+  <path d="M 640,320 L 640,280" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="650" y="305" font-family="Arial" font-size="14" text-anchor="middle">↑</text>
+  <path d="M 620,280 Q 640,250 660,280" stroke="#000000" stroke-width="3" fill="none" />
+  <path d="M 600,280 Q 640,220 680,280" stroke="#000000" stroke-width="3" fill="none" />
+  <text x="700" y="250" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">Wide pore</text>
+  <text x="700" y="270" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">formation</text>
+  
+  <!-- Pyroptosis Indication -->
+  <text x="640" y="420" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#FF0000">Pyroptosis</text>
+  <path d="M 640,350 L 640,390" stroke="#FF0000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="650" y="375" font-family="Arial" font-size="14" text-anchor="middle">↓</text>
+  
+  <!-- PI(4,5)P2 Binding -->
+  <path d="M 620,280 C 605,290 600,290 585,280" stroke="#006400" stroke-width="2" />
+  <text x="580" y="305" font-family="Arial" font-size="12" font-weight="bold" fill="#006400">PI(4,5)P2 binding</text>
+  
+  <!-- Biological Process Labels -->
+  <rect x="50" y="180" width="180" height="70" rx="10" ry="10" fill="#ffffff" fill-opacity="0.8" stroke="#000000" stroke-width="1" />
+  <text x="55" y="200" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">Negative regulation of</text>
+  <text x="55" y="220" font-family="Arial" font-size="14" fill="#000000">non-canonical inflammasome</text>
+  <text x="55" y="240" font-family="Arial" font-size="14" fill="#000000">complex assembly</text>
+  
+  <rect x="450" y="450" width="260" height="30" rx="10" ry="10" fill="#ffffff" fill-opacity="0.8" stroke="#000000" stroke-width="1" />
+  <text x="460" y="470" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">Pyroptotic inflammatory response</text>
+  
+  <!-- Pyroptosis Detail Box -->
+  <rect x="550" y="380" width="180" height="80" rx="10" ry="10" fill="#fff0f0" fill-opacity="0.9" stroke="#FF0000" stroke-width="1" />
+  <text x="560" y="395" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">Pyroptosis involves:</text>
+  <text x="560" y="415" font-family="Arial" font-size="12" fill="#000000">• Membrane pore formation</text>
+  <text x="560" y="435" font-family="Arial" font-size="12" fill="#000000">• Cellular swelling</text>
+  <text x="560" y="455" font-family="Arial" font-size="12" fill="#000000">• Inflammatory content release</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="700" height="80" rx="10" ry="10" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="60" y="520" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <!-- OGT legend -->
+  <circle cx="80" cy="540" r="10" fill="#FFD700" stroke="#000000" stroke-width="1" />
+  <text x="100" y="545" font-family="Arial" font-size="14">OGT (O15294) - Protein O-acetylglucosaminyltransferase</text>
+  
+  <!-- GSDMD legend -->
+  <rect x="80" cy="1" width="15" height="15" fill="#87CEEB" stroke="#000000" stroke-width="1" transform="translate(0,555)" />
+  <text x="100" y="570" font-family="Arial" font-size="14">GSDMD (P57764) - Gasdermin-D</text>
+  
+  <!-- CASP4 legend -->
+  <polygon points="80,580 90,575 90,585" fill="#FF6347" stroke="#000000" stroke-width="1" />
+  <text x="100" y="585" font-family="Arial" font-size="14">CASP4 (P49662) - Caspase-4</text>
+  
+  <!-- O-GlcNAc legend -->
+  <circle cx="400" cy="540" r="8" fill="#A020F0" />
+  <text x="420" y="545" font-family="Arial" font-size="14">O-GlcNAc modification</text>
+  
+  <!-- PI(4,5)P2 legend -->
+  <line x1="380" y1="570" x2="400" y2="570" stroke="#006400" stroke-width="2" />
+  <text x="420" y="575" font-family="Arial" font-size="14">PI(4,5)P2 binding</text>
+  
+  <!-- Pore legend -->
+  <path d="M 380,585 Q 390,575 400,585" stroke="#000000" stroke-width="2" fill="none" />
+  <text x="420" y="590" font-family="Arial" font-size="14">Pore formation</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+</svg>

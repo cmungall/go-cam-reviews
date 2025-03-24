@@ -1,0 +1,92 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">PVR-CD226 Mediated NK-Cell Cytotoxicity</text>
+  
+  <!-- Target Cell -->
+  <ellipse cx="250" cy="300" rx="150" ry="200" fill="#e6f2ff" stroke="#0066cc" stroke-width="2" />
+  <text x="250" y="150" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Target Cell</text>
+  
+  <!-- NK Cell -->
+  <ellipse cx="550" cy="300" rx="150" ry="200" fill="#fff2e6" stroke="#cc6600" stroke-width="2" />
+  <text x="550" y="150" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">NK Cell</text>
+  
+  <!-- PVR on Target Cell membrane -->
+  <rect x="220" y="260" width="60" height="30" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2" />
+  <text x="250" y="278" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PVR</text>
+  <text x="250" y="292" font-family="Arial" font-size="12" text-anchor="middle">P15151</text>
+  
+  <!-- Target Cell Plasma Membrane Label -->
+  <text x="150" y="280" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Plasma Membrane</text>
+  
+  <!-- CD226 on NK Cell membrane -->
+  <rect x="520" y="260" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#cc6600" stroke-width="2" />
+  <text x="550" y="278" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CD226</text>
+  <text x="550" y="292" font-family="Arial" font-size="12" text-anchor="middle">Q15762</text>
+  
+  <!-- NK Cell Plasma Membrane Label -->
+  <text x="650" y="280" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Plasma Membrane</text>
+  
+  <!-- GRB2 in NK Cell cytoplasm -->
+  <rect x="520" y="350" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#cc6600" stroke-width="2" />
+  <text x="550" y="368" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">GRB2</text>
+  <text x="550" y="382" font-family="Arial" font-size="12" text-anchor="middle">P62993</text>
+  
+  <!-- VAV1 in NK Cell cytoplasm -->
+  <rect x="520" y="430" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#cc6600" stroke-width="2" />
+  <text x="550" y="448" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">VAV1</text>
+  <text x="550" y="462" font-family="Arial" font-size="12" text-anchor="middle">P15498</text>
+  
+  <!-- NK Cell Cytoplasm Label -->
+  <text x="650" y="400" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Cytoplasm</text>
+  
+  <!-- Interaction between PVR and CD226 -->
+  <line x1="280" y1="275" x2="520" y2="275" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead)" />
+  
+  <!-- GRB2 activation by CD226 -->
+  <line x1="550" y1="290" x2="550" y2="350" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead)" />
+  
+  <!-- VAV1 activation by GRB2 -->
+  <line x1="550" y1="380" x2="550" y2="430" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#006600" />
+    </marker>
+  </defs>
+  
+  <!-- Molecular Function Labels -->
+  <text x="400" y="255" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#660066">Receptor Ligand Activity</text>
+  <text x="600" y="255" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#660066">Signaling Receptor Activity</text>
+  <text x="630" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#660066">Protein-Macromolecule Adaptor Activity</text>
+  <text x="630" y="420" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#660066">Guanyl-Nucleotide Exchange Factor Activity</text>
+  
+  <!-- Process Label -->
+  <text x="400" y="505" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" font-style="italic">Natural Killer Cell Mediated Cytotoxicity (GO:0042267)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="700" height="60" fill="#ffffff" stroke="#cccccc" stroke-width="1" />
+  <text x="60" y="540" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Target Cell Legend -->
+  <rect x="130" y="530" width="20" height="20" fill="#e6f2ff" stroke="#0066cc" stroke-width="2" />
+  <text x="155" y="545" font-family="Arial" font-size="14" text-anchor="start">Target Cell</text>
+  
+  <!-- NK Cell Legend -->
+  <rect x="250" y="530" width="20" height="20" fill="#fff2e6" stroke="#cc6600" stroke-width="2" />
+  <text x="275" y="545" font-family="Arial" font-size="14" text-anchor="start">NK Cell</text>
+  
+  <!-- Protein Legend -->
+  <rect x="370" y="530" width="20" height="20" rx="5" ry="5" fill="#ffcc99" stroke="#cc6600" stroke-width="2" />
+  <text x="395" y="545" font-family="Arial" font-size="14" text-anchor="start">NK Cell Protein</text>
+  
+  <rect x="520" y="530" width="20" height="20" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2" />
+  <text x="545" y="545" font-family="Arial" font-size="14" text-anchor="start">Target Cell Protein</text>
+  
+  <!-- Activation Arrow -->
+  <line x1="630" y1="540" x2="660" y2="540" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="670" y="545" font-family="Arial" font-size="14" text-anchor="start">Activation</text>
+</svg>

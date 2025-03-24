@@ -1,0 +1,114 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Cell components -->
+  <!-- Plasma Membrane -->
+  <path d="M50,250 C150,230 250,270 350,230 C450,210 550,260 650,240 C700,230 750,250 750,250" 
+        fill="none" stroke="#333" stroke-width="3"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="400" rx="150" ry="100" fill="#e6f2ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="410" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Nucleus</text>
+  
+  <!-- Extracellular Space Label -->
+  <text x="400" y="150" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Cytoplasm Label -->
+  <text x="200" y="320" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Cytoplasm</text>
+  
+  <!-- BMP7 in extracellular space -->
+  <circle cx="400" cy="180" r="25" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="400" y="185" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">BMP7</text>
+  
+  <!-- Receptors on plasma membrane -->
+  <!-- ACVR2A -->
+  <rect x="370" y="235" width="30" height="30" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="385" y="253" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">ACVR2A</text>
+  <text x="385" y="280" font-family="Arial" font-size="8" fill="#333" text-anchor="middle">Type II receptor</text>
+  
+  <!-- ACVR1 -->
+  <rect x="400" y="235" width="30" height="30" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="415" y="253" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">ACVR1</text>
+  <text x="415" y="280" font-family="Arial" font-size="8" fill="#333" text-anchor="middle">Type I receptor</text>
+  
+  <!-- Receptor Complex Label -->
+  <text x="450" y="253" font-family="Arial" font-size="10" fill="#333" text-anchor="middle" font-style="italic">BMP receptor complex</text>
+  
+  <!-- SMAD Proteins -->
+  <!-- SMAD1 -->
+  <circle cx="350" cy="320" r="20" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="350" y="325" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">SMAD1</text>
+  
+  <!-- SMAD5 -->
+  <circle cx="400" cy="320" r="20" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="400" y="325" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">SMAD5</text>
+  
+  <!-- SMAD9 -->
+  <circle cx="450" cy="320" r="20" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="450" y="325" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">SMAD9</text>
+  
+  <!-- SMAD Activated Label -->
+  <text x="520" y="320" font-family="Arial" font-size="10" fill="#333" text-anchor="middle" font-style="italic">Activated R-SMADs</text>
+  
+  <!-- SMAD proteins in nucleus bound to chromatin -->
+  <circle cx="340" cy="380" r="20" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="340" y="385" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">SMAD1</text>
+  
+  <circle cx="400" cy="380" r="20" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="400" y="385" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">SMAD5</text>
+  
+  <circle cx="460" cy="380" r="20" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="460" y="385" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">SMAD9</text>
+  
+  <!-- Chromatin -->
+  <path d="M320,420 C330,410 340,430 350,410 C360,400 370,420 380,410 C390,400 400,430 410,410 C420,400 430,430 440,410 C450,400 460,430 470,410 C480,400" fill="none" stroke="#663300" stroke-width="3"/>
+  <text x="400" y="450" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Chromatin</text>
+  
+  <!-- SMAD Transcription Activity -->
+  <text x="550" y="390" font-family="Arial" font-size="10" fill="#333" text-anchor="middle" font-style="italic">Transcriptional activation</text>
+  
+  <!-- Outcome -->
+  <text x="400" y="500" font-family="Arial" font-size="16" fill="#333" text-anchor="middle" font-weight="bold">Osteoblast Differentiation</text>
+  
+  <!-- Pathway Process Label -->
+  <text x="650" y="320" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-style="italic">BMP signaling pathway</text>
+  
+  <!-- Pathway Arrows with labels -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- BMP7 to receptors -->
+  <line x1="400" y1="205" x2="400" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="420" y="220" font-family="Arial" font-size="10" fill="#333">1. Ligand binding</text>
+  
+  <!-- Receptors to SMAD proteins -->
+  <path d="M400,270 C400,290 400,290 400,295" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="460" y="290" font-family="Arial" font-size="10" fill="#333">2. Receptor activation</text>
+  
+  <!-- SMAD proteins to nucleus -->
+  <path d="M350,340 C350,350 340,370 340,380" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M400,340 C400,350 400,370 400,380" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M450,340 C450,350 460,370 460,380" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="300" y="360" font-family="Arial" font-size="10" fill="#333">3. Nuclear translocation</text>
+  
+  <!-- SMAD proteins to chromatin -->
+  <path d="M340,400 C340,410 350,410 350,410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M400,400 C400,410 400,410 400,410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M460,400 C460,410 450,410 450,410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="260" y="420" font-family="Arial" font-size="10" fill="#333">4. DNA binding</text>
+  
+  <!-- Chromatin to Outcome -->
+  <line x1="400" y1="460" x2="400" y2="480" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="460" y="470" font-family="Arial" font-size="10" fill="#333">5. Gene expression and cell differentiation</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">BMP7 Signaling Pathway Leading to Osteoblast Differentiation</text>
+  
+  <!-- Figure label -->
+  <text x="700" y="580" font-family="Arial" font-size="10" fill="#333" text-anchor="end" font-style="italic">Human BMP signaling (GO-CAM:645d887900000999)</text>
+  
+</svg>

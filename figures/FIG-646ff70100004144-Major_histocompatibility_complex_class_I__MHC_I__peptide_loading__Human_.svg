@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Cytosol -->
+  <rect width="800" height="650" fill="#f9f9f9"/>
+  
+  <!-- Endoplasmic Reticulum Membrane -->
+  <path d="M50,200 C100,180 150,220 200,200 C250,180 300,220 350,200 C400,180 450,220 500,200 C550,180 600,220 650,200 C700,180 750,220 750,200 L750,500 C700,520 650,480 600,500 C550,520 500,480 450,500 C400,520 350,480 300,500 C250,520 200,480 150,500 C100,520 50,480 50,500 Z" fill="#d1e8ff" stroke="#0066cc" stroke-width="2"/>
+  
+  <!-- Label for ER -->
+  <text x="400" y="530" font-family="Arial" font-size="16" text-anchor="middle" fill="#0066cc">Endoplasmic Reticulum (ER)</text>
+  
+  <!-- Label for Cytosol -->
+  <text x="400" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Cytosol</text>
+  
+  <!-- TAP1/TAP2 Transporter Complex -->
+  <rect x="200" y="180" width="100" height="40" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="250" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">TAP1/TAP2</text>
+  
+  <!-- Peptide in Cytosol -->
+  <ellipse cx="150" cy="150" rx="40" ry="15" fill="#ffcc66" stroke="#996600" stroke-width="2"/>
+  <text x="150" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Peptide</text>
+  
+  <!-- Arrow showing peptide transport -->
+  <path d="M170,160 Q215,170 225,180" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- ERAP1 Aminopeptidase -->
+  <circle cx="300" cy="300" r="30" fill="#99cc99" stroke="#006600" stroke-width="2"/>
+  <text x="300" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">ERAP1</text>
+  
+  <!-- Peptide in ER lumen being processed -->
+  <ellipse cx="250" cy="250" rx="20" ry="10" fill="#ffcc66" stroke="#996600" stroke-width="2"/>
+  
+  <!-- Arrow showing ERAP1 activity -->
+  <path d="M255,255 Q275,275 290,280" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Processed peptide -->
+  <ellipse cx="350" cy="330" rx="15" ry="7" fill="#ffcc66" stroke="#996600" stroke-width="2"/>
+  
+  <!-- MHC I components -->
+  <!-- HLA-A -->
+  <rect x="450" y="350" width="60" height="30" fill="#cc99ff" stroke="#6600cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="480" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">HLA-A</text>
+  
+  <!-- B2M -->
+  <rect x="520" y="350" width="60" height="30" fill="#99ccff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="550" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">B2M</text>
+  
+  <!-- Chaperones -->
+  <!-- PDIA3 -->
+  <circle cx="430" cy="400" r="25" fill="#ff99cc" stroke="#cc0066" stroke-width="2"/>
+  <text x="430" y="405" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">PDIA3</text>
+  
+  <!-- TAPBP (Tapasin) -->
+  <circle cx="480" cy="430" r="25" fill="#ffcc99" stroke="#cc6600" stroke-width="2"/>
+  <text x="480" y="435" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">TAPBP</text>
+  
+  <!-- Calreticulin -->
+  <circle cx="530" cy="400" r="25" fill="#cc99cc" stroke="#993399" stroke-width="2"/>
+  <text x="530" y="405" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">CALR</text>
+  
+  <!-- Peptide loading complex -->
+  <ellipse cx="500" cy="350" rx="150" ry="100" fill="none" stroke="#666666" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="500" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="#666666">MHC I Peptide Loading Complex</text>
+  
+  <!-- Arrow showing peptide binding to MHC I -->
+  <path d="M360,330 Q410,340 450,350" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final MHC I complex with peptide -->
+  <g transform="translate(650, 400)">
+    <rect x="-30" y="-15" width="60" height="30" fill="#cc99ff" stroke="#6600cc" stroke-width="2" rx="5" ry="5"/>
+    <rect x="30" y="-15" width="30" height="30" fill="#99ccff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+    <ellipse cx="0" cy="-20" rx="15" ry="7" fill="#ffcc66" stroke="#996600" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">MHC I Complex</text>
+  </g>
+  
+  <!-- Arrow showing assembly completion -->
+  <path d="M570,370 Q610,390 640,390" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Color-coded Legend -->
+  <rect x="100" y="550" width="600" height="80" fill="#f0f0f0" stroke="#999999" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="570" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">LEGEND</text>
+  
+  <!-- Legend items - row 1 -->
+  <rect x="120" y="580" width="15" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="145" y="593" font-family="Arial" font-size="12" fill="#333333">TAP1/TAP2: Peptide transporter</text>
+  
+  <rect x="300" y="580" width="15" height="15" fill="#99cc99" stroke="#006600" stroke-width="1"/>
+  <text x="325" y="593" font-family="Arial" font-size="12" fill="#333333">ERAP1: Aminopeptidase</text>
+  
+  <circle cx="500" cy="587" r="7.5" fill="#ff99cc" stroke="#cc0066" stroke-width="1"/>
+  <text x="520" y="593" font-family="Arial" font-size="12" fill="#333333">PDIA3: Chaperone</text>
+  
+  <!-- Legend items - row 2 -->
+  <circle cx="120" cy="610" r="7.5" fill="#ffcc99" stroke="#cc6600" stroke-width="1"/>
+  <text x="145" y="613" font-family="Arial" font-size="12" fill="#333333">TAPBP: Tapasin</text>
+  
+  <circle cx="300" cy="610" r="7.5" fill="#cc99cc" stroke="#993399" stroke-width="1"/>
+  <text x="325" y="613" font-family="Arial" font-size="12" fill="#333333">CALR: Calreticulin</text>
+  
+  <ellipse cx="500" cy="610" rx="15" ry="7" fill="#ffcc66" stroke="#996600" stroke-width="1"/>
+  <text x="530" y="613" font-family="Arial" font-size="12" fill="#333333">Peptide</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>

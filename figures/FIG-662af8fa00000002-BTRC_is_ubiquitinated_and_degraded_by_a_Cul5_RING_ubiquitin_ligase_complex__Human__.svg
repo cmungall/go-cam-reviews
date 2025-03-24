@@ -1,0 +1,122 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell background -->
+    <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" rx="10" ry="10" />
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">BTRC Ubiquitination and Degradation by Cul5-RING Ubiquitin Ligase Complex</text>
+    
+    <!-- Cytoplasm region -->
+    <ellipse cx="400" cy="320" rx="370" ry="240" fill="#e6f2ff" stroke="#a0a0a0" stroke-width="2" />
+    <text x="180" y="140" font-family="Arial" font-size="16" fill="#505050">Cytoplasm</text>
+    
+    <!-- Proteasome -->
+    <rect x="600" y="350" width="120" height="80" rx="10" ry="10" fill="#ffcccc" stroke="#cc0000" stroke-width="2" />
+    <text x="660" y="395" font-family="Arial" font-size="18" text-anchor="middle">Proteasome</text>
+    
+    <!-- CUL5 (scaffold) -->
+    <rect x="250" y="250" width="100" height="40" rx="5" ry="5" fill="#d9d9d9" stroke="#666666" stroke-width="2" />
+    <text x="300" y="275" font-family="Arial" font-size="16" text-anchor="middle">CUL5</text>
+    <text x="300" y="295" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(scaffold)</text>
+    
+    <!-- RNF7 (ligase) -->
+    <rect x="350" y="200" width="100" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#ff6600" stroke-width="2" />
+    <text x="400" y="225" font-family="Arial" font-size="16" text-anchor="middle">RNF7</text>
+    <text x="400" y="245" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(E3 ligase)</text>
+    
+    <!-- UBE2C -->
+    <rect x="150" y="200" width="100" height="40" rx="5" ry="5" fill="#c2f0c2" stroke="#009900" stroke-width="2" />
+    <text x="200" y="225" font-family="Arial" font-size="16" text-anchor="middle">UBE2C</text>
+    <text x="200" y="245" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(E2 conjugating)</text>
+    
+    <!-- UBE2S -->
+    <rect x="150" y="300" width="100" height="40" rx="5" ry="5" fill="#c2f0c2" stroke="#009900" stroke-width="2" />
+    <text x="200" y="325" font-family="Arial" font-size="16" text-anchor="middle">UBE2S</text>
+    <text x="200" y="345" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(E2 conjugating)</text>
+    
+    <!-- BTRC (substrate) -->
+    <rect x="350" y="300" width="100" height="40" rx="5" ry="5" fill="#c6deff" stroke="#0066cc" stroke-width="2" />
+    <text x="400" y="325" font-family="Arial" font-size="16" text-anchor="middle">BTRC</text>
+    <text x="400" y="345" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(substrate/adaptor)</text>
+    
+    <!-- Ubiquitin molecules -->
+    <circle cx="410" cy="370" r="12" fill="#ffff99" stroke="#ffcc00" stroke-width="1.5" />
+    <text x="410" y="374" font-family="Arial" font-size="10" text-anchor="middle">Ub</text>
+    
+    <circle cx="430" cy="370" r="12" fill="#ffff99" stroke="#ffcc00" stroke-width="1.5" />
+    <text x="430" y="374" font-family="Arial" font-size="10" text-anchor="middle">Ub</text>
+    
+    <circle cx="450" cy="370" r="12" fill="#ffff99" stroke="#ffcc00" stroke-width="1.5" />
+    <text x="450" y="374" font-family="Arial" font-size="10" text-anchor="middle">Ub</text>
+    
+    <!-- K11 linkage label -->
+    <text x="430" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">K11-linked</text>
+    
+    <!-- Degraded BTRC (faded) -->
+    <rect x="550" y="385" width="50" height="20" rx="5" ry="5" fill="#c6deff" stroke="#0066cc" stroke-width="1" opacity="0.5" />
+    <text x="575" y="400" font-family="Arial" font-size="12" text-anchor="middle" opacity="0.5">BTRC</text>
+    
+    <!-- Connection lines with different styles -->
+    <!-- CUL5 to RNF7 (structural binding) -->
+    <line x1="300" y1="250" x2="375" y2="240" stroke="#666666" stroke-width="2.5" />
+    
+    <!-- CUL5 to UBE2C (structural binding) -->
+    <line x1="250" y1="260" x2="225" y2="240" stroke="#666666" stroke-width="2.5" />
+    
+    <!-- CUL5 to UBE2S (structural binding) -->
+    <line x1="250" y1="275" x2="225" y2="300" stroke="#666666" stroke-width="2.5" />
+    
+    <!-- RNF7 to BTRC (functional action) -->
+    <line x1="400" y1="240" x2="400" y2="300" stroke="#ff6600" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <!-- UBE2C to RNF7 (contribution/activation) -->
+    <path d="M250 210 Q325 190 350 215" fill="none" stroke="#009900" stroke-width="2" stroke-dasharray="6,2" marker-end="url(#arrowhead)" />
+    
+    <!-- UBE2S to RNF7 (contribution/activation) -->
+    <path d="M250 310 Q325 330 375 240" fill="none" stroke="#009900" stroke-width="2" stroke-dasharray="6,2" marker-end="url(#arrowhead)" />
+    
+    <!-- BTRC to Proteasome (degradation) -->
+    <path d="M450 320 Q525 350 600 380" fill="none" stroke="#0066cc" stroke-width="2.5" stroke-dasharray="10,4" marker-end="url(#arrowhead)" />
+    
+    <!-- Arrowhead marker definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+        </marker>
+    </defs>
+    
+    <!-- Legend -->
+    <rect x="50" y="430" width="700" height="150" rx="5" ry="5" fill="white" stroke="#a0a0a0" stroke-width="1" />
+    <text x="60" y="450" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+    
+    <!-- Legend items -->
+    <rect x="60" y="460" width="20" height="15" fill="#d9d9d9" stroke="#666666" stroke-width="1" />
+    <text x="90" y="472" font-family="Arial" font-size="14">CUL5 - Scaffold protein (UniProtKB:Q93034)</text>
+    
+    <rect x="60" y="480" width="20" height="15" fill="#ffcc99" stroke="#ff6600" stroke-width="1" />
+    <text x="90" y="492" font-family="Arial" font-size="14">RNF7 - E3 ubiquitin ligase (UniProtKB:Q9UBF6)</text>
+    
+    <rect x="60" y="500" width="20" height="15" fill="#c2f0c2" stroke="#009900" stroke-width="1" />
+    <text x="90" y="512" font-family="Arial" font-size="14">UBE2C/UBE2S - E2 ubiquitin conjugating enzymes (UniProtKB:O00762/Q16763)</text>
+    
+    <rect x="60" y="520" width="20" height="15" fill="#c6deff" stroke="#0066cc" stroke-width="1" />
+    <text x="90" y="532" font-family="Arial" font-size="14">BTRC - Substrate protein adaptor (UniProtKB:Q9Y297)</text>
+    
+    <circle cx="70" y="545" r="8" fill="#ffff99" stroke="#ffcc00" stroke-width="1" />
+    <text x="90" y="550" font-family="Arial" font-size="14">K11-linked ubiquitin chains - connected via lysine 11 residues for targeting to proteasome</text>
+    
+    <!-- Interaction types in legend -->
+    <line x1="60" y1="565" x2="80" y2="565" stroke="#666666" stroke-width="2.5" />
+    <text x="90" y="570" font-family="Arial" font-size="14">Structural binding/complex formation</text>
+    
+    <line x1="300" y1="565" x2="320" y2="565" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="330" y="570" font-family="Arial" font-size="14">Direct action</text>
+    
+    <line x1="450" y1="565" x2="470" y2="565" stroke="#000000" stroke-width="2" stroke-dasharray="6,2" marker-end="url(#arrowhead)" />
+    <text x="480" y="570" font-family="Arial" font-size="14">Contribution/Activation</text>
+    
+    <line x1="600" y1="565" x2="620" y2="565" stroke="#000000" stroke-width="2.5" stroke-dasharray="10,4" marker-end="url(#arrowhead)" />
+    <text x="630" y="570" font-family="Arial" font-size="14">Degradation pathway</text>
+
+    <!-- Process annotation -->
+    <text x="400" y="410" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">SCF-dependent proteasomal ubiquitin-dependent protein catabolic process (GO:0031146)</text>
+</svg>

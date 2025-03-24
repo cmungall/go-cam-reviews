@@ -1,0 +1,149 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with slight gradient for professional look -->
+  <defs>
+    <linearGradient id="bg_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <!-- Arrow Definitions -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057" />
+    </marker>
+    <!-- Simple molecule icons -->
+    <symbol id="cdp-dag-icon" viewBox="0 0 40 30">
+      <rect x="5" y="5" width="30" height="20" rx="3" ry="3" fill="#ffe3e3" stroke="#fa5252" stroke-width="1" />
+      <circle cx="15" cy="15" r="5" fill="#fa5252" stroke="#c92a2a" stroke-width="1" />
+      <circle cx="25" cy="15" r="5" fill="#fa5252" stroke="#c92a2a" stroke-width="1" />
+    </symbol>
+    <symbol id="pgp-icon" viewBox="0 0 40 30">
+      <rect x="5" y="5" width="30" height="20" rx="3" ry="3" fill="#d3f9d8" stroke="#51cf66" stroke-width="1" />
+      <path d="M10,15 L30,15 M20,5 L20,25" stroke="#51cf66" stroke-width="2" />
+      <circle cx="20" cy="15" r="3" fill="#2b8a3e" />
+    </symbol>
+    <symbol id="pg-icon" viewBox="0 0 40 30">
+      <rect x="5" y="5" width="30" height="20" rx="3" ry="3" fill="#fff9db" stroke="#fcc419" stroke-width="1" />
+      <path d="M15,10 L25,10 L25,20 L15,20 Z" fill="#fcc419" stroke="#e67700" stroke-width="1" />
+    </symbol>
+    <symbol id="cl-icon" viewBox="0 0 40 30">
+      <rect x="5" y="5" width="30" height="20" rx="3" ry="3" fill="#e5dbff" stroke="#da77f2" stroke-width="1" />
+      <path d="M10,15 L30,15 M20,5 L20,25" stroke="#da77f2" stroke-width="1" />
+      <circle cx="15" cy="10" r="3" fill="#9c36b5" />
+      <circle cx="25" cy="10" r="3" fill="#9c36b5" />
+      <circle cx="15" cy="20" r="3" fill="#9c36b5" />
+      <circle cx="25" cy="20" r="3" fill="#9c36b5" />
+    </symbol>
+  </defs>
+  
+  <rect width="800" height="700" fill="url(#bg_gradient)" />
+  
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="350" rx="350" ry="280" fill="#f8f8f8" stroke="#adb5bd" stroke-width="2" />
+  
+  <!-- Mitochondrion -->
+  <path d="M200,250 C250,200 350,220 450,240 C550,260 650,300 700,350 C650,400 550,440 450,460 C350,480 250,500 200,450 C150,400 150,300 200,250 Z" 
+        fill="#ffedd5" stroke="#fd7e14" stroke-width="3" />
+  
+  <!-- Mitochondrial outer membrane -->
+  <path d="M200,250 C250,200 350,220 450,240 C550,260 650,300 700,350 C650,400 550,440 450,460 C350,480 250,500 200,450 C150,400 150,300 200,250 Z" 
+        fill="none" stroke="#fd7e14" stroke-width="3" stroke-dasharray="none" />
+  
+  <!-- Mitochondrial inner membrane -->
+  <path d="M220,270 C270,230 340,240 440,260 C530,280 620,310 670,350 C620,390 530,420 440,440 C340,460 270,470 220,430 C180,390 180,310 220,270 Z" 
+        fill="#fff4e6" stroke="#fd7e14" stroke-width="2.5" />
+  
+  <!-- Labels for mitochondrial compartments -->
+  <text x="480" y="200" font-family="Arial" font-size="16" fill="#495057" text-anchor="middle">Mitochondrial outer membrane</text>
+  <text x="440" y="290" font-family="Arial" font-size="16" fill="#495057" text-anchor="middle">Mitochondrial inner membrane</text>
+  <text x="440" y="350" font-family="Arial" font-size="16" fill="#495057" text-anchor="middle">Matrix</text>
+  
+  <!-- Enzyme 1: Tam41 (SPBC1A4.06c) -->
+  <circle cx="300" cy="350" r="40" fill="#4dabf7" stroke="#1864ab" stroke-width="2" />
+  <text x="300" y="345" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Tam41</text>
+  <text x="300" y="365" font-family="Arial" font-size="12" fill="white" text-anchor="middle">SPBC1A4.06c</text>
+  
+  <!-- Enzyme 2: Pgs1 (SPBP18G5.02) -->
+  <circle cx="420" cy="350" r="40" fill="#51cf66" stroke="#2b8a3e" stroke-width="2" />
+  <text x="420" y="345" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Pgs1</text>
+  <text x="420" y="365" font-family="Arial" font-size="12" fill="white" text-anchor="middle">SPBP18G5.02</text>
+  
+  <!-- Enzyme 3: Gep4 (SPCC645.02) -->
+  <circle cx="540" cy="350" r="40" fill="#ffa94d" stroke="#e67700" stroke-width="2" />
+  <text x="540" y="345" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Gep4</text>
+  <text x="540" y="365" font-family="Arial" font-size="12" fill="white" text-anchor="middle">SPCC645.02</text>
+  
+  <!-- Enzyme 4: Crd1 (SPAC22A12.08c) at mitochondrial membrane -->
+  <circle cx="640" cy="280" r="40" fill="#da77f2" stroke="#9c36b5" stroke-width="2" />
+  <text x="640" y="275" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Crd1</text>
+  <text x="640" y="295" font-family="Arial" font-size="12" fill="white" text-anchor="middle">SPAC22A12.08c</text>
+  
+  <!-- Pathway Arrows -->
+  <path d="M340,350 L380,350" stroke="#495057" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M460,350 L500,350" stroke="#495057" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M580,350 C605,350 620,330 605,300" stroke="#495057" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M670,260 L690,240" stroke="#495057" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Metabolites with icons -->
+  <use href="#cdp-dag-icon" x="345" y="280" width="50" height="40" />
+  <text x="370" y="335" font-family="Arial" font-size="14" fill="#495057" text-anchor="middle" font-weight="bold">CDP-DAG</text>
+  <text x="370" y="350" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">CHEBI:17962</text>
+  
+  <use href="#pgp-icon" x="465" y="280" width="50" height="40" />
+  <text x="490" y="335" font-family="Arial" font-size="14" fill="#495057" text-anchor="middle" font-weight="bold">PG-P</text>
+  <text x="490" y="350" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">Intermediate</text>
+  
+  <use href="#pg-icon" x="585" y="280" width="50" height="40" />
+  <text x="610" y="335" font-family="Arial" font-size="14" fill="#495057" text-anchor="middle" font-weight="bold">PG</text>
+  <text x="610" y="350" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">Intermediate</text>
+  
+  <use href="#cl-icon" x="690" y="200" width="50" height="40" />
+  <text x="715" y="255" font-family="Arial" font-size="14" fill="#495057" text-anchor="middle" font-weight="bold">Cardiolipin</text>
+  <text x="715" y="270" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">CHEBI:62237</text>
+  
+  <!-- Enzyme Function Labels - spread out vertically -->
+  <text x="300" y="430" font-family="Arial" font-size="14" fill="#1864ab" text-anchor="middle">Phosphatidate</text>
+  <text x="300" y="450" font-family="Arial" font-size="14" fill="#1864ab" text-anchor="middle">cytidylyltransferase</text>
+  <text x="300" y="470" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">GO:0004605</text>
+  
+  <text x="420" y="430" font-family="Arial" font-size="14" fill="#2b8a3e" text-anchor="middle">CDP-DAG-glycerol-3-P</text>
+  <text x="420" y="450" font-family="Arial" font-size="14" fill="#2b8a3e" text-anchor="middle">3-phosphatidyltransferase</text>
+  <text x="420" y="470" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">GO:0008444</text>
+  
+  <text x="540" y="430" font-family="Arial" font-size="14" fill="#e67700" text-anchor="middle">Phosphatidylglycerol-</text>
+  <text x="540" y="450" font-family="Arial" font-size="14" fill="#e67700" text-anchor="middle">phosphatase</text>
+  <text x="540" y="470" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">GO:0008962</text>
+  
+  <text x="640" y="220" font-family="Arial" font-size="14" fill="#9c36b5" text-anchor="middle">Cardiolipin synthase</text>
+  <text x="640" y="240" font-family="Arial" font-size="14" fill="#9c36b5" text-anchor="middle">(CMP-forming)</text>
+  <text x="640" y="200" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">GO:0043337</text>
+  
+  <!-- Process Labels -->
+  <text x="300" y="530" font-family="Arial" font-size="14" fill="#212529" text-anchor="middle">CDP-diacylglycerol</text>
+  <text x="300" y="550" font-family="Arial" font-size="14" fill="#212529" text-anchor="middle">biosynthetic process</text>
+  <text x="300" y="570" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">GO:0016024</text>
+  
+  <text x="500" y="530" font-family="Arial" font-size="14" fill="#212529" text-anchor="middle">Cardiolipin biosynthetic process</text>
+  <text x="500" y="550" font-family="Arial" font-size="14" fill="#212529" text-anchor="middle">GO:0032049</text>
+  
+  <!-- Color-coded legend -->
+  <rect x="100" y="600" width="600" height="80" rx="5" ry="5" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1" />
+  <text x="400" y="620" font-family="Arial" font-size="16" fill="#212529" text-anchor="middle" font-weight="bold">Enzyme Color Legend</text>
+  
+  <circle cx="150" cy="645" r="10" fill="#4dabf7" />
+  <text x="170" y="650" font-family="Arial" font-size="14" fill="#212529" text-anchor="start">Tam41</text>
+  
+  <circle cx="250" cy="645" r="10" fill="#51cf66" />
+  <text x="270" y="650" font-family="Arial" font-size="14" fill="#212529" text-anchor="start">Pgs1</text>
+  
+  <circle cx="350" cy="645" r="10" fill="#ffa94d" />
+  <text x="370" y="650" font-family="Arial" font-size="14" fill="#212529" text-anchor="start">Gep4</text>
+  
+  <circle cx="450" cy="645" r="10" fill="#da77f2" />
+  <text x="470" y="650" font-family="Arial" font-size="14" fill="#212529" text-anchor="start">Crd1</text>
+  
+  <use href="#cdp-dag-icon" x="550" y="635" width="20" height="20" />
+  <text x="580" y="650" font-family="Arial" font-size="14" fill="#212529" text-anchor="start">Metabolites</text>
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial" font-size="24" font-weight="bold" fill="#212529" text-anchor="middle">Cardiolipin Metabolic Process in S. pombe</text>
+  <text x="400" y="90" font-family="Arial" font-size="16" fill="#495057" text-anchor="middle">GO:0032048</text>
+</svg>

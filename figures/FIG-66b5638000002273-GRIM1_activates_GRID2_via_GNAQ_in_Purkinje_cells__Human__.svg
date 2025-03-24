@@ -1,0 +1,124 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane and compartments -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f8f8f8" stroke="#666" stroke-width="2"/>
+  <text x="400" y="35" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">GRIM1 activates GRID2 via GNAQ in Purkinje Cells</text>
+  
+  <!-- Synaptic cleft -->
+  <rect x="150" y="50" width="200" height="80" fill="#e6f7ff" stroke="#666" stroke-width="2"/>
+  <text x="250" y="80" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Synaptic Cleft</text>
+  <text x="250" y="100" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">(GO:0043083)</text>
+  
+  <!-- Glutamate in synaptic cleft -->
+  <circle cx="220" cy="110" r="15" fill="#ffcc00" stroke="#666" stroke-width="1.5"/>
+  <text x="220" y="114" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Glu</text>
+  <text x="220" y="140" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">L-glutamate</text>
+  
+  <!-- Post-synaptic density membrane -->
+  <rect x="150" y="130" width="200" height="40" fill="#d6eaf8" stroke="#666" stroke-width="2"/>
+  <text x="250" y="155" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Postsynaptic Density Membrane</text>
+  <text x="250" y="175" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0098839)</text>
+  
+  <!-- GRM1 receptor -->
+  <rect x="170" y="120" width="60" height="60" rx="10" ry="10" fill="#ff9999" stroke="#666" stroke-width="2"/>
+  <text x="200" y="145" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">GRM1</text>
+  <text x="200" y="165" font-family="Arial" font-size="10" text-anchor="middle">Q13255</text>
+  <text x="200" y="180" font-family="Arial" font-size="10" text-anchor="middle">GPCR activity</text>
+  
+  <!-- GRID2 receptor -->
+  <rect x="280" y="120" width="60" height="60" rx="10" ry="10" fill="#99ccff" stroke="#666" stroke-width="2"/>
+  <text x="310" y="145" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">GRID2</text>
+  <text x="310" y="165" font-family="Arial" font-size="10" text-anchor="middle">O43424</text>
+  <text x="310" y="180" font-family="Arial" font-size="10" text-anchor="middle">Ion channel</text>
+  
+  <!-- Postsynaptic cytosol -->
+  <rect x="150" y="190" width="500" height="300" fill="#e6ffe6" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="215" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Postsynaptic Cytosol</text>
+  <text x="400" y="235" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">(GO:0099524)</text>
+  
+  <!-- GNAQ -->
+  <circle cx="195" y="270" r="35" fill="#ffcc99" stroke="#666" stroke-width="2"/>
+  <text x="195" y="265" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">GNAQ</text>
+  <text x="195" y="280" font-family="Arial" font-size="10" text-anchor="middle">P50148</text>
+  <text x="195" y="295" font-family="Arial" font-size="10" text-anchor="middle">G protein activity</text>
+  
+  <!-- PLCB3 -->
+  <circle cx="320" y="270" r="35" fill="#cc99ff" stroke="#666" stroke-width="2"/>
+  <text x="320" y="265" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PLCB3</text>
+  <text x="320" y="280" font-family="Arial" font-size="10" text-anchor="middle">Q01970</text>
+  <text x="320" y="295" font-family="Arial" font-size="10" text-anchor="middle">PLC activity</text>
+  
+  <!-- PRKCG -->
+  <circle cx="450" y="370" r="35" fill="#99ff99" stroke="#666" stroke-width="2"/>
+  <text x="450" y="365" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PRKCG</text>
+  <text x="450" y="380" font-family="Arial" font-size="10" text-anchor="middle">P05129</text>
+  <text x="450" y="395" font-family="Arial" font-size="10" text-anchor="middle">PKC activity</text>
+  
+  <!-- DAG and IP3 -->
+  <rect x="290" y="340" width="40" height="25" rx="5" ry="5" fill="#ffff99" stroke="#666" stroke-width="1.5"/>
+  <text x="310" y="357" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">DAG</text>
+  
+  <rect x="350" y="340" width="40" height="25" rx="5" ry="5" fill="#ffff99" stroke="#666" stroke-width="1.5"/>
+  <text x="370" y="357" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">IP3</text>
+  
+  <!-- Calcium ion (implicit) -->
+  <circle cx="380" y="400" r="18" fill="#ff6666" stroke="#666" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="380" y="405" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Ca²⁺</text>
+  <text x="380" y="425" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(implicit)</text>
+  
+  <!-- Arrows for pathway -->
+  <!-- Glutamate to GRM1 -->
+  <line x1="230" y1="110" x2="195" y2="120" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="240" y="105" font-family="Arial" font-size="12" font-style="italic">ligand binding</text>
+  
+  <!-- GRM1 to GNAQ -->
+  <line x1="195" y1="180" x2="195" y2="235" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="170" y="210" font-family="Arial" font-size="12" font-style="italic">activates</text>
+  
+  <!-- GNAQ to PLCB3 -->
+  <line x1="230" y1="270" x2="285" y2="270" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="255" y="260" font-family="Arial" font-size="12" font-style="italic">activates</text>
+  
+  <!-- PLCB3 to DAG/IP3 -->
+  <line x1="320" y1="305" x2="310" y2="340" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="320" y1="305" x2="370" y2="340" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="335" y="325" font-family="Arial" font-size="12" font-style="italic">produces</text>
+  
+  <!-- DAG to PRKCG -->
+  <line x1="325" y1="352" x2="415" y2="370" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Ca2+ to PRKCG -->
+  <line x1="385" y1="390" x2="420" y2="380" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="365" y="370" font-family="Arial" font-size="12" font-style="italic">co-activators</text>
+  
+  <!-- PRKCG to GRID2 -->
+  <path d="M475,345 Q550,270 330,150" fill="none" stroke="#000" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="500" y="270" font-family="Arial" font-size="14" font-style="italic">activates</text>
+  
+  <!-- Biological process label -->
+  <rect x="450" y="150" width="250" height="60" rx="10" ry="10" fill="#fcedff" stroke="#666" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="575" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Synaptic signaling via neuropeptide</text>
+  <text x="575" y="200" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0099538)</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="550" y="440" width="180" height="100" fill="white" stroke="#666" stroke-width="1.5"/>
+  <text x="640" y="460" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="560" y="470" width="15" height="15" fill="#ff9999" stroke="#666" stroke-width="1.5"/>
+  <text x="590" y="483" font-family="Arial" font-size="14" text-anchor="start">Receptor (GRM1)</text>
+  
+  <rect x="560" y="490" width="15" height="15" fill="#99ccff" stroke="#666" stroke-width="1.5"/>
+  <text x="590" y="503" font-family="Arial" font-size="14" text-anchor="start">Ion Channel (GRID2)</text>
+  
+  <circle cx="567" cy="515" r="7" fill="#ffff99" stroke="#666" stroke-width="1.5"/>
+  <text x="590" y="520" font-family="Arial" font-size="14" text-anchor="start">Signaling Molecule</text>
+  
+  <circle cx="567" cy="535" r="7" fill="#ff6666" stroke="#666" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="590" y="540" font-family="Arial" font-size="14" text-anchor="start">Implicit Factor</text>
+</svg>

@@ -1,0 +1,165 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline with cytosol and mitochondrion -->
+  <rect x="50" y="50" width="700" height="900" rx="20" ry="20" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  <text x="400" y="80" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Saccharomyces cerevisiae</text>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="250" cy="250" rx="150" ry="100" fill="#ffe6cc" stroke="#ff9933" stroke-width="2" opacity="0.8"/>
+  <text x="250" y="250" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Mitochondrion</text>
+  
+  <!-- Cytosol label -->
+  <text x="550" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Cytosol</text>
+  
+  <!-- Pathway Title -->
+  <text x="400" y="120" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Gluconeogenesis I</text>
+  
+  <!-- Brief Description -->
+  <text x="400" y="150" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Conversion of pyruvate to glucose-6-phosphate through a series of enzymatic reactions</text>
+  
+  <!-- Reactions in mitochondrion -->
+  <!-- Pyruvate to Oxaloacetate (PYC1/PYC2) -->
+  <circle cx="200" cy="200" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="200" y="200" font-family="Arial" font-size="12" text-anchor="middle">Pyruvate</text>
+  <text x="200" y="215" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">CHEBI:15361</text>
+  
+  <line x1="230" y1="200" x2="280" y2="200" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="255" y="185" font-family="Arial" font-size="11" text-anchor="middle">PYC1/PYC2</text>
+  <text x="255" y="198" font-family="Arial" font-size="9" text-anchor="middle">GO:0004736</text>
+  
+  <circle cx="310" cy="200" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="310" y="200" font-family="Arial" font-size="11" text-anchor="middle">Oxaloacetate</text>
+  <text x="310" y="215" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:16452</text>
+  
+  <!-- MAE1 (1.1.1.39-RXN and direct malate dehydrogenase) -->
+  <line x1="310" y1="220" x2="310" y2="270" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="330" y="245" font-family="Arial" font-size="11" text-anchor="start">MAE1</text>
+  <text x="330" y="260" font-family="Arial" font-size="9" text-anchor="start">GO:0008948/GO:0030060</text>
+  
+  <circle cx="310" cy="300" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="310" y="300" font-family="Arial" font-size="11" text-anchor="middle">Malate</text>
+  <text x="310" y="315" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:15589</text>
+  
+  <!-- Export to cytosol -->
+  <line x1="320" y1="325" x2="350" y2="360" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="350" y="345" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Transport</text>
+  <text x="350" y="370" font-family="Arial" font-size="9" text-anchor="middle" font-style="italic" fill="#666">(Implicit)</text>
+  
+  <!-- Reactions in the cytosol -->
+  <!-- Pathway continues in cytosol with MDH2 -->
+  <circle cx="400" cy="400" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="400" font-family="Arial" font-size="11" text-anchor="middle">Malate</text>
+  <text x="400" y="415" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:15589</text>
+  
+  <line x1="400" y1="420" x2="400" y2="450" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="425" y="435" font-family="Arial" font-size="11" text-anchor="start">MDH2</text>
+  <text x="425" y="450" font-family="Arial" font-size="9" text-anchor="start">GO:0030060</text>
+  
+  <circle cx="400" cy="480" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="480" font-family="Arial" font-size="11" text-anchor="middle">Oxaloacetate</text>
+  <text x="400" y="495" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:16452</text>
+  
+  <!-- PCK1 reaction -->
+  <line x1="400" y1="500" x2="400" y2="530" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="425" y="515" font-family="Arial" font-size="11" text-anchor="start">PCK1</text>
+  <text x="425" y="530" font-family="Arial" font-size="9" text-anchor="start">GO:0004612</text>
+  
+  <circle cx="400" cy="560" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="560" font-family="Arial" font-size="11" text-anchor="middle">PEP</text>
+  <text x="400" y="575" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:58702</text>
+  
+  <!-- ENO1/ENO2 reaction -->
+  <line x1="400" y1="580" x2="400" y2="610" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="425" y="595" font-family="Arial" font-size="11" text-anchor="start">ENO1/ENO2</text>
+  <text x="425" y="610" font-family="Arial" font-size="9" text-anchor="start">GO:0004634</text>
+  
+  <circle cx="400" cy="640" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="640" font-family="Arial" font-size="11" text-anchor="middle">2-PG</text>
+  <text x="400" y="655" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:58289</text>
+  
+  <!-- GPM1 reaction -->
+  <line x1="400" y1="660" x2="400" y2="690" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="425" y="675" font-family="Arial" font-size="11" text-anchor="start">GPM1</text>
+  <text x="425" y="690" font-family="Arial" font-size="9" text-anchor="start">GO:0004619</text>
+  
+  <circle cx="400" cy="720" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="720" font-family="Arial" font-size="11" text-anchor="middle">3-PG</text>
+  <text x="400" y="735" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:58272</text>
+  
+  <!-- PGK1 reaction -->
+  <line x1="400" y1="740" x2="400" y2="770" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="425" y="755" font-family="Arial" font-size="11" text-anchor="start">PGK1</text>
+  <text x="425" y="770" font-family="Arial" font-size="9" text-anchor="start">GO:0004618</text>
+  
+  <circle cx="400" cy="800" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="800" font-family="Arial" font-size="11" text-anchor="middle">1,3-BPG</text>
+  <text x="400" y="815" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:57604</text>
+  
+  <!-- TDH1/TDH2/TDH3 reaction -->
+  <line x1="420" y1="800" x2="480" y2="800" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="450" y="785" font-family="Arial" font-size="11" text-anchor="middle">TDH1/2/3</text>
+  <text x="450" y="798" font-family="Arial" font-size="9" text-anchor="middle">GO:0004365</text>
+  
+  <circle cx="510" cy="800" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="510" y="800" font-family="Arial" font-size="11" text-anchor="middle">G3P</text>
+  <text x="510" y="815" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:59776</text>
+  
+  <!-- FBA1 reaction with DHAP -->
+  <line x1="510" y1="780" x2="510" y2="740" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="530" y="760" font-family="Arial" font-size="11" text-anchor="start">FBA1</text>
+  <text x="530" y="775" font-family="Arial" font-size="9" text-anchor="start">GO:0004332</text>
+  
+  <circle cx="550" cy="740" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="550" y="740" font-family="Arial" font-size="11" text-anchor="middle">DHAP</text>
+  <text x="550" y="755" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:57642</text>
+  
+  <line x1="530" y1="740" x2="490" y2="740" stroke="#333" stroke-width="1.5"/>
+  
+  <circle cx="470" cy="740" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="470" y="740" font-family="Arial" font-size="11" text-anchor="middle">F1,6BP</text>
+  <text x="470" y="755" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:32966</text>
+  
+  <!-- FBP1 reaction -->
+  <line x1="470" y1="720" x2="470" y2="680" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="490" y="700" font-family="Arial" font-size="11" text-anchor="start">FBP1</text>
+  <text x="490" y="715" font-family="Arial" font-size="9" text-anchor="start">GO:0042132</text>
+  
+  <circle cx="470" cy="660" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="470" y="660" font-family="Arial" font-size="11" text-anchor="middle">F6P</text>
+  <text x="470" y="675" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:57634</text>
+  
+  <!-- PGI1 reaction -->
+  <line x1="470" y1="640" x2="470" y2="600" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="490" y="620" font-family="Arial" font-size="11" text-anchor="start">PGI1</text>
+  <text x="490" y="635" font-family="Arial" font-size="9" text-anchor="start">GO:0004347</text>
+  
+  <circle cx="470" cy="580" r="20" fill="#c6e2ff" stroke="#333" stroke-width="1.5"/>
+  <text x="470" y="580" font-family="Arial" font-size="11" text-anchor="middle">G6P</text>
+  <text x="470" y="595" font-family="Arial" font-size="8" text-anchor="middle" fill="#666">CHEBI:4170</text>
+  
+  <!-- Co-factors and small molecules -->
+  <rect x="100" y="920" width="350" height="18" rx="5" ry="5" fill="white" stroke="#999" stroke-width="0.5"/>
+  <text x="110" y="933" font-family="Arial" font-size="11" fill="#666">Co-factors: ATP, ADP, NAD+, NADH, Pi, CO2, H2O</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="5" refY="1.75" orient="auto">
+      <polygon points="0 0, 5 1.75, 0 3.5" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="580" y="850" width="160" height="100" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="660" y="870" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <circle cx="600" cy="890" r="8" fill="#c6e2ff" stroke="#333" stroke-width="1"/>
+  <text x="620" y="893" font-family="Arial" font-size="11" text-anchor="start">Metabolite</text>
+  
+  <rect x="592" y="910" width="16" height="10" fill="#ffe6cc" stroke="#ff9933" stroke-width="1"/>
+  <text x="620" y="918" font-family="Arial" font-size="11" text-anchor="start">Compartment</text>
+  
+  <line x1="590" y1="930" x2="610" y2="930" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="620" y="933" font-family="Arial" font-size="11" text-anchor="start">Enzyme/Reaction</text>
+  
+  <line x1="590" y1="945" x2="610" y2="945" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="620" y="948" font-family="Arial" font-size="11" text-anchor="start">Implicit Process</text>
+</svg>

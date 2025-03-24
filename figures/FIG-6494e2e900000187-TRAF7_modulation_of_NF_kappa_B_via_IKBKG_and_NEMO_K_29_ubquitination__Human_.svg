@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="850" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell background -->
+  <rect x="50" y="50" width="750" height="550" rx="50" ry="50" fill="#f9f9f9" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="650" cy="370" rx="150" ry="140" fill="#e6eff8" stroke="#333333" stroke-width="2"/>
+  <text x="650" y="370" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="#333333">Nucleus</text>
+  <text x="650" y="395" font-family="Arial" font-size="16" text-anchor="middle" fill="#555555">(GO:0005634)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="270" y="90" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333333">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Cytosol label -->
+  <text x="150" y="120" font-family="Arial" font-size="16" text-anchor="middle" fill="#555555">Cytosol (GO:0005829)</text>
+  
+  <!-- TRAF7 protein -->
+  <rect x="100" y="200" width="110" height="60" rx="12" ry="12" fill="#ff9999" stroke="#333333" stroke-width="2"/>
+  <text x="155" y="235" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">TRAF7</text>
+  <text x="155" y="255" font-family="Arial" font-size="14" text-anchor="middle">(Q6Q0C0)</text>
+  
+  <!-- IKBKG/NEMO protein -->
+  <rect x="280" y="200" width="110" height="60" rx="12" ry="12" fill="#99ccff" stroke="#333333" stroke-width="2"/>
+  <text x="335" y="235" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">IKBKG</text>
+  <text x="335" y="255" font-family="Arial" font-size="14" text-anchor="middle">(Q9Y6K9)</text>
+  
+  <!-- CHUK protein -->
+  <rect x="220" y="310" width="110" height="60" rx="12" ry="12" fill="#99ff99" stroke="#333333" stroke-width="2"/>
+  <text x="275" y="340" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">CHUK</text>
+  <text x="275" y="360" font-family="Arial" font-size="14" text-anchor="middle">(O15111)</text>
+  
+  <!-- IKBKB protein -->
+  <rect x="340" y="310" width="110" height="60" rx="12" ry="12" fill="#99ff99" stroke="#333333" stroke-width="2"/>
+  <text x="395" y="340" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">IKBKB</text>
+  <text x="395" y="360" font-family="Arial" font-size="14" text-anchor="middle">(O14920)</text>
+  
+  <!-- NFKBIA/IκB protein -->
+  <rect x="280" y="420" width="110" height="60" rx="12" ry="12" fill="#ffcc99" stroke="#333333" stroke-width="2"/>
+  <text x="335" y="450" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">NFKBIA</text>
+  <text x="335" y="470" font-family="Arial" font-size="14" text-anchor="middle">(P25963)</text>
+  
+  <!-- NF-kB complex (cytoplasmic) -->
+  <g>
+    <rect x="430" y="420" width="85" height="60" rx="12" ry="12" fill="#cc99ff" stroke="#333333" stroke-width="2"/>
+    <text x="472" y="450" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">NFKB1</text>
+    <text x="472" y="470" font-family="Arial" font-size="12" text-anchor="middle">(P19838)</text>
+  </g>
+  <g>
+    <rect x="450" y="410" width="85" height="60" rx="12" ry="12" fill="#cc99ff" stroke="#333333" stroke-width="2"/>
+    <text x="492" y="440" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">RELA</text>
+    <text x="492" y="460" font-family="Arial" font-size="12" text-anchor="middle">(Q04206)</text>
+  </g>
+  
+  <!-- NF-kB complex (nuclear) -->
+  <g>
+    <rect x="600" y="290" width="85" height="60" rx="12" ry="12" fill="#cc99ff" stroke="#333333" stroke-width="2"/>
+    <text x="642" y="320" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">NFKB1</text>
+    <text x="642" y="340" font-family="Arial" font-size="12" text-anchor="middle">(P19838)</text>
+  </g>
+  <g>
+    <rect x="620" y="280" width="85" height="60" rx="12" ry="12" fill="#cc99ff" stroke="#333333" stroke-width="2"/>
+    <text x="662" y="310" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">RELA</text>
+    <text x="662" y="330" font-family="Arial" font-size="12" text-anchor="middle">(Q04206)</text>
+  </g>
+  
+  <!-- DNA target with promoter elements (artistic representation) -->
+  <rect x="620" y="420" width="120" height="20" fill="#cccccc" stroke="#333333" stroke-width="1"/>
+  <path d="M 620 430 Q 650 415 680 430 Q 710 445 740 430" stroke="#333333" stroke-width="2" fill="none"/>
+  <text x="680" y="455" font-family="Arial" font-size="14" text-anchor="middle">Target DNA</text>
+  
+  <!-- TRAF7 -> IKBKG ubiquitination -->
+  <path d="M 210 230 L 280 230" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="245" y="217" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">K29-Ubiquitination</text>
+  
+  <!-- IKBKG -> CHUK/IKBKB regulation -->
+  <path d="M 335 260 L 275 310" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <path d="M 335 260 L 395 310" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="295" y="285" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333333">+</text>
+  <text x="385" y="285" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333333">+</text>
+  
+  <!-- CHUK/IKBKB -> NFKBIA phosphorylation -->
+  <path d="M 275 370 L 335 420" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <path d="M 395 370 L 335 420" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="295" y="395" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333333">P</text>
+  <text x="370" y="395" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333333">P</text>
+  
+  <!-- NFKBIA sequestering NF-kB -->
+  <path d="M 390 440 L 430 440" stroke="#333333" stroke-width="2.5"/>
+  <circle cx="410" cy="440" r="5" fill="#333333"/>
+  <text x="410" y="425" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Sequester</text>
+  
+  <!-- NF-kB translocation to nucleus -->
+  <path d="M 520 410 C 550 370 570 340 600 310" stroke="#333333" stroke-width="2.5" stroke-dasharray="7,4" marker-end="url(#arrowhead)"/>
+  <text x="540" y="365" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Translocation</text>
+  
+  <!-- NF-kB binding to DNA -->
+  <path d="M 650 340 L 650 400 Q 650 410 660 420" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="670" y="390" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Binding</text>
+  
+  <!-- Function labels -->
+  <text x="155" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Ubiquitin ligase activity</text>
+  <text x="155" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="#555555">(GO:0061630)</text>
+  
+  <text x="335" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Signaling adaptor activity</text>
+  <text x="335" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="#555555">(GO:0035591)</text>
+  
+  <text x="275" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">IkappaB kinase activity</text>
+  <text x="275" y="310" font-family="Arial" font-size="12" text-anchor="middle" fill="#555555">(GO:0008384)</text>
+  
+  <text x="395" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">IkappaB kinase activity</text>
+  <text x="395" y="310" font-family="Arial" font-size="12" text-anchor="middle" fill="#555555">(GO:0008384)</text>
+  
+  <text x="335" y="405" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Protein sequestering activity</text>
+  <text x="335" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#555555">(GO:0140311)</text>
+  
+  <text x="650" y="260" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">DNA-binding TF activity</text>
+  <text x="650" y="275" font-family="Arial" font-size="12" text-anchor="middle" fill="#555555">(GO:0001228, GO:0000981)</text>
+  
+  <!-- Process label -->
+  <text x="425" y="510" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333333">Canonical NF-kappaB Signal Transduction (GO:0007249)</text>
+  
+  <!-- Title -->
+  <text x="425" y="80" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">TRAF7 modulation of NF-kappa-B via IKBKG and NEMO K-29 ubiquitination (Human)</text>
+  
+  <!-- Cellular process label -->
+  <text x="150" y="560" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">K29-linked ubiquitination</text>
+  <text x="150" y="580" font-family="Arial" font-size="14" text-anchor="middle" fill="#555555">(GO:0035519)</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>

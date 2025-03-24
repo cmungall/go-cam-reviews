@@ -1,0 +1,74 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Cell with Nucleus -->
+  <ellipse cx="400" cy="350" rx="350" ry="250" fill="#f0f0f0" stroke="#888" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="400" cy="350" rx="250" ry="180" fill="#e6e6fa" stroke="#666" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Nuclear Membrane Label -->
+  <text x="400" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#444">Nuclear Membrane</text>
+  
+  <!-- DNA Double Strand Break -->
+  <path d="M250,350 C270,320 290,380 310,350 C330,320 350,380 370,350 C390,320 410,380 430,350 
+           M450,350 L470,350 M490,350 C510,320 530,380 550,350" 
+        stroke="#333" stroke-width="4" fill="none"/>
+  
+  <!-- Break Site Highlight -->
+  <ellipse cx="480" cy="350" rx="15" ry="15" fill="#ff6347" opacity="0.6"/>
+  <text x="480" y="310" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000">Site of Double-Strand Break</text>
+  <text x="480" y="326" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">(GO:0035861)</text>
+  
+  <!-- ATM Kinase -->
+  <rect x="180" y="250" width="80" height="40" rx="10" ry="10" fill="#90ee90" stroke="#333" stroke-width="2"/>
+  <text x="220" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000">ATM</text>
+  <text x="220" y="290" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Kinase</text>
+  
+  <!-- USP51 -->
+  <rect x="300" y="250" width="80" height="40" rx="10" ry="10" fill="#add8e6" stroke="#333" stroke-width="2"/>
+  <text x="340" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000">USP51</text>
+  <text x="340" y="290" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Deubiquitinase</text>
+  
+  <!-- DGCR8 -->
+  <rect x="420" y="250" width="80" height="40" rx="10" ry="10" fill="#ffb6c1" stroke="#333" stroke-width="2"/>
+  <text x="460" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000">DGCR8</text>
+  <text x="460" y="290" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Adaptor Protein</text>
+  
+  <!-- RNF168 -->
+  <rect x="540" y="250" width="80" height="40" rx="10" ry="10" fill="#ffa500" stroke="#333" stroke-width="2"/>
+  <text x="580" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#000">RNF168</text>
+  <text x="580" y="290" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Ubiquitin Ligase</text>
+  
+  <!-- Relationship Arrows -->
+  <path d="M260,270 L300,270" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M380,270 L420,270" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M500,270 L540,270" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M580,290 L580,340 L500,340" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Action Labels -->
+  <text x="280" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">phosphorylates</text>
+  <text x="400" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">deubiquitinates</text>
+  <text x="520" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">activates</text>
+  <text x="540" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">ubiquitinates histones</text>
+  
+  <!-- Histone -->
+  <rect x="470" y="370" width="20" height="20" fill="#f5deb3" stroke="#333" stroke-width="1"/>
+  <text x="480" y="400" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#000">H2AC1</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title and Subtitles with better spacing -->
+  <text x="400" y="40" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#000">Role of USP51 in DNA Damage Response</text>
+  <text x="400" y="65" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">via DGCR8 Deubiquitination</text>
+  
+  <!-- Process Label -->
+  <text x="400" y="95" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">DNA Damage Response (GO:0006974)</text>
+  
+  <!-- Nucleus Label -->
+  <text x="400" y="530" font-family="Arial" font-size="14" text-anchor="middle" fill="#444">Nucleus (GO:0005634)</text>
+  
+  <!-- Cell Membrane Label -->
+  <text x="400" y="590" font-family="Arial" font-size="14" text-anchor="middle" fill="#444">Cell Membrane</text>
+</svg>

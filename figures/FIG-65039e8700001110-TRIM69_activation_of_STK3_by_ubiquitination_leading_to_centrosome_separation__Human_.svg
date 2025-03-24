@@ -1,0 +1,117 @@
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outline -->
+  <ellipse cx="450" cy="350" rx="430" ry="320" fill="#f9f9f9" stroke="#888888" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Cell nucleus -->
+  <ellipse cx="450" cy="400" rx="180" ry="140" fill="#e6f2ff" stroke="#6699cc" stroke-width="2" opacity="0.7"/>
+  <text x="450" y="400" text-anchor="middle" font-family="Arial" font-size="18" fill="#333333">Nucleus</text>
+  
+  <!-- Centrosome structure -->
+  <g transform="translate(450, 200)">
+    <circle cx="0" cy="0" r="120" fill="#f0f0f0" stroke="#666666" stroke-width="2" stroke-dasharray="5,2" opacity="0.8"/>
+    <text x="0" y="-140" text-anchor="middle" font-family="Arial" font-size="18" fill="#333333" font-weight="bold">Centrosome (GO:0005813)</text>
+    
+    <!-- Initial centrosome pair -->
+    <circle cx="-30" cy="-30" r="20" fill="#fc8d62" stroke="#333333" stroke-width="2"/>
+    <circle cx="30" cy="-30" r="20" fill="#fc8d62" stroke="#333333" stroke-width="2"/>
+    <text x="0" y="-60" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333">Initial Centrosome Pair</text>
+    
+    <!-- Proteins in pathway - spaced out with clearer positioning -->
+    <g transform="translate(-140, -30)">
+      <rect x="0" y="0" width="80" height="35" rx="5" fill="#8da0cb" stroke="#333333" stroke-width="2"/>
+      <text x="40" y="23" text-anchor="middle" font-family="Arial" font-size="14" fill="white">TRIM69</text>
+    </g>
+    
+    <g transform="translate(-140, 60)">
+      <rect x="0" y="0" width="70" height="35" rx="5" fill="#66c2a5" stroke="#333333" stroke-width="2"/>
+      <text x="35" y="23" text-anchor="middle" font-family="Arial" font-size="14" fill="white">PLK1</text>
+    </g>
+    
+    <g transform="translate(40, 60)">
+      <rect x="0" y="0" width="70" height="35" rx="5" fill="#e78ac3" stroke="#333333" stroke-width="2"/>
+      <text x="35" y="23" text-anchor="middle" font-family="Arial" font-size="14" fill="white">STK3</text>
+    </g>
+    
+    <g transform="translate(140, -30)">
+      <rect x="0" y="0" width="70" height="35" rx="5" fill="#a6d854" stroke="#333333" stroke-width="2"/>
+      <text x="35" y="23" text-anchor="middle" font-family="Arial" font-size="14" fill="white">NEK2</text>
+    </g>
+    
+    <!-- Ubiquitin symbol -->
+    <g transform="translate(-40, 10)">
+      <circle cx="0" cy="0" r="12" fill="#ffdd99" stroke="#996600" stroke-width="1.5"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#996600">Ub</text>
+    </g>
+    
+    <!-- Arrows connecting proteins with labels -->
+    <g>
+      <!-- TRIM69 to PLK1 -->
+      <line x1="-100" y1="5" x2="-100" y2="60" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="-85" y="35" text-anchor="start" font-family="Arial" font-size="12" fill="#333333">Ubiquitination</text>
+      
+      <!-- PLK1 to STK3 -->
+      <line x1="-70" y1="78" x2="40" y2="78" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="-15" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">Activates</text>
+      
+      <!-- STK3 to NEK2 -->
+      <line x1="110" y1="60" x2="140" y2="5" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="140" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">Activates</text>
+    </g>
+    
+    <!-- Separated centrosomes (result) -->
+    <g transform="translate(0, 160)">
+      <circle cx="-70" cy="0" r="20" fill="#fc8d62" stroke="#333333" stroke-width="2"/>
+      <circle cx="70" cy="0" r="20" fill="#fc8d62" stroke="#333333" stroke-width="2"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial" font-size="16" fill="#333333">Centrosome Separation</text>
+      <text x="0" y="60" text-anchor="middle" font-family="Arial" font-size="15" fill="#666666">(GO:0051299)</text>
+    </g>
+    
+    <!-- Arrow showing centrosome separation process -->
+    <g>
+      <line x1="0" y1="0" x2="0" y2="140" stroke="#333333" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+      <text x="15" y="100" text-anchor="start" font-family="Arial" font-size="14" fill="#333333">Leads to</text>
+    </g>
+    
+    <!-- NEK2 to Centrosome Separation arrow -->
+    <line x1="175" y1="5" x2="70" y2="145" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="140" y="90" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">Drives</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend with clear spacing -->
+  <g transform="translate(40, 550)">
+    <text x="0" y="0" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Legend:</text>
+    
+    <rect x="0" y="15" width="25" height="15" rx="3" fill="#8da0cb" stroke="#333333" stroke-width="1"/>
+    <text x="35" y="27" font-family="Arial" font-size="14" fill="#333333">TRIM69 (Ubiquitin ligase activity - GO:0061630)</text>
+    
+    <rect x="0" y="40" width="25" height="15" rx="3" fill="#66c2a5" stroke="#333333" stroke-width="1"/>
+    <text x="35" y="52" font-family="Arial" font-size="14" fill="#333333">PLK1 (Protein serine kinase - GO:0106310)</text>
+    
+    <rect x="0" y="65" width="25" height="15" rx="3" fill="#e78ac3" stroke="#333333" stroke-width="1"/>
+    <text x="35" y="77" font-family="Arial" font-size="14" fill="#333333">STK3 (Protein serine/threonine kinase - GO:0004674)</text>
+    
+    <rect x="0" y="90" width="25" height="15" rx="3" fill="#a6d854" stroke="#333333" stroke-width="1"/>
+    <text x="35" y="102" font-family="Arial" font-size="14" fill="#333333">NEK2 (Protein kinase - GO:0004672)</text>
+    
+    <circle cx="12" cy="122" r="8" fill="#fc8d62" stroke="#333333" stroke-width="1"/>
+    <text x="35" y="127" font-family="Arial" font-size="14" fill="#333333">Centrosome</text>
+    
+    <circle cx="12" cy="147" r="8" fill="#ffdd99" stroke="#996600" stroke-width="1.5"/>
+    <text x="35" y="152" font-family="Arial" font-size="14" fill="#333333">Ubiquitin</text>
+    
+    <line x1="450" y1="20" x2="500" y2="20" stroke="#333333" stroke-width="2" stroke-dasharray="6,3"/>
+    <text x="515" y="25" font-family="Arial" font-size="14" fill="#333333">Indicates process progression</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#333333">TRIM69 Activation of STK3 by Ubiquitination</text>
+  <text x="450" y="70" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#333333">Leading to Centrosome Separation</text>
+  <text x="450" y="100" text-anchor="middle" font-family="Arial" font-size="16" fill="#666666">Human (NCBITaxon:9606)</text>
+</svg>

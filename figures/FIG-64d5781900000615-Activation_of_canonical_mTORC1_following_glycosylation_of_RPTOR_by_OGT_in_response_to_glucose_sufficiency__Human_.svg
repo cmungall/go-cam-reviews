@@ -1,0 +1,182 @@
+<svg width="850" height="750" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="850" height="750" fill="#ffffff"/>
+    
+    <!-- Title -->
+    <text x="425" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Activation of mTORC1 Following RPTOR Glycosylation by OGT in Response to Glucose</text>
+    
+    <!-- Cell components -->
+    <!-- Cytosol background -->
+    <rect x="50" y="70" width="750" height="520" rx="20" ry="20" fill="#f9f9f9" stroke="#888888" stroke-width="2"/>
+    <text x="80" y="100" font-family="Arial" font-size="15" font-weight="bold">Cytosol (GO:0005829)</text>
+    
+    <!-- Lysosome -->
+    <ellipse cx="425" cy="350" rx="200" ry="120" fill="#ffe0e0" stroke="#cc0000" stroke-width="2"/>
+    
+    <!-- Lysosomal membrane -->
+    <ellipse cx="425" cy="350" rx="220" ry="140" fill="none" stroke="#cc0000" stroke-width="3" stroke-dasharray="5,3"/>
+    <text x="425" y="220" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">Lysosomal Membrane (GO:0005765)</text>
+    
+    <!-- Glucose stimulus -->
+    <polygon points="100,150 150,150 160,170 150,190 100,190 90,170" fill="#ffffc0" stroke="#888800" stroke-width="2"/>
+    <text x="125" y="175" font-family="Arial" font-size="13" text-anchor="middle">Glucose</text>
+    
+    <!-- OGT -->
+    <rect x="200" y="155" width="70" height="30" rx="15" ry="15" fill="#c0ffc0" stroke="#008800" stroke-width="2"/>
+    <text x="235" y="175" font-family="Arial" font-size="13" text-anchor="middle">OGT</text>
+    
+    <!-- RPTOR -->
+    <rect x="320" y="155" width="70" height="30" rx="5" ry="5" fill="#c0c0ff" stroke="#0000cc" stroke-width="2"/>
+    <text x="355" y="175" font-family="Arial" font-size="13" text-anchor="middle">RPTOR</text>
+    
+    <!-- Arrow from glucose to OGT -->
+    <line x1="160" y1="170" x2="200" y2="170" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Arrow from OGT to RPTOR with glycosylation -->
+    <line x1="270" y1="170" x2="320" y2="170" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <circle cx="295" y="165" r="5" fill="#ff00ff" stroke="none"/>
+    <text x="295" y="150" font-family="Arial" font-size="11" text-anchor="middle">O-GlcNAc</text>
+    
+    <!-- RRAGA (GTP) -->
+    <circle cx="300" cy="300" r="25" fill="#ffc0c0" stroke="#cc0000" stroke-width="2"/>
+    <text x="300" y="300" font-family="Arial" font-size="13" text-anchor="middle">RRAGA</text>
+    <text x="300" y="315" font-family="Arial" font-size="11" text-anchor="middle">GTP</text>
+    
+    <!-- RRAGC (GDP) -->
+    <circle cx="370" cy="300" r="25" fill="#ffc0c0" stroke="#cc0000" stroke-width="2"/>
+    <text x="370" y="300" font-family="Arial" font-size="13" text-anchor="middle">RRAGC</text>
+    <text x="370" y="315" font-family="Arial" font-size="11" text-anchor="middle">GDP</text>
+    
+    <!-- RHEB -->
+    <circle cx="520" cy="300" r="25" fill="#c0ffff" stroke="#008888" stroke-width="2"/>
+    <text x="520" y="300" font-family="Arial" font-size="13" text-anchor="middle">RHEB</text>
+    <text x="520" y="315" font-family="Arial" font-size="11" text-anchor="middle">Activator</text>
+    
+    <!-- mTOR -->
+    <rect x="425" y="350" width="70" height="40" rx="10" ry="10" fill="#ff8080" stroke="#880000" stroke-width="2"/>
+    <text x="460" y="375" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">mTOR</text>
+    
+    <!-- RPTOR glycosylated at lysosome -->
+    <rect x="425" y="300" width="70" height="30" rx="5" ry="5" fill="#c0c0ff" stroke="#0000cc" stroke-width="2"/>
+    <text x="460" y="320" font-family="Arial" font-size="13" text-anchor="middle">RPTOR</text>
+    <circle cx="440" y="295" r="5" fill="#ff00ff" stroke="none"/>
+    
+    <!-- mTORC1 complex outline -->
+    <ellipse cx="460" cy="335" rx="80" ry="60" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="460" y="265" font-family="Arial" font-size="13" font-style="italic" text-anchor="middle">mTORC1 Complex</text>
+    
+    <!-- Arrow from RPTOR to lysosomal location -->
+    <line x1="370" y1="185" x2="410" y2="285" stroke="#000000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+    <text x="390" y="225" font-family="Arial" font-size="11" text-anchor="middle" transform="rotate(-45, 390, 225)">Translocation</text>
+    
+    <!-- Lines connecting RAGs -->
+    <line x1="325" y1="300" x2="345" y2="300" stroke="#000000" stroke-width="1.5"/>
+    
+    <!-- Arrow from RAGs to RPTOR -->
+    <line x1="395" y1="300" x2="425" y2="300" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Arrow from RHEB to mTOR -->
+    <line x1="520" y1="325" x2="495" y2="350" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Downstream Targets -->
+    <!-- RPS6KB1 -->
+    <rect x="350" y="450" width="80" height="30" rx="5" ry="5" fill="#e0e0ff" stroke="#0000aa" stroke-width="2"/>
+    <text x="390" y="470" font-family="Arial" font-size="13" text-anchor="middle">RPS6KB1</text>
+    
+    <!-- RPS6KB2 -->
+    <rect x="450" y="450" width="80" height="30" rx="5" ry="5" fill="#e0e0ff" stroke="#0000aa" stroke-width="2"/>
+    <text x="490" y="470" font-family="Arial" font-size="13" text-anchor="middle">RPS6KB2</text>
+    
+    <!-- EIF4EBP1 -->
+    <rect x="550" y="450" width="80" height="30" rx="5" ry="5" fill="#e0e0ff" stroke="#0000aa" stroke-width="2"/>
+    <text x="590" y="470" font-family="Arial" font-size="13" text-anchor="middle">EIF4EBP1</text>
+    
+    <!-- RPS6 -->
+    <rect x="400" y="520" width="80" height="30" rx="5" ry="5" fill="#ffe0c0" stroke="#aa5500" stroke-width="2"/>
+    <text x="440" y="540" font-family="Arial" font-size="13" text-anchor="middle">RPS6</text>
+    
+    <!-- Activated translation (final outcome) -->
+    <rect x="350" y="580" width="150" height="30" rx="15" ry="15" fill="#ffffc0" stroke="#aaaa00" stroke-width="2"/>
+    <text x="425" y="600" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">Translation ↑</text>
+    
+    <!-- Arrows from mTOR to downstream targets with phosphorylation marks -->
+    <line x1="460" y1="390" x2="390" y2="450" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <circle cx="420" y="420" r="5" fill="#80c0ff" stroke="#0000ff" stroke-width="1"/>
+    <text x="405" y="420" font-family="Arial" font-size="11" text-anchor="end">P</text>
+    
+    <line x1="460" y1="390" x2="490" y2="450" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <circle cx="475" y="420" r="5" fill="#80c0ff" stroke="#0000ff" stroke-width="1"/>
+    <text x="460" y="420" font-family="Arial" font-size="11" text-anchor="end">P</text>
+    
+    <line x1="460" y1="390" x2="590" y2="450" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <circle cx="525" y="420" r="5" fill="#80c0ff" stroke="#0000ff" stroke-width="1"/>
+    <text x="510" y="420" font-family="Arial" font-size="11" text-anchor="end">P</text>
+    
+    <!-- Arrows from kinases to their targets with phosphorylation marks -->
+    <line x1="390" y1="480" x2="430" y2="520" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <circle cx="410" y="500" r="5" fill="#80c0ff" stroke="#0000ff" stroke-width="1"/>
+    <text x="395" y="500" font-family="Arial" font-size="11" text-anchor="end">P</text>
+    
+    <line x1="490" y1="480" x2="450" y2="520" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <circle cx="470" y="500" r="5" fill="#80c0ff" stroke="#0000ff" stroke-width="1"/>
+    <text x="455" y="500" font-family="Arial" font-size="11" text-anchor="end">P</text>
+    
+    <!-- Inhibitory arrow from EIF4EBP1 (crossed when phosphorylated) -->
+    <line x1="590" y1="480" x2="590" y2="520" stroke="#000000" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <line x1="580" y1="500" x2="600" y2="500" stroke="#ff0000" stroke-width="2"/>
+    <text x="605" y="535" font-family="Arial" font-size="13">Inhibition</text>
+    <text x="605" y="550" font-family="Arial" font-size="13">relieved</text>
+    
+    <!-- Arrow from RPS6 to translation -->
+    <line x1="440" y1="550" x2="425" y2="580" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Legend -->
+    <rect x="50" y="620" width="750" height="110" rx="5" ry="5" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+    <text x="425" y="640" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">LEGEND</text>
+    
+    <!-- Protein Types -->
+    <text x="70" y="660" font-family="Arial" font-size="13" font-weight="bold">Protein Types:</text>
+    <rect x="70" y="670" width="20" height="12" rx="6" ry="6" fill="#c0ffc0" stroke="#008800" stroke-width="1"/>
+    <text x="95" y="680" font-family="Arial" font-size="11">Glycosyltransferase (OGT)</text>
+    
+    <rect x="220" y="670" width="20" height="12" rx="2" ry="2" fill="#c0c0ff" stroke="#0000cc" stroke-width="1"/>
+    <text x="245" y="680" font-family="Arial" font-size="11">Scaffold/Adaptor (RPTOR)</text>
+    
+    <circle cx="350" cy="676" r="6" fill="#ffc0c0" stroke="#cc0000" stroke-width="1"/>
+    <text x="365" y="680" font-family="Arial" font-size="11">GTPase (RRAGA/C)</text>
+    
+    <rect x="450" y="670" width="20" height="12" rx="4" ry="4" fill="#ff8080" stroke="#880000" stroke-width="1"/>
+    <text x="475" y="680" font-family="Arial" font-size="11">Kinase (mTOR, RPS6KB1/2)</text>
+    
+    <circle cx="560" cy="676" r="6" fill="#c0ffff" stroke="#008888" stroke-width="1"/>
+    <text x="575" y="680" font-family="Arial" font-size="11">Activator (RHEB)</text>
+    
+    <rect x="650" y="670" width="20" height="12" rx="4" ry="4" fill="#ffe0c0" stroke="#aa5500" stroke-width="1"/>
+    <text x="675" y="680" font-family="Arial" font-size="11">Substrate (RPS6)</text>
+    
+    <!-- Modifications -->
+    <text x="70" y="700" font-family="Arial" font-size="13" font-weight="bold">Modifications:</text>
+    <circle cx="90" cy="710" r="5" fill="#ff00ff" stroke="none"/>
+    <text x="100" y="713" font-family="Arial" font-size="11">O-GlcNAc (Glycosylation)</text>
+    
+    <circle cx="250" cy="710" r="5" fill="#80c0ff" stroke="#0000ff" stroke-width="1"/>
+    <text x="240" y="713" font-family="Arial" font-size="11" text-anchor="end">P</text>
+    <text x="260" y="713" font-family="Arial" font-size="11">Phosphorylation</text>
+    
+    <line x1="350" y1="710" x2="370" y2="710" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <text x="375" y="713" font-family="Arial" font-size="11">Activation</text>
+    
+    <line x1="450" y1="710" x2="470" y2="710" stroke="#000000" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+    <text x="475" y="713" font-family="Arial" font-size="11">Translocation</text>
+    
+    <line x1="570" y1="710" x2="590" y2="710" stroke="#000000" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <line x1="575" y1="710" x2="585" y2="710" stroke="#ff0000" stroke-width="2"/>
+    <text x="595" y="713" font-family="Arial" font-size="11">Inhibition relieved</text>
+    
+    <!-- Definitions for markers -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+        </marker>
+    </defs>
+</svg>

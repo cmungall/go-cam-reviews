@@ -1,0 +1,117 @@
+<svg width="800" height="670" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <path d="M 50,150 L 750,150" stroke="#888888" stroke-width="10" fill="none" stroke-linecap="round" />
+  <text x="400" y="130" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#444444">Cell Membrane</text>
+  
+  <!-- Background colors for different compartments -->
+  <rect x="50" y="160" width="700" height="470" rx="20" ry="20" fill="#f9f9f9" stroke="#cccccc" stroke-width="2" />
+  <text x="100" y="180" font-family="Arial" font-size="16" font-style="italic" fill="#666666">Cytoplasm (GO:0005737)</text>
+
+  <!-- mTORC1 Complex -->
+  <circle cx="200" cy="250" r="60" fill="#d1e7dd" stroke="#0a58ca" stroke-width="2" />
+  <text x="200" y="235" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0a58ca">mTORC1</text>
+  <text x="200" y="255" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333">MTOR (P42345)</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">Protein S/T kinase</text>
+  <text x="200" y="285" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">GO:0004674</text>
+
+  <!-- mTORC2 Complex -->
+  <circle cx="600" cy="250" r="60" fill="#d2f4ea" stroke="#0dcaf0" stroke-width="2" />
+  <text x="600" y="235" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0dcaf0">mTORC2</text>
+  <text x="600" y="255" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333">MTOR (P42345)</text>
+  <text x="600" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">Protein S/T kinase</text>
+  <text x="600" y="285" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">GO:0004674</text>
+  
+  <!-- MAPKAP1 in mTORC2 -->
+  <text x="600" y="300" text-anchor="middle" font-family="Arial" font-size="14" fill="#333333">MAPKAP1 (Q9BPZ7)</text>
+  <text x="600" y="315" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">Adaptor activity</text>
+
+  <!-- RPS6KB1 -->
+  <rect x="150" y="370" width="100" height="50" rx="10" ry="10" fill="#e2e3e5" stroke="#6c757d" stroke-width="2" />
+  <text x="200" y="395" text-anchor="middle" font-family="Arial" font-size="16" fill="#333333">RPS6KB1</text>
+  <text x="200" y="410" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">(P23443)</text>
+
+  <!-- CUL7-FBXW8-RBX1 complex -->
+  <rect x="350" y="370" width="160" height="70" rx="10" ry="10" fill="#f8d7da" stroke="#dc3545" stroke-width="2" />
+  <text x="430" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">CUL7-FBXW8-RBX1</text>
+  <text x="430" y="405" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">CUL7 (Q14999) - Scaffold</text>
+  <text x="430" y="420" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">FBXW8 (Q8N3Y1) - Adaptor</text>
+  <text x="430" y="435" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">RBX1 (P62877) - E3 Ligase</text>
+
+  <!-- IRS1 -->
+  <rect x="350" y="500" width="100" height="50" rx="10" ry="10" fill="#fff3cd" stroke="#ffc107" stroke-width="2" />
+  <text x="400" y="525" text-anchor="middle" font-family="Arial" font-size="16" fill="#333333">IRS1</text>
+  <text x="400" y="540" text-anchor="middle" font-family="Arial" font-size="12" fill="#555555">(P35568)</text>
+
+  <!-- Arrows and connections -->
+  <!-- mTORC1 to RPS6KB1 -->
+  <path d="M 200,310 L 200,370" stroke="#0a58ca" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)" />
+  <text x="215" y="340" font-family="Arial" font-size="14" fill="#0a58ca">Phosphorylates</text>
+  
+  <!-- mTORC2 to mTOR in stabilization -->
+  <path d="M 600,310 C 600,330 500,330 450,350" stroke="#0dcaf0" stroke-width="2" fill="none" marker-end="url(#arrowhead-teal)" />
+  <text x="520" y="330" font-family="Arial" font-size="14" fill="#0dcaf0">Promotes</text>
+  <text x="520" y="345" font-family="Arial" font-size="14" fill="#0dcaf0">Stability</text>
+
+  <!-- RPS6KB1 to CUL7 complex -->
+  <path d="M 250,395 L 350,395" stroke="#6c757d" stroke-width="2" fill="none" marker-end="url(#arrowhead-gray)" />
+  <text x="300" y="380" font-family="Arial" font-size="14" fill="#6c757d">Activates</text>
+  
+  <!-- CUL7 complex to IRS1 -->
+  <path d="M 400,440 L 400,500" stroke="#dc3545" stroke-width="2" fill="none" marker-end="url(#arrowhead-red)" />
+  <text x="410" y="470" font-family="Arial" font-size="14" fill="#dc3545">Ubiquitinates</text>
+  
+  <!-- Ubiquitin tag on IRS1 -->
+  <circle cx="420" cy="490" r="10" fill="#dc3545" stroke="#6c757d" stroke-width="1" />
+  <text x="420" y="494" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">Ub</text>
+
+  <!-- Degradation arrow -->
+  <path d="M 450,525 L 500,525" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="475" y="515" font-family="Arial" font-size="14" fill="#000000">Degradation</text>
+  
+  <!-- Negative regulation arrow -->
+  <path d="M 475,560 L 570,560 L 570,300 L 700,300" stroke="#dc3545" stroke-width="2" stroke-dasharray="4,4" fill="none" marker-end="url(#arrowhead-red)" />
+  
+  <!-- Negative regulation of insulin signaling -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial" font-size="16" font-style="italic" font-weight="bold" fill="#dc3545">Negative regulation of insulin receptor signaling pathway</text>
+  <text x="400" y="575" text-anchor="middle" font-family="Arial" font-size="14" fill="#555555">(GO:0046627)</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0a58ca" />
+    </marker>
+    <marker id="arrowhead-teal" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0dcaf0" />
+    </marker>
+    <marker id="arrowhead-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc3545" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#333333">mTORC1 and mTORC2 Inhibit Insulin Receptor Signaling</text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial" font-size="18" fill="#555555">via IRS1 Ubiquitination and Degradation by CUL7(FBXW8) Complex</text>
+  
+  <!-- Process Labels -->
+  <text x="160" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="#0a58ca">TORC1 signaling</text>
+  <text x="160" y="230" text-anchor="middle" font-family="Arial" font-size="12" fill="#0a58ca">(GO:0038202)</text>
+  
+  <text x="640" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="#0dcaf0">TORC2 signaling</text>
+  <text x="640" y="230" text-anchor="middle" font-family="Arial" font-size="12" fill="#0dcaf0">(GO:0038203)</text>
+  
+  <text x="320" y="370" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc3545">Ubiquitin-dependent</text>
+  <text x="320" y="385" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc3545">protein catabolism</text>
+  <text x="320" y="400" text-anchor="middle" font-family="Arial" font-size="12" fill="#dc3545">(GO:0006511)</text>
+  
+  <!-- Key definitions -->
+  <rect x="50" y="605" width="700" height="45" rx="5" ry="5" fill="#f0f0f0" stroke="#cccccc" stroke-width="1" />
+  <text x="60" y="625" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Key Processes:</text>
+  <text x="170" y="625" font-family="Arial" font-size="14" fill="#333333">Phosphorylation - Addition of phosphate group that can activate or inhibit protein function</text>
+  <text x="170" y="645" font-family="Arial" font-size="14" fill="#333333">Ubiquitination - Tagging of proteins with ubiquitin for targeted degradation by the proteasome</text>
+</svg>

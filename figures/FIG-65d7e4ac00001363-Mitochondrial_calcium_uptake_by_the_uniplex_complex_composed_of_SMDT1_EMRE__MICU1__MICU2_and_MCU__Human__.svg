@@ -1,0 +1,117 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell components -->
+  <!-- Mitochondrial outer membrane -->
+  <path d="M100,150 Q400,50 700,150 Q750,300 700,450 Q400,550 100,450 Q50,300 100,150" fill="#f2f2f2" stroke="#333" stroke-width="3"/>
+  
+  <!-- Mitochondrial inner membrane -->
+  <path d="M150,200 Q400,120 650,200 Q700,300 650,400 Q400,480 150,400 Q100,300 150,200" fill="#e6f7ff" stroke="#333" stroke-width="3"/>
+  
+  <!-- Labels for compartments -->
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Mitochondrial Intermembrane Space</text>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Mitochondrial Matrix</text>
+  
+  <!-- Uniplex complex in the inner membrane -->
+  <!-- MCU channel protein -->
+  <rect x="370" y="200" width="60" height="200" rx="10" ry="10" fill="#9966ff" stroke="#333" stroke-width="2">
+    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="400" y="320" text-anchor="middle" font-family="Arial" font-size="16" fill="white" font-weight="bold">MCU</text>
+  
+  <!-- SMDT1/EMRE -->
+  <rect x="340" y="250" width="30" height="100" rx="5" ry="5" fill="#ff9900" stroke="#333" stroke-width="2">
+    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="355" y="305" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="bold" transform="rotate(-90, 355, 305)">SMDT1</text>
+  
+  <!-- MICU1 -->
+  <circle cx="310" cy="250" r="30" fill="#ff6666" stroke="#333" stroke-width="2">
+    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="310" y="255" text-anchor="middle" font-family="Arial" font-size="16" fill="white" font-weight="bold">MICU1</text>
+  
+  <!-- MICU2 -->
+  <circle cx="310" cy="350" r="30" fill="#66b3ff" stroke="#333" stroke-width="2">
+    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="310" y="355" text-anchor="middle" font-family="Arial" font-size="16" fill="white" font-weight="bold">MICU2</text>
+  
+  <!-- Calcium ions -->
+  <circle cx="350" cy="180" r="10" fill="#00cc66" stroke="#333" stroke-width="1"/>
+  <text x="350" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="bold">Ca²⁺</text>
+  
+  <circle cx="380" cy="160" r="10" fill="#00cc66" stroke="#333" stroke-width="1"/>
+  <text x="380" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="bold">Ca²⁺</text>
+  
+  <circle cx="420" cy="180" r="10" fill="#00cc66" stroke="#333" stroke-width="1"/>
+  <text x="420" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="bold">Ca²⁺</text>
+  
+  <!-- Calcium ions in transit -->
+  <circle cx="400" cy="230" r="10" fill="#00cc66" stroke="#333" stroke-width="1">
+    <animate attributeName="cy" from="230" to="370" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="400" y="235" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="bold">
+    <animate attributeName="y" from="235" to="375" dur="3s" repeatCount="indefinite"/>
+    Ca²⁺
+  </text>
+  
+  <!-- Calcium ions in matrix -->
+  <circle cx="380" cy="430" r="10" fill="#00cc66" stroke="#333" stroke-width="1"/>
+  <text x="380" y="435" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="bold">Ca²⁺</text>
+  
+  <circle cx="420" cy="410" r="10" fill="#00cc66" stroke="#333" stroke-width="1"/>
+  <text x="420" y="415" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="bold">Ca²⁺</text>
+  
+  <!-- Arrows indicating interactions -->
+  <!-- MICU1 to MCU -->
+  <path d="M340,250 L370,250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="325" y="225" width="70" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="360" y="240" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Regulates</text>
+  
+  <!-- MICU2 to MCU -->
+  <path d="M340,350 L370,350" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="325" y="360" width="70" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="360" y="375" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Regulates</text>
+  
+  <!-- SMDT1 to MCU -->
+  <rect x="250" y="290" width="70" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="285" y="305" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Adaptor</text>
+  
+  <!-- Calcium sensing by MICU1 -->
+  <path d="M350,190 C340,210 330,220 310,250" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <rect x="300" y="195" width="60" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="330" y="210" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Senses</text>
+  
+  <!-- Calcium sensing by MICU2 -->
+  <path d="M420,190 C430,250 350,320 310,350" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <rect x="370" y="255" width="60" height="20" fill="white" fill-opacity="0.7"/>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Senses</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Mitochondrial Calcium Uptake via the Uniplex Complex</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="450" width="200" height="130" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="650" y="470" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Legend</text>
+  
+  <rect x="560" y="480" width="20" height="20" fill="#9966ff" stroke="#333" stroke-width="1"/>
+  <text x="590" y="495" font-family="Arial" font-size="16" dominant-baseline="middle">MCU</text>
+  
+  <rect x="560" y="505" width="20" height="20" fill="#ff9900" stroke="#333" stroke-width="1"/>
+  <text x="590" y="520" font-family="Arial" font-size="16" dominant-baseline="middle">SMDT1/EMRE</text>
+  
+  <circle cx="570" cy="540" r="10" fill="#ff6666" stroke="#333" stroke-width="1"/>
+  <text x="590" y="545" font-family="Arial" font-size="16" dominant-baseline="middle">MICU1</text>
+  
+  <circle cx="570" cy="565" r="10" fill="#66b3ff" stroke="#333" stroke-width="1"/>
+  <text x="590" y="570" font-family="Arial" font-size="16" dominant-baseline="middle">MICU2</text>
+  
+  <circle cx="570" cy="590" r="10" fill="#00cc66" stroke="#333" stroke-width="1"/>
+  <text x="590" y="595" font-family="Arial" font-size="16" dominant-baseline="middle">Ca²⁺</text>
+</svg>

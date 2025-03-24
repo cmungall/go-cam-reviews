@@ -1,0 +1,124 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <ellipse cx="400" cy="350" rx="350" ry="250" fill="#f8f8f8" stroke="#666" stroke-width="3"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="300" cy="370" rx="120" ry="100" fill="#e6e6fa" stroke="#666" stroke-width="2"/>
+  <text x="300" y="370" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="480" y="250" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cytoplasm</text>
+  
+  <!-- Zika virus entry -->
+  <path d="M50,350 Q100,300 150,350" stroke="#ff6347" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+  <circle cx="50" cy="350" r="15" fill="#ff6347"/>
+  <text x="50" y="330" text-anchor="middle" font-family="Arial" font-size="14">Zika</text>
+  <text x="50" y="390" text-anchor="middle" font-family="Arial" font-size="14">Virus</text>
+  
+  <!-- NS5 protein -->
+  <rect x="180" y="320" width="60" height="30" rx="5" fill="#ff9999" stroke="#333"/>
+  <text x="210" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">NS5</text>
+  <text x="210" y="355" text-anchor="middle" font-family="Arial" font-size="12">(Q32ZE1)</text>
+  
+  <!-- ZSWIM8 -->
+  <rect x="350" y="250" width="70" height="30" rx="5" fill="#99ccff" stroke="#333"/>
+  <text x="385" y="270" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">ZSWIM8</text>
+  <text x="385" y="285" text-anchor="middle" font-family="Arial" font-size="12">(A7E2V4)</text>
+  
+  <!-- CUL3 -->
+  <rect x="450" y="250" width="60" height="30" rx="5" fill="#ffcc99" stroke="#333"/>
+  <text x="480" y="270" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">CUL3</text>
+  <text x="480" y="285" text-anchor="middle" font-family="Arial" font-size="12">(Q13618)</text>
+  
+  <!-- STAT2 -->
+  <rect x="350" y="320" width="60" height="30" rx="5" fill="#99ff99" stroke="#333"/>
+  <text x="380" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">STAT2</text>
+  <text x="380" y="355" text-anchor="middle" font-family="Arial" font-size="12">(P52630)</text>
+  
+  <!-- Proteasome -->
+  <rect x="500" y="320" width="90" height="30" rx="15" fill="#dddddd" stroke="#333"/>
+  <text x="545" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Proteasome</text>
+  
+  <!-- Nuclear STAT2 (inactive due to pathway) -->
+  <rect x="280" y="440" width="60" height="30" rx="5" fill="#99ff99" stroke="#333" opacity="0.3" stroke-dasharray="5,2"/>
+  <text x="310" y="460" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">STAT2</text>
+  <text x="310" y="475" text-anchor="middle" font-family="Arial" font-size="12">(P52630)</text>
+  
+  <!-- DNA -->
+  <path d="M240,440 Q310,420 380,440" stroke="#333" stroke-width="2" fill="none"/>
+  <text x="310" y="415" text-anchor="middle" font-family="Arial" font-size="14">DNA</text>
+  
+  <!-- Interaction arrows -->
+  <line x1="240" y1="335" x2="345" y2="335" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="385" y1="280" x2="385" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="265" x2="420" y2="265" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="410" y1="335" x2="495" y2="335" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Blocked nuclear translocation -->
+  <path d="M380,350 Q380,390 380,435" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="365" y1="400" x2="395" y2="400" stroke="red" stroke-width="3"/>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Ubiquitin tags -->
+  <circle cx="395" cy="315" r="7" fill="#ffcc00" stroke="#333"/>
+  <text x="395" y="305" text-anchor="middle" font-family="Arial" font-size="12">Ub</text>
+  <circle cx="405" cy="325" r="7" fill="#ffcc00" stroke="#333"/>
+  <text x="415" y="325" text-anchor="middle" font-family="Arial" font-size="12">Ub</text>
+  
+  <!-- Process labels (repositioned to avoid overlaps) -->
+  <text x="290" y="315" text-anchor="middle" font-family="Arial" font-size="13" font-style="italic">adaptor activity</text>
+  <text x="425" y="300" text-anchor="middle" font-family="Arial" font-size="13" font-style="italic">ubiquitination</text>
+  <text x="455" y="360" text-anchor="middle" font-family="Arial" font-size="13" font-style="italic">degradation</text>
+  <text x="435" y="400" text-anchor="middle" font-family="Arial" font-size="13" font-style="italic">blocked translocation</text>
+  
+  <!-- Pathway labels -->
+  <text x="310" y="500" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Type I interferon-mediated</text>
+  <text x="310" y="520" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">signaling pathway</text>
+  <text x="310" y="540" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">(Inhibited)</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Zika virus NS5 inhibition of STAT2 signaling via ZSWIM8</text>
+  <text x="400" y="60" text-anchor="middle" font-family="Arial" font-size="18" font-style="italic">Mechanism of viral suppression of host interferon response</text>
+  
+  <!-- Explanatory annotations -->
+  <text x="240" y="295" text-anchor="middle" font-family="Arial" font-size="13">1. NS5 recruits</text>
+  <text x="420" y="230" text-anchor="middle" font-family="Arial" font-size="13">2. CUL3 scaffolds</text>
+  <text x="385" y="385" text-anchor="middle" font-family="Arial" font-size="13">3. STAT2 degraded</text>
+  <text x="250" y="450" text-anchor="middle" font-family="Arial" font-size="13">4. IFN response</text>
+  <text x="250" y="465" text-anchor="middle" font-family="Arial" font-size="13">inhibited</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="560" width="700" height="80" fill="#f8f8f8" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="400" y="575" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="70" y="585" width="15" height="15" fill="#ff9999" stroke="#333"/>
+  <text x="95" y="598" text-anchor="start" font-family="Arial" font-size="14">Viral protein</text>
+  
+  <rect x="170" y="585" width="15" height="15" fill="#99ccff" stroke="#333"/>
+  <text x="195" y="598" text-anchor="start" font-family="Arial" font-size="14">E3 ubiquitin ligase adaptor</text>
+  
+  <rect x="345" y="585" width="15" height="15" fill="#ffcc99" stroke="#333"/>
+  <text x="370" y="598" text-anchor="start" font-family="Arial" font-size="14">Scaffold protein</text>
+  
+  <rect x="470" y="585" width="15" height="15" fill="#99ff99" stroke="#333"/>
+  <text x="495" y="598" text-anchor="start" font-family="Arial" font-size="14">Transcription factor</text>
+  
+  <line x1="550" y1="590" x2="580" y2="590" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="610" y="598" text-anchor="start" font-family="Arial" font-size="14">Interaction</text>
+  
+  <line x1="550" y1="615" x2="580" y2="615" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="610" y="618" text-anchor="start" font-family="Arial" font-size="14">Blocked pathway</text>
+  
+  <circle cx="70" cy="615" r="7" fill="#ffcc00" stroke="#333"/>
+  <text x="95" y="618" text-anchor="start" font-family="Arial" font-size="14">Ubiquitin tag</text>
+  
+  <line x1="170" y1="615" x2="190" y2="615" stroke="red" stroke-width="3"/>
+  <text x="205" y="618" text-anchor="start" font-family="Arial" font-size="14">Inhibition</text>
+</svg>

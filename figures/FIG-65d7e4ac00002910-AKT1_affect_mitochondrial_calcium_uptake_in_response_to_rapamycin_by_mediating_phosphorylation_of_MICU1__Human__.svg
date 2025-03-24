@@ -1,0 +1,106 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Cell -->
+  <rect width="800" height="600" fill="#f9f9f9" stroke="#ccc" stroke-width="1"/>
+  <text x="40" y="30" font-family="Arial" font-size="20" font-weight="bold">AKT1 Regulation of Mitochondrial Calcium Uptake</text>
+  
+  <!-- Cytosol -->
+  <rect x="20" y="70" width="760" height="510" fill="#e6f7ff" rx="10" ry="10" stroke="#aaa" stroke-width="1"/>
+  <text x="40" y="95" font-family="Arial" font-size="18" font-weight="bold">Cytosol</text>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="400" cy="300" rx="340" ry="170" fill="#ffedb3" stroke="#555" stroke-width="2"/>
+  <text x="400" y="140" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Mitochondrion</text>
+  
+  <!-- Mitochondrial inner membrane -->
+  <ellipse cx="400" cy="300" rx="300" ry="140" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="400" y="170" font-family="Arial" font-size="16" text-anchor="middle">Mitochondrial inner membrane</text>
+  
+  <!-- Mitochondrial matrix -->
+  <ellipse cx="400" cy="300" rx="295" ry="135" fill="#ffd9b3" stroke="none"/>
+  <text x="400" y="300" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Mitochondrial matrix</text>
+  
+  <!-- Intermembrane space -->
+  <text x="540" y="220" font-family="Arial" font-size="16" text-anchor="middle">Intermembrane space</text>
+  
+  <!-- AKT1 in the intermembrane space -->
+  <circle cx="250" cy="220" r="30" fill="#66cc99" stroke="#008855" stroke-width="2"/>
+  <text x="250" y="225" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">AKT1</text>
+  
+  <!-- MICU1 -->
+  <rect x="340" y="160" width="60" height="30" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="370" y="180" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">MICU1</text>
+  
+  <!-- MICU2 -->
+  <rect x="420" y="160" width="60" height="30" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="450" y="180" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">MICU2</text>
+  
+  <!-- MCU -->
+  <rect x="380" y="160" width="40" height="60" fill="#9999ff" stroke="#0000cc" stroke-width="2"/>
+  <text x="400" y="240" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">MCU</text>
+  
+  <!-- Calcium ions -->
+  <circle cx="300" cy="120" r="10" fill="#ffcc00" stroke="#996600" stroke-width="1"/>
+  <text x="300" y="124" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Ca²⁺</text>
+  <circle cx="340" cy="100" r="10" fill="#ffcc00" stroke="#996600" stroke-width="1"/>
+  <text x="340" y="104" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Ca²⁺</text>
+  <circle cx="400" cy="80" r="10" fill="#ffcc00" stroke="#996600" stroke-width="1"/>
+  <text x="400" y="84" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Ca²⁺</text>
+  
+  <!-- Calcium movement arrows -->
+  <path d="M 330 110 L 380 160" stroke="#996600" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <path d="M 400 220 L 400 260" stroke="#996600" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Enhanced Phosphorylation arrows -->
+  <path d="M 280 220 L 330 180" stroke="#008855" stroke-width="3" marker-end="url(#phosphoArrow)"/>
+  
+  <!-- Phosphate group visualization -->
+  <circle cx="310" cy="190" r="12" fill="#ffff00" stroke="#008855" stroke-width="2"/>
+  <text x="310" y="195" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">P</text>
+  
+  <!-- Adding phosphorylation label -->
+  <text x="295" y="170" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#008855">Phosphorylation</text>
+  
+  <!-- Regulatory arrows -->
+  <path d="M 350 190 L 380 190" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="2,2"/>
+  <text x="360" y="205" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">-</text>
+  
+  <path d="M 440 190 L 410 190" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="2,2"/>
+  <text x="420" y="205" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">-</text>
+  
+  <!-- Rapamycin -->
+  <rect x="100" y="130" width="90" height="30" fill="#ccccff" stroke="#6666cc" stroke-width="2" rx="15" ry="15"/>
+  <text x="145" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">Rapamycin</text>
+  
+  <!-- Rapamycin effect -->
+  <path d="M 190 130 C 210 100, 230 120, 240 200" stroke="#6666cc" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="4,2"/>
+  
+  <!-- Define arrowhead markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+    <marker id="phosphoArrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#008855"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="580" y="420" width="180" height="140" fill="#ffffff" stroke="#aaa" stroke-width="1"/>
+  <text x="670" y="440" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="600" y="460" r="10" fill="#66cc99" stroke="#008855" stroke-width="2"/>
+  <text x="670" y="465" font-family="Arial" font-size="14" text-anchor="middle">AKT1 (Protein Kinase)</text>
+  
+  <rect x="590" y="480" width="20" height="15" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="3" ry="3"/>
+  <text x="670" y="490" font-family="Arial" font-size="14" text-anchor="middle">MICU1/2 (Ca²⁺ sensors)</text>
+  
+  <rect x="590" y="500" width="10" height="20" fill="#9999ff" stroke="#0000cc" stroke-width="2"/>
+  <text x="670" y="515" font-family="Arial" font-size="14" text-anchor="middle">MCU (Ca²⁺ channel)</text>
+  
+  <circle cx="600" y="530" r="8" fill="#ffcc00" stroke="#996600" stroke-width="1"/>
+  <text x="670" y="535" font-family="Arial" font-size="14" text-anchor="middle">Calcium ions (Ca²⁺)</text>
+  
+  <circle cx="600" y="550" r="8" fill="#ffff00" stroke="#008855" stroke-width="2"/>
+  <text x="670" y="555" font-family="Arial" font-size="14" text-anchor="middle">Phosphorylation</text>
+</svg>

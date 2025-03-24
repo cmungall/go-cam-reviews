@@ -1,0 +1,100 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background layers -->
+  <!-- Extracellular space -->
+  <rect x="0" y="0" width="800" height="200" fill="#e6f7ff" opacity="0.5"/>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#333">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="0" y="200" width="800" height="50" fill="#ffcc99" opacity="0.6"/>
+  <text x="20" y="230" font-family="Arial" font-size="14" fill="#333">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Cytosol -->
+  <rect x="0" y="250" width="800" height="350" fill="#e6ffe6" opacity="0.5"/>
+  <text x="20" y="270" font-family="Arial" font-size="14" fill="#333">Cytosol (GO:0005829)</text>
+
+  <!-- IAPP (Amylin) in extracellular space -->
+  <circle cx="300" cy="100" r="30" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="300" y="105" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">IAPP</text>
+  <text x="300" y="120" font-family="Arial" font-size="9" text-anchor="middle" fill="#333">(P10997)</text>
+  
+  <!-- Function annotation for IAPP -->
+  <rect x="380" y="80" width="200" height="40" rx="5" ry="5" fill="white" stroke="#999" stroke-width="1"/>
+  <text x="390" y="100" font-family="Arial" font-size="11" fill="#333">Hormone activity (GO:0005179)</text>
+  <text x="390" y="115" font-family="Arial" font-size="11" fill="#333">Amylin hormone</text>
+  
+  <!-- CALCR receptor in plasma membrane -->
+  <rect x="280" y="190" width="40" height="70" rx="5" ry="5" fill="#9999ff" stroke="#0000cc" stroke-width="2"/>
+  <text x="300" y="215" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">CALCR</text>
+  <text x="300" y="230" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">(P30988)</text>
+  
+  <!-- Function annotation for CALCR -->
+  <rect x="380" y="200" width="230" height="40" rx="5" ry="5" fill="white" stroke="#999" stroke-width="1"/>
+  <text x="390" y="220" font-family="Arial" font-size="11" fill="#333">Amylin receptor activity (GO:0097643)</text>
+  <text x="390" y="235" font-family="Arial" font-size="11" fill="#333">Calcitonin receptor</text>
+  
+  <!-- G-protein (GNAS) -->
+  <circle cx="300" cy="320" r="30" fill="#99cc99" stroke="#006600" stroke-width="2"/>
+  <text x="300" y="320" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">GNAS</text>
+  <text x="300" y="335" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">(Q5JWF2)</text>
+  
+  <!-- Function annotation for GNAS -->
+  <rect x="380" y="300" width="230" height="40" rx="5" ry="5" fill="white" stroke="#999" stroke-width="1"/>
+  <text x="390" y="320" font-family="Arial" font-size="11" fill="#333">G protein activity (GO:0003925)</text>
+  <text x="390" y="335" font-family="Arial" font-size="11" fill="#333">G protein subunit alpha</text>
+  
+  <!-- Adenylate cyclase (ADCY6) -->
+  <polygon points="300,390 330,420 300,450 270,420" fill="#ffff99" stroke="#999900" stroke-width="2"/>
+  <text x="300" y="425" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">ADCY6</text>
+  <text x="300" y="440" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">(O43306)</text>
+  
+  <!-- Function annotation for ADCY6 -->
+  <rect x="380" y="400" width="230" height="40" rx="5" ry="5" fill="white" stroke="#999" stroke-width="1"/>
+  <text x="390" y="420" font-family="Arial" font-size="11" fill="#333">Adenylate cyclase activity (GO:0004016)</text>
+  <text x="390" y="435" font-family="Arial" font-size="11" fill="#333">Adenylyl cyclase 6</text>
+  
+  <!-- cAMP product -->
+  <circle cx="300" cy="510" r="25" fill="#ff99cc" stroke="#cc0066" stroke-width="2"/>
+  <text x="300" y="515" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">cAMP</text>
+  
+  <!-- Function annotation for cAMP -->
+  <rect x="380" y="490" width="230" height="40" rx="5" ry="5" fill="white" stroke="#999" stroke-width="1"/>
+  <text x="390" y="510" font-family="Arial" font-size="11" fill="#333">3',5'-cyclic AMP (CHEBI:17489)</text>
+  <text x="390" y="525" font-family="Arial" font-size="11" fill="#333">Secondary messenger</text>
+  
+  <!-- Arrows for pathway with labels -->
+  <!-- IAPP to CALCR -->
+  <path d="M 300,130 L 300,190" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="310" y="160" font-family="Arial" font-size="10" fill="#333">Binding</text>
+  
+  <!-- CALCR to GNAS -->
+  <path d="M 300,260 L 300,290" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="310" y="275" font-family="Arial" font-size="10" fill="#333">Activation</text>
+  
+  <!-- GNAS to ADCY6 -->
+  <path d="M 300,350 L 300,390" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="310" y="370" font-family="Arial" font-size="10" fill="#333">Activates</text>
+  
+  <!-- ADCY6 to cAMP -->
+  <path d="M 300,450 L 300,485" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="310" y="470" font-family="Arial" font-size="10" fill="#333">Produces</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Process labels -->
+  <rect x="50" y="140" width="170" height="40" rx="5" ry="5" fill="#ffffcc" stroke="#999" stroke-width="1"/>
+  <text x="60" y="160" font-family="Arial" font-size="11" fill="#333">Amylin Receptor Signaling</text>
+  <text x="60" y="175" font-family="Arial" font-size="11" fill="#333">(GO:0097647)</text>
+  
+  <rect x="50" y="350" width="200" height="60" rx="5" ry="5" fill="#ffffcc" stroke="#999" stroke-width="1"/>
+  <text x="60" y="370" font-family="Arial" font-size="11" fill="#333">Adenylate Cyclase-Activating</text>
+  <text x="60" y="385" font-family="Arial" font-size="11" fill="#333">G Protein-Coupled Receptor</text>
+  <text x="60" y="400" font-family="Arial" font-size="11" fill="#333">Signaling Pathway (GO:0007189)</text>
+  
+  <!-- Title -->
+  <text x="400" y="570" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Signaling by Amylin mediated by IAPP ligand activating CALCR receptor (Human)</text>
+</svg>

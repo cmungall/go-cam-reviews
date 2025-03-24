@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="100" ry="100" fill="#f8f9fa" stroke="#2c3e50" stroke-width="2" opacity="0.8" />
+  
+  <!-- Cytosol background -->
+  <rect x="70" y="70" width="660" height="460" rx="90" ry="90" fill="#e3f2fd" stroke="none" opacity="0.5" />
+  <text x="110" y="120" font-family="Arial" font-size="16" font-weight="bold" fill="#34495e">Cytosol (GO:0005829)</text>
+  
+  <!-- Membraneless organelle -->
+  <ellipse cx="250" cy="240" rx="110" ry="70" fill="#d1c4e9" stroke="#673ab7" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7" />
+  <text x="250" y="220" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#34495e">Intracellular membraneless organelle</text>
+  <text x="250" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="#34495e">(GO:0043232)</text>
+  
+  <!-- Autophagosome -->
+  <ellipse cx="570" cy="300" rx="130" ry="90" fill="#c8e6c9" stroke="#4caf50" stroke-width="2" opacity="0.7" />
+  <text x="570" y="280" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#34495e">Autophagosome</text>
+  <text x="570" y="300" font-family="Arial" font-size="14" text-anchor="middle" fill="#34495e">(GO:0005776)</text>
+  
+  <!-- CK2 (CSNK2A1) -->
+  <circle cx="150" cy="400" r="35" fill="#ffcc80" stroke="#ff9800" stroke-width="2" />
+  <text x="150" y="395" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#34495e">CK2</text>
+  <text x="150" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">(CSNK2A1)</text>
+  
+  <!-- SQSTM1 in cytosol (initial state) -->
+  <rect x="250" y="400" width="70" height="35" rx="5" ry="5" fill="#90caf9" stroke="#1976d2" stroke-width="2" />
+  <text x="285" y="422" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#34495e">SQSTM1</text>
+  
+  <!-- SQSTM1 in membraneless organelle -->
+  <rect x="215" y="240" width="70" height="35" rx="5" ry="5" fill="#90caf9" stroke="#1976d2" stroke-width="2" />
+  <text x="250" y="262" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#34495e">SQSTM1</text>
+  
+  <!-- SQSTM1 in autophagosome -->
+  <rect x="535" y="320" width="70" height="35" rx="5" ry="5" fill="#90caf9" stroke="#1976d2" stroke-width="2" />
+  <text x="570" y="342" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#34495e">SQSTM1</text>
+  
+  <!-- Ubiquitinated protein aggregates -->
+  <g transform="translate(410, 350)">
+    <circle cx="0" cy="0" r="30" fill="#ffcdd2" stroke="#e57373" stroke-width="1.5" />
+    <circle cx="15" cy="-15" r="20" fill="#ffcdd2" stroke="#e57373" stroke-width="1.5" />
+    <circle cx="-15" cy="15" r="15" fill="#ffcdd2" stroke="#e57373" stroke-width="1.5" />
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#34495e">Ub-protein</text>
+    <text x="0" y="18" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#34495e">aggregates</text>
+  </g>
+  
+  <!-- Process arrows -->
+  <!-- Phosphorylation -->
+  <line x1="190" y1="400" x2="240" y2="400" stroke="#34495e" stroke-width="2.5" marker-end="url(#arrow)" />
+  <rect x="190" y="365" width="50" height="30" rx="5" ry="5" fill="white" stroke="#34495e" stroke-width="1" />
+  <text x="215" y="385" font-family="Arial" font-size="14" text-anchor="middle" fill="#34495e">①</text>
+  
+  <!-- SQSTM1 to membraneless organelle -->
+  <path d="M285 395 Q 315 320 275 280" stroke="#34495e" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <rect x="325" y="330" width="50" height="30" rx="5" ry="5" fill="white" stroke="#34495e" stroke-width="1" />
+  <text x="350" y="350" font-family="Arial" font-size="14" text-anchor="middle" fill="#34495e">②</text>
+  
+  <!-- SQSTM1 recognizing ubiquitinated proteins -->
+  <path d="M330 400 Q 360 380 405 365" stroke="#34495e" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <rect x="360" y="390" width="50" height="30" rx="5" ry="5" fill="white" stroke="#34495e" stroke-width="1" />
+  <text x="385" y="410" font-family="Arial" font-size="14" text-anchor="middle" fill="#34495e">③</text>
+  
+  <!-- SQSTM1+aggregates to autophagosome -->
+  <path d="M450 350 Q 490 335 525 330" stroke="#34495e" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <rect x="475" y="300" width="50" height="30" rx="5" ry="5" fill="white" stroke="#34495e" stroke-width="1" />
+  <text x="500" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="#34495e">④</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#34495e" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">Regulation of Aggrephagy via Phosphorylation of SQSTM1 by CK2</text>
+  
+  <!-- Process labels at bottom (legend) -->
+  <rect x="50" y="570" width="700" height="110" rx="5" ry="5" fill="#f5f5f5" stroke="#34495e" stroke-width="1" />
+  
+  <text x="400" y="590" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#34495e">LEGEND</text>
+  
+  <text x="70" y="615" font-family="Arial" font-size="14" text-anchor="start" fill="#34495e">① CK2 phosphorylates SQSTM1 (GO:0004674)</text>
+  <text x="450" y="615" font-family="Arial" font-size="14" text-anchor="start" fill="#34495e">Positive regulation of aggrephagy (GO:1905337)</text>
+  
+  <text x="70" y="640" font-family="Arial" font-size="14" text-anchor="start" fill="#34495e">② SQSTM1 molecular condensate scaffold activity (GO:0140693)</text>
+  <text x="450" y="640" font-family="Arial" font-size="14" text-anchor="start" fill="#34495e">Membraneless organelle assembly (GO:0140694)</text>
+  
+  <text x="70" y="665" font-family="Arial" font-size="14" text-anchor="start" fill="#34495e">③ SQSTM1 ubiquitin-modified protein reader activity (GO:0140036)</text>
+  <text x="450" y="665" font-family="Arial" font-size="14" text-anchor="start" fill="#34495e">Aggrephagy (GO:0035973)</text>
+  
+  <text x="70" y="690" font-family="Arial" font-size="14" text-anchor="start" fill="#34495e">④ SQSTM1 protein-macromolecule adaptor activity (GO:0030674)</text>
+  <text x="450" y="690" font-family="Arial" font-size="14" text-anchor="start" fill="#34495e">Protein targeting to vacuole in autophagy (GO:0071211)</text>
+</svg>

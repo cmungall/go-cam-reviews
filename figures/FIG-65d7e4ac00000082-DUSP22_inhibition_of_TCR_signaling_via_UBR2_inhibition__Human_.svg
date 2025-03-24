@@ -1,0 +1,106 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline with membrane and cytoplasm -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f0f9ff" stroke="#333" stroke-width="3"/>
+  <rect x="50" y="50" width="700" height="40" rx="50" ry="50" fill="#a8d0e6" stroke="#333" stroke-width="3"/>
+  <text x="60" y="80" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Plasma Membrane</text>
+  
+  <text x="400" y="35" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">DUSP22 Inhibition of TCR Signaling via UBR2 Inhibition</text>
+  
+  <!-- DUSP22 at plasma membrane -->
+  <circle cx="200" cy="120" r="40" fill="#ffcccb" stroke="#333" stroke-width="2"/>
+  <text x="200" y="125" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">DUSP22</text>
+  <text x="200" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Q9NRW4)</text>
+  
+  <!-- LCK at plasma membrane -->
+  <circle cx="550" cy="120" r="40" fill="#c6e2ff" stroke="#333" stroke-width="2"/>
+  <text x="550" y="125" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">LCK</text>
+  <text x="550" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(P06239)</text>
+  
+  <!-- BTRC in cytoplasm -->
+  <rect x="150" y="250" width="100" height="60" rx="10" ry="10" fill="#d1ffd1" stroke="#333" stroke-width="2"/>
+  <text x="200" y="285" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">BTRC</text>
+  <text x="200" y="305" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Q9Y297)</text>
+  
+  <!-- UBR2 in cytoplasm -->
+  <rect x="350" y="350" width="100" height="60" rx="10" ry="10" fill="#ffe0b2" stroke="#333" stroke-width="2"/>
+  <text x="400" y="385" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">UBR2</text>
+  <text x="400" y="405" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Q8IWV8)</text>
+  
+  <!-- Activity labels -->
+  <rect x="350" y="250" width="140" height="50" rx="10" ry="10" fill="#ffffff" stroke="#999" stroke-width="1" stroke-dasharray="5,2"/>
+  <text x="420" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Ubiquitin-like ligase-</text>
+  <text x="420" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">substrate adaptor activity</text>
+  
+  <rect x="550" y="190" width="140" height="40" rx="10" ry="10" fill="#ffffff" stroke="#999" stroke-width="1" stroke-dasharray="5,2"/>
+  <text x="620" y="215" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Protein tyrosine kinase activity</text>
+  
+  <rect x="30" y="190" width="140" height="40" rx="10" ry="10" fill="#ffffff" stroke="#999" stroke-width="1" stroke-dasharray="5,2"/>
+  <text x="100" y="215" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Phosphatase activity</text>
+  
+  <rect x="450" y="430" width="140" height="40" rx="10" ry="10" fill="#ffffff" stroke="#999" stroke-width="1" stroke-dasharray="5,2"/>
+  <text x="520" y="455" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Ubiquitin protein ligase activity</text>
+
+  <!-- Process labels -->
+  <rect x="200" y="450" width="140" height="40" rx="10" ry="10" fill="#fffde7" stroke="#999" stroke-width="1"/>
+  <text x="270" y="475" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">K48-linked ubiquitination</text>
+  
+  <rect x="550" y="350" width="140" height="40" rx="10" ry="10" fill="#fffde7" stroke="#999" stroke-width="1"/>
+  <text x="620" y="375" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">K63-linked ubiquitination</text>
+  
+  <rect x="550" y="250" width="140" height="40" rx="10" ry="10" fill="#fffde7" stroke="#999" stroke-width="1"/>
+  <text x="620" y="270" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">TCR signaling</text>
+  <text x="620" y="285" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">pathway</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="100" y="400" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Cytoplasm</text>
+
+  <!-- Markers for arrow ends -->
+  <defs>
+    <marker id="inhibition-marker" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff0000" stroke-width="2"/>
+    </marker>
+    <marker id="activity-marker" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0066cc"/>
+    </marker>
+    <marker id="process-marker" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#006600"/>
+    </marker>
+  </defs>
+  
+  <!-- Interactions (arrows) -->
+  <!-- DUSP22 inhibits BTRC -->
+  <path d="M200,160 Q200,200 200,250" fill="none" stroke="#ff0000" stroke-width="2.5" marker-end="url(#inhibition-marker)"/>
+  <text x="170" y="205" font-family="Arial" font-size="14" fill="#333" font-weight="bold">inhibits</text>
+  
+  <!-- BTRC inhibits UBR2 -->
+  <path d="M250,280 Q325,315 350,370" fill="none" stroke="#ff0000" stroke-width="2.5" marker-end="url(#inhibition-marker)"/>
+  <text x="300" y="320" font-family="Arial" font-size="14" fill="#333" font-weight="bold">inhibits</text>
+  
+  <!-- UBR2 inhibits LCK -->
+  <path d="M450,350 Q500,250 550,160" fill="none" stroke="#ff0000" stroke-width="2.5" marker-end="url(#inhibition-marker)"/>
+  <text x="505" y="275" font-family="Arial" font-size="14" fill="#333" font-weight="bold">inhibits</text>
+  
+  <!-- Connect activities to proteins with colored dotted lines -->
+  <path d="M200,160 L100,190" fill="none" stroke="#0066cc" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#activity-marker)"/>
+  <path d="M550,160 L620,190" fill="none" stroke="#0066cc" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#activity-marker)"/>
+  <path d="M250,280 L350,275" fill="none" stroke="#0066cc" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#activity-marker)"/>
+  <path d="M400,410 L520,430" fill="none" stroke="#0066cc" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#activity-marker)"/>
+  
+  <!-- Connect processes to proteins with green dotted lines -->
+  <path d="M200,310 L270,450" fill="none" stroke="#006600" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#process-marker)"/>
+  <path d="M450,380 L550,370" fill="none" stroke="#006600" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#process-marker)"/>
+  <path d="M550,160 L620,250" fill="none" stroke="#006600" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#process-marker)"/>
+
+  <!-- Legend -->
+  <rect x="600" y="450" width="130" height="90" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="665" y="470" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <line x1="610" y1="485" x2="640" y2="485" stroke="#ff0000" stroke-width="2.5" marker-end="url(#inhibition-marker)"/>
+  <text x="680" y="490" font-family="Arial" font-size="14" fill="#333">Inhibition</text>
+  
+  <line x1="610" y1="510" x2="640" y2="510" stroke="#0066cc" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#activity-marker)"/>
+  <text x="680" y="515" font-family="Arial" font-size="14" fill="#333">Activity</text>
+  
+  <line x1="610" y1="535" x2="640" y2="535" stroke="#006600" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#process-marker)"/>
+  <text x="680" y="540" font-family="Arial" font-size="14" fill="#333">Process</text>
+</svg>

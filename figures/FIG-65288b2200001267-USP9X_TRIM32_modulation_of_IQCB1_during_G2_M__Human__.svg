@@ -1,0 +1,78 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f9f9f9" stroke="#666" stroke-width="2"/>
+  
+  <!-- Cell components -->
+  <!-- Cytoplasm label -->
+  <text x="400" y="170" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Centrosome -->
+  <circle cx="400" cy="320" r="100" fill="#e6f7ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="250" font-family="Arial" font-size="18" text-anchor="middle" fill="#0066cc">Centrosome (GO:0005813)</text>
+  
+  <!-- Cilium (implied, not in source) -->
+  <path d="M 400,220 Q 400,150 400,80" stroke="#999" stroke-width="3" stroke-dasharray="5,5" fill="none"/>
+  <text x="425" y="130" font-family="Arial" font-size="16" font-style="italic" text-anchor="start" fill="#999">Cilium (implied)</text>
+  
+  <!-- Proteins and interactions -->
+  <!-- USP9X in cytoplasm -->
+  <rect x="200" y="350" width="80" height="40" rx="10" fill="#ffcccc" stroke="#cc0000" stroke-width="2"/>
+  <text x="240" y="375" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">USP9X</text>
+  
+  <!-- MARCHF7 in centrosome -->
+  <rect x="350" y="350" width="80" height="40" rx="10" fill="#ccffcc" stroke="#00cc00" stroke-width="2"/>
+  <text x="390" y="375" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">MARCHF7</text>
+  
+  <!-- TRIM32 in centrosome -->
+  <rect x="450" y="350" width="80" height="40" rx="10" fill="#ccffcc" stroke="#00cc00" stroke-width="2"/>
+  <text x="490" y="375" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">TRIM32</text>
+  
+  <!-- IQCB1 in centrosome -->
+  <rect x="400" y="280" width="80" height="40" rx="10" fill="#cce6ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="440" y="305" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">IQCB1</text>
+  
+  <!-- Interaction arrows -->
+  <!-- USP9X -> MARCHF7 (molecular sequestering) -->
+  <path d="M 280,370 L 350,370" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="315" y="360" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">molecular sequestering</text>
+  
+  <!-- MARCHF7 -> IQCB1 (ubiquitin ligase) -->
+  <path d="M 390,350 L 420,320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="370" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">ubiquitin</text>
+  <text x="370" y="345" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">ligase</text>
+  
+  <!-- TRIM32 -> IQCB1 (ubiquitin ligase) -->
+  <path d="M 490,350 L 460,320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="500" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">ubiquitin</text>
+  <text x="500" y="345" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">ligase</text>
+  
+  <!-- IQCB1 to cilium formation -->
+  <path d="M 440,280 L 440,220" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="480" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">adaptor activity</text>
+  
+  <!-- Process labels -->
+  <text x="600" y="250" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Cilium Assembly</text>
+  <text x="600" y="270" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">(GO:0060271)</text>
+  
+  <text x="600" y="320" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Negative Regulation of</text>
+  <text x="600" y="340" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Cilium Assembly</text>
+  <text x="600" y="360" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">(GO:1902018)</text>
+  
+  <text x="400" y="430" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">G2-M Phase</text>
+  
+  <!-- Cell cycle indicator (implied, not in source) -->
+  <circle cx="700" cy="430" r="40" fill="none" stroke="#666" stroke-width="2"/>
+  <path d="M 700,430 L 700,400" stroke="#666" stroke-width="2"/>
+  <path d="M 700,430 L 725,445" stroke="#666" stroke-width="2" fill="#666"/>
+  <text x="700" y="480" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle" fill="#999">Cell cycle (implied)</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#000">USP9X-TRIM32 Modulation of IQCB1 during G2-M Phase</text>
+</svg>

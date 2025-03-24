@@ -1,0 +1,110 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell components -->
+  <rect x="0" y="0" width="800" height="600" fill="#ffffff" stroke="none"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Signaling by Calcitonin/CGRP via CALCR-RAMP1 Receptor Complex</text>
+  
+  <!-- Cell membrane -->
+  <path d="M 50,150 H 750 Q 760,150 760,160 V 500 Q 760,510 750,510 H 50 Q 40,510 40,500 V 160 Q 40,150 50,150 Z" fill="#f8f8f8" stroke="#333333" stroke-width="2"/>
+  <path d="M 40,160 H 760" stroke="#333333" stroke-width="4" stroke-dasharray="5,5"/>
+  
+  <!-- Extracellular space label -->
+  <text x="70" y="130" font-family="Arial" font-size="16" font-style="italic">Extracellular space (GO:0005615)</text>
+  
+  <!-- Cytosol label -->
+  <text x="70" y="180" font-family="Arial" font-size="16" font-style="italic">Cytosol (GO:0005829)</text>
+  
+  <!-- CALCA Ligand -->
+  <circle cx="200" cy="100" r="30" fill="#ff9999" stroke="#333333" stroke-width="2"/>
+  <text x="200" y="100" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CALCA</text>
+  <text x="200" y="118" font-family="Arial" font-size="11" text-anchor="middle">P06881-1</text>
+  <text x="200" y="70" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Hormone activity</text>
+  
+  <!-- Receptor complex in membrane -->
+  <rect x="280" y="140" width="120" height="40" fill="#99ccff" stroke="#333333" stroke-width="2" rx="5"/>
+  <text x="340" y="163" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CALCR-RAMP1</text>
+  <text x="340" y="180" font-family="Arial" font-size="11" text-anchor="middle">P30988 + O60894</text>
+  
+  <!-- CALCR detail -->
+  <rect x="280" y="100" width="60" height="20" fill="#99ccff" stroke="#333333" stroke-width="1" rx="3"/>
+  <text x="310" y="114" font-family="Arial" font-size="12" text-anchor="middle">CALCR</text>
+  
+  <!-- RAMP1 detail -->
+  <rect x="340" y="100" width="60" height="20" fill="#99ccff" stroke="#333333" stroke-width="1" rx="3"/>
+  <text x="370" y="114" font-family="Arial" font-size="12" text-anchor="middle">RAMP1</text>
+  
+  <!-- G protein (GNAS) -->
+  <polygon points="340,220 310,250 340,280 370,250" fill="#99ff99" stroke="#333333" stroke-width="2"/>
+  <text x="340" y="253" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">GNAS</text>
+  <text x="340" y="270" font-family="Arial" font-size="11" text-anchor="middle">Q5JWF2</text>
+  
+  <!-- Adenylate cyclase (ADCY6) -->
+  <rect x="280" y="320" width="120" height="40" fill="#ffcc99" stroke="#333333" stroke-width="2" rx="10"/>
+  <text x="340" y="340" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ADCY6</text>
+  <text x="340" y="357" font-family="Arial" font-size="11" text-anchor="middle">O43306</text>
+  
+  <!-- Cyclic AMP -->
+  <ellipse cx="340" cy="420" rx="35" ry="22" fill="#ffff99" stroke="#333333" stroke-width="2"/>
+  <text x="340" y="425" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">cAMP</text>
+  
+  <!-- Define arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+  
+  <!-- CALCA to receptor arrow -->
+  <line x1="225" y1="110" x2="275" y2="140" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Receptor to G protein arrow -->
+  <line x1="340" y1="180" x2="340" y2="215" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- G protein to adenylate cyclase arrow -->
+  <line x1="340" y1="280" x2="340" y2="315" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Adenylate cyclase to cAMP arrow -->
+  <line x1="340" y1="360" x2="340" y2="395" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- GO Process labels -->
+  <rect x="500" y="180" width="220" height="50" fill="#f0f0f0" stroke="#333333" stroke-width="1" rx="5"/>
+  <text x="610" y="200" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Amylin receptor 1 signaling pathway</text>
+  <text x="610" y="218" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0150059)</text>
+  
+  <rect x="500" y="250" width="220" height="60" fill="#f0f0f0" stroke="#333333" stroke-width="1" rx="5"/>
+  <text x="610" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Adenylate cyclase-activating GPCR</text>
+  <text x="610" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">signaling pathway</text>
+  <text x="610" y="305" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">(GO:0007189)</text>
+  
+  <!-- Connection lines to processes -->
+  <path d="M 370,160 Q 450,160 500,190" stroke="#333333" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <path d="M 370,250 Q 450,250 500,270" stroke="#333333" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- Function labels -->
+  <text x="425" y="130" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Coreceptor activity</text>
+  <text x="425" y="145" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0015026)</text>
+  
+  <text x="250" y="245" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">G protein activity</text>
+  <text x="250" y="260" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0003925)</text>
+  
+  <text x="450" y="330" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Adenylate cyclase activity</text>
+  <text x="450" y="345" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">(GO:0004016)</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="350" width="170" height="130" fill="#ffffff" stroke="#333333" stroke-width="1" rx="5"/>
+  <text x="665" y="370" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="600" y="390" r="8" fill="#ff9999" stroke="#333333" stroke-width="1"/>
+  <text x="650" y="395" font-family="Arial" font-size="12" text-anchor="start">Hormone</text>
+  
+  <rect x="592" y="405" width="16" height="16" fill="#99ccff" stroke="#333333" stroke-width="1" rx="2"/>
+  <text x="650" y="418" font-family="Arial" font-size="12" text-anchor="start">Receptor</text>
+  
+  <polygon points="600,435 592,443 600,451 608,443" fill="#99ff99" stroke="#333333" stroke-width="1"/>
+  <text x="650" y="443" font-family="Arial" font-size="12" text-anchor="start">G protein</text>
+  
+  <rect x="592" y="458" width="16" height="8" fill="#ffcc99" stroke="#333333" stroke-width="1" rx="4"/>
+  <text x="650" y="465" font-family="Arial" font-size="12" text-anchor="start">Enzyme</text>
+</svg>

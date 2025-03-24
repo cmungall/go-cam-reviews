@@ -1,0 +1,100 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#666" stroke-width="2" />
+  
+  <!-- Nucleus -->
+  <ellipse cx="200" cy="400" rx="120" ry="100" fill="#e6f2ff" stroke="#666" stroke-width="2" />
+  <text x="200" y="400" font-family="Arial" font-size="16" text-anchor="middle">Nucleus</text>
+  
+  <!-- Endosome -->
+  <ellipse cx="550" cy="250" rx="140" ry="90" fill="#ffe6cc" stroke="#666" stroke-width="2" />
+  <text x="550" y="170" font-family="Arial" font-size="16" text-anchor="middle">Endosome</text>
+  
+  <!-- TLR4 Receptor -->
+  <rect x="530" y="200" width="60" height="30" rx="5" ry="5" fill="#ff9999" stroke="#666" stroke-width="2" />
+  <text x="560" y="220" font-family="Arial" font-size="12" text-anchor="middle">TLR4</text>
+  
+  <!-- TICAM2 -->
+  <rect x="460" y="260" width="60" height="30" rx="5" ry="5" fill="#99ccff" stroke="#666" stroke-width="2" />
+  <text x="490" y="280" font-family="Arial" font-size="12" text-anchor="middle">TICAM2</text>
+  
+  <!-- TICAM1 -->
+  <rect x="380" y="320" width="60" height="30" rx="5" ry="5" fill="#99ccff" stroke="#666" stroke-width="2" />
+  <text x="410" y="340" font-family="Arial" font-size="12" text-anchor="middle">TICAM1</text>
+  
+  <!-- IRF3 in cytoplasm -->
+  <rect x="300" y="380" width="60" height="30" rx="5" ry="5" fill="#99ff99" stroke="#666" stroke-width="2" />
+  <text x="330" y="400" font-family="Arial" font-size="12" text-anchor="middle">IRF3</text>
+  
+  <!-- IRF3 in nucleus -->
+  <rect x="180" y="380" width="60" height="30" rx="5" ry="5" fill="#99ff99" stroke="#666" stroke-width="2" />
+  <text x="210" y="400" font-family="Arial" font-size="12" text-anchor="middle">IRF3</text>
+  
+  <!-- TRIM32 -->
+  <rect x="460" y="380" width="60" height="30" rx="5" ry="5" fill="#cc99ff" stroke="#666" stroke-width="2" />
+  <text x="490" y="400" font-family="Arial" font-size="12" text-anchor="middle">TRIM32</text>
+  
+  <!-- TAX1BP1 -->
+  <rect x="380" y="420" width="60" height="30" rx="5" ry="5" fill="#cc99ff" stroke="#666" stroke-width="2" />
+  <text x="410" y="440" font-family="Arial" font-size="12" text-anchor="middle">TAX1BP1</text>
+  
+  <!-- Autophagosome -->
+  <path d="M 380 470 C 360 450, 450 450, 430 470 Z" fill="#ccffcc" stroke="#666" stroke-width="2" />
+  <text x="405" y="490" font-family="Arial" font-size="12" text-anchor="middle">Autophagosome</text>
+  <text x="405" y="505" font-family="Arial" font-size="10" text-anchor="middle">(Selective Autophagy)</text>
+  
+  <!-- DNA in nucleus -->
+  <path d="M 170 420 C 180 410, 220 410, 230 420 S 180 430, 170 420" fill="none" stroke="#666" stroke-width="2" />
+  
+  <!-- Pathway arrows -->
+  <!-- TLR4 to TICAM2 -->
+  <path d="M 530 220 L 510 260" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- TICAM2 to TICAM1 -->
+  <path d="M 460 280 L 430 320" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- TICAM1 to IRF3 -->
+  <path d="M 380 330 L 350 380" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- IRF3 to nucleus -->
+  <path d="M 300 395 L 240 395" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- IRF3 to DNA -->
+  <path d="M 180 380 L 180 420" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="150" y="400" font-family="Arial" font-size="10" text-anchor="middle">DNA-binding</text>
+  
+  <!-- TRIM32 to TAX1BP1 -->
+  <path d="M 460 400 L 430 420" fill="none" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="5,3" />
+  
+  <!-- TAX1BP1 to TICAM1 -->
+  <path d="M 410 420 L 410 350" fill="none" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="5,3" />
+  
+  <!-- TICAM1 to Autophagosome -->
+  <path d="M 400 350 C 380 370, 380 430, 400 460" fill="none" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="5,3" />
+  <text x="370" y="410" font-family="Arial" font-size="10" text-anchor="middle">degradation</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="600" y="350" font-family="Arial" font-size="16" text-anchor="middle">Cytoplasm</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="80" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">TRIM32-TAX1BP1-dependent selective autophagic degradation of TICAM1</text>
+  
+  <!-- Legend -->
+  <rect x="520" y="480" width="200" height="60" fill="#f9f9f9" stroke="#666" stroke-width="1" />
+  <text x="620" y="495" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Activation arrow -->
+  <line x1="530" y1="510" x2="570" y2="510" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="600" y="515" font-family="Arial" font-size="10" text-anchor="left">Activation</text>
+  
+  <!-- Inhibition arrow -->
+  <line x1="530" y1="530" x2="570" y2="530" stroke="#666" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="600" y="535" font-family="Arial" font-size="10" text-anchor="left">Inhibition/Degradation</text>
+</svg>

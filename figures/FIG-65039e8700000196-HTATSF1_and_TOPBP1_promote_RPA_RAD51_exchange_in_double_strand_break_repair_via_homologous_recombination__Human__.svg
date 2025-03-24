@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with nucleus outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f9fa" stroke="#666" stroke-width="2" opacity="0.7"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">HTATSF1 and TOPBP1 Promote RPA-RAD51 Exchange in Double-Strand Break Repair</text>
+  
+  <!-- DNA Double Strand Break -->
+  <path d="M200,250 L350,250" stroke="#1a1a1a" stroke-width="8"/>
+  <path d="M450,250 L600,250" stroke="#1a1a1a" stroke-width="8"/>
+  <path d="M200,270 L350,270" stroke="#1a1a1a" stroke-width="8"/>
+  <path d="M450,270 L600,270" stroke="#1a1a1a" stroke-width="8"/>
+  <text x="400" y="300" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Double-Strand Break</text>
+  <text x="400" y="220" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-style="italic">Site of Double-Strand Break (GO:0035861)</text>
+  
+  <!-- PARP1 Activity -->
+  <circle cx="400" cy="170" r="40" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">PARP1</text>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">ADP-ribosylation</text>
+  <path d="M400,210 L400,240" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- RPA1 Binding -->
+  <rect x="330" y="320" width="70" height="40" rx="10" ry="10" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="365" y="340" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">RPA1</text>
+  <text x="365" y="355" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Chromatin adaptor</text>
+  <path d="M380,280 L365,320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- HTATSF1 Activity -->
+  <rect x="250" y="390" width="80" height="40" rx="10" ry="10" fill="#99ff99" stroke="#009900" stroke-width="2"/>
+  <text x="290" y="410" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">HTATSF1</text>
+  <text x="290" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Chromatin adaptor</text>
+  <path d="M345,360 L310,390" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- TOPBP1 Activity -->
+  <rect x="450" y="390" width="80" height="40" rx="10" ry="10" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="490" y="410" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">TOPBP1</text>
+  <text x="490" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Chromatin adaptor</text>
+  <path d="M385,360 L450,390" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- RAD51 Activity -->
+  <rect x="450" y="320" width="70" height="40" rx="10" ry="10" fill="#cc99ff" stroke="#6600cc" stroke-width="2"/>
+  <text x="485" y="340" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">RAD51</text>
+  <text x="485" y="355" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">DNA strand exchange</text>
+  
+  <!-- CSNK2A1 (Casein Kinase) -->
+  <polygon points="200,380 230,360 260,380 230,400" fill="#ffff99" stroke="#cc9900" stroke-width="2"/>
+  <text x="230" y="383" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">CSNK2A1</text>
+  <path d="M240,360 L270,360 L290,390" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- PLK1 Kinase -->
+  <polygon points="510,450 540,430 570,450 540,470" fill="#ffff99" stroke="#cc9900" stroke-width="2"/>
+  <text x="540" y="453" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">PLK1</text>
+  <path d="M540,430 L520,430 L490,430" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- RPA-RAD51 Exchange -->
+  <path d="M400,340 L450,340" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="425" y="330" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Exchange</text>
+  
+  <!-- Connect TOPBP1 to RAD51 -->
+  <path d="M490,390 L485,360" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Connect PARP1 to RPA1 -->
+  <path d="M370,170 L300,170 L300,320 L330,320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Initial recruitment after DSB -->
+  <path d="M400,270 L400,320" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="410" y="295" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Recruitment</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Pathway labels -->
+  <text x="200" y="120" font-family="Arial" font-size="16" fill="#333" font-weight="bold">DNA Damage Recognition</text>
+  <text x="550" y="120" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Homologous Recombination Repair</text>
+  <text x="250" y="480" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Protein Localization to DSB</text>
+  <text x="490" y="480" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Double-Strand Break Repair</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="480" width="180" height="110" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="690" y="500" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Legend</text>
+  
+  <circle cx="615" y="520" r="6" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="670" y="523" font-family="Arial" font-size="12" fill="#333">PARP1 - ADP-ribosylation</text>
+  
+  <rect x="610" y="535" width="12" height="12" fill="#99ccff" stroke="#0066cc" stroke-width="1"/>
+  <text x="670" y="543" font-family="Arial" font-size="12" fill="#333">RPA1 - ssDNA binding</text>
+  
+  <rect x="610" y="555" width="12" height="12" fill="#99ff99" stroke="#009900" stroke-width="1"/>
+  <text x="670" y="563" font-family="Arial" font-size="12" fill="#333">HTATSF1 - adaptor</text>
+  
+  <rect x="610" y="575" width="12" height="12" fill="#ffcc99" stroke="#ff6600" stroke-width="1"/>
+  <text x="670" y="583" font-family="Arial" font-size="12" fill="#333">TOPBP1 - adaptor</text>
+  
+  <polygon points="610,595 622,588 634,595 622,602" fill="#ffff99" stroke="#cc9900" stroke-width="1"/>
+  <text x="670" y="598" font-family="Arial" font-size="12" fill="#333">Kinases (PLK1, CSNK2A1)</text>
+  
+  <rect x="610" y="615" width="12" height="12" fill="#cc99ff" stroke="#6600cc" stroke-width="1"/>
+  <text x="670" y="623" font-family="Arial" font-size="12" fill="#333">RAD51 - strand exchange</text>
+  
+  <!-- Process description -->
+  <text x="100" y="530" font-family="Arial" font-size="14" fill="#333" font-style="italic">Process: PARP1 recognizes the break → RPA1 binds → HTATSF1/TOPBP1 facilitate → RAD51 replaces RPA1</text>
+</svg>

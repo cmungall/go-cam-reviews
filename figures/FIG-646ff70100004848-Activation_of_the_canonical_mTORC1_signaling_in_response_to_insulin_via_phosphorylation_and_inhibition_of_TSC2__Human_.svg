@@ -1,0 +1,150 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell membrane -->
+    <path d="M 50,150 H 750" stroke="#888888" stroke-width="10" fill="none" stroke-dasharray="20,10"/>
+    <text x="60" y="135" font-family="Arial" font-size="14" fill="#000000">Cell Membrane</text>
+    
+    <!-- Lysosomal membrane -->
+    <ellipse cx="450" cy="350" rx="150" ry="100" fill="#ffffd0" stroke="#ffcc66" stroke-width="5"/>
+    <text x="450" y="300" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Lysosomal Membrane</text>
+    
+    <!-- Cytosolic ribosome -->
+    <rect x="600" y="500" width="120" height="80" rx="10" ry="10" fill="#d0f0d0" stroke="#66aa66" stroke-width="2"/>
+    <text x="660" y="540" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Cytosolic Ribosome</text>
+    
+    <!-- Insulin -->
+    <polygon points="150,90 160,105 170,90" fill="#ff9999" stroke="#cc6666" stroke-width="2"/>
+    <text x="160" y="80" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">Insulin</text>
+    
+    <!-- PI3K (P42336) -->
+    <rect x="160" y="180" width="80" height="40" rx="5" ry="5" fill="#aaccff" stroke="#6688cc" stroke-width="2"/>
+    <text x="200" y="205" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">PI3K</text>
+    <text x="200" y="225" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(P42336)</text>
+    
+    <!-- PIP3 -->
+    <ellipse cx="280" cy="180" rx="30" ry="15" fill="#aaddcc" stroke="#66aa99" stroke-width="2"/>
+    <text x="280" y="185" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">PIP3</text>
+    
+    <!-- AKT1 (P31749) -->
+    <rect x="320" y="180" width="80" height="40" rx="5" ry="5" fill="#aaccff" stroke="#6688cc" stroke-width="2"/>
+    <text x="360" y="205" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">AKT1</text>
+    <text x="360" y="225" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(P31749)</text>
+    
+    <!-- TSC2 (P49815) -->
+    <rect x="320" y="320" width="80" height="40" rx="5" ry="5" fill="#ffaaaa" stroke="#cc6666" stroke-width="2"/>
+    <text x="360" y="345" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">TSC2</text>
+    <text x="360" y="365" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(P49815)</text>
+    
+    <!-- RHEB (Q15382) -->
+    <rect x="440" y="350" width="80" height="40" rx="5" ry="5" fill="#aaccff" stroke="#6688cc" stroke-width="2"/>
+    <text x="480" y="375" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">RHEB</text>
+    <text x="480" y="395" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(Q15382)</text>
+    
+    <!-- mTOR (P42345) -->
+    <rect x="480" y="410" width="80" height="40" rx="5" ry="5" fill="#aaccff" stroke="#6688cc" stroke-width="2"/>
+    <text x="520" y="435" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">mTOR</text>
+    <text x="520" y="455" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(P42345)</text>
+    
+    <!-- S6K1 (P23443) -->
+    <rect x="400" y="480" width="80" height="40" rx="5" ry="5" fill="#aaccff" stroke="#6688cc" stroke-width="2"/>
+    <text x="440" y="505" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">S6K1</text>
+    <text x="440" y="525" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(P23443)</text>
+    
+    <!-- S6K2 (Q9UBS0) -->
+    <rect x="520" y="480" width="80" height="40" rx="5" ry="5" fill="#aaccff" stroke="#6688cc" stroke-width="2"/>
+    <text x="560" y="505" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">S6K2</text>
+    <text x="560" y="525" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(Q9UBS0)</text>
+    
+    <!-- 4E-BP1 (Q13541) -->
+    <rect x="400" y="550" width="80" height="40" rx="5" ry="5" fill="#ffaaaa" stroke="#cc6666" stroke-width="2"/>
+    <text x="440" y="575" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">4E-BP1</text>
+    <text x="440" y="595" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(Q13541)</text>
+    
+    <!-- S6 (P62753) -->
+    <rect x="620" y="580" width="80" height="40" rx="5" ry="5" fill="#aaccff" stroke="#6688cc" stroke-width="2"/>
+    <text x="660" y="605" font-family="Arial" font-size="14" fill="#000000" text-anchor="middle">S6</text>
+    <text x="660" y="625" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(P62753)</text>
+    
+    <!-- Arrows and interactions -->
+    <!-- Insulin to PI3K -->
+    <path d="M 160,105 L 160,180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- PI3K to PIP3 -->
+    <path d="M 240,200 L 250,200 Q 260,200 270,190 L 280,180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="260" y="215" font-family="Arial" font-size="10" fill="#000000">produces</text>
+    
+    <!-- PIP3 to AKT1 -->
+    <path d="M 310,180 L 320,180" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- AKT1 to TSC2 -->
+    <path d="M 360,220 L 360,320" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#phosphohead)"/>
+    <text x="375" y="270" font-family="Arial" font-size="12" fill="#000000">phosphorylates</text>
+    <circle cx="360" cy="290" r="5" fill="#ffdd00" stroke="#000000" stroke-width="1"/>
+    <text x="372" y="292" font-family="Arial" font-size="12" fill="#000000">P</text>
+    
+    <!-- TSC2 (inhibited) to RHEB -->
+    <path d="M 400,340 L 440,350" stroke="red" stroke-width="3" marker-end="url(#inhibithead)" stroke-dasharray="5,5"/>
+    <text x="405" y="330" font-family="Arial" font-size="10" fill="#000000">inhibition</text>
+    <line x1="420" y1="348" x2="435" y2="333" stroke="red" stroke-width="2"/>
+    
+    <!-- RHEB to mTOR -->
+    <path d="M 490,390 L 510,410" stroke="#000000" stroke-width="3" marker-end="url(#activatehead)"/>
+    <text x="490" y="405" font-family="Arial" font-size="10" fill="#000000">activates</text>
+    
+    <!-- mTOR to S6K1 -->
+    <path d="M 500,450 L 460,480" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#phosphohead)"/>
+    <text x="450" y="465" font-family="Arial" font-size="10" fill="#000000">phosphorylates</text>
+    
+    <!-- mTOR to S6K2 -->
+    <path d="M 540,450 L 560,480" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#phosphohead)"/>
+    <text x="570" y="465" font-family="Arial" font-size="10" fill="#000000">phosphorylates</text>
+    
+    <!-- mTOR to 4E-BP1 -->
+    <path d="M 480,450 Q 450,480 440,550" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#phosphohead)"/>
+    <text x="410" y="490" font-family="Arial" font-size="10" fill="#000000">phosphorylates</text>
+    <circle cx="450" cy="510" r="5" fill="#ffdd00" stroke="#000000" stroke-width="1"/>
+    <text x="462" y="512" font-family="Arial" font-size="12" fill="#000000">P</text>
+    
+    <!-- S6K1 to S6 -->
+    <path d="M 480,500 Q 550,530 620,580" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#phosphohead)"/>
+    <text x="540" y="520" font-family="Arial" font-size="10" fill="#000000">phosphorylates</text>
+    
+    <!-- S6K2 to S6 -->
+    <path d="M 600,500 Q 620,530 650,580" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#phosphohead)"/>
+    <text x="630" y="530" font-family="Arial" font-size="10" fill="#000000">phosphorylates</text>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">Activation of Canonical mTORC1 Signaling in Response to Insulin</text>
+    <text x="400" y="65" font-family="Arial" font-size="16" fill="#000000" text-anchor="middle">via Phosphorylation and Inhibition of TSC2 (Human)</text>
+    
+    <!-- Legend -->
+    <rect x="50" y="580" width="200" height="60" fill="white" stroke="#888888" stroke-width="1"/>
+    <text x="150" y="595" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">LEGEND</text>
+    
+    <rect x="60" y="605" width="15" height="15" fill="#aaccff" stroke="#6688cc" stroke-width="1"/>
+    <text x="140" y="617" font-family="Arial" font-size="11" fill="#000000">Protein (activator)</text>
+    
+    <rect x="60" y="625" width="15" height="15" fill="#ffaaaa" stroke="#cc6666" stroke-width="1"/>
+    <text x="140" y="637" font-family="Arial" font-size="11" fill="#000000">Protein (inhibitor)</text>
+    
+    <path d="M 180,610 L 200,610" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#phosphohead)"/>
+    <text x="225" y="613" font-family="Arial" font-size="11" fill="#000000">Phosphorylation</text>
+    
+    <path d="M 180,630 L 200,630" stroke="red" stroke-width="3" marker-end="url(#inhibithead)" stroke-dasharray="5,5"/>
+    <text x="225" y="633" font-family="Arial" font-size="11" fill="#000000">Inhibition</text>
+    
+    <!-- Arrowhead marker definitions -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+        </marker>
+        <marker id="phosphohead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+        </marker>
+        <marker id="inhibithead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="red" />
+        </marker>
+        <marker id="activatehead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+        </marker>
+    </defs>
+</svg>

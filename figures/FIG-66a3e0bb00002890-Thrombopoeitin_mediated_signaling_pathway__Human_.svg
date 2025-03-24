@@ -1,0 +1,88 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell compartments -->
+  <!-- Extracellular space -->
+  <rect x="0" y="50" width="800" height="150" fill="#e6f7ff" stroke="none"/>
+  <text x="20" y="70" font-family="Arial" font-size="16" fill="#666">Extracellular Space</text>
+  
+  <!-- Cell membrane -->
+  <rect x="0" y="200" width="800" height="20" fill="#b3d9ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="20" y="215" font-family="Arial" font-size="14" fill="#000">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="0" y="220" width="800" height="180" fill="#fff2e6" stroke="none"/>
+  <text x="20" y="240" font-family="Arial" font-size="16" fill="#666">Cytoplasm</text>
+  
+  <!-- Nuclear membrane -->
+  <rect x="0" y="400" width="800" height="10" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <rect x="0" y="410" width="800" height="190" fill="#ffe6cc" stroke="none"/>
+  <text x="20" y="430" font-family="Arial" font-size="16" fill="#666">Nucleus</text>
+  
+  <!-- Pathway Components -->
+  <!-- THPO in extracellular space -->
+  <circle cx="400" cy="120" r="40" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="400" y="125" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">THPO</text>
+  <text x="400" y="145" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(P40225)</text>
+  
+  <!-- MPL receptor at membrane -->
+  <rect x="370" y="180" width="60" height="60" fill="#99ccff" stroke="#0066cc" stroke-width="2" rx="10" ry="10"/>
+  <text x="400" y="210" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">MPL</text>
+  <text x="400" y="230" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(P40238)</text>
+  
+  <!-- JAK2 in cytoplasm -->
+  <rect x="370" y="300" width="60" height="60" fill="#99ff99" stroke="#009900" stroke-width="2"/>
+  <text x="400" y="330" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">JAK2</text>
+  <text x="400" y="350" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(O60674)</text>
+  
+  <!-- STAT5A in nucleus -->
+  <polygon points="370,500 430,500 450,525 430,550 370,550 350,525" fill="#cc99ff" stroke="#6600cc" stroke-width="2"/>
+  <text x="400" y="525" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">STAT5A</text>
+  <text x="400" y="540" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">(P42229)</text>
+  
+  <!-- Pathway Arrows -->
+  <!-- THPO to MPL -->
+  <line x1="400" y1="160" x2="400" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="410" y="175" font-family="Arial" font-size="12" fill="#000">Cytokine activity</text>
+  
+  <!-- MPL to JAK2 -->
+  <line x1="400" y1="240" x2="400" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="410" y="270" font-family="Arial" font-size="12" fill="#000">Receptor activation</text>
+  
+  <!-- JAK2 to STAT5A -->
+  <path d="M400,360 Q400,430 400,500" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="410" y="430" font-family="Arial" font-size="12" fill="#000">Tyrosine kinase activity</text>
+  
+  <!-- DNA binding by STAT5A -->
+  <rect x="300" y="570" width="200" height="15" fill="#ddd" stroke="#000" stroke-width="1"/>
+  <text x="400" y="585" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">DNA</text>
+  <line x1="400" y1="550" x2="400" y2="570" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="410" y="565" font-family="Arial" font-size="12" fill="#000">DNA-binding TF activity</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Pathway Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#000" text-anchor="middle">Thrombopoietin-mediated Signaling Pathway (Human)</text>
+  
+  <!-- Legend -->
+  <rect x="570" y="60" width="200" height="120" fill="white" stroke="#000" stroke-width="1" rx="5" ry="5"/>
+  <text x="580" y="80" font-family="Arial" font-size="14" font-weight="bold" fill="#000">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="590" y="100" r="8" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="605" y="105" font-family="Arial" font-size="12" fill="#000">Cytokine (THPO)</text>
+  
+  <rect x="580" y="120" width="16" height="16" fill="#99ccff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="605" y="132" font-family="Arial" font-size="12" fill="#000">Receptor (MPL)</text>
+  
+  <rect x="580" y="145" width="16" height="16" fill="#99ff99" stroke="#009900" stroke-width="1"/>
+  <text x="605" y="158" font-family="Arial" font-size="12" fill="#000">Kinase (JAK2)</text>
+  
+  <polygon points="580,165 596,165 600,172 596,179 580,179 576,172" fill="#cc99ff" stroke="#6600cc" stroke-width="1"/>
+  <text x="605" y="175" font-family="Arial" font-size="12" fill="#000">Transcription Factor (STAT5A)</text>
+</svg>

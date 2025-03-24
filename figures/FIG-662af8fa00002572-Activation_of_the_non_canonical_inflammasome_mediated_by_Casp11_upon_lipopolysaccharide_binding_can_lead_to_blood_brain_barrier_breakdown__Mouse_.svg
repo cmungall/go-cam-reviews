@@ -1,0 +1,92 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - endothelial cell of BBB -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f0f8ff" stroke="#6495ED" stroke-width="2"/>
+  <text x="60" y="80" font-family="Arial" font-size="16" font-weight="bold">Endothelial Cell (Blood-Brain Barrier)</text>
+  
+  <!-- Cytosol region -->
+  <rect x="100" y="100" width="600" height="350" rx="10" ry="10" fill="#e6f3ff" stroke="#b0c4de" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="110" y="120" font-family="Arial" font-size="14">Cytosol</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="100" y="450" width="600" height="60" rx="0" ry="0" fill="#f2debd" stroke="#d2b48c" stroke-width="2"/>
+  <text x="110" y="470" font-family="Arial" font-size="14">Plasma Membrane</text>
+  
+  <!-- Step 1: LPS binding to Casp4 -->
+  <circle cx="150" cy="200" r="25" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="150" y="195" font-family="Arial" font-size="12" text-anchor="middle">LPS</text>
+  <text x="150" y="210" font-family="Arial" font-size="10" text-anchor="middle">(Lipid A)</text>
+  
+  <rect x="220" y="180" width="70" height="40" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="255" y="205" font-family="Arial" font-size="14" text-anchor="middle">Casp4</text>
+  
+  <line x1="175" y1="200" x2="220" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="195" y="190" font-family="Arial" font-size="12" text-anchor="middle">Binding</text>
+  
+  <!-- Step 2: Casp4 self-cleavage -->
+  <rect x="330" y="180" width="70" height="40" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="365" y="205" font-family="Arial" font-size="14" text-anchor="middle">Casp4*</text>
+  <text x="365" y="220" font-family="Arial" font-size="10" text-anchor="middle">Activated</text>
+  
+  <line x1="290" y1="200" x2="330" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="310" y="190" font-family="Arial" font-size="12" text-anchor="middle">Self-cleavage</text>
+  
+  <!-- Step 3: GSDMD cleavage -->
+  <rect x="330" y="300" width="70" height="40" rx="5" ry="5" fill="#a0db8e" stroke="#4ca64c" stroke-width="2"/>
+  <text x="365" y="325" font-family="Arial" font-size="14" text-anchor="middle">GSDMD</text>
+  
+  <line x1="365" y1="220" x2="365" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="385" y="270" font-family="Arial" font-size="12">Cleavage</text>
+  
+  <!-- Step 4: Cleaved GSDMD -->
+  <rect x="440" y="300" width="50" height="40" rx="5" ry="5" fill="#a0db8e" stroke="#4ca64c" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="465" y="325" font-family="Arial" font-size="12" text-anchor="middle">N-GSDMD</text>
+  
+  <rect x="500" y="300" width="50" height="40" rx="5" ry="5" fill="#a0db8e" stroke="#4ca64c" stroke-width="2" stroke-dasharray="5,2" fill-opacity="0.5"/>
+  <text x="525" y="325" font-family="Arial" font-size="12" text-anchor="middle">C-GSDMD</text>
+  
+  <line x1="400" y1="320" x2="440" y2="320" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 5: PIP2 binding -->
+  <circle cx="465" cy="420" r="15" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="465" y="425" font-family="Arial" font-size="10" text-anchor="middle">PIP2</text>
+  
+  <line x1="465" y1="340" x2="465" y2="405" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="485" y="375" font-family="Arial" font-size="12">Binding</text>
+  
+  <!-- Step 6: Pore formation -->
+  <ellipse cx="580" cy="480" rx="40" ry="15" fill="none" stroke="#000000" stroke-width="2"/>
+  <ellipse cx="580" cy="480" rx="30" ry="10" fill="none" stroke="#000000" stroke-width="2"/>
+  <ellipse cx="580" cy="480" rx="20" ry="5" fill="white" stroke="#000000" stroke-width="2"/>
+  <text x="580" y="510" font-family="Arial" font-size="12" text-anchor="middle">Membrane Pore</text>
+  
+  <path d="M465,420 Q520,440 560,470" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,2"/>
+  <text x="510" y="445" font-family="Arial" font-size="14">Pore Formation</text>
+  
+  <!-- Cell death indication -->
+  <text x="600" y="400" font-family="Arial" font-size="16" font-weight="bold" fill="#cc0000">Pyroptotic</text>
+  <text x="600" y="420" font-family="Arial" font-size="16" font-weight="bold" fill="#cc0000">Cell Death</text>
+  
+  <!-- BBB breakdown indication -->
+  <text x="650" y="100" font-family="Arial" font-size="16" font-weight="bold" fill="#cc0000">Blood-Brain</text>
+  <text x="650" y="120" font-family="Arial" font-size="16" font-weight="bold" fill="#cc0000">Barrier Breakdown</text>
+
+  <!-- Legend -->
+  <rect x="600" y="520" width="140" height="70" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="670" y="535" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <circle cx="615" cy="550" r="5" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="660" y="553" font-family="Arial" font-size="10">LPS/Lipid A</text>
+  
+  <rect x="610" y="560" width="10" height="10" fill="#99ccff" stroke="#0066cc" stroke-width="1"/>
+  <text x="660" y="568" font-family="Arial" font-size="10">Casp4/Casp11</text>
+  
+  <rect x="610" y="575" width="10" height="10" fill="#a0db8e" stroke="#4ca64c" stroke-width="1"/>
+  <text x="660" y="583" font-family="Arial" font-size="10">GSDMD</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+  </defs>
+</svg>

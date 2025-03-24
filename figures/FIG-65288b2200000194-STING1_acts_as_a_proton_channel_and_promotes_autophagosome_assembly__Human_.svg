@@ -1,0 +1,136 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">STING1 acts as a proton channel and promotes autophagosome assembly</text>
+  
+  <!-- Cell outline -->
+  <rect x="50" y="70" width="700" height="480" fill="white" stroke="#999" stroke-width="2" rx="20" ry="20" />
+  
+  <!-- Golgi apparatus -->
+  <g transform="translate(150, 200)">
+    <path d="M0,0 C30,-15 60,-5 90,0 C120,5 150,-10 180,0 C210,10 240,-5 270,0" 
+          stroke="#8A7C64" fill="none" stroke-width="12" />
+    <path d="M0,20 C30,5 60,15 90,20 C120,25 150,10 180,20 C210,30 240,15 270,20" 
+          stroke="#8A7C64" fill="none" stroke-width="12" />
+    <path d="M0,40 C30,25 60,35 90,40 C120,45 150,30 180,40 C210,50 240,35 270,40" 
+          stroke="#8A7C64" fill="none" stroke-width="12" />
+    <text x="135" y="-30" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Golgi Apparatus</text>
+    <!-- Golgi membrane label -->
+    <text x="135" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Golgi membrane (GO:0000139)</text>
+  </g>
+  
+  <!-- STING1 in Golgi membrane -->
+  <g transform="translate(280, 220)">
+    <rect x="-25" y="-15" width="50" height="30" fill="#FF7F50" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle">STING1</text>
+    <text x="0" y="25" font-family="Arial" font-size="9" text-anchor="middle">(Q86WV6)</text>
+    
+    <!-- Proton channel activity symbol -->
+    <circle cx="0" cy="-25" r="15" fill="#ffcc00" stroke="#333" stroke-width="1"/>
+    <text x="0" y="-21" font-family="Arial" font-size="14" text-anchor="middle">H+</text>
+    
+    <!-- Label -->
+    <text x="70" y="0" font-family="Arial" font-size="12" text-anchor="start" font-style="italic">Proton channel activity</text>
+    <text x="70" y="15" font-family="Arial" font-size="10" text-anchor="start">(GO:0015252)</text>
+  </g>
+  
+  <!-- Forming Autophagosome -->
+  <g transform="translate(450, 380)">
+    <path d="M0,0 C100,0 200,0 250,-50 C300,-100 250,-150 200,-150 C150,-150 50,-150 0,-100 C-50,-50 -50,-50 0,0 Z" 
+          fill="#DEEAEE" stroke="#2E86AB" stroke-width="2" stroke-dasharray="5,3" />
+    <text x="100" y="-80" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Forming Autophagosome</text>
+    <text x="100" y="-60" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">(GO:0005776)</text>
+  </g>
+  
+  <!-- ATG5 -->
+  <g transform="translate(450, 320)">
+    <rect x="-30" y="-15" width="60" height="30" fill="#7FB3D5" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle">ATG5</text>
+    <text x="0" y="22" font-family="Arial" font-size="9" text-anchor="middle">(Q9H1Y0)</text>
+    
+    <!-- Label -->
+    <text x="50" y="5" font-family="Arial" font-size="12" text-anchor="start" font-style="italic">Atg8-family ligase activity</text>
+    <text x="50" y="20" font-family="Arial" font-size="10" text-anchor="start">(GO:0019776)</text>
+  </g>
+  
+  <!-- Autophagosome membrane -->
+  <ellipse cx="600" cy="420" rx="90" ry="40" fill="none" stroke="#2E86AB" stroke-width="2" />
+  <text x="600" y="390" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Autophagosome membrane</text>
+  <text x="600" y="410" font-family="Arial" font-size="10" text-anchor="middle">(GO:0000421)</text>
+  
+  <!-- MAP1LC3B -->
+  <g transform="translate(600, 420)">
+    <rect x="-40" y="-15" width="80" height="30" fill="#82E0AA" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle">MAP1LC3B</text>
+    <text x="0" y="22" font-family="Arial" font-size="9" text-anchor="middle">(Q9GZQ8)</text>
+    
+    <!-- Label -->
+    <text x="0" y="45" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">Phosphatidylethanolamine binding</text>
+    <text x="0" y="60" font-family="Arial" font-size="9" text-anchor="middle">(GO:0008429)</text>
+  </g>
+  
+  <!-- ATG4 Proteins -->
+  <g transform="translate(200, 420)">
+    <!-- ATG4B -->
+    <rect x="-80" y="-50" width="60" height="30" fill="#FAD7A0" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+    <text x="-50" y="-35" font-family="Arial" font-size="12" text-anchor="middle">ATG4B</text>
+    <text x="-50" y="-20" font-family="Arial" font-size="9" text-anchor="middle">(Q9Y4P1)</text>
+    
+    <!-- ATG4C -->
+    <rect x="-80" y="0" width="60" height="30" fill="#FAD7A0" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+    <text x="-50" y="15" font-family="Arial" font-size="12" text-anchor="middle">ATG4C</text>
+    <text x="-50" y="30" font-family="Arial" font-size="9" text-anchor="middle">(Q96DT6)</text>
+    
+    <!-- ATG4D -->
+    <rect x="-80" y="50" width="60" height="30" fill="#FAD7A0" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+    <text x="-50" y="65" font-family="Arial" font-size="12" text-anchor="middle">ATG4D</text>
+    <text x="-50" y="80" font-family="Arial" font-size="9" text-anchor="middle">(Q86TL0-2)</text>
+    
+    <!-- Group Label -->
+    <text x="-50" y="-70" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ATG4 Family</text>
+    <text x="-50" y="-55" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Cysteine-type peptidases</text>
+  </g>
+  
+  <!-- Arrows -->
+  <!-- STING1 to ATG5 -->
+  <path d="M290,240 Q350,280 420,320" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="350" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#444" font-weight="bold">positively regulates</text>
+  
+  <!-- ATG5 to MAP1LC3B -->
+  <path d="M500,320 Q550,350 580,400" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- ATG4 proteins to MAP1LC3B -->
+  <path d="M0,0 Q250,400 550,420" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" transform="translate(200,420)" />
+  <text x="350" y="480" font-family="Arial" font-size="12" text-anchor="middle" fill="#444" font-weight="bold">promotes</text>
+
+  <!-- Process Label -->
+  <rect x="50" y="100" width="200" height="30" fill="#D6EAF8" rx="5" ry="5" stroke="#3498DB" />
+  <text x="150" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Autophagosome Assembly</text>
+  <text x="150" y="135" font-family="Arial" font-size="10" text-anchor="middle">(GO:0000045)</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="100" width="160" height="120" fill="white" stroke="#999" stroke-width="1" rx="5" ry="5" />
+  <text x="660" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="590" y="130" width="20" height="10" fill="#FF7F50" stroke="#333" stroke-width="1" rx="2" ry="2" />
+  <text x="615" y="138" font-family="Arial" font-size="10" text-anchor="start">STING1 (proton channel)</text>
+  
+  <rect x="590" y="150" width="20" height="10" fill="#7FB3D5" stroke="#333" stroke-width="1" rx="2" ry="2" />
+  <text x="615" y="158" font-family="Arial" font-size="10" text-anchor="start">ATG5 (ligase activity)</text>
+  
+  <rect x="590" y="170" width="20" height="10" fill="#FAD7A0" stroke="#333" stroke-width="1" rx="2" ry="2" />
+  <text x="615" y="178" font-family="Arial" font-size="10" text-anchor="start">ATG4 Family (peptidases)</text>
+  
+  <rect x="590" y="190" width="20" height="10" fill="#82E0AA" stroke="#333" stroke-width="1" rx="2" ry="2" />
+  <text x="615" y="198" font-family="Arial" font-size="10" text-anchor="start">MAP1LC3B (PE binding)</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

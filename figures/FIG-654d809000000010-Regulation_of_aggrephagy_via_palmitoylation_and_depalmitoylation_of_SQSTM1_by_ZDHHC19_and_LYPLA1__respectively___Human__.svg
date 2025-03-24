@@ -1,0 +1,124 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="80" ry="80" fill="#f9f9f9" stroke="#333" stroke-width="2" />
+  
+  <!-- Cell components -->
+  <!-- Cytosol -->
+  <rect x="70" y="70" width="660" height="460" rx="60" ry="60" fill="#e6f7ff" stroke="#333" stroke-dasharray="5,3" stroke-width="1" />
+  <text x="100" y="110" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Cytosol (GO:0005829)</text>
+  
+  <!-- Autophagosome -->
+  <ellipse cx="200" cy="350" rx="120" ry="80" fill="#d4edda" stroke="#28a745" stroke-width="2" />
+  <text x="140" y="345" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Autophagosome</text>
+  <text x="150" y="370" font-family="Arial" font-size="14" fill="#333">(GO:0005776)</text>
+  
+  <!-- Membraneless organelle -->
+  <ellipse cx="550" cy="350" rx="120" ry="80" fill="#f8d7da" stroke="#dc3545" stroke-width="2" />
+  <text x="480" y="345" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Membraneless organelle</text>
+  <text x="505" y="370" font-family="Arial" font-size="14" fill="#333">(GO:0043232)</text>
+  
+  <!-- Proteins and interactions -->
+  <!-- ZDHHC19 - palmitoylation enzyme -->
+  <rect x="300" y="120" width="100" height="40" rx="15" ry="15" fill="#ffe9cc" stroke="#ff9900" stroke-width="2" />
+  <text x="310" y="145" font-family="Arial" font-size="16" font-weight="bold" fill="#333">ZDHHC19</text>
+  
+  <!-- LYPLA1 - depalmitoylation enzyme -->
+  <rect x="450" y="120" width="100" height="40" rx="15" ry="15" fill="#e6ccff" stroke="#9933ff" stroke-width="2" />
+  <text x="465" y="145" font-family="Arial" font-size="16" font-weight="bold" fill="#333">LYPLA1</text>
+  
+  <!-- SQSTM1 - Central protein with three functions -->
+  <!-- Function 1: In cytosol -->
+  <rect x="285" y="220" width="100" height="40" rx="15" ry="15" fill="#cce5ff" stroke="#0066cc" stroke-width="2" />
+  <text x="302" y="245" font-family="Arial" font-size="16" font-weight="bold" fill="#333">SQSTM1</text>
+  <text x="275" y="270" font-family="Arial" font-size="14" fill="#333">(ubiquitin reader)</text>
+  
+  <!-- Function 2: In autophagosome -->
+  <rect x="150" y="290" width="100" height="40" rx="15" ry="15" fill="#cce5ff" stroke="#0066cc" stroke-width="2" />
+  <text x="167" y="315" font-family="Arial" font-size="16" font-weight="bold" fill="#333">SQSTM1</text>
+  <text x="140" y="340" font-family="Arial" font-size="14" fill="#333">(adaptor activity)</text>
+  
+  <!-- Function 3: In membraneless organelle -->
+  <rect x="500" y="290" width="100" height="40" rx="15" ry="15" fill="#cce5ff" stroke="#0066cc" stroke-width="2" />
+  <text x="517" y="315" font-family="Arial" font-size="16" font-weight="bold" fill="#333">SQSTM1</text>
+  <text x="480" y="340" font-family="Arial" font-size="14" fill="#333">(condensate scaffold)</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- ZDHHC19 palmitoylation -->
+  <line x1="350" y1="160" x2="335" y2="220" stroke="#ff9900" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="280" y="190" font-family="Arial" font-size="14" fill="#333">Palmitoylation</text>
+  <text x="280" y="208" font-family="Arial" font-size="12" fill="#333">(GO:0019706)</text>
+  <text x="250" y="225" font-family="Arial" font-size="12" font-style="italic" fill="#333">Adds palmitate group</text>
+  
+  <!-- LYPLA1 depalmitoylation -->
+  <line x1="500" y1="160" x2="370" y2="220" stroke="#9933ff" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="415" y="190" font-family="Arial" font-size="14" fill="#333">Depalmitoylation</text>
+  <text x="425" y="208" font-family="Arial" font-size="12" fill="#333">(GO:0008474)</text>
+  <text x="415" y="225" font-family="Arial" font-size="12" font-style="italic" fill="#333">Removes palmitate</text>
+  
+  <!-- SQSTM1 cytosol to autophagosome -->
+  <line x1="285" y1="240" x2="250" y2="290" stroke="#0066cc" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="210" y="260" font-family="Arial" font-size="12" fill="#333">Binds ubiquitinated cargo</text>
+  
+  <!-- SQSTM1 cytosol to membraneless organelle -->
+  <line x1="385" y1="240" x2="500" y2="290" stroke="#0066cc" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="420" y="260" font-family="Arial" font-size="12" fill="#333">Forms condensates</text>
+  
+  <!-- Biological processes -->
+  <rect x="120" y="450" width="180" height="50" rx="10" ry="10" fill="#ffeeba" stroke="#d39e00" stroke-width="2" />
+  <text x="140" y="475" font-family="Arial" font-size="16" fill="#333">Protein targeting to vacuole</text>
+  <text x="150" y="495" font-family="Arial" font-size="14" fill="#333">in autophagy (GO:0071211)</text>
+  
+  <rect x="350" y="450" width="150" height="50" rx="10" ry="10" fill="#ffeeba" stroke="#d39e00" stroke-width="2" />
+  <text x="375" y="480" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Aggrephagy</text>
+  <text x="370" y="495" font-family="Arial" font-size="14" fill="#333">(GO:0035973)</text>
+  
+  <rect x="550" y="450" width="150" height="50" rx="10" ry="10" fill="#ffeeba" stroke="#d39e00" stroke-width="2" />
+  <text x="555" y="475" font-family="Arial" font-size="16" fill="#333">Organelle assembly</text>
+  <text x="565" y="495" font-family="Arial" font-size="14" fill="#333">(GO:0140694)</text>
+  
+  <!-- Regulatory labels -->
+  <text x="230" y="165" font-family="Arial" font-size="14" font-style="italic" fill="#006400">Positive regulation</text>
+  <text x="235" y="180" font-family="Arial" font-size="12" fill="#006400">(GO:1905337)</text>
+  
+  <text x="550" y="165" font-family="Arial" font-size="14" font-style="italic" fill="#8b0000">Negative regulation</text>
+  <text x="550" y="180" font-family="Arial" font-size="12" fill="#8b0000">(GO:1905336)</text>
+  
+  <!-- Process connections -->
+  <line x1="200" y1="330" x2="200" y2="450" stroke="#d39e00" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="165" y="400" font-family="Arial" font-size="12" fill="#333">Contributes to</text>
+  
+  <line x1="335" y1="260" x2="420" y2="450" stroke="#d39e00" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="350" y="380" font-family="Arial" font-size="12" fill="#333">Mediates</text>
+  
+  <line x1="550" y1="330" x2="620" y2="450" stroke="#d39e00" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="565" y="400" font-family="Arial" font-size="12" fill="#333">Facilitates</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="70" width="120" height="150" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1" />
+  <text x="625" y="90" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  
+  <rect x="610" y="100" width="15" height="15" fill="#cce5ff" stroke="#0066cc" stroke-width="2" />
+  <text x="630" y="112" font-family="Arial" font-size="12" fill="#333">SQSTM1</text>
+  
+  <rect x="610" y="120" width="15" height="15" fill="#ffe9cc" stroke="#ff9900" stroke-width="2" />
+  <text x="630" y="132" font-family="Arial" font-size="12" fill="#333">ZDHHC19</text>
+  
+  <rect x="610" y="140" width="15" height="15" fill="#e6ccff" stroke="#9933ff" stroke-width="2" />
+  <text x="630" y="152" font-family="Arial" font-size="12" fill="#333">LYPLA1</text>
+  
+  <rect x="610" y="160" width="15" height="15" fill="#ffeeba" stroke="#d39e00" stroke-width="2" />
+  <text x="630" y="172" font-family="Arial" font-size="12" fill="#333">Biological Process</text>
+  
+  <line x1="610" y1="185" x2="625" y2="185" stroke="#333" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="630" y="188" font-family="Arial" font-size="12" fill="#333">Association</text>
+  
+  <line x1="610" y1="200" x2="625" y2="200" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="630" y="203" font-family="Arial" font-size="12" fill="#333">Regulation</text>
+</svg>

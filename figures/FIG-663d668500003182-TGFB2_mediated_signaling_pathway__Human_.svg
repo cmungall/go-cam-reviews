@@ -1,0 +1,86 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with compartments -->
+  <!-- Extracellular space -->
+  <rect x="0" y="0" width="800" height="200" fill="#e6f7ff" stroke="none"/>
+  <text x="20" y="30" font-family="Arial" font-size="16" fill="#555">Extracellular Space</text>
+  
+  <!-- Cell membrane -->
+  <rect x="0" y="200" width="800" height="20" fill="#ff9966" stroke="none"/>
+  <text x="20" y="215" font-family="Arial" font-size="14" fill="#555">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="0" y="220" width="800" height="180" fill="#ffe6cc" stroke="none"/>
+  <text x="20" y="240" font-family="Arial" font-size="16" fill="#555">Cytoplasm</text>
+  
+  <!-- Nuclear membrane -->
+  <rect x="200" y="400" width="400" height="10" fill="#cc99ff" stroke="none"/>
+  
+  <!-- Nucleus -->
+  <rect x="200" y="410" width="400" height="170" fill="#e6ccff" stroke="none"/>
+  <text x="360" y="430" font-family="Arial" font-size="16" fill="#555">Nucleus</text>
+  
+  <!-- TGFB2 in extracellular space -->
+  <circle cx="400" cy="100" r="30" fill="#6bb8ff" stroke="#000" stroke-width="2"/>
+  <text x="400" y="105" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">TGFB2</text>
+  <text x="400" y="75" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Cytokine Activity</text>
+  
+  <!-- TGFBR2 in plasma membrane -->
+  <rect x="340" y="180" width="60" height="60" fill="#ff9900" stroke="#000" stroke-width="2"/>
+  <text x="370" y="215" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">TGFBR2</text>
+  <text x="370" y="230" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">Type II Receptor</text>
+  
+  <!-- TGFBR1 in plasma membrane -->
+  <rect x="440" y="180" width="60" height="60" fill="#ff9900" stroke="#000" stroke-width="2"/>
+  <text x="470" y="215" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">TGFBR1</text>
+  <text x="470" y="230" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">Type I Receptor</text>
+  
+  <!-- SMAD2 in cytoplasm - inactive -->
+  <circle cx="450" cy="300" r="25" fill="#99cc00" stroke="#000" stroke-width="2"/>
+  <text x="450" y="305" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">SMAD2</text>
+  
+  <!-- SMAD2 in nucleus - active -->
+  <circle cx="400" cy="480" r="25" fill="#99cc00" stroke="#000" stroke-width="2"/>
+  <text x="400" y="485" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">SMAD2</text>
+  <text x="400" y="460" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">Active</text>
+  
+  <!-- DNA in nucleus -->
+  <path d="M 300 520 C 350 500 450 540 500 520" stroke="#333" stroke-width="3" fill="none"/>
+  <path d="M 300 530 C 350 510 450 550 500 530" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- Arrows for the pathway -->
+  <!-- TGFB2 to TGFBR2 -->
+  <line x1="400" y1="130" x2="370" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- TGFBR2 to TGFBR1 -->
+  <line x1="400" y1="210" x2="440" y2="210" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- TGFBR1 to SMAD2 -->
+  <line x1="470" y1="240" x2="460" y2="275" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- SMAD2 translocation to nucleus (dashed line) -->
+  <path d="M 450 325 C 450 350 400 400 400 455" stroke="#000" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- SMAD2 to DNA -->
+  <line x1="400" y1="505" x2="400" y2="520" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Phosphorylation symbol -->
+  <circle cx="450" cy="335" r="8" fill="#ff5555" stroke="#000" stroke-width="1"/>
+  <text x="450" y="338" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">P</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Labels for the processes - repositioned to avoid overlap -->
+  <text x="340" y="150" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Receptor Binding</text>
+  <text x="420" y="195" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Activation</text>
+  <text x="510" y="270" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Phosphorylation</text>
+  <text x="520" y="370" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Nuclear Translocation</text>
+  <text x="520" y="515" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Transcription Factor Activity</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#000" text-anchor="middle">TGFB2-Mediated Signaling Pathway (Human)</text>
+</svg>

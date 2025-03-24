@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membranes -->
+  <rect x="50" y="100" width="700" height="450" rx="20" ry="20" fill="#e6f7ff" stroke="#a8d1ff" stroke-width="3"/>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Natural Killer (NK) Cell</text>
+  
+  <!-- Membrane raft region -->
+  <path d="M150,100 Q250,150 350,100 L350,200 Q250,150 150,200 Z" fill="#ffccaa" stroke="#ff9966" stroke-width="2"/>
+  <text x="250" y="155" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Membrane Raft</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="200" y="350" font-family="Arial" font-size="18" font-style="italic" fill="#555555">Cytoplasm</text>
+  
+  <!-- CD48 in adjacent cell (implied, not in source) -->
+  <rect x="0" y="140" width="100" height="80" rx="10" ry="10" fill="#d9d9d9" stroke="#888888" stroke-width="2"/>
+  <text x="50" y="125" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic" fill="#555555">Adjacent Cell</text>
+  <text x="50" y="170" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">CD48</text>
+  <text x="50" y="190" text-anchor="middle" font-family="Arial" font-size="12">(P09326)</text>
+  
+  <!-- CD244 receptor -->
+  <rect x="150" y="150" width="100" height="50" rx="5" ry="5" fill="#a2cd5a" stroke="#6b8e23" stroke-width="2"/>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">CD244</text>
+  <text x="200" y="195" text-anchor="middle" font-family="Arial" font-size="12">(Q9BZW8)</text>
+  
+  <!-- SH2D1A adaptor -->
+  <ellipse cx="300" cy="250" rx="45" ry="30" fill="#ffb6c1" stroke="#ff69b4" stroke-width="2"/>
+  <text x="300" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SH2D1A</text>
+  <text x="300" y="270" text-anchor="middle" font-family="Arial" font-size="12">(O60880)</text>
+  
+  <!-- FYN tyrosine kinase -->
+  <polygon points="400,250 450,280 400,310 350,280" fill="#87cefa" stroke="#4682b4" stroke-width="2"/>
+  <text x="400" y="285" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">FYN</text>
+  <text x="400" y="300" text-anchor="middle" font-family="Arial" font-size="12">(P06241)</text>
+  
+  <!-- VAV1 GEF -->
+  <rect x="500" y="350" width="80" height="50" rx="10" ry="10" fill="#ffd700" stroke="#daa520" stroke-width="2"/>
+  <text x="540" y="375" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">VAV1</text>
+  <text x="540" y="390" text-anchor="middle" font-family="Arial" font-size="12">(P15498)</text>
+  
+  <!-- Pathway arrows -->
+  <!-- CD48 to CD244 -->
+  <line x1="100" y1="170" x2="150" y2="170" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="125" y="160" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Binding</text>
+  
+  <!-- CD244 to SH2D1A -->
+  <line x1="250" y1="200" x2="280" y2="230" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="240" y="230" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  
+  <!-- SH2D1A to FYN -->
+  <line x1="345" y1="250" x2="350" y2="280" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="335" y="270" text-anchor="middle" font-family="Arial" font-size="12">2</text>
+  
+  <!-- FYN to CD244 (feedback) - More explicit with double arrowhead -->
+  <path d="M400,230 C350,150 250,120 200,140" stroke="#000000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="300" y="150" text-anchor="middle" font-family="Arial" font-size="12">5</text>
+  <text x="300" y="130" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Feedback</text>
+  <!-- Extra arrow markers to emphasize feedback direction -->
+  <polygon points="280,135 290,138 285,145" fill="#000000"/>
+  <polygon points="260,130 270,133 265,140" fill="#000000"/>
+  
+  <!-- FYN to VAV1 -->
+  <line x1="430" y1="300" x2="500" y2="350" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="470" y="330" text-anchor="middle" font-family="Arial" font-size="12">3</text>
+  
+  <!-- VAV1 to activation -->
+  <path d="M580,350 C650,300 680,250 650,150" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="630" y="250" font-family="Arial" font-size="12">4</text>
+  <text x="650" y="200" font-family="Arial" font-size="16" font-style="italic" font-weight="bold">NK Cell Activation</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="550" y="430" width="200" height="120" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="650" y="450" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <rect x="560" y="460" width="15" height="15" fill="#a2cd5a" stroke="#6b8e23" stroke-width="1"/>
+  <text x="585" y="472" font-family="Arial" font-size="14" text-anchor="start">Receptor (CD244)</text>
+  
+  <ellipse cx="567" cy="490" rx="8" ry="8" fill="#ffb6c1" stroke="#ff69b4" stroke-width="1"/>
+  <text x="585" y="495" font-family="Arial" font-size="14" text-anchor="start">Adaptor (SH2D1A)</text>
+  
+  <polygon points="567,518 575,513 567,508 560,513" fill="#87cefa" stroke="#4682b4" stroke-width="1"/>
+  <text x="585" y="520" font-family="Arial" font-size="14" text-anchor="start">Kinase (FYN)</text>
+  
+  <rect x="560" y="530" width="15" height="15" fill="#ffd700" stroke="#daa520" stroke-width="1"/>
+  <text x="585" y="542" font-family="Arial" font-size="14" text-anchor="start">GEF (VAV1)</text>
+  
+  <text x="50" y="50" font-family="Arial" font-size="22" font-weight="bold">CD48-CD244 Ligand-Receptor Binding in NK Cell Activation</text>
+</svg>

@@ -1,0 +1,150 @@
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell background -->
+  <rect x="50" y="50" width="800" height="600" rx="20" ry="20" fill="#f8f8f8" stroke="#333" stroke-width="2" />
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="500" cy="350" rx="320" ry="200" fill="#ffe6cc" stroke="#ff9966" stroke-width="2" />
+  <text x="500" y="170" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Mitochondrion</text>
+  
+  <!-- Mitochondrial Matrix -->
+  <ellipse cx="500" cy="370" rx="240" ry="140" fill="#ffd699" stroke="#ff9966" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="500" y="250" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Mitochondrial Matrix</text>
+  
+  <!-- Mitochondrial Inner Membrane -->
+  <path d="M 280 370 C 310 320, 690 320, 720 370 S 690 420, 500 420 S 310 420, 280 370" fill="none" stroke="#ff7700" stroke-width="2" />
+  <text x="500" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Mitochondrial Inner Membrane</text>
+  
+  <!-- Cytosol text -->
+  <text x="150" y="100" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Cytosol</text>
+  
+  <!-- Starting molecule - Glycine -->
+  <circle cx="120" cy="180" r="24" fill="#b3ffb3" stroke="#009900" stroke-width="2" />
+  <text x="120" y="185" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Glycine</text>
+  
+  <!-- Step 1: Hem1 (5-aminolevulinate synthase) -->
+  <rect x="80" y="230" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="125" y="254" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Hem1</text>
+  <text x="125" y="270" text-anchor="middle" font-family="Arial" font-size="9">5-ALA synthase</text>
+  <line x1="120" y1="204" x2="120" y2="230" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Step 2: Hem2 (porphobilinogen synthase) -->
+  <rect x="200" y="230" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="245" y="254" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Hem2</text>
+  <text x="245" y="270" text-anchor="middle" font-family="Arial" font-size="9">PBG synthase</text>
+  <line x1="170" y1="252" x2="200" y2="252" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Step 3: Hem3 (hydroxymethylbilane synthase) -->
+  <rect x="320" y="230" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="365" y="254" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Hem3</text>
+  <text x="365" y="270" text-anchor="middle" font-family="Arial" font-size="9">HMB synthase</text>
+  <line x1="290" y1="252" x2="320" y2="252" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Step 4: Hem4 (uroporphyrinogen-III synthase) -->
+  <rect x="440" y="230" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="485" y="254" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Hem4</text>
+  <text x="485" y="270" text-anchor="middle" font-family="Arial" font-size="9">Uro III synthase</text>
+  <line x1="410" y1="252" x2="440" y2="252" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Uroporphyrinogen III molecule -->
+  <circle cx="580" cy="252" r="24" fill="#b3ffb3" stroke="#009900" stroke-width="2" />
+  <text x="580" y="256" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold">Uro III</text>
+  <line x1="530" y1="252" x2="556" y2="252" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Branch to Met1 and Met8 -->
+  <line x1="580" y1="276" x2="580" y2="350" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <rect x="535" y="350" width="90" height="45" rx="10" ry="10" fill="#ffcc99" stroke="#cc6600" stroke-width="2" />
+  <text x="580" y="374" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Met1/Met8</text>
+  <text x="580" y="390" text-anchor="middle" font-family="Arial" font-size="9">Siroheme synth</text>
+  
+  <!-- Siroheme endpoint -->
+  <circle cx="580" cy="440" r="24" fill="#ffb3b3" stroke="#cc0000" stroke-width="2" />
+  <text x="580" y="445" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Siroheme</text>
+  <line x1="580" y1="395" x2="580" y2="416" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Continue main branch with Hem12 -->
+  <line x1="604" y1="252" x2="655" y2="252" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <rect x="655" y="230" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="700" y="254" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Hem12</text>
+  <text x="700" y="270" text-anchor="middle" font-family="Arial" font-size="9">Uro decarbox</text>
+  
+  <!-- Coproporphyrinogen step - Hem13 -->
+  <rect x="655" y="300" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="700" y="324" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Hem13</text>
+  <text x="700" y="340" text-anchor="middle" font-family="Arial" font-size="9">Copro oxidase</text>
+  <line x1="700" y1="275" x2="700" y2="300" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Protoporphyrinogen oxidase - Hem14 -->
+  <rect x="655" y="370" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="700" y="394" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Hem14</text>
+  <text x="700" y="410" text-anchor="middle" font-family="Arial" font-size="9">Proto oxidase</text>
+  <line x1="700" y1="345" x2="700" y2="370" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Ferrochelatase - Hem15 -->
+  <rect x="535" y="500" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="580" y="524" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Hem15</text>
+  <text x="580" y="540" text-anchor="middle" font-family="Arial" font-size="9">Ferrochelatase</text>
+  <line x1="700" y1="415" x2="700" y2="440" stroke="#000" stroke-width="1.5" />
+  <line x1="700" y1="440" x2="580" y2="500" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Iron chaperone Fxn1 -->
+  <rect x="420" y="450" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="465" y="474" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Fxn1</text>
+  <text x="465" y="490" text-anchor="middle" font-family="Arial" font-size="9">Iron chaperone</text>
+  <line x1="465" y1="495" x2="535" y2="523" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" stroke-dasharray="5,2" />
+  
+  <!-- Heme B molecule -->
+  <circle cx="580" cy="580" r="24" fill="#ffb3b3" stroke="#cc0000" stroke-width="2" />
+  <text x="580" y="585" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Heme B</text>
+  <line x1="580" y1="545" x2="580" y2="556" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Branch to Heme A -->
+  <line x1="580" y1="580" x2="380" y2="580" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  <rect x="290" y="560" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="335" y="584" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Cox10</text>
+  <text x="335" y="600" text-anchor="middle" font-family="Arial" font-size="9">Protoheme IX FT</text>
+  
+  <!-- Heme O intermediate -->
+  <circle cx="230" cy="580" r="20" fill="#ffb3b3" stroke="#cc0000" stroke-width="2" />
+  <text x="230" y="585" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold">Heme O</text>
+  <line x1="290" y1="580" x2="250" y2="580" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Etp1 step -->
+  <rect x="185" y="500" width="90" height="45" rx="10" ry="10" fill="#ccccff" stroke="#0000cc" stroke-width="2" />
+  <text x="230" y="524" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Etp1</text>
+  <text x="230" y="540" text-anchor="middle" font-family="Arial" font-size="9">NADPH-hemoprot</text>
+  <line x1="230" y1="560" x2="230" y2="545" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Heme A endpoint -->
+  <circle cx="140" cy="500" r="24" fill="#ffb3b3" stroke="#cc0000" stroke-width="2" />
+  <text x="140" y="505" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Heme A</text>
+  <line x1="185" y1="523" x2="160" y2="510" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+  
+  <!-- Title and description -->
+  <text x="450" y="85" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Heme Biosynthetic Process (GO:0006783)</text>
+  <text x="450" y="110" text-anchor="middle" font-family="Arial" font-size="16">in S. pombe</text>
+  <text x="450" y="135" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">A conserved pathway that converts glycine to heme derivatives via multiple enzymatic steps</text>
+  
+  <!-- Legend -->
+  <rect x="650" y="80" width="180" height="130" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="740" y="100" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="670" cy="120" r="8" fill="#b3ffb3" stroke="#009900" stroke-width="1" />
+  <text x="740" y="124" text-anchor="middle" font-family="Arial" font-size="12">Pathway Intermediates</text>
+  
+  <circle cx="670" cy="145" r="8" fill="#ffb3b3" stroke="#cc0000" stroke-width="1" />
+  <text x="740" y="149" text-anchor="middle" font-family="Arial" font-size="12">Final Products</text>
+  
+  <rect x="662" y="165" width="16" height="10" rx="3" ry="3" fill="#ccccff" stroke="#0000cc" stroke-width="1" />
+  <text x="740" y="174" text-anchor="middle" font-family="Arial" font-size="12">Enzymes</text>
+  
+  <rect x="662" y="190" width="16" height="10" rx="3" ry="3" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="740" y="199" text-anchor="middle" font-family="Arial" font-size="12">Alternate Pathway Enzymes</text>
+</svg>

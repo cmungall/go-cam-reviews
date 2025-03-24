@@ -1,0 +1,104 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell components -->
+  <rect x="0" y="0" width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Cell membrane -->
+  <path d="M 50,300 Q 400,250 750,300 Q 400,350 50,300 Z" fill="#DCE6F2" stroke="#2E75B6" stroke-width="3" />
+  
+  <!-- Extracellular space label -->
+  <text x="400" y="200" font-family="Arial" font-size="18" text-anchor="middle" fill="#666666">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="400" y="400" font-family="Arial" font-size="18" text-anchor="middle" fill="#666666">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="470" rx="150" ry="80" fill="#E6E0EC" stroke="#7030A0" stroke-width="3" />
+  <text x="400" y="450" font-family="Arial" font-size="18" text-anchor="middle" fill="#666666">Nucleus (GO:0005634)</text>
+  
+  <!-- Growth Hormone (GH1) -->
+  <circle cx="200" cy="170" r="30" fill="#FFC000" stroke="#ED7D31" stroke-width="2" />
+  <text x="200" y="175" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">GH1</text>
+  
+  <!-- Growth Hormone Receptor (GHR) -->
+  <rect x="375" y="280" width="50" height="40" fill="#70AD47" stroke="#507E32" stroke-width="2" />
+  <text x="400" y="302" font-family="Arial" font-size="12" text-anchor="middle" fill="#FFFFFF">GHR</text>
+  
+  <!-- JAK2 -->
+  <polygon points="400,340 385,355 415,355" fill="#5B9BD5" stroke="#2E75B6" stroke-width="2" />
+  <text x="400" y="352" font-family="Arial" font-size="12" text-anchor="middle" fill="#FFFFFF">JAK2</text>
+  
+  <!-- STAT5B in cytoplasm -->
+  <rect x="480" y="380" width="60" height="30" fill="#A5A5A5" stroke="#7F7F7F" stroke-width="2" />
+  <text x="510" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="#FFFFFF">STAT5B</text>
+  
+  <!-- STAT5B in nucleus -->
+  <rect x="400" y="470" width="60" height="30" fill="#A5A5A5" stroke="#7F7F7F" stroke-width="2" />
+  <text x="430" y="490" font-family="Arial" font-size="12" text-anchor="middle" fill="#FFFFFF">STAT5B</text>
+  
+  <!-- DNA in nucleus -->
+  <path d="M 350,510 Q 400,490 450,510 Q 400,530 350,510 Z" fill="#FFD966" stroke="#C8963F" stroke-width="2" />
+  <text x="400" y="515" font-family="Arial" font-size="10" text-anchor="middle" fill="#000000">DNA</text>
+  
+  <!-- Arrows for signaling pathway -->
+  <!-- GH1 to GHR -->
+  <path d="M 230,180 L 370,280" fill="none" stroke="#ED7D31" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  
+  <!-- GHR activation to JAK2 -->
+  <path d="M 400,320 L 400,340" fill="none" stroke="#70AD47" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  
+  <!-- JAK2 to STAT5B -->
+  <path d="M 415,355 L 480,380" fill="none" stroke="#5B9BD5" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  
+  <!-- STAT5B translocation to nucleus -->
+  <path d="M 510,410 C 510,430 470,460 430,470" fill="none" stroke="#A5A5A5" stroke-width="2.5" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  
+  <!-- STAT5B to DNA -->
+  <path d="M 430,500 L 420,510" fill="none" stroke="#7030A0" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Labels for molecular activities with better positioning -->
+  <text x="280" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Growth factor activity</text>
+  <text x="280" y="165" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic" fill="#666666">(GO:0008083)</text>
+  
+  <text x="300" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Growth hormone receptor activity</text>
+  <text x="300" y="255" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic" fill="#666666">(GO:0004903)</text>
+  
+  <text x="520" y="340" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Tyrosine kinase activity</text>
+  <text x="520" y="355" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic" fill="#666666">(GO:0004715)</text>
+  
+  <text x="560" y="470" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">DNA-binding transcription</text>
+  <text x="560" y="485" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">factor activity</text>
+  <text x="560" y="500" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic" fill="#666666">(GO:0003700)</text>
+  
+  <!-- Pathway labels -->
+  <text x="100" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#000000">Growth Hormone Receptor Signaling Pathway (Human)</text>
+  <text x="100" y="70" font-family="Arial" font-size="14" fill="#666666">Growth hormone receptor signaling pathway via JAK-STAT (GO:0060397)</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="100" width="220" height="190" fill="#FFFFFF" stroke="#000000" stroke-width="1" opacity="0.9" />
+  <text x="660" y="120" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Legend</text>
+  
+  <circle cx="570" cy="140" r="10" fill="#FFC000" stroke="#ED7D31" stroke-width="1" />
+  <text x="660" y="145" font-family="Arial" font-size="12" fill="#000000">GH1 (UniProtKB:P01241)</text>
+  
+  <rect x="560" y="160" width="20" height="15" fill="#70AD47" stroke="#507E32" stroke-width="1" />
+  <text x="660" y="172" font-family="Arial" font-size="12" fill="#000000">GHR (UniProtKB:P10912)</text>
+  
+  <polygon points="570,190 560,200 580,200" fill="#5B9BD5" stroke="#2E75B6" stroke-width="1" />
+  <text x="660" y="200" font-family="Arial" font-size="12" fill="#000000">JAK2 (UniProtKB:O60674)</text>
+  
+  <rect x="560" y="220" width="20" height="15" fill="#A5A5A5" stroke="#7F7F7F" stroke-width="1" />
+  <text x="660" y="232" font-family="Arial" font-size="12" fill="#000000">STAT5B (UniProtKB:P51692)</text>
+  
+  <line x1="560" y1="250" x2="580" y2="250" stroke="#ED7D31" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="660" y="255" font-family="Arial" font-size="12" fill="#000000">Activation</text>
+  
+  <line x1="560" y1="270" x2="580" y2="270" stroke="#A5A5A5" stroke-width="2.5" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  <text x="660" y="275" font-family="Arial" font-size="12" fill="#000000">Translocation</text>
+</svg>

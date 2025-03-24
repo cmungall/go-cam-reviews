@@ -1,0 +1,87 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background layers -->
+    <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" />
+    
+    <!-- Cell compartments -->
+    <!-- Extracellular space -->
+    <rect x="50" y="50" width="700" height="150" rx="5" ry="5" fill="#e6f7ff" stroke="#aad4e5" stroke-width="2" />
+    <text x="60" y="75" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Extracellular Space</text>
+    
+    <!-- Plasma membrane -->
+    <rect x="50" y="200" width="700" height="80" rx="0" ry="0" fill="#ffd480" stroke="#e69500" stroke-width="3" />
+    <text x="60" y="225" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Plasma Membrane</text>
+    
+    <!-- Cytoplasm -->
+    <rect x="50" y="280" width="700" height="170" rx="0" ry="0" fill="#e6ffe6" stroke="#b3d9b3" stroke-width="2" />
+    <text x="60" y="305" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Cytoplasm</text>
+    
+    <!-- Nucleus -->
+    <rect x="200" y="450" width="400" height="120" rx="200" ry="60" fill="#ffe6e6" stroke="#d9b3b3" stroke-width="2" />
+    <text x="370" y="475" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Nucleus</text>
+    
+    <!-- Molecular components -->
+    <!-- IGFBP5 in extracellular space -->
+    <circle cx="200" cy="120" r="30" fill="#66b3ff" stroke="#0066cc" stroke-width="2" />
+    <text x="200" y="125" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">IGFBP5</text>
+    
+    <!-- ROR1 receptor in membrane -->
+    <rect x="180" y="200" width="60" height="80" rx="5" ry="5" fill="#ff9999" stroke="#cc0000" stroke-width="2" />
+    <text x="210" y="245" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">ROR1</text>
+    
+    <!-- ERBB2 in membrane -->
+    <rect x="380" y="200" width="60" height="80" rx="5" ry="5" fill="#ff80b3" stroke="#cc0066" stroke-width="2" />
+    <text x="410" y="245" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">ERBB2</text>
+    
+    <!-- CREB1 in nucleus -->
+    <circle cx="400" cy="510" r="30" fill="#c299ff" stroke="#6600cc" stroke-width="2" />
+    <text x="400" y="515" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">CREB1</text>
+    
+    <!-- Cell Proliferation outcome -->
+    <rect x="500" y="350" width="140" height="60" rx="10" ry="10" fill="#ffffb3" stroke="#e6e600" stroke-width="2" />
+    <text x="570" y="385" font-family="Arial" font-size="16" fill="#000" text-anchor="middle" font-weight="bold">Cell Proliferation</text>
+    
+    <!-- Arrowhead marker definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+        </marker>
+    </defs>
+    
+    <!-- Signaling arrows -->
+    <!-- IGFBP5 to ROR1 -->
+    <line x1="210" y1="150" x2="210" y2="200" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="225" y="180" font-family="Arial" font-size="12" fill="#333" font-weight="bold">activates</text>
+    
+    <!-- ROR1 to ERBB2 -->
+    <path d="M 240 240 Q 310 200 380 240" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+    <text x="310" y="210" font-family="Arial" font-size="12" fill="#333" font-weight="bold">activates</text>
+    
+    <!-- ERBB2 to CREB1 -->
+    <path d="M 410 280 Q 410 390 400 480" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+    <text x="425" y="380" font-family="Arial" font-size="12" fill="#333" font-weight="bold">activates</text>
+    
+    <!-- CREB1 to Cell Proliferation -->
+    <path d="M 430 510 Q 470 490 500 380" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+    <text x="475" y="460" font-family="Arial" font-size="12" fill="#333" font-weight="bold">leads to</text>
+    
+    <!-- Function labels -->
+    <text x="200" y="90" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Receptor ligand</text>
+    <text x="210" y="270" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Signaling receptor</text>
+    <text x="410" y="270" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Protein tyrosine kinase</text>
+    <text x="400" y="485" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">DNA-binding transcription activator</text>
+    
+    <!-- Legend -->
+    <rect x="600" y="50" width="140" height="130" rx="5" ry="5" fill="white" stroke="#ccc" stroke-width="1" />
+    <text x="670" y="70" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" font-weight="bold">Legend</text>
+    <circle cx="620" cy="90" r="8" fill="#66b3ff" stroke="#0066cc" stroke-width="1" />
+    <text x="635" y="95" font-family="Arial" font-size="12" fill="#000">Ligand (IGFBP5)</text>
+    <rect x="610" y="105" width="16" height="16" rx="2" ry="2" fill="#ff9999" stroke="#cc0000" stroke-width="1" />
+    <text x="635" y="118" font-family="Arial" font-size="12" fill="#000">Receptor (ROR1)</text>
+    <rect x="610" y="125" width="16" height="16" rx="2" ry="2" fill="#ff80b3" stroke="#cc0066" stroke-width="1" />
+    <text x="635" y="138" font-family="Arial" font-size="12" fill="#000">Kinase (ERBB2)</text>
+    <circle cx="620" cy="155" r="8" fill="#c299ff" stroke="#6600cc" stroke-width="1" />
+    <text x="635" y="158" font-family="Arial" font-size="12" fill="#000">TF (CREB1)</text>
+
+    <!-- Title -->
+    <text x="400" y="30" font-family="Arial" font-size="18" fill="#000" text-anchor="middle" font-weight="bold">ROR1 activation by IGFBP5 leading to cell proliferation</text>
+</svg>

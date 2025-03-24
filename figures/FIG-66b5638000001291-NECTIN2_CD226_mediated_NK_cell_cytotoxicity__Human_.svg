@@ -1,0 +1,104 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">NECTIN2-CD226 Mediated NK-Cell Cytotoxicity</text>
+  
+  <!-- Target Cell -->
+  <ellipse cx="200" cy="200" rx="150" ry="120" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="200" y="140" font-family="Arial" font-size="16" text-anchor="middle">Target Cell</text>
+  
+  <!-- NK Cell -->
+  <ellipse cx="600" cy="200" rx="150" ry="120" fill="#fff2e6" stroke="#ff9933" stroke-width="2"/>
+  <text x="600" y="140" font-family="Arial" font-size="16" text-anchor="middle">NK Cell</text>
+  
+  <!-- Target Cell Plasma Membrane -->
+  <path d="M 90,180 Q 200,165 310,180" stroke="#0066cc" stroke-width="3" fill="none"/>
+  <text x="155" y="170" font-family="Arial" font-size="12" text-anchor="middle">Plasma Membrane</text>
+  
+  <!-- NK Cell Plasma Membrane -->
+  <path d="M 490,180 Q 600,165 710,180" stroke="#ff9933" stroke-width="3" fill="none"/>
+  <text x="600" y="170" font-family="Arial" font-size="12" text-anchor="middle">Plasma Membrane</text>
+  
+  <!-- NECTIN2 -->
+  <circle cx="310" cy="180" r="15" fill="#66cc99" stroke="#009966" stroke-width="2"/>
+  <text x="310" y="185" font-family="Arial" font-size="10" text-anchor="middle" fill="white">N2</text>
+  <text x="310" y="210" font-family="Arial" font-size="12" text-anchor="middle">NECTIN2</text>
+  <text x="310" y="225" font-family="Arial" font-size="10" text-anchor="middle">(Q92692)</text>
+  
+  <!-- CD226 -->
+  <rect x="475" y="165" width="30" height="30" fill="#ff6666" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="490" y="185" font-family="Arial" font-size="10" text-anchor="middle" fill="white">CD226</text>
+  <text x="490" y="210" font-family="Arial" font-size="12" text-anchor="middle">CD226</text>
+  <text x="490" y="225" font-family="Arial" font-size="10" text-anchor="middle">(Q15762)</text>
+  
+  <!-- GRB2 -->
+  <rect x="550" y="240" width="30" height="30" fill="#9966cc" stroke="#663399" stroke-width="2" rx="5" ry="5"/>
+  <text x="565" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="white">GRB2</text>
+  <text x="565" y="285" font-family="Arial" font-size="12" text-anchor="middle">GRB2</text>
+  <text x="565" y="300" font-family="Arial" font-size="10" text-anchor="middle">(P62993)</text>
+  
+  <!-- VAV1 -->
+  <rect x="620" y="240" width="30" height="30" fill="#ffcc66" stroke="#ff9900" stroke-width="2" rx="5" ry="5"/>
+  <text x="635" y="260" font-family="Arial" font-size="10" text-anchor="middle">VAV1</text>
+  <text x="635" y="285" font-family="Arial" font-size="12" text-anchor="middle">VAV1</text>
+  <text x="635" y="300" font-family="Arial" font-size="10" text-anchor="middle">(P15498)</text>
+  
+  <!-- Molecular function labels -->
+  <text x="310" y="240" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">Receptor ligand activity</text>
+  <text x="490" y="240" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">Signaling receptor activity</text>
+  <text x="565" y="315" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">Protein-macromolecule adaptor</text>
+  <text x="635" y="315" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle">Guanyl-nucleotide exchange factor</text>
+  
+  <!-- Interactions with consistent line styles -->
+  <line x1="310" y1="180" x2="475" y2="180" stroke="#333333" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <text x="390" y="170" font-family="Arial" font-size="10" text-anchor="middle">Binding</text>
+  
+  <line x1="490" y1="195" x2="550" y2="240" stroke="#333333" stroke-width="2.5" stroke-dasharray="3,1"/>
+  <text x="510" y="225" font-family="Arial" font-size="10" text-anchor="middle">Activation</text>
+  
+  <line x1="580" y1="255" x2="620" y2="255" stroke="#333333" stroke-width="2.5" stroke-dasharray="1,1"/>
+  <text x="600" y="245" font-family="Arial" font-size="10" text-anchor="middle">Interaction</text>
+  
+  <!-- Biological process -->
+  <rect x="350" y="350" width="200" height="40" fill="#ffdddd" stroke="#cc0000" stroke-width="2" rx="10" ry="10"/>
+  <text x="450" y="375" font-family="Arial" font-size="14" text-anchor="middle">Natural Killer Cell Mediated Cytotoxicity</text>
+  
+  <!-- Arrows to biological process - now with consistent thickness -->
+  <path d="M 310,240 Q 350,300 380,350" stroke="#333333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 490,240 Q 450,300 430,350" stroke="#333333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 565,315 Q 500,330 450,350" stroke="#333333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 635,315 Q 550,330 470,350" stroke="#333333" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cytoplasm labels -->
+  <text x="600" y="210" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle" fill="#ff9933">Cytoplasm</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="40" y="400" width="220" height="90" fill="white" stroke="#999999" stroke-width="1"/>
+  <text x="50" y="420" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <circle cx="60" cy="440" r="8" fill="#66cc99" stroke="#009966" stroke-width="1"/>
+  <text x="75" y="444" font-family="Arial" font-size="12">NECTIN2 (Receptor Ligand)</text>
+  
+  <rect x="50" y="455" width="16" height="16" fill="#ff6666" stroke="#cc0000" stroke-width="1" rx="3" ry="3"/>
+  <text x="75" y="468" font-family="Arial" font-size="12">CD226 (Signaling Receptor)</text>
+  
+  <line x1="50" y1="480" x2="66" y2="480" stroke="#333333" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <text x="75" y="484" font-family="Arial" font-size="12">Molecular Interaction</text>
+  
+  <!-- Expanded explanation box -->
+  <rect x="500" y="400" width="270" height="90" fill="#f0f0f0" stroke="#999999" stroke-width="1" rx="5" ry="5"/>
+  <text x="510" y="420" font-family="Arial" font-size="14" font-weight="bold">Cytotoxicity Process:</text>
+  <text x="510" y="440" font-family="Arial" font-size="11">1. NECTIN2 on target cell binds to CD226 receptor on NK cell</text>
+  <text x="510" y="457" font-family="Arial" font-size="11">2. CD226 activates GRB2 adaptor protein in NK cytoplasm</text>
+  <text x="510" y="474" font-family="Arial" font-size="11">3. GRB2 recruits VAV1 guanyl-nucleotide exchange factor</text>
+  <text x="510" y="491" font-family="Arial" font-size="11">4. Signaling cascade triggers NK cell to destroy target cell</text>
+</svg>

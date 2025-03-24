@@ -1,0 +1,123 @@
+<svg width="800" height="670" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cell nucleus background -->
+    <ellipse cx="400" cy="320" rx="350" ry="250" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+    <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Phosphorylation of NBN regulates DNA repair choice at telomeres</text>
+    
+    <!-- Telomere region -->
+    <rect x="200" y="220" width="400" height="300" rx="20" ry="20" fill="#e6f2ff" stroke="#0056b3" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="400" y="210" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Chromosome, Telomeric Region (GO:0000781)</text>
+    
+    <!-- DNA double helix (simplified) at telomere -->
+    <path d="M250,370 C280,350 320,390 350,370 C380,350 420,390 450,370 C480,350 520,390 550,370" 
+          stroke="#3333CC" stroke-width="4" fill="none"/>
+    <path d="M250,390 C280,410 320,370 350,390 C380,410 420,370 450,390 C480,410 520,370 550,390" 
+          stroke="#3333CC" stroke-width="4" fill="none"/>
+    <text x="400" y="430" text-anchor="middle" font-family="Arial" font-size="14">Telomeric DNA</text>
+    
+    <!-- CDK2 protein -->
+    <circle cx="150" cy="170" r="40" fill="#ff9999" stroke="#cc0000" stroke-width="3"/>
+    <text x="150" y="175" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">CDK2</text>
+    <text x="150" y="190" text-anchor="middle" font-family="Arial" font-size="12">(P24941)</text>
+    
+    <!-- PPP1CA protein -->
+    <circle cx="650" cy="170" r="40" fill="#99ccff" stroke="#0066cc" stroke-width="3"/>
+    <text x="650" y="175" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">PPP1CA</text>
+    <text x="650" y="190" text-anchor="middle" font-family="Arial" font-size="12">(P62136)</text>
+    
+    <!-- NBN protein (phosphorylated) -->
+    <rect x="250" y="270" width="80" height="40" rx="10" ry="10" fill="#ffcc99" stroke="#ff6600" stroke-width="3"/>
+    <text x="290" y="295" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">NBN-P</text>
+    <text x="290" y="310" text-anchor="middle" font-family="Arial" font-size="12">(O60934)</text>
+    
+    <!-- NBN protein (dephosphorylated) -->
+    <rect x="470" y="270" width="80" height="40" rx="10" ry="10" fill="#ccff99" stroke="#66cc00" stroke-width="3"/>
+    <text x="510" y="295" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">NBN</text>
+    <text x="510" y="310" text-anchor="middle" font-family="Arial" font-size="12">(O60934)</text>
+    
+    <!-- TERF2 protein (with phosphorylated NBN) -->
+    <polygon points="290,350 310,370 290,390 270,370" fill="#cc99ff" stroke="#6600cc" stroke-width="3"/>
+    <text x="290" y="370" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TERF2</text>
+    <text x="290" y="385" text-anchor="middle" font-family="Arial" font-size="12">(Q15554)</text>
+    
+    <!-- TERF2 protein (with dephosphorylated NBN) -->
+    <polygon points="510,350 530,370 510,390 490,370" fill="#cc99ff" stroke="#6600cc" stroke-width="3"/>
+    <text x="510" y="370" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TERF2</text>
+    <text x="510" y="385" text-anchor="middle" font-family="Arial" font-size="12">(Q15554)</text>
+    
+    <!-- Process labels for left pathway -->
+    <text x="290" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#cc0000" font-weight="bold">Protection Pathway</text>
+    <text x="290" y="415" text-anchor="middle" font-family="Arial" font-size="12" fill="#cc0000" font-weight="bold">DNA binding</text>
+    <text x="290" y="430" text-anchor="middle" font-family="Arial" font-size="11" fill="#cc0000">(GO:0003691)</text>
+    
+    <!-- Process labels for right pathway -->
+    <text x="510" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#0066cc" font-weight="bold">Repair Pathway</text>
+    <text x="510" y="415" text-anchor="middle" font-family="Arial" font-size="12" fill="#0066cc" font-weight="bold">DNA binding</text>
+    <text x="510" y="430" text-anchor="middle" font-family="Arial" font-size="11" fill="#0066cc">(GO:0003691)</text>
+    
+    <!-- Arrows for CDK2 pathway -->
+    <path d="M180,190 L250,270" stroke="#cc0000" stroke-width="3" marker-end="url(#redarrow)"/>
+    <text x="200" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#cc0000" font-weight="bold">phosphorylates</text>
+    <text x="200" y="235" text-anchor="middle" font-family="Arial" font-size="11" fill="#cc0000">(GO:0004693)</text>
+    
+    <!-- Arrows for PPP1CA pathway -->
+    <path d="M620,190 L550,270" stroke="#0066cc" stroke-width="3" marker-end="url(#bluearrow)"/>
+    <text x="600" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#0066cc" font-weight="bold">dephosphorylates</text>
+    <text x="600" y="235" text-anchor="middle" font-family="Arial" font-size="11" fill="#0066cc">(GO:0004722)</text>
+    
+    <!-- Arrow from phosphorylated NBN to TERF2 -->
+    <path d="M290,310 L290,350" stroke="#ff6600" stroke-width="3" marker-end="url(#orangearrow)"/>
+    <text x="340" y="330" text-anchor="middle" font-family="Arial" font-size="12" fill="#ff6600" font-weight="bold">adaptor activity</text>
+    <text x="340" y="345" text-anchor="middle" font-family="Arial" font-size="11" fill="#ff6600">(GO:0140463)</text>
+    
+    <!-- Arrow from dephosphorylated NBN to TERF2 -->
+    <path d="M510,310 L510,350" stroke="#66cc00" stroke-width="3" marker-end="url(#greenarrow)"/>
+    <text x="560" y="330" text-anchor="middle" font-family="Arial" font-size="12" fill="#66cc00" font-weight="bold">adaptor activity</text>
+    <text x="560" y="345" text-anchor="middle" font-family="Arial" font-size="11" fill="#66cc00">(GO:0140463)</text>
+    
+    <!-- Process boxes at the bottom -->
+    <rect x="190" y="470" width="200" height="50" rx="10" ry="10" fill="#ffddbb" stroke="#cc5500" stroke-width="3"/>
+    <text x="290" y="495" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Protection from NHEJ at telomere</text>
+    <text x="290" y="510" text-anchor="middle" font-family="Arial" font-size="11">(GO:0031848)</text>
+    
+    <rect x="410" y="470" width="200" height="50" rx="10" ry="10" fill="#bbffbb" stroke="#009900" stroke-width="3"/>
+    <text x="510" y="495" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Alt-NHEJ DNA repair</text>
+    <text x="510" y="510" text-anchor="middle" font-family="Arial" font-size="11">(GO:0097681)</text>
+    
+    <!-- Arrows from TERF2 to process boxes -->
+    <path d="M290,390 L290,470" stroke="#6600cc" stroke-width="3" marker-end="url(#purplearrow)"/>
+    <path d="M510,390 L510,470" stroke="#6600cc" stroke-width="3" marker-end="url(#purplearrow)"/>
+    
+    <!-- Main process title -->
+    <rect x="200" y="540" width="400" height="30" rx="5" ry="5" fill="#e6e6e6" stroke="#333" stroke-width="1"/>
+    <text x="400" y="560" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Telomere maintenance in response to DNA damage (GO:0043247)</text>
+    
+    <!-- Legend -->
+    <rect x="150" y="590" width="500" height="60" rx="5" ry="5" fill="#f9f9f9" stroke="#333" stroke-width="1"/>
+    <text x="170" y="610" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+    <text x="230" y="610" font-family="Arial" font-size="14">NHEJ - Non-Homologous End Joining</text>
+    <text x="500" y="610" font-family="Arial" font-size="14">Alt-NHEJ - Alternative NHEJ</text>
+    <text x="230" y="630" font-family="Arial" font-size="14">P - Phosphorylated state</text>
+    <text x="400" y="630" font-family="Arial" font-size="14">GO - Gene Ontology term</text>
+    
+    <!-- Nucleus label -->
+    <text x="400" y="140" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cell Nucleus</text>
+    
+    <!-- Markers definition with different colors -->
+    <defs>
+        <marker id="redarrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#cc0000"/>
+        </marker>
+        <marker id="bluearrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#0066cc"/>
+        </marker>
+        <marker id="orangearrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#ff6600"/>
+        </marker>
+        <marker id="greenarrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#66cc00"/>
+        </marker>
+        <marker id="purplearrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#6600cc"/>
+        </marker>
+    </defs>
+</svg>

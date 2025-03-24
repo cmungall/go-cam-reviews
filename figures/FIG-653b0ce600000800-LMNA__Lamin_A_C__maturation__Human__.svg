@@ -1,0 +1,153 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Nucleus Outline -->
+  <ellipse cx="400" cy="300" rx="350" ry="200" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  
+  <!-- Nuclear Lamina -->
+  <path d="M100,300 C100,400 700,400 700,300 C700,200 100,200 100,300" fill="none" stroke="#555" stroke-width="4" stroke-dasharray="10,5"/>
+  <text x="400" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Nuclear Lamina</text>
+  <text x="400" y="238" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Meshwork of proteins supporting nuclear envelope)</text>
+  <text x="400" y="253" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(GO:0005652)</text>
+  
+  <!-- Cytoplasm Label -->
+  <text x="120" y="120" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Cytoplasm</text>
+  
+  <!-- Nucleus Label -->
+  <text x="400" y="160" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Nucleus</text>
+  
+  <!-- PATHWAY COMPONENTS -->
+  
+  <!-- Initial LMNA -->
+  <rect x="120" y="280" width="100" height="40" fill="#c6efd4" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="170" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Prelamin A</text>
+  <text x="170" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(UniProtKB:P02545)</text>
+  
+  <!-- Step 1: Farnesylation -->
+  <rect x="150" y="370" width="100" height="40" fill="#ffcc99" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="200" y="395" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">FNTA</text>
+  <text x="200" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(UniProtKB:P49354)</text>
+  
+  <text x="200" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Protein farnesyltransferase</text>
+  <text x="200" y="455" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">activity (GO:0004660)</text>
+  
+  <!-- Arrow from Initial to Step 1 -->
+  <line x1="170" y1="320" x2="190" y2="370" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Farnesylated LMNA -->
+  <rect x="260" y="280" width="100" height="40" fill="#c6efd4" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="310" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Farnesylated</text>
+  <text x="310" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Prelamin A</text>
+  
+  <!-- Arrow from Step 1 to Farnesylated -->
+  <line x1="220" y1="370" x2="270" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: First Proteolytic Cleavage -->
+  <rect x="290" y="370" width="100" height="40" fill="#ffcc99" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="340" y="395" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">ZMPSTE24</text>
+  <text x="340" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(UniProtKB:O75844)</text>
+  
+  <text x="340" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Endopeptidase activity</text>
+  <text x="340" y="455" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(GO:0004175)</text>
+  
+  <!-- Arrow from Farnesylated to Step 2 -->
+  <line x1="310" y1="320" x2="330" y2="370" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cleaved LMNA -->
+  <rect x="400" y="280" width="100" height="40" fill="#c6efd4" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="450" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Cleaved</text>
+  <text x="450" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Prelamin A</text>
+  
+  <!-- Arrow from Step 2 to Cleaved -->
+  <line x1="360" y1="370" x2="410" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Methylation -->
+  <rect x="430" y="370" width="100" height="40" fill="#ffcc99" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="480" y="395" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">ICMT</text>
+  <text x="480" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(UniProtKB:O60725)</text>
+  
+  <text x="480" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Carboxyl O-methyltransferase</text>
+  <text x="480" y="455" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">activity (GO:0004671)</text>
+  
+  <!-- Arrow from Cleaved to Step 3 -->
+  <line x1="450" y1="320" x2="470" y2="370" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Methylated LMNA -->
+  <rect x="540" y="280" width="100" height="40" fill="#c6efd4" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="590" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Methylated</text>
+  <text x="590" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Prelamin A</text>
+  
+  <!-- Arrow from Step 3 to Methylated -->
+  <line x1="500" y1="370" x2="550" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: Final Proteolytic Cleavage -->
+  <rect x="570" y="370" width="100" height="40" fill="#ffcc99" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="620" y="395" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">ZMPSTE24</text>
+  <text x="620" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(UniProtKB:O75844)</text>
+  
+  <text x="620" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Endopeptidase activity</text>
+  <text x="620" y="455" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(GO:0004175)</text>
+  
+  <!-- Arrow from Methylated to Step 4 -->
+  <line x1="590" y1="320" x2="610" y2="370" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Mature LMNA -->
+  <rect x="680" y="280" width="100" height="40" fill="#c6efd4" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="730" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Mature Lamin A/C</text>
+  <text x="730" y="320" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(UniProtKB:P02545)</text>
+  
+  <!-- Arrow from Step 4 to Mature -->
+  <line x1="640" y1="370" x2="690" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Nuclear Lamina Organization Process -->
+  <rect x="630" y="180" width="130" height="60" fill="#e6e6fa" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="695" y="200" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Nuclear Envelope</text>
+  <text x="695" y="218" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Organization</text>
+  <text x="695" y="236" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(Assembly & maintenance)</text>
+  <text x="695" y="250" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(GO:0006998)</text>
+  
+  <!-- Arrow from Mature to Nuclear Lamina Organization -->
+  <line x1="730" y1="280" x2="695" y2="240" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Overall Process Label - Enlarged -->
+  <rect x="325" y="70" width="200" height="60" fill="#ffd700" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="425" y="95" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Protein Maturation</text>
+  <text x="425" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Post-translational processing)</text>
+  <text x="425" y="130" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(GO:0051604)</text>
+  
+  <!-- Structural Role Label -->
+  <rect x="580" y="120" width="130" height="40" fill="#a7c7e7" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="645" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Structural Role</text>
+  <text x="645" y="155" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">(GO:0160123)</text>
+  
+  <!-- Arrow from Mature to Structural Role -->
+  <path d="M710,280 Q670,220 645,160" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Simplified Legend -->
+  <rect x="30" y="490" width="740" height="70" fill="#f8f8f8" stroke="#333" stroke-width="1"/>
+  <text x="60" y="510" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Legend Items in a cleaner layout -->
+  <rect x="60" y="520" width="15" height="15" fill="#c6efd4" stroke="#333" stroke-width="1"/>
+  <text x="85" y="532" font-family="Arial" font-size="12">Protein forms</text>
+  
+  <rect x="185" y="520" width="15" height="15" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="210" y="532" font-family="Arial" font-size="12">Enzymatic activities</text>
+  
+  <rect x="350" y="520" width="15" height="15" fill="#e6e6fa" stroke="#333" stroke-width="1"/>
+  <text x="375" y="532" font-family="Arial" font-size="12">Biological processes</text>
+  
+  <rect x="515" y="520" width="15" height="15" fill="#a7c7e7" stroke="#333" stroke-width="1"/>
+  <text x="540" y="532" font-family="Arial" font-size="12">Molecular functions</text>
+  
+  <rect x="60" y="545" width="15" height="15" fill="#ffd700" stroke="#333" stroke-width="1"/>
+  <text x="85" y="557" font-family="Arial" font-size="12">Overall process</text>
+  
+  <path d="M350,550 L365,550" stroke="#555" stroke-width="4" stroke-dasharray="5,3"/>
+  <text x="390" y="557" font-family="Arial" font-size="12">Nuclear lamina</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

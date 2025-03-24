@@ -1,0 +1,131 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Cell nucleus -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f8ff" stroke="#2c3e50" stroke-width="3"/>
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#2c3e50">Nucleus</text>
+  
+  <!-- DNA double helix with damage site -->
+  <path d="M200,250 C250,200 350,400 400,350 L400,350 C450,300 550,500 600,450" stroke="#2c3e50" stroke-width="4.5" fill="none"/>
+  <path d="M200,350 C250,300 350,500 400,450 L400,450 C450,400 550,600 600,550" stroke="#2c3e50" stroke-width="4.5" fill="none"/>
+  
+  <!-- DNA damage site (double-strand break) -->
+  <rect x="390" y="350" width="20" height="100" fill="#f9e79f" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e74c3c">DNA DSB</text>
+  <text x="400" y="490" text-anchor="middle" font-family="Arial" font-size="12" fill="#2c3e50">(GO:0035861)</text>
+  
+  <!-- ATM -->
+  <rect x="150" y="200" width="80" height="40" rx="5" ry="5" fill="#85c1e9" stroke="#2c3e50" stroke-width="2.5"/>
+  <text x="190" y="225" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">ATM</text>
+  
+  <!-- H2AX phosphorylation -->
+  <circle cx="400" cy="320" r="15" fill="#f9e79f" stroke="#2c3e50" stroke-width="2.5"/>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial" font-size="12" fill="#2c3e50">H2AX</text>
+  
+  <!-- Phosphorylation arrow from ATM to H2AX - RED for phosphorylation -->
+  <path d="M230,220 C300,250 350,270 385,320" stroke="#e74c3c" stroke-width="2.5" fill="none" marker-end="url(#arrowRed)"/>
+  <circle cx="400" cy="320" r="20" fill="none" stroke="#e74c3c" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <text x="410" y="295" text-anchor="start" font-family="Arial" font-size="14" fill="#e74c3c">γH2AX</text>
+  
+  <!-- Label for ATM phosphorylating H2AX -->
+  <rect x="300" y="240" width="100" height="32" rx="5" ry="5" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+  <text x="350" y="255" text-anchor="middle" font-family="Arial" font-size="11" fill="#e74c3c">Phosphorylation</text>
+  <text x="350" y="270" text-anchor="middle" font-family="Arial" font-size="11" fill="#e74c3c">(GO:0035979)</text>
+  
+  <!-- MDC1 -->
+  <rect x="500" y="250" width="80" height="40" rx="5" ry="5" fill="#aed6f1" stroke="#2c3e50" stroke-width="2.5"/>
+  <text x="540" y="275" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">MDC1</text>
+  
+  <!-- MDC1 binding to γH2AX - GREEN for binding -->
+  <path d="M420,320 C450,300 480,275 500,270" stroke="#27ae60" stroke-width="2.5" fill="none" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Label for MDC1 binding to γH2AX -->
+  <rect x="440" y="300" width="70" height="32" rx="5" ry="5" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+  <text x="475" y="315" text-anchor="middle" font-family="Arial" font-size="11" fill="#27ae60">Binding</text>
+  <text x="475" y="330" text-anchor="middle" font-family="Arial" font-size="11" fill="#27ae60">(GO:0140566)</text>
+  
+  <!-- CK2 (CSNK2A1) -->
+  <rect x="600" y="180" width="80" height="40" rx="5" ry="5" fill="#85c1e9" stroke="#2c3e50" stroke-width="2.5"/>
+  <text x="640" y="205" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">CK2</text>
+  
+  <!-- CK2 phosphorylating MDC1 - RED for phosphorylation -->
+  <path d="M600,200 C580,220 560,230 550,250" stroke="#e74c3c" stroke-width="2.5" fill="none" marker-end="url(#arrowRed)"/>
+  
+  <!-- Label for CK2 phosphorylating MDC1 -->
+  <rect x="570" y="210" width="100" height="32" rx="5" ry="5" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+  <text x="620" y="225" text-anchor="middle" font-family="Arial" font-size="11" fill="#e74c3c">Phosphorylation</text>
+  <text x="620" y="240" text-anchor="middle" font-family="Arial" font-size="11" fill="#e74c3c">(GO:0004674)</text>
+  
+  <!-- Phosphorylation mark on MDC1 -->
+  <circle cx="540" cy="250" r="8" fill="#e74c3c" stroke="#2c3e50" stroke-width="1"/>
+  <text x="540" y="254" text-anchor="middle" font-family="Arial" font-size="12" fill="#ffffff">P</text>
+  
+  <!-- NBN protein -->
+  <rect x="650" y="350" width="80" height="40" rx="5" ry="5" fill="#aed6f1" stroke="#2c3e50" stroke-width="2.5"/>
+  <text x="690" y="375" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">NBN</text>
+  
+  <!-- MRN complex -->
+  <rect x="570" y="400" width="100" height="40" rx="5" ry="5" fill="#d2b4de" stroke="#2c3e50" stroke-width="2.5"/>
+  <text x="620" y="425" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">MRN complex</text>
+  
+  <!-- MDC1 recruiting NBN and MRN - BLUE for recruitment -->
+  <path d="M550,290 C600,320 620,330 650,350" stroke="#3498db" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M550,290 C570,330 580,370 600,400" stroke="#3498db" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  
+  <!-- Label for MDC1 recruiting NBN and MRN -->
+  <rect x="570" y="320" width="85" height="32" rx="5" ry="5" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+  <text x="613" y="335" text-anchor="middle" font-family="Arial" font-size="11" fill="#3498db">Recruitment</text>
+  <text x="613" y="350" text-anchor="middle" font-family="Arial" font-size="11" fill="#3498db">(GO:0140463)</text>
+  
+  <!-- NBN and MRN complex localizing to DSB - BLUE for localization -->
+  <path d="M650,370 C550,390 450,400 420,400" stroke="#3498db" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M570,420 C520,430 470,430 420,420" stroke="#3498db" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  
+  <!-- Label for NBN and MRN localization to DSB -->
+  <rect x="490" y="435" width="120" height="32" rx="5" ry="5" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+  <text x="550" y="450" text-anchor="middle" font-family="Arial" font-size="11" fill="#3498db">Localization to DSB</text>
+  <text x="550" y="465" text-anchor="middle" font-family="Arial" font-size="11" fill="#3498db">(GO:1990166)</text>
+  
+  <!-- Process label -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#2c3e50">
+    Phosphorylation of MDC1 by CK2 promotes recruitment of
+  </text>
+  <text x="400" y="55" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#2c3e50">
+    NBN and MRN complex to DNA damage sites
+  </text>
+  
+  <!-- DNA damage response label -->
+  <text x="400" y="75" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50">
+    (GO:0006974 DNA damage response)
+  </text>
+  
+  <!-- Color-coded legend -->
+  <rect x="50" y="500" width="700" height="70" rx="10" ry="10" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1"/>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">Legend</text>
+  
+  <!-- Phosphorylation legend -->
+  <line x1="70" y1="540" x2="110" y2="540" stroke="#e74c3c" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="180" y="545" text-anchor="start" font-family="Arial" font-size="14" fill="#2c3e50">Phosphorylation</text>
+  
+  <!-- Binding legend -->
+  <line x1="250" y1="540" x2="290" y2="540" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
+  <text x="360" y="545" text-anchor="start" font-family="Arial" font-size="14" fill="#2c3e50">Binding/Recognition</text>
+  
+  <!-- Recruitment legend -->
+  <line x1="480" y1="540" x2="520" y2="540" stroke="#3498db" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <text x="590" y="545" text-anchor="start" font-family="Arial" font-size="14" fill="#2c3e50">Recruitment/Localization</text>
+  
+  <!-- Arrow marker definitions for different colors -->
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e74c3c"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3498db"/>
+    </marker>
+  </defs>
+</svg>

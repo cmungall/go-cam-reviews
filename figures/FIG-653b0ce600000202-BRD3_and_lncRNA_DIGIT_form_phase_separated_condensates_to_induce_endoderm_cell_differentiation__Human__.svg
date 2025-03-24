@@ -1,0 +1,152 @@
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Nucleus Background -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f9fa" stroke="#666" stroke-width="2"/>
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">BRD3 and lncRNA DIGIT Pathway in Endodermal Cell Differentiation</text>
+  
+  <!-- Chromatin Region -->
+  <path d="M 200,250 C 250,220 300,280 350,250 C 400,220 450,280 500,250 C 550,220 600,280 650,250" 
+        fill="none" stroke="#8a8a8a" stroke-width="8"/>
+  <text x="425" y="210" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Chromatin (GO:0000785)</text>
+  
+  <!-- Histones -->
+  <circle cx="250" cy="250" r="15" fill="#b3cde3" stroke="#333" stroke-width="1.5"/>
+  <circle cx="350" cy="250" r="15" fill="#b3cde3" stroke="#333" stroke-width="1.5"/>
+  <circle cx="450" cy="250" r="15" fill="#b3cde3" stroke="#333" stroke-width="1.5"/>
+  <circle cx="550" cy="250" r="15" fill="#b3cde3" stroke="#333" stroke-width="1.5"/>
+  <circle cx="650" cy="250" r="15" fill="#b3cde3" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- H3K18 Acetylation by EP300 -->
+  <circle cx="350" cy="250" r="20" fill="none" stroke="#ff7f00" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="350" y="245" text-anchor="middle" font-family="Arial" font-size="10">H3K18ac</text>
+  
+  <!-- EP300 -->
+  <rect x="280" y="170" width="70" height="30" rx="10" ry="10" fill="#fdb462" stroke="#333" stroke-width="1.5"/>
+  <text x="315" y="190" text-anchor="middle" font-family="Arial" font-size="12">EP300</text>
+  <text x="315" y="160" text-anchor="middle" font-family="Arial" font-size="9" fill="#666">UniProtKB:Q09472</text>
+  
+  <!-- Step 1 Indicator -->
+  <circle cx="270" y="175" r="12" fill="#333" stroke="none"/>
+  <text x="270" y="179" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">1</text>
+  
+  <!-- EP300 action arrow -->
+  <path d="M 315,200 L 335,230" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="290" y="215" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">acetylates H3K18</text>
+  <text x="290" y="225" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">(GO:0043993)</text>
+  
+  <!-- BRD3 -->
+  <rect x="420" y="170" width="60" height="30" rx="10" ry="10" fill="#80b1d3" stroke="#333" stroke-width="1.5"/>
+  <text x="450" y="190" text-anchor="middle" font-family="Arial" font-size="12">BRD3</text>
+  <text x="450" y="160" text-anchor="middle" font-family="Arial" font-size="9" fill="#666">UniProtKB:Q15059</text>
+  
+  <!-- Step 2 Indicator -->
+  <circle cx="410" y="175" r="12" fill="#333" stroke="none"/>
+  <text x="410" y="179" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">2</text>
+  
+  <!-- BRD3 binding arrow -->
+  <path d="M 450,200 L 380,240" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="430" y="220" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">binds acetylated histone</text>
+  <text x="430" y="230" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">(GO:0070577)</text>
+  
+  <!-- lncRNA DIGIT -->
+  <path d="M 520,160 C 530,150 550,150 560,160 C 570,170 570,190 560,200 C 550,210 530,210 520,200 C 510,190 510,170 520,160 Z" 
+        fill="#b2df8a" stroke="#333" stroke-width="1.5"/>
+  <text x="540" y="183" text-anchor="middle" font-family="Arial" font-size="12">DIGIT</text>
+  <text x="540" y="195" text-anchor="middle" font-family="Arial" font-size="8">lncRNA</text>
+  <text x="540" y="145" text-anchor="middle" font-family="Arial" font-size="9" fill="#666">URS0000A77281_9606</text>
+  
+  <!-- DIGIT interaction arrow -->
+  <path d="M 520,180 L 480,180" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="500" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">protein binding</text>
+  <text x="500" y="160" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">(GO:0005515)</text>
+  
+  <!-- Step 3 Indicator -->
+  <circle cx="540" y="220" r="12" fill="#333" stroke="none"/>
+  <text x="540" y="224" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">3</text>
+  
+  <!-- Phase separated condensate -->
+  <ellipse cx="450" cy="320" rx="100" ry="60" fill="rgba(135, 206, 250, 0.3)" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="450" y="310" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Phase-Separated</text>
+  <text x="450" y="330" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Condensate</text>
+  <text x="450" y="345" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">(GO:0140693)</text>
+  
+  <!-- Condensate formation arrows -->
+  <path d="M 450,200 L 450,260" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 540,200 L 490,260" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4 Indicator -->
+  <circle cx="390" y="320" r="12" fill="#333" stroke="none"/>
+  <text x="390" y="324" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">4</text>
+  
+  <!-- Transcription activation -->
+  <rect x="400" y="400" width="100" height="30" rx="5" ry="5" fill="#fb8072" stroke="#333" stroke-width="1.5"/>
+  <text x="450" y="420" text-anchor="middle" font-family="Arial" font-size="12">RNA Pol II Transcription</text>
+  <text x="450" y="390" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">(GO:0045944)</text>
+  
+  <!-- Activation arrow -->
+  <path d="M 450,380 L 450,400" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="490" y="390" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">activates</text>
+  
+  <!-- Step 5 Indicator -->
+  <circle cx="390" y="415" r="12" fill="#333" stroke="none"/>
+  <text x="390" y="419" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">5</text>
+  
+  <!-- Cell differentiation -->
+  <rect x="400" y="460" width="100" height="35" rx="5" ry="5" fill="#bebada" stroke="#333" stroke-width="1.5"/>
+  <text x="450" y="475" text-anchor="middle" font-family="Arial" font-size="12">Endodermal</text>
+  <text x="450" y="487" text-anchor="middle" font-family="Arial" font-size="12">Cell Differentiation</text>
+  <text x="450" y="505" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">(GO:0035987)</text>
+  
+  <!-- Final arrow -->
+  <path d="M 450,430 L 450,460" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <rect x="590" y="380" width="180" height="210" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="680" y="400" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <rect x="600" y="410" width="25" height="12" fill="#fdb462" stroke="#333" stroke-width="1"/>
+  <text x="685" y="420" font-family="Arial" font-size="13">EP300</text>
+  
+  <rect x="600" y="430" width="25" height="12" fill="#80b1d3" stroke="#333" stroke-width="1"/>
+  <text x="685" y="440" font-family="Arial" font-size="13">BRD3</text>
+  
+  <path d="M 600,450 C 605,445 620,445 625,450 C 630,455 630,465 625,470 C 620,475 605,475 600,470 C 595,465 595,455 600,450 Z" 
+        fill="#b2df8a" stroke="#333" stroke-width="1"/>
+  <text x="685" y="460" font-family="Arial" font-size="13">lncRNA DIGIT</text>
+  
+  <circle cx="612" cy="480" r="10" fill="#b3cde3" stroke="#333" stroke-width="1"/>
+  <text x="685" y="484" font-family="Arial" font-size="13">Histone</text>
+  
+  <circle cx="612" cy="505" r="10" fill="none" stroke="#ff7f00" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="685" y="508" font-family="Arial" font-size="13">H3K18ac</text>
+  
+  <ellipse cx="612" cy="530" rx="20" ry="12" fill="rgba(135, 206, 250, 0.3)" stroke="#333" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="685" y="534" font-family="Arial" font-size="13">Condensate</text>
+  
+  <circle cx="612" cy="555" r="12" fill="#333" stroke="none"/>
+  <text x="612" y="559" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">1</text>
+  <text x="685" y="558" font-family="Arial" font-size="13">Process Steps</text>
+  
+  <!-- GO Terms explanations -->
+  <text x="600" y="575" text-anchor="start" font-family="Arial" font-size="10" fill="#666">GO:0000785 - chromatin</text>
+  <text x="600" y="590" text-anchor="start" font-family="Arial" font-size="10" fill="#666">GO:0043993 - histone H3K18 acetyltransferase activity</text>
+  <text x="600" y="605" text-anchor="start" font-family="Arial" font-size="10" fill="#666">GO:0070577 - lysine-acetylated histone binding</text>
+  <text x="600" y="620" text-anchor="start" font-family="Arial" font-size="10" fill="#666">GO:0005515 - protein binding</text>
+  <text x="600" y="635" text-anchor="start" font-family="Arial" font-size="10" fill="#666">GO:0140693 - molecular condensate scaffold activity</text>
+  <text x="600" y="650" text-anchor="start" font-family="Arial" font-size="10" fill="#666">GO:0045944 - positive regulation of RNA Pol II transcription</text>
+  <text x="600" y="665" text-anchor="start" font-family="Arial" font-size="10" fill="#666">GO:0035987 - endodermal cell differentiation</text>
+  
+  <!-- Process Steps Description -->
+  <text x="250" y="550" text-anchor="start" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Process Steps:</text>
+  <text x="250" y="570" text-anchor="start" font-family="Arial" font-size="12" fill="#333">1: EP300 acetylates H3K18 on chromatin</text>
+  <text x="250" y="590" text-anchor="start" font-family="Arial" font-size="12" fill="#333">2: BRD3 binds acetylated histone</text>
+  <text x="250" y="610" text-anchor="start" font-family="Arial" font-size="12" fill="#333">3: lncRNA DIGIT binds BRD3</text>
+  <text x="250" y="630" text-anchor="start" font-family="Arial" font-size="12" fill="#333">4: BRD3 and DIGIT form phase-separated condensates</text>
+  <text x="250" y="650" text-anchor="start" font-family="Arial" font-size="12" fill="#333">5: Condensates promote RNA Pol II transcription and endodermal cell differentiation</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,91 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f8f8" rx="5" ry="5"/>
+  
+  <!-- Cellular context - Nucleus during mitosis -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#e6f2ff" stroke="#333" stroke-width="2" opacity="0.8"/>
+  <text x="400" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Nucleus (Mitotic M Phase)</text>
+  
+  <!-- DNA damage site -->
+  <rect x="280" y="250" width="240" height="60" fill="#fff4e6" stroke="#ff6600" stroke-width="3" rx="10" ry="10"/>
+  <text x="400" y="285" font-family="Arial" font-size="16" text-anchor="middle">Site of Double-Strand Break</text>
+  <path d="M340 250 L380 230 L420 250" stroke="#ff6600" stroke-width="3" fill="none"/>
+  <path d="M380 250 L420 230 L460 250" stroke="#ff6600" stroke-width="3" fill="none"/>
+  
+  <!-- Proteins and their activities -->
+  <!-- CSNK2A1 -->
+  <circle cx="200" cy="180" r="40" fill="#b3e0ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="200" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CSNK2A1</text>
+  <text x="200" y="195" font-family="Arial" font-size="12" text-anchor="middle">Kinase</text>
+  
+  <!-- ATR -->
+  <circle cx="200" cy="400" r="40" fill="#b3e0ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="200" y="400" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ATR</text>
+  <text x="200" y="415" font-family="Arial" font-size="12" text-anchor="middle">H2AX Kinase</text>
+  
+  <!-- MDC1 -->
+  <rect x="370" y="340" width="60" height="60" fill="#ffcccc" stroke="#cc0000" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="370" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MDC1</text>
+  <text x="400" y="385" font-family="Arial" font-size="12" text-anchor="middle">Histone Reader</text>
+  
+  <!-- TOPBP1 -->
+  <rect x="520" y="340" width="60" height="60" fill="#d9ffd9" stroke="#008000" stroke-width="2" rx="5" ry="5"/>
+  <text x="550" y="370" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">TOPBP1</text>
+  <text x="550" y="385" font-family="Arial" font-size="12" text-anchor="middle">Adaptor</text>
+  
+  <!-- Phosphorylated H2AX (implied, mark as not in source) -->
+  <circle cx="340" y="300" r="15" fill="#ffff99" stroke="#999900" stroke-width="2"/>
+  <text x="340" y="304" font-family="Arial" font-size="10" text-anchor="middle">γH2AX</text>
+  
+  <!-- Interactions -->
+  <!-- CSNK2A1 to MDC1 (Phosphorylates) -->
+  <path d="M235 196 L370 350" stroke="#0066cc" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="290" y="260" font-family="Arial" font-size="12" fill="#0066cc">Phosphorylates</text>
+  
+  <!-- ATR to H2AX -->
+  <path d="M235 385 L325 305" stroke="#0066cc" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="260" y="355" font-family="Arial" font-size="12" fill="#0066cc">Phosphorylates</text>
+  
+  <!-- MDC1 to TOPBP1 -->
+  <path d="M430 370 L520 370" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="475" y="360" font-family="Arial" font-size="12" fill="#cc0000">Recruits</text>
+  
+  <!-- MDC1 to H2AX -->
+  <path d="M375 340 L348 310" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="328" y="330" font-family="Arial" font-size="12" fill="#cc0000">Binds</text>
+  
+  <!-- Process Title and Legend -->
+  <text x="400" y="470" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Recruitment of TOPBP1 to DNA Damage Sites by MDC1 During Mitosis</text>
+  
+  <!-- Legend Box -->
+  <rect x="580" y="120" width="190" height="200" fill="white" stroke="#333" stroke-width="1" rx="5" ry="5"/>
+  <text x="675" y="140" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend Items -->
+  <circle cx="600" cy="160" r="8" fill="#b3e0ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="680" y="164" font-family="Arial" font-size="12" text-anchor="middle">Kinase</text>
+  
+  <rect x="592" y="180" width="16" height="16" fill="#ffcccc" stroke="#cc0000" stroke-width="1" rx="2" ry="2"/>
+  <text x="680" y="192" font-family="Arial" font-size="12" text-anchor="middle">Mediator/Reader</text>
+  
+  <rect x="592" y="210" width="16" height="16" fill="#d9ffd9" stroke="#008000" stroke-width="1" rx="2" ry="2"/>
+  <text x="680" y="222" font-family="Arial" font-size="12" text-anchor="middle">Adaptor Protein</text>
+  
+  <circle cx="600" cy="240" r="8" fill="#ffff99" stroke="#999900" stroke-width="1"/>
+  <text x="680" y="244" font-family="Arial" font-size="12" text-anchor="middle">γH2AX (implied)*</text>
+  
+  <line x1="610" y1="260" x2="640" y2="260" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="680" y="264" font-family="Arial" font-size="12" text-anchor="middle">Phosphorylation</text>
+  
+  <line x1="610" y1="280" x2="640" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="680" y="284" font-family="Arial" font-size="12" text-anchor="middle">Protein Interaction</text>
+  
+  <text x="675" y="310" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">*Component not in original GO-CAM</text>
+  
+  <!-- Define the arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,128 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background for better contrast -->
+  <rect x="0" y="0" width="800" height="650" fill="#FFFFFF" />
+  
+  <!-- Cell membrane -->
+  <rect x="50" y="150" width="700" height="30" fill="#C4E0F9" stroke="#000" stroke-width="2" rx="5" />
+  <text x="400" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#000" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Extracellular space shading -->
+  <rect x="50" y="50" width="700" height="100" fill="#F0F8FF" opacity="0.3" />
+  <text x="400" y="130" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Extracellular Space</text>
+  
+  <!-- Cytoplasm shading -->
+  <rect x="50" y="180" width="700" height="280" fill="#F5F5F5" opacity="0.3" />
+  <text x="400" y="240" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Cytoplasm</text>
+  
+  <!-- Serotonin molecule -->
+  <circle cx="200" cy="100" r="15" fill="#FFD580" stroke="#000" stroke-width="1" />
+  <text x="200" y="105" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">5-HT</text>
+  <text x="200" y="80" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">Serotonin</text>
+  <text x="250" y="100" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-style="italic">Ligand</text>
+  
+  <!-- Arrow from serotonin to receptor with label -->
+  <line x1="200" y1="115" x2="200" y2="140" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="170" y="130" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-weight="bold">Binding</text>
+  
+  <!-- HTR2C receptor -->
+  <rect x="170" y="150" width="60" height="30" fill="#8EB1C7" stroke="#000" stroke-width="2" rx="5" />
+  <text x="200" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">HTR2C</text>
+  <text x="240" y="160" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-style="italic">Gq/11-coupled</text>
+  <text x="240" y="172" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-style="italic">serotonin receptor</text>
+  
+  <!-- G-protein (GNAQ) -->
+  <circle cx="200" cy="210" r="20" fill="#A0C4FF" stroke="#000" stroke-width="2" />
+  <text x="200" y="215" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">GNAQ</text>
+  <text x="240" y="210" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-style="italic">G-protein alpha-q</text>
+  <text x="240" y="222" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-style="italic">subunit</text>
+  
+  <!-- Activation arrow from receptor to G-protein with label -->
+  <line x1="200" y1="180" x2="200" y2="190" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="160" y="190" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-weight="bold">Activation</text>
+  
+  <!-- Phospholipase C Beta 3 -->
+  <rect x="280" y="250" width="70" height="30" fill="#90EE90" stroke="#000" stroke-width="2" rx="5" />
+  <text x="315" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">PLCB3</text>
+  <text x="360" y="260" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-style="italic">Phospholipase C</text>
+  <text x="360" y="272" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-style="italic">beta-3</text>
+  
+  <!-- Activation arrow from G-protein to PLC with label -->
+  <path d="M 220 210 Q 260 225 280 250" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="235" y="225" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-weight="bold">Activates</text>
+  
+  <!-- PIP2 (implied substrate, not in GO-CAM) -->
+  <rect x="240" y="320" width="40" height="20" fill="#FFB6C1" stroke="#000" stroke-width="2" rx="5" opacity="0.7" />
+  <text x="260" y="335" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">PIP2*</text>
+  
+  <!-- Arrow from PIP2 to PLC -->
+  <line x1="260" y1="320" x2="280" y2="280" stroke="#000" stroke-width="1.5" stroke-dasharray="4" marker-end="url(#arrowhead)" />
+  <text x="210" y="320" font-family="Arial" font-size="10" text-anchor="end" fill="#000" font-weight="bold">Substrate</text>
+  
+  <!-- Products: IP3 and DAG -->
+  <rect x="380" y="300" width="40" height="20" fill="#FFD700" stroke="#000" stroke-width="2" rx="5" />
+  <text x="400" y="315" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">IP3</text>
+  <text x="400" y="335" font-family="Arial" font-size="9" text-anchor="middle" fill="#000" font-style="italic">Inositol trisphosphate</text>
+  
+  <rect x="440" y="300" width="40" height="20" fill="#FF9999" stroke="#000" stroke-width="2" rx="5" />
+  <text x="460" y="315" font-family="Arial" font-size="10" text-anchor="middle" fill="#000">DAG</text>
+  <text x="460" y="335" font-family="Arial" font-size="9" text-anchor="middle" fill="#000" font-style="italic">Diacylglycerol</text>
+  
+  <!-- Arrows from PLC to products with labels -->
+  <path d="M 315 280 Q 350 290 380 300" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M 315 280 Q 380 290 440 300" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="335" y="280" font-family="Arial" font-size="10" text-anchor="start" fill="#000" font-weight="bold">Products</text>
+  
+  <!-- Downstream signaling effects (simplified) -->
+  <path d="M 400 320 Q 400 360 380 380" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" stroke-dasharray="3,2" />
+  <text x="380" y="395" font-family="Arial" font-size="10" text-anchor="middle" fill="#000" font-style="italic">Ca²⁺ release*</text>
+  
+  <path d="M 460 320 Q 460 360 480 380" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" stroke-dasharray="3,2" />
+  <text x="480" y="395" font-family="Arial" font-size="10" text-anchor="middle" fill="#000" font-style="italic">PKC activation*</text>
+  
+  <!-- Signaling pathway label -->
+  <text x="400" y="50" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#000">HTR2C-Mediated Serotonin Signaling via G-alpha-q/11</text>
+  <text x="400" y="75" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle" fill="#000">Phospholipase C-activating pathway</text>
+  
+  <!-- Pathway flow indicator -->
+  <path d="M 50 120 L 80 120" stroke="#444" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="100" y="125" font-family="Arial" font-size="12" text-anchor="start" fill="#444">Signaling Direction</text>
+  
+  <!-- Legend section with background -->
+  <rect x="560" y="400" width="220" height="210" fill="#F8F8F8" stroke="#888" stroke-width="1" rx="5" />
+  <text x="670" y="420" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">LEGEND</text>
+  
+  <rect x="580" y="440" width="20" height="20" fill="#FFD580" stroke="#000" stroke-width="1" />
+  <text x="610" y="455" font-family="Arial" font-size="12" text-anchor="start" fill="#000">Serotonin (5-HT)</text>
+  
+  <rect x="580" y="470" width="20" height="20" fill="#8EB1C7" stroke="#000" stroke-width="1" />
+  <text x="610" y="485" font-family="Arial" font-size="12" text-anchor="start" fill="#000">Receptor (HTR2C)</text>
+  
+  <circle cx="590" cy="510" r="10" fill="#A0C4FF" stroke="#000" stroke-width="1" />
+  <text x="610" y="515" font-family="Arial" font-size="12" text-anchor="start" fill="#000">G protein (GNAQ)</text>
+  
+  <rect x="580" y="530" width="20" height="20" fill="#90EE90" stroke="#000" stroke-width="1" />
+  <text x="610" y="545" font-family="Arial" font-size="12" text-anchor="start" fill="#000">Phospholipase C (PLCB3)</text>
+  
+  <rect x="580" y="560" width="20" height="20" fill="#FFD700" stroke="#000" stroke-width="1" />
+  <text x="610" y="575" font-family="Arial" font-size="12" text-anchor="start" fill="#000">IP3</text>
+  
+  <rect x="580" y="590" width="20" height="20" fill="#FF9999" stroke="#000" stroke-width="1" />
+  <text x="610" y="605" font-family="Arial" font-size="12" text-anchor="start" fill="#000">DAG</text>
+  
+  <!-- Dotted line legend item -->
+  <line x1="580" y1="620" x2="600" y2="620" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2" />
+  <text x="610" y="625" font-family="Arial" font-size="12" text-anchor="start" fill="#000">Implied steps (not in GO-CAM)</text>
+  
+  <!-- Notes section -->
+  <rect x="50" y="580" width="500" height="60" fill="#FFFAF0" stroke="#888" stroke-width="1" rx="5" />
+  <text x="60" y="595" font-family="Arial" font-size="12" font-weight="bold" text-anchor="start" fill="#000">Notes:</text>
+  <text x="60" y="615" font-family="Arial" font-size="10" font-style="italic" text-anchor="start" fill="#000">* PIP2, Ca²⁺ release and PKC activation are not explicitly in the GO-CAM model</text>
+  <text x="60" y="630" font-family="Arial" font-size="10" font-style="italic" text-anchor="start" fill="#000">but are implied elements in the phospholipase C-activating serotonin receptor signaling pathway.</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+</svg>

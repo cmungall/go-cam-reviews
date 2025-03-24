@@ -1,0 +1,143 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background for mitochondrion -->
+  <ellipse cx="400" cy="330" rx="380" ry="300" fill="#f9e8d0" stroke="#8a5a44" stroke-width="3"/>
+  <ellipse cx="400" cy="330" rx="350" ry="270" fill="#fdf3e7" stroke="#8a5a44" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Labels for compartments -->
+  <text x="90" y="70" font-family="Arial" font-size="18" font-weight="bold" fill="#8a5a44">Mitochondrion</text>
+  <text x="160" y="100" font-family="Arial" font-size="16" fill="#8a5a44" font-weight="bold">Outer membrane</text>
+  <text x="220" y="130" font-family="Arial" font-size="16" fill="#8a5a44" font-weight="bold">Inner membrane</text>
+  <text x="310" y="160" font-family="Arial" font-size="16" fill="#8a5a44" font-weight="bold">Matrix</text>
+
+  <!-- The TCA cycle enzymes and substrates -->
+
+  <!-- Citrate synthase -->
+  <rect x="430" y="120" width="100" height="40" rx="10" ry="10" fill="#a8d5ba" stroke="#2c3e50" stroke-width="2"/>
+  <text x="460" y="145" font-family="Arial" font-size="15" font-weight="bold">cit1</text>
+  
+  <!-- Acetyl-CoA to Citrate (implicit precursor not in original data) -->
+  <ellipse cx="320" cy="120" rx="65" ry="25" fill="#ffcccb" stroke="#2c3e50" stroke-width="1.5" stroke-dasharray="5,2"/>
+  <text x="320" y="125" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Acetyl-CoA*</text>
+  <path d="M 385 120 L 423 120" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Citrate -->
+  <ellipse cx="530" cy="180" rx="55" ry="25" fill="#ffd700" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="530" y="185" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Citrate</text>
+  <path d="M 490 150 L 520 170" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Aconitase 1 & 2 -->
+  <rect x="570" y="210" width="100" height="40" rx="10" ry="10" fill="#a8d5ba" stroke="#2c3e50" stroke-width="2"/>
+  <text x="580" y="233" font-family="Arial" font-size="15" font-weight="bold">aco1/aco2</text>
+  <path d="M 550 195 L 580 215" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Isocitrate -->
+  <ellipse cx="580" cy="280" rx="55" ry="25" fill="#ffd700" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="580" y="285" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Isocitrate</text>
+  <path d="M 610 250 L 595 265" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Isocitrate dehydrogenase -->
+  <rect x="530" y="330" width="100" height="45" rx="10" ry="10" fill="#a8d5ba" stroke="#2c3e50" stroke-width="2"/>
+  <text x="550" y="352" font-family="Arial" font-size="15" font-weight="bold">idh1/idh2</text>
+  <path d="M 575 305 L 570 330" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- α-Ketoglutarate -->
+  <ellipse cx="520" cy="405" rx="60" ry="25" fill="#ffd700" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="520" y="410" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">α-Ketoglutarate</text>
+  <path d="M 565 375 L 540 390" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- α-Ketoglutarate dehydrogenase complex -->
+  <rect x="435" y="445" width="100" height="65" rx="10" ry="10" fill="#a8d5ba" stroke="#2c3e50" stroke-width="2"/>
+  <text x="468" y="465" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">kgd1</text>
+  <text x="468" y="483" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">kgd2</text>
+  <text x="468" y="501" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">kgd4/dld1</text>
+  <path d="M 490 420 L 470 445" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Succinyl-CoA -->
+  <ellipse cx="330" cy="445" rx="60" ry="25" fill="#ffd700" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="330" y="450" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Succinyl-CoA</text>
+  <path d="M 435 475 L 390 455" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Succinate-CoA ligase -->
+  <rect x="260" y="390" width="100" height="45" rx="10" ry="10" fill="#a8d5ba" stroke="#2c3e50" stroke-width="2"/>
+  <text x="285" y="412" font-family="Arial" font-size="15" font-weight="bold">sca1/lsc2</text>
+  <path d="M 310 445 L 300 435" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Succinate -->
+  <ellipse cx="230" cy="330" rx="55" ry="25" fill="#ffd700" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="230" y="335" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Succinate</text>
+  <path d="M 270 390 L 250 350" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Succinate dehydrogenase complex (part of Complex II) - in inner membrane -->
+  <rect x="170" y="265" width="100" height="55" rx="10" ry="10" fill="#b19cd9" stroke="#2c3e50" stroke-width="2"/>
+  <text x="190" y="288" font-family="Arial" font-size="14" font-weight="bold">sdh1/sdh2</text>
+  <text x="190" y="305" font-family="Arial" font-size="14" font-weight="bold">sdh3/tim18</text>
+  <path d="M 220 330 L 215 320" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Label showing inner membrane location -->
+  <path d="M 190 265 L 150 220" stroke="#8a5a44" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <rect x="80" y="200" width="80" height="20" fill="#fdf3e7" stroke="none"/>
+  <text x="85" y="215" font-family="Arial" font-size="12" fill="#8a5a44" font-weight="bold">Inner membrane</text>
+
+  <!-- Fumarate -->
+  <ellipse cx="210" cy="210" rx="55" ry="25" fill="#ffd700" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="210" y="215" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Fumarate</text>
+  <path d="M 210 265 L 210 235" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Fumarase -->
+  <rect x="260" y="165" width="100" height="40" rx="10" ry="10" fill="#a8d5ba" stroke="#2c3e50" stroke-width="2"/>
+  <text x="290" y="190" font-family="Arial" font-size="15" font-weight="bold">fum1</text>
+  <path d="M 245 200 L 265 185" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Malate -->
+  <ellipse cx="330" cy="120" rx="55" ry="25" fill="#ffd700" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="330" y="125" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Malate</text>
+  <path d="M 310 165 L 320 145" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Malate dehydrogenase -->
+  <rect x="360" y="180" width="100" height="40" rx="10" ry="10" fill="#a8d5ba" stroke="#2c3e50" stroke-width="2"/>
+  <text x="392" y="205" font-family="Arial" font-size="15" font-weight="bold">mdh1</text>
+  <path d="M 350 145 L 370 180" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Oxaloacetate -->
+  <ellipse cx="400" cy="250" rx="60" ry="25" fill="#ffd700" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="400" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Oxaloacetate</text>
+  <path d="M 410 220 L 405 235" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Close the cycle - Oxaloacetate to Citrate -->
+  <path d="M 410 230 C 440 180 490 140 430 130" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- NAD+/NADH indicators - add as needed -->
+  <text x="585" y="320" font-family="Arial" font-size="11" fill="#555">NAD+→NADH</text>
+  <text x="520" y="435" font-family="Arial" font-size="11" fill="#555">NAD+→NADH</text>
+  <text x="205" y="255" font-family="Arial" font-size="11" fill="#555">FAD→FADH2</text>
+  <text x="325" y="170" font-family="Arial" font-size="11" fill="#555">NAD+→NADH</text>
+
+  <!-- Legend -->
+  <rect x="600" y="490" width="190" height="150" rx="5" ry="5" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="620" y="515" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <rect x="620" y="525" width="25" height="18" rx="3" ry="3" fill="#a8d5ba" stroke="#2c3e50" stroke-width="1"/>
+  <text x="655" y="539" font-family="Arial" font-size="14">Matrix enzyme</text>
+  
+  <rect x="620" y="550" width="25" height="18" rx="3" ry="3" fill="#b19cd9" stroke="#2c3e50" stroke-width="1"/>
+  <text x="655" y="564" font-family="Arial" font-size="14">Membrane enzyme</text>
+  
+  <ellipse cx="632" cy="580" rx="15" ry="10" fill="#ffd700" stroke="#2c3e50" stroke-width="1"/>
+  <text x="655" y="585" font-family="Arial" font-size="14">Metabolite</text>
+  
+  <ellipse cx="632" cy="605" rx="15" ry="10" fill="#ffcccb" stroke="#2c3e50" stroke-width="1.5" stroke-dasharray="5,2"/>
+  <text x="655" y="610" font-family="Arial" font-size="14">Not in source*</text>
+  
+  <line x1="620" y1="625" x2="640" y2="625" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="655" y="630" font-family="Arial" font-size="14">Reaction</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Tricarboxylic Acid Cycle in S. pombe</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>

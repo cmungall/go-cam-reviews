@@ -1,0 +1,370 @@
+<svg width="900" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* General styling */
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 22px; font-weight: bold; text-anchor: middle; }
+    .subtitle { font-size: 16px; font-style: italic; text-anchor: middle; }
+    .enzyme { font-size: 14px; font-weight: bold; }
+    .metabolite { font-size: 13px; font-style: italic; }
+    .process { font-size: 12px; fill: #555; }
+    .membrane { fill: none; stroke: #666; stroke-width: 3; stroke-dasharray: 5,3; }
+    .reaction-arrow { fill: none; stroke: #333; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    .salvage-path { stroke: #6a0dad; }
+    .de-novo-path { stroke: #006400; }
+    .compartment { fill: #f5f5f5; stroke: #999; stroke-width: 1; opacity: 0.7; }
+    .legend-box { fill: white; stroke: black; stroke-width: 1; }
+    .legend-text { font-size: 12px; }
+  </style>
+
+  <!-- Define markers for arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="title">Purine Nucleobase Metabolic Process in S. pombe</text>
+  <text x="450" y="65" class="subtitle">GO-CAM: gomodel:663d668500001911</text>
+
+  <!-- Cell outline -->
+  <rect x="50" y="130" width="800" height="750" rx="30" ry="30" class="compartment" />
+  
+  <!-- Plasma membrane -->
+  <rect x="50" y="130" width="800" height="750" rx="30" ry="30" class="membrane" />
+  
+  <!-- External environment label -->
+  <text x="120" y="115" font-size="16" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Intracellular space label -->
+  <text x="450" y="160" font-size="16" font-weight="bold">Intracellular Space</text>
+
+  <!-- Transporters -->
+  <!-- Adenine transporter -->
+  <rect x="370" y="130" width="60" height="35" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+  <text x="400" y="153" text-anchor="middle" class="enzyme">SPBC887.17</text>
+  <text x="400" y="115" text-anchor="middle" class="process">adenine transport</text>
+  
+  <!-- Guanine transporter -->
+  <rect x="520" y="130" width="60" height="35" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+  <text x="550" y="153" text-anchor="middle" class="enzyme">SPBC887.17</text>
+  <text x="550" y="115" text-anchor="middle" class="process">guanine transport</text>
+
+  <!-- Adenine outside -->
+  <ellipse cx="400" cy="85" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="400" y="90" text-anchor="middle" class="metabolite">Adenine</text>
+  
+  <!-- Guanine outside -->
+  <ellipse cx="550" cy="85" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="550" y="90" text-anchor="middle" class="metabolite">Guanine</text>
+
+  <!-- Transport arrows -->
+  <path d="M 400 103 L 400 130" class="reaction-arrow salvage-path" />
+  <path d="M 550 103 L 550 130" class="reaction-arrow salvage-path" />
+
+  <!-- Adenine inside -->
+  <ellipse cx="400" cy="200" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="400" y="205" text-anchor="middle" class="metabolite">Adenine</text>
+  
+  <!-- Guanine inside -->
+  <ellipse cx="550" cy="200" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="550" y="205" text-anchor="middle" class="metabolite">Guanine</text>
+
+  <!-- Transport arrows from transporter to inside -->
+  <path d="M 400 165 L 400 182" class="reaction-arrow salvage-path" />
+  <path d="M 550 165 L 550 182" class="reaction-arrow salvage-path" />
+
+  <!-- De novo purine biosynthesis pathway -->
+  <!-- PRPP to first intermediate -->
+  <ellipse cx="120" cy="240" rx="35" ry="20" fill="#ccffcc" stroke="#333" />
+  <text x="120" y="245" text-anchor="middle" class="metabolite">PRPP</text>
+  
+  <!-- ade4 (SPAC4D7.08c) -->
+  <rect x="180" y="225" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="210" y="248" text-anchor="middle" class="enzyme">ade4</text>
+  
+  <path d="M 155 240 L 180 240" class="reaction-arrow de-novo-path" />
+  
+  <!-- PRA -->
+  <ellipse cx="280" cy="240" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="280" y="245" text-anchor="middle" class="metabolite">PRA</text>
+  
+  <path d="M 240 240 L 250 240" class="reaction-arrow de-novo-path" />
+  
+  <!-- ade1 (SPBC405.01) -->
+  <rect x="330" y="225" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="360" y="248" text-anchor="middle" class="enzyme">ade1</text>
+  
+  <path d="M 310 240 L 330 240" class="reaction-arrow de-novo-path" />
+  
+  <!-- GAR -->
+  <ellipse cx="430" cy="240" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="430" y="245" text-anchor="middle" class="metabolite">GAR</text>
+  
+  <path d="M 390 240 L 400 240" class="reaction-arrow de-novo-path" />
+  
+  <!-- ade5 (SPCC569.08c) -->
+  <rect x="480" y="225" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="510" y="248" text-anchor="middle" class="enzyme">ade5</text>
+  
+  <path d="M 460 240 L 480 240" class="reaction-arrow de-novo-path" />
+  
+  <!-- FGAR -->
+  <ellipse cx="580" cy="240" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="580" y="245" text-anchor="middle" class="metabolite">FGAR</text>
+  
+  <path d="M 540 240 L 550 240" class="reaction-arrow de-novo-path" />
+  
+  <!-- ade3 (SPAC6F12.10c) -->
+  <rect x="630" y="225" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="660" y="248" text-anchor="middle" class="enzyme">ade3</text>
+  
+  <path d="M 610 240 L 630 240" class="reaction-arrow de-novo-path" />
+  
+  <!-- Continue downstream to ade6 -->
+  <ellipse cx="730" cy="240" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="730" y="245" text-anchor="middle" class="metabolite">FGAM</text>
+  
+  <path d="M 690 240 L 700 240" class="reaction-arrow de-novo-path" />
+  
+  <!-- ade6 (SPCC1322.13) -->
+  <rect x="720" y="280" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="750" y="303" text-anchor="middle" class="enzyme">ade6</text>
+  
+  <path d="M 730 258 L 730 280" class="reaction-arrow de-novo-path" />
+  
+  <!-- Continue downstream to AIR -->
+  <ellipse cx="730" cy="350" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="730" y="355" text-anchor="middle" class="metabolite">AIR</text>
+  
+  <path d="M 750 315 L 750 332 L 730 332" class="reaction-arrow de-novo-path" />
+
+  <!-- ade7 (SPBC409.10) -->
+  <rect x="650" y="350" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="680" y="373" text-anchor="middle" class="enzyme">ade7</text>
+  
+  <path d="M 700 350 L 700 368" class="reaction-arrow de-novo-path" />
+  
+  <!-- Continue downstream to CAIR -->
+  <ellipse cx="650" cy="410" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="650" y="415" text-anchor="middle" class="metabolite">CAIR</text>
+  
+  <path d="M 680 385 L 680 392 L 650 392" class="reaction-arrow de-novo-path" />
+  
+  <!-- The pathway turns left -->
+  <path d="M 650 428 L 650 450 L 550 450" class="reaction-arrow de-novo-path" />
+  
+  <!-- ade8 (SPBC14F5.09c) -->
+  <rect x="490" y="430" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="520" y="453" text-anchor="middle" class="enzyme">ade8</text>
+  
+  <!-- Continue to SAICAR -->
+  <ellipse cx="420" cy="450" rx="35" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="420" y="455" text-anchor="middle" class="metabolite">SAICAR</text>
+  
+  <path d="M 490 450 L 455 450" class="reaction-arrow de-novo-path" />
+  
+  <!-- ade10 - AICAR formyltransferase (SPCPB16A4.03c) -->
+  <rect x="340" y="430" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="370" y="453" text-anchor="middle" class="enzyme">ade10</text>
+  
+  <!-- Continue to AICAR -->
+  <ellipse cx="270" cy="450" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="270" y="455" text-anchor="middle" class="metabolite">AICAR</text>
+  
+  <path d="M 340 450 L 300 450" class="reaction-arrow de-novo-path" />
+  
+  <!-- ade10 - IMP cyclohydrolase (SPCPB16A4.03c) - dual function enzyme -->
+  <rect x="190" y="430" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="220" y="453" text-anchor="middle" class="enzyme">ade10</text>
+  
+  <!-- Path to IMP -->
+  <path d="M 240 450 L 190 450" class="reaction-arrow de-novo-path" />
+  
+  <!-- IMP central node -->
+  <ellipse cx="150" cy="450" rx="35" ry="25" fill="#ffff99" stroke="#333" stroke-width="2" />
+  <text x="150" y="455" text-anchor="middle" class="metabolite" font-weight="bold">IMP</text>
+
+  <!-- Salvage pathways to IMP -->
+  <!-- Adenine to AMP path -->
+  <path d="M 400 218 L 400 250" class="reaction-arrow salvage-path" />
+  
+  <!-- apt1 (SPAC23A1.03) -->
+  <rect x="370" y="250" width="60" height="35" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+  <text x="400" y="273" text-anchor="middle" class="enzyme">apt1</text>
+  
+  <!-- AMP from salvage -->
+  <ellipse cx="400" cy="320" rx="30" ry="18" fill="#ffcc99" stroke="#333" />
+  <text x="400" y="325" text-anchor="middle" class="metabolite">AMP</text>
+  
+  <path d="M 400 285 L 400 302" class="reaction-arrow salvage-path" />
+  <path d="M 370 320 L 185 435" class="reaction-arrow salvage-path" />
+  
+  <!-- Adenine deaminase dea2 (SPBC1198.02) -->
+  <path d="M 370 200 L 330 200" class="reaction-arrow salvage-path" />
+  <rect x="270" y="180" width="60" height="35" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+  <text x="300" y="203" text-anchor="middle" class="enzyme">dea2</text>
+  
+  <!-- Hypoxanthine -->
+  <ellipse cx="200" cy="200" rx="35" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="200" y="205" text-anchor="middle" class="metabolite">Hypoxanthine</text>
+  
+  <path d="M 270 200 L 235 200" class="reaction-arrow salvage-path" />
+  
+  <!-- hpt1 (SPAC23C11.13c) HPRT -->
+  <rect x="170" y="250" width="60" height="35" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+  <text x="200" y="273" text-anchor="middle" class="enzyme">hpt1</text>
+  
+  <path d="M 200 218 L 200 250" class="reaction-arrow salvage-path" />
+  <path d="M 200 285 L 150 425" class="reaction-arrow salvage-path" />
+  
+  <!-- Guanine paths -->
+  <!-- Guanine deaminase gud1 (SPCC1672.03c) -->
+  <path d="M 550 218 L 550 250" class="reaction-arrow salvage-path" />
+  <rect x="520" y="250" width="60" height="35" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+  <text x="550" y="273" text-anchor="middle" class="enzyme">gud1</text>
+  
+  <!-- Xanthine -->
+  <ellipse cx="550" cy="320" rx="30" ry="18" fill="#ccffcc" stroke="#333" />
+  <text x="550" y="325" text-anchor="middle" class="metabolite">Xanthine</text>
+  
+  <path d="M 550 285 L 550 302" class="reaction-arrow salvage-path" />
+  
+  <!-- XPRT activity of hpt1 -->
+  <rect x="490" y="350" width="60" height="35" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+  <text x="520" y="373" text-anchor="middle" class="enzyme">hpt1</text>
+  
+  <path d="M 550 338 L 550 350" class="reaction-arrow salvage-path" />
+  <path d="M 490 365 L 185 435" class="reaction-arrow salvage-path" />
+  
+  <!-- Guanine to GMP - hpt1 GPRT -->
+  <path d="M 580 200 L 630 200 L 630 250" class="reaction-arrow salvage-path" />
+  <rect x="600" y="250" width="60" height="35" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+  <text x="630" y="273" text-anchor="middle" class="enzyme">hpt1</text>
+  
+  <ellipse cx="630" cy="320" rx="30" ry="18" fill="#ffcc99" stroke="#333" />
+  <text x="630" y="325" text-anchor="middle" class="metabolite">GMP</text>
+  <path d="M 630 285 L 630 302" class="reaction-arrow salvage-path" />
+  
+  <!-- IMP to AMP & GMP -->
+  <!-- IMP to AMP - adenylosuccinate synthase -->
+  <path d="M 150 475 L 150 500" class="reaction-arrow" />
+  
+  <!-- ade2 (SPAC144.03) -->
+  <rect x="120" y="500" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="150" y="523" text-anchor="middle" class="enzyme">ade2</text>
+  
+  <!-- Adenylosuccinate -->
+  <ellipse cx="150" cy="570" rx="40" ry="20" fill="#ffcc99" stroke="#333" />
+  <text x="150" y="575" text-anchor="middle" class="metabolite">Adenylosuccinate</text>
+  
+  <path d="M 150 535 L 150 550" class="reaction-arrow" />
+  
+  <!-- ade8 (SPBC14F5.09c) - lyase activity -->
+  <rect x="120" y="610" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="150" y="633" text-anchor="middle" class="enzyme">ade8</text>
+  
+  <path d="M 150 590 L 150 610" class="reaction-arrow" />
+  
+  <!-- AMP -->
+  <ellipse cx="150" cy="680" rx="30" ry="20" fill="#ffcc99" stroke="#333" stroke-width="2" />
+  <text x="150" y="685" text-anchor="middle" class="metabolite" font-weight="bold">AMP</text>
+  
+  <path d="M 150 645 L 150 660" class="reaction-arrow" />
+  
+  <!-- AMP to ADP - adk1 -->
+  <rect x="120" y="730" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="150" y="753" text-anchor="middle" class="enzyme">adk1</text>
+  
+  <path d="M 150 700 L 150 730" class="reaction-arrow" />
+  
+  <!-- ADP -->
+  <ellipse cx="150" cy="800" rx="30" ry="18" fill="#ffcc99" stroke="#333" />
+  <text x="150" y="805" text-anchor="middle" class="metabolite">ADP</text>
+  
+  <path d="M 150 765 L 150 782" class="reaction-arrow" />
+  
+  <!-- AMP deaminase - ada1 -->
+  <path d="M 180 680 L 240 680" class="reaction-arrow" />
+  <rect x="240" y="660" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="270" y="683" text-anchor="middle" class="enzyme">ada1</text>
+  
+  <path d="M 300 680 L 350 680 L 350 550 L 180 460" class="reaction-arrow" />
+  
+  <!-- IMP to GMP path -->
+  <path d="M 130 470 L 80 500" class="reaction-arrow" />
+  
+  <!-- gua1 (SPBC2F12.14c) - IMPDH -->
+  <rect x="50" y="500" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="80" y="523" text-anchor="middle" class="enzyme">gua1</text>
+  
+  <!-- XMP -->
+  <ellipse cx="80" cy="570" rx="30" ry="18" fill="#ffcc99" stroke="#333" />
+  <text x="80" y="575" text-anchor="middle" class="metabolite">XMP</text>
+  
+  <path d="M 80 535 L 80 552" class="reaction-arrow" />
+  
+  <!-- gua2 (SPAP7G5.02c) - GMP synthase -->
+  <rect x="50" y="610" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="80" y="633" text-anchor="middle" class="enzyme">gua2</text>
+  
+  <path d="M 80 588 L 80 610" class="reaction-arrow" />
+  
+  <!-- GMP -->
+  <ellipse cx="80" cy="680" rx="30" ry="20" fill="#ffcc99" stroke="#333" stroke-width="2" />
+  <text x="80" y="685" text-anchor="middle" class="metabolite" font-weight="bold">GMP</text>
+  
+  <path d="M 80 645 L 80 660" class="reaction-arrow" />
+  
+  <!-- GMP to GDP - guk1 -->
+  <rect x="50" y="730" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="80" y="753" text-anchor="middle" class="enzyme">guk1</text>
+  
+  <path d="M 80 700 L 80 730" class="reaction-arrow" />
+  
+  <!-- GDP -->
+  <ellipse cx="80" cy="800" rx="30" ry="18" fill="#ffcc99" stroke="#333" />
+  <text x="80" y="805" text-anchor="middle" class="metabolite">GDP</text>
+  
+  <path d="M 80 765 L 80 782" class="reaction-arrow" />
+  
+  <!-- GDP to GTP - ndk1 -->
+  <rect x="50" y="830" width="60" height="35" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+  <text x="80" y="853" text-anchor="middle" class="enzyme">ndk1</text>
+  
+  <path d="M 80 818 L 80 830" class="reaction-arrow" />
+  
+  <!-- GTP -->
+  <ellipse cx="80" cy="890" rx="30" ry="18" fill="#ffcc99" stroke="#333" stroke-width="2" />
+  <text x="80" y="895" text-anchor="middle" class="metabolite" font-weight="bold">GTP</text>
+  
+  <path d="M 80 865 L 80 872" class="reaction-arrow" />
+
+  <!-- Legend -->
+  <rect x="700" y="820" width="150" height="160" class="legend-box" />
+  <text x="775" y="840" text-anchor="middle" font-weight="bold" font-size="14">Legend</text>
+  
+  <!-- De novo synthesis -->
+  <line x1="710" y1="865" x2="740" y2="865" stroke="#006400" stroke-width="2" />
+  <text x="785" y="870" class="legend-text">De novo synthesis</text>
+  
+  <!-- Salvage pathway -->
+  <line x1="710" y1="890" x2="740" y2="890" stroke="#6a0dad" stroke-width="2" />
+  <text x="785" y="895" class="legend-text">Salvage pathway</text>
+  
+  <!-- Enzyme -->
+  <rect x="710" y="910" width="25" height="18" fill="#99ccff" stroke="#333" stroke-width="1" />
+  <text x="785" y="920" class="legend-text">De novo enzyme</text>
+  
+  <!-- Salvage enzyme -->
+  <rect x="710" y="935" width="25" height="18" fill="#ff9999" stroke="#333" stroke-width="1" />
+  <text x="785" y="945" class="legend-text">Salvage enzyme</text>
+  
+  <!-- Metabolite -->
+  <ellipse cx="722" cy="960" rx="18" ry="12" fill="#ccffcc" stroke="#333" />
+  <text x="785" y="965" class="legend-text">Metabolite</text>
+  
+  <!-- Nucleotide -->
+  <ellipse cx="722" cy="985" rx="18" ry="12" fill="#ffcc99" stroke="#333" />
+  <text x="785" y="990" class="legend-text">Nucleotide</text>
+</svg>

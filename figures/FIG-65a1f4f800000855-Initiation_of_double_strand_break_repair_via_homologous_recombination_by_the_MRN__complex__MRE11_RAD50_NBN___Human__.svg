@@ -1,0 +1,142 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Nucleus Background -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f0f0ff" stroke="#999" stroke-width="2"/>
+  <text x="400" y="90" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#555">Cell Nucleus</text>
+
+  <!-- DNA Double-Strand Break Site -->
+  <rect x="200" y="220" width="400" height="100" rx="5" ry="5" fill="#ffeedd" stroke="#333" stroke-width="2"/>
+  <text x="400" y="205" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">Site of Double-Strand Break (GO:0035861)</text>
+  
+  <!-- DNA Strands -->
+  <path d="M250,250 L350,250 M450,250 L550,250" stroke="#333" stroke-width="6"/>
+  <path d="M250,280 L350,280 M450,280 L550,280" stroke="#333" stroke-width="6"/>
+  
+  <!-- Break Symbol -->
+  <path d="M400,230 L400,300" stroke="#ff0000" stroke-width="4" stroke-dasharray="10,5"/>
+  <text x="400" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff0000">Double-Strand Break</text>
+  
+  <!-- MRN Complex -->
+  <ellipse cx="400" cy="265" rx="70" ry="35" fill="#c0eeff" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="240" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">MRN Complex</text>
+  
+  <!-- MRE11 -->
+  <circle cx="370" cy="265" r="18" fill="#ffaaaa" stroke="#cc0000" stroke-width="2"/>
+  <text x="370" y="270" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">MRE11</text>
+  
+  <!-- RAD50 -->
+  <circle cx="410" cy="265" r="18" fill="#aaffaa" stroke="#00cc00" stroke-width="2"/>
+  <text x="410" y="270" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">RAD50</text>
+  
+  <!-- NBN -->
+  <circle cx="440" cy="245" r="18" fill="#aaaaff" stroke="#0000cc" stroke-width="2"/>
+  <text x="440" y="250" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">NBN</text>
+  
+  <!-- ATM Protein -->
+  <rect x="300" y="150" width="50" height="30" rx="5" ry="5" fill="#ffddaa" stroke="#ff6600" stroke-width="2"/>
+  <text x="325" y="169" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#333">ATM</text>
+  
+  <!-- EXO1 Protein -->
+  <rect x="480" y="350" width="50" height="30" rx="5" ry="5" fill="#ddffaa" stroke="#66cc00" stroke-width="2"/>
+  <text x="505" y="369" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#333">EXO1</text>
+  
+  <!-- Process Flow Arrows -->
+  <!-- NBN recruits MRN complex -->
+  <path d="M450,227 C460,200 480,185 500,190" stroke="#0000cc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="500" y="165" width="140" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="570" y="180" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#0000cc">Chromatin-protein adaptor activity</text>
+  
+  <!-- MRN activates ATM -->
+  <path d="M375,235 C350,210 330,180 330,180" stroke="#0066cc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="350" y="185" width="90" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="395" y="200" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#0066cc">Kinase activator</text>
+  
+  <!-- ATM phosphorylates (multiple targets) -->
+  <path d="M325,180 C325,200 335,220 355,235" stroke="#ff6600" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="230" y="190" width="120" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="290" y="205" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#ff6600">Protein kinase activity</text>
+  
+  <!-- MRE11 exonuclease activity -->
+  <path d="M370,283 C370,310 380,330 410,340" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="320" y="305" width="100" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="370" y="320" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#cc0000">3'-5' Exonuclease</text>
+  
+  <!-- MRE11 endonuclease activity -->
+  <path d="M360,280 C340,300 320,320 330,340" stroke="#cc0000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="260" y="315" width="90" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="305" y="330" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#cc0000">Endonuclease</text>
+  
+  <!-- RAD50 ATP hydrolysis -->
+  <path d="M425,280 C445,300 460,320 475,335" stroke="#00cc00" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="430" y="295" width="100" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="480" y="310" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#00cc00">ATP hydrolysis</text>
+  
+  <!-- DNA processing to EXO1 -->
+  <path d="M410,290 C430,320 460,340 480,350" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="390" y="310" width="100" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="440" y="325" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#333">DNA processing</text>
+  
+  <!-- EXO1 strand resection -->
+  <path d="M530,360 C560,370 580,380 600,390" stroke="#66cc00" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="560" y="375" width="110" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="615" y="390" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#66cc00">5'-3' Exonuclease</text>
+  
+  <!-- Process Labels with Background -->
+  <rect x="620" y="210" width="120" height="70" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="680" y="230" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">Double-strand break repair</text>
+  <text x="680" y="250" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">via homologous recombination</text>
+  <text x="680" y="270" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#333">(GO:0000724)</text>
+  
+  <rect x="100" y="210" width="120" height="70" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="160" y="230" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">DNA double-strand</text>
+  <text x="160" y="250" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">break processing</text>
+  <text x="160" y="270" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#333">(GO:0000729)</text>
+  
+  <rect x="560" y="420" width="140" height="50" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="630" y="440" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">DNA strand resection</text>
+  <text x="630" y="460" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#333">(GO:0110025)</text>
+  
+  <!-- Step Labels -->
+  <rect x="100" y="145" width="170" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="185" y="160" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#333" font-style="italic">1. Recruitment to break site</text>
+  
+  <rect x="100" y="340" width="200" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="200" y="355" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#333" font-style="italic">2. End processing by MRN complex</text>
+  
+  <rect x="555" y="340" width="170" height="20" fill="white" opacity="0.9" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="640" y="355" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" fill="#333" font-style="italic">3. Strand resection by EXO1</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="480" width="600" height="60" rx="5" ry="5" fill="white" stroke="#999" stroke-width="1"/>
+  <text x="400" y="495" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">Legend</text>
+  
+  <!-- MRE11 Legend -->
+  <circle cx="130" y="515" r="10" fill="#ffaaaa" stroke="#cc0000" stroke-width="2"/>
+  <text x="145" y="519" font-family="Arial" font-size="10" text-anchor="start" font-weight="bold" fill="#333">MRE11 - Exonuclease/endonuclease activities</text>
+  
+  <!-- RAD50 Legend -->
+  <circle cx="330" y="515" r="10" fill="#aaffaa" stroke="#00cc00" stroke-width="2"/>
+  <text x="345" y="519" font-family="Arial" font-size="10" text-anchor="start" font-weight="bold" fill="#333">RAD50 - ATP hydrolysis activity</text>
+  
+  <!-- NBN Legend -->
+  <circle cx="130" y="535" r="10" fill="#aaaaff" stroke="#0000cc" stroke-width="2"/>
+  <text x="145" y="539" font-family="Arial" font-size="10" text-anchor="start" font-weight="bold" fill="#333">NBN - Chromatin adaptor protein</text>
+  
+  <!-- ATM Legend -->
+  <rect x="320" y="530" width="20" height="12" rx="3" ry="3" fill="#ffddaa" stroke="#ff6600" stroke-width="2"/>
+  <text x="345" y="539" font-family="Arial" font-size="10" text-anchor="start" font-weight="bold" fill="#333">ATM - Protein kinase</text>
+  
+  <!-- EXO1 Legend -->
+  <rect x="480" y="530" width="20" height="12" rx="3" ry="3" fill="#ddffaa" stroke="#66cc00" stroke-width="2"/>
+  <text x="505" y="539" font-family="Arial" font-size="10" text-anchor="start" font-weight="bold" fill="#333">EXO1 - 5'-3' Exonuclease</text>
+  
+  <!-- Title at the top -->
+  <text x="400" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">Initiation of Double-Strand Break Repair via Homologous Recombination</text>
+  <text x="400" y="50" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#555">Mediated by the MRN Complex (MRE11-RAD50-NBN) in Human Cells</text>
+  
+  <!-- Arrowhead Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

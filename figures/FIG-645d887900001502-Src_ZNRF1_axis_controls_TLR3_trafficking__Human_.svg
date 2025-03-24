@@ -1,0 +1,77 @@
+<svg width="800" height="620" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="520" rx="20" ry="20" fill="#f8f9fa" stroke="#2c3e50" stroke-width="2" opacity="0.9"/>
+  <text x="60" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#2c3e50">Cell</text>
+  
+  <!-- Endosome membrane -->
+  <ellipse cx="350" cy="250" rx="150" ry="100" fill="#d1ecf1" stroke="#0c7b93" stroke-width="2" opacity="0.8"/>
+  <text x="350" y="250" font-family="Arial" font-size="16" font-weight="bold" fill="#0c7b93" text-anchor="middle">Endosome Membrane (GO:0010008)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="60" y="120" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">Cytoplasm (GO:0005737)</text>
+  
+  <!-- TLR3 in endosome membrane -->
+  <rect x="250" y="200" width="80" height="40" rx="5" ry="5" fill="#f8c291" stroke="#e55039" stroke-width="2"/>
+  <text x="290" y="223" font-family="Arial" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">TLR3</text>
+  <text x="290" y="238" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(O15455)</text>
+  
+  <!-- TICAM1 in endosome membrane -->
+  <rect x="390" y="200" width="80" height="40" rx="5" ry="5" fill="#c8d6e5" stroke="#384456" stroke-width="2"/>
+  <text x="430" y="223" font-family="Arial" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">TICAM1</text>
+  <text x="430" y="238" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(Q8IUC6)</text>
+  
+  <!-- SRC in cytoplasm -->
+  <rect x="250" y="350" width="80" height="40" rx="5" ry="5" fill="#badc58" stroke="#3d6e22" stroke-width="2"/>
+  <text x="290" y="373" font-family="Arial" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">SRC</text>
+  <text x="290" y="388" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(P12931)</text>
+  
+  <!-- ZNRF1 in cytoplasm -->
+  <rect x="390" y="350" width="80" height="40" rx="5" ry="5" fill="#7ed6df" stroke="#104c54" stroke-width="2"/>
+  <text x="430" y="373" font-family="Arial" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">ZNRF1</text>
+  <text x="430" y="388" font-family="Arial" font-size="10" fill="#000000" text-anchor="middle">(Q8ND25)</text>
+  
+  <!-- Proteasome in cytoplasm -->
+  <polygon points="550,350 570,330 590,350 570,370" fill="#f5cd79" stroke="#b3761c" stroke-width="2"/>
+  <text x="570" y="355" font-family="Arial" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">Proteasome</text>
+  
+  <!-- Interactions -->
+  <!-- TLR3 to TICAM1 - receptor activates adaptor -->
+  <line x1="330" y1="220" x2="390" y2="220" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="360" y="210" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Activates</text>
+  
+  <!-- TLR3 to SRC - receptor activates kinase -->
+  <path d="M 290,240 Q 290,300 290,350" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="315" y="300" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Activates</text>
+  
+  <!-- SRC to ZNRF1 - kinase phosphorylates and activates ligase -->
+  <line x1="330" y1="370" x2="390" y2="370" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="360" y="390" font-family="Arial" font-size="12" fill="#000000" text-anchor="middle">Phosphorylates</text>
+  
+  <!-- ZNRF1 to TLR3 ubiquitination -->
+  <path d="M 430,350 Q 430,300 330,240" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="390" y="310" font-family="Arial" font-size="12" font-weight="bold" fill="#e74c3c">Ubiquitination</text>
+  
+  <!-- ZNRF1 to Proteasome - protein degradation -->
+  <path d="M 470,360 Q 510,360 550,350" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="510" y="340" font-family="Arial" font-size="12" font-weight="bold" fill="#e74c3c">Degradation</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Molecular functions -->
+  <rect x="50" y="450" width="700" height="100" rx="5" ry="5" fill="#ecf0f1" stroke="#7f8c8d" stroke-width="1"/>
+  <text x="60" y="470" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Molecular Functions:</text>
+  <text x="70" y="495" font-family="Arial" font-size="12" fill="#2c3e50">• TLR3 (O15455): Pattern recognition receptor activity (GO:0038187)</text>
+  <text x="70" y="520" font-family="Arial" font-size="12" fill="#2c3e50">• SRC (P12931): Protein tyrosine kinase activity (GO:0004713)</text>
+  <text x="70" y="545" font-family="Arial" font-size="12" fill="#2c3e50">• ZNRF1 (Q8ND25): Ubiquitin protein ligase activity (GO:0061630)</text>
+  <text x="400" y="495" font-family="Arial" font-size="12" fill="#2c3e50">• TICAM1 (Q8IUC6): Molecular adaptor activity (GO:0060090)</text>
+  <text x="400" y="520" font-family="Arial" font-size="12" fill="#2c3e50">• Process: TLR3 signaling pathway (GO:0034138)</text>
+  <text x="400" y="545" font-family="Arial" font-size="12" fill="#2c3e50">• Process: Proteasome-mediated protein degradation (GO:0043161)</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#2c3e50" text-anchor="middle">Src-ZNRF1 Axis Controls TLR3 Trafficking</text>
+</svg>

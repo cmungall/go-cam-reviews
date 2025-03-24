@@ -1,0 +1,139 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f8f8" stroke="#333" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Cell components -->
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Cytoplasm (GO:0005737)</text>
+  
+  <!-- AKT1 protein -->
+  <g id="akt1">
+    <circle cx="400" cy="400" r="50" fill="#ff9999" stroke="#cc0000" stroke-width="3"/>
+    <text x="400" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">AKT1</text>
+    <text x="400" y="425" text-anchor="middle" font-family="Arial" font-size="10">(UniProtKB:P31749)</text>
+    <text x="400" y="380" text-anchor="middle" font-family="Arial" font-size="10">Protein Ser/Thr</text>
+    <text x="400" y="365" text-anchor="middle" font-family="Arial" font-size="10">kinase activity</text>
+  </g>
+  
+  <!-- PHLPP1 protein -->
+  <g id="phlpp1">
+    <rect x="550" y="350" width="100" height="60" rx="15" ry="15" fill="#99ccff" stroke="#0066cc" stroke-width="3"/>
+    <text x="600" y="375" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">PHLPP1</text>
+    <text x="600" y="395" text-anchor="middle" font-family="Arial" font-size="10">(UniProtKB:O60346)</text>
+    <text x="600" y="360" text-anchor="middle" font-family="Arial" font-size="10">Protein phosphatase</text>
+  </g>
+  
+  <!-- FKBP5 protein -->
+  <g id="fkbp5">
+    <rect x="550" y="230" width="100" height="60" rx="15" ry="15" fill="#ccff99" stroke="#66cc00" stroke-width="3"/>
+    <text x="600" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">FKBP5</text>
+    <text x="600" y="275" text-anchor="middle" font-family="Arial" font-size="10">(UniProtKB:Q13451)</text>
+    <text x="600" y="240" text-anchor="middle" font-family="Arial" font-size="10">Adaptor activity</text>
+  </g>
+  
+  <!-- USP49 protein -->
+  <g id="usp49">
+    <rect x="180" y="230" width="100" height="60" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="3"/>
+    <text x="230" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">USP49</text>
+    <text x="230" y="275" text-anchor="middle" font-family="Arial" font-size="10">(UniProtKB:Q70CQ1)</text>
+    <text x="230" y="240" text-anchor="middle" font-family="Arial" font-size="10">Deubiquitinase</text>
+  </g>
+  
+  <!-- SIRT7 protein -->
+  <g id="sirt7">
+    <rect x="350" y="150" width="100" height="60" rx="15" ry="15" fill="#cc99ff" stroke="#6600cc" stroke-width="3"/>
+    <text x="400" y="175" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">SIRT7</text>
+    <text x="400" y="195" text-anchor="middle" font-family="Arial" font-size="10">(UniProtKB:Q9NRC8)</text>
+    <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="10">Deacetylase</text>
+  </g>
+  
+  <!-- Arrows and interactions with different colors -->
+  <!-- USP49 to FKBP5 -->
+  <path d="M280 250 L550 250" stroke="#ff6600" stroke-width="3" fill="none" marker-end="url(#arrowhead1)"/>
+  <text x="415" y="240" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">Activates</text>
+  
+  <!-- SIRT7 to FKBP5 -->
+  <path d="M450 180 L550 230" stroke="#6600cc" stroke-width="3" fill="none" marker-end="url(#arrowhead2)"/>
+  <text x="500" y="200" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">Activates</text>
+  
+  <!-- FKBP5 to PHLPP1 -->
+  <path d="M600 290 L600 350" stroke="#66cc00" stroke-width="3" fill="none" marker-end="url(#arrowhead3)"/>
+  <text x="630" y="320" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">Promotes</text>
+  
+  <!-- PHLPP1 to AKT1 -->
+  <path d="M550 380 L450 390" stroke="#0066cc" stroke-width="3" fill="none" marker-end="url(#arrowhead4)"/>
+  <text x="500" y="370" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">Dephosphorylates</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">USP49 and SIRT7 inhibition of AKT1 via PHLPP1-mediated dephosphorylation</text>
+  
+  <!-- Process labels with background for better contrast -->
+  <rect x="150" y="295" width="160" height="40" rx="5" ry="5" fill="white" opacity="0.7"/>
+  <text x="230" y="315" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" font-weight="bold">GO:0016579</text>
+  <text x="230" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Protein deubiquitination</text>
+  
+  <rect x="320" y="215" width="160" height="40" rx="5" ry="5" fill="white" opacity="0.7"/>
+  <text x="400" y="235" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" font-weight="bold">GO:0034979</text>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">NAD-dependent deacetylation</text>
+  
+  <rect x="320" y="465" width="160" height="40" rx="5" ry="5" fill="white" opacity="0.7"/>
+  <text x="400" y="485" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" font-weight="bold">GO:0043491</text>
+  <text x="400" y="500" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">PI3K/AKT signaling</text>
+  
+  <rect x="520" y="415" width="160" height="40" rx="5" ry="5" fill="white" opacity="0.7"/>
+  <text x="600" y="435" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" font-weight="bold">GO:0006470</text>
+  <text x="600" y="450" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Protein dephosphorylation</text>
+  
+  <!-- Arrowhead marker definitions with different colors -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6600"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6600cc"/>
+    </marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#66cc00"/>
+    </marker>
+    <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc"/>
+    </marker>
+  </defs>
+  
+  <!-- Phosphate group on AKT1 -->
+  <circle cx="430" cy="430" r="10" fill="#ff0000" opacity="0.8"/>
+  <text x="430" y="433" text-anchor="middle" font-family="Arial" font-size="10" fill="white" font-weight="bold">P</text>
+  
+  <!-- Overall process label -->
+  <rect x="520" y="295" width="160" height="40" rx="5" ry="5" fill="white" opacity="0.7"/>
+  <text x="600" y="315" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" font-weight="bold">GO:0051898</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Negative regulation of PI3K/AKT</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="570" width="700" height="120" rx="10" ry="10" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <text x="60" y="590" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <!-- Protein Function Legend -->
+  <circle cx="80" cy="615" r="8" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="95" y="620" font-family="Arial" font-size="12">AKT1: Serine/threonine kinase; central regulator of PI3K/AKT signaling</text>
+  
+  <rect x="80" y="635" width="16" height="16" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="105" y="647" font-family="Arial" font-size="12">PHLPP1: Phosphatase that dephosphorylates and inactivates AKT1</text>
+  
+  <rect x="300" y="615" width="16" height="16" fill="#ccff99" stroke="#66cc00" stroke-width="2"/>
+  <text x="325" y="620" font-family="Arial" font-size="12">FKBP5: Adaptor protein that facilitates PHLPP1-AKT1 interaction</text>
+  
+  <rect x="300" y="635" width="16" height="16" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="325" y="647" font-family="Arial" font-size="12">USP49: Deubiquitinase that activates FKBP5</text>
+  
+  <rect x="80" y="655" width="16" height="16" fill="#cc99ff" stroke="#6600cc" stroke-width="2"/>
+  <text x="105" y="667" font-family="Arial" font-size="12">SIRT7: NAD-dependent deacetylase that activates FKBP5</text>
+  
+  <circle cx="540" cy="615" r="8" fill="#ff0000" opacity="0.8"/>
+  <text x="555" y="620" font-family="Arial" font-size="12">Phosphate group removed by PHLPP1</text>
+  
+  <!-- Interaction Legend -->
+  <line x1="540" y1="642" x2="560" y2="642" stroke="#ff6600" stroke-width="2" marker-end="url(#arrowhead1)"/>
+  <line x1="540" y1="658" x2="560" y2="658" stroke="#6600cc" stroke-width="2" marker-end="url(#arrowhead2)"/>
+  <text x="565" y="647" font-family="Arial" font-size="12">USP49 activation</text>
+  <text x="565" y="663" font-family="Arial" font-size="12">SIRT7 activation</text>
+</svg>

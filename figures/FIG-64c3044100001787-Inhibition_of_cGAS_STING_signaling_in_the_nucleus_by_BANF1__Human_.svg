@@ -1,0 +1,121 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="560" rx="50" ry="50" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Compartment Backgrounds with enhanced separation -->
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="300" rx="160" ry="160" fill="#dae8fc" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="480" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Nucleus</text>
+  
+  <!-- ER-Golgi intermediate compartment -->
+  <path d="M 410 200 Q 500 150 600 200 Q 700 250 600 300 Q 500 350 410 300 Q 330 260 410 200" fill="#ffe6cc" stroke="#333" stroke-width="2" filter="url(#shadow)"/>
+  <text x="550" y="330" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">ER-Golgi Intermediate Compartment</text>
+
+  <!-- Cytosol background -->
+  <rect x="50" y="50" width="700" height="560" rx="50" ry="50" fill="rgba(255,255,255,0.01)" stroke="none"/>
+  <text x="140" y="100" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Cytosol</text>
+
+  <!-- DNA in nucleus -->
+  <path d="M 180 260 Q 220 240 260 260 Q 300 280 340 260" stroke="#6600cc" stroke-width="4" fill="none"/>
+  <text x="260" y="230" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">dsDNA</text>
+  
+  <!-- BANF1 -->
+  <rect x="170" y="210" width="60" height="30" rx="5" ry="5" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">BANF1</text>
+  <text x="200" y="195" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">O75531</text>
+  
+  <!-- cGAS -->
+  <rect x="290" y="280" width="60" height="30" rx="5" ry="5" fill="#99cc99" stroke="#333" stroke-width="1"/>
+  <text x="320" y="300" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">cGAS</text>
+  <text x="320" y="320" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Q8N884</text>
+  
+  <!-- cGAMP -->
+  <circle cx="400" cy="250" r="15" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="400" y="254" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">cGAMP</text>
+  
+  <!-- STING1 -->
+  <rect x="500" y="250" width="60" height="30" rx="5" ry="5" fill="#99ccff" stroke="#333" stroke-width="1"/>
+  <text x="530" y="270" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">STING1</text>
+  <text x="530" y="240" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Q86WV6</text>
+  
+  <!-- TBK1 -->
+  <rect x="600" y="150" width="60" height="30" rx="5" ry="5" fill="#cc99ff" stroke="#333" stroke-width="1"/>
+  <text x="630" y="170" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">TBK1</text>
+  <text x="630" y="140" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Q9UHD2</text>
+  
+  <!-- Interferon Response -->
+  <rect x="600" y="80" width="100" height="30" rx="5" ry="5" fill="#ffffcc" stroke="#333" stroke-width="1"/>
+  <text x="650" y="100" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Type I IFN</text>
+  
+  <!-- Arrows and inhibition marks -->
+  <!-- BANF1 inhibits cGAS DNA binding -->
+  <line x1="230" y1="225" x2="290" y2="255" stroke="#ff0000" stroke-width="2.5" marker-end="url(#inhibit)"/>
+  <text x="245" y="255" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" fill="#ff0000" font-weight="bold">inhibits</text>
+  
+  <!-- cGAS to cGAMP -->
+  <line x1="350" y1="280" x2="385" y2="255" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="345" y="260" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">synthesizes</text>
+  
+  <!-- cGAMP to STING1 -->
+  <line x1="415" y1="250" x2="495" y2="250" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="455" y="240" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">binds</text>
+  
+  <!-- STING1 to TBK1 -->
+  <line x1="560" y1="250" x2="600" y2="180" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="570" y="210" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">activates</text>
+  
+  <!-- TBK1 to IFN -->
+  <line x1="630" y1="150" x2="630" y2="115" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="650" y="130" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">promotes</text>
+  
+  <!-- Markers for arrows -->
+  <defs>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="inhibit" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <circle cx="5" cy="5" r="4" fill="white" stroke="#ff0000" stroke-width="1.5"/>
+      <line x1="2" y1="5" x2="8" y2="5" stroke="#ff0000" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  
+  <!-- Function labels with color coding -->
+  <rect x="240" y="340" width="160" height="40" rx="5" ry="5" fill="rgba(153,204,153,0.3)" stroke="#333" stroke-width="1"/>
+  <text x="320" y="355" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">dsDNA binding &amp;</text>
+  <text x="320" y="370" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">cGAMP synthase activity</text>
+  
+  <rect x="450" y="290" width="160" height="25" rx="5" ry="5" fill="rgba(153,204,255,0.3)" stroke="#333" stroke-width="1"/>
+  <text x="530" y="305" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">Signaling adaptor activity</text>
+  
+  <rect x="550" y="185" width="160" height="25" rx="5" ry="5" fill="rgba(204,153,255,0.3)" stroke="#333" stroke-width="1"/>
+  <text x="630" y="200" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">Protein kinase activity</text>
+  
+  <rect x="120" y="185" width="160" height="25" rx="5" ry="5" fill="rgba(255,153,153,0.3)" stroke="#333" stroke-width="1"/>
+  <text x="200" y="200" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" font-weight="bold">dsDNA binding activity</text>
+  
+  <!-- Pathway label -->
+  <text x="400" y="530" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Inhibition of cGAS-STING Signaling in the Nucleus by BANF1</text>
+  <text x="400" y="550" text-anchor="middle" font-family="Arial" font-size="14">(Human)</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="560" width="600" height="40" fill="#f0f0f0" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <line x1="120" y1="578" x2="150" y2="578" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="190" y="582" text-anchor="start" font-family="Arial" font-size="12">Activation/Promotion</text>
+  
+  <line x1="300" y1="578" x2="330" y2="578" stroke="#ff0000" stroke-width="2.5" marker-end="url(#inhibit)"/>
+  <text x="345" y="582" text-anchor="start" font-family="Arial" font-size="12">Inhibition</text>
+  
+  <rect x="450" y="573" width="20" height="10" rx="2" ry="2" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="510" y="582" text-anchor="start" font-family="Arial" font-size="12">Protein</text>
+  
+  <circle cx="580" y="578" r="5" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="620" y="582" text-anchor="start" font-family="Arial" font-size="12">Molecule</text>
+</svg>

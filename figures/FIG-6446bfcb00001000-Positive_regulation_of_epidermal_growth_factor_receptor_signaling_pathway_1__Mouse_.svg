@@ -1,0 +1,117 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <path d="M 50,200 L 750,200" stroke="#888888" stroke-width="8" fill="none" stroke-dasharray="5,5"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Regulation of Epidermal Growth Factor Receptor Signaling Pathway (Mouse)</text>
+  
+  <!-- EGFR in membrane -->
+  <rect x="200" y="170" width="80" height="60" rx="5" fill="#f4d1d1" stroke="#000" stroke-width="2"/>
+  <text x="240" y="205" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">EGFR</text>
+  <text x="240" y="225" font-family="Arial" font-size="12" text-anchor="middle">(Egfr)</text>
+  
+  <!-- Tyrosine kinase activity -->
+  <circle cx="280" cy="230" r="15" fill="#e0ffe0" stroke="#000" stroke-width="2"/>
+  <text x="280" y="235" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">P</text>
+  
+  <!-- Spry2 -->
+  <rect x="380" y="260" width="80" height="40" rx="5" fill="#d1e8f4" stroke="#000" stroke-width="2"/>
+  <text x="420" y="285" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Spry2</text>
+  
+  <!-- Cbl -->
+  <rect x="150" y="330" width="70" height="40" rx="5" fill="#f4ebd1" stroke="#000" stroke-width="2"/>
+  <text x="185" y="355" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cbl</text>
+  
+  <!-- Sh3kbp1 -->
+  <rect x="300" y="400" width="100" height="40" rx="5" fill="#e8d1f4" stroke="#000" stroke-width="2"/>
+  <text x="350" y="425" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Sh3kbp1</text>
+  
+  <!-- Ubiquitin tag on EGFR -->
+  <rect x="170" y="250" width="30" height="18" rx="3" fill="#ffd700" stroke="#000" stroke-width="1"/>
+  <text x="185" y="264" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Ub</text>
+  
+  <!-- Endocytic vesicle -->
+  <ellipse cx="150" cy="450" rx="60" ry="40" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="5,3"/>
+  <rect x="130" y="430" width="40" height="30" rx="5" fill="#f4d1d1" stroke="#000" stroke-width="1" opacity="0.7"/>
+  <text x="150" y="450" font-family="Arial" font-size="14" text-anchor="middle">EGFR</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- EGFR activates Spry2 -->
+  <path d="M 270,230 Q 320,250 380,270" stroke="#087f23" stroke-width="2.5" fill="none" marker-end="url(#arrowhead_green)"/>
+  <text x="320" y="245" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">activates</text>
+  
+  <!-- Spry2 inhibits Cbl -->
+  <path d="M 380,280 Q 300,310 220,330" stroke="#c62828" stroke-width="2.5" fill="none" marker-end="url(#arrowhead_red)"/>
+  <text x="300" y="315" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#c62828">inhibits</text>
+  
+  <!-- EGFR can activate Cbl -->
+  <path d="M 240,230 Q 220,270 185,330" stroke="#087f23" stroke-width="2.5" fill="none" marker-end="url(#arrowhead_green)"/>
+  <text x="200" y="280" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">activates</text>
+  
+  <!-- Cbl ubiquitinates EGFR -->
+  <path d="M 200,330 Q 250,300 200,250" stroke="#000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="240" y="280" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ubiquitinates</text>
+  
+  <!-- Spry2 promotes EGFR activity -->
+  <path d="M 415,260 Q 370,240 280,215" stroke="#087f23" stroke-width="2.5" fill="none" marker-end="url(#arrowhead_green)"/>
+  <text x="350" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#087f23">promotes</text>
+  
+  <!-- Spry2 inhibits Sh3kbp1 -->
+  <path d="M 420,300 Q 400,350 350,400" stroke="#c62828" stroke-width="2.5" fill="none" marker-end="url(#arrowhead_red)"/>
+  <text x="390" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#c62828">inhibits</text>
+  
+  <!-- Sh3kbp1 promotes endocytosis -->
+  <path d="M 300,420 Q 250,440 180,450" stroke="#000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="240" y="445" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">endocytosis</text>
+  
+  <!-- EGFR regulation caption -->
+  <rect x="480" y="290" width="270" height="120" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" rx="5"/>
+  <text x="615" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">EGFR Regulation</text>
+  <text x="490" y="335" font-family="Arial" font-size="14" text-anchor="start">• Spry2 promotes EGFR signaling</text>
+  <text x="490" y="360" font-family="Arial" font-size="14" text-anchor="start">• Cbl negatively regulates via ubiquitination</text>
+  <text x="490" y="385" font-family="Arial" font-size="14" text-anchor="start">• Sh3kbp1 facilitates endocytosis</text>
+  <text x="490" y="410" font-family="Arial" font-size="14" text-anchor="start">• EGFR downregulation controls signaling</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+    <marker id="arrowhead_green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#087f23" />
+    </marker>
+    <marker id="arrowhead_red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c62828" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="500" y="420" width="250" height="170" fill="#f9f9f9" stroke="#000" stroke-width="1" rx="5"/>
+  <text x="625" y="440" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="520" y="450" width="20" height="20" fill="#f4d1d1" stroke="#000" stroke-width="1"/>
+  <text x="550" y="465" font-family="Arial" font-size="14" text-anchor="start">Receptor (EGFR)</text>
+  
+  <rect x="520" y="475" width="20" height="20" fill="#d1e8f4" stroke="#000" stroke-width="1"/>
+  <text x="550" y="490" font-family="Arial" font-size="14" text-anchor="start">Inhibitor (Spry2)</text>
+  
+  <rect x="520" y="500" width="20" height="20" fill="#f4ebd1" stroke="#000" stroke-width="1"/>
+  <text x="550" y="515" font-family="Arial" font-size="14" text-anchor="start">E3 Ligase (Cbl)</text>
+  
+  <rect x="520" y="525" width="20" height="20" fill="#e8d1f4" stroke="#000" stroke-width="1"/>
+  <text x="550" y="540" font-family="Arial" font-size="14" text-anchor="start">Adaptor (Sh3kbp1)</text>
+  
+  <line x1="520" y1="550" x2="540" y2="550" stroke="#087f23" stroke-width="2.5" marker-end="url(#arrowhead_green)"/>
+  <text x="550" y="555" font-family="Arial" font-size="14" text-anchor="start">Activation</text>
+  
+  <line x1="520" y1="570" x2="540" y2="570" stroke="#c62828" stroke-width="2.5" marker-end="url(#arrowhead_red)"/>
+  <text x="550" y="575" font-family="Arial" font-size="14" text-anchor="start">Inhibition</text>
+  
+  <circle cx="530" cy="590" r="10" fill="#e0ffe0" stroke="#000" stroke-width="1"/>
+  <text x="530" y="594" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">P</text>
+  <text x="550" y="595" font-family="Arial" font-size="14" text-anchor="start">Phosphorylation</text>
+  
+  <rect x="525" y="605" width="20" height="12" rx="2" fill="#ffd700" stroke="#000" stroke-width="1"/>
+  <text x="535" y="615" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">Ub</text>
+  <text x="550" y="615" font-family="Arial" font-size="14" text-anchor="start">Ubiquitination</text>
+</svg>

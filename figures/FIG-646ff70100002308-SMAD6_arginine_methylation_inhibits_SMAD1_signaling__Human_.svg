@@ -1,0 +1,94 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell compartments -->
+  <!-- Extracellular Space -->
+  <rect x="0" y="0" width="800" height="150" fill="#e6f7ff" opacity="0.5"/>
+  <text x="20" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#555">Extracellular Space</text>
+  
+  <!-- Cell Membrane -->
+  <path d="M 0,150 C 100,140 200,160 300,150 C 400,140 500,160 600,150 C 700,140 800,160 800,150" stroke="#888" stroke-width="3" fill="none"/>
+  <path d="M 0,160 C 100,170 200,150 300,160 C 400,170 500,150 600,160 C 700,170 800,150 800,160" stroke="#888" stroke-width="3" fill="none"/>
+  
+  <!-- Cytoplasm -->
+  <rect x="0" y="160" width="800" height="240" fill="#fff2e6" opacity="0.5"/>
+  <text x="20" y="180" font-family="Arial" font-size="16" font-weight="bold" fill="#555">Cytoplasm</text>
+  
+  <!-- Nuclear Membrane -->
+  <ellipse cx="400" cy="500" rx="250" ry="150" stroke="#888" stroke-width="3" fill="#ffe6e6" opacity="0.5"/>
+  <text x="400" y="450" font-family="Arial" font-size="16" font-weight="bold" fill="#555" text-anchor="middle">Nucleus</text>
+  
+  <!-- Pathway Components -->
+  
+  <!-- BMP4 in extracellular space -->
+  <circle cx="150" cy="80" r="40" fill="#86c5da" stroke="#333" stroke-width="2"/>
+  <text x="150" y="85" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">BMP4</text>
+  
+  <!-- PRMT1 in cytoplasm -->
+  <rect x="300" y="220" width="80" height="40" rx="10" fill="#f9c74f" stroke="#333" stroke-width="2"/>
+  <text x="340" y="245" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">PRMT1</text>
+  
+  <!-- SMAD6 in cytoplasm -->
+  <rect x="500" y="220" width="80" height="40" rx="10" fill="#f8961e" stroke="#333" stroke-width="2"/>
+  <text x="540" y="245" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">SMAD6</text>
+  
+  <!-- SMAD4 in nucleus -->
+  <rect x="300" y="480" width="80" height="40" rx="10" fill="#90be6d" stroke="#333" stroke-width="2"/>
+  <text x="340" y="505" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">SMAD4</text>
+  
+  <!-- SMAD1 in nucleus -->
+  <rect x="500" y="480" width="80" height="40" rx="10" fill="#43aa8b" stroke="#333" stroke-width="2"/>
+  <text x="540" y="505" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">SMAD1</text>
+  
+  <!-- Pathway Arrows and Connections -->
+  
+  <!-- BMP4 to PRMT1 -->
+  <path d="M 170,115 Q 250,180 290,225" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="220" y="170" font-family="Arial" font-size="14" font-weight="bold" fill="#333" transform="rotate(-20, 220, 170)">Activates</text>
+  <text x="220" y="190" font-family="Arial" font-size="12" fill="#333" transform="rotate(-20, 220, 190)">(Cytokine activity)</text>
+  
+  <!-- PRMT1 to SMAD6 methylation -->
+  <path d="M 385,240 L 495,240" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="440" y="228" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Methylates</text>
+  <text x="440" y="245" font-family="Arial" font-size="12" fill="#333">(Arg-methyltransferase)</text>
+  
+  <!-- Methylated SMAD6 inhibits SMAD1 -->
+  <path d="M 540,265 Q 540,370 540,475" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="560" y="350" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Inhibits</text>
+  <text x="560" y="370" font-family="Arial" font-size="12" fill="#333">(Protein sequestering)</text>
+  
+  <!-- SMAD4 activates SMAD1 -->
+  <path d="M 385,500 L 495,500" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="440" y="488" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Activates</text>
+  <text x="440" y="515" font-family="Arial" font-size="12" fill="#333">(Transcription activator)</text>
+  
+  <!-- SMAD1 transcription factor activity -->
+  <path d="M 550,525 Q 600,570 650,570" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="600" y="590" font-family="Arial" font-size="14" font-weight="bold" fill="#333">DNA-binding TF activity</text>
+  
+  <!-- Methylation symbol on SMAD6 -->
+  <circle cx="525" cy="215" r="10" fill="red" opacity="0.7"/>
+  <text x="525" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">M</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="580" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">SMAD6 Arginine Methylation Inhibits SMAD1 Signaling</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="600" width="760" height="40" fill="#f5f5f5" stroke="#333" stroke-width="1" rx="5"/>
+  <circle cx="40" cy="620" r="10" fill="red" opacity="0.7"/>
+  <text x="40" y="625" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">M</text>
+  <text x="60" y="625" font-family="Arial" font-size="14" fill="#333">= Arginine Methylation</text>
+  
+  <line x1="150" y1="620" x2="200" y2="620" stroke="#333" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="210" y="625" font-family="Arial" font-size="14" fill="#333">= Inhibitory Interaction</text>
+  
+  <line x1="350" y1="620" x2="400" y2="620" stroke="#333" stroke-width="2"/>
+  <text x="410" y="625" font-family="Arial" font-size="14" fill="#333">= Activating Interaction</text>
+  
+  <text x="550" y="625" font-family="Arial" font-size="14" fill="#333" font-style="italic">Part of BMP Signaling Pathway</text>
+</svg>

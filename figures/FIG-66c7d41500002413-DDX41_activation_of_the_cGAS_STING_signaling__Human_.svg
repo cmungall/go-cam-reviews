@@ -1,0 +1,105 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="320" rx="380" ry="280" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="250" cy="320" rx="120" ry="100" fill="#e6f2ff" stroke="#333" stroke-width="2"/>
+  <text x="250" y="320" font-family="Arial" font-size="18" text-anchor="middle">Nucleus</text>
+
+  <!-- ER-Golgi intermediate compartment -->
+  <path d="M400,200 C450,180 500,190 550,200 C600,210 650,220 680,240 C700,260 710,290 700,320 C690,350 670,370 640,380 C600,390 550,380 500,370 C450,360 400,350 380,330 C360,310 370,260 400,200" fill="#ffead6" stroke="#333" stroke-width="2"/>
+  <text x="530" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ER-Golgi intermediate</text>
+  <text x="530" y="310" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">compartment membrane</text>
+  
+  <!-- Cytoplasm area with slightly different color -->
+  <path d="M50,150 C100,100 300,50 500,50 C650,50 750,150 750,320 C750,450 650,550 400,550 C200,550 50,450 50,320 C50,250 50,200 50,150" fill="#f0f0f0" stroke="none" fill-opacity="0.4"/>
+  
+  <!-- Cytosol area -->
+  <path d="M100,250 C150,200 300,150 450,150 C600,150 700,230 700,320 C700,420 600,500 400,500 C250,500 100,450 100,320 C100,300 100,280 100,250" fill="#e9ffe9" stroke="none" fill-opacity="0.3"/>
+  
+  <!-- Compartment labels -->
+  <text x="400" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Cytoplasm</text>
+  <text x="480" y="450" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#006600">Cytosol</text>
+  
+  <!-- Molecules and interactions -->
+  
+  <!-- BTK -->
+  <circle cx="180" cy="430" r="30" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="180" y="435" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">BTK</text>
+  <text x="180" y="455" font-family="Arial" font-size="10" text-anchor="middle">Protein tyrosine kinase</text>
+  
+  <!-- DDX41 -->
+  <rect x="300" y="410" width="60" height="40" rx="5" ry="5" fill="#99cc99" stroke="#333" stroke-width="2"/>
+  <text x="330" y="433" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">DDX41</text>
+  <text x="330" y="447" font-family="Arial" font-size="10" text-anchor="middle">RNA helicase</text>
+  
+  <!-- STING1 -->
+  <rect x="460" y="320" width="60" height="40" rx="5" ry="5" fill="#9999ff" stroke="#333" stroke-width="2"/>
+  <text x="490" y="343" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">STING1</text>
+  <text x="490" y="357" font-family="Arial" font-size="10" text-anchor="middle">Signaling adaptor</text>
+  
+  <!-- TBK1 -->
+  <rect x="600" y="400" width="60" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="630" y="423" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TBK1</text>
+  <text x="630" y="437" font-family="Arial" font-size="10" text-anchor="middle">Ser/Thr kinase</text>
+  
+  <!-- Output -->
+  <rect x="650" y="300" width="100" height="40" rx="10" ry="10" fill="#ffffcc" stroke="#333" stroke-width="2"/>
+  <text x="700" y="323" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Type I IFN</text>
+  <text x="700" y="337" font-family="Arial" font-size="10" text-anchor="middle">production</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- BTK to DDX41 -->
+  <path d="M210,430 L290,430" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <circle cx="250" cy="430" r="12" fill="#ffdddd" stroke="#333" stroke-width="1"/>
+  <text x="250" y="434" font-family="Arial" font-size="12" text-anchor="middle">P</text>
+  
+  <!-- DDX41 to STING1 -->
+  <path d="M360,420 L450,340" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="405" y="370" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  
+  <!-- STING1 to TBK1 -->
+  <path d="M520,340 L590,400" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="555" y="370" font-family="Arial" font-size="12" text-anchor="middle">activates</text>
+  
+  <!-- TBK1 to Type I IFN -->
+  <path d="M640,400 L670,340" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="670" y="380" font-family="Arial" font-size="12" text-anchor="middle">promotes</text>
+  
+  <!-- Process label -->
+  <text x="400" y="30" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">DDX41 Activation of the cGAS-STING Signaling Pathway</text>
+  <text x="400" y="55" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Human</text>
+  
+  <!-- Pathway label -->
+  <rect x="50" y="200" width="150" height="50" rx="10" ry="10" fill="#e6ffe6" stroke="#333" stroke-width="1" opacity="0.8"/>
+  <text x="125" y="220" font-family="Arial" font-size="14" text-anchor="middle">cGAS/STING</text>
+  <text x="125" y="240" font-family="Arial" font-size="14" text-anchor="middle">signaling pathway</text>
+
+  <!-- Legend -->
+  <rect x="50" y="560" width="700" height="80" rx="10" ry="10" fill="#f5f5f5" stroke="#333" stroke-width="1"/>
+  <text x="400" y="575" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Protein symbols -->
+  <circle cx="80" cy="595" r="10" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="100" y="600" font-family="Arial" font-size="12" text-anchor="start">Kinase (BTK)</text>
+  
+  <rect x="180" y="585" width="20" height="20" rx="2" ry="2" fill="#99cc99" stroke="#333" stroke-width="1"/>
+  <text x="210" y="600" font-family="Arial" font-size="12" text-anchor="start">RNA helicase (DDX41)</text>
+  
+  <rect x="350" y="585" width="20" height="20" rx="2" ry="2" fill="#9999ff" stroke="#333" stroke-width="1"/>
+  <text x="380" y="600" font-family="Arial" font-size="12" text-anchor="start">Signaling adaptor (STING1)</text>
+  
+  <rect x="520" y="585" width="20" height="20" rx="2" ry="2" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="550" y="600" font-family="Arial" font-size="12" text-anchor="start">Kinase (TBK1)</text>
+  
+  <circle cx="630" y="595" r="10" fill="#ffdddd" stroke="#333" stroke-width="1"/>
+  <text x="640" y="595" font-family="Arial" font-size="12" text-anchor="start">P</text>
+  <text x="655" y="600" font-family="Arial" font-size="12" text-anchor="start">Phosphorylation</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

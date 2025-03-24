@@ -1,0 +1,113 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell background -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f8f8" stroke="#aaaaaa" stroke-width="2"/>
+  
+  <!-- Lysosome -->
+  <ellipse cx="400" cy="350" rx="200" ry="150" fill="#f0e6ff" stroke="#8a5fff" stroke-width="2"/>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Lysosome</text>
+  
+  <!-- Lysosomal membrane -->
+  <ellipse cx="400" cy="350" rx="180" ry="130" fill="none" stroke="#8a5fff" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="400" y="240" text-anchor="middle" font-family="Arial" font-size="16">Lysosomal membrane</text>
+  
+  <!-- CUL3 -->
+  <rect x="150" y="100" width="80" height="40" rx="10" ry="10" fill="#c6eaff" stroke="#0066cc" stroke-width="2"/>
+  <text x="190" y="125" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">CUL3</text>
+  <text x="190" y="90" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">scaffold activity</text>
+  
+  <!-- KLHL22 -->
+  <rect x="250" y="170" width="80" height="40" rx="10" ry="10" fill="#ffe6cc" stroke="#ff9933" stroke-width="2"/>
+  <text x="290" y="195" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">KLHL22</text>
+  <text x="290" y="160" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">adaptor</text>
+  
+  <!-- RBX1 -->
+  <rect x="350" y="100" width="80" height="40" rx="10" ry="10" fill="#ffd9d9" stroke="#ff6666" stroke-width="2"/>
+  <text x="390" y="125" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">RBX1</text>
+  
+  <!-- DEPDC5 -->
+  <rect x="250" y="320" width="80" height="40" rx="10" ry="10" fill="#d9ead3" stroke="#6aa84f" stroke-width="2"/>
+  <text x="290" y="345" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">DEPDC5</text>
+  <text x="290" y="370" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">GATOR1 complex</text>
+  
+  <!-- RRAGC -->
+  <rect x="500" y="320" width="80" height="40" rx="10" ry="10" fill="#fff2cc" stroke="#ffcc00" stroke-width="2"/>
+  <text x="540" y="345" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">RRAGC</text>
+  <text x="540" y="370" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">GDP binding</text>
+  
+  <!-- mTORC1 (implicit) -->
+  <rect x="500" y="430" width="80" height="40" rx="10" ry="10" fill="#e6e6fa" stroke="#9370db" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="540" y="455" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">mTORC1</text>
+  <text x="540" y="480" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">*implicit</text>
+  
+  <!-- Connection arrows -->
+  <!-- CUL3 to KLHL22 - scaffold interaction -->
+  <line x1="190" y1="140" x2="267" y2="170" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead-blue)"/>
+  <text x="215" y="167" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">scaffolds</text>
+  
+  <!-- RBX1 to KLHL22 - binding interaction -->
+  <line x1="390" y1="140" x2="310" y2="170" stroke="#ff6666" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+  <text x="370" y="167" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">binds</text>
+  
+  <!-- KLHL22 to DEPDC5 - ubiquitination -->
+  <line x1="290" y1="210" x2="290" y2="320" stroke="#ff9933" stroke-width="4" marker-end="url(#arrowhead-orange)"/>
+  <text x="320" y="260" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">ubiquitinates</text>
+  
+  <!-- DEPDC5 to RRAGC - inhibitory interaction -->
+  <path d="M 330 340 Q 400 340 500 340" fill="none" stroke="#6aa84f" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead-green)"/>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">inhibits, when degraded</text>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">releases inhibition</text>
+  
+  <!-- RRAGC to mTORC1 - activation -->
+  <line x1="540" y1="360" x2="540" y2="430" stroke="#ffcc00" stroke-width="4" marker-end="url(#arrowhead-yellow)"/>
+  <text x="570" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">activates</text>
+  
+  <!-- Ubiquitin symbols -->
+  <circle cx="290" cy="280" r="12" fill="#ffd700" stroke="#000000" stroke-width="1"/>
+  <text x="290" y="284" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ub</text>
+  
+  <!-- Degradation symbol -->
+  <path d="M 270 295 L 310 295 M 270 305 L 310 305" stroke="#ff0000" stroke-width="3"/>
+  
+  <!-- Arrow markers with different colors -->
+  <defs>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6666"/>
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff9933"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6aa84f"/>
+    </marker>
+    <marker id="arrowhead-yellow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffcc00"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Activation of mTORC1 Signaling by KLHL22-mediated DEPDC5 Degradation</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="570" width="700" height="60" rx="10" ry="10" fill="#f9f9f9" stroke="#888888" stroke-width="1"/>
+  <text x="60" y="590" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <!-- Ubiquitin symbol legend -->
+  <circle cx="120" y="610" r="12" fill="#ffd700" stroke="#000000" stroke-width="1"/>
+  <text x="120" y="614" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Ub</text>
+  <text x="170" y="614" font-family="Arial" font-size="14">Ubiquitin</text>
+  
+  <!-- Degradation symbol legend -->
+  <path d="M 230 610 L 260 610 M 230 618 L 260 618" stroke="#ff0000" stroke-width="3"/>
+  <text x="310" y="614" font-family="Arial" font-size="14">Protein degradation</text>
+  
+  <!-- Dashed arrow legend -->
+  <line x1="390" y1="610" x2="430" y2="610" stroke="#6aa84f" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead-green)"/>
+  <text x="480" y="614" font-family="Arial" font-size="14">Inhibitory interaction</text>
+  
+  <!-- Solid arrow legend -->
+  <line x1="590" y1="610" x2="630" y2="610" stroke="#ffcc00" stroke-width="3" marker-end="url(#arrowhead-yellow)"/>
+  <text x="670" y="614" font-family="Arial" font-size="14">Activation</text>
+</svg>

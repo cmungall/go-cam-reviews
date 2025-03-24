@@ -1,0 +1,195 @@
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="10" y="10" width="780" height="660" rx="20" ry="20" fill="none" stroke="#888" stroke-width="2"/>
+  
+  <!-- Compartment labels -->
+  <text x="400" y="40" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Regulation of Hippo Signaling by MAP4K4</text>
+  
+  <!-- Cell compartments -->
+  <rect x="30" y="70" width="740" height="310" rx="10" ry="10" fill="#E6F3FF" stroke="#6699CC" stroke-width="2"/>
+  <text x="60" y="95" font-family="Arial" font-size="14" font-weight="bold">Cytoplasm</text>
+  
+  <rect x="30" y="400" width="740" height="170" rx="10" ry="10" fill="#FFE6E6" stroke="#CC6666" stroke-width="2"/>
+  <text x="60" y="425" font-family="Arial" font-size="14" font-weight="bold">Nucleus</text>
+  
+  <!-- MAP4K4 and its targets -->
+  <circle cx="120" cy="180" r="35" fill="#7FC97F" stroke="black" stroke-width="2"/>
+  <text x="120" y="175" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">MAP4K4</text>
+  <text x="120" y="190" font-family="Arial" font-size="9" text-anchor="middle">O95819</text>
+  <text x="120" y="205" font-family="Arial" font-size="8" text-anchor="middle">MAPK kinase kinase kinase</text>
+  
+  <!-- Signaling adapter WWC1 -->
+  <rect x="220" y="120" width="80" height="40" rx="5" ry="5" fill="#FDC086" stroke="black" stroke-width="2"/>
+  <text x="260" y="140" font-family="Arial" font-size="12" text-anchor="middle">WWC1</text>
+  <text x="260" y="152" font-family="Arial" font-size="9" text-anchor="middle">Q8IX03</text>
+  <text x="260" y="162" font-family="Arial" font-size="8" text-anchor="middle">Signaling adaptor</text>
+  
+  <!-- STK3/4 Kinases -->
+  <circle cx="260" cy="200" r="30" fill="#BEAED4" stroke="black" stroke-width="2"/>
+  <text x="260" y="195" font-family="Arial" font-size="12" text-anchor="middle">STK3</text>
+  <text x="260" y="210" font-family="Arial" font-size="9" text-anchor="middle">Q13188</text>
+  
+  <circle cx="340" cy="200" r="30" fill="#BEAED4" stroke="black" stroke-width="2"/>
+  <text x="340" y="195" font-family="Arial" font-size="12" text-anchor="middle">STK4</text>
+  <text x="340" y="210" font-family="Arial" font-size="9" text-anchor="middle">Q13043</text>
+  
+  <!-- SAV1 protein -->
+  <rect x="290" y="120" width="80" height="40" rx="5" ry="5" fill="#FDC086" stroke="black" stroke-width="2"/>
+  <text x="330" y="140" font-family="Arial" font-size="12" text-anchor="middle">SAV1</text>
+  <text x="330" y="152" font-family="Arial" font-size="9" text-anchor="middle">Q9H4B6</text>
+  <text x="330" y="162" font-family="Arial" font-size="8" text-anchor="middle">Kinase activator</text>
+  
+  <!-- MOB1A/B proteins -->
+  <rect x="400" y="150" width="80" height="40" rx="5" ry="5" fill="#FDC086" stroke="black" stroke-width="2"/>
+  <text x="440" y="170" font-family="Arial" font-size="12" text-anchor="middle">MOB1A</text>
+  <text x="440" y="182" font-family="Arial" font-size="9" text-anchor="middle">Q9H8S9</text>
+  <text x="440" y="192" font-family="Arial" font-size="8" text-anchor="middle">Kinase activator</text>
+  
+  <rect x="400" y="200" width="80" height="40" rx="5" ry="5" fill="#FDC086" stroke="black" stroke-width="2"/>
+  <text x="440" y="220" font-family="Arial" font-size="12" text-anchor="middle">MOB1B</text>
+  <text x="440" y="232" font-family="Arial" font-size="9" text-anchor="middle">Q7L9L4</text>
+  <text x="440" y="242" font-family="Arial" font-size="8" text-anchor="middle">Kinase activator</text>
+  
+  <!-- LATS1/2 Kinases -->
+  <circle cx="530" cy="170" r="35" fill="#BEAED4" stroke="black" stroke-width="2"/>
+  <text x="530" y="165" font-family="Arial" font-size="12" text-anchor="middle">LATS1</text>
+  <text x="530" y="180" font-family="Arial" font-size="9" text-anchor="middle">O95835</text>
+  <text x="530" y="190" font-family="Arial" font-size="8" text-anchor="middle">Ser/Thr kinase</text>
+  
+  <circle cx="530" cy="250" r="35" fill="#BEAED4" stroke="black" stroke-width="2"/>
+  <text x="530" y="245" font-family="Arial" font-size="12" text-anchor="middle">LATS2</text>
+  <text x="530" y="260" font-family="Arial" font-size="9" text-anchor="middle">Q9NRM7</text>
+  <text x="530" y="270" font-family="Arial" font-size="8" text-anchor="middle">Ser/Thr kinase</text>
+  
+  <!-- YAP1 and TAZ in cytoplasm -->
+  <rect x="650" y="160" width="70" height="40" rx="5" ry="5" fill="#FFED6F" stroke="black" stroke-width="2"/>
+  <text x="685" y="175" font-family="Arial" font-size="12" text-anchor="middle">YAP1</text>
+  <text x="685" y="187" font-family="Arial" font-size="9" text-anchor="middle">P46937</text>
+  <text x="685" y="197" font-family="Arial" font-size="8" text-anchor="middle">(Phosphorylated)</text>
+  
+  <rect x="650" y="210" width="70" height="40" rx="5" ry="5" fill="#FFED6F" stroke="black" stroke-width="2"/>
+  <text x="685" y="225" font-family="Arial" font-size="12" text-anchor="middle">WWTR1</text>
+  <text x="685" y="237" font-family="Arial" font-size="9" text-anchor="middle">Q9GZV5</text>
+  <text x="685" y="247" font-family="Arial" font-size="8" text-anchor="middle">(Phosphorylated)</text>
+  
+  <!-- YAP1 and TAZ in nucleus -->
+  <rect x="200" y="460" width="70" height="40" rx="5" ry="5" fill="#FFED6F" stroke="black" stroke-width="2"/>
+  <text x="235" y="475" font-family="Arial" font-size="12" text-anchor="middle">YAP1</text>
+  <text x="235" y="487" font-family="Arial" font-size="9" text-anchor="middle">P46937</text>
+  <text x="235" y="497" font-family="Arial" font-size="8" text-anchor="middle">(Active)</text>
+  
+  <rect x="200" y="510" width="70" height="40" rx="5" ry="5" fill="#FFED6F" stroke="black" stroke-width="2"/>
+  <text x="235" y="525" font-family="Arial" font-size="12" text-anchor="middle">WWTR1</text>
+  <text x="235" y="537" font-family="Arial" font-size="9" text-anchor="middle">Q9GZV5</text>
+  <text x="235" y="547" font-family="Arial" font-size="8" text-anchor="middle">(Active)</text>
+  
+  <!-- TEAD transcription factors (implicit) -->
+  <rect x="400" y="485" width="200" height="50" rx="5" ry="5" fill="#B3B3B3" stroke="black" stroke-width="2" opacity="0.7"/>
+  <text x="500" y="505" font-family="Arial" font-size="12" text-anchor="middle">TEAD Transcription Factors</text>
+  <text x="500" y="520" font-family="Arial" font-size="9" text-anchor="middle">(TEAD1-4, not in source)</text>
+  <text x="500" y="530" font-family="Arial" font-size="8" text-anchor="middle">Transcriptional regulators</text>
+  
+  <!-- Activation and inhibition arrows -->
+  <!-- MAP4K4 to LATS1/2 (inhibition) -->
+  <line x1="150" y1="165" x2="495" y2="165" stroke="red" stroke-width="2"/>
+  <polygon points="495,165 485,160 485,170" fill="red"/>
+  
+  <line x1="150" y1="195" x2="495" y2="245" stroke="red" stroke-width="2"/>
+  <polygon points="495,245 485,240 485,250" fill="red"/>
+  
+  <!-- WWC1 to STK3/4 (activation) -->
+  <line x1="250" y1="160" x2="255" y2="170" stroke="green" stroke-width="2"/>
+  <polygon points="255,170 250,180 260,180" fill="green"/>
+  
+  <line x1="270" y1="160" x2="330" y2="170" stroke="green" stroke-width="2"/>
+  <polygon points="330,170 325,180 335,180" fill="green"/>
+  
+  <!-- SAV1 to STK3/4 (activation) -->
+  <line x1="320" y1="160" x2="315" y2="170" stroke="green" stroke-width="2"/>
+  <polygon points="315,170 310,180 320,180" fill="green"/>
+  
+  <line x1="340" y1="160" x2="345" y2="170" stroke="green" stroke-width="2"/>
+  <polygon points="345,170 340,180 350,180" fill="green"/>
+  
+  <!-- STK3/4 to LATS1/2 (activation) -->
+  <line x1="290" y1="200" x2="495" y2="170" stroke="green" stroke-width="2"/>
+  <polygon points="495,170 485,165 485,175" fill="green"/>
+  
+  <line x1="370" y1="200" x2="495" y2="250" stroke="green" stroke-width="2"/>
+  <polygon points="495,250 485,245 485,255" fill="green"/>
+  
+  <!-- MOB1A/B to LATS1/2 (activation) -->
+  <line x1="480" y1="165" x2="495" y2="170" stroke="green" stroke-width="2"/>
+  <polygon points="495,170 485,165 485,175" fill="green"/>
+  
+  <line x1="480" y1="215" x2="495" y2="250" stroke="green" stroke-width="2"/>
+  <polygon points="495,250 485,245 485,255" fill="green"/>
+  
+  <!-- LATS1/2 to YAP1/WWTR1 (inhibition) -->
+  <line x1="565" y1="170" x2="650" y2="175" stroke="red" stroke-width="2"/>
+  <polygon points="650,175 640,170 640,180" fill="red"/>
+  
+  <line x1="565" y1="250" x2="650" y2="225" stroke="red" stroke-width="2"/>
+  <polygon points="650,225 640,220 640,230" fill="red"/>
+  
+  <!-- Nuclear translocation -->
+  <path d="M685,240 Q685,350 235,460" stroke="#666" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  <polygon points="235,460 245,455 245,465" fill="#666"/>
+  
+  <path d="M685,190 Q685,320 235,510" stroke="#666" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  <polygon points="235,510 245,505 245,515" fill="#666"/>
+  
+  <!-- YAP1/WWTR1 to TEAD (interaction) -->
+  <line x1="270" y1="475" x2="400" y2="490" stroke="blue" stroke-width="2"/>
+  <line x1="270" y1="525" x2="400" y2="510" stroke="blue" stroke-width="2"/>
+  
+  <!-- Gene Transcription indication -->
+  <path d="M600,505 Q640,505 650,490 Q660,475 700,475" stroke="purple" stroke-width="2" fill="none"/>
+  <text x="685" y="465" font-family="Arial" font-size="10" text-anchor="middle">Gene Transcription</text>
+  
+  <!-- Detailed Legend -->
+  <rect x="30" y="585" width="740" height="65" rx="5" ry="5" fill="#F5F5F5" stroke="#333" stroke-width="1"/>
+  <text x="40" y="600" font-family="Arial" font-size="12" font-weight="bold">Legend:</text>
+  
+  <!-- Shapes and Colors -->
+  <circle cx="80" y="615" r="10" fill="#BEAED4" stroke="black" stroke-width="1"/>
+  <text x="95" y="620" font-family="Arial" font-size="10">Kinases</text>
+  
+  <rect x="140" y="605" width="20" height="20" rx="3" ry="3" fill="#FDC086" stroke="black" stroke-width="1"/>
+  <text x="165" y="620" font-family="Arial" font-size="10">Adaptor/Scaffold proteins</text>
+  
+  <rect x="270" y="605" width="20" height="20" rx="3" ry="3" fill="#FFED6F" stroke="black" stroke-width="1"/>
+  <text x="295" y="620" font-family="Arial" font-size="10">Transcriptional coregulators</text>
+  
+  <circle cx="400" y="615" r="10" fill="#7FC97F" stroke="black" stroke-width="1"/>
+  <text x="415" y="620" font-family="Arial" font-size="10">MAP4K family</text>
+  
+  <rect x="465" y="605" width="20" height="20" rx="3" ry="3" fill="#B3B3B3" stroke="black" stroke-width="1" opacity="0.7"/>
+  <text x="490" y="620" font-family="Arial" font-size="10">Not in source</text>
+  
+  <!-- Arrows -->
+  <line x1="520" y1="615" x2="540" y2="615" stroke="green" stroke-width="2"/>
+  <polygon points="540,615 535,610 535,620" fill="green"/>
+  <text x="545" y="620" font-family="Arial" font-size="10">Activation</text>
+  
+  <line x1="585" y1="615" x2="605" y2="615" stroke="red" stroke-width="2"/>
+  <polygon points="605,615 600,610 600,620" fill="red"/>
+  <text x="610" y="620" font-family="Arial" font-size="10">Inhibition</text>
+  
+  <line x1="650" y1="615" x2="670" y2="615" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="670,615 665,610 665,620" fill="#666"/>
+  <text x="675" y="620" font-family="Arial" font-size="10">Translocation</text>
+  
+  <line x1="520" y1="640" x2="540" y2="640" stroke="blue" stroke-width="2"/>
+  <text x="545" y="645" font-family="Arial" font-size="10">Interaction</text>
+  
+  <path d="M585,640 Q595,640 600,635 Q605,630 615,630" stroke="purple" stroke-width="2" fill="none"/>
+  <text x="620" y="645" font-family="Arial" font-size="10">Transcription</text>
+  
+  <!-- Cell compartment labels -->
+  <rect x="30" y="605" width="20" height="20" fill="#E6F3FF" stroke="#6699CC" stroke-width="1"/>
+  <text x="55" y="645" font-family="Arial" font-size="10">Cytoplasm</text>
+  
+  <rect x="120" y="605" width="20" height="20" fill="#FFE6E6" stroke="#CC6666" stroke-width="1"/>
+  <text x="145" y="645" font-family="Arial" font-size="10">Nucleus</text>
+</svg>

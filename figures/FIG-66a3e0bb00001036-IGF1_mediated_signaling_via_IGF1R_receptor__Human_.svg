@@ -1,0 +1,69 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <rect x="0" y="0" width="800" height="600" fill="#ffffff"/>
+  <text x="400" y="30" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">IGF1-Mediated Signaling via IGF1R Receptor (Human)</text>
+  
+  <!-- Cellular compartments -->
+  <!-- Extracellular space -->
+  <rect x="50" y="60" width="700" height="140" fill="#e6f7ff" stroke="#a3d9ff" stroke-width="2" rx="5"/>
+  <text x="70" y="80" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="50" y="200" width="700" height="70" fill="#ffccaa" stroke="#ff9966" stroke-width="2"/>
+  <text x="70" y="220" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="50" y="270" width="700" height="230" fill="#e6ffe6" stroke="#b3e6b3" stroke-width="2"/>
+  <text x="70" y="290" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Molecules and interactions -->
+  <!-- IGF1 in extracellular space -->
+  <circle cx="400" cy="130" r="40" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="400" y="130" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="black">IGF1</text>
+  <text x="400" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="black">(P05019)</text>
+  <text x="400" y="165" font-family="Arial" font-size="12" text-anchor="middle" fill="black">Growth factor activity</text>
+  <text x="400" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="black">(GO:0008083)</text>
+  
+  <!-- IGF1R receptor in membrane -->
+  <rect x="350" y="200" width="100" height="70" fill="#9999ff" stroke="#0000cc" stroke-width="2" rx="5"/>
+  <text x="400" y="225" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="black">IGF1R</text>
+  <text x="400" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="black">(P08069)</text>
+  <text x="400" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="black">Receptor activity</text>
+  <text x="400" y="274" font-family="Arial" font-size="12" text-anchor="middle" fill="black">(GO:0005010)</text>
+  
+  <!-- IRS1 in cytoplasm -->
+  <rect x="250" y="370" width="100" height="60" fill="#99ff99" stroke="#00cc00" stroke-width="2" rx="5"/>
+  <text x="300" y="395" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="black">IRS1</text>
+  <text x="300" y="413" font-family="Arial" font-size="12" text-anchor="middle" fill="black">(P35568)</text>
+  <text x="300" y="427" font-family="Arial" font-size="12" text-anchor="middle" fill="black">Signaling adaptor activity</text>
+  <text x="300" y="441" font-family="Arial" font-size="12" text-anchor="middle" fill="black">(GO:0035591)</text>
+  
+  <!-- IRS2 in cytoplasm -->
+  <rect x="450" y="370" width="100" height="60" fill="#99ff99" stroke="#00cc00" stroke-width="2" rx="5"/>
+  <text x="500" y="395" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="black">IRS2</text>
+  <text x="500" y="413" font-family="Arial" font-size="12" text-anchor="middle" fill="black">(Q9Y4H2)</text>
+  <text x="500" y="427" font-family="Arial" font-size="12" text-anchor="middle" fill="black">Signaling adaptor activity</text>
+  <text x="500" y="441" font-family="Arial" font-size="12" text-anchor="middle" fill="black">(GO:0035591)</text>
+  
+  <!-- Binding arrow from IGF1 to IGF1R -->
+  <line x1="400" y1="170" x2="400" y2="200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="420" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Binding</text>
+  
+  <!-- Activation arrows from IGF1R to IRS1 and IRS2 -->
+  <line x1="350" y1="270" x2="300" y2="370" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="270" x2="500" y2="370" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="310" y="320" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Activates</text>
+  <text x="520" y="320" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Activates</text>
+  
+  <!-- Biological process label -->
+  <rect x="260" y="520" width="280" height="60" fill="#ffffcc" stroke="#cccc00" stroke-width="2" rx="10"/>
+  <text x="400" y="545" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Insulin-like growth factor receptor</text>
+  <text x="400" y="565" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">signaling pathway (GO:0048009)</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,103 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Brain tissue context -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f8fa" />
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">TMEFF1 Restricts HSV-1 Entry by Blocking MYH9-gB Association</text>
+  
+  <!-- Cell - Neuron -->
+  <ellipse cx="400" cy="350" rx="350" ry="200" fill="#e6f7ff" stroke="#2c3e50" stroke-width="2" />
+  <text x="400" y="550" text-anchor="middle" font-family="Arial" font-size="14">Neuron (CL:0000540)</text>
+  
+  <!-- Cell membrane -->
+  <path d="M50,350 Q400,150 750,350 Q400,550 50,350" fill="none" stroke="#2c3e50" stroke-width="3" stroke-dasharray="5,3" />
+  <!-- Background for membrane label to improve readability -->
+  <rect x="65" y="267" width="215" height="20" fill="white" opacity="0.9" rx="4" ry="4" />
+  <text x="85" y="282" font-family="Arial" font-size="13" fill="#2c3e50" font-weight="bold">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Virus Particle -->
+  <circle cx="200" cy="200" r="50" fill="#ffecb3" stroke="#e67e22" stroke-width="2" />
+  <circle cx="200" cy="200" r="45" fill="none" stroke="#e67e22" stroke-width="1" stroke-dasharray="2,2" />
+  <text x="200" y="130" text-anchor="middle" font-family="Arial" font-size="14" fill="#e67e22" font-weight="bold">HSV-1</text>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial" font-size="11" fill="#e67e22">Virion Membrane (GO:0055036)</text>
+  
+  <!-- Viral glycoprotein B -->
+  <circle cx="200" cy="245" r="15" fill="#e74c3c" />
+  <text x="200" y="248" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">gB</text>
+  <text x="200" y="278" text-anchor="middle" font-family="Arial" font-size="11" fill="#e74c3c">P06436</text>
+  
+  <!-- gB activity label with background -->
+  <rect x="260" y="235" width="170" height="18" fill="white" opacity="0.9" rx="4" ry="4" />
+  <text x="265" y="248" font-family="Arial" font-size="11" fill="#e74c3c">Receptor ligand activity (GO:0048018)</text>
+  
+  <!-- MYH9 on cell surface -->
+  <rect x="280" y="330" width="60" height="30" fill="#3498db" rx="5" ry="5" />
+  <text x="310" y="350" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">MYH9</text>
+  <text x="310" y="370" text-anchor="middle" font-family="Arial" font-size="11" fill="#3498db">P35579</text>
+  
+  <!-- MYH9 activity and location labels with backgrounds -->
+  <rect x="380" y="340" width="160" height="18" fill="white" opacity="0.9" rx="4" ry="4" />
+  <text x="385" y="353" text-anchor="start" font-family="Arial" font-size="11" fill="#3498db">Virus receptor activity (GO:0001618)</text>
+  
+  <rect x="260" y="382" width="140" height="18" fill="white" opacity="0.9" rx="4" ry="4" />
+  <text x="310" y="395" text-anchor="middle" font-family="Arial" font-size="11" fill="#3498db">Cell Surface (GO:0009986)</text>
+  
+  <!-- TMEFF1 -->
+  <rect x="500" y="330" width="70" height="30" fill="#27ae60" rx="5" ry="5" />
+  <text x="535" y="350" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">TMEFF1</text>
+  <text x="535" y="370" text-anchor="middle" font-family="Arial" font-size="11" fill="#27ae60">Q8IYR6</text>
+  
+  <!-- TMEFF1 activity label with background - moved to avoid overlap -->
+  <rect x="450" y="400" width="170" height="18" fill="white" opacity="0.9" rx="4" ry="4" />
+  <text x="535" y="413" text-anchor="middle" font-family="Arial" font-size="11" fill="#27ae60">Receptor ligand inhibitor activity (GO:0141069)</text>
+  
+  <!-- Interaction arrows -->
+  <!-- gB to MYH9 potential interaction (blocked) -->
+  <line x1="212" y1="250" x2="275" y2="330" stroke="#e74c3c" stroke-width="3" stroke-dasharray="5,3" />
+  <polygon points="275,330 262,320 272,315" fill="#e74c3c" opacity="0.5" />
+  
+  <!-- TMEFF1 blocking interaction -->
+  <line x1="500" y1="345" x2="350" y2="345" stroke="#27ae60" stroke-width="4" />
+  <polygon points="360,345 350,340 350,350" fill="#27ae60" />
+  
+  <!-- Blocking label with background -->
+  <rect x="400" y="315" width="110" height="20" fill="white" opacity="0.9" rx="4" ry="4" />
+  <text x="405" y="330" font-family="Arial" font-size="13" fill="#27ae60" font-weight="bold">BLOCKS</text>
+  
+  <!-- Relation ontology term -->
+  <rect x="380" y="295" width="150" height="15" fill="white" opacity="0.9" rx="4" ry="4" />
+  <text x="385" y="307" font-family="Arial" font-size="10" fill="#666666">RO:0002629/RO:0002630</text>
+  
+  <!-- Biological processes -->
+  <rect x="140" y="450" width="220" height="40" fill="#9b59b6" opacity="0.2" rx="10" ry="10" />
+  <text x="250" y="475" text-anchor="middle" font-family="Arial" font-size="13" fill="#9b59b6" font-weight="bold">Symbiont entry into host cell (GO:0046718)</text>
+  
+  <rect x="430" y="450" width="280" height="40" fill="#16a085" opacity="0.2" rx="10" ry="10" />
+  <text x="570" y="475" text-anchor="middle" font-family="Arial" font-size="13" fill="#16a085" font-weight="bold">Negative regulation of viral entry into host cell (GO:0046597)</text>
+  
+  <!-- Connection between activities and processes -->
+  <line x1="310" y1="360" x2="250" y2="450" stroke="#9b59b6" stroke-width="2" stroke-dasharray="4,2" />
+  <line x1="200" y1="260" x2="250" y2="450" stroke="#9b59b6" stroke-width="2" stroke-dasharray="4,2" />
+  <line x1="535" y1="360" x2="570" y2="450" stroke="#16a085" stroke-width="2" stroke-dasharray="4,2" />
+  
+  <!-- Legend -->
+  <rect x="600" y="70" width="180" height="160" fill="white" stroke="#2c3e50" stroke-width="1" rx="5" ry="5" />
+  <text x="690" y="90" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <circle cx="620" cy="110" r="10" fill="#e74c3c" />
+  <text x="638" y="115" font-family="Arial" font-size="12" text-anchor="start">Viral gB (P06436)</text>
+  
+  <rect x="610" y="130" width="20" height="15" fill="#3498db" rx="3" ry="3" />
+  <text x="638" y="142" font-family="Arial" font-size="12" text-anchor="start">MYH9 (P35579)</text>
+  
+  <rect x="610" y="155" width="20" height="15" fill="#27ae60" rx="3" ry="3" />
+  <text x="638" y="167" font-family="Arial" font-size="12" text-anchor="start">TMEFF1 (Q8IYR6)</text>
+  
+  <line x1="610" y1="180" x2="630" y2="180" stroke="#27ae60" stroke-width="3" />
+  <polygon points="627,180 630,178 630,182" fill="#27ae60" />
+  <text x="638" y="184" font-family="Arial" font-size="12" text-anchor="start">Blocking interaction</text>
+  
+  <line x1="610" y1="200" x2="630" y2="200" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="638" y="204" font-family="Arial" font-size="12" text-anchor="start">Blocked interaction</text>
+  
+  <!-- Citation note -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial" font-size="10" fill="#666666">References: PMID:39048823, PMID:39048830, PMID:20944748</text>
+</svg>

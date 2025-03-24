@@ -1,0 +1,172 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane -->
+  <path d="M50,150 C50,50 750,50 750,150 C750,250 750,450 750,550 C750,650 50,650 50,550 C50,450 50,250 50,150" fill="#f5f5f5" stroke="#888" stroke-width="3"/>
+  
+  <!-- Cell membrane bilayer -->
+  <path d="M60,150 C60,60 740,60 740,150 C740,240 740,460 740,550 C740,640 60,640 60,550 C60,460 60,240 60,150" fill="none" stroke="#aaa" stroke-width="5" stroke-dasharray="5,3"/>
+  
+  <!-- Glucose molecules outside -->
+  <circle cx="150" cy="30" r="10" fill="#ffcc00"/>
+  <text x="150" y="15" text-anchor="middle" font-size="12">Glucose</text>
+  <circle cx="250" cy="25" r="10" fill="#ffcc00"/>
+  <circle cx="350" cy="35" r="10" fill="#ffcc00"/>
+  <circle cx="450" cy="20" r="10" fill="#ffcc00"/>
+  <circle cx="550" cy="30" r="10" fill="#ffcc00"/>
+  
+  <!-- Git3 Receptor -->
+  <rect x="250" y="100" width="60" height="40" rx="5" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="280" y="125" text-anchor="middle" font-size="16" font-weight="bold">Git3</text>
+  <text x="280" y="85" text-anchor="middle" font-size="12">(GPCR)</text>
+  
+  <!-- G-protein complex -->
+  <circle cx="280" cy="185" r="45" fill="#ccffcc" stroke="#333" stroke-width="2"/>
+  <text x="280" y="175" text-anchor="middle" font-size="16" font-weight="bold">G-protein</text>
+  <text x="280" y="195" text-anchor="middle" font-size="12">complex</text>
+  
+  <!-- G-protein subunits -->
+  <text x="280" y="215" text-anchor="middle" font-size="12">Git5, Git11, Gpa2</text>
+  
+  <!-- Adenylate cyclase (Cyr1) -->
+  <rect x="400" y="250" width="80" height="60" rx="10" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="440" y="275" text-anchor="middle" font-size="16" font-weight="bold">Cyr1</text>
+  <text x="440" y="295" text-anchor="middle" font-size="12">(Adenylate</text>
+  <text x="440" y="310" text-anchor="middle" font-size="12">cyclase)</text>
+  
+  <!-- Cap1 -->
+  <rect x="320" y="350" width="60" height="30" rx="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="350" y="370" text-anchor="middle" font-size="14" font-weight="bold">Cap1</text>
+  
+  <!-- Git1 -->
+  <rect x="400" y="350" width="60" height="30" rx="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="430" y="370" text-anchor="middle" font-size="14" font-weight="bold">Git1</text>
+  
+  <!-- Git7 -->
+  <rect x="480" y="350" width="60" height="30" rx="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="510" y="370" text-anchor="middle" font-size="14" font-weight="bold">Git7</text>
+  
+  <!-- ATP/cAMP/AMP -->
+  <circle cx="350" cy="250" r="15" fill="#ffff99" stroke="#333" stroke-width="1"/>
+  <text x="350" y="255" text-anchor="middle" font-size="12" font-weight="bold">ATP</text>
+  <text x="350" y="230" text-anchor="middle" font-size="12">Substrate</text>
+  
+  <circle cx="530" cy="250" r="15" fill="#ff99ff" stroke="#333" stroke-width="1"/>
+  <text x="530" y="255" text-anchor="middle" font-size="12" font-weight="bold">cAMP</text>
+  <text x="530" y="230" text-anchor="middle" font-size="12">Second Messenger</text>
+  
+  <circle cx="630" cy="350" r="15" fill="#ffff99" stroke="#333" stroke-width="1"/>
+  <text x="630" y="355" text-anchor="middle" font-size="12" font-weight="bold">AMP</text>
+  <text x="630" y="330" text-anchor="middle" font-size="12">Breakdown</text>
+  <text x="630" y="372" text-anchor="middle" font-size="12">Product</text>
+  
+  <!-- PKA complex -->
+  <rect x="530" y="350" width="60" height="60" rx="10" fill="#cc99ff" stroke="#333" stroke-width="2"/>
+  <text x="560" y="375" text-anchor="middle" font-size="16" font-weight="bold">Pka1</text>
+  <text x="560" y="395" text-anchor="middle" font-size="12">(PKA)</text>
+  
+  <!-- Cgs1 (PKA inhibitor) -->
+  <rect x="530" y="450" width="60" height="30" rx="5" fill="#ff6666" stroke="#333" stroke-width="2"/>
+  <text x="560" y="470" text-anchor="middle" font-size="16" font-weight="bold">Cgs1</text>
+  
+  <!-- Cgs2 (PDE) -->
+  <rect x="630" y="250" width="60" height="60" rx="10" fill="#ff9966" stroke="#333" stroke-width="2"/>
+  <text x="660" y="280" text-anchor="middle" font-size="16" font-weight="bold">Cgs2</text>
+  <text x="660" y="300" text-anchor="middle" font-size="12">(PDE)</text>
+  
+  <!-- Transcription factors -->
+  <rect x="200" y="450" width="80" height="60" rx="10" fill="#99ff99" stroke="#333" stroke-width="2"/>
+  <text x="240" y="470" text-anchor="middle" font-size="16" font-weight="bold">Atf1-Pcr1</text>
+  <text x="240" y="490" text-anchor="middle" font-size="12">complex</text>
+  
+  <!-- Sck1 kinase -->
+  <rect x="350" y="450" width="60" height="30" rx="5" fill="#cc99ff" stroke="#333" stroke-width="2"/>
+  <text x="380" y="470" text-anchor="middle" font-size="16" font-weight="bold">Sck1</text>
+  
+  <!-- Connections/Arrows -->
+  <!-- Glucose to receptor -->
+  <path d="M250,35 L270,95" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Receptor to G-protein -->
+  <path d="M280,140 L280,160" fill="none" stroke="#00aa00" stroke-width="2" marker-end="url(#arrowhead_activation)"/>
+  <text x="290" y="150" text-anchor="start" font-size="12">activates</text>
+  
+  <!-- G-protein to cyclase -->
+  <path d="M325,185 L390,250" fill="none" stroke="#00aa00" stroke-width="2" marker-end="url(#arrowhead_activation)"/>
+  <text x="340" y="210" text-anchor="start" font-size="12">activates</text>
+  
+  <!-- ATP to cyclase -->
+  <path d="M365,250 L390,260" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cyclase to cAMP -->
+  <path d="M480,270 L515,255" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- cAMP to PKA -->
+  <path d="M540,265 L550,340" fill="none" stroke="#00aa00" stroke-width="2" marker-end="url(#arrowhead_activation)"/>
+  <text x="555" y="300" text-anchor="start" font-size="12">activates</text>
+  
+  <!-- cAMP to PDE -->
+  <path d="M545,250 L620,260" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- PDE to AMP -->
+  <path d="M645,310 L635,335" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cgs1 to PKA -->
+  <path d="M560,450 L560,420" fill="none" stroke="#aa0000" stroke-width="2" marker-end="url(#arrowhead_inhibition)"/>
+  <text x="570" y="435" text-anchor="start" font-size="12">inhibits</text>
+  
+  <!-- Cap1 to Cyr1 -->
+  <path d="M380,350 L420,310" fill="none" stroke="#00aa00" stroke-width="2" marker-end="url(#arrowhead_activation)"/>
+  
+  <!-- Git1 to Cyr1 -->
+  <path d="M430,350 L430,310" fill="none" stroke="#00aa00" stroke-width="2" marker-end="url(#arrowhead_activation)"/>
+  
+  <!-- Git7 to Cyr1 -->
+  <path d="M480,350 L450,310" fill="none" stroke="#00aa00" stroke-width="2" marker-end="url(#arrowhead_activation)"/>
+  
+  <!-- Transcription factors to negative regulation -->
+  <path d="M280,450 L580,380" fill="none" stroke="#aa0000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead_inhibition)"/>
+  <text x="400" y="400" text-anchor="middle" font-size="12">negative regulation</text>
+  
+  <!-- Sck1 to negative regulation -->
+  <path d="M410,450 L520,380" fill="none" stroke="#aa0000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead_inhibition)"/>
+  
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="arrowhead_activation" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00aa00"/>
+    </marker>
+    <marker id="arrowhead_inhibition" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#aa0000"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" font-size="18" font-weight="bold">G protein-coupled glucose receptor signaling pathway in S. pombe</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="140" height="150" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="120" y="520" text-anchor="middle" font-size="14" font-weight="bold">Legend</text>
+  
+  <rect x="60" y="530" width="15" height="15" fill="#ff9999"/>
+  <text x="85" y="543" text-anchor="start" font-size="12">Receptor</text>
+  
+  <rect x="60" y="550" width="15" height="15" fill="#ccffcc"/>
+  <text x="85" y="563" text-anchor="start" font-size="12">G-protein complex</text>
+  
+  <rect x="60" y="570" width="15" height="15" fill="#99ccff"/>
+  <text x="85" y="583" text-anchor="start" font-size="12">Adenylate cyclase</text>
+  
+  <rect x="60" y="590" width="15" height="15" fill="#cc99ff"/>
+  <text x="85" y="603" text-anchor="start" font-size="12">Protein kinase</text>
+  
+  <line x1="60" y1="610" x2="75" y2="610" stroke="#00aa00" stroke-width="2"/>
+  <text x="85" y="613" text-anchor="start" font-size="12">Activation</text>
+  
+  <line x1="60" y1="625" x2="75" y2="625" stroke="#aa0000" stroke-width="2"/>
+  <text x="85" y="628" text-anchor="start" font-size="12">Inhibition</text>
+  
+  <line x1="60" y1="640" x2="75" y2="640" stroke="#333" stroke-width="2"/>
+  <text x="85" y="643" text-anchor="start" font-size="12">Conversion</text>
+</svg>

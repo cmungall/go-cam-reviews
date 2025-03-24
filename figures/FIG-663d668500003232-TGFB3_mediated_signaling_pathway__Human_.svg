@@ -1,0 +1,112 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Cell components -->
+  <!-- Extracellular space -->
+  <rect x="50" y="100" width="700" height="150" fill="#e6f7ff" rx="5" ry="5" stroke="#aad4e6" stroke-width="2"/>
+  <text x="60" y="125" font-family="Arial" font-size="16" fill="#333">Extracellular Space</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="50" y="250" width="700" height="50" fill="#ffcc99" rx="0" ry="0" stroke="#e6994d" stroke-width="3"/>
+  <text x="60" y="280" font-family="Arial" font-size="16" fill="#333">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="50" y="300" width="700" height="200" fill="#e6ffe6" rx="0" ry="0" stroke="#c5e0c5" stroke-width="2"/>
+  <text x="60" y="325" font-family="Arial" font-size="16" fill="#333">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="550" rx="200" ry="70" fill="#ffe6e6" stroke="#e6c5c5" stroke-width="2"/>
+  <text x="380" y="555" font-family="Arial" font-size="16" fill="#333">Nucleus</text>
+  
+  <!-- Molecules and interactions -->
+  <!-- TGFB3 in extracellular space -->
+  <circle cx="400" cy="170" r="25" fill="#4da6ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="175" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">TGFB3</text>
+  
+  <!-- TGFBR2 in plasma membrane -->
+  <rect x="350" y="230" width="50" height="70" fill="#ff9966" stroke="#cc6633" stroke-width="2" rx="5" ry="5"/>
+  <text x="375" y="265" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">TGFBR2</text>
+  
+  <!-- TGFBR1 in plasma membrane -->
+  <rect x="420" y="230" width="50" height="70" fill="#cc99ff" stroke="#9966cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="445" y="265" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">TGFBR1</text>
+  
+  <!-- SMAD2 activation in cytoplasm -->
+  <circle cx="440" cy="380" r="25" fill="#66cc66" stroke="#339933" stroke-width="2"/>
+  <text x="440" y="385" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">SMAD2</text>
+  
+  <!-- SMAD2 in nucleus -->
+  <circle cx="400" cy="550" r="25" fill="#66cc66" stroke="#339933" stroke-width="2"/>
+  <text x="400" y="555" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">SMAD2</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Binding of TGFB3 to receptor -->
+  <line x1="400" y1="195" x2="375" y2="230" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="310" y="190" width="130" height="20" fill="white" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="315" y="205" font-family="Arial" font-size="10" fill="#333">1. Cytokine binding</text>
+  
+  <!-- TGFBR2 activates TGFBR1 -->
+  <line x1="400" y1="265" x2="420" y2="265" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="380" y="230" width="140" height="20" fill="white" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="385" y="245" font-family="Arial" font-size="10" fill="#333">2. Receptor activation</text>
+  
+  <!-- TGFBR1 activates SMAD2 -->
+  <line x1="445" y1="300" x2="440" y2="355" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="450" y="320" width="130" height="20" fill="white" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="455" y="335" font-family="Arial" font-size="10" fill="#333">3. SMAD2 activation</text>
+  
+  <!-- SMAD2 translocation to nucleus -->
+  <line x1="440" y1="405" x2="400" y2="525" stroke="#000" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5"/>
+  <rect x="460" y="450" width="140" height="20" fill="white" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="465" y="465" font-family="Arial" font-size="10" fill="#333">4. Nuclear translocation</text>
+  
+  <!-- Nuclear SMAD2 activity -->
+  <path d="M 420,540 Q 450,520 480,540" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <rect x="450" y="500" width="170" height="20" fill="white" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="455" y="515" font-family="Arial" font-size="10" fill="#333">5. Transcription factor activity</text>
+  
+  <!-- DNA targets (simplified representation) -->
+  <rect x="480" y="540" width="60" height="15" fill="#e6e6e6" stroke="#999" stroke-width="1"/>
+  <rect x="480" y="555" width="60" height="15" fill="#ccc" stroke="#999" stroke-width="1"/>
+  <text x="510" y="570" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Target genes</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="340" width="160" height="230" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="590" y="360" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Legend</text>
+  
+  <circle cx="600" y="380" r="7" fill="#4da6ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="615" y="385" font-family="Arial" font-size="12" fill="#333">TGFB3</text>
+  <text x="615" y="398" font-family="Arial" font-size="9" fill="#666">(Transforming Growth Factor-β3)</text>
+  
+  <rect x="593" y="410" width="14" height="14" fill="#ff9966" stroke="#cc6633" stroke-width="1" rx="2" ry="2"/>
+  <text x="615" y="420" font-family="Arial" font-size="12" fill="#333">TGFBR2</text>
+  <text x="615" y="433" font-family="Arial" font-size="9" fill="#666">(TGF-β Type II Receptor)</text>
+  
+  <rect x="593" y="445" width="14" height="14" fill="#cc99ff" stroke="#9966cc" stroke-width="1" rx="2" ry="2"/>
+  <text x="615" y="455" font-family="Arial" font-size="12" fill="#333">TGFBR1</text>
+  <text x="615" y="468" font-family="Arial" font-size="9" fill="#666">(TGF-β Type I Receptor)</text>
+  
+  <circle cx="600" y="485" r="7" fill="#66cc66" stroke="#339933" stroke-width="1"/>
+  <text x="615" y="490" font-family="Arial" font-size="12" fill="#333">SMAD2</text>
+  <text x="615" y="503" font-family="Arial" font-size="9" fill="#666">(Signal Transducer)</text>
+
+  <line x1="590" y1="515" x2="610" y2="515" stroke="#000" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="615" y="520" font-family="Arial" font-size="12" fill="#333">Activation</text>
+  
+  <line x1="590" y1="535" x2="610" y2="535" stroke="#000" stroke-width="1" marker-end="url(#arrow)" stroke-dasharray="2,2"/>
+  <text x="615" y="540" font-family="Arial" font-size="12" fill="#333">Translocation</text>
+  
+  <!-- Pathway significance box -->
+  <rect x="50" y="50" width="700" height="40" fill="#e9ecef" rx="5" ry="5" stroke="#ced4da" stroke-width="1"/>
+  <text x="400" y="75" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">This pathway regulates cell growth, differentiation, and extracellular matrix production. Dysregulation is implicated in fibrosis and cancer.</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">TGFB3-Mediated Signaling Pathway (Human)</text>
+</svg>

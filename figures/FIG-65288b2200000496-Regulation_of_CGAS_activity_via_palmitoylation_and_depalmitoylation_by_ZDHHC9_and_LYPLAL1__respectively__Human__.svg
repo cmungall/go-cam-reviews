@@ -1,0 +1,134 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Cellular Context -->
+  <rect x="0" y="0" width="800" height="650" fill="#f8f8f8" rx="10" ry="10" />
+  
+  <!-- Cell Membrane -->
+  <path d="M50,100 C100,80 700,80 750,100 C780,150 780,450 750,500 C700,520 100,520 50,500 C20,450 20,150 50,100 Z" 
+        fill="#e6f2ff" stroke="#2d5986" stroke-width="2" />
+  
+  <!-- Cytosol Label -->
+  <text x="400" y="110" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Cytosol (GO:0005829)</text>
+  
+  <!-- ZDHHC9 - Palmitoyltransferase -->
+  <rect x="150" y="150" width="120" height="60" rx="10" ry="10" fill="#a6d854" stroke="#333" stroke-width="2" />
+  <text x="210" y="185" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">ZDHHC9</text>
+  <text x="210" y="205" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(Q9Y397)</text>
+  
+  <!-- LYPLAL1 - Depalmitoylase -->
+  <rect x="550" y="150" width="120" height="60" rx="10" ry="10" fill="#fc8d62" stroke="#333" stroke-width="2" />
+  <text x="610" y="185" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">LYPLAL1</text>
+  <text x="610" y="205" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(Q5VWZ2)</text>
+  
+  <!-- CGAS - Central protein -->
+  <g id="cgas_inactive">
+    <circle cx="250" r="50" cy="320" fill="#b3cde3" stroke="#333" stroke-width="2" />
+    <text x="250" y="320" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">cGAS</text>
+    <text x="250" y="340" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(Q8N884)</text>
+    <text x="250" y="360" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Inactive</text>
+  </g>
+  
+  <!-- CGAS - Palmitoylated -->
+  <g id="cgas_active">
+    <circle cx="400" r="50" cy="320" fill="#8dd3c7" stroke="#333" stroke-width="2" />
+    <text x="400" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">cGAS</text>
+    <text x="400" y="335" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(Q8N884)</text>
+    <text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Palmitoylated</text>
+    <!-- Palmitoyl group representation -->
+    <path d="M430,290 C440,285 450,285 455,295" stroke="#ff9900" stroke-width="3" fill="none" />
+  </g>
+  
+  <!-- CGAS - Bound to dsDNA -->
+  <g id="cgas_dna_bound">
+    <circle cx="550" r="50" cy="320" fill="#80b1d3" stroke="#333" stroke-width="2" />
+    <text x="550" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">cGAS</text>
+    <text x="550" y="330" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">DNA-bound</text>
+    <!-- DNA representation -->
+    <path d="M520,340 C530,335 540,345 550,340 C560,335 570,345 580,340" stroke="#333" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- cGAMP Synthesis -->
+  <rect x="500" y="420" width="100" height="60" rx="10" ry="10" fill="#ffd92f" stroke="#333" stroke-width="2" />
+  <text x="550" y="445" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">cGAMP</text>
+  <text x="550" y="465" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Synthesis</text>
+  
+  <!-- Pathways labels with directional arrows -->
+  <rect x="180" y="460" width="180" height="40" rx="5" ry="5" fill="#e6f5c9" stroke="#333" stroke-width="1" />
+  <text x="270" y="485" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Positive Regulation</text>
+  <!-- Positive arrow -->
+  <path d="M210,480 L230,480" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" fill="none" />
+  
+  <rect x="480" y="460" width="180" height="40" rx="5" ry="5" fill="#fadbd8" stroke="#333" stroke-width="1" />
+  <text x="570" y="485" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Negative Regulation</text>
+  <!-- Negative arrow with block -->
+  <path d="M510,480 L530,480" stroke="#333" stroke-width="1.5" fill="none" />
+  <rect x="530" y="475" width="5" height="10" fill="#333" />
+  
+  <!-- Arrows and connections -->
+  <!-- ZDHHC9 to CGAS (palmitoylation) -->
+  <path d="M210,210 L250,270" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="215" y="240" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Palmitoylation</text>
+  <text x="215" y="255" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">(GO:0019706)</text>
+  
+  <!-- CGAS to palmitoylated CGAS -->
+  <path d="M300,320 L350,320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  
+  <!-- Palmitoylated CGAS to DNA-bound CGAS -->
+  <path d="M450,320 L500,320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="475" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">DNA binding</text>
+  <text x="475" y="325" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">(GO:0003690)</text>
+  
+  <!-- DNA-bound CGAS to cGAMP synthesis -->
+  <path d="M550,370 L550,420" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="600" y="395" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">cGAMP synthase</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">(GO:0061501)</text>
+  
+  <!-- LYPLAL1 to palmitoylated CGAS (depalmitoylation) -->
+  <path d="M580,210 L450,270" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="530" y="235" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Depalmitoylation</text>
+  <text x="530" y="255" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">(GO:0008474)</text>
+  
+  <!-- Regulatory pathway annotations -->
+  <path d="M160,170 C130,170 130,300 160,300" stroke="#a6d854" stroke-width="2" stroke-dasharray="5,3" fill="none" />
+  <text x="120" y="240" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" transform="rotate(-90, 120, 240)">Positive Regulation</text>
+  <text x="100" y="240" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" transform="rotate(-90, 100, 240)">(GO:0141111)</text>
+  
+  <path d="M660,170 C690,170 690,300 660,300" stroke="#fc8d62" stroke-width="2" stroke-dasharray="5,3" fill="none" />
+  <text x="710" y="240" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" transform="rotate(90, 710, 240)">Negative Regulation</text>
+  <text x="730" y="240" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" transform="rotate(90, 730, 240)">(GO:0160049)</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Regulation of CGAS Activity via Palmitoylation/Depalmitoylation</text>
+  <text x="400" y="75" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">in the cGAS/STING Signaling Pathway (GO:0140896)</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Condensate formation annotation (implicit detail) -->
+  <ellipse cx="550" cy="370" rx="100" ry="30" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="650" y="370" text-anchor="start" font-family="Arial" font-size="12" fill="#777" font-style="italic">Condensate formation</text>
+  <text x="650" y="385" text-anchor="start" font-family="Arial" font-size="12" fill="#777" font-style="italic">(GO:0140693)</text>
+  
+  <!-- Legend -->
+  <rect x="80" y="550" width="640" height="80" rx="5" ry="5" fill="#fff" stroke="#333" stroke-width="1" />
+  <text x="400" y="570" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  
+  <!-- Solid line -->
+  <path d="M100,585 L150,585" stroke="#333" stroke-width="2" fill="none" />
+  <text x="170" y="590" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Direct molecular interaction</text>
+  
+  <!-- Dashed line -->
+  <path d="M320,585 L370,585" stroke="#333" stroke-width="2" stroke-dasharray="5,3" fill="none" />
+  <text x="390" y="590" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Regulatory pathway</text>
+  
+  <!-- Arrow -->
+  <path d="M520,585 L550,585" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none" />
+  <text x="570" y="590" text-anchor="start" font-family="Arial" font-size="12" fill="#333">Direction of process</text>
+  
+  <!-- Implicit detail -->
+  <path d="M100,610 L150,610" stroke="#777" stroke-width="1" stroke-dasharray="5,3" fill="none" />
+  <text x="170" y="615" text-anchor="start" font-family="Arial" font-size="12" font-style="italic" fill="#777">Implicit detail (not in source)</text>
+</svg>

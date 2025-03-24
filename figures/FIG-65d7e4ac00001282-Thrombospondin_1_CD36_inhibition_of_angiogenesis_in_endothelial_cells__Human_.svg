@@ -1,0 +1,94 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Thrombospondin-1/CD36 inhibition of angiogenesis in endothelial cells</text>
+  <text x="400" y="65" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">A pathway for negative regulation of blood vessel formation</text>
+  
+  <!-- Extracellular matrix -->
+  <rect x="100" y="100" width="600" height="120" fill="#f0f0f0" stroke="#888888" stroke-width="2" rx="5" ry="5"/>
+  <text x="140" y="125" font-family="Arial" font-size="16" font-style="italic">Extracellular Matrix (GO:0031012)</text>
+  
+  <!-- Cell membrane -->
+  <path d="M100,220 L700,220 L700,500 L100,500 Z" fill="#e6f7ff" stroke="#0066cc" stroke-width="3"/>
+  <text x="140" y="245" font-family="Arial" font-size="16" font-style="italic">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="140" y="280" font-family="Arial" font-size="16" font-style="italic">Endothelial Cell Cytoplasm</text>
+  
+  <!-- THBS1 protein -->
+  <circle cx="300" cy="160" r="30" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="300" y="165" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">THBS1</text>
+  
+  <!-- CD36 receptor -->
+  <rect x="290" y="210" width="80" height="30" fill="#99ccff" stroke="#0066cc" stroke-width="2" rx="10" ry="10"/>
+  <text x="330" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CD36</text>
+  
+  <!-- PTPN6 protein -->
+  <circle cx="340" cy="300" r="30" fill="#99ff99" stroke="#009900" stroke-width="2"/>
+  <text x="340" y="305" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PTPN6</text>
+  
+  <!-- KDR (VEGFR) receptor -->
+  <rect x="500" y="210" width="80" height="30" fill="#ffcc99" stroke="#ff6600" stroke-width="2" rx="10" ry="10"/>
+  <text x="540" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">KDR</text>
+  
+  <!-- Angiogenesis process box -->
+  <rect x="480" y="350" width="120" height="60" fill="#ffffcc" stroke="#999900" stroke-width="2" rx="5" ry="5"/>
+  <text x="540" y="385" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Angiogenesis</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- THBS1 to CD36 binding -->
+  <line x1="300" y1="190" x2="320" y2="210" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="280" y="205" font-family="Arial" font-size="12">binds</text>
+  <circle cx="300" cy="197" r="12" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="300" y="202" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">1</text>
+  
+  <!-- CD36 to PTPN6 activation -->
+  <line x1="340" y1="240" x2="340" y2="270" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="350" y="255" font-family="Arial" font-size="12">activates</text>
+  <circle cx="340" cy="255" r="12" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="340" y="260" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">2</text>
+  
+  <!-- PTPN6 to KDR inhibition -->
+  <line x1="370" y1="300" x2="500" y2="230" stroke="#ff0000" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#inhibit)"/>
+  <text x="420" y="250" font-family="Arial" font-size="14" fill="#ff0000">inhibits</text>
+  <circle cx="435" cy="265" r="12" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="435" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">3</text>
+  
+  <!-- KDR to Angiogenesis positive regulation -->
+  <line x1="540" y1="240" x2="540" y2="350" stroke="#009900" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="550" y="300" font-family="Arial" font-size="14">promotes</text>
+  <circle cx="540" cy="295" r="12" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="540" y="300" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">4</text>
+  
+  <!-- Negative regulation of angiogenesis label -->
+  <text x="180" y="450" font-family="Arial" font-size="16" font-weight="bold" fill="#cc0000">Negative Regulation of Angiogenesis (GO:0016525)</text>
+  
+  <!-- Markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+    <marker id="inhibit" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <line x1="0" y1="0" x2="10" y2="10" stroke="#ff0000" stroke-width="2"/>
+      <line x1="0" y1="10" x2="10" y2="0" stroke="#ff0000" stroke-width="2"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="450" width="180" height="130" fill="white" stroke="#000000" stroke-width="1"/>
+  <text x="610" y="470" font-family="Arial" font-size="12" font-weight="bold">Legend</text>
+  
+  <circle cx="620" cy="490" r="8" fill="#ff9999" stroke="#cc0000" stroke-width="1"/>
+  <text x="635" y="495" font-family="Arial" font-size="12">THBS1 (P07996)</text>
+  
+  <rect x="610" y="505" width="20" height="10" fill="#99ccff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="635" y="515" font-family="Arial" font-size="12">CD36 (P16671)</text>
+  
+  <circle cx="620" cy="530" r="8" fill="#99ff99" stroke="#009900" stroke-width="1"/>
+  <text x="635" y="535" font-family="Arial" font-size="12">PTPN6 (P29350)</text>
+  
+  <rect x="610" y="545" width="20" height="10" fill="#ffcc99" stroke="#ff6600" stroke-width="1" rx="3" ry="3"/>
+  <text x="635" y="555" font-family="Arial" font-size="12">KDR (P35968)</text>
+  
+  <line x1="610" y1="570" x2="630" y2="570" stroke="#ff0000" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="635" y="575" font-family="Arial" font-size="12">Inhibition</text>
+</svg>

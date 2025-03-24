@@ -1,0 +1,116 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell outline -->
+  <rect width="800" height="700" fill="#f9f9f9" />
+  
+  <!-- Cell membrane -->
+  <path d="M100,150 Q400,100 700,150 Q750,300 700,450 Q400,500 100,450 Q50,300 100,150" fill="#e6f7ff" stroke="#2980b9" stroke-width="3" />
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="350" rx="120" ry="100" fill="#d6eaf8" stroke="#2980b9" stroke-width="2" />
+  <text x="400" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Nucleus</text>
+  
+  <!-- Extracellular Space Label -->
+  <text x="400" y="80" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Insulin -->
+  <circle cx="400" cy="120" r="25" fill="#f39c12" stroke="#e67e22" stroke-width="2" />
+  <text x="400" y="125" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#fff">INS</text>
+  <text x="400" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Hormone Activity</text>
+  <text x="400" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(GO:0005179)</text>
+  
+  <!-- Cytoplasm Label -->
+  <text x="250" y="200" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Cytosol Label -->
+  <text x="550" y="200" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Cytosol (GO:0005829)</text>
+  
+  <!-- PRKCI -->
+  <rect x="350" y="220" width="100" height="40" rx="10" ry="10" fill="#3498db" stroke="#2980b9" stroke-width="2" />
+  <text x="400" y="245" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">PRKCI</text>
+  <text x="400" y="275" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Protein S/T Kinase Activity</text>
+  <text x="400" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(GO:0004674)</text>
+  
+  <!-- APBB1 -->
+  <rect x="200" y="300" width="100" height="40" rx="10" ry="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" />
+  <text x="250" y="325" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">APBB1</text>
+  <text x="250" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Molecular Adaptor Activity</text>
+  <text x="250" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(GO:0060090)</text>
+  
+  <!-- ARF6 -->
+  <rect x="500" y="300" width="100" height="40" rx="10" ry="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2" />
+  <text x="550" y="325" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">ARF6</text>
+  <text x="550" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">G Protein Activity</text>
+  <text x="550" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(GO:0003925)</text>
+  
+  <!-- Neurite outgrowth -->
+  <path d="M650,400 Q700,350 750,400 Q700,450 650,400" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="2" />
+  <text x="700" y="390" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">Neurite</text>
+  <text x="700" y="410" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">Outgrowth</text>
+  
+  <!-- Process Label -->
+  <text x="400" y="500" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#e74c3c">Positive Regulation of Neuron Projection Development (GO:0010976)</text>
+  
+  <!-- Arrows connecting elements -->
+  <!-- Insulin to PRKCI -->
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#333" />
+    </marker>
+  </defs>
+  
+  <line x1="400" y1="145" x2="400" y2="220" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="420" y="190" font-family="Arial" font-size="14" font-weight="bold" fill="#333">RO:0002407</text>
+  
+  <!-- PRKCI to APBB1 -->
+  <line x1="350" y1="245" x2="300" y2="300" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="310" y="280" font-family="Arial" font-size="14" font-weight="bold" fill="#333">RO:0002629</text>
+  
+  <!-- PRKCI to ARF6 -->
+  <line x1="450" y1="245" x2="500" y2="300" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="500" y="280" font-family="Arial" font-size="14" font-weight="bold" fill="#333">RO:0002629</text>
+  
+  <!-- APBB1 to ARF6 -->
+  <line x1="300" y1="320" x2="500" y2="320" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="400" y="310" font-family="Arial" font-size="14" font-weight="bold" fill="#333">RO:0002629</text>
+  
+  <!-- ARF6 to Neurite -->
+  <line x1="600" y1="320" x2="650" y2="380" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)" />
+  
+  <!-- RAC1 implied -->
+  <rect x="590" y="370" width="80" height="30" rx="5" ry="5" fill="#f1c40f" stroke="#f39c12" stroke-width="1" opacity="0.9" />
+  <text x="630" y="390" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">RAC1*</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Insulin-mediated Activation of the ARF6-RAC1 Axis in Neurite Outgrowth</text>
+  
+  <!-- Cell Type Label -->
+  <text x="150" y="180" font-family="Arial" font-size="18" font-style="italic" text-anchor="middle" fill="#333">Neuron (CL:0000540)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="530" width="700" height="150" rx="10" ry="10" fill="#f8f9fa" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="400" y="550" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">LEGEND</text>
+  
+  <!-- Legend items -->
+  <circle cx="100" cy="575" r="10" fill="#f39c12"/>
+  <text x="120" y="580" font-family="Arial" font-size="14" fill="#333">Hormone (INS) - hormone activity</text>
+  
+  <rect x="100" y="595" width="20" height="20" fill="#3498db"/>
+  <text x="130" y="610" font-family="Arial" font-size="14" fill="#333">Kinase (PRKCI) - protein serine/threonine kinase activity</text>
+  
+  <rect x="100" y="625" width="20" height="20" fill="#9b59b6"/>
+  <text x="130" y="640" font-family="Arial" font-size="14" fill="#333">Adaptor Protein (APBB1) - molecular adaptor activity</text>
+  
+  <rect x="100" y="655" width="20" height="20" fill="#2ecc71"/>
+  <text x="130" y="670" font-family="Arial" font-size="14" fill="#333">G Protein (ARF6) - G protein activity</text>
+  
+  <line x1="450" y1="575" x2="500" y2="575" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="525" y="580" font-family="Arial" font-size="14" fill="#333">Causal Relationship</text>
+  
+  <rect x="450" y="595" width="20" height="20" fill="#f1c40f"/>
+  <text x="500" y="610" font-family="Arial" font-size="14" fill="#333">* Implied Component (not in source)</text>
+  
+  <path d="M450,635 Q475,615 500,635 Q475,655 450,635" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="2" />
+  <text x="530" y="640" font-family="Arial" font-size="14" fill="#333">Cellular Structure</text>
+  
+  <text x="600" y="670" font-family="Arial" font-size="14" font-style="italic" fill="#333">Human (Homo sapiens)</text>
+</svg>

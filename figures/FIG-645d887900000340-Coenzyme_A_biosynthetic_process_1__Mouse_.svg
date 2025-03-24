@@ -1,0 +1,125 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell boundaries -->
+  <rect x="50" y="50" width="700" height="500" rx="100" ry="100" fill="#f9f9f9" stroke="#666" stroke-width="2"/>
+  
+  <!-- Plasma membrane -->
+  <rect x="60" y="60" width="680" height="480" rx="95" ry="95" fill="none" stroke="#444" stroke-width="3" stroke-dasharray="5,3"/>
+  <text x="100" y="90" font-family="Arial" font-size="14" fill="#444">Plasma membrane</text>
+  
+  <!-- Cytosol -->
+  <rect x="80" y="100" width="640" height="400" rx="20" ry="20" fill="#e6f2ff" stroke="none"/>
+  <text x="100" y="120" font-family="Arial" font-size="14" fill="#444">Cytosol (GO:0005829)</text>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="450" cy="350" rx="200" ry="120" fill="#ffe6cc" stroke="#aa6600" stroke-width="3"/>
+  <text x="410" y="255" font-family="Arial" font-size="14" fill="#444">Mitochondrion</text>
+  
+  <!-- Mitochondrial outer membrane -->
+  <ellipse cx="450" cy="350" rx="200" ry="120" fill="none" stroke="#aa6600" stroke-width="3"/>
+  <text x="350" y="280" font-family="Arial" font-size="12" fill="#444">Outer membrane (GO:0005741)</text>
+  
+  <!-- Mitochondrial intermembrane space -->
+  <ellipse cx="450" cy="350" rx="180" ry="100" fill="#ffd9b3" stroke="#994d00" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="350" y="300" font-family="Arial" font-size="12" fill="#444">Intermembrane space (GO:0005758)</text>
+  
+  <!-- Mitochondrial inner membrane -->
+  <ellipse cx="450" cy="350" rx="160" ry="80" fill="none" stroke="#994d00" stroke-width="3"/>
+  <text x="350" y="320" font-family="Arial" font-size="12" fill="#444">Inner membrane (GO:0005743)</text>
+  
+  <!-- Pathway components -->
+  
+  <!-- 1. Plasma membrane transporter -->
+  <rect x="250" y="60" width="100" height="30" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="275" y="80" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Slc5a6</text>
+  
+  <!-- 2. Enzyme activator in cytosol -->
+  <rect x="180" y="120" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="210" y="140" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Pdzd11</text>
+  
+  <!-- 3. First step in cytosol - Pantothenate kinase -->
+  <rect x="250" y="150" width="80" height="30" rx="5" ry="5" fill="#99cc99" stroke="#339933" stroke-width="2"/>
+  <text x="290" y="170" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Pank1</text>
+  
+  <!-- 4. First step in mitochondria - Pantothenate kinase -->
+  <rect x="370" y="310" width="80" height="30" rx="5" ry="5" fill="#99cc99" stroke="#339933" stroke-width="2"/>
+  <text x="410" y="330" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Pank2</text>
+  
+  <!-- 5. Second step in cytosol -->
+  <rect x="250" y="210" width="80" height="30" rx="5" ry="5" fill="#cc99cc" stroke="#993399" stroke-width="2"/>
+  <text x="290" y="230" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Ppcs</text>
+  
+  <!-- 6. Third step in cytosol -->
+  <rect x="250" y="270" width="80" height="30" rx="5" ry="5" fill="#cccc99" stroke="#999933" stroke-width="2"/>
+  <text x="290" y="290" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Ppcdc</text>
+  
+  <!-- 7. Fourth step at outer mitochondrial membrane -->
+  <rect x="450" y="370" width="80" height="30" rx="5" ry="5" fill="#ff9999" stroke="#cc3333" stroke-width="2"/>
+  <text x="490" y="390" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Coasy</text>
+  
+  <!-- 8. Mitochondrial transporters -->
+  <rect x="600" y="340" width="80" height="30" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="640" y="360" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Slc25a16</text>
+  
+  <rect x="600" y="380" width="80" height="30" rx="5" ry="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="640" y="400" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">Slc25a42</text>
+  
+  <!-- Arrows and flow -->
+  <!-- Pantothenate import -->
+  <line x1="300" y1="90" x2="300" y2="150" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Activator -->
+  <line x1="210" y1="120" x2="250" y2="75" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="225" y="100" font-family="Arial" font-size="12" fill="#444">activates</text>
+  
+  <!-- Pathway flow in cytosol -->
+  <line x1="290" y1="180" x2="290" y2="210" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="290" y1="240" x2="290" y2="270" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="290" y1="300" x2="370" y2="370" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Pathway flow in mitochondria -->
+  <line x1="410" y1="340" x2="450" y2="370" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Coasy bifunctional activity -->
+  <path d="M 490 400 C 520 420, 550 420, 580 400" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 490 400 C 520 440, 550 440, 580 420" stroke="#000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Transport arrows -->
+  <line x1="530" y1="370" x2="600" y2="350" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,2"/>
+  <line x1="530" y1="390" x2="600" y2="395" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,2"/>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Metabolite labels -->
+  <text x="305" y="140" font-family="Arial" font-size="12" fill="#444">Pantothenate</text>
+  <text x="305" y="200" font-family="Arial" font-size="12" fill="#444">4'-Phosphopantothenate</text>
+  <text x="305" y="260" font-family="Arial" font-size="12" fill="#444">4'-Phosphopantothenoylcysteine</text>
+  <text x="305" y="320" font-family="Arial" font-size="12" fill="#444">4'-Phosphopantetheine</text>
+  <text x="490" y="440" font-family="Arial" font-size="12" fill="#444">Dephospho-CoA → CoA</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#000" text-anchor="middle">Coenzyme A Biosynthetic Process (Mouse)</text>
+  
+  <!-- Legend for gene products -->
+  <rect x="550" y="90" width="15" height="15" fill="#99cc99" stroke="#339933" stroke-width="1"/>
+  <text x="570" y="102" font-family="Arial" font-size="12" fill="#444">Pantothenate kinase</text>
+  
+  <rect x="550" y="115" width="15" height="15" fill="#cc99cc" stroke="#993399" stroke-width="1"/>
+  <text x="570" y="127" font-family="Arial" font-size="12" fill="#444">Phosphopantothenate-cysteine ligase</text>
+  
+  <rect x="550" y="140" width="15" height="15" fill="#cccc99" stroke="#999933" stroke-width="1"/>
+  <text x="570" y="152" font-family="Arial" font-size="12" fill="#444">Phosphopantothenoylcysteine decarboxylase</text>
+  
+  <rect x="550" y="165" width="15" height="15" fill="#ff9999" stroke="#cc3333" stroke-width="1"/>
+  <text x="570" y="177" font-family="Arial" font-size="12" fill="#444">PPAT/DPCK Bifunctional enzyme</text>
+  
+  <rect x="550" y="190" width="15" height="15" fill="#99ccff" stroke="#0066cc" stroke-width="1"/>
+  <text x="570" y="202" font-family="Arial" font-size="12" fill="#444">Transporters</text>
+  
+  <rect x="550" y="215" width="15" height="15" fill="#ffcc99" stroke="#ff9933" stroke-width="1"/>
+  <text x="570" y="227" font-family="Arial" font-size="12" fill="#444">Enzyme activator</text>
+</svg>

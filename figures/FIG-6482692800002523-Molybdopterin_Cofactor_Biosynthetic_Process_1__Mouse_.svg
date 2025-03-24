@@ -1,0 +1,89 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell background -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f9fa" stroke="#ccc" stroke-width="2"/>
+  
+  <!-- Cytosol label -->
+  <text x="100" y="100" font-family="Arial" font-size="20" font-weight="bold" fill="#555">Cytosol (GO:0005829)</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Molybdopterin Cofactor Biosynthetic Process (Mouse)</text>
+  
+  <!-- Proteins and pathway -->
+  
+  <!-- Mocs1 -->
+  <rect x="150" y="180" width="120" height="70" rx="10" ry="10" fill="#a8d1ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="210" y="205" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Mocs1</text>
+  <text x="210" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">S-adenosyl-L-methionine</text>
+  <text x="210" y="248" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">binding</text>
+  
+  <!-- Arrow to Mocs2 -->
+  <path d="M270 215 L330 215" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="300" y="205" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">Direct input</text>
+  
+  <!-- Mocs2 -->
+  <rect x="330" y="180" width="120" height="70" rx="10" ry="10" fill="#b0e57c" stroke="#5a9216" stroke-width="2"/>
+  <text x="390" y="205" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Mocs2</text>
+  <text x="390" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">molybdopterin</text>
+  <text x="390" y="248" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">synthase activity</text>
+  
+  <!-- Arrow to parallel activities -->
+  <path d="M450 215 L500 215" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Mocs3 -->
+  <rect x="500" y="130" width="120" height="70" rx="10" ry="10" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="560" y="155" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Mocs3</text>
+  <text x="560" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">sulfurtransferase</text>
+  <text x="560" y="198" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">activity</text>
+  
+  <!-- Arrow from Mocs2 to Mocs3 -->
+  <path d="M450 215 L500 165" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="480" y="175" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">Positive regulation</text>
+  
+  <!-- Nfs1 -->
+  <rect x="330" y="290" width="120" height="70" rx="10" ry="10" fill="#d1b3ff" stroke="#8c44ff" stroke-width="2"/>
+  <text x="390" y="315" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Nfs1</text>
+  <text x="390" y="340" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">cysteine desulfurase</text>
+  <text x="390" y="358" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">activity</text>
+  
+  <!-- Arrow from Nfs1 to Mocs3 -->
+  <path d="M450 290 L520 200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="500" y="250" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">Positive regulation</text>
+  
+  <!-- Gphn -->
+  <rect x="500" y="290" width="120" height="70" rx="10" ry="10" fill="#ff9999" stroke="#cc3333" stroke-width="2"/>
+  <text x="560" y="315" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Gphn</text>
+  <text x="560" y="340" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">molybdopterin</text>
+  <text x="560" y="358" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">molybdotransferase</text>
+  
+  <!-- Arrow from Mocs3 to Gphn -->
+  <path d="M560 200 L560 290" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="570" y="250" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">Direct input</text>
+  
+  <!-- Mocos -->
+  <rect x="500" y="400" width="120" height="70" rx="10" ry="10" fill="#99cccc" stroke="#339999" stroke-width="2"/>
+  <text x="560" y="425" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Mocos</text>
+  <text x="560" y="450" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">molybdenum cofactor</text>
+  <text x="560" y="468" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">sulfurtransferase</text>
+  
+  <!-- Arrow from Gphn to Mocos -->
+  <path d="M560 360 L560 400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="570" y="380" font-family="Arial" font-size="11" text-anchor="middle" fill="#666">Direct input</text>
+  
+  <!-- Process label -->
+  <rect x="200" y="500" width="400" height="30" rx="5" ry="5" fill="#e6e6e6" stroke="#999" stroke-width="1"/>
+  <text x="400" y="520" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Molybdopterin cofactor biosynthetic process (GO:0032324)</text>
+  
+  <!-- Legend -->
+  <rect x="600" y="460" width="140" height="80" rx="5" ry="5" fill="white" stroke="#666" stroke-width="1"/>
+  <text x="670" y="475" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Relations:</text>
+  <text x="635" y="495" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Direct input (RO:0002413)</text>
+  <text x="635" y="515" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Positive regulation (RO:0002629)</text>
+  <text x="670" y="535" font-family="Arial" font-size="10" font-style="italic" text-anchor="middle" fill="#666">All activities occur in cytosol</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,101 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with title -->
+  <rect width="800" height="600" fill="#f9f9f9" rx="10" ry="10" />
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">ICOSLG-ICOS Pair Activates T Follicular Helper Cell Differentiation</text>
+  
+  <!-- Cells -->
+  <!-- Antigen Presenting Cell -->
+  <ellipse cx="250" cy="250" rx="150" ry="120" fill="#e6e6fa" stroke="#9370db" stroke-width="2.5" />
+  <text x="250" y="175" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Antigen Presenting Cell</text>
+  
+  <!-- T Cell -->
+  <ellipse cx="550" cy="250" rx="150" ry="120" fill="#d1e8ff" stroke="#4682b4" stroke-width="2.5" />
+  <text x="550" y="175" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">T Cell</text>
+  
+  <!-- Cell Membranes -->
+  <!-- APC Membrane -->
+  <path d="M 340 185 Q 350 240 340 315" fill="none" stroke="#9370db" stroke-width="3.5" />
+  <text x="320" y="240" font-family="Arial" font-size="14" text-anchor="middle">PM</text>
+  
+  <!-- T Cell Membrane -->
+  <path d="M 460 185 Q 450 240 460 315" fill="none" stroke="#4682b4" stroke-width="3.5" />
+  <text x="480" y="240" font-family="Arial" font-size="14" text-anchor="middle">PM</text>
+  
+  <!-- Cytoplasm Label for T Cell -->
+  <text x="550" y="280" font-family="Arial" font-size="14" text-anchor="middle">Cytoplasm</text>
+  
+  <!-- Proteins and Interactions -->
+  <!-- ICOSLG on APC -->
+  <rect x="320" y="230" width="60" height="25" rx="5" ry="5" fill="#ff9999" stroke="#cc0000" stroke-width="2.5" />
+  <text x="350" y="247" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">ICOSLG</text>
+  
+  <!-- ICOS on T cell -->
+  <rect x="420" y="230" width="50" height="25" rx="5" ry="5" fill="#aaddff" stroke="#0066cc" stroke-width="2.5" />
+  <text x="445" y="247" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">ICOS</text>
+  
+  <!-- Binding interaction -->
+  <line x1="380" y1="242" x2="420" y2="242" stroke="#333" stroke-width="3" />
+  <circle cx="400" cy="242" r="6" fill="#ffcc00" stroke="#cc9900" stroke-width="1" />
+  <text x="400" y="230" font-family="Arial" font-size="12" text-anchor="middle">Ligand-Receptor</text>
+  <text x="400" y="220" font-family="Arial" font-size="12" text-anchor="middle">Binding</text>
+  
+  <!-- Downstream signaling -->
+  <!-- TBK1 in cytoplasm -->
+  <rect x="500" y="280" width="50" height="25" rx="5" ry="5" fill="#99cc99" stroke="#339933" stroke-width="2.5" />
+  <text x="525" y="297" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">TBK1</text>
+  
+  <!-- PIK3R1 in cytoplasm -->
+  <rect x="580" y="280" width="60" height="25" rx="5" ry="5" fill="#cc99cc" stroke="#993399" stroke-width="2.5" />
+  <text x="610" y="297" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PIK3R1</text>
+  
+  <!-- Signaling arrows with different weights -->
+  <path d="M 445 255 Q 485 270 500 280" fill="none" stroke="#000" stroke-width="3" marker-end="url(#arrowhead1)" />
+  <text x="460" y="270" font-family="Arial" font-size="11" text-anchor="middle">Signal 1</text>
+  
+  <path d="M 445 255 Q 525 270 580 280" fill="none" stroke="#000" stroke-width="3" marker-end="url(#arrowhead1)" />
+  <text x="530" y="260" font-family="Arial" font-size="11" text-anchor="middle">Signal 2</text>
+  
+  <!-- T follicular helper cell differentiation -->
+  <rect x="540" y="350" width="100" height="50" rx="10" ry="10" fill="#ffffcc" stroke="#ddcc00" stroke-width="2.5" />
+  <text x="590" y="375" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Tfh Cell</text>
+  <text x="590" y="395" font-family="Arial" font-size="12" text-anchor="middle">Differentiation</text>
+  
+  <!-- Final arrows to differentiation - thicker to emphasize main pathway -->
+  <path d="M 525 305 Q 540 330 550 350" fill="none" stroke="#000" stroke-width="3.5" marker-end="url(#arrowhead2)" />
+  <text x="525" y="330" font-family="Arial" font-size="11" text-anchor="middle">Kinase</text>
+  <text x="525" y="342" font-family="Arial" font-size="11" text-anchor="middle">Activity</text>
+  
+  <path d="M 610 305 Q 610 330 590 350" fill="none" stroke="#000" stroke-width="3.5" marker-end="url(#arrowhead2)" />
+  <text x="630" y="330" font-family="Arial" font-size="11" text-anchor="middle">PI3K</text>
+  <text x="630" y="342" font-family="Arial" font-size="11" text-anchor="middle">Regulation</text>
+  
+  <!-- Arrow definitions with different sizes -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+    <marker id="arrowhead2" markerWidth="12" markerHeight="9" refX="12" refY="4.5" orient="auto">
+      <polygon points="0 0, 12 4.5, 0 9" fill="#000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="600" y="450" width="180" height="130" fill="#ffffff" stroke="#cccccc" stroke-width="1.5" />
+  <text x="690" y="470" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="610" y="480" width="20" height="10" fill="#ff9999" stroke="#cc0000" stroke-width="1.5" />
+  <text x="635" y="490" font-family="Arial" font-size="12" text-anchor="start">ICOSLG (O75144)</text>
+  
+  <rect x="610" y="500" width="20" height="10" fill="#aaddff" stroke="#0066cc" stroke-width="1.5" />
+  <text x="635" y="510" font-family="Arial" font-size="12" text-anchor="start">ICOS (Q9Y6W8)</text>
+  
+  <rect x="610" y="520" width="20" height="10" fill="#99cc99" stroke="#339933" stroke-width="1.5" />
+  <text x="635" y="530" font-family="Arial" font-size="12" text-anchor="start">TBK1 (Q9UHD2)</text>
+  
+  <rect x="610" y="540" width="20" height="10" fill="#cc99cc" stroke="#993399" stroke-width="1.5" />
+  <text x="635" y="550" font-family="Arial" font-size="12" text-anchor="start">PIK3R1 (P27986)</text>
+  
+  <circle cx="620" cy="565" r="6" fill="#ffcc00" stroke="#cc9900" stroke-width="1" />
+  <text x="635" y="570" font-family="Arial" font-size="12" text-anchor="start">Ligand-Receptor Binding</text>
+</svg>

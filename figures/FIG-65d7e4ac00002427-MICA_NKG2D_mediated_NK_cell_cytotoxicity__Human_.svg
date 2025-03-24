@@ -1,0 +1,100 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">MICA-NKG2D Mediated NK Cell Cytotoxicity</text>
+  
+  <!-- Cells -->
+  <!-- Endothelial Cell -->
+  <ellipse cx="250" cy="300" rx="200" ry="150" fill="#f0f9ff" stroke="#666666" stroke-width="2"/>
+  <text x="250" y="440" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Endothelial Cell</text>
+  
+  <!-- NK Cell -->
+  <ellipse cx="550" cy="300" rx="200" ry="150" fill="#fff0f0" stroke="#666666" stroke-width="2"/>
+  <text x="550" y="440" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">NK Cell</text>
+  
+  <!-- Cell Membranes -->
+  <path d="M 50,300 Q 250,270 450,300" fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="none"/>
+  <path d="M 350,300 Q 550,270 750,300" fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="none"/>
+  
+  <!-- Plasma Membrane Label -->
+  <text x="150" y="260" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Plasma Membrane</text>
+  <text x="650" y="260" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Cytoplasm Label -->
+  <text x="610" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Cytoplasm</text>
+  
+  <!-- MICA Protein on Endothelial Cell -->
+  <rect x="330" y="280" width="60" height="30" fill="#a1d99b" stroke="#31a354" stroke-width="2" rx="5" ry="5"/>
+  <text x="360" y="300" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">MICA</text>
+  
+  <!-- KLRK1 Receptor on NK Cell -->
+  <rect x="410" y="280" width="60" height="30" fill="#9ecae1" stroke="#3182bd" stroke-width="2" rx="5" ry="5"/>
+  <text x="440" y="300" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">KLRK1</text>
+  
+  <!-- HCST Adaptor Protein -->
+  <rect x="450" y="330" width="60" height="30" fill="#bcbddc" stroke="#756bb1" stroke-width="2" rx="5" ry="5"/>
+  <text x="480" y="350" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">HCST</text>
+  
+  <!-- PIK3R1 Protein -->
+  <rect x="500" y="380" width="60" height="30" fill="#fdae6b" stroke="#e6550d" stroke-width="2" rx="5" ry="5"/>
+  <text x="530" y="400" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">PIK3R1</text>
+  
+  <!-- GRB2 Protein -->
+  <rect x="570" y="340" width="60" height="30" fill="#fc9272" stroke="#de2d26" stroke-width="2" rx="5" ry="5"/>
+  <text x="600" y="360" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">GRB2</text>
+  
+  <!-- VAV1 Protein -->
+  <rect x="640" y="380" width="60" height="30" fill="#c994c7" stroke="#dd1c77" stroke-width="2" rx="5" ry="5"/>
+  <text x="670" y="400" font-family="Arial" font-size="15" font-weight="bold" text-anchor="middle">VAV1</text>
+  
+  <!-- Interaction Arrows -->
+  <!-- MICA to KLRK1 Binding -->
+  <path d="M 390,295 L 410,295" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- KLRK1 to HCST Signaling -->
+  <path d="M 440,310 C 440,320 450,320 450,330" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- HCST to Downstream Effectors -->
+  <path d="M 480,360 C 480,370 500,370 500,380" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 510,345 C 530,345 550,340 570,340" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 600,370 C 620,370 620,380 640,380" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cytotoxicity Effect -->
+  <path d="M 670,410 C 690,450 700,460 720,470" stroke="#ff0000" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowheadRed)"/>
+  <text x="730" y="480" font-family="Arial" font-size="16" fill="#ff0000" font-weight="bold" text-anchor="middle">NK Cell Cytotoxicity</text>
+  
+  <!-- Arrowhead Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+    <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff0000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="480" width="700" height="110" fill="#f8f8f8" stroke="#666666" stroke-width="1"/>
+  <text x="60" y="500" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <!-- Legend Items -->
+  <rect x="60" y="515" width="20" height="20" fill="#a1d99b" stroke="#31a354" stroke-width="2"/>
+  <text x="90" y="530" font-family="Arial" font-size="13">MICA (Q29983) - Receptor ligand activity - Triggers NK recognition</text>
+  
+  <rect x="60" y="545" width="20" height="20" fill="#9ecae1" stroke="#3182bd" stroke-width="2"/>
+  <text x="90" y="560" font-family="Arial" font-size="13">KLRK1/NKG2D (P26718) - Signaling receptor activity - Recognizes MICA</text>
+  
+  <rect x="60" y="575" width="20" height="20" fill="#bcbddc" stroke="#756bb1" stroke-width="2"/>
+  <text x="90" y="590" font-family="Arial" font-size="13">HCST/DAP10 (Q9UBK5) - Protein-macromolecule adaptor activity - Associates with NKG2D</text>
+  
+  <rect x="390" y="515" width="20" height="20" fill="#fdae6b" stroke="#e6550d" stroke-width="2"/>
+  <text x="420" y="530" font-family="Arial" font-size="13">PIK3R1 (P27986) - PI3K regulator activity - Activates PI3K signaling</text>
+  
+  <rect x="390" y="545" width="20" height="20" fill="#fc9272" stroke="#de2d26" stroke-width="2"/>
+  <text x="420" y="560" font-family="Arial" font-size="13">GRB2 (P62993) - GEF adaptor activity - Links receptor to downstream signaling</text>
+  
+  <rect x="390" y="575" width="20" height="20" fill="#c994c7" stroke="#dd1c77" stroke-width="2"/>
+  <text x="420" y="590" font-family="Arial" font-size="13">VAV1 (P15498) - Guanyl-nucleotide exchange factor - Activates cytotoxic response</text>
+</svg>

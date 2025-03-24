@@ -1,0 +1,102 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Outline -->
+  <ellipse cx="400" cy="320" rx="380" ry="280" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="320" rx="150" ry="120" fill="#e6f2ff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="320" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Nucleus</text>
+  
+  <!-- Cytoplasm Label -->
+  <text x="400" y="140" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Cytoplasm</text>
+  
+  <!-- Proteins in Cytoplasm -->
+  <!-- SAV1 -->
+  <rect x="170" y="200" width="80" height="40" rx="10" ry="10" fill="#90caf9" stroke="#333" stroke-width="2"/>
+  <text x="210" y="225" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">SAV1</text>
+  
+  <!-- WWC1 -->
+  <rect x="170" y="300" width="80" height="40" rx="10" ry="10" fill="#90caf9" stroke="#333" stroke-width="2"/>
+  <text x="210" y="325" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">WWC1</text>
+  
+  <!-- STK3/STK4 kinases -->
+  <rect x="300" y="200" width="80" height="40" rx="10" ry="10" fill="#ffcc80" stroke="#333" stroke-width="2"/>
+  <text x="340" y="225" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">STK3/4</text>
+  
+  <!-- LATS1/2 kinases -->
+  <rect x="430" y="200" width="80" height="40" rx="10" ry="10" fill="#ffcc80" stroke="#333" stroke-width="2"/>
+  <text x="470" y="225" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">LATS1/2</text>
+  
+  <!-- YWHAE (14-3-3ε) -->
+  <rect x="560" y="200" width="80" height="40" rx="10" ry="10" fill="#a5d6a7" stroke="#333" stroke-width="2"/>
+  <text x="600" y="225" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">YWHAE</text>
+  
+  <!-- WWTR1/TAZ in Cytoplasm -->
+  <rect x="560" y="300" width="80" height="40" rx="10" ry="10" fill="#ce93d8" stroke="#333" stroke-width="2"/>
+  <text x="600" y="325" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">WWTR1</text>
+  <text x="600" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">(inactive)</text>
+  
+  <!-- WWTR1/TAZ in Nucleus -->
+  <rect x="400" y="380" width="80" height="40" rx="10" ry="10" fill="#ce93d8" stroke="#333" stroke-width="2"/>
+  <text x="440" y="405" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">WWTR1</text>
+  <text x="440" y="430" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">(active)</text>
+  
+  <!-- Arrows and Interactions -->
+  <!-- SAV1 activates STK3/4 -->
+  <line x1="250" y1="220" x2="300" y2="220" stroke="#000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- WWC1 activates STK3/4 -->
+  <path d="M250,320 Q270,280 300,230" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- WWC1 activates STK3 -->
+  <path d="M250,320 Q280,290 320,240" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- STK3/4 activates LATS1/2 -->
+  <line x1="380" y1="220" x2="430" y2="220" stroke="#000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- LATS1/2 phosphorylates YWHAE -->
+  <line x1="510" y1="220" x2="560" y2="220" stroke="#000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- YWHAE sequesters TAZ -->
+  <path d="M600,240 Q600,270 600,300" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- P mark for phosphorylation -->
+  <circle cx="570" y="265" r="12" fill="#ff5252" stroke="#333" stroke-width="1.5"/>
+  <text x="570" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="white">P</text>
+  
+  <!-- Inhibition of TAZ nuclear translocation -->
+  <line x1="560" y1="320" x2="480" y2="380" stroke="#000" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="515" y1="350" x2="525" y2="350" stroke="#000" stroke-width="4"/>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="26" font-weight="bold" text-anchor="middle" fill="#333">Hippo Signaling Pathway with TAZ Cytoplasmic Retention</text>
+  
+  <!-- Legend box -->
+  <rect x="130" y="510" width="540" height="120" rx="10" ry="10" fill="#f8f9fa" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="535" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">LEGEND</text>
+  
+  <!-- Legend items -->
+  <rect x="150" y="550" width="20" height="20" fill="#90caf9" stroke="#333" stroke-width="1.5"/>
+  <text x="180" y="565" font-family="Arial" font-size="16" fill="#333">Adaptor/Activator Proteins</text>
+  
+  <rect x="150" y="580" width="20" height="20" fill="#ffcc80" stroke="#333" stroke-width="1.5"/>
+  <text x="180" y="595" font-family="Arial" font-size="16" fill="#333">Kinases</text>
+  
+  <rect x="400" y="550" width="20" height="20" fill="#a5d6a7" stroke="#333" stroke-width="1.5"/>
+  <text x="430" y="565" font-family="Arial" font-size="16" fill="#333">Sequestering Protein</text>
+  
+  <rect x="400" y="580" width="20" height="20" fill="#ce93d8" stroke="#333" stroke-width="1.5"/>
+  <text x="430" y="595" font-family="Arial" font-size="16" fill="#333">Transcriptional Co-activator</text>
+  
+  <circle cx="150" y="610" r="10" fill="#ff5252" stroke="#333" stroke-width="1.5"/>
+  <text x="150" y="614" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  <text x="180" y="615" font-family="Arial" font-size="16" fill="#333">Phosphorylation</text>
+  
+  <text x="400" y="615" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle" fill="#333">All components shown are present in the GO-CAM model</text>
+</svg>

@@ -1,0 +1,149 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell Nucleus Background -->
+  <ellipse cx="400" cy="330" rx="350" ry="250" fill="#f0f0ff" stroke="#9090c0" stroke-width="3" opacity="0.7"/>
+  <text x="400" y="120" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus</text>
+  
+  <!-- RNA Polymerase II Complex -->
+  <g transform="translate(100, 300)">
+    <rect x="0" y="0" width="120" height="70" rx="10" ry="10" fill="#b0c4de" stroke="#4682b4" stroke-width="2"/>
+    <text x="60" y="30" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">RNA Pol II</text>
+    <text x="60" y="50" text-anchor="middle" font-family="Arial" font-size="12">Complex</text>
+  </g>
+  
+  <!-- rpb1 - chromatin-protein adaptor -->
+  <g transform="translate(130, 210)">
+    <rect x="0" y="0" width="100" height="50" rx="8" ry="8" fill="#ffb6c1" stroke="#ff69b4" stroke-width="2"/>
+    <text x="50" y="22" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">rpb1</text>
+    <text x="50" y="40" text-anchor="middle" font-family="Arial" font-size="10">chromatin adaptor</text>
+  </g>
+  
+  <!-- Connection from rpb1 to mcs6 -->
+  <path d="M230,235 C260,235 270,235 290,235" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="260" y="225" text-anchor="middle" font-family="Arial" font-size="10">activates</text>
+  
+  <!-- mcs6 - CTD S5 kinase -->
+  <g transform="translate(290, 210)">
+    <rect x="0" y="0" width="100" height="50" rx="8" ry="8" fill="#98fb98" stroke="#3cb371" stroke-width="2"/>
+    <text x="50" y="22" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">mcs6</text>
+    <text x="50" y="40" text-anchor="middle" font-family="Arial" font-size="10">CTD S5 kinase</text>
+  </g>
+  
+  <!-- Connection from mcs6 to RNA Pol II -->
+  <path d="M340,260 C340,280 220,285 160,300" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="240" y="270" text-anchor="middle" font-family="Arial" font-size="10">phosphorylates CTD</text>
+  
+  <!-- Connection from RNA Pol II to pct1 -->
+  <path d="M220,335 C250,335 270,335 290,335" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- pct1 - 5'-triphosphate monophosphatase -->
+  <g transform="translate(290, 310)">
+    <rect x="0" y="0" width="100" height="50" rx="8" ry="8" fill="#ffa07a" stroke="#ff6347" stroke-width="2"/>
+    <text x="50" y="22" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">pct1</text>
+    <text x="50" y="40" text-anchor="middle" font-family="Arial" font-size="10">5'-triphosphatase</text>
+  </g>
+  
+  <!-- RNA chain with evolving cap -->
+  <path d="M220,365 C250,355 270,360 290,365" stroke="#000" stroke-width="2" fill="none"/>
+  <circle cx="220" cy="365" r="4" fill="#000"/>
+  <circle cx="235" cy="362" r="4" fill="#000"/>
+  <circle cx="250" cy="358" r="4" fill="#000"/>
+  <circle cx="265" cy="359" r="4" fill="#000"/>
+  <circle cx="280" cy="362" r="4" fill="#000"/>
+  <text x="250" y="380" text-anchor="middle" font-family="Arial" font-size="10">nascent RNA</text>
+  
+  <!-- Connection from pct1 to ceg1 -->
+  <path d="M390,335 C420,335 430,335 450,335" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- ceg1 - mRNA guanylyltransferase -->
+  <g transform="translate(450, 310)">
+    <rect x="0" y="0" width="100" height="50" rx="8" ry="8" fill="#add8e6" stroke="#4169e1" stroke-width="2"/>
+    <text x="50" y="22" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">ceg1</text>
+    <text x="50" y="40" text-anchor="middle" font-family="Arial" font-size="10">guanylyltransferase</text>
+  </g>
+  
+  <!-- RNA chain with evolving cap after pct1 -->
+  <path d="M390,365 C420,355 430,360 450,365" stroke="#000" stroke-width="2" fill="none"/>
+  <circle cx="390" cy="365" r="4" fill="#000"/>
+  <circle cx="405" cy="362" r="4" fill="#000"/>
+  <circle cx="420" cy="358" r="4" fill="#000"/>
+  <circle cx="435" cy="359" r="4" fill="#000"/>
+  <circle cx="450" cy="362" r="4" fill="#000"/>
+  <circle cx="390" cy="365" r="6" fill="#fffacd" stroke="#daa520" stroke-width="1"/>
+  <text x="420" y="380" text-anchor="middle" font-family="Arial" font-size="10">diphosphate RNA</text>
+  
+  <!-- Connection from ceg1 to pcm1 -->
+  <path d="M550,335 C580,335 590,335 610,335" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- P-TEFb-cap methyltransferase complex -->
+  <g transform="translate(570, 410)">
+    <rect x="0" y="0" width="150" height="30" rx="5" ry="5" fill="#e6e6fa" stroke="#9370db" stroke-width="1"/>
+    <text x="75" y="20" text-anchor="middle" font-family="Arial" font-size="10">P-TEFb-cap methyltransferase complex</text>
+  </g>
+  
+  <!-- pcm1 - cap methyltransferase -->
+  <g transform="translate(610, 310)">
+    <rect x="0" y="0" width="100" height="50" rx="8" ry="8" fill="#dda0dd" stroke="#9400d3" stroke-width="2"/>
+    <text x="50" y="22" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">pcm1</text>
+    <text x="50" y="40" text-anchor="middle" font-family="Arial" font-size="10">cap methyltransferase</text>
+  </g>
+  
+  <!-- Connector from pcm1 to complex -->
+  <path d="M660,360 C660,375 660,390 660,405" stroke="#9370db" stroke-width="1" stroke-dasharray="4" fill="none"/>
+  
+  <!-- RNA chain with GTP cap -->
+  <path d="M550,365 C580,355 590,360 610,365" stroke="#000" stroke-width="2" fill="none"/>
+  <circle cx="550" cy="365" r="4" fill="#000"/>
+  <circle cx="565" cy="362" r="4" fill="#000"/>
+  <circle cx="580" cy="358" r="4" fill="#000"/>
+  <circle cx="595" cy="359" r="4" fill="#000"/>
+  <circle cx="610" cy="362" r="4" fill="#000"/>
+  <circle cx="550" cy="365" r="7" fill="#ffff99" stroke="#ffa500" stroke-width="1.5"/>
+  <text x="580" y="380" text-anchor="middle" font-family="Arial" font-size="10">GTP-capped RNA</text>
+  
+  <!-- Completed mRNA with cap -->
+  <path d="M710,365 C740,370 760,367 780,362" stroke="#000" stroke-width="2" fill="none"/>
+  <circle cx="710" cy="365" r="4" fill="#000"/>
+  <circle cx="725" cy="367" r="4" fill="#000"/>
+  <circle cx="740" cy="369" r="4" fill="#000"/>
+  <circle cx="755" cy="368" r="4" fill="#000"/>
+  <circle cx="770" cy="365" r="4" fill="#000"/>
+  <circle cx="710" cy="365" r="8" fill="#ffcc00" stroke="#ff9900" stroke-width="1.5"/>
+  <text x="745" y="385" text-anchor="middle" font-family="Arial" font-size="10">m7G-capped RNA</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">RNA Capping Pathway in S. pombe</text>
+  
+  <!-- Process Description -->
+  <rect x="100" y="500" width="480" height="70" rx="5" ry="5" fill="white" stroke="#666" stroke-width="1"/>
+  <text x="110" y="520" font-family="Arial" font-size="12">
+    <tspan x="110" y="520" font-weight="bold">RNA Capping Process:</tspan>
+    <tspan x="110" y="540">The mRNA capping process is essential for transcript stability, efficient translation, and</tspan>
+    <tspan x="110" y="560">protection from degradation. It involves sequential enzymatic modifications at the 5' end of nascent RNA.</tspan>
+  </text>
+  
+  <!-- Legend -->
+  <rect x="600" y="500" width="180" height="130" rx="5" ry="5" fill="white" stroke="#666" stroke-width="1"/>
+  <text x="690" y="520" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <rect x="610" y="530" width="15" height="15" fill="#ffb6c1" stroke="#ff69b4" stroke-width="1"/>
+  <text x="695" y="542" text-anchor="start" font-family="Arial" font-size="12">Chromatin adaptor</text>
+  
+  <rect x="610" y="550" width="15" height="15" fill="#98fb98" stroke="#3cb371" stroke-width="1"/>
+  <text x="695" y="562" text-anchor="start" font-family="Arial" font-size="12">Kinase</text>
+  
+  <rect x="610" y="570" width="15" height="15" fill="#ffa07a" stroke="#ff6347" stroke-width="1"/>
+  <text x="695" y="582" text-anchor="start" font-family="Arial" font-size="12">Phosphatase</text>
+  
+  <rect x="610" y="590" width="15" height="15" fill="#add8e6" stroke="#4169e1" stroke-width="1"/>
+  <text x="695" y="602" text-anchor="start" font-family="Arial" font-size="12">Transferase</text>
+  
+  <rect x="610" y="610" width="15" height="15" fill="#dda0dd" stroke="#9400d3" stroke-width="1"/>
+  <text x="695" y="622" text-anchor="start" font-family="Arial" font-size="12">Methyltransferase</text>
+  
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

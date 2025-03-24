@@ -1,0 +1,140 @@
+<svg width="800" height="640" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell compartments -->
+  <rect width="800" height="640" fill="#ffffff" stroke="none"/>
+  
+  <!-- Cell membrane -->
+  <path d="M100,100 Q400,50 700,100 Q750,320 700,540 Q400,590 100,540 Q50,320 100,100" fill="#f8f8f8" stroke="#333333" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Compartments -->
+  <!-- Endoplasmic Reticulum -->
+  <path d="M150,180 L520,180" fill="none" stroke="#996633" stroke-width="3"/>
+  <path d="M150,200 C180,190 220,205 250,195 C280,185 310,200 340,195 C370,190 400,180 430,190 C460,200 490,210 520,200" fill="none" stroke="#996633" stroke-width="3"/>
+  <path d="M150,220 C180,210 220,225 250,215 C280,205 310,220 340,215 C370,210 400,200 430,210 C460,220 490,230 520,220" fill="none" stroke="#996633" stroke-width="3"/>
+  <text x="335" y="160" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Endoplasmic Reticulum</text>
+  
+  <!-- Cytoplasm - using a semi-transparent fill to separate from other compartments -->
+  <path d="M150,240 L650,240 L650,480 L150,480 Z" fill="rgba(240,248,255,0.3)" stroke="none"/>
+  <text x="230" y="260" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Cytoplasm</text>
+  <text x="230" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#666666">(GO:0005737)</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="550" cy="380" rx="150" ry="120" fill="#e6f2ff" stroke="#333333" stroke-width="2"/>
+  <text x="550" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Nucleus</text>
+  <text x="550" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#666666">(GO:0005634)</text>
+  
+  <!-- PERK in ER membrane -->
+  <rect x="270" y="185" width="60" height="30" fill="#ff9980" stroke="#cc6600" stroke-width="2" rx="5" ry="5"/>
+  <text x="300" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">PERK</text>
+  <text x="300" y="220" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(EIF2AK3)</text>
+  
+  <!-- Unfolded proteins -->
+  <path d="M200,250 C210,230 220,260 230,240 C240,220 250,250 260,235" fill="none" stroke="#cc0000" stroke-width="2"/>
+  <text x="180" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#cc0000">Unfolded Proteins</text>
+  
+  <!-- Activation arrow from unfolded proteins to PERK -->
+  <path d="M230,240 L270,215" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- PERK activation label moved to avoid overlap -->
+  <text x="240" y="300" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">UPR Activation</text>
+  <text x="240" y="315" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">(GO:0036499)</text>
+  
+  <!-- NRF2 in cytoplasm (inactive) -->
+  <rect x="400" y="320" width="60" height="30" fill="#80b3ff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="430" y="340" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">NRF2</text>
+  <text x="430" y="355" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(NFE2L2)</text>
+  
+  <!-- KEAP1 -->
+  <rect x="330" y="380" width="60" height="30" fill="#99cc99" stroke="#339933" stroke-width="2" rx="5" ry="5"/>
+  <text x="360" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">KEAP1</text>
+  
+  <!-- RBX1 -->
+  <rect x="260" y="440" width="60" height="30" fill="#cc99ff" stroke="#8000ff" stroke-width="2" rx="5" ry="5"/>
+  <text x="290" y="460" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">RBX1</text>
+  
+  <!-- Phosphorylation arrow from PERK to NRF2 -->
+  <path d="M330,200 C370,230 390,260 400,320" stroke="#ff6600" stroke-width="2.5" marker-end="url(#phospho-marker)" stroke-dasharray="5,2"/>
+  <!-- Phosphorylation label moved to avoid overlap -->
+  <text x="340" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff6600">Phosphorylation</text>
+  <text x="340" y="285" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">(GO:0004674)</text>
+  
+  <!-- KEAP1 to NRF2 ubiquitination (inhibited) -->
+  <path d="M390,380 L400,350" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <!-- Ubiquitination label moved to avoid overlap -->
+  <text x="370" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff0000">Ubiquitination</text>
+  <text x="370" y="435" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">(GO:1990756)</text>
+  <line x1="375" y1="405" x2="405" y2="395" stroke="#ff0000" stroke-width="3"/>
+  
+  <!-- RBX1 to KEAP1 interaction -->
+  <path d="M320,440 L330,410" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="240" y="480" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Ubiquitin Ligase</text>
+  <text x="240" y="495" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">(GO:0061630)</text>
+  
+  <!-- Proteasomal degradation (inhibited) -->
+  <path d="M330,410 C290,430 250,460 230,510" stroke="#333333" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <rect x="180" y="510" width="100" height="40" fill="#ffcc99" stroke="#ff6600" stroke-width="2" rx="10" ry="10"/>
+  <text x="230" y="532" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Proteasomal</text>
+  <text x="230" y="547" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Degradation</text>
+  <line x1="230" y1="490" x2="245" y2="515" stroke="#ff0000" stroke-width="3"/>
+  <text x="160" y="530" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">(GO:0043161)</text>
+  
+  <!-- NRF2 translocation to nucleus -->
+  <path d="M460,320 C490,330 510,340 520,380" stroke="#0066cc" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Active NRF2 in nucleus -->
+  <rect x="520" y="380" width="60" height="30" fill="#80b3ff" stroke="#0066cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="550" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">NRF2</text>
+  <text x="550" y="415" font-family="Arial" font-size="9" text-anchor="middle" fill="#666666">(active)</text>
+  
+  <!-- DNA binding -->
+  <path d="M550,410 L550,440" stroke="#0066cc" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- DNA strands -->
+  <path d="M490,460 C510,450 530,470 550,460 C570,450 590,470 610,460" fill="none" stroke="#000000" stroke-width="2"/>
+  <path d="M490,470 C510,460 530,480 550,470 C570,460 590,480 610,470" fill="none" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Response pathway -->
+  <text x="550" y="440" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">Transcription Factor Activity</text>
+  <text x="550" y="452" font-family="Arial" font-size="8" text-anchor="middle" fill="#666666">(GO:0003700)</text>
+  <text x="550" y="500" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Antioxidant Response</text>
+  <text x="550" y="520" font-family="Arial" font-size="12" text-anchor="middle" fill="#666666">(GO:0006979)</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+    <marker id="phospho-marker" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6600"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#000000">EIF2AK3/PERK Phosphorylates NFE2L2/NRF2 in Unfolded Protein Response</text>
+  <text x="400" y="75" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">Preventing Ubiquitination by KEAP1</text>
+  
+  <!-- Legend -->
+  <rect x="620" y="120" width="160" height="200" fill="#f8f8f8" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="700" y="140" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="630" y="155" width="15" height="15" fill="#ff9980" stroke="#cc6600" stroke-width="1"/>
+  <text x="680" y="167" font-family="Arial" font-size="12" fill="#000000">PERK/EIF2AK3</text>
+  
+  <rect x="630" y="180" width="15" height="15" fill="#80b3ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="680" y="192" font-family="Arial" font-size="12" fill="#000000">NRF2/NFE2L2</text>
+  
+  <rect x="630" y="205" width="15" height="15" fill="#99cc99" stroke="#339933" stroke-width="1"/>
+  <text x="680" y="217" font-family="Arial" font-size="12" fill="#000000">KEAP1</text>
+  
+  <rect x="630" y="230" width="15" height="15" fill="#cc99ff" stroke="#8000ff" stroke-width="1"/>
+  <text x="680" y="242" font-family="Arial" font-size="12" fill="#000000">RBX1</text>
+  
+  <line x1="630" y1="255" x2="645" y2="255" stroke="#ff6600" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="700" y="259" font-family="Arial" font-size="12" fill="#000000">Phosphorylation</text>
+  
+  <line x1="630" y1="280" x2="645" y2="270" stroke="#ff0000" stroke-width="3"/>
+  <text x="695" y="280" font-family="Arial" font-size="12" fill="#000000">Inhibition</text>
+  
+  <line x1="630" y1="295" x2="645" y2="295" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="700" y="300" font-family="Arial" font-size="12" fill="#000000">Interaction</text>
+</svg>

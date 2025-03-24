@@ -1,0 +1,86 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f8f8" stroke="#666" stroke-width="2"/>
+  
+  <!-- Cell nucleus -->
+  <ellipse cx="250" cy="280" rx="100" ry="80" fill="#e6f2ff" stroke="#666" stroke-width="2"/>
+  <text x="250" y="280" text-anchor="middle" font-family="Arial" font-size="20" fill="#333">Nucleus</text>
+  
+  <!-- Phagocytic vesicle -->
+  <ellipse cx="500" cy="300" rx="140" ry="100" fill="#fff" stroke="#666" stroke-width="2" stroke-dasharray="5,2"/>
+  <text x="500" y="220" text-anchor="middle" font-family="Arial" font-size="18" fill="#333">Phagocytic Vesicle</text>
+  
+  <!-- Phagocytic vesicle membrane -->
+  <ellipse cx="500" cy="300" rx="140" ry="100" fill="none" stroke="#00897B" stroke-width="3"/>
+  <text x="500" y="180" text-anchor="middle" font-family="Arial" font-size="16" fill="#00897B">Phagocytic Vesicle Membrane</text>
+  
+  <!-- Mpeg1 forming pores -->
+  <circle cx="500" cy="300" r="8" fill="#FF5722" stroke="#333" stroke-width="1"/>
+  <circle cx="465" cy="250" r="8" fill="#FF5722" stroke="#333" stroke-width="1"/>
+  <circle cx="535" cy="350" r="8" fill="#FF5722" stroke="#333" stroke-width="1"/>
+  <circle cx="410" cy="310" r="8" fill="#FF5722" stroke="#333" stroke-width="1"/>
+  <circle cx="590" cy="290" r="8" fill="#FF5722" stroke="#333" stroke-width="1"/>
+  
+  <!-- Pores in membrane -->
+  <circle cx="500" cy="300" r="15" fill="none" stroke="#FF5722" stroke-width="2"/>
+  <circle cx="465" cy="250" r="15" fill="none" stroke="#FF5722" stroke-width="2"/>
+  <circle cx="535" cy="350" r="15" fill="none" stroke="#FF5722" stroke-width="2"/>
+  <circle cx="410" cy="310" r="15" fill="none" stroke="#FF5722" stroke-width="2"/>
+  <circle cx="590" cy="290" r="15" fill="none" stroke="#FF5722" stroke-width="2"/>
+  
+  <!-- Mpeg1 label -->
+  <text x="420" y="365" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#FF5722">Mpeg1</text>
+  <text x="420" y="385" text-anchor="middle" font-family="Arial" font-size="14" fill="#FF5722">(Wide pore channel activity)</text>
+  
+  <!-- Lgmn protein -->
+  <rect x="580" y="340" width="30" height="30" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+  <text x="650" y="355" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#4CAF50">Lgmn</text>
+  <text x="650" y="375" text-anchor="middle" font-family="Arial" font-size="14" fill="#4CAF50">(Cysteine-type endopeptidase)</text>
+  
+  <!-- Protein substrates -->
+  <rect x="480" y="250" width="15" height="15" fill="#9C27B0" stroke="#333" stroke-width="1"/>
+  <rect x="520" y="280" width="15" height="15" fill="#9C27B0" stroke="#333" stroke-width="1"/>
+  <text x="520" y="260" text-anchor="middle" font-family="Arial" font-size="14" fill="#9C27B0">Proteins</text>
+  
+  <!-- Cell surface with MHC-I -->
+  <path d="M670,300 Q700,250 730,300" fill="none" stroke="#333" stroke-width="2"/>
+  <rect x="695" y="290" width="30" height="15" fill="#3F51B5" stroke="#333" stroke-width="1"/>
+  <text x="710" y="325" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#3F51B5">MHC-I</text>
+  
+  <!-- Tapbp protein -->
+  <rect x="650" y="275" width="25" height="25" rx="5" ry="5" fill="#2196F3" stroke="#333" stroke-width="1"/>
+  <text x="680" y="235" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2196F3">Tapbp</text>
+  <text x="680" y="255" text-anchor="middle" font-family="Arial" font-size="14" fill="#2196F3">(Peptide antigen binding)</text>
+  
+  <!-- Process labels -->
+  <text x="400" y="70" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#333">Mpeg1/perforin-2 forms a pore to deliver antigens for cross-presentation</text>
+  <text x="400" y="95" text-anchor="middle" font-family="Arial" font-size="18" fill="#666">Mouse (Mus musculus)</text>
+  
+  <!-- Causal arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Lgmn to Mpeg1 causal arrow -->
+  <path d="M600,350 Q550,370 450,370" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="525" y="400" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">positively regulates</text>
+  
+  <!-- Mpeg1 to Tapbp causal arrow -->
+  <path d="M535,330 Q590,320 640,290" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="585" y="330" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">positively regulates</text>
+  
+  <!-- Process boxes -->
+  <rect x="380" y="440" width="300" height="35" rx="5" ry="5" fill="#FFE0B2" stroke="#FB8C00" stroke-width="2"/>
+  <text x="530" y="463" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Antigen processing and presentation via MHC class I</text>
+  
+  <rect x="380" y="485" width="300" height="35" rx="5" ry="5" fill="#E1BEE7" stroke="#9C27B0" stroke-width="2"/>
+  <text x="530" y="508" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Protein maturation</text>
+  
+  <rect x="380" y="530" width="300" height="35" rx="5" ry="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+  <text x="530" y="553" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Antigen presentation via MHC-I, TAP-dependent</text>
+
+  <!-- Cell type label -->
+  <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#666">Dendritic Cell</text>
+</svg>

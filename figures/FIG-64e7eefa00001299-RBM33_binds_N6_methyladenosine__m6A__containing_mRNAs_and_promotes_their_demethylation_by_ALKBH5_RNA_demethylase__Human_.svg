@@ -1,0 +1,103 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell nucleus background -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f0ff" stroke="#666" stroke-width="2"/>
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Cell Nucleus</text>
+  
+  <!-- Nuclear speck -->
+  <ellipse cx="400" cy="300" rx="200" ry="150" fill="#e6e6fa" stroke="#777" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="180" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Nuclear Speck (GO:0016607)</text>
+  
+  <!-- mRNA with m6A modification -->
+  <path d="M200,300 C 250,280 300,320 350,300 S 400,280 450,300 S 500,320 550,300" fill="none" stroke="#333" stroke-width="3"/>
+  <!-- m6A modification on the mRNA -->
+  <circle cx="350" cy="300" r="15" fill="#ff9900" stroke="#333" stroke-width="1.5"/>
+  <text x="350" y="304" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="12" font-weight="bold">m6A</text>
+  
+  <!-- RBM33 protein -->
+  <rect x="300" y="230" width="100" height="50" rx="10" ry="10" fill="#a6d8ff" stroke="#333" stroke-width="2"/>
+  <text x="350" y="258" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">RBM33</text>
+  <text x="350" y="275" text-anchor="middle" font-family="Arial" font-size="10">(Q96EV2)</text>
+  
+  <!-- SENP1 protein -->
+  <rect x="450" y="230" width="100" height="50" rx="10" ry="10" fill="#a6ffbd" stroke="#333" stroke-width="2"/>
+  <text x="500" y="258" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">SENP1</text>
+  <text x="500" y="275" text-anchor="middle" font-family="Arial" font-size="10">(Q9P0U3)</text>
+  
+  <!-- ALKBH5 protein -->
+  <rect x="400" y="350" width="100" height="50" rx="10" ry="10" fill="#ffd6a6" stroke="#333" stroke-width="2"/>
+  <text x="450" y="378" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">ALKBH5</text>
+  <text x="450" y="395" text-anchor="middle" font-family="Arial" font-size="10">(Q6P6C2)</text>
+  
+  <!-- Relations/Arrows -->
+  <!-- RBM33 binding to m6A mRNA -->
+  <line x1="335" y1="280" x2="350" y2="295" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="320" y="295" font-family="Arial" font-size="10" fill="#333">①</text>
+  
+  <!-- RBM33 positively regulates SENP1 -->
+  <path d="M400,255 L450,255" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="420" y="250" font-family="Arial" font-size="10" fill="#333">②</text>
+  
+  <!-- RBM33 positively regulates ALKBH5 -->
+  <path d="M350,280 L400,350" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="370" y="320" font-family="Arial" font-size="10" fill="#333">③</text>
+  
+  <!-- SENP1 positively regulates ALKBH5 -->
+  <path d="M500,280 L450,350" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="485" y="320" font-family="Arial" font-size="10" fill="#333">④</text>
+  
+  <!-- ALKBH5 demethylates m6A -->
+  <path d="M400,375 L350,315" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="370" y="355" font-family="Arial" font-size="10" fill="#333">⑤</text>
+  
+  <!-- Demethylated mRNA (output) -->
+  <path d="M200,400 C 250,380 300,420 350,400 S 400,380 450,400 S 500,420 550,400" fill="none" stroke="#333" stroke-width="3"/>
+  <text x="380" y="425" text-anchor="middle" font-family="Arial" font-size="12">Demethylated mRNA</text>
+  
+  <!-- Legend box -->
+  <rect x="580" y="100" width="180" height="180" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="670" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <!-- Molecular function labels in legend -->
+  <rect x="590" y="130" width="15" height="15" fill="#a6d8ff"/>
+  <text x="615" y="143" font-family="Arial" font-size="11" text-anchor="start">RBM33: m6A RNA reader</text>
+  <text x="615" y="156" font-family="Arial" font-size="10" text-anchor="start">(GO:1990247)</text>
+  
+  <rect x="590" y="170" width="15" height="15" fill="#a6ffbd"/>
+  <text x="615" y="183" font-family="Arial" font-size="11" text-anchor="start">SENP1: SUMO-specific</text>
+  <text x="615" y="196" font-family="Arial" font-size="10" text-anchor="start">endopeptidase (GO:0070139)</text>
+  
+  <rect x="590" y="210" width="15" height="15" fill="#ffd6a6"/>
+  <text x="615" y="223" font-family="Arial" font-size="11" text-anchor="start">ALKBH5: m6A demethylase</text>
+  <text x="615" y="236" font-family="Arial" font-size="10" text-anchor="start">(GO:1990931)</text>
+  
+  <circle cx="590" cy="255" r="7.5" fill="#ff9900"/>
+  <text x="615" y="258" font-family="Arial" font-size="11" text-anchor="start">N6-methyladenosine (m6A)</text>
+  
+  <!-- Biological processes legend box -->
+  <rect x="580" y="290" width="180" height="100" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="670" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Biological Processes</text>
+  
+  <text x="590" y="330" font-family="Arial" font-size="11" text-anchor="start">• Regulation of mRNA stability</text>
+  <text x="600" y="345" font-family="Arial" font-size="10" text-anchor="start">(GO:0043488)</text>
+  
+  <text x="590" y="365" font-family="Arial" font-size="11" text-anchor="start">• mRNA destabilization</text>
+  <text x="600" y="380" font-family="Arial" font-size="10" text-anchor="start">(GO:0061157)</text>
+  
+  <!-- Pathway steps legend -->
+  <rect x="580" y="400" width="180" height="160" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="670" y="420" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Pathway Steps</text>
+  
+  <text x="590" y="440" font-family="Arial" font-size="11" text-anchor="start">① RBM33 binds m6A-mRNA</text>
+  <text x="590" y="460" font-family="Arial" font-size="11" text-anchor="start">② RBM33 positively regulates SENP1</text>
+  <text x="590" y="480" font-family="Arial" font-size="11" text-anchor="start">③ RBM33 positively regulates ALKBH5</text>
+  <text x="590" y="500" font-family="Arial" font-size="11" text-anchor="start">④ SENP1 positively regulates ALKBH5</text>
+  <text x="590" y="520" font-family="Arial" font-size="11" text-anchor="start">⑤ ALKBH5 demethylates m6A-mRNA</text>
+  <text x="590" y="540" font-family="Arial" font-size="11" text-anchor="start">   leading to mRNA destabilization</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

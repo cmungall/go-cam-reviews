@@ -1,0 +1,94 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and cell outline -->
+  <rect width="800" height="600" fill="white"/>
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  
+  <!-- Lysosome -->
+  <ellipse cx="600" cy="300" rx="150" ry="120" fill="#e6f2ff" stroke="#666" stroke-width="2.5"/>
+  <text x="600" y="430" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Lysosome</text>
+  
+  <!-- Lysosomal membrane detail -->
+  <path d="M450 300 Q 525 230, 600 200 Q 675 230, 750 300 Q 675 370, 600 400 Q 525 370, 450 300" fill="none" stroke="#666" stroke-width="3" stroke-dasharray="5,3"/>
+  <text x="600" y="185" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Lysosomal membrane</text>
+  <text x="600" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">(GO:0005765)</text>
+  
+  <!-- LAMTOR1 protein initial -->
+  <rect x="170" y="280" width="100" height="40" rx="10" ry="10" fill="#b3e0ff" stroke="#333" stroke-width="1.5"/>
+  <text x="220" y="305" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">LAMTOR1</text>
+  
+  <!-- NMT1 protein -->
+  <rect x="100" y="150" width="80" height="40" rx="10" ry="10" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="140" y="175" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">NMT1</text>
+  <text x="140" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#666">Peptidyl-lysine</text>
+  <text x="140" y="138" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#666">N6-myristoyltransferase</text>
+  <text x="140" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(GO:0018030)</text>
+  
+  <!-- ZDHHC3 protein -->
+  <rect x="260" y="150" width="80" height="40" rx="10" ry="10" fill="#ffcccc" stroke="#333" stroke-width="1.5"/>
+  <text x="300" y="175" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">ZDHHC3</text>
+  <text x="300" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#666">Protein-cysteine</text>
+  <text x="300" y="138" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#666">S-palmitoyltransferase</text>
+  <text x="300" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">(GO:0019706)</text>
+  
+  <!-- Myristoylated LAMTOR1 -->
+  <rect x="240" y="220" width="100" height="40" rx="10" ry="10" fill="#b3e0ff" stroke="#333" stroke-width="1.5"/>
+  <text x="290" y="235" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">LAMTOR1</text>
+  <text x="290" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Myristoylated</text>
+  
+  <!-- Myristoylated and Palmitoylated LAMTOR1 -->
+  <rect x="350" y="280" width="100" height="40" rx="10" ry="10" fill="#b3e0ff" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="295" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">LAMTOR1</text>
+  <text x="400" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Myr + Palm</text>
+  
+  <!-- Membrane-bound LAMTOR1 -->
+  <rect x="500" y="300" width="100" height="40" rx="10" ry="10" fill="#b3e0ff" stroke="#333" stroke-width="1.5"/>
+  <text x="550" y="315" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">LAMTOR1</text>
+  <text x="550" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Membrane bound</text>
+  
+  <!-- Process arrows - Enhanced visibility -->
+  <line x1="140" y1="190" x2="200" y2="280" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="270" y1="280" x2="240" y2="240" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="300" y1="190" x2="330" y2="220" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="240" x2="370" y2="280" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="300" x2="500" y2="300" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Annotations for processes -->
+  <text x="150" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">Myristoylation</text>
+  <text x="330" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">Palmitoylation</text>
+  <text x="475" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">Membrane</text>
+  <text x="475" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">recruitment</text>
+  
+  <!-- Biological process annotation -->
+  <rect x="450" y="230" width="200" height="60" rx="5" ry="5" fill="#ffffcc" stroke="#666" stroke-width="1" opacity="0.8"/>
+  <text x="550" y="250" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Positive regulation of protein</text>
+  <text x="550" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">localization to lysosome</text>
+  <text x="550" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">(GO:0150032)</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <rect x="100" y="30" width="600" height="60" rx="10" ry="10" fill="#f0f0f0" stroke="#666" stroke-width="1"/>
+  <text x="400" y="50" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">N-terminal myristoylation and palmitoylation of LAMTOR1</text>
+  <text x="400" y="80" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">mediates its recruitment to lysosome membranes</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="520" width="240" height="70" rx="5" ry="5" fill="#f0f0f0" stroke="#666" stroke-width="1"/>
+  <text x="140" y="535" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <rect x="30" y="545" width="20" height="15" fill="#ffcccc" stroke="#333" stroke-width="1"/>
+  <text x="55" y="558" font-family="Arial" font-size="14" text-anchor="start">Enzymes</text>
+  
+  <rect x="30" y="565" width="20" height="15" fill="#b3e0ff" stroke="#333" stroke-width="1"/>
+  <text x="55" y="578" font-family="Arial" font-size="14" text-anchor="start">LAMTOR1 protein</text>
+  
+  <line x1="140" y1="558" x2="160" y2="558" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="165" y="563" font-family="Arial" font-size="14" text-anchor="start">Pathway flow</text>
+  
+  <!-- Credits -->
+  <text x="790" y="590" font-family="Arial" font-size="12" text-anchor="end" fill="#666">Based on GO-CAM model: gomodel:646ff70100000838</text>
+</svg>

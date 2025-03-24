@@ -1,0 +1,110 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Thiamine Diphosphate Biosynthetic Process (Mouse)</text>
+  
+  <!-- Plasma membrane -->
+  <path d="M 50 150 H 750" stroke="#333" stroke-width="4" fill="none"/>
+  <text x="60" y="140" font-family="Arial" font-size="14" font-style="italic">Plasma membrane (GO:0005886)</text>
+  
+  <!-- Extracellular space label -->
+  <text x="100" y="120" font-family="Arial" font-size="14">Extracellular space</text>
+  
+  <!-- Cytosol label -->
+  <text x="100" y="180" font-family="Arial" font-size="14" font-style="italic">Cytosol (GO:0005829)</text>
+  
+  <!-- Transporters on plasma membrane - with different colors -->
+  <rect x="250" y="130" width="80" height="40" rx="5" ry="5" fill="#8ecae6" stroke="#333" stroke-width="2"/>
+  <text x="290" y="155" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Slc19a2</text>
+  <text x="290" y="167" font-family="Arial" font-size="8" text-anchor="middle">(MGI:1928761)</text>
+  
+  <rect x="400" y="130" width="80" height="40" rx="5" ry="5" fill="#219ebc" stroke="#333" stroke-width="2"/>
+  <text x="440" y="155" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="white">Slc19a3</text>
+  <text x="440" y="167" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(MGI:1931307)</text>
+  
+  <!-- Labels for transporter function -->
+  <text x="290" y="180" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">GO:0015234</text>
+  <text x="440" y="180" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">GO:0015234</text>
+  
+  <!-- Thiamine molecules -->
+  <circle cx="270" cy="100" r="10" fill="#ffb703" stroke="#333" stroke-width="1"/>
+  <text x="270" y="90" font-family="Arial" font-size="10" text-anchor="middle">Thiamine</text>
+  
+  <circle cx="420" cy="100" r="10" fill="#ffb703" stroke="#333" stroke-width="1"/>
+  <text x="420" y="90" font-family="Arial" font-size="10" text-anchor="middle">Thiamine</text>
+  
+  <!-- Arrows for transport -->
+  <path d="M 270 110 V 130" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 420 110 V 130" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Thiamine in cytosol -->
+  <circle cx="350" cy="220" r="10" fill="#ffb703" stroke="#333" stroke-width="1"/>
+  <text x="350" y="245" font-family="Arial" font-size="10" text-anchor="middle">Thiamine</text>
+  
+  <!-- Transport arrows to cytosol -->
+  <path d="M 290 170 L 340 210" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 420 170 L 360 210" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- TPK1 enzyme in cytosol -->
+  <rect x="460" y="200" width="80" height="40" rx="5" ry="5" fill="#fb8500" stroke="#333" stroke-width="2"/>
+  <text x="500" y="225" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Tpk1</text>
+  <text x="500" y="237" font-family="Arial" font-size="8" text-anchor="middle">(MGI:1352500)</text>
+  <text x="500" y="250" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic">GO:0004788</text>
+  
+  <!-- Arrow to TPK1 -->
+  <path d="M 360 220 H 460" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Thiamine diphosphate in cytosol -->
+  <circle cx="600" cy="220" r="10" fill="#d00000" stroke="#333" stroke-width="1"/>
+  <text x="600" y="245" font-family="Arial" font-size="10" text-anchor="middle">Thiamine-PP</text>
+  
+  <!-- Arrow from TPK1 to thiamine diphosphate -->
+  <path d="M 540 220 H 590" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="450" cy="400" rx="200" ry="120" fill="#fec5bb" stroke="#333" stroke-width="2"/>
+  <ellipse cx="450" cy="400" rx="180" ry="100" fill="#fcd5ce" stroke="#333" stroke-width="2"/>
+  <text x="450" y="320" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Mitochondrion</text>
+  <text x="350" y="350" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Mitochondrial inner membrane (GO:0005743)</text>
+  <text x="450" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Mitochondrial matrix (GO:0005759)</text>
+  
+  <!-- SLC25A19 transporter on mitochondrial membrane -->
+  <rect x="450" y="300" width="80" height="40" rx="5" ry="5" fill="#023047" stroke="#333" stroke-width="2"/>
+  <text x="490" y="325" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="white">Slc25a19</text>
+  <text x="490" y="337" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(MGI:1914533)</text>
+  <text x="490" y="347" font-family="Arial" font-size="11" text-anchor="middle" font-style="italic" fill="white">GO:0090422</text>
+  
+  <!-- Arrow to mitochondrial transporter -->
+  <path d="M 600 230 C 600 270, 550 280, 500 300" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Thiamine diphosphate in mitochondrial matrix -->
+  <circle cx="450" cy="430" r="10" fill="#d00000" stroke="#333" stroke-width="1"/>
+  <text x="450" y="455" font-family="Arial" font-size="10" text-anchor="middle">Thiamine-PP</text>
+  
+  <!-- Arrow through transporter to mitochondrial matrix -->
+  <path d="M 490 340 V 420" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Biological process label -->
+  <rect x="580" y="500" width="160" height="40" rx="5" ry="5" fill="#e9ecef" stroke="#333" stroke-width="1"/>
+  <text x="660" y="525" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">GO:0009229</text>
+  <text x="660" y="540" font-size="10" font-family="Arial" text-anchor="middle">Thiamine diphosphate biosynthetic process</text>
+  
+  <!-- Legend -->
+  <rect x="60" y="490" width="200" height="50" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="70" y="505" font-family="Arial" font-size="10" font-weight="bold">Legend:</text>
+  <circle cx="80" cy="520" r="6" fill="#ffb703"/>
+  <text x="90" y="523" font-family="Arial" font-size="10">Thiamine</text>
+  <circle cx="150" cy="520" r="6" fill="#d00000"/>
+  <text x="160" y="523" font-family="Arial" font-size="10">Thiamine-PP</text>
+  <rect x="210" y="515" width="12" height="12" rx="2" ry="2" fill="#fb8500"/>
+  <text x="230" y="523" font-family="Arial" font-size="10">Enzyme</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

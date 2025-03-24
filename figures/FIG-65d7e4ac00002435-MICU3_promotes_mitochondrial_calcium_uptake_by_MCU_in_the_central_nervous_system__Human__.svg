@@ -1,0 +1,119 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f8f8" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">MICU3 Promotes Mitochondrial Calcium Uptake by MCU in the Central Nervous System</text>
+  
+  <!-- Neuron cell outline -->
+  <path d="M50,100 C100,80 250,70 350,100 C450,130 700,120 750,150 C750,300 750,400 750,450 C700,480 450,470 350,500 C250,530 100,520 50,500 C50,350 50,250 50,100" fill="#e6e6fa" stroke="#9370db" stroke-width="2" opacity="0.5" />
+  <text x="100" y="120" font-family="Arial" font-size="16" font-weight="bold" fill="#4b0082">Neuron</text>
+  
+  <!-- Mitochondrion outer membrane -->
+  <ellipse cx="400" cy="300" rx="240" ry="150" fill="#ffdab9" stroke="#d2691e" stroke-width="3" />
+  
+  <!-- Mitochondrion inner membrane -->
+  <ellipse cx="400" cy="300" rx="200" ry="120" fill="#ffb6c1" stroke="#cd5c5c" stroke-width="3" />
+  
+  <!-- Mitochondrial matrix -->
+  <ellipse cx="400" cy="300" rx="180" ry="100" fill="#ffe4e1" stroke="none" />
+  
+  <!-- Labels for mitochondrial compartments -->
+  <text x="400" y="170" font-family="Arial" font-size="14" text-anchor="middle">Outer membrane</text>
+  <text x="400" y="190" font-family="Arial" font-size="14" text-anchor="middle">Intermembrane space</text>
+  <text x="400" y="210" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Inner membrane</text>
+  <text x="400" y="400" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Mitochondrial matrix</text>
+  
+  <!-- Calcium ions outside mitochondria -->
+  <circle cx="330" cy="240" r="8" fill="#ffd700" stroke="#ff8c00" stroke-width="1" />
+  <text x="330" y="225" font-family="Arial" font-size="14" text-anchor="middle">Ca²⁺</text>
+  
+  <circle cx="370" cy="230" r="8" fill="#ffd700" stroke="#ff8c00" stroke-width="1" />
+  <text x="370" y="215" font-family="Arial" font-size="14" text-anchor="middle">Ca²⁺</text>
+  
+  <circle cx="410" cy="235" r="8" fill="#ffd700" stroke="#ff8c00" stroke-width="1" />
+  <text x="410" y="220" font-family="Arial" font-size="14" text-anchor="middle">Ca²⁺</text>
+  
+  <circle cx="450" cy="240" r="8" fill="#ffd700" stroke="#ff8c00" stroke-width="1" />
+  <text x="450" y="225" font-family="Arial" font-size="14" text-anchor="middle">Ca²⁺</text>
+  
+  <!-- Calcium ions inside mitochondria -->
+  <circle cx="370" cy="330" r="8" fill="#ffd700" stroke="#ff8c00" stroke-width="1" />
+  <text x="370" y="345" font-family="Arial" font-size="14" text-anchor="middle">Ca²⁺</text>
+  
+  <circle cx="410" cy="320" r="8" fill="#ffd700" stroke="#ff8c00" stroke-width="1" />
+  <text x="410" y="335" font-family="Arial" font-size="14" text-anchor="middle">Ca²⁺</text>
+  
+  <circle cx="430" cy="350" r="8" fill="#ffd700" stroke="#ff8c00" stroke-width="1" />
+  <text x="430" y="365" font-family="Arial" font-size="14" text-anchor="middle">Ca²⁺</text>
+  
+  <!-- MCU complex in inner membrane -->
+  <!-- SMDT1 protein -->
+  <rect x="375" y="255" width="50" height="30" rx="5" ry="5" fill="#87cefa" stroke="#4169e1" stroke-width="2" />
+  <text x="400" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">SMDT1</text>
+  
+  <!-- MCU channel -->
+  <rect x="385" y="280" width="30" height="40" rx="3" ry="3" fill="#ff6347" stroke="#8b0000" stroke-width="2" />
+  <text x="400" y="305" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MCU</text>
+  
+  <!-- MICU1 protein -->
+  <rect x="330" y="255" width="50" height="30" rx="5" ry="5" fill="#90ee90" stroke="#006400" stroke-width="2" />
+  <text x="355" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MICU1</text>
+  
+  <!-- MICU3 protein -->
+  <rect x="420" y="255" width="50" height="30" rx="5" ry="5" fill="#90ee90" stroke="#006400" stroke-width="2" />
+  <text x="445" y="275" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MICU3</text>
+  
+  <!-- Calcium pathway arrows -->
+  <path d="M400,235 L400,280" stroke="#ff8c00" stroke-width="3" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,2" />
+  
+  <!-- Calcium movement arrow with label -->
+  <path d="M400,320 L400,350" stroke="#ff8c00" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <text x="420" y="335" font-family="Arial" font-size="14" fill="#ff8c00" font-weight="bold">Ca²⁺ movement</text>
+  
+  <!-- Activation arrows -->
+  <path d="M355,265 C370,265 370,290 385,290" stroke="#006400" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M445,265 C430,265 430,290 415,290" stroke="#006400" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M400,255 L400,235" stroke="#4169e1" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Regulation arrow from SMDT1 to MICU1 -->
+  <path d="M385,270 L380,270 L380,260 L365,260" stroke="#4169e1" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+  
+  <!-- Process label -->
+  <text x="150" y="300" font-family="Arial" font-size="16" font-weight="bold" fill="#8b0000">Calcium import into</text>
+  <text x="150" y="320" font-family="Arial" font-size="16" font-weight="bold" fill="#8b0000">mitochondrion</text>
+  <path d="M250,310 L300,310" stroke="#8b0000" stroke-width="2" stroke-dasharray="3,2" marker-end="url(#arrowhead)" />
+  
+  <!-- Response label -->
+  <text x="600" y="250" font-family="Arial" font-size="16" font-weight="bold" fill="#006400">Cellular response</text>
+  <text x="600" y="270" font-family="Arial" font-size="16" font-weight="bold" fill="#006400">to calcium ion</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="430" width="225" height="150" rx="10" ry="10" fill="white" stroke="black" stroke-width="1" />
+  <text x="662" y="450" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="560" y="460" width="15" height="15" fill="#ff6347" stroke="#8b0000" stroke-width="1" />
+  <text x="585" y="472" font-family="Arial" font-size="14" text-anchor="start">MCU - Calcium channel</text>
+  
+  <rect x="560" y="480" width="15" height="15" fill="#90ee90" stroke="#006400" stroke-width="1" />
+  <text x="585" y="492" font-family="Arial" font-size="14" text-anchor="start">MICU1/3 - Ca²⁺ sensors</text>
+  
+  <rect x="560" y="500" width="15" height="15" fill="#87cefa" stroke="#4169e1" stroke-width="1" />
+  <text x="585" y="512" font-family="Arial" font-size="14" text-anchor="start">SMDT1 - Adaptor protein</text>
+  
+  <circle cx="567" cy="525" r="7" fill="#ffd700" stroke="#ff8c00" stroke-width="1" />
+  <text x="585" y="532" font-family="Arial" font-size="14" text-anchor="start">Ca²⁺ ion</text>
+  
+  <line x1="560" y1="545" x2="575" y2="545" stroke="#006400" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="585" y="552" font-family="Arial" font-size="14" text-anchor="start">Positive regulation</text>
+  
+  <!-- Citation -->
+  <text x="400" y="580" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Based on GO-CAM model: gomodel:65d7e4ac00002435</text>
+</svg>

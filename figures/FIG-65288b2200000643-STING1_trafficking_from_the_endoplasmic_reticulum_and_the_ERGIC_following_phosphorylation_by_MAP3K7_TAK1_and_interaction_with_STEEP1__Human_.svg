@@ -1,0 +1,104 @@
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell diagram with ER and ERGIC -->
+  <rect x="50" y="50" width="700" height="520" rx="20" ry="20" fill="#f8f9fa" stroke="#2c3e50" stroke-width="2" />
+  
+  <!-- ER membrane - blue wavy structure -->
+  <path d="M100,250 Q125,230 150,250 Q175,270 200,250 Q225,230 250,250 Q275,270 300,250 Q325,230 350,250 Q375,270 400,250 Q425,230 450,250 Q475,270 500,250 Q525,230 550,250 Q575,270 600,250 Q625,230 650,250" fill="none" stroke="#3498db" stroke-width="4" />
+  <text x="100" y="210" font-family="Arial" font-size="18" fill="#3498db" font-weight="bold">Endoplasmic Reticulum Membrane</text>
+  
+  <!-- ERGIC membrane - purple structure -->
+  <path d="M350,400 Q375,380 400,400 Q425,420 450,400 Q475,380 500,400 Q525,420 550,400 Q575,380 600,400" fill="none" stroke="#9b59b6" stroke-width="4" />
+  <text x="400" y="360" font-family="Arial" font-size="18" fill="#9b59b6" font-weight="bold">ERGIC</text>
+  
+  <!-- Cytosol label -->
+  <text x="120" y="100" font-family="Arial" font-size="18" fill="#2c3e50" font-weight="bold">Cytosol</text>
+  
+  <!-- Step 1: STING1 binding to cGAMP in ER membrane -->
+  <circle cx="150" cy="250" r="20" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" />
+  <text x="135" y="255" font-family="Arial" font-size="12" fill="white" font-weight="bold">STING1</text>
+  <circle cx="180" cy="230" r="10" fill="#f39c12" stroke="#2c3e50" stroke-width="1" />
+  <text x="174" y="234" font-family="Arial" font-size="8" fill="white" font-weight="bold">cGAMP</text>
+  <path d="M160,235 L175,232" fill="none" stroke="#2c3e50" stroke-width="2" stroke-dasharray="2" />
+  <text x="120" y="290" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">1. cGAMP binding</text>
+  
+  <!-- Step 2: STING1 activation and recruitment of TAB1 -->
+  <circle cx="250" cy="250" r="20" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" />
+  <text x="235" y="255" font-family="Arial" font-size="12" fill="white" font-weight="bold">STING1</text>
+  <circle cx="250" cy="210" r="15" fill="#27ae60" stroke="#2c3e50" stroke-width="1.5" />
+  <text x="240" y="214" font-family="Arial" font-size="10" fill="white" font-weight="bold">TAB1</text>
+  <path d="M250,230 L250,210" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="215" y="290" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">2. TAB1 recruitment</text>
+  
+  <!-- Step 3: MAP3K7/TAK1 phosphorylation of STING1 -->
+  <circle cx="350" cy="250" r="20" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" />
+  <text x="335" y="255" font-family="Arial" font-size="12" fill="white" font-weight="bold">STING1</text>
+  <text x="345" y="245" font-family="Arial" font-size="16" fill="yellow" font-weight="bold">P</text>
+  <circle cx="350" cy="190" r="15" fill="#8e44ad" stroke="#2c3e50" stroke-width="1.5" />
+  <text x="333" y="194" font-family="Arial" font-size="8" fill="white" font-weight="bold">MAP3K7</text>
+  <path d="M350,230 L350,205" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="310" y="290" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">3. Phosphorylation</text>
+  
+  <!-- Step 4: STEEP1 binding to phosphorylated STING1 -->
+  <circle cx="450" cy="250" r="20" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" />
+  <text x="435" y="255" font-family="Arial" font-size="12" fill="white" font-weight="bold">STING1</text>
+  <text x="445" y="245" font-family="Arial" font-size="16" fill="yellow" font-weight="bold">P</text>
+  <circle cx="480" cy="230" r="15" fill="#1abc9c" stroke="#2c3e50" stroke-width="1.5" />
+  <text x="465" y="234" font-family="Arial" font-size="9" fill="white" font-weight="bold">STEEP1</text>
+  <path d="M465,240 L480,230" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="415" y="290" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">4. STEEP1 binding</text>
+  
+  <!-- Step 5: Translocation to ERGIC -->
+  <path d="M450,270 Q460,320 465,370" fill="none" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="400" y="330" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">5. Translocation</text>
+  
+  <!-- Step 6: STING1 in ERGIC -->
+  <circle cx="465" cy="400" r="20" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" />
+  <text x="450" y="405" font-family="Arial" font-size="12" fill="white" font-weight="bold">STING1</text>
+  <text x="460" y="395" font-family="Arial" font-size="16" fill="yellow" font-weight="bold">P</text>
+  
+  <!-- Step 7: TBK1 activation -->
+  <circle cx="550" cy="400" r="20" fill="#3498db" stroke="#2c3e50" stroke-width="2" />
+  <text x="538" y="405" font-family="Arial" font-size="12" fill="white" font-weight="bold">TBK1</text>
+  <path d="M485,400 L530,400" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="490" y="440" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">7. TBK1 activation</text>
+  
+  <!-- Step 8: Type I Interferon Production -->
+  <path d="M570,400 Q600,350 630,320" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="640" y="320" font-family="Arial" font-size="16" fill="#e74c3c" font-weight="bold">Type I Interferon</text>
+  <text x="640" y="340" font-family="Arial" font-size="16" fill="#e74c3c" font-weight="bold">Production</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="470" width="600" height="80" rx="10" ry="10" fill="#f0f0f0" stroke="#2c3e50" stroke-width="1" />
+  <text x="400" y="490" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold" text-anchor="middle">LEGEND</text>
+  
+  <!-- Legend items -->
+  <circle cx="130" cy="510" r="10" fill="#e74c3c" stroke="#2c3e50" stroke-width="1" />
+  <text x="145" y="515" font-family="Arial" font-size="14" fill="#2c3e50">STING1</text>
+  
+  <circle cx="220" cy="510" r="8" fill="#f39c12" stroke="#2c3e50" stroke-width="1" />
+  <text x="235" y="515" font-family="Arial" font-size="14" fill="#2c3e50">cGAMP</text>
+  
+  <circle cx="320" cy="510" r="8" fill="#27ae60" stroke="#2c3e50" stroke-width="1" />
+  <text x="335" y="515" font-family="Arial" font-size="14" fill="#2c3e50">TAB1</text>
+  
+  <circle cx="400" cy="510" r="8" fill="#8e44ad" stroke="#2c3e50" stroke-width="1" />
+  <text x="415" y="515" font-family="Arial" font-size="14" fill="#2c3e50">MAP3K7/TAK1</text>
+  
+  <circle cx="520" cy="510" r="8" fill="#1abc9c" stroke="#2c3e50" stroke-width="1" />
+  <text x="535" y="515" font-family="Arial" font-size="14" fill="#2c3e50">STEEP1</text>
+  
+  <circle cx="600" cy="510" r="8" fill="#3498db" stroke="#2c3e50" stroke-width="1" />
+  <text x="615" y="515" font-family="Arial" font-size="14" fill="#2c3e50">TBK1</text>
+  
+  <text x="145" y="535" font-family="Arial" font-size="14" fill="#2c3e50">P = Phosphorylation</text>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Pathway Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" fill="#2c3e50" font-weight="bold" text-anchor="middle">STING1 Trafficking Pathway</text>
+</svg>

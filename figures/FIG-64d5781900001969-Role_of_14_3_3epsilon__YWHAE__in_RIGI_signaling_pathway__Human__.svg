@@ -1,0 +1,75 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outline -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" stroke="#333" stroke-width="2" rx="20" ry="20"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Role of 14-3-3epsilon (YWHAE) in RIGI Signaling Pathway</text>
+  <text x="400" y="70" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic">(Human)</text>
+  
+  <!-- Cytoplasm region -->
+  <ellipse cx="400" cy="330" rx="350" ry="220" fill="#e6f7ff" stroke="#666" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="180" y="170" font-family="Arial" font-size="18" fill="#333">Cytoplasm (GO:0005737)</text>
+
+  <!-- Mitochondrial membrane -->
+  <ellipse cx="600" cy="400" rx="120" ry="80" fill="#ffe6cc" stroke="#666" stroke-width="3"/>
+  <ellipse cx="600" cy="400" rx="105" ry="65" fill="#ffcc99" stroke="#666" stroke-width="1"/>
+  <text x="600" y="320" font-family="Arial" font-size="18" fill="#333" text-anchor="middle">Mitochondrial Membrane (GO:0031966)</text>
+  
+  <!-- RIGI Protein -->
+  <rect x="150" y="250" width="120" height="60" rx="10" ry="10" fill="#b3e0ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="210" y="275" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">RIGI</text>
+  <text x="210" y="295" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Pattern recognition</text>
+  <text x="210" y="310" font-family="Arial" font-size="11" text-anchor="middle">GO:0038187</text>
+  
+  <!-- TRIM25 Protein -->
+  <rect x="350" y="250" width="120" height="60" rx="10" ry="10" fill="#cce5ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="410" y="275" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TRIM25</text>
+  <text x="410" y="295" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Ubiquitin ligase</text>
+  <text x="410" y="310" font-family="Arial" font-size="11" text-anchor="middle">GO:0061630</text>
+  
+  <!-- YWHAE Protein -->
+  <rect x="350" y="400" width="120" height="60" rx="10" ry="10" fill="#d1e7dd" stroke="#198754" stroke-width="2"/>
+  <text x="410" y="425" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">YWHAE</text>
+  <text x="410" y="445" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Signaling adaptor</text>
+  <text x="410" y="460" font-family="Arial" font-size="11" text-anchor="middle">GO:0035591</text>
+  
+  <!-- MAVS Protein -->
+  <rect x="580" y="400" width="60" height="60" rx="10" ry="10" fill="#f8d7da" stroke="#dc3545" stroke-width="2"/>
+  <text x="610" y="425" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">MAVS</text>
+  <text x="610" y="445" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Adaptor</text>
+  <text x="610" y="460" font-family="Arial" font-size="11" text-anchor="middle">GO:0035591</text>
+  
+  <!-- Arrows and connections with enhanced styling -->
+  <!-- RIGI to TRIM25 -->
+  <line x1="270" y1="280" x2="350" y2="280" stroke="#005cbf" stroke-width="2.5" stroke-dasharray="none" marker-end="url(#arrowhead1)"/>
+  <text x="310" y="270" font-family="Arial" font-size="13" text-anchor="middle" fill="#005cbf">RO:0002413</text>
+  
+  <!-- TRIM25 to YWHAE -->
+  <line x1="410" y1="310" x2="410" y2="400" stroke="#005cbf" stroke-width="2.5" stroke-dasharray="none" marker-end="url(#arrowhead1)"/>
+  <text x="430" y="350" font-family="Arial" font-size="13" text-anchor="middle" fill="#005cbf">RO:0002413</text>
+  
+  <!-- YWHAE to MAVS -->
+  <line x1="470" y1="430" x2="580" y2="430" stroke="#198754" stroke-width="2.5" stroke-dasharray="5,2" marker-end="url(#arrowhead2)"/>
+  <text x="525" y="420" font-family="Arial" font-size="13" text-anchor="middle" fill="#198754">RO:0002629</text>
+  
+  <!-- Arrowhead marker definitions with different colors -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#005cbf"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#198754"/>
+    </marker>
+  </defs>
+  
+  <!-- GO biological process annotation -->
+  <rect x="100" y="500" width="600" height="30" rx="5" ry="5" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="400" y="520" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Cytoplasmic Pattern Recognition Receptor Signaling Pathway (GO:0002753)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="540" width="700" height="45" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="60" y="555" font-family="Arial" font-size="12" text-anchor="start">
+    <tspan x="60" dy="0">RIGI: UniProtKB:O95786 | TRIM25: UniProtKB:Q14258 | YWHAE: UniProtKB:P62258 | MAVS: UniProtKB:Q7Z434</tspan>
+    <tspan x="60" dy="15">Solid blue arrow (RO:0002413) = positively regulates | Dashed green arrow (RO:0002629) = directly positively regulates</tspan>
+  </text>
+</svg>

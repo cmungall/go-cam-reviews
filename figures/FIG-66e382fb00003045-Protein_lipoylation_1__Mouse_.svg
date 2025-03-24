@@ -1,0 +1,115 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Mitochondrion -->
+  <ellipse cx="400" cy="330" rx="380" ry="280" fill="#f9f2e8" stroke="#aa6c39" stroke-width="4" opacity="0.8"/>
+  <text x="400" y="100" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Mitochondrion (GO:0005739)</text>
+  
+  <!-- Inner membrane structure -->
+  <path d="M150,250 C200,230 220,270 280,260 C330,250 370,220 400,240 C440,260 480,240 520,260 C560,280 600,260 650,270" 
+        fill="none" stroke="#8b4513" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="26" font-weight="bold" text-anchor="middle">Protein Lipoylation Pathway (Mouse)</text>
+  
+  <!-- Lipt2 (First enzyme) -->
+  <rect x="150" y="150" width="120" height="60" rx="10" ry="10" fill="#b3e0ff" stroke="#0066cc" stroke-width="2.5"/>
+  <text x="210" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Lipt2</text>
+  <text x="210" y="200" font-family="Arial" font-size="14" text-anchor="middle">MGI:1914414</text>
+  
+  <!-- Lipt2 Function -->
+  <rect x="120" y="240" width="180" height="60" rx="5" ry="5" fill="#d9f2ff" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="210" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">lipoyl(octanoyl) transferase</text>
+  <text x="210" y="285" font-family="Arial" font-size="14" text-anchor="middle">activity (GO:0033819)</text>
+  
+  <!-- Lias (Second enzyme) -->
+  <rect x="290" y="150" width="120" height="60" rx="10" ry="10" fill="#ffe6b3" stroke="#cc7a00" stroke-width="2.5"/>
+  <text x="350" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Lias</text>
+  <text x="350" y="200" font-family="Arial" font-size="14" text-anchor="middle">MGI:1934604</text>
+  
+  <!-- Lias Function -->
+  <rect x="260" y="240" width="180" height="60" rx="5" ry="5" fill="#fff4d9" stroke="#cc7a00" stroke-width="1.5"/>
+  <text x="350" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">lipoate synthase</text>
+  <text x="350" y="285" font-family="Arial" font-size="14" text-anchor="middle">activity (GO:0016992)</text>
+  
+  <!-- Lipt1 (Third enzyme) -->
+  <rect x="430" y="150" width="120" height="60" rx="10" ry="10" fill="#d9f2d9" stroke="#2a802a" stroke-width="2.5"/>
+  <text x="490" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Lipt1</text>
+  <text x="490" y="200" font-family="Arial" font-size="14" text-anchor="middle">MGI:3645211</text>
+  
+  <!-- Lipt1 Function -->
+  <rect x="400" y="240" width="180" height="60" rx="5" ry="5" fill="#ebf7eb" stroke="#2a802a" stroke-width="1.5"/>
+  <text x="490" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">N-acyltransferase</text>
+  <text x="490" y="285" font-family="Arial" font-size="14" text-anchor="middle">activity (GO:0016410)</text>
+  
+  <!-- Dlat (Fourth enzyme) -->
+  <rect x="570" y="150" width="120" height="60" rx="10" ry="10" fill="#f2d9e6" stroke="#b30059" stroke-width="2.5"/>
+  <text x="630" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Dlat</text>
+  <text x="630" y="200" font-family="Arial" font-size="14" text-anchor="middle">MGI:2385311</text>
+  
+  <!-- Dlat Function -->
+  <rect x="540" y="240" width="180" height="60" rx="5" ry="5" fill="#f9ebf5" stroke="#b30059" stroke-width="1.5"/>
+  <text x="630" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">acetyltransferase</text>
+  <text x="630" y="285" font-family="Arial" font-size="14" text-anchor="middle">activity (GO:0016407)</text>
+  
+  <!-- Process label -->
+  <rect x="300" y="380" width="200" height="60" rx="10" ry="10" fill="#ffe6cc" stroke="#ff9933" stroke-width="2.5"/>
+  <text x="400" y="410" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Protein Lipoylation</text>
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle">(GO:0009249)</text>
+  
+  <!-- Pyruvate catabolic process -->
+  <rect x="540" y="380" width="200" height="60" rx="10" ry="10" fill="#ffcccc" stroke="#ff6666" stroke-width="2.5"/>
+  <text x="640" y="410" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Pyruvate Catabolic</text>
+  <text x="640" y="430" font-family="Arial" font-size="14" text-anchor="middle">Process (GO:0042867)</text>
+  
+  <!-- Arrows connecting enzymes - thicker and more visible -->
+  <path d="M270,180 L290,180" fill="none" stroke="#333333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="280" y="170" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">enables</text>
+  
+  <path d="M410,180 L430,180" fill="none" stroke="#333333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="420" y="170" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">enables</text>
+  
+  <path d="M550,180 L570,180" fill="none" stroke="#333333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="560" y="170" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">enables</text>
+  
+  <!-- Arrows connecting functions to process - more visible -->
+  <path d="M210,300 C210,340 300,360 350,380" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <path d="M350,300 C350,330 370,360 390,380" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <path d="M490,300 C490,330 420,360 410,380" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <path d="M630,300 L630,380" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Marker definition for arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+  
+  <!-- Process participation labels -->
+  <text x="300" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">part of</text>
+  <text x="440" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">part of</text>
+  <text x="560" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">part of</text>
+  <text x="650" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">part of</text>
+  
+  <!-- Legend -->
+  <rect x="150" y="480" width="500" height="130" rx="10" ry="10" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <text x="400" y="500" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">LEGEND</text>
+  
+  <!-- Enzyme color legend -->
+  <rect x="170" y="520" width="20" height="20" fill="#b3e0ff" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="320" y="535" font-family="Arial" font-size="14" text-anchor="middle">Lipoyl(octanoyl) transferase (Lipt2)</text>
+  
+  <rect x="170" y="550" width="20" height="20" fill="#ffe6b3" stroke="#cc7a00" stroke-width="1.5"/>
+  <text x="320" y="565" font-family="Arial" font-size="14" text-anchor="middle">Lipoate synthase (Lias)</text>
+  
+  <rect x="380" y="520" width="20" height="20" fill="#d9f2d9" stroke="#2a802a" stroke-width="1.5"/>
+  <text x="530" y="535" font-family="Arial" font-size="14" text-anchor="middle">N-acyltransferase (Lipt1)</text>
+  
+  <rect x="380" y="550" width="20" height="20" fill="#f2d9e6" stroke="#b30059" stroke-width="1.5"/>
+  <text x="530" y="565" font-family="Arial" font-size="14" text-anchor="middle">Acetyltransferase (Dlat)</text>
+  
+  <!-- Arrow legend -->
+  <line x1="170" y1="580" x2="200" y2="580" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="270" y="585" font-family="Arial" font-size="14" text-anchor="middle">Causal relationship</text>
+  
+  <line x1="380" y1="580" x2="410" y2="580" stroke="#333333" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="500" y="585" font-family="Arial" font-size="14" text-anchor="middle">Part of relationship</text>
+</svg>

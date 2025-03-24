@@ -1,0 +1,218 @@
+<svg width="900" height="750" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane and compartments -->
+  <rect x="50" y="50" width="800" height="650" rx="50" ry="50" fill="#f5f5f5" stroke="#888" stroke-width="2"/>
+  
+  <!-- Mitochondrion outer shape -->
+  <ellipse cx="450" cy="300" rx="320" ry="200" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+  
+  <!-- Mitochondrial matrix -->
+  <ellipse cx="450" cy="300" rx="250" ry="150" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="450" y="170" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Mitochondrial Matrix (GO:0005759)</text>
+  
+  <!-- Mitochondrial intermembrane space label -->
+  <text x="450" y="230" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Mitochondrial Intermembrane Space (GO:0005758)</text>
+  
+  <!-- Cytosol label -->
+  <text x="260" y="80" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Cytosol (GO:0005829)</text>
+  
+  <!-- Heme A Biosynthetic Process Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Heme A Biosynthetic Process (Mouse)</text>
+  
+  <!-- Step 1: ALAS1 (5-aminolevulinate synthase activity) -->
+  <rect x="150" y="400" width="120" height="50" rx="10" ry="10" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+  <text x="210" y="430" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">ALAS1</text>
+  <text x="210" y="445" text-anchor="middle" font-family="Arial" font-size="10">Alas1 Mmus</text>
+  
+  <!-- Step 2: ALAD (porphobilinogen synthase activity) -->
+  <rect x="150" y="300" width="120" height="50" rx="10" ry="10" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="210" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">ALAD</text>
+  <text x="210" y="345" text-anchor="middle" font-family="Arial" font-size="10">Alad Mmus</text>
+  
+  <!-- Step 3: HMBS (hydroxymethylbilane synthase activity) -->
+  <rect x="150" y="200" width="120" height="50" rx="10" ry="10" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="210" y="230" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">HMBS</text>
+  <text x="210" y="245" text-anchor="middle" font-family="Arial" font-size="10">Hmbs Mmus</text>
+  
+  <!-- Step 4: UROS (uroporphyrinogen-III synthase activity) -->
+  <rect x="300" y="200" width="120" height="50" rx="10" ry="10" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="360" y="230" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">UROS</text>
+  <text x="360" y="245" text-anchor="middle" font-family="Arial" font-size="10">Uros Mmus</text>
+  
+  <!-- Step 5: UROD (uroporphyrinogen decarboxylase activity) -->
+  <rect x="450" y="200" width="120" height="50" rx="10" ry="10" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="510" y="230" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">UROD</text>
+  <text x="510" y="245" text-anchor="middle" font-family="Arial" font-size="10">Urod Mmus</text>
+  
+  <!-- Step 6: CPOX (coproporphyrinogen oxidase activity) -->
+  <rect x="450" y="300" width="120" height="50" rx="10" ry="10" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/>
+  <text x="510" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">CPOX</text>
+  <text x="510" y="345" text-anchor="middle" font-family="Arial" font-size="10">Cpox Mmus</text>
+  
+  <!-- Step 7: PPOX (oxygen-dependent protoporphyrinogen oxidase activity) -->
+  <rect x="450" y="400" width="120" height="50" rx="10" ry="10" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/>
+  <text x="510" y="430" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">PPOX</text>
+  <text x="510" y="445" text-anchor="middle" font-family="Arial" font-size="10">Ppox Mmus</text>
+  
+  <!-- Step 8: FECH (ferrochelatase activity) -->
+  <rect x="650" y="350" width="120" height="50" rx="10" ry="10" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="710" y="380" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">FECH</text>
+  <text x="710" y="395" text-anchor="middle" font-family="Arial" font-size="10">Fech Mmus</text>
+  
+  <!-- Step 9: COX10 (protoheme IX farnesyltransferase activity) -->
+  <rect x="600" y="450" width="120" height="50" rx="10" ry="10" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="660" y="480" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">COX10</text>
+  <text x="660" y="495" text-anchor="middle" font-family="Arial" font-size="10">Cox10 Mmus</text>
+  
+  <!-- Step 10: COX15 (oxidoreductase activity) -->
+  <rect x="600" y="550" width="120" height="50" rx="10" ry="10" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="660" y="580" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">COX15</text>
+  <text x="660" y="595" text-anchor="middle" font-family="Arial" font-size="10">Cox15 Mmus</text>
+  
+  <!-- Pathway connections - Arrows -->
+  <path d="M210 450 L210 360" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M210 350 L210 260" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M270 225 L300 225" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M420 225 L450 225" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M510 250 L510 300" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M510 350 L510 400" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M570 425 L650 375" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M710 400 L660 450" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M660 500 L660 550" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Key metabolites with input/output notations -->
+  <!-- ALAS1 reaction -->
+  <rect x="65" y="395" width="80" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="70" y="410" font-family="Arial" font-size="10">Inputs:</text>
+  <text x="70" y="425" font-family="Arial" font-size="10">Succinyl-CoA, Glycine</text>
+  
+  <rect x="230" y="380" width="110" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="235" y="395" font-family="Arial" font-size="10">Outputs:</text>
+  <text x="235" y="410" font-family="Arial" font-size="10">5-Aminolevulinate,</text>
+  <text x="235" y="425" font-family="Arial" font-size="10">CO₂, CoA</text>
+  
+  <!-- ALAD reaction -->
+  <rect x="65" y="295" width="80" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="70" y="310" font-family="Arial" font-size="10">Inputs:</text>
+  <text x="70" y="325" font-family="Arial" font-size="10">5-Aminolevulinate</text>
+  
+  <rect x="230" y="280" width="110" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="235" y="295" font-family="Arial" font-size="10">Outputs:</text>
+  <text x="235" y="310" font-family="Arial" font-size="10">Porphobilinogen, H₂O</text>
+  
+  <!-- HMBS reaction -->
+  <rect x="65" y="195" width="80" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="70" y="210" font-family="Arial" font-size="10">Inputs:</text>
+  <text x="70" y="225" font-family="Arial" font-size="10">Porphobilinogen, H₂O</text>
+  
+  <rect x="180" y="160" width="120" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="185" y="175" font-family="Arial" font-size="10">Outputs:</text>
+  <text x="185" y="190" font-family="Arial" font-size="10">Hydroxymethylbilane, NH₄⁺</text>
+  
+  <!-- UROS reaction -->
+  <rect x="305" y="170" width="110" height="25" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="310" y="185" font-family="Arial" font-size="10">Output: Uroporphyrinogen III + H₂O</text>
+  
+  <!-- UROD reaction -->
+  <rect x="455" y="170" width="110" height="25" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="460" y="185" font-family="Arial" font-size="10">Output: Coproporphyrinogen III + 4 CO₂</text>
+  
+  <!-- CPOX reaction -->
+  <rect x="355" y="270" width="90" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="360" y="285" font-family="Arial" font-size="10">Inputs:</text>
+  <text x="360" y="300" font-family="Arial" font-size="10">Coproporphyrinogen III, O₂</text>
+  
+  <rect x="575" y="270" width="110" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="580" y="285" font-family="Arial" font-size="10">Outputs:</text>
+  <text x="580" y="300" font-family="Arial" font-size="10">Protoporphyrinogen IX, 2 CO₂, H₂O₂</text>
+  
+  <!-- PPOX reaction -->
+  <rect x="355" y="370" width="90" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="360" y="385" font-family="Arial" font-size="10">Inputs:</text>
+  <text x="360" y="400" font-family="Arial" font-size="10">Protoporphyrinogen IX, O₂</text>
+  
+  <rect x="575" y="370" width="85" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="580" y="385" font-family="Arial" font-size="10">Outputs:</text>
+  <text x="580" y="400" font-family="Arial" font-size="10">Protoporphyrin IX, H₂O₂</text>
+  
+  <!-- FECH reaction -->
+  <rect x="575" y="320" width="85" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="580" y="335" font-family="Arial" font-size="10">Inputs:</text>
+  <text x="580" y="350" font-family="Arial" font-size="10">Protoporphyrin IX, Fe²⁺</text>
+  
+  <rect x="775" y="350" width="90" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="780" y="365" font-family="Arial" font-size="10">Output:</text>
+  <text x="780" y="380" font-family="Arial" font-size="10">Heme B (Ferroheme b) + 2H⁺</text>
+  
+  <!-- COX10 reaction -->
+  <rect x="510" y="425" width="85" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="515" y="440" font-family="Arial" font-size="10">Inputs:</text>
+  <text x="515" y="455" font-family="Arial" font-size="10">Heme B, Farnesyl-PP</text>
+  
+  <rect x="725" y="450" width="90" height="35" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="730" y="465" font-family="Arial" font-size="10">Outputs:</text>
+  <text x="730" y="480" font-family="Arial" font-size="10">Heme O, Diphosphate</text>
+  
+  <!-- COX15 reaction -->
+  <rect x="525" y="525" width="70" height="25" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="530" y="540" font-family="Arial" font-size="10">Input: Heme O</text>
+  
+  <rect x="725" y="550" width="80" height="25" rx="5" ry="5" fill="#f8f8f8" stroke="#cccccc" stroke-width="1" opacity="0.8"/>
+  <text x="730" y="565" font-family="Arial" font-size="10">Output: Heme A</text>
+  
+  <!-- Molecular structures illustrations (simplified) -->
+  <!-- 5-ALA -->
+  <circle cx="210" y="375" r="6" fill="#ff8080" stroke="#000" stroke-width="1"/>
+  
+  <!-- PBG -->
+  <circle cx="210" y="275" r="6" fill="#ff8080" stroke="#000" stroke-width="1"/>
+  
+  <!-- Hydroxymethylbilane -->
+  <polygon points="280,225 290,220 290,230" fill="#ff8080" stroke="#000" stroke-width="1"/>
+  
+  <!-- Uroporphyrinogen III -->
+  <rect x="390" y="215" width="12" height="12" rx="2" ry="2" fill="#ff8080" stroke="#000" stroke-width="1"/>
+  
+  <!-- Coproporphyrinogen III -->
+  <rect x="490" y="270" width="12" height="12" rx="2" ry="2" fill="#ff8080" stroke="#000" stroke-width="1"/>
+  
+  <!-- Protoporphyrinogen IX -->
+  <rect x="490" y="370" width="12" height="12" rx="2" ry="2" fill="#ff8080" stroke="#000" stroke-width="1"/>
+  
+  <!-- Protoporphyrin IX -->
+  <rect x="590" y="385" width="12" height="12" rx="2" ry="2" fill="#ff8080" stroke="#000" stroke-width="1"/>
+  
+  <!-- Heme B -->
+  <circle cx="740" y="425" r="8" fill="#b22222" stroke="#000" stroke-width="1.5"/>
+  
+  <!-- Heme O -->
+  <circle cx="660" y="525" r="8" fill="#b22222" stroke="#000" stroke-width="1.5"/>
+  
+  <!-- Heme A - final product -->
+  <circle cx="700" y="590" r="10" fill="#b22222" stroke="#000" stroke-width="2"/>
+  <text x="715" y="595" font-family="Arial" font-size="12" font-weight="bold">Final Product</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="60" y="650" width="20" height="20" fill="#d5e8d4" stroke="#82b366" stroke-width="1"/>
+  <text x="90" y="665" font-family="Arial" font-size="12">Cytosolic enzymes (GO:0005829)</text>
+  
+  <rect x="300" y="650" width="20" height="20" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+  <text x="330" y="665" font-family="Arial" font-size="12">Mitochondrial intermembrane space enzymes (GO:0005758)</text>
+  
+  <rect x="60" y="680" width="20" height="20" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+  <text x="90" y="695" font-family="Arial" font-size="12">Mitochondrial matrix enzymes (GO:0005759)</text>
+  
+  <rect x="300" y="680" width="20" height="20" fill="#e1d5e7" stroke="#9673a6" stroke-width="1"/>
+  <text x="330" y="695" font-family="Arial" font-size="12">Mitochondrial matrix ALAS1</text>
+  
+  <rect x="550" y="650" width="20" height="20" fill="#f8f8f8" stroke="#cccccc" stroke-width="1"/>
+  <text x="580" y="665" font-family="Arial" font-size="12">Input/output compounds</text>
+  
+  <text x="550" y="695" font-family="Arial" font-size="12" font-style="italic">Enzyme protein names shown in bold, gene names in smaller text</text>
+</svg>

@@ -1,0 +1,121 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">
+    Regulation of Aggrephagy via Acetylation and Deacetylation of SQSTM1
+  </text>
+  
+  <!-- Cytosol compartment -->
+  <rect x="100" y="80" width="600" height="440" rx="20" ry="20" fill="#f0f8ff" stroke="#a0a0a0" stroke-width="2" opacity="0.7" />
+  <text x="130" y="110" font-family="Arial" font-size="18" font-style="italic">Cytosol (GO:0005829)</text>
+  
+  <!-- Process label -->
+  <text x="400" y="140" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Process: Aggrephagy (GO:0035973)</text>
+  
+  <!-- Membraneless organelle -->
+  <ellipse cx="270" cy="300" rx="120" ry="80" fill="#e6f2ff" stroke="#4682b4" stroke-width="3" stroke-dasharray="5,3" />
+  <text x="270" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Intracellular membraneless organelle</text>
+  <text x="270" y="250" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">(GO:0043232)</text>
+  
+  <!-- Autophagosome -->
+  <ellipse cx="580" cy="320" rx="150" ry="100" fill="#d1efd1" stroke="#228b22" stroke-width="2" />
+  <text x="580" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Autophagosome (GO:0005776)</text>
+  
+  <!-- SQSTM1 protein at different locations -->
+  <!-- SQSTM1 in cytosol - ubiquitin reader -->
+  <rect x="270" y="370" width="90" height="40" rx="10" ry="10" fill="#ffb366" stroke="#ff8c00" stroke-width="2" />
+  <text x="315" y="395" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SQSTM1</text>
+  <text x="315" y="420" font-family="Arial" font-size="11" text-anchor="middle">Ubiquitin reader activity</text>
+  
+  <!-- Process number 2 -->
+  <circle cx="355" y="365" r="12" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="355" y="369" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">2</text>
+  
+  <!-- SQSTM1 in membraneless organelle - molecular condensate scaffold -->
+  <rect x="220" y="280" width="90" height="40" rx="10" ry="10" fill="#ffb366" stroke="#ff8c00" stroke-width="2" />
+  <text x="265" y="300" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SQSTM1</text>
+  <text x="265" y="315" font-family="Arial" font-size="10" text-anchor="middle">Molecular condensate</text>
+  <text x="265" y="330" font-family="Arial" font-size="10" text-anchor="middle">scaffold activity</text>
+  
+  <!-- Process number 3 -->
+  <circle cx="215" y="275" r="12" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="215" y="279" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">3</text>
+  
+  <!-- SQSTM1 in autophagosome - protein adaptor -->
+  <rect x="560" y="320" width="90" height="40" rx="10" ry="10" fill="#ffb366" stroke="#ff8c00" stroke-width="2" />
+  <text x="605" y="340" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">SQSTM1</text>
+  <text x="605" y="355" font-family="Arial" font-size="11" text-anchor="middle">Protein adaptor</text>
+  
+  <!-- Process number 4 -->
+  <circle cx="645" y="315" r="12" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="645" y="319" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">4</text>
+  
+  <!-- KAT5 protein -->
+  <rect x="150" y="440" width="80" height="40" rx="10" ry="10" fill="#b3ccff" stroke="#4169e1" stroke-width="2" />
+  <text x="190" y="465" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">KAT5</text>
+  
+  <!-- Process number 1A -->
+  <circle cx="140" y="435" r="12" fill="#ffffff" stroke="#4169e1" stroke-width="1" />
+  <text x="140" y="439" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">1A</text>
+  
+  <!-- HDAC6 protein -->
+  <rect x="400" y="440" width="80" height="40" rx="10" ry="10" fill="#d1b3ff" stroke="#800080" stroke-width="2" />
+  <text x="440" y="465" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">HDAC6</text>
+  
+  <!-- Process number 1B -->
+  <circle cx="390" y="435" r="12" fill="#ffffff" stroke="#800080" stroke-width="1" />
+  <text x="390" y="439" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">1B</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- KAT5 acetylates SQSTM1 -->
+  <path d="M200 440 Q250 410 270 400" fill="none" stroke="#4169e1" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="220" y="410" font-family="Arial" font-size="13" text-anchor="middle" fill="#4169e1" font-weight="bold">Acetylates</text>
+  <text x="220" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#4169e1">(Promotes)</text>
+  
+  <!-- HDAC6 deacetylates SQSTM1 -->
+  <path d="M400 440 Q350 410 330 400" fill="none" stroke="#800080" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="370" y="410" font-family="Arial" font-size="13" text-anchor="middle" fill="#800080" font-weight="bold">Deacetylates</text>
+  <text x="370" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#800080">(Inhibits)</text>
+  
+  <!-- SQSTM1 ubiquitin reader to molecular condensate -->
+  <path d="M320 370 Q290 340 270 320" fill="none" stroke="#ff8c00" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- SQSTM1 molecular condensate to autophagosome adaptor -->
+  <path d="M310 290 Q430 290 550 320" fill="none" stroke="#ff8c00" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Flow indication arrows -->
+  <path d="M515 365 Q550 380 580 390 Q610 400 645 410" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrowhead)" />
+  <text x="590" y="430" font-family="Arial" font-size="12" text-anchor="middle">Aggrephagy progression</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="620" y="450" width="160" height="125" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="700" y="470" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <rect x="630" y="480" width="20" height="10" fill="#ffb366" stroke="#ff8c00" stroke-width="1" />
+  <text x="690" y="490" font-family="Arial" font-size="12" text-anchor="middle">SQSTM1 (Q13501)</text>
+  
+  <rect x="630" y="500" width="20" height="10" fill="#b3ccff" stroke="#4169e1" stroke-width="1" />
+  <text x="690" y="510" font-family="Arial" font-size="12" text-anchor="middle">KAT5 (Q92993)</text>
+  
+  <rect x="630" y="520" width="20" height="10" fill="#d1b3ff" stroke="#800080" stroke-width="1" />
+  <text x="690" y="530" font-family="Arial" font-size="12" text-anchor="middle">HDAC6 (Q9UBN7)</text>
+  
+  <line x1="630" y1="540" x2="650" y2="540" stroke="#000000" stroke-width="1.5" stroke-dasharray="4,2" />
+  <text x="690" y="545" font-family="Arial" font-size="12" text-anchor="middle">Process flow</text>
+  
+  <!-- Process description box -->
+  <rect x="130" y="490" width="440" height="80" rx="5" ry="5" fill="white" stroke="#a0a0a0" stroke-width="1" opacity="0.9" />
+  <text x="150" y="510" font-family="Arial" font-size="12" font-weight="bold">Pathway steps:</text>
+  <text x="150" y="530" font-family="Arial" font-size="12">1A: KAT5 acetylates SQSTM1 → Positive regulation of aggrephagy (GO:1905337)</text>
+  <text x="150" y="550" font-family="Arial" font-size="12">1B: HDAC6 deacetylates SQSTM1 → Negative regulation of aggrephagy (GO:1905336)</text>
+  <text x="150" y="570" font-family="Arial" font-size="12">2→3→4: SQSTM1 functions in detecting, organizing, and targeting aggregates for degradation</text>
+</svg>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="#f8f9fa" stroke="#a9a9a9" stroke-width="2"/>
+  
+  <!-- Lysosome outline -->
+  <ellipse cx="400" cy="350" rx="200" ry="150" fill="#ffe4e1" stroke="#ff6347" stroke-width="3"/>
+  
+  <!-- Lysosomal membrane label -->
+  <text x="400" y="210" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Lysosomal Membrane</text>
+  
+  <!-- Pathway components -->
+  
+  <!-- MAT2A and SAM production -->
+  <rect x="100" y="150" width="100" height="40" rx="5" ry="5" fill="#b3e0ff" stroke="#4682b4" stroke-width="2"/>
+  <text x="150" y="175" text-anchor="middle" font-family="Arial" font-size="14">MAT2A</text>
+  
+  <!-- S-adenosyl-L-methionine (SAM) -->
+  <ellipse cx="250" cy="170" rx="40" ry="20" fill="#ffff99" stroke="#ffd700" stroke-width="2"/>
+  <text x="250" y="175" text-anchor="middle" font-family="Arial" font-size="12">SAM</text>
+  
+  <!-- Arrow from MAT2A to SAM -->
+  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+  </marker>
+  <line x1="200" y1="170" x2="210" y2="170" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- BMT2 protein -->
+  <rect x="180" y="250" width="100" height="40" rx="5" ry="5" fill="#b3e0ff" stroke="#4682b4" stroke-width="2"/>
+  <text x="230" y="275" text-anchor="middle" font-family="Arial" font-size="14">BMT2</text>
+  
+  <!-- Arrow from SAM to BMT2 -->
+  <line x1="250" y1="190" x2="230" y2="250" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- PRMT1 protein -->
+  <rect x="330" y="250" width="100" height="40" rx="5" ry="5" fill="#b3e0ff" stroke="#4682b4" stroke-width="2"/>
+  <text x="380" y="275" text-anchor="middle" font-family="Arial" font-size="14">PRMT1</text>
+  
+  <!-- Arrow from SAM to PRMT1 -->
+  <line x1="250" y1="190" x2="330" y2="250" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- KICSTOR complex -->
+  <rect x="280" y="350" width="120" height="40" rx="5" ry="5" fill="#d8bfd8" stroke="#9932cc" stroke-width="2"/>
+  <text x="340" y="375" text-anchor="middle" font-family="Arial" font-size="14">KICSTOR</text>
+  
+  <!-- Arrow from BMT2 to KICSTOR -->
+  <line x1="230" y1="290" x2="280" y2="350" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- NPRL2 (GATOR1) -->
+  <rect x="450" y="350" width="120" height="40" rx="5" ry="5" fill="#ffb6c1" stroke="#dc143c" stroke-width="2"/>
+  <text x="510" y="375" text-anchor="middle" font-family="Arial" font-size="14">NPRL2 (GATOR1)</text>
+  
+  <!-- Arrow from KICSTOR to NPRL2 -->
+  <line x1="400" y1="370" x2="450" y2="370" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- RRAGA protein -->
+  <rect x="450" y="430" width="100" height="40" rx="5" ry="5" fill="#98fb98" stroke="#2e8b57" stroke-width="2"/>
+  <text x="500" y="455" text-anchor="middle" font-family="Arial" font-size="14">RRAGA</text>
+  
+  <!-- Arrow from PRMT1 to NPRL2 (negative regulation) -->
+  <line x1="400" y1="290" x2="510" y2="350" stroke="#FF0000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="440" y="320" font-family="Arial" font-size="12" fill="#FF0000">Inhibits</text>
+  
+  <!-- Arrow from NPRL2 to RRAGA (negative regulation) -->
+  <line x1="510" y1="390" x2="500" y2="430" stroke="#FF0000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  
+  <!-- mTOR/mTORC1 -->
+  <rect x="600" y="430" width="120" height="40" rx="5" ry="5" fill="#ff9966" stroke="#ff6600" stroke-width="2"/>
+  <text x="660" y="455" text-anchor="middle" font-family="Arial" font-size="14">mTOR/mTORC1</text>
+  
+  <!-- Arrow from RRAGA to mTORC1 -->
+  <line x1="550" y1="450" x2="600" y2="450" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cytosol label -->
+  <text x="100" y="100" font-family="Arial" font-size="16" font-weight="bold">Cytosol</text>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Activation of Canonical mTORC1 Signaling by PRMT1</text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial" font-size="16">in Response to S-adenosyl-L-methionine Influx (Human)</text>
+  
+  <!-- GTP on RRAGA -->
+  <ellipse cx="480" cy="410" rx="15" ry="10" fill="#90ee90" stroke="#2e8b57" stroke-width="1"/>
+  <text x="480" y="414" text-anchor="middle" font-family="Arial" font-size="10">GTP</text>
+  
+  <!-- Downstream signaling output label -->
+  <text x="660" y="480" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Active Signaling</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="570" width="600" height="60" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="400" y="585" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="120" y="595" width="20" height="20" fill="#b3e0ff" stroke="#4682b4" stroke-width="1"/>
+  <text x="150" y="610" font-family="Arial" font-size="12">Enzymes/Proteins</text>
+  
+  <rect x="220" y="595" width="20" height="20" fill="#d8bfd8" stroke="#9932cc" stroke-width="1"/>
+  <text x="280" y="610" font-family="Arial" font-size="12">Protein Complexes</text>
+  
+  <ellipse cx="350" cy="605" rx="10" ry="10" fill="#ffff99" stroke="#ffd700" stroke-width="1"/>
+  <text x="380" y="610" font-family="Arial" font-size="12">Metabolites</text>
+  
+  <line x1="430" y1="605" x2="450" y2="605" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="480" y="610" font-family="Arial" font-size="12">Activation</text>
+  
+  <line x1="520" y1="605" x2="540" y2="605" stroke="#FF0000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="580" y="610" font-family="Arial" font-size="12">Inhibition</text>
+</svg>

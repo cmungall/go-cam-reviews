@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Cell nucleus -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f8ff" stroke="#000080" stroke-width="2" opacity="0.8"/>
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" fill="#000080" font-weight="bold">Nucleus</text>
+  
+  <!-- Chromatin -->
+  <path d="M200,200 C250,180 300,230 350,210 C400,190 450,240 500,220 C550,200 600,250 650,230" 
+        stroke="#8b4513" stroke-width="8" fill="none" opacity="0.7"/>
+  <text x="200" y="180" font-family="Arial" font-size="14" fill="#8b4513" font-weight="bold">Chromatin</text>
+  
+  <!-- MSL2 binding to chromatin -->
+  <rect x="300" y="190" width="70" height="30" rx="5" ry="5" fill="#ff9999" stroke="#000" stroke-width="1"/>
+  <text x="335" y="210" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">MSL2</text>
+  <path d="M335,190 L335,170" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="335" y="160" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">Chromatin-protein</text>
+  <text x="335" y="170" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">adaptor activity</text>
+  
+  <!-- MSL3 recruited by MSL2 -->
+  <rect x="400" y="190" width="70" height="30" rx="5" ry="5" fill="#99ccff" stroke="#000" stroke-width="1"/>
+  <text x="435" y="210" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">MSL3</text>
+  <path d="M370,205 L400,205" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="435" y="160" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">Histone reader</text>
+  <text x="435" y="170" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">activity</text>
+  
+  <!-- MSL1 as adaptor -->
+  <rect x="500" y="190" width="70" height="30" rx="5" ry="5" fill="#99ff99" stroke="#000" stroke-width="1"/>
+  <text x="535" y="210" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">MSL1</text>
+  <path d="M470,205 L500,205" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="535" y="152" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">Protein-macromolecule</text>
+  <text x="535" y="162" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">adaptor activity</text>
+  
+  <!-- KAT8 acetyltransferase -->
+  <rect x="600" y="190" width="70" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#000" stroke-width="1"/>
+  <text x="635" y="210" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">KAT8</text>
+  <path d="M570,205 L600,205" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="635" y="152" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">H4K16</text>
+  <text x="635" y="162" font-family="Arial" font-size="9" text-anchor="middle" fill="#666">acetyltransferase activity</text>
+  
+  <!-- MSL Complex Label -->
+  <path d="M300,135 C420,95 570,95 670,135" stroke="#000" stroke-width="1" stroke-dasharray="5,3" fill="none"/>
+  <text x="480" y="90" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MSL Complex</text>
+  
+  <!-- Histone H4 -->
+  <circle cx="635" cy="270" r="25" fill="#ffffff" stroke="#000" stroke-width="1.5"/>
+  <text x="635" y="275" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">H4</text>
+  
+  <!-- Acetylation Arrow -->
+  <path d="M635,220 L635,245" stroke="#ff0000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="670" y="235" font-family="Arial" font-size="10" fill="#ff0000" font-style="italic">Acetylation</text>
+  
+  <!-- Acetylated Lysine 16 -->
+  <circle cx="635" cy="270" r="35" stroke="#ff0000" stroke-width="1.5" stroke-dasharray="3,2" fill="none"/>
+  <text x="635" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff0000">H4K16ac</text>
+  
+  <!-- Sequential Process Numbers -->
+  <circle cx="290" y="205" r="12" fill="#ffffff" stroke="#000" stroke-width="1"/>
+  <text x="290" y="209" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">1</text>
+  
+  <circle cx="390" y="205" r="12" fill="#ffffff" stroke="#000" stroke-width="1"/>
+  <text x="390" y="209" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">2</text>
+  
+  <circle cx="490" y="205" r="12" fill="#ffffff" stroke="#000" stroke-width="1"/>
+  <text x="490" y="209" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">3</text>
+  
+  <circle cx="590" y="205" r="12" fill="#ffffff" stroke="#000" stroke-width="1"/>
+  <text x="590" y="209" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">4</text>
+  
+  <circle cx="625" y="240" r="12" fill="#ffffff" stroke="#000" stroke-width="1"/>
+  <text x="625" y="244" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">5</text>
+  
+  <!-- Transcription Activation -->
+  <rect x="400" y="400" width="200" height="30" rx="5" ry="5" fill="#ffff99" stroke="#000" stroke-width="1"/>
+  <text x="500" y="420" font-family="Arial" font-size="12" text-anchor="middle">DNA-templated Transcription</text>
+  
+  <!-- Activation Arrow -->
+  <path d="M635,320 C635,350 550,370 500,400" stroke="#00cc00" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="580" y="360" font-family="Arial" font-size="12" fill="#00cc00" font-style="italic">Positive Regulation</text>
+  
+  <circle cx="565" y="370" r="12" fill="#ffffff" stroke="#000" stroke-width="1"/>
+  <text x="565" y="374" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">6</text>
+  
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+</svg>

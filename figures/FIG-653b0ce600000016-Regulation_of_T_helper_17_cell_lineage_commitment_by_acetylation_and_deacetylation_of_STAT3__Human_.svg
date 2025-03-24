@@ -1,0 +1,153 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#f9f9f9" />
+  
+  <!-- Cell Components -->
+  <!-- Extracellular Space -->
+  <rect x="50" y="50" width="700" height="150" fill="#e6f7ff" stroke="#0066cc" stroke-width="2" rx="5" />
+  <text x="70" y="75" font-family="Arial" font-size="18" font-weight="bold" fill="#0066cc">Extracellular Space</text>
+  
+  <!-- Plasma Membrane -->
+  <rect x="50" y="200" width="700" height="30" fill="#ffd700" stroke="#cc9900" stroke-width="2" />
+  <text x="70" y="222" font-family="Arial" font-size="18" font-weight="bold" fill="#996600">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="50" y="230" width="700" height="170" fill="#e6ffe6" stroke="#006600" stroke-width="2" />
+  <text x="70" y="250" font-family="Arial" font-size="18" font-weight="bold" fill="#006600">Cytoplasm</text>
+  
+  <!-- Nucleus -->
+  <rect x="150" y="420" width="500" height="180" fill="#ffe6e6" stroke="#cc0000" stroke-width="2" rx="50" ry="50" />
+  <text x="375" y="440" font-family="Arial" font-size="18" font-weight="bold" fill="#cc0000" text-anchor="middle">Nucleus</text>
+  
+  <!-- Pathway Elements -->
+  <!-- IL-6 in extracellular space -->
+  <circle cx="150" cy="120" r="30" fill="#b3d9ff" stroke="#0066cc" stroke-width="2" />
+  <text x="150" y="125" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">IL-6</text>
+  
+  <!-- IL-6R on membrane -->
+  <rect x="140" y="195" width="60" height="40" fill="#ffcc99" stroke="#ff6600" stroke-width="2" rx="10" ry="10" />
+  <text x="170" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">IL-6R</text>
+  
+  <!-- IL-6ST on membrane -->
+  <rect x="220" y="195" width="60" height="40" fill="#ffcc99" stroke="#ff6600" stroke-width="2" rx="10" ry="10" />
+  <text x="250" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">IL-6ST</text>
+  
+  <!-- JAK1 -->
+  <rect x="220" y="250" width="60" height="30" fill="#99cc99" stroke="#006600" stroke-width="2" rx="5" ry="5" />
+  <text x="250" y="270" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">JAK1</text>
+  
+  <!-- SOCS3 -->
+  <rect x="320" y="300" width="60" height="30" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5" />
+  <text x="350" y="320" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">SOCS3</text>
+  
+  <!-- STAT3 in cytoplasm -->
+  <circle cx="250" cy="330" r="25" fill="#99cc99" stroke="#006600" stroke-width="2" />
+  <text x="250" y="335" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">STAT3</text>
+  
+  <!-- STAT3 in nucleus -->
+  <circle cx="250" cy="490" r="25" fill="#99cc99" stroke="#006600" stroke-width="2" />
+  <text x="250" y="495" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">STAT3</text>
+  
+  <!-- EP300 -->
+  <rect x="350" y="450" width="60" height="30" fill="#cc99ff" stroke="#6600cc" stroke-width="2" rx="5" ry="5" />
+  <text x="380" y="470" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">EP300</text>
+  
+  <!-- BRD2 -->
+  <rect x="350" y="490" width="60" height="30" fill="#cc99ff" stroke="#6600cc" stroke-width="2" rx="5" ry="5" />
+  <text x="380" y="510" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">BRD2</text>
+  
+  <!-- LOXL3 -->
+  <rect x="350" y="530" width="60" height="30" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="5" ry="5" />
+  <text x="380" y="550" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">LOXL3</text>
+  
+  <!-- Chromatin -->
+  <rect x="480" y="490" width="100" height="20" fill="#ffccff" stroke="#cc66cc" stroke-width="2" />
+  <text x="530" y="505" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">Chromatin</text>
+  
+  <!-- Arrows -->
+  <!-- IL-6 binding to IL-6R -->
+  <line x1="150" y1="150" x2="170" y2="195" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="125" y="175" font-family="Arial" font-size="14" fill="#000000">Binding</text>
+  
+  <!-- IL-6R activating IL-6ST -->
+  <line x1="200" y1="215" x2="220" y2="215" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="210" y="200" font-family="Arial" font-size="14" fill="#000000">Activation</text>
+  
+  <!-- IL-6ST activating JAK1 -->
+  <line x1="250" y1="235" x2="250" y2="250" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="260" y="245" font-family="Arial" font-size="14" fill="#000000">Activation</text>
+  
+  <!-- JAK1 phosphorylating STAT3 -->
+  <line x1="250" y1="280" x2="250" y2="305" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="260" y="295" font-family="Arial" font-size="14" fill="#000000">Phosphorylation</text>
+  
+  <!-- SOCS3 inhibiting JAK1 -->
+  <line x1="320" y1="315" x2="280" y2="265" stroke="#ff0000" stroke-width="2" marker-end="url(#inhibitarrow)" />
+  <text x="290" y="285" font-family="Arial" font-size="14" fill="#ff0000">Inhibition</text>
+  
+  <!-- STAT3 translocation to nucleus -->
+  <line x1="250" y1="355" x2="250" y2="465" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5" />
+  <text x="260" y="410" font-family="Arial" font-size="16" fill="#000000">Nuclear Translocation</text>
+  
+  <!-- EP300 acetylating STAT3 -->
+  <line x1="350" y1="465" x2="275" y2="485" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="300" y="460" font-family="Arial" font-size="14" fill="#000000">Acetylation</text>
+  
+  <!-- BRD2 binding to acetylated STAT3 -->
+  <line x1="350" y1="505" x2="275" y2="495" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="310" y="515" font-family="Arial" font-size="14" fill="#000000">Binding</text>
+  
+  <!-- BRD2 facilitating STAT3 localization to chromatin -->
+  <line x1="410" y1="505" x2="480" y2="500" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="430" y="485" font-family="Arial" font-size="14" fill="#000000">Chromatin Localization</text>
+  
+  <!-- LOXL3 deacetylating STAT3 -->
+  <line x1="350" y1="545" x2="275" y2="505" stroke="#ff0000" stroke-width="2" marker-end="url(#inhibitarrow)" />
+  <text x="300" y="535" font-family="Arial" font-size="14" fill="#ff0000">Deacetylation</text>
+  
+  <!-- STAT3 promoting Th17 commitment -->
+  <rect x="550" y="480" width="140" height="60" fill="#ffcccc" stroke="#cc0066" stroke-width="2" rx="10" ry="10" />
+  <text x="620" y="500" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">Th17 Cell</text>
+  <text x="620" y="525" font-family="Arial" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">Lineage Commitment</text>
+  <line x1="275" y1="490" x2="550" y2="510" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="400" y="485" font-family="Arial" font-size="14" fill="#000000">Transcriptional Regulation</text>
+  
+  <!-- Markers for arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+    <marker id="inhibitarrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff0000" stroke-width="2" />
+      <polygon points="0 5, 10 0, 10 10" fill="#ff0000" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="580" y="50" width="160" height="150" fill="white" stroke="black" stroke-width="1" />
+  <text x="590" y="70" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Legend</text>
+  
+  <circle cx="600" cy="90" r="8" fill="#b3d9ff" stroke="#0066cc" stroke-width="1" />
+  <text x="615" y="95" font-family="Arial" font-size="14" fill="#000000">Cytokine</text>
+  
+  <rect x="590" y="105" width="16" height="10" fill="#ffcc99" stroke="#ff6600" stroke-width="1" rx="3" ry="3" />
+  <text x="615" y="115" font-family="Arial" font-size="14" fill="#000000">Receptor</text>
+  
+  <rect x="590" y="125" width="16" height="10" fill="#99cc99" stroke="#006600" stroke-width="1" rx="3" ry="3" />
+  <text x="615" y="135" font-family="Arial" font-size="14" fill="#000000">Kinase/TF</text>
+  
+  <rect x="590" y="145" width="16" height="10" fill="#cc99ff" stroke="#6600cc" stroke-width="1" rx="3" ry="3" />
+  <text x="615" y="155" font-family="Arial" font-size="14" fill="#000000">Enzyme</text>
+  
+  <rect x="590" y="165" width="16" height="10" fill="#ff9999" stroke="#cc0000" stroke-width="1" rx="3" ry="3" />
+  <text x="615" y="175" font-family="Arial" font-size="14" fill="#000000">Inhibitor</text>
+  
+  <line x1="590" y1="190" x2="610" y2="190" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="615" y="195" font-family="Arial" font-size="14" fill="#000000">Activation</text>
+  
+  <line x1="670" y1="190" x2="690" y2="190" stroke="#ff0000" stroke-width="2" marker-end="url(#inhibitarrow)" />
+  <text x="700" y="195" font-family="Arial" font-size="14" fill="#000000">Inhibition</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">Regulation of T-helper 17 Cell Lineage Commitment by STAT3 Modification</text>
+</svg>

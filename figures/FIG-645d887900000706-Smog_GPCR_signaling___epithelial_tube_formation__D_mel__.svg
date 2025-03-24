@@ -1,0 +1,107 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="650" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Smog GPCR Signaling in Epithelial Tube Formation (D. melanogaster)</text>
+  
+  <!-- Cell compartments -->
+  <!-- Extracellular space -->
+  <rect x="100" y="70" width="600" height="150" fill="#e6f7ff" stroke="#000000" stroke-width="2"/>
+  <text x="120" y="95" font-family="Arial" font-size="16" font-weight="bold">Extracellular Space</text>
+  
+  <!-- Plasma membrane -->
+  <rect x="100" y="220" width="600" height="60" fill="#ffd9b3" stroke="#000000" stroke-width="2"/>
+  <text x="120" y="245" font-family="Arial" font-size="16" font-weight="bold">Plasma Membrane</text>
+  
+  <!-- Cytosol -->
+  <rect x="100" y="280" width="600" height="220" fill="#e6ffe6" stroke="#000000" stroke-width="2"/>
+  <text x="120" y="305" font-family="Arial" font-size="16" font-weight="bold">Cytosol</text>
+  
+  <!-- Apical constriction process -->
+  <rect x="100" y="520" width="600" height="50" fill="#ffe6cc" stroke="#000000" stroke-width="2" rx="10" ry="10"/>
+  <text x="400" y="550" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Apical Constriction (GO:0003383)</text>
+  
+  <!-- Molecules -->
+  <!-- FOG -->
+  <circle cx="200" cy="140" r="30" fill="#ff9999" stroke="#000000" stroke-width="2"/>
+  <text x="200" y="145" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Fog</text>
+  
+  <!-- SMOG GPCR -->
+  <rect x="200" y="220" width="80" height="40" fill="#ffcc99" stroke="#000000" stroke-width="2" rx="5" ry="5"/>
+  <text x="240" y="245" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Smog</text>
+  
+  <!-- Cta (G protein) -->
+  <circle cx="240" cy="330" r="30" fill="#ccffcc" stroke="#000000" stroke-width="2"/>
+  <text x="240" y="335" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Cta</text>
+  
+  <!-- Rho1 -->
+  <circle cx="350" cy="380" r="30" fill="#b3d9ff" stroke="#000000" stroke-width="2"/>
+  <text x="350" y="385" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Rho1</text>
+  
+  <!-- Rok -->
+  <circle cx="500" cy="380" r="30" fill="#ffb3ff" stroke="#000000" stroke-width="2"/>
+  <text x="500" y="385" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Rok</text>
+  
+  <!-- Sqh -->
+  <circle cx="600" cy="450" r="30" fill="#e6ccff" stroke="#000000" stroke-width="2"/>
+  <text x="600" y="455" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Sqh</text>
+
+  <!-- Connections/Arrows -->
+  <!-- Fog to Smog -->
+  <line x1="200" y1="170" x2="220" y2="220" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Smog to Cta -->
+  <line x1="240" y1="260" x2="240" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cta to Rho1 -->
+  <line x1="270" y1="330" x2="320" y2="370" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Rho1 to Rok -->
+  <line x1="380" y1="380" x2="470" y2="380" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Rok to Sqh -->
+  <line x1="525" y1="400" x2="580" y2="430" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Sqh to Apical constriction -->
+  <line x1="600" y1="480" x2="600" y2="520" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Molecular Function Labels -->
+  <text x="150" y="120" font-family="Arial" font-size="12" fill="#333333" font-style="italic">Receptor ligand</text>
+  <text x="170" y="210" font-family="Arial" font-size="12" fill="#333333" font-style="italic">GPCR activity</text>
+  <text x="230" y="310" font-family="Arial" font-size="12" fill="#333333" font-style="italic">G protein activity</text>
+  <text x="350" y="360" font-family="Arial" font-size="12" fill="#333333" font-style="italic">GTPase activity</text>
+  <text x="500" y="360" font-family="Arial" font-size="12" fill="#333333" font-style="italic">Protein kinase</text>
+  <text x="600" y="430" font-family="Arial" font-size="12" fill="#333333" font-style="italic">ATPase activator</text>
+  
+  <!-- Gene IDs -->
+  <text x="200" y="160" font-family="Arial" font-size="10" fill="#666666">(FBgn0000719)</text>
+  <text x="240" y="260" font-family="Arial" font-size="10" fill="#666666">(FBgn0051660)</text>
+  <text x="240" y="350" font-family="Arial" font-size="10" fill="#666666">(FBgn0000384)</text>
+  <text x="350" y="400" font-family="Arial" font-size="10" fill="#666666">(FBgn0014020)</text>
+  <text x="500" y="400" font-family="Arial" font-size="10" fill="#666666">(FBgn0026181)</text>
+  <text x="600" y="470" font-family="Arial" font-size="10" fill="#666666">(FBgn0003514)</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="590" width="600" height="40" fill="#f9f9f9" stroke="#000000" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="610" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Legend</text>
+  <rect x="120" y="600" width="15" height="15" fill="#ff9999" stroke="#000000" stroke-width="1"/>
+  <text x="145" y="612" font-family="Arial" font-size="12">Receptor Ligand</text>
+  <rect x="220" y="600" width="15" height="15" fill="#ffcc99" stroke="#000000" stroke-width="1"/>
+  <text x="245" y="612" font-family="Arial" font-size="12">Receptor</text>
+  <rect x="320" y="600" width="15" height="15" fill="#ccffcc" stroke="#000000" stroke-width="1"/>
+  <text x="345" y="612" font-family="Arial" font-size="12">G Protein</text>
+  <rect x="420" y="600" width="15" height="15" fill="#b3d9ff" stroke="#000000" stroke-width="1"/>
+  <text x="445" y="612" font-family="Arial" font-size="12">GTPase</text>
+  <rect x="520" y="600" width="15" height="15" fill="#ffb3ff" stroke="#000000" stroke-width="1"/>
+  <text x="545" y="612" font-family="Arial" font-size="12">Kinase</text>
+  <rect x="620" y="600" width="15" height="15" fill="#e6ccff" stroke="#000000" stroke-width="1"/>
+  <text x="645" y="612" font-family="Arial" font-size="12">ATPase Activator</text>
+</svg>

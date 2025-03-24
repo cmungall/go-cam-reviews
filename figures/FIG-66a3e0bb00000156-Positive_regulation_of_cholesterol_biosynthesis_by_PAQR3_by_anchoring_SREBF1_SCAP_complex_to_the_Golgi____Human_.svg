@@ -1,0 +1,126 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Title -->
+  <rect width="800" height="600" fill="#ffffff" />
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Positive regulation of cholesterol biosynthesis by PAQR3</text>
+  
+  <!-- Cell Components -->
+  <!-- Nucleus -->
+  <ellipse cx="600" cy="450" rx="150" ry="120" fill="#E6F3F7" stroke="#2C3E50" stroke-width="2" />
+  <text x="600" y="550" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Nucleus</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="50" y="100" width="700" height="400" rx="20" ry="20" fill="#ECF9EC" stroke="#2C3E50" stroke-width="2" />
+  <text x="100" y="130" font-family="Arial" font-size="16" font-weight="bold">Cytoplasm</text>
+  
+  <!-- ER Membrane - Enhanced visibility -->
+  <rect x="100" y="185" width="600" height="30" rx="10" ry="10" fill="#FFE8DD" stroke="#FF9966" stroke-width="3" />
+  <text x="400" y="170" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">ER Membrane</text>
+  
+  <!-- Golgi Apparatus -->
+  <path d="M200,300 Q400,280 600,300" fill="none" stroke="#9966CC" stroke-width="4" />
+  <path d="M220,310 Q400,290 580,310" fill="none" stroke="#9966CC" stroke-width="4" />
+  <path d="M240,320 Q400,300 560,320" fill="none" stroke="#9966CC" stroke-width="4" />
+  <text x="400" y="350" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Golgi Apparatus</text>
+  
+  <!-- Proteins and Interactions -->
+  <!-- PAQR3 at Golgi -->
+  <circle cx="300" cy="310" r="25" fill="#FF99CC" stroke="#333333" stroke-width="1.5" />
+  <text x="300" y="313" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PAQR3</text>
+  
+  <!-- SREBF1-SCAP complex in ER -->
+  <circle cx="200" cy="200" r="30" fill="#66CCFF" stroke="#333333" stroke-width="1.5" />
+  <text x="200" y="195" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SREBF1</text>
+  <text x="200" y="210" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SCAP</text>
+  
+  <!-- INSIG1 in ER -->
+  <circle cx="120" cy="200" r="25" fill="#FFCC66" stroke="#333333" stroke-width="1.5" />
+  <text x="120" y="203" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">INSIG1</text>
+  
+  <!-- SREBF1-SCAP moving to Golgi via PAQR3 -->
+  <circle cx="400" cy="310" r="30" fill="#66CCFF" stroke="#333333" stroke-width="1.5" />
+  <text x="400" y="305" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SREBF1</text>
+  <text x="400" y="320" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SCAP</text>
+  
+  <!-- MBTPS2 at Golgi -->
+  <circle cx="480" cy="310" r="25" fill="#99CC99" stroke="#333333" stroke-width="1.5" />
+  <text x="480" y="313" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">MBTPS2</text>
+  
+  <!-- Cleaved SREBF1 -->
+  <circle cx="550" cy="350" r="25" fill="#6699FF" stroke="#333333" stroke-width="1.5" />
+  <text x="550" y="353" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SREBF1</text>
+  
+  <!-- KPNB1 in cytoplasm -->
+  <circle cx="520" cy="400" r="25" fill="#CC99FF" stroke="#333333" stroke-width="1.5" />
+  <text x="520" y="403" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">KPNB1</text>
+  
+  <!-- SREBF1 in nucleus -->
+  <circle cx="600" cy="450" r="25" fill="#6699FF" stroke="#333333" stroke-width="1.5" />
+  <text x="600" y="453" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SREBF1</text>
+  
+  <!-- Cholesterol symbol -->
+  <path d="M650,450 L650,470 L670,470 L670,450 Z" fill="#FFFF99" stroke="#333333" stroke-width="1.5" />
+  <text x="660" y="465" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Chol</text>
+  
+  <!-- Arrows and Interactions -->
+  <!-- PAQR3 anchoring SREBF1-SCAP -->
+  <path d="M325,310 L370,310" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- INSIG1 retaining SREBF1-SCAP in ER -->
+  <path d="M145,200 L170,200" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="4,2" />
+  
+  <!-- SREBF1-SCAP transport to Golgi -->
+  <path d="M230,210 Q312,250 370,310" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- MBTPS2 cleaving SREBF1 -->
+  <path d="M505,310 L525,330" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- KPNB1 importing SREBF1 to nucleus -->
+  <path d="M550,375 L520,380" fill="none" stroke="#000000" stroke-width="2" />
+  <path d="M520,425 L575,440" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- SREBF1 activating gene expression -->
+  <path d="M625,450 L640,450" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Text Labels for Processes -->
+  <text x="330" y="295" font-family="Arial" font-size="14" font-weight="bold" transform="rotate(-15, 330, 295)">anchors</text>
+  <text x="300" y="245" font-family="Arial" font-size="14" font-weight="bold" transform="rotate(-30, 300, 245)">transport</text>
+  <text x="515" y="325" font-family="Arial" font-size="14" font-weight="bold" transform="rotate(30, 515, 325)">cleaves</text>
+  <text x="495" y="410" font-family="Arial" font-size="14" font-weight="bold" text-anchor="end">nuclear import</text>
+  <text x="660" y="435" font-family="Arial" font-size="14" font-weight="bold">activates</text>
+  <text x="660" y="490" font-family="Arial" font-size="14" font-weight="bold">biosynthesis</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="520" width="700" height="60" fill="#F8F9F9" stroke="#2C3E50" stroke-width="1" />
+  <text x="60" y="540" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <circle cx="100" cy="560" r="10" fill="#FF99CC" stroke="#333333" stroke-width="1.5" />
+  <text x="115" y="564" font-family="Arial" font-size="14">PAQR3</text>
+  
+  <circle cx="180" cy="560" r="10" fill="#66CCFF" stroke="#333333" stroke-width="1.5" />
+  <text x="195" y="564" font-family="Arial" font-size="14">SREBF1-SCAP</text>
+  
+  <circle cx="280" cy="560" r="10" fill="#FFCC66" stroke="#333333" stroke-width="1.5" />
+  <text x="295" y="564" font-family="Arial" font-size="14">INSIG1</text>
+  
+  <circle cx="360" cy="560" r="10" fill="#99CC99" stroke="#333333" stroke-width="1.5" />
+  <text x="375" y="564" font-family="Arial" font-size="14">MBTPS2</text>
+  
+  <circle cx="440" cy="560" r="10" fill="#CC99FF" stroke="#333333" stroke-width="1.5" />
+  <text x="455" y="564" font-family="Arial" font-size="14">KPNB1</text>
+  
+  <path d="M520,555 L520,565 L530,565 L530,555 Z" fill="#FFFF99" stroke="#333333" stroke-width="1.5" />
+  <text x="545" y="564" font-family="Arial" font-size="14">Cholesterol</text>
+  
+  <line x1="590" y1="560" x2="620" y2="560" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="635" y="564" font-family="Arial" font-size="14">Activation</text>
+  
+  <line x1="670" y1="560" x2="700" y2="560" stroke="#000000" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="715" y="564" font-family="Arial" font-size="14">Inhibition</text>
+</svg>

@@ -1,0 +1,114 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="320" ry="240" fill="#f8f8f8" stroke="#333" stroke-width="2"/>
+  
+  <!-- Plasma membrane -->
+  <path d="M 100,300 Q 400,150 700,300 Q 400,450 100,300" fill="none" stroke="#333" stroke-width="4" stroke-dasharray="5,3"/>
+  <text x="720" y="320" font-family="Arial" font-size="14" text-anchor="start">Plasma membrane</text>
+  
+  <!-- Cytosol label -->
+  <text x="400" y="370" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Cytosol</text>
+  
+  <!-- ZDHHC5 (Palmitoyltransferase) -->
+  <rect x="150" y="225" width="100" height="40" rx="10" ry="10" fill="#b3e5fc" stroke="#0277bd" stroke-width="2"/>
+  <text x="200" y="250" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ZDHHC5</text>
+  
+  <!-- ZDHHC9 (Palmitoyltransferase) -->
+  <rect x="150" y="325" width="100" height="40" rx="10" ry="10" fill="#81d4fa" stroke="#0277bd" stroke-width="2"/>
+  <text x="200" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ZDHHC9</text>
+  
+  <!-- GSDMD (Gasdermin D) -->
+  <rect x="320" y="275" width="100" height="40" rx="10" ry="10" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="370" y="300" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">GSDMD</text>
+  
+  <!-- Palmitoylated GSDMD -->
+  <rect x="470" y="275" width="120" height="40" rx="10" ry="10" fill="#a5d6a7" stroke="#2e7d32" stroke-width="2"/>
+  <text x="530" y="295" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Palmitoylated</text>
+  <text x="530" y="310" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">GSDMD</text>
+  
+  <!-- CASP1 (Caspase-1) -->
+  <rect x="470" y="375" width="100" height="40" rx="10" ry="10" fill="#ffccbc" stroke="#bf360c" stroke-width="2"/>
+  <text x="520" y="400" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">CASP1</text>
+  
+  <!-- Cleaved GSDMD (N-terminal) -->
+  <rect x="470" y="180" width="120" height="40" rx="10" ry="10" fill="#81c784" stroke="#2e7d32" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="530" y="195" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">GSDMD</text>
+  <text x="530" y="210" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">N-terminal</text>
+  
+  <!-- Pore formed in the membrane -->
+  <circle cx="600" cy="225" r="30" fill="none" stroke="#d32f2f" stroke-width="3"/>
+  <circle cx="600" cy="225" r="15" fill="white" stroke="#d32f2f" stroke-width="3"/>
+  <text x="640" y="215" font-family="Arial" font-size="12" text-anchor="start">Wide pore</text>
+  <text x="640" y="230" font-family="Arial" font-size="12" text-anchor="start">channel</text>
+  
+  <!-- PI(4,5)P2 binding site -->
+  <circle cx="600" cy="225" r="40" fill="none" stroke="#9c27b0" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="640" y="245" font-family="Arial" font-size="12" text-anchor="start">PI(4,5)P2</text>
+  <text x="640" y="260" font-family="Arial" font-size="12" text-anchor="start">binding</text>
+  
+  <!-- Pyroptotic cell death representation -->
+  <path d="M 650,180 Q 670,190 680,180 Q 690,170 700,180 Q 710,190 720,180" stroke="#d32f2f" stroke-width="2" fill="none"/>
+  <text x="650" y="160" font-family="Arial" font-size="14" text-anchor="start" font-weight="bold" fill="#d32f2f">Pyroptosis</text>
+  <text x="650" y="175" font-family="Arial" font-size="10" text-anchor="start" fill="#d32f2f">Inflammatory cell death</text>
+  
+  <!-- Arrows -->
+  <!-- ZDHHC5 to GSDMD -->
+  <path d="M 250,245 L 285,275 L 320,285" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="260" y="260" font-family="Arial" font-size="10" text-anchor="start">Palmitoylation</text>
+  
+  <!-- ZDHHC9 to GSDMD -->
+  <path d="M 250,325 L 285,300 L 320,295" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="260" y="310" font-family="Arial" font-size="10" text-anchor="start">Palmitoylation</text>
+  
+  <!-- GSDMD to Palmitoylated GSDMD -->
+  <path d="M 420,295 H 470" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- CASP1 to Palmitoylated GSDMD (cleavage) -->
+  <path d="M 520,375 V 315" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="530" y="345" font-family="Arial" font-size="12" text-anchor="middle">Cleavage</text>
+  
+  <!-- Palmitoylated GSDMD to Cleaved GSDMD -->
+  <path d="M 530,275 V 220" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cleaved GSDMD to Pore -->
+  <path d="M 590,180 L 600,194" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="550" y="168" font-family="Arial" font-size="10" text-anchor="start">Pore formation</text>
+
+  <!-- Pore to Pyroptosis -->
+  <path d="M 640,215 L 670,180" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">GSDMD Palmitoylation by ZDHHC5 and ZDHHC9 Promotes Pyroptosis</text>
+  
+  <!-- Process Summary -->
+  <rect x="50" y="80" width="700" height="40" rx="5" ry="5" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+  <text x="400" y="105" font-family="Arial" font-size="12" text-anchor="middle">GSDMD palmitoylation by ZDHHC5 and ZDHHC9 enhances CASP1-mediated cleavage, promoting pore formation in plasma membrane and pyroptotic cell death</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="700" height="80" rx="5" ry="5" fill="#f5f5f5" stroke="#555" stroke-width="1"/>
+  <text x="60" y="520" font-family="Arial" font-size="14" font-weight="bold" text-anchor="start">Legend:</text>
+  
+  <!-- Legend items -->
+  <rect x="60" y="530" width="20" height="10" fill="#b3e5fc" stroke="#0277bd" stroke-width="1"/>
+  <text x="90" y="538" font-family="Arial" font-size="12" text-anchor="start">Palmitoyltransferases (ZDHHC5, ZDHHC9)</text>
+  
+  <rect x="60" y="550" width="20" height="10" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1"/>
+  <text x="90" y="558" font-family="Arial" font-size="12" text-anchor="start">Gasdermin D (GSDMD) and derivatives</text>
+  
+  <rect x="60" y="570" width="20" height="10" fill="#ffccbc" stroke="#bf360c" stroke-width="1"/>
+  <text x="90" y="578" font-family="Arial" font-size="12" text-anchor="start">Caspase-1 (CASP1)</text>
+  
+  <circle cx="390" y="535" r="6" fill="none" stroke="#9c27b0" stroke-width="1" stroke-dasharray="3,1"/>
+  <text x="405" y="538" font-family="Arial" font-size="12" text-anchor="start">PI(4,5)P2 binding</text>
+  
+  <circle cx="390" y="560" r="8" fill="none" stroke="#d32f2f" stroke-width="2"/>
+  <circle cx="390" y="560" r="4" fill="white" stroke="#d32f2f" stroke-width="2"/>
+  <text x="405" y="563" font-family="Arial" font-size="12" text-anchor="start">Pore formation</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

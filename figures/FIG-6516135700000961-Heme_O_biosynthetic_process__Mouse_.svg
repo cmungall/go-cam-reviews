@@ -1,0 +1,112 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  
+  <!-- Mitochondrion -->
+  <ellipse cx="400" cy="250" rx="250" ry="150" fill="#ffcca8" stroke="#996633" stroke-width="2"/>
+  <ellipse cx="400" cy="250" rx="200" ry="110" fill="#ffedbe" stroke="#996633" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Compartment labels -->
+  <text x="400" y="35" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Heme O Biosynthetic Process (Mouse)</text>
+  <text x="150" y="140" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2d6a31">Cytosol</text>
+  <text x="400" y="155" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#3a5e8c">Mitochondrial</text>
+  <text x="400" y="175" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#3a5e8c">Intermembrane Space</text>
+  <text x="400" y="260" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#994c48">Mitochondrial</text>
+  <text x="400" y="280" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#994c48">Matrix</text>
+  
+  <!-- Pathway Diagram -->
+  
+  <!-- Step 1: Alas1 - 5-aminolevulinate synthase in mitochondrial matrix -->
+  <circle cx="400" cy="350" r="30" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="400" y="355" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Alas1</text>
+  <path d="M370 350 L320 350" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="340" y="338" font-family="Arial" font-size="12">Succinyl-CoA +</text>
+  <text x="340" y="362" font-family="Arial" font-size="12">Glycine</text>
+  <path d="M430 350 L480 350" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="460" y="338" font-family="Arial" font-size="12">5-aminolevulinate</text>
+  
+  <!-- Transport to cytosol -->
+  <path d="M480 350 Q 500 300 520 250" stroke="#000" stroke-width="1.5" stroke-dasharray="5,2" marker-end="url(#arrowhead)"/>
+  <text x="520" y="270" font-family="Arial" font-size="12" fill="#666">Transport</text>
+  
+  <!-- Step 2: Alad - porphobilinogen synthase in cytosol -->
+  <circle cx="600" cy="200" r="30" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="600" y="205" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Alad</text>
+  <path d="M570 200 L520 200" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="540" y="188" font-family="Arial" font-size="12">5-aminolevulinate</text>
+  <path d="M630 200 L680 200" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="655" y="188" font-family="Arial" font-size="12">Porphobilinogen</text>
+  
+  <!-- Step 3: Hmbs - hydroxymethylbilane synthase in cytosol -->
+  <circle cx="600" cy="100" r="30" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Hmbs</text>
+  <path d="M600 170 L600 130" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="615" y="150" font-family="Arial" font-size="12">Porphobilinogen</text>
+  <path d="M570 100 L520 100" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="530" y="88" font-family="Arial" font-size="12">Preuroporphyrinogen</text>
+  
+  <!-- Step 4: Uros - uroporphyrinogen-III synthase in cytosol -->
+  <circle cx="450" cy="100" r="30" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="450" y="105" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Uros</text>
+  <path d="M450 130 L450 180" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="460" y="160" font-family="Arial" font-size="12">Uroporphyrinogen III</text>
+  
+  <!-- Step 5: Urod - uroporphyrinogen decarboxylase in cytosol -->
+  <circle cx="350" cy="100" r="30" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="350" y="105" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Urod</text>
+  <path d="M420 100 L380 100" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="320" y="130" font-family="Arial" font-size="12">Coproporphyrinogen III</text>
+  
+  <!-- Step 6: Cpox - coproporphyrinogen oxidase in mitochondrial intermembrane space -->
+  <circle cx="250" cy="200" r="30" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="250" y="205" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Cpox</text>
+  <path d="M350 130 L250 170" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="290" y="150" font-family="Arial" font-size="12" fill="#666">Import</text>
+  <path d="M220 200 L170 200" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="180" y="188" font-family="Arial" font-size="12">Protoporphyrinogen</text>
+  
+  <!-- Step 7: Ppox - protoporphyrinogen oxidase in mitochondrial intermembrane space -->
+  <circle cx="150" cy="300" r="30" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="150" y="305" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Ppox</text>
+  <path d="M150 270 L150 230" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M150 330 L150 380" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="165" y="360" font-family="Arial" font-size="12">Protoporphyrin</text>
+  
+  <!-- Step 8: Fech - ferrochelatase in mitochondrial matrix -->
+  <circle cx="250" cy="400" r="30" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="250" y="405" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Fech</text>
+  <path d="M180 400 L220 400" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="190" y="385" font-family="Arial" font-size="12">Fe²⁺</text>
+  <path d="M280 400 L330 400" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="310" y="385" font-family="Arial" font-size="12">Ferroheme b</text>
+  
+  <!-- Step 9: Cox10 - protoheme IX farnesyltransferase in mitochondrial matrix -->
+  <circle cx="400" cy="450" r="30" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="400" y="455" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Cox10</text>
+  <path d="M370 450 L320 450" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="320" y="432" font-family="Arial" font-size="12">Ferroheme b +</text>
+  <text x="320" y="450" font-family="Arial" font-size="12">Farnesyl</text>
+  <text x="320" y="468" font-family="Arial" font-size="12">diphosphate</text>
+  <path d="M430 450 L500 450" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="480" y="435" font-family="Arial" font-size="14" font-weight="bold">Heme O</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="525" width="700" height="25" fill="#f0f0f0" stroke="#333" stroke-width="1"/>
+  <text x="400" y="543" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Cellular Compartments</text>
+  
+  <rect x="100" y="560" width="20" height="20" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="130" y="575" font-family="Arial" font-size="14" text-anchor="start">Mitochondrial Matrix</text>
+  
+  <rect x="300" y="560" width="20" height="20" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="330" y="575" font-family="Arial" font-size="14" text-anchor="start">Mitochondrial Intermembrane Space</text>
+  
+  <rect x="610" y="560" width="20" height="20" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="640" y="575" font-family="Arial" font-size="14" text-anchor="start">Cytosol</text>
+</svg>

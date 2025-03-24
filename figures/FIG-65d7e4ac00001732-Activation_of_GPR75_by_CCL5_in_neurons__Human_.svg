@@ -1,0 +1,111 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Activation of GPR75 by CCL5 in Neurons (Human)</text>
+  
+  <!-- Cell outline -->
+  <path d="M100,150 C100,120 150,100 200,100 H600 C650,100 700,120 700,150 V450 C700,480 650,500 600,500 H200 C150,500 100,480 100,450 Z" fill="#f8f8f8" stroke="#000000" stroke-width="3" />
+  
+  <!-- Plasma membrane -->
+  <path d="M120,150 C120,130 160,120 200,120 H600 C640,120 680,130 680,150 V450 C680,470 640,480 600,480 H200 C160,480 120,470 120,450 Z" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="5,3" />
+  
+  <!-- Label: Neuron -->
+  <rect x="120" y="60" width="140" height="25" fill="#ffffff" stroke="none" rx="5" ry="5" opacity="0.9" />
+  <text x="150" y="80" font-family="Arial" font-size="18" font-style="italic" font-weight="bold">Neuron (CL:0000540)</text>
+  
+  <!-- Label: Extracellular space -->
+  <rect x="300" y="55" width="200" height="25" fill="#ffffff" stroke="none" rx="5" ry="5" opacity="0.9" />
+  <text x="400" y="75" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Extracellular space (GO:0005615)</text>
+  
+  <!-- Label: Plasma membrane -->
+  <rect x="130" y="155" width="240" height="25" fill="#ffffff" stroke="none" rx="5" ry="5" opacity="0.9" />
+  <text x="250" y="175" font-family="Arial" font-size="18" font-weight="bold">Plasma membrane (GO:0005886)</text>
+  
+  <!-- Label: Cytoplasm -->
+  <rect x="130" y="220" width="200" height="25" fill="#ffffff" stroke="none" rx="5" ry="5" opacity="0.9" />
+  <text x="230" y="240" font-family="Arial" font-size="18" font-weight="bold">Cytoplasm (GO:0005737)</text>
+  
+  <!-- CCL5 molecule -->
+  <circle cx="400" cy="90" r="30" fill="#FF9999" stroke="#000000" stroke-width="2">
+    <animate attributeName="fill" values="#FF9999;#FF7777;#FF9999" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <text x="400" y="95" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">CCL5</text>
+  <text x="400" y="110" font-family="Arial" font-size="12" text-anchor="middle">(P13501)</text>
+  
+  <!-- GPR75 receptor -->
+  <rect x="380" y="150" width="40" height="60" fill="#99CCFF" stroke="#000000" stroke-width="2" rx="5" ry="5">
+    <animate attributeName="fill" values="#99CCFF;#77AAEE;#99CCFF" dur="4s" repeatCount="indefinite" />
+  </rect>
+  <text x="400" y="180" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">GPR75</text>
+  <text x="400" y="195" font-family="Arial" font-size="12" text-anchor="middle">(O95800)</text>
+  
+  <!-- MAPK3/ERK1 -->
+  <rect x="300" y="300" width="80" height="40" fill="#99FF99" stroke="#000000" stroke-width="2" rx="10" ry="10">
+    <animate attributeName="fill" values="#99FF99;#77DD77;#99FF99" dur="4s" repeatCount="indefinite" />
+  </rect>
+  <text x="340" y="320" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MAPK3/ERK1</text>
+  <text x="340" y="335" font-family="Arial" font-size="12" text-anchor="middle">(P27361)</text>
+  
+  <!-- MAPK1/ERK2 -->
+  <rect x="500" y="300" width="80" height="40" fill="#99FF99" stroke="#000000" stroke-width="2" rx="10" ry="10">
+    <animate attributeName="fill" values="#99FF99;#77DD77;#99FF99" dur="4s" repeatCount="indefinite" />
+  </rect>
+  <text x="540" y="320" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">MAPK1/ERK2</text>
+  <text x="540" y="335" font-family="Arial" font-size="12" text-anchor="middle">(P28482)</text>
+  
+  <!-- Binding arrow CCL5 to GPR75 (Chemokine activity) -->
+  <path d="M400,120 L400,150" stroke="#FF0000" stroke-width="3" marker-end="url(#redArrow)" />
+  <circle cx="400" cy="135" r="8" fill="#FFFF99" stroke="#000000" stroke-width="1" />
+  <text x="417" y="140" font-family="Arial" font-size="14" font-weight="bold">1</text>
+  <text x="425" y="135" font-family="Arial" font-size="12" text-anchor="start">Chemokine activity</text>
+  
+  <!-- Activation arrows from GPR75 to MAPK3 -->
+  <path d="M400,210 L400,240 L340,240 L340,300" stroke="#0000FF" stroke-width="3" marker-end="url(#blueArrow)" />
+  <circle cx="340" cy="270" r="8" fill="#FFFF99" stroke="#000000" stroke-width="1" />
+  <text x="350" y="275" font-family="Arial" font-size="14" font-weight="bold">2</text>
+  
+  <!-- Activation arrows from GPR75 to MAPK1 -->
+  <path d="M400,210 L400,240 L540,240 L540,300" stroke="#0000FF" stroke-width="3" marker-end="url(#blueArrow)" />
+  <circle cx="540" cy="270" r="8" fill="#FFFF99" stroke="#000000" stroke-width="1" />
+  <text x="550" y="275" font-family="Arial" font-size="14" font-weight="bold">3</text>
+  
+  <!-- GPCR signaling label -->
+  <text x="455" y="242" font-family="Arial" font-size="12" text-anchor="middle">GPCR signaling pathway</text>
+  
+  <!-- ERK cascade box -->
+  <rect x="250" y="370" width="380" height="50" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="5,3" rx="10" ry="10" />
+  <text x="440" y="400" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic" font-weight="bold">ERK1 and ERK2 cascade (GO:0070371)</text>
+  
+  <!-- Arrowhead definitions -->
+  <defs>
+    <marker id="redArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF0000" />
+    </marker>
+    <marker id="blueArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0000FF" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="570" y="430" width="200" height="150" fill="#ffffff" stroke="#000000" stroke-width="1" rx="5" ry="5" />
+  <text x="670" y="450" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="590" y="470" r="10" fill="#FF9999" stroke="#000000" stroke-width="1" />
+  <text x="615" y="475" font-family="Arial" font-size="12" dominant-baseline="middle">Chemokine (CCL5)</text>
+  
+  <rect x="580" y="490" width="20" height="20" fill="#99CCFF" stroke="#000000" stroke-width="1" rx="2" ry="2" />
+  <text x="615" y="505" font-family="Arial" font-size="12" dominant-baseline="middle">GPCR (GPR75)</text>
+  
+  <rect x="580" y="520" width="20" height="20" fill="#99FF99" stroke="#000000" stroke-width="1" rx="5" ry="5" />
+  <text x="615" y="535" font-family="Arial" font-size="12" dominant-baseline="middle">Kinase (MAPK1/3)</text>
+  
+  <circle cx="590" y="550" r="8" fill="#FFFF99" stroke="#000000" stroke-width="1" />
+  <text x="615" y="555" font-family="Arial" font-size="12" dominant-baseline="middle">Interaction points</text>
+  
+  <!-- Arrow legend -->
+  <line x1="580" y1="570" x2="600" y2="570" stroke="#FF0000" stroke-width="3" marker-end="url(#redArrow)" />
+  <text x="615" y="575" font-family="Arial" font-size="12" dominant-baseline="middle">Chemokine Activation</text>
+</svg>

@@ -1,0 +1,103 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell membrane and components -->
+  <rect x="100" y="100" width="600" height="400" rx="50" ry="50" fill="#f8f9fa" stroke="#2c3e50" stroke-width="3" stroke-dasharray="10,5" />
+  <ellipse cx="400" cy="100" rx="250" ry="30" fill="#e6f7ff" stroke="#2c3e50" stroke-width="2" />
+  <text x="400" y="105" font-family="Arial" font-size="18" text-anchor="middle" fill="#2c3e50">Extracellular Space</text>
+  
+  <!-- Cell membrane -->
+  <path d="M100,300 Q400,250 700,300" fill="none" stroke="#2c3e50" stroke-width="4" />
+  <text x="400" y="230" font-family="Arial" font-size="18" text-anchor="middle" fill="#2c3e50">Plasma Membrane</text>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="400" rx="150" ry="80" fill="#e6e6fa" stroke="#2c3e50" stroke-width="2" />
+  <text x="400" y="400" font-family="Arial" font-size="18" text-anchor="middle" fill="#2c3e50">Nucleus</text>
+  
+  <!-- MSTN (GDF8) in extracellular space -->
+  <circle cx="250" cy="150" r="30" fill="#ff9999" stroke="#c0392b" stroke-width="2" />
+  <text x="250" y="155" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">MSTN</text>
+  <text x="250" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">(Cytokine)</text>
+  
+  <!-- ACVR2B receptor -->
+  <rect x="300" y="270" width="60" height="30" rx="5" ry="5" fill="#ff9966" stroke="#d35400" stroke-width="2" />
+  <text x="330" y="290" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">ACVR2B</text>
+  
+  <!-- TGFBR1 receptor -->
+  <rect x="400" y="270" width="60" height="30" rx="5" ry="5" fill="#ff9966" stroke="#d35400" stroke-width="2" />
+  <text x="430" y="290" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">TGFBR1</text>
+  
+  <!-- SMAD2 in nucleus -->
+  <rect x="330" y="370" width="60" height="30" rx="5" ry="5" fill="#99cc99" stroke="#27ae60" stroke-width="2" />
+  <text x="360" y="390" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">SMAD2</text>
+  
+  <!-- SMAD3 in nucleus -->
+  <rect x="410" y="370" width="60" height="30" rx="5" ry="5" fill="#99cc99" stroke="#27ae60" stroke-width="2" />
+  <text x="440" y="390" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">SMAD3</text>
+  
+  <!-- MMP2 in extracellular space -->
+  <circle cx="550" cy="150" r="30" fill="#99ccff" stroke="#2980b9" stroke-width="2" />
+  <text x="550" y="155" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">MMP2</text>
+  <text x="550" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">(Endopeptidase)</text>
+  
+  <!-- Signaling arrows -->
+  <!-- MSTN to ACVR2B -->
+  <path d="M265,180 Q290,230 310,270" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="285" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#c0392b">Binding</text>
+  
+  <!-- ACVR2B to TGFBR1 -->
+  <path d="M360,285 L400,285" fill="none" stroke="#d35400" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="380" y="275" font-family="Arial" font-size="12" text-anchor="middle" fill="#d35400">Activation</text>
+  
+  <!-- TGFBR1 to SMAD2/3 -->
+  <path d="M430,300 L430,335 Q430,345 390,360" fill="none" stroke="#d35400" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M430,300 L430,335 Q430,345 440,360" fill="none" stroke="#d35400" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="410" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#d35400">Phosphorylation</text>
+  
+  <!-- SMAD2/3 to MMP2 -->
+  <path d="M370,370 C370,320 460,260 490,190 Q500,170 520,160" fill="none" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M440,370 C440,340 470,270 500,200 Q510,180 530,170" fill="none" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="450" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#27ae60">Transcriptional Regulation</text>
+  
+  <!-- Label for process -->
+  <rect x="250" y="450" width="300" height="40" rx="10" ry="10" fill="#f9e79f" stroke="#f39c12" stroke-width="2" />
+  <text x="400" y="475" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#2c3e50">Trophoblast Cell Migration</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Cell label -->
+  <text x="150" y="140" font-family="Arial" font-size="20" font-weight="bold" fill="#2c3e50">Trophoblast Cell</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">GDF8 (MSTN) Role in Trophoblast Invasion</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="520" width="600" height="100" rx="10" ry="10" fill="#f8f9fa" stroke="#2c3e50" stroke-width="2" />
+  <text x="400" y="540" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="130" cy="560" r="10" fill="#ff9999" stroke="#c0392b" stroke-width="1" />
+  <text x="145" y="565" font-family="Arial" font-size="14" fill="#2c3e50">Cytokine (MSTN)</text>
+  
+  <rect x="230" y="555" width="20" height="10" rx="2" ry="2" fill="#ff9966" stroke="#d35400" stroke-width="1" />
+  <text x="255" y="565" font-family="Arial" font-size="14" fill="#2c3e50">Receptors</text>
+  
+  <rect x="330" y="555" width="20" height="10" rx="2" ry="2" fill="#99cc99" stroke="#27ae60" stroke-width="1" />
+  <text x="355" y="565" font-family="Arial" font-size="14" fill="#2c3e50">Transcription Factors</text>
+  
+  <circle cx="470" cy="560" r="10" fill="#99ccff" stroke="#2980b9" stroke-width="1" />
+  <text x="485" y="565" font-family="Arial" font-size="14" fill="#2c3e50">Enzyme (MMP2)</text>
+  
+  <line x1="550" y1="560" x2="580" y2="560" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="590" y="565" font-family="Arial" font-size="14" fill="#2c3e50">Signaling</text>
+  
+  <text x="130" y="590" font-family="Arial" font-size="14" fill="#2c3e50">Compartments:</text>
+  <rect x="230" y="585" width="20" height="10" fill="#e6f7ff" stroke="#2c3e50" stroke-width="1" />
+  <text x="255" y="590" font-family="Arial" font-size="14" fill="#2c3e50">Extracellular Space</text>
+  
+  <rect x="400" y="585" width="20" height="10" fill="#e6e6fa" stroke="#2c3e50" stroke-width="1" />
+  <text x="425" y="590" font-family="Arial" font-size="14" fill="#2c3e50">Nucleus</text>
+</svg>

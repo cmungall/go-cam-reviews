@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background for clarity -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Cell membrane -->
+  <rect x="100" y="200" width="600" height="25" fill="#F5D7B5" stroke="#996633" stroke-width="2" />
+  <text x="120" y="218" font-family="Arial" font-size="16" fill="#000000" font-weight="bold">Plasma Membrane (GO:0005886)</text>
+  
+  <!-- Cell compartments labels -->
+  <text x="400" y="170" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#000000">Extracellular Space (GO:0005615)</text>
+  <text x="400" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#000000">Cytosol (GO:0005829)</text>
+  
+  <!-- ADCYAP1 (P18509) in extracellular space -->
+  <circle cx="250" cy="120" r="35" fill="#FF9999" stroke="#CC0000" stroke-width="2" />
+  <text x="250" y="120" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">ADCYAP1</text>
+  <text x="250" y="138" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(P18509)</text>
+  
+  <!-- Step 1 indicator -->
+  <circle cx="200" cy="120" r="15" fill="#6666CC" stroke="#000000" stroke-width="1" />
+  <text x="200" y="125" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">1</text>
+  
+  <!-- VIPR2 receptor (P41587) in membrane -->
+  <rect x="230" y="190" width="120" height="45" rx="5" ry="5" fill="#99CCFF" stroke="#0066CC" stroke-width="2" />
+  <text x="290" y="218" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">VIPR2</text>
+  <text x="290" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(P41587)</text>
+  
+  <!-- Step 2 indicator -->
+  <circle cx="200" cy="212" r="15" fill="#6666CC" stroke="#000000" stroke-width="1" />
+  <text x="200" y="217" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2</text>
+  
+  <!-- G protein GNAS (Q5JWF2) -->
+  <polygon points="290,280 340,305 290,330 240,305" fill="#CCFF99" stroke="#66CC00" stroke-width="2" />
+  <text x="290" y="305" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">GNAS</text>
+  <text x="290" y="323" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Q5JWF2)</text>
+  
+  <!-- Step 3 indicator -->
+  <circle cx="200" cy="305" r="15" fill="#6666CC" stroke="#000000" stroke-width="1" />
+  <text x="200" y="310" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">3</text>
+  
+  <!-- ADCY6 (O43306) -->
+  <rect x="400" y="350" width="130" height="50" rx="10" ry="10" fill="#FFCC99" stroke="#FF6600" stroke-width="2" />
+  <text x="465" y="375" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">ADCY6</text>
+  <text x="465" y="395" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(O43306)</text>
+  
+  <!-- Step 4 indicator -->
+  <circle cx="380" y="375" r="15" fill="#6666CC" stroke="#000000" stroke-width="1" />
+  <text x="380" y="380" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">4</text>
+  
+  <!-- cAMP produced -->
+  <circle cx="600" cy="375" r="30" fill="#9999FF" stroke="#6600CC" stroke-width="2" />
+  <text x="600" y="380" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">cAMP</text>
+  <text x="600" y="398" font-family="Arial" font-size="10" text-anchor="middle" fill="#000000">(CHEBI:17489)</text>
+  
+  <!-- Pathway arrows with improved appearance -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <!-- Arrow from ADCYAP1 to VIPR2 -->
+  <line x1="250" y1="155" x2="280" y2="190" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" />
+  <!-- Curved directional flow arrow -->
+  <path d="M 260,160 C 270,170 275,175 280,180" fill="none" stroke="#3333AA" stroke-width="2" stroke-dasharray="4,2" />
+  <polygon points="280,180 278,172 272,178" fill="#3333AA" />
+  
+  <!-- Text for the interaction -->
+  <rect x="140" y="160" width="150" height="40" rx="5" ry="5" fill="#EEEEFF" stroke="#AAAACC" stroke-width="1" opacity="0.9" />
+  <text x="215" y="175" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000066">Neuropeptide</text>
+  <text x="215" y="190" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000066">hormone activity</text>
+  <text x="215" y="205" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">(GO:0005184)</text>
+  
+  <!-- Arrow from VIPR2 to GNAS -->
+  <line x1="290" y1="235" x2="290" y2="270" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" />
+  <!-- Curved directional flow arrow -->
+  <path d="M 290,245 C 295,255 295,260 290,265" fill="none" stroke="#3333AA" stroke-width="2" stroke-dasharray="4,2" />
+  <polygon points="290,265 297,260 295,255" fill="#3333AA" />
+  
+  <!-- Text for the interaction -->
+  <rect x="310" y="240" width="160" height="40" rx="5" ry="5" fill="#EEEEFF" stroke="#AAAACC" stroke-width="1" opacity="0.9" />
+  <text x="390" y="255" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000066">PACAP receptor</text>
+  <text x="390" y="270" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000066">activity</text>
+  <text x="390" y="285" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">(GO:0001634)</text>
+  
+  <!-- Arrow from GNAS to ADCY6 -->
+  <line x1="330" y1="315" x2="400" y2="355" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" />
+  <!-- Curved directional flow arrow -->
+  <path d="M 345,330 C 355,335 365,340 375,345" fill="none" stroke="#3333AA" stroke-width="2" stroke-dasharray="4,2" />
+  <polygon points="375,345 368,339 370,347" fill="#3333AA" />
+  
+  <!-- Text for the interaction -->
+  <rect x="310" y="320" width="150" height="25" rx="5" ry="5" fill="#EEEEFF" stroke="#AAAACC" stroke-width="1" opacity="0.9" />
+  <text x="385" y="337" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000066">G protein activity</text>
+  <text x="385" y="352" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">(GO:0003925)</text>
+  
+  <!-- Arrow from ADCY6 to cAMP -->
+  <line x1="530" y1="375" x2="565" y2="375" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)" />
+  <!-- Curved directional flow arrow -->
+  <path d="M 540,375 C 545,375 550,375 555,375" fill="none" stroke="#3333AA" stroke-width="2" stroke-dasharray="4,2" />
+  <polygon points="555,375 547,372 547,378" fill="#3333AA" />
+  
+  <!-- Text for the interaction -->
+  <rect x="475" y="315" width="150" height="40" rx="5" ry="5" fill="#EEEEFF" stroke="#AAAACC" stroke-width="1" opacity="0.9" />
+  <text x="550" y="330" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000066">Adenylate cyclase</text>
+  <text x="550" y="345" font-family="Arial" font-size="13" font-weight="bold" text-anchor="middle" fill="#000066">activity</text>
+  <text x="550" y="360" font-family="Arial" font-size="10" text-anchor="middle" fill="#333333">(GO:0004016)</text>
+  
+  <!-- Title of the pathway -->
+  <text x="400" y="50" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#000000">Signaling by PACAP/ADCYAP1 mediated by VIPR2 receptor</text>
+  <text x="400" y="80" font-family="Arial" font-size="18" font-style="italic" text-anchor="middle" fill="#000000">Adenylate cyclase-activating G protein-coupled receptor signaling pathway (GO:0007189)</text>
+  
+  <!-- Process flow explanation -->
+  <rect x="580" y="480" width="200" height="100" rx="10" ry="10" fill="#FFFFDD" stroke="#CCCC99" stroke-width="1" />
+  <text x="680" y="500" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Process Flow:</text>
+  <text x="680" y="520" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">1. ADCYAP1 secretion</text>
+  <text x="680" y="540" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">2. VIPR2 receptor binding</text>
+  <text x="680" y="560" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">3. G protein activation</text>
+  <text x="680" y="580" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">4. cAMP production</text>
+  
+  <!-- Citation note -->
+  <text x="130" y="580" font-family="Arial" font-size="10" fill="#666666" font-style="italic">Based on GO-CAM model: gomodel:66e382fb00000449</text>
+</svg>

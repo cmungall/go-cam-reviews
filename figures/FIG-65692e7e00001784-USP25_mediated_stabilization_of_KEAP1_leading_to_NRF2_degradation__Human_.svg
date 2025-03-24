@@ -1,0 +1,92 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline with cytoplasm and nucleus -->
+  <ellipse cx="400" cy="320" rx="380" ry="260" fill="#f9f9f9" stroke="#333" stroke-width="3"/>
+  <ellipse cx="250" cy="370" rx="180" ry="150" fill="#e6efff" stroke="#333" stroke-width="2.5"/>
+  
+  <!-- Labels for cellular compartments -->
+  <text x="550" y="220" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Cytoplasm</text>
+  <text x="250" y="370" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">Nucleus</text>
+  
+  <!-- USP25 protein -->
+  <rect x="450" y="250" width="100" height="50" rx="10" ry="10" fill="#c6e48b" stroke="#333" stroke-width="2.5"/>
+  <text x="500" y="280" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">USP25</text>
+  
+  <!-- KEAP1 protein -->
+  <rect x="450" y="350" width="100" height="50" rx="10" ry="10" fill="#ffb347" stroke="#333" stroke-width="2.5"/>
+  <text x="500" y="380" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">KEAP1</text>
+  
+  <!-- RBX1 protein -->
+  <rect x="580" y="400" width="100" height="50" rx="10" ry="10" fill="#a4c2f4" stroke="#333" stroke-width="2.5"/>
+  <text x="630" y="430" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">RBX1</text>
+  
+  <!-- NRF2 protein in cytoplasm -->
+  <rect x="320" y="400" width="100" height="50" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2.5"/>
+  <text x="370" y="430" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">NRF2</text>
+  
+  <!-- NRF2 protein in nucleus -->
+  <rect x="200" y="300" width="100" height="50" rx="10" ry="10" fill="#ff9999" stroke="#333" stroke-width="2.5"/>
+  <text x="250" y="330" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">NRF2</text>
+  
+  <!-- Deubiquitination arrow from USP25 to KEAP1 -->
+  <line x1="500" y1="300" x2="500" y2="350" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <rect x="505" y="310" width="120" height="40" fill="white" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="510" y="330" font-family="Arial" font-size="15" font-weight="bold" fill="#333">Deubiquitinates</text>
+  <text x="510" y="345" font-family="Arial" font-size="13" fill="#333">(GO:0101005)</text>
+  
+  <!-- Ubiquitination arrow from KEAP1 to NRF2 -->
+  <line x1="450" y1="375" x2="420" y2="400" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <rect x="380" y="350" width="100" height="50" fill="white" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="385" y="370" font-family="Arial" font-size="15" font-weight="bold" fill="#333">Adaptor for</text>
+  <text x="385" y="390" font-family="Arial" font-size="15" font-weight="bold" fill="#333">ubiquitination</text>
+  <text x="385" y="405" font-family="Arial" font-size="13" fill="#333">(GO:1990756)</text>
+  
+  <!-- Ubiquitination arrow from RBX1 to NRF2 -->
+  <line x1="580" y1="425" x2="420" y2="425" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <rect x="460" y="390" width="120" height="40" fill="white" fill-opacity="0.8" rx="5" ry="5"/>
+  <text x="465" y="410" font-family="Arial" font-size="15" font-weight="bold" fill="#333">Ubiquitinates</text>
+  <text x="465" y="425" font-family="Arial" font-size="13" fill="#333">(GO:0061630, K48-linked)</text>
+  
+  <!-- Degradation symbol for NRF2 -->
+  <path d="M 370,450 L 390,480 L 350,480 Z" fill="#333" stroke="#333" stroke-width="2"/>
+  <text x="370" y="500" font-family="Arial" font-size="15" font-weight="bold" fill="#333" text-anchor="middle">Degradation</text>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Process labels -->
+  <rect x="50" y="30" width="700" height="80" fill="white" stroke="#333" stroke-width="1.5" rx="10" ry="10"/>
+  <text x="400" y="55" font-family="Arial" font-size="20" font-weight="bold" fill="#333" text-anchor="middle">USP25-mediated stabilization of KEAP1 leading to NRF2 degradation</text>
+  <text x="400" y="85" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">Negative regulation of response to oxidative stress (GO:1902883)</text>
+  
+  <!-- Summary box -->
+  <rect x="50" y="500" width="700" height="70" fill="#f0f0f0" stroke="#333" stroke-width="1.5" rx="10" ry="10"/>
+  <text x="400" y="525" font-family="Arial" font-size="15" fill="#333" text-anchor="middle">
+    In this pathway, USP25 deubiquitinates and stabilizes KEAP1, which serves as an adaptor for the ubiquitination
+  </text>
+  <text x="400" y="545" font-family="Arial" font-size="15" fill="#333" text-anchor="middle">
+    of NRF2 by RBX1. This leads to NRF2 degradation, negatively regulating the cellular response to oxidative stress.
+  </text>
+  
+  <!-- Legend -->
+  <rect x="580" y="130" width="180" height="120" fill="white" stroke="#333" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="590" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Legend</text>
+  
+  <rect x="590" y="160" width="20" height="15" fill="#c6e48b" stroke="#333" stroke-width="1"/>
+  <text x="620" y="172" font-family="Arial" font-size="14" fill="#333">USP25</text>
+  <line x="590" y="177" x2="740" y2="177" stroke="#ddd" stroke-width="1"/>
+  
+  <rect x="590" y="185" width="20" height="15" fill="#ffb347" stroke="#333" stroke-width="1"/>
+  <text x="620" y="197" font-family="Arial" font-size="14" fill="#333">KEAP1</text>
+  <line x="590" y="202" x2="740" y2="202" stroke="#ddd" stroke-width="1"/>
+  
+  <rect x="590" y="210" width="20" height="15" fill="#a4c2f4" stroke="#333" stroke-width="1"/>
+  <text x="620" y="222" font-family="Arial" font-size="14" fill="#333">RBX1</text>
+  <line x="590" y="227" x2="740" y2="227" stroke="#ddd" stroke-width="1"/>
+  
+  <rect x="590" y="235" width="20" height="15" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="620" y="247" font-family="Arial" font-size="14" fill="#333">NRF2 (NFE2L2)</text>
+</svg>

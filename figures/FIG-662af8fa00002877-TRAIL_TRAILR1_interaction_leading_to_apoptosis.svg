@@ -1,0 +1,123 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell boundaries and compartments -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f8f8f8" stroke="#666" stroke-width="2"/>
+  
+  <!-- Extracellular space label -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Extracellular Space (GO:0005615)</text>
+  
+  <!-- Cell components -->
+  <!-- Plasma membrane -->
+  <path d="M50,50 Q400,30 750,50" stroke="#333" stroke-width="3" fill="none"/>
+  <text x="150" y="42" text-anchor="middle" font-family="Arial" font-size="12">Plasma Membrane</text>
+  
+  <!-- Plasma membrane raft -->
+  <rect x="300" y="40" width="200" height="20" rx="5" ry="5" fill="#b3d9ff" stroke="#666" stroke-width="1"/>
+  <text x="400" y="54" text-anchor="middle" font-family="Arial" font-size="12">Plasma Membrane Raft (GO:0044853)</text>
+  
+  <!-- Golgi apparatus -->
+  <ellipse cx="200" cy="200" rx="80" ry="50" fill="#ffcc99" stroke="#666" stroke-width="2"/>
+  <text x="200" y="185" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Golgi Apparatus</text>
+  <text x="200" y="205" text-anchor="middle" font-family="Arial" font-size="12">(GO:0005794)</text>
+  
+  <!-- Cytoplasm label -->
+  <text x="400" y="300" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Cytoplasm (GO:0005737)</text>
+  
+  <!-- Pathway components -->
+  <!-- TRAIL in extracellular space -->
+  <circle cx="400" cy="20" r="20" fill="#ff9999" stroke="#333" stroke-width="2"/>
+  <text x="400" y="23" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">TRAIL</text>
+  <text x="400" y="35" text-anchor="middle" font-family="Arial" font-size="10">(TNFSF10)</text>
+  
+  <!-- TRAIL Receptor TRAILR1 -->
+  <rect x="375" y="40" width="50" height="20" rx="5" ry="5" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="400" y="54" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">TRAILR1</text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial" font-size="9">(TNFRSF10A)</text>
+  
+  <!-- ZDHHC3 in Golgi -->
+  <rect x="180" y="180" width="40" height="20" rx="5" ry="5" fill="#ccff99" stroke="#333" stroke-width="2"/>
+  <text x="200" y="193" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">ZDHHC3</text>
+  
+  <!-- Palmitoylation arrow -->
+  <path d="M220,180 Q260,120 360,60" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="280" y="120" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Palmitoylation</text>
+  <text x="280" y="135" text-anchor="middle" font-family="Arial" font-size="10" font-style="italic">(GO:0016409)</text>
+  
+  <!-- TRADD -->
+  <rect x="370" y="120" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="400" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">TRADD</text>
+  <text x="400" y="147" text-anchor="middle" font-family="Arial" font-size="10">(Q15628)</text>
+  
+  <!-- FADD -->
+  <rect x="370" y="200" width="60" height="30" rx="5" ry="5" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="400" y="215" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">FADD</text>
+  <text x="400" y="227" text-anchor="middle" font-family="Arial" font-size="10">(Q13158)</text>
+  
+  <!-- Caspase-8 -->
+  <rect x="370" y="280" width="60" height="30" rx="5" ry="5" fill="#ff9966" stroke="#333" stroke-width="2"/>
+  <text x="400" y="295" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">CASP8</text>
+  <text x="400" y="307" text-anchor="middle" font-family="Arial" font-size="10">(Q14790)</text>
+  
+  <!-- Apoptosis end point -->
+  <path d="M350,370 L450,370 L425,430 L375,430 Z" fill="#ff6666" stroke="#333" stroke-width="2"/>
+  <text x="400" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">APOPTOSIS</text>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="12">TRAIL-activated apoptotic signaling</text>
+  <text x="400" y="432" text-anchor="middle" font-family="Arial" font-size="12">(GO:0036462)</text>
+  
+  <!-- Pathway arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="9" refX="9" refY="4.5" orient="auto">
+      <polygon points="0 0, 12 4.5, 0 9" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- TRAIL to TRAILR1 binding -->
+  <path d="M400,40 L400,40" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="435" y="25" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">Cytokine activity</text>
+  <text x="435" y="37" text-anchor="start" font-family="Arial" font-size="10" font-style="italic">(GO:0005125)</text>
+  
+  <!-- TRAILR1 to TRADD activation -->
+  <path d="M400,60 L400,120" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="425" y="90" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">Signaling receptor</text>
+  <text x="425" y="102" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">activity (GO:0038023)</text>
+  
+  <!-- TRADD to FADD recruitment -->
+  <path d="M400,150 L400,200" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="425" y="175" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">Protein adaptor</text>
+  <text x="425" y="187" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">activity (GO:0030674)</text>
+  
+  <!-- FADD to Caspase-8 activation -->
+  <path d="M400,230 L400,280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="425" y="255" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">Protein adaptor</text>
+  <text x="425" y="267" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">activity (GO:0030674)</text>
+  
+  <!-- Caspase-8 to Apoptosis -->
+  <path d="M400,310 L400,370" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="425" y="340" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">Cysteine-type endopeptidase</text>
+  <text x="425" y="352" text-anchor="start" font-family="Arial" font-size="11" font-style="italic">activity (GO:0004197)</text>
+  
+  <!-- Title -->
+  <text x="400" y="530" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">TRAIL/TRAILR1 Interaction Leading to Apoptosis</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="560" width="600" height="70" rx="5" ry="5" fill="#f8f8f8" stroke="#666" stroke-width="1"/>
+  <text x="400" y="575" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="120" cy="595" r="8" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="135" y="598" text-anchor="start" font-family="Arial" font-size="12">Cytokine</text>
+  
+  <rect x="180" y="587" width="16" height="16" rx="3" ry="3" fill="#99ccff" stroke="#333" stroke-width="1"/>
+  <text x="200" y="598" text-anchor="start" font-family="Arial" font-size="12">Receptor</text>
+  
+  <rect x="260" y="587" width="16" height="16" rx="3" ry="3" fill="#ffcc99" stroke="#333" stroke-width="1"/>
+  <text x="280" y="598" text-anchor="start" font-family="Arial" font-size="12">Adaptor proteins</text>
+  
+  <rect x="380" y="587" width="16" height="16" rx="3" ry="3" fill="#ff9966" stroke="#333" stroke-width="1"/>
+  <text x="400" y="598" text-anchor="start" font-family="Arial" font-size="12">Caspase</text>
+  
+  <path d="M480,595 L510,595" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="520" y="598" text-anchor="start" font-family="Arial" font-size="12">Activation/interaction</text>
+  
+  <path d="M620,595 L650,595" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="660" y="598" text-anchor="start" font-family="Arial" font-size="12">Palmitoylation</text>
+</svg>

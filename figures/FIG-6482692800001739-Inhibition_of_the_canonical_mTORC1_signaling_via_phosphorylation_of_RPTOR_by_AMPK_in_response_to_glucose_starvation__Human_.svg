@@ -1,0 +1,99 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <rect x="50" y="50" width="700" height="500" rx="50" ry="50" fill="#f9f9f9" stroke="#333" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Lysosomal membrane -->
+  <ellipse cx="400" cy="320" rx="250" ry="160" fill="#ffe6cc" stroke="#ff9933" stroke-width="3" opacity="0.7"/>
+  <text x="400" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#994c00">Lysosomal Membrane (GO:0005765)</text>
+  
+  <!-- Pathway components -->
+  <!-- Glucose starvation -->
+  <rect x="80" y="100" width="160" height="40" rx="5" ry="5" fill="#ffcccc" stroke="#ff6666" stroke-width="2"/>
+  <text x="160" y="125" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Glucose Starvation</text>
+  
+  <!-- AMPK (PRKAA1/PRKAA2) -->
+  <rect x="120" y="220" width="160" height="40" rx="5" ry="5" fill="#ccffcc" stroke="#66cc66" stroke-width="2"/>
+  <text x="200" y="245" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">AMPK (PRKAA1/2)</text>
+  
+  <!-- YWHAZ -->
+  <rect x="200" y="320" width="100" height="40" rx="5" ry="5" fill="#e6ccff" stroke="#9966ff" stroke-width="2"/>
+  <text x="250" y="345" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">YWHAZ</text>
+  
+  <!-- RPTOR -->
+  <rect x="350" y="320" width="100" height="40" rx="5" ry="5" fill="#cce6ff" stroke="#3399ff" stroke-width="2"/>
+  <text x="400" y="345" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">RPTOR</text>
+  
+  <!-- mTOR -->
+  <rect x="500" y="320" width="100" height="40" rx="5" ry="5" fill="#ffccff" stroke="#ff66ff" stroke-width="2"/>
+  <text x="550" y="345" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">mTOR</text>
+  
+  <!-- OGT -->
+  <rect x="350" y="220" width="100" height="40" rx="5" ry="5" fill="#ffffcc" stroke="#cccc66" stroke-width="2"/>
+  <text x="400" y="245" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">OGT</text>
+  
+  <!-- RHEB -->
+  <rect x="500" y="220" width="100" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#ff9933" stroke-width="2"/>
+  <text x="550" y="245" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">RHEB</text>
+  
+  <!-- mTORC1 Signaling Output -->
+  <rect x="450" y="420" width="160" height="40" rx="5" ry="5" fill="#99ccff" stroke="#3366ff" stroke-width="2"/>
+  <text x="530" y="445" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">mTORC1 Signaling</text>
+  
+  <!-- Arrows -->
+  <!-- Glucose starvation → AMPK -->
+  <path d="M160 140 L180 220" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="165" y="180" font-family="Arial" font-size="14" fill="#333">activates</text>
+  
+  <!-- AMPK → OGT -->
+  <path d="M280 240 L350 240" fill="none" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="315" y="230" font-family="Arial" font-size="14" fill="#006600">activates</text>
+  
+  <!-- AMPK → YWHAZ -->
+  <path d="M200 260 L230 320" fill="none" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="180" y="290" font-family="Arial" font-size="14" fill="#006600">activates</text>
+  
+  <!-- YWHAZ → RPTOR -->
+  <path d="M300 340 L350 340" fill="none" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="310" y="330" font-family="Arial" font-size="14" fill="#cc0000">sequesters</text>
+  
+  <!-- RPTOR → mTOR -->
+  <path d="M450 340 L500 340" fill="none" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="475" y="330" font-family="Arial" font-size="14" fill="#cc0000">inhibits</text>
+  
+  <!-- OGT → mTORC1 -->
+  <path d="M400 260 L400 290 L460 340" fill="none" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="405" y="285" font-family="Arial" font-size="14" fill="#006600">O-GlcNAc</text>
+  <text x="395" y="300" font-family="Arial" font-size="12" fill="#333" font-style="italic">(glycosylation)</text>
+  
+  <!-- RHEB → mTOR -->
+  <path d="M550 260 L550 320" fill="none" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="560" y="290" font-family="Arial" font-size="14" fill="#006600">activates</text>
+  
+  <!-- mTOR → mTORC1 Signaling -->
+  <path d="M550 360 L530 420" fill="none" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Phosphorylation symbols -->
+  <circle cx="390" cy="350" r="10" fill="#ff0000" opacity="0.8"/>
+  <text x="390" y="355" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="460" width="170" height="100" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="665" y="480" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Legend</text>
+  
+  <circle cx="595" y="500" r="10" fill="#ff0000" opacity="0.8"/>
+  <text x="595" y="505" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  <text x="670" y="505" font-family="Arial" font-size="14" fill="#333">Phosphorylation</text>
+  
+  <line x1="590" y1="525" x2="610" y2="525" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="670" y="530" font-family="Arial" font-size="14" fill="#333">Activation</text>
+  
+  <line x1="590" y1="545" x2="610" y2="545" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="670" y="550" font-family="Arial" font-size="14" fill="#333">Inhibition</text>
+</svg>

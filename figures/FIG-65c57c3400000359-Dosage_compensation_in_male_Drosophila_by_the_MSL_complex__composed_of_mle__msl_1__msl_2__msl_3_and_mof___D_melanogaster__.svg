@@ -1,0 +1,112 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - nucleus outline -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" fill="#f8f9fa" stroke="#666" stroke-width="2" opacity="0.8"/>
+  <text x="710" y="300" font-family="Arial" font-size="20" text-anchor="middle" fill="#666">Nucleus</text>
+  
+  <!-- X chromosome -->
+  <path d="M150,200 C200,150 300,250 350,200 S450,100 500,150 S650,250 700,200" 
+        stroke="#8856a7" stroke-width="25" fill="none" opacity="0.7"/>
+  <text x="150" y="170" font-family="Arial" font-weight="bold" font-size="22" fill="#333">X chromosome</text>
+  
+  <!-- Gene regions -->
+  <rect x="210" y="188" width="30" height="25" fill="#d8b5ff" stroke="#333" stroke-width="1"/>
+  <rect x="410" y="188" width="30" height="25" fill="#d8b5ff" stroke="#333" stroke-width="1"/>
+  <rect x="610" y="188" width="30" height="25" fill="#d8b5ff" stroke="#333" stroke-width="1"/>
+  <text x="450" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">X-linked genes with enhanced transcription</text>
+  
+  <!-- Step 1: Set2 activity -->
+  <circle cx="250" cy="150" r="25" fill="#87cefa" stroke="#333" stroke-width="1.5"/>
+  <text x="250" y="155" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Set2</text>
+  
+  <path d="M250,175 L250,200" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="315" y="195" font-family="Arial" font-size="16" fill="#333">H3K36 trimethylation</text>
+  
+  <!-- Histone mark -->
+  <rect x="230" y="200" width="40" height="20" fill="#f8f8f8" stroke="#8856a7" stroke-width="1"/>
+  <text x="250" y="215" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">H3K36me3</text>
+  
+  <!-- Step 2: MSL3 recognition -->
+  <circle cx="320" cy="250" r="25" fill="#ff9980" stroke="#333" stroke-width="1.5"/>
+  <text x="320" y="255" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">msl-3</text>
+  
+  <path d="M270,210 L320,225" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="310" y="205" font-family="Arial" font-size="16" fill="#333">recognizes</text>
+  
+  <!-- Step 3: MLE activity -->
+  <circle cx="200" cy="300" r="25" fill="#98df8a" stroke="#333" stroke-width="1.5"/>
+  <text x="200" y="305" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">mle</text>
+  
+  <path d="M200,275 L200,250" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="145" y="260" font-family="Arial" font-size="16" fill="#333">RNA helicase activity</text>
+  
+  <!-- Step 4: MSL2 localization -->
+  <circle cx="400" cy="300" r="25" fill="#ff7f0e" stroke="#333" stroke-width="1.5"/>
+  <text x="400" y="305" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">msl-2</text>
+  
+  <path d="M225,300 L375,300" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="300" y="290" font-family="Arial" font-size="16" fill="#333">complex assembly</text>
+  
+  <!-- Step 5: MSL1 adaptor activity -->
+  <circle cx="500" cy="250" r="25" fill="#d62728" stroke="#333" stroke-width="1.5"/>
+  <text x="500" y="255" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">msl-1</text>
+  
+  <path d="M425,300 L475,265" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="470" y="295" font-family="Arial" font-size="16" fill="#333">adaptor</text>
+  
+  <!-- Step 6: MOF acetyltransferase -->
+  <circle cx="600" cy="200" r="25" fill="#9467bd" stroke="#333" stroke-width="1.5"/>
+  <text x="600" y="205" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">mof</text>
+  
+  <path d="M525,250 L575,215" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="570" y="245" font-family="Arial" font-size="16" fill="#333">recruits</text>
+  
+  <!-- H4K16 acetylation -->
+  <rect x="580" y="150" width="40" height="20" fill="#f8f8f8" stroke="#9467bd" stroke-width="1"/>
+  <text x="600" y="165" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">H4K16ac</text>
+  
+  <path d="M600,175 L600,150" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="655" y="165" font-family="Arial" font-size="16" fill="#333">acetylation</text>
+  
+  <!-- Final result: 2X transcription -->
+  <text x="400" y="400" font-family="Arial" font-weight="bold" font-size="22" text-anchor="middle" fill="#333">Dosage Compensation:</text>
+  <text x="400" y="425" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">2X transcriptional upregulation</text>
+  <text x="400" y="450" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">of X chromosome genes in males</text>
+  
+  <!-- roX2 RNA (inferred, not in original model) -->
+  <path d="M150,340 C180,350 210,330 240,350" stroke="#aaa" stroke-width="3" stroke-dasharray="5,5" fill="none"/>
+  <text x="190" y="370" font-family="Arial" font-size="16" fill="#aaa" font-style="italic">roX2 RNA (inferred)</text>
+  
+  <!-- MSL Complex label -->
+  <path d="M350,330 C400,360 450,370 500,330" stroke="#333" stroke-width="1" stroke-dasharray="5,3" fill="none"/>
+  <text x="425" y="370" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">MSL Complex</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="480" width="600" height="100" fill="#f8f9fa" stroke="#666" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="500" font-family="Arial" font-weight="bold" font-size="18" text-anchor="middle" fill="#333">MSL Complex Components</text>
+  
+  <circle cx="130" cy="525" r="10" fill="#98df8a" stroke="#333" stroke-width="1"/>
+  <text x="145" y="530" font-family="Arial" font-size="16" fill="#333">mle: RNA helicase</text>
+  
+  <circle cx="290" cy="525" r="10" fill="#ff7f0e" stroke="#333" stroke-width="1"/>
+  <text x="305" y="530" font-family="Arial" font-size="16" fill="#333">msl-2: chromatin-protein adaptor</text>
+  
+  <circle cx="540" cy="525" r="10" fill="#ff9980" stroke="#333" stroke-width="1"/>
+  <text x="555" y="530" font-family="Arial" font-size="16" fill="#333">msl-3: histone reader</text>
+  
+  <circle cx="130" cy="555" r="10" fill="#d62728" stroke="#333" stroke-width="1"/>
+  <text x="145" y="560" font-family="Arial" font-size="16" fill="#333">msl-1: protein-macromolecule adaptor</text>
+  
+  <circle cx="425" cy="555" r="10" fill="#9467bd" stroke="#333" stroke-width="1"/>
+  <text x="440" y="560" font-family="Arial" font-size="16" fill="#333">mof: H4K16 acetyltransferase</text>
+  
+  <circle cx="670" cy="555" r="10" fill="#87cefa" stroke="#333" stroke-width="1"/>
+  <text x="685" y="560" font-family="Arial" font-size="16" fill="#333">Set2: H3K36 trimethyltransferase</text>
+  
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

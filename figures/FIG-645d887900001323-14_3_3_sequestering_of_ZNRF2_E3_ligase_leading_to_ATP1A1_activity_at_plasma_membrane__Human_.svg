@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with cell outline -->
+    <rect x="0" y="0" width="800" height="600" fill="#f9f9f9" stroke="#333" stroke-width="2"/>
+    
+    <!-- Cell membrane -->
+    <path d="M50,100 L750,100 L750,500 L50,500 Z" fill="#e6f7ff" stroke="#333" stroke-width="3" stroke-dasharray="0"/>
+    <text x="400" y="90" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cell</text>
+    
+    <!-- Plasma membrane -->
+    <rect x="100" y="100" width="650" height="30" fill="#c9e9f6" stroke="#333" stroke-width="2"/>
+    <text x="400" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Plasma Membrane (GO:0005886)</text>
+    
+    <!-- Cytoplasm label -->
+    <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" font-style="italic">Cytoplasm (GO:0005737)</text>
+
+    <!-- PRKACA protein -->
+    <circle cx="200" cy="250" r="40" fill="#f4c842" stroke="#333" stroke-width="2"/>
+    <text x="200" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">PRKACA</text>
+    <text x="200" y="273" text-anchor="middle" font-family="Arial" font-size="12">(P17612)</text>
+    
+    <!-- 14-3-3ε (YWHAE) protein -->
+    <rect x="350" y="230" width="100" height="50" rx="10" ry="10" fill="#64c2a6" stroke="#333" stroke-width="2"/>
+    <text x="400" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">14-3-3ε</text>
+    <text x="400" y="275" text-anchor="middle" font-family="Arial" font-size="12">(YWHAE, P62258)</text>
+    
+    <!-- ZNRF2 protein -->
+    <polygon points="550,250 580,225 610,250 580,275" fill="#ff7f7f" stroke="#333" stroke-width="2"/>
+    <text x="580" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">ZNRF2</text>
+    <text x="580" y="273" text-anchor="middle" font-family="Arial" font-size="12">(Q8NHG8)</text>
+    
+    <!-- ATP1A1 at membrane -->
+    <rect x="650" y="110" width="70" height="40" rx="5" ry="5" fill="#7eb6d9" stroke="#333" stroke-width="2"/>
+    <text x="685" y="130" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">ATP1A1</text>
+    <text x="685" y="145" text-anchor="middle" font-family="Arial" font-size="12">(P05023)</text>
+    
+    <!-- Phosphorylation arrow from PRKACA to 14-3-3ε -->
+    <path d="M240,250 Q290,250 340,250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <circle cx="290" cy="240" r="15" fill="white" stroke="#333" stroke-width="1"/>
+    <text x="290" y="244" text-anchor="middle" font-family="Arial" font-size="12">P</text>
+    
+    <!-- Process label for phosphorylation -->
+    <rect x="260" y="200" width="120" height="30" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+    <text x="320" y="218" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Protein Phosphorylation</text>
+    <text x="320" y="228" text-anchor="middle" font-family="Arial" font-size="10">(GO:0006468)</text>
+    
+    <!-- Sequestering arrow from 14-3-3ε to ZNRF2 -->
+    <path d="M450,250 Q500,250 540,250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <rect x="470" y="220" width="100" height="30" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+    <text x="520" y="235" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Protein Sequestering</text>
+    <text x="520" y="245" text-anchor="middle" font-family="Arial" font-size="10">(GO:0140311)</text>
+    
+    <!-- Inhibition line from 14-3-3ε/ZNRF2 to the degradation process -->
+    <path d="M580,275 Q580,320 580,350" fill="none" stroke="red" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="565" y1="350" x2="595" y2="350" stroke="red" stroke-width="3"/>
+    <rect x="500" y="360" width="160" height="40" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+    <text x="580" y="378" text-anchor="middle" font-family="Arial" font-size="12" fill="red" font-style="italic">Inhibits Ubiquitin-Dependent</text>
+    <text x="580" y="393" text-anchor="middle" font-family="Arial" font-size="12" fill="red" font-style="italic">Protein Catabolism (GO:0043161)</text>
+    
+    <!-- Arrow showing ATP1A1 activity -->
+    <path d="M685,150 Q685,180 685,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <rect x="640" y="160" width="90" height="35" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+    <text x="685" y="175" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">ATP Hydrolysis</text>
+    <text x="685" y="187" text-anchor="middle" font-family="Arial" font-size="10">(GO:0016887)</text>
+    
+    <!-- K+ homeostasis indication -->
+    <rect x="620" y="210" width="130" height="30" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+    <text x="685" y="228" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">K+ Homeostasis</text>
+    <text x="685" y="238" text-anchor="middle" font-family="Arial" font-size="10">(GO:0030007)</text>
+    
+    <!-- Flow direction arrow -->
+    <path d="M200,320 Q400,380 600,320" fill="none" stroke="#777" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+    <rect x="350" y="380" width="100" height="25" rx="5" ry="5" fill="white" stroke="#777" stroke-width="1" opacity="0.9"/>
+    <text x="400" y="397" text-anchor="middle" font-family="Arial" font-size="12" fill="#777">Pathway Flow</text>
+    
+    <!-- K+ ions -->
+    <circle cx="700" y="260" r="8" fill="purple" stroke="none" opacity="0.7"/>
+    <text x="700" y="263" text-anchor="middle" font-family="Arial" font-size="10" fill="white">K+</text>
+    <circle cx="720" y="240" r="8" fill="purple" stroke="none" opacity="0.7"/>
+    <text x="720" y="243" text-anchor="middle" font-family="Arial" font-size="10" fill="white">K+</text>
+    <circle cx="680" y="280" r="8" fill="purple" stroke="none" opacity="0.7"/>
+    <text x="680" y="283" text-anchor="middle" font-family="Arial" font-size="10" fill="white">K+</text>
+    
+    <!-- Arrowhead definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+        </marker>
+    </defs>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">14-3-3 Sequestering of ZNRF2 E3 Ligase Leading to ATP1A1 Activity</text>
+    <text x="400" y="65" text-anchor="middle" font-family="Arial" font-size="16">at Plasma Membrane (Human)</text>
+    
+    <!-- Legend -->
+    <rect x="50" y="520" width="700" height="70" fill="#f5f5f5" stroke="#333" stroke-width="1"/>
+    <text x="70" y="535" font-family="Arial" font-size="12" font-weight="bold">Legend:</text>
+    
+    <!-- Protein symbols -->
+    <circle cx="100" y="555" r="10" fill="#f4c842" stroke="#333" stroke-width="1"/>
+    <text x="120" y="559" font-family="Arial" font-size="12">Kinase (PRKACA)</text>
+    
+    <rect x="210" y="545" width="20" height="20" rx="5" ry="5" fill="#64c2a6" stroke="#333" stroke-width="1"/>
+    <text x="240" y="559" font-family="Arial" font-size="12">Scaffold protein (14-3-3ε)</text>
+    
+    <polygon points="350,555 360,545 370,555 360,565" fill="#ff7f7f" stroke="#333" stroke-width="1"/>
+    <text x="390" y="559" font-family="Arial" font-size="12">E3 ubiquitin ligase (ZNRF2)</text>
+    
+    <rect x="505" y="545" width="20" height="20" rx="3" ry="3" fill="#7eb6d9" stroke="#333" stroke-width="1"/>
+    <text x="535" y="559" font-family="Arial" font-size="12">ATPase (ATP1A1)</text>
+    
+    <circle cx="600" y="555" r="8" fill="purple" stroke="none" opacity="0.7"/>
+    <text x="600" y="558" font-family="Arial" font-size="8" fill="white">K+</text>
+    <text x="625" y="559" font-family="Arial" font-size="12">Potassium ion</text>
+    
+    <line x1="670" y1="550" x2="690" y2="550" stroke="red" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="680" y1="560" x2="680" y2="560" stroke="red" stroke-width="2"/>
+    <text x="710" y="559" font-family="Arial" font-size="12">Inhibition</text>
+</svg>

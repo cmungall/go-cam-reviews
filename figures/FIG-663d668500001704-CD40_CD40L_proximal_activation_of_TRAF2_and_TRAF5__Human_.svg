@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with cell components -->
+    <rect x="0" y="0" width="800" height="650" fill="#f8f9fa" stroke="none"/>
+    
+    <!-- Cell membrane -->
+    <path d="M50,300 Q400,250 750,300 Q400,350 50,300" fill="#d1e7dd" stroke="#0d6efd" stroke-width="3"/>
+    
+    <!-- Extracellular space label -->
+    <text x="400" y="200" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#212529">Extracellular Space (GO:0005615)</text>
+    
+    <!-- Cytoplasm label -->
+    <text x="400" y="400" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#212529">Cytoplasm (GO:0005737)</text>
+    
+    <!-- CD40LG in extracellular space -->
+    <circle cx="300" cy="150" r="45" fill="#ff9800" stroke="#e65100" stroke-width="2"/>
+    <text x="300" y="145" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">CD40LG</text>
+    <text x="300" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="white">(P29965)</text>
+    
+    <!-- CD40 receptor on membrane -->
+    <rect x="285" y="275" width="90" height="55" rx="10" ry="10" fill="#2e7d32" stroke="#1b5e20" stroke-width="2"/>
+    <text x="330" y="303" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">CD40</text>
+    <text x="330" y="323" text-anchor="middle" font-family="Arial" font-size="12" fill="white">(P25942)</text>
+    
+    <!-- TRAF2 in cytoplasm -->
+    <rect x="200" y="400" width="90" height="55" rx="10" ry="10" fill="#1565c0" stroke="#0d47a1" stroke-width="2"/>
+    <text x="245" y="428" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">TRAF2</text>
+    <text x="245" y="448" text-anchor="middle" font-family="Arial" font-size="12" fill="white">(Q12933)</text>
+    
+    <!-- TRAF5 in cytoplasm -->
+    <rect x="400" y="400" width="90" height="55" rx="10" ry="10" fill="#5e35b1" stroke="#4527a0" stroke-width="2"/>
+    <text x="445" y="428" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">TRAF5</text>
+    <text x="445" y="448" text-anchor="middle" font-family="Arial" font-size="12" fill="white">(O00463)</text>
+    
+    <!-- Binding/interaction arrows with labels -->
+    <!-- CD40LG to CD40 -->
+    <line x1="300" y1="195" x2="330" y2="275" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+    <rect x="260" y="220" width="110" height="40" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#333" stroke-width="1"/>
+    <text x="315" y="240" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Cytokine</text>
+    <text x="315" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Activity</text>
+    
+    <!-- Flow arrow symbols -->
+    <text x="365" y="240" font-family="Arial" font-size="24" fill="#333">→</text>
+    
+    <!-- CD40 to TRAF2 -->
+    <path d="M330,330 Q300,365 245,400" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)" fill="none"/>
+    <rect x="235" y="365" width="100" height="25" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#333" stroke-width="1"/>
+    <text x="285" y="383" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Activates</text>
+    
+    <!-- Flow arrow symbols -->
+    <text x="190" y="390" font-family="Arial" font-size="24" fill="#333">↓</text>
+    
+    <!-- CD40 to TRAF5 -->
+    <path d="M330,330 Q380,365 445,400" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)" fill="none"/>
+    <rect x="360" y="365" width="100" height="25" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#333" stroke-width="1"/>
+    <text x="410" y="383" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Activates</text>
+    
+    <!-- Flow arrow symbols -->
+    <text x="490" y="390" font-family="Arial" font-size="24" fill="#333">↓</text>
+    
+    <!-- Activity labels with background -->
+    <rect x="170" y="470" width="150" height="40" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#333" stroke-width="1"/>
+    <text x="245" y="490" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">Ubiquitin protein</text>
+    <text x="245" y="505" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">ligase activity</text>
+    
+    <rect x="370" y="470" width="150" height="40" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#333" stroke-width="1"/>
+    <text x="445" y="490" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">Ubiquitin protein</text>
+    <text x="445" y="505" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">ligase activity</text>
+    
+    <rect x="400" y="275" width="200" height="25" rx="5" ry="5" fill="white" fill-opacity="0.8" stroke="#333" stroke-width="1"/>
+    <text x="500" y="293" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">Signaling receptor activity</text>
+    
+    <!-- Pathway title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#212529">CD40-CD40L Proximal Activation of TRAF2 and TRAF5</text>
+    <text x="400" y="70" text-anchor="middle" font-family="Arial" font-size="18" fill="#212529">CD40 Signaling Pathway (GO:0023035)</text>
+    
+    <!-- Legend -->
+    <rect x="50" y="520" width="700" height="120" rx="10" ry="10" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+    <text x="60" y="545" font-family="Arial" font-size="18" font-weight="bold" fill="#212529">Legend:</text>
+    
+    <!-- Legend items -->
+    <circle cx="80" cy="570" r="15" fill="#ff9800" stroke="#e65100" stroke-width="2"/>
+    <text x="110" y="575" font-family="Arial" font-size="14" fill="#212529">CD40LG (P29965) - Ligand with cytokine activity (GO:0005125)</text>
+    
+    <rect x="70" y="590" width="20" height="20" rx="3" ry="3" fill="#2e7d32" stroke="#1b5e20" stroke-width="2"/>
+    <text x="110" y="605" font-family="Arial" font-size="14" fill="#212529">CD40 (P25942) - Receptor with signaling receptor activity (GO:0038023)</text>
+    
+    <rect x="400" y="570" width="20" height="20" rx="3" ry="3" fill="#1565c0" stroke="#0d47a1" stroke-width="2"/>
+    <text x="430" y="575" font-family="Arial" font-size="14" fill="#212529">TRAF2 (Q12933) - Ubiquitin protein ligase activity (GO:0061630)</text>
+    
+    <rect x="400" y="600" width="20" height="20" rx="3" ry="3" fill="#5e35b1" stroke="#4527a0" stroke-width="2"/>
+    <text x="430" y="605" font-family="Arial" font-size="14" fill="#212529">TRAF5 (O00463) - Ubiquitin protein ligase activity (GO:0061630)</text>
+    
+    <text x="110" y="625" font-family="Arial" font-size="14" fill="#212529">→ : Direction of signal flow in the CD40 signaling pathway</text>
+    
+    <!-- Arrowhead definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+        </marker>
+    </defs>
+</svg>

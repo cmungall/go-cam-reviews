@@ -1,0 +1,96 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Cell Components -->
+  <rect width="800" height="600" fill="#f9f9f9" stroke="#cccccc" stroke-width="1"/>
+  
+  <!-- Cell membrane -->
+  <path d="M 50,100 L 750,100 C 760,300 760,400 750,500 L 50,500 C 40,400 40,300 50,100" 
+        fill="#f2f2f2" stroke="#666666" stroke-width="2" fill-opacity="0.5"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">
+    ZDHHC1 promotes activation of the NLRP3 inflammasome
+  </text>
+  <text x="400" y="65" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">
+    Leading to NLRP3 phosphorylation by LATS1 and activation by NEK7
+  </text>
+  
+  <!-- Cellular Compartments -->
+  <!-- Cytosol label -->
+  <text x="100" y="130" font-family="Arial" font-size="18" font-style="italic" fill="#555555">Cytosol</text>
+  
+  <!-- Microtubule Organizing Center (MTOC) -->
+  <ellipse cx="400" cy="350" rx="160" ry="100" fill="#e6f7ff" stroke="#0099cc" stroke-width="2" fill-opacity="0.7"/>
+  <text x="400" y="290" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic" fill="#555555">
+    Microtubule Organizing Center
+  </text>
+  
+  <!-- Molecules and Interactions -->
+  <!-- ZDHHC1 -->
+  <rect x="150" y="200" width="80" height="40" rx="5" ry="5" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="190" y="225" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">ZDHHC1</text>
+  
+  <!-- NLRP3 initial state -->
+  <rect x="300" y="200" width="80" height="40" rx="5" ry="5" fill="#99cc99" stroke="#339933" stroke-width="2"/>
+  <text x="340" y="225" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">NLRP3</text>
+  
+  <!-- LATS1 -->
+  <rect x="300" y="350" width="80" height="40" rx="5" ry="5" fill="#9999ff" stroke="#0000cc" stroke-width="2"/>
+  <text x="340" y="375" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">LATS1</text>
+  
+  <!-- NEK7 -->
+  <rect x="500" y="350" width="80" height="40" rx="5" ry="5" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="540" y="375" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">NEK7</text>
+  
+  <!-- NLRP3 after palmitoylation and phosphorylation -->
+  <rect x="400" y="420" width="80" height="40" rx="5" ry="5" fill="#99cc99" stroke="#339933" stroke-width="2"/>
+  <text x="440" y="445" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">NLRP3</text>
+  
+  <!-- NLRP3 inflammasome complex -->
+  <ellipse cx="600" cy="460" rx="70" ry="40" fill="#e6ffe6" stroke="#009900" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="600" y="455" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">NLRP3</text>
+  <text x="600" y="475" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Inflammasome</text>
+  
+  <!-- Interaction 1: ZDHHC1 palmitoylates NLRP3 -->
+  <line x1="230" y1="220" x2="300" y2="220" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="265" y="210" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Palmitoylation</text>
+  
+  <!-- Interaction 2: Palmitoylated NLRP3 moves to MTOC -->
+  <line x1="340" y1="240" x2="340" y2="350" stroke="#000000" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="315" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Relocalization</text>
+  
+  <!-- Interaction 3: LATS1 phosphorylates NLRP3 -->
+  <line x1="340" y1="390" x2="400" y2="420" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="360" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Phosphorylation</text>
+  
+  <!-- Interaction 4: NEK7 activates NLRP3 -->
+  <line x1="540" y1="390" x2="480" y2="420" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="520" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Activation</text>
+  
+  <!-- Interaction 5: Activated NLRP3 forms inflammasome -->
+  <line x1="480" y1="440" x2="530" y2="460" stroke="#000000" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="505" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Assembly</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="60" y="520" width="680" height="60" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="70" y="535" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <!-- Protein types -->
+  <rect x="70" y="545" width="20" height="20" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="100" y="560" font-family="Arial" font-size="14">Palmitoyltransferase (ZDHHC1)</text>
+  
+  <rect x="220" y="545" width="20" height="20" fill="#99cc99" stroke="#339933" stroke-width="2"/>
+  <text x="250" y="560" font-family="Arial" font-size="14">Pattern Recognition Receptor (NLRP3)</text>
+  
+  <rect x="450" y="545" width="20" height="20" fill="#9999ff" stroke="#0000cc" stroke-width="2"/>
+  <text x="480" y="560" font-family="Arial" font-size="14">Kinase (LATS1)</text>
+  
+  <rect x="570" y="545" width="20" height="20" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="600" y="560" font-family="Arial" font-size="14">Activator (NEK7)</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell nucleus -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f0f8ff" stroke="#000080" stroke-width="2" />
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nucleus (GO:0005634)</text>
+  
+  <!-- KAT5 protein -->
+  <rect x="150" y="200" width="120" height="60" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2" />
+  <text x="210" y="230" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">KAT5</text>
+  <text x="210" y="250" text-anchor="middle" font-family="Arial" font-size="12">(Q92993-4)</text>
+  
+  <!-- Inactive cGAS -->
+  <rect x="400" y="200" width="120" height="60" rx="10" ry="10" fill="#ccccff" stroke="#000080" stroke-width="2" />
+  <text x="460" y="230" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">cGAS</text>
+  <text x="460" y="250" text-anchor="middle" font-family="Arial" font-size="12">(Q8N884, inactive)</text>
+  
+  <!-- Acetylation arrow from KAT5 to cGAS -->
+  <path d="M270,230 L400,230" stroke="#ff0000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="335" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="#ff0000">Acetylation</text>
+  <text x="335" y="245" text-anchor="middle" font-family="Arial" font-size="12" fill="#666666">GO:0061733</text>
+  
+  <!-- Activated cGAS (DNA binding) -->
+  <rect x="250" y="320" width="120" height="60" rx="10" ry="10" fill="#aaddff" stroke="#000080" stroke-width="2" />
+  <text x="310" y="340" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">cGAS</text>
+  <text x="310" y="360" text-anchor="middle" font-family="Arial" font-size="12">DNA binding</text>
+  <text x="310" y="375" text-anchor="middle" font-family="Arial" font-size="12">GO:0003690</text>
+  
+  <!-- Arrow from Inactive to Active cGAS -->
+  <path d="M460,260 C460,290 385,290 310,320" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- DNA molecule bound to cGAS -->
+  <path d="M250,350 C200,325 200,375 250,350" stroke="#996633" stroke-width="3" fill="none" />
+  
+  <!-- cGAS molecular condensates -->
+  <rect x="500" y="320" width="120" height="60" rx="10" ry="10" fill="#aaddff" stroke="#000080" stroke-width="2" />
+  <text x="560" y="340" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">cGAS</text>
+  <text x="560" y="360" text-anchor="middle" font-family="Arial" font-size="12">Condensate scaffold</text>
+  <text x="560" y="375" text-anchor="middle" font-family="Arial" font-size="12">GO:0140693</text>
+  
+  <!-- Arrow from active cGAS to condensate cGAS -->
+  <path d="M370,350 L500,350" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- cGAS enzymatic activity -->
+  <ellipse cx="400" cy="460" rx="80" ry="40" fill="#aaddff" stroke="#000080" stroke-width="2" />
+  <text x="400" y="450" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">cGAS</text>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial" font-size="12">cGAMP synthase</text>
+  <text x="400" y="485" text-anchor="middle" font-family="Arial" font-size="12">GO:0061501</text>
+  
+  <!-- Arrow from condensate to enzymatic activity -->
+  <path d="M560,380 C560,420 480,420 440,430" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M310,380 C310,420 360,420 360,430" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- cGAS-STING signaling pathway label -->
+  <rect x="150" y="530" width="500" height="30" rx="5" ry="5" fill="#e6f2ff" stroke="#000080" stroke-width="1" />
+  <text x="400" y="550" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#000080">cGAS/STING signaling pathway (GO:0140896)</text>
+  
+  <!-- Positive regulation of innate immune response -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial" font-size="14" fill="#006600">Positive regulation of innate immune response (GO:0045089)</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,80 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell outlines -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- B Cell (left) -->
+  <ellipse cx="200" cy="300" rx="180" ry="250" fill="#E8F4F8" stroke="#666" stroke-width="2"/>
+  <text x="110" y="90" font-family="Arial" font-size="18" font-weight="bold">B Cell</text>
+  
+  <!-- T Cell (right) -->
+  <ellipse cx="600" cy="300" rx="180" ry="250" fill="#F1F7E3" stroke="#666" stroke-width="2"/>
+  <text x="690" y="90" font-family="Arial" font-size="18" font-weight="bold">T Cell</text>
+  
+  <!-- Cell membranes -->
+  <path d="M380,300 C380,500 380,100 380,300" stroke="#666" stroke-width="3" fill="none"/>
+  <path d="M420,300 C420,500 420,100 420,300" stroke="#666" stroke-width="3" fill="none"/>
+
+  <!-- Plasma membranes labels -->
+  <text x="280" y="70" font-family="Arial" font-size="14">B Cell Plasma Membrane</text>
+  <text x="500" y="70" font-family="Arial" font-size="14">T Cell Plasma Membrane</text>
+  
+  <!-- CD70 on B Cell membrane -->
+  <rect x="340" y="250" width="40" height="30" rx="5" fill="#FF9999" stroke="#CC0000" stroke-width="2"/>
+  <text x="345" y="270" font-family="Arial" font-size="14" font-weight="bold">CD70</text>
+  
+  <!-- CD27 on T Cell membrane -->
+  <rect x="420" y="250" width="40" height="30" rx="5" fill="#99CCFF" stroke="#0066CC" stroke-width="2"/>
+  <text x="425" y="270" font-family="Arial" font-size="14" font-weight="bold">CD27</text>
+  
+  <!-- Binding arrow between CD70 and CD27 -->
+  <line x1="380" y1="265" x2="420" y2="265" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="385" y="245" font-family="Arial" font-size="12">Receptor ligand</text>
+  <text x="400" y="260" font-family="Arial" font-size="12">binding</text>
+  
+  <!-- TRAF2 in T cell cytoplasm -->
+  <rect x="480" y="330" width="50" height="30" rx="5" fill="#FFD699" stroke="#FF9900" stroke-width="2"/>
+  <text x="485" y="350" font-family="Arial" font-size="14" font-weight="bold">TRAF2</text>
+  
+  <!-- Activation arrow from CD27 to TRAF2 -->
+  <path d="M450,280 C455,300 465,320 480,340" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="450" y="315" font-family="Arial" font-size="12">activates</text>
+  
+  <!-- PTPN6 in T cell cytoplasm -->
+  <rect x="560" y="390" width="50" height="30" rx="5" fill="#B3E6B3" stroke="#339933" stroke-width="2"/>
+  <text x="565" y="410" font-family="Arial" font-size="14" font-weight="bold">PTPN6</text>
+  
+  <!-- Inhibition line from TRAF2 to PTPN6 (T-bar style) -->
+  <line x1="530" y1="345" x2="560" y2="390" stroke="#FF0000" stroke-width="3"/>
+  <line x1="550" y1="380" x2="570" y2="380" stroke="#FF0000" stroke-width="3"/>
+  <text x="525" y="375" font-family="Arial" font-size="12" fill="#FF0000">inhibits</text>
+  
+  <!-- LCK at T cell membrane -->
+  <rect x="500" y="200" width="40" height="30" rx="5" fill="#CC99FF" stroke="#6600CC" stroke-width="2"/>
+  <text x="505" y="220" font-family="Arial" font-size="14" font-weight="bold">LCK</text>
+  
+  <!-- Arrow from PTPN6 to LCK (negative regulation) -->
+  <path d="M585,390 C600,350 580,280 540,220" stroke="#FF0000" stroke-width="2.5" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="610" y="320" font-family="Arial" font-size="12" fill="#FF0000">dephosphorylates</text>
+  
+  <!-- T cell activation label -->
+  <text x="570" y="150" font-family="Arial" font-size="16" font-weight="bold">T Cell Activation</text>
+  <path d="M520,210 C540,190 560,170 570,155" stroke="#006600" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Title -->
+  <text x="250" y="30" font-family="Arial" font-size="20" font-weight="bold">CD70-CD27 Signaling Pathway in T Cell Activation</text>
+  
+  <!-- Labels for subcellular locations -->
+  <text x="600" y="450" font-family="Arial" font-size="16">T Cell Cytoplasm</text>
+  <text x="200" y="450" font-family="Arial" font-size="16">B Cell Cytoplasm</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- CD27 Signaling Pathway label -->
+  <rect x="50" y="520" width="700" height="30" rx="5" fill="#EEEEEE" stroke="#999999" stroke-width="1"/>
+  <text x="300" y="540" font-family="Arial" font-size="16" font-weight="bold">CD27 Signaling Pathway (GO:0160162)</text>
+</svg>

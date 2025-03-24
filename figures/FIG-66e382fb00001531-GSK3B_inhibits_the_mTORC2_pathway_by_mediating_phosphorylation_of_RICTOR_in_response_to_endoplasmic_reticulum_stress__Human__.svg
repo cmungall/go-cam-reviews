@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect x="0" y="0" width="800" height="600" fill="#ffffff" />
+    
+    <!-- Title -->
+    <text x="400" y="25" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">GSK3B inhibits mTORC2 pathway via RICTOR phosphorylation in response to ER stress</text>
+    
+    <!-- Cellular Compartment - Plasma Membrane -->
+    <rect x="50" y="50" width="700" height="30" rx="5" ry="5" fill="#D9E7FF" stroke="#000000" stroke-width="2" />
+    <text x="400" y="70" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Plasma Membrane</text>
+    
+    <!-- Endoplasmic Reticulum Stress -->
+    <rect x="50" y="120" width="180" height="40" rx="10" ry="10" fill="#FFE6CC" stroke="#FF9933" stroke-width="2" />
+    <text x="140" y="145" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ER Stress</text>
+    
+    <!-- GSK3B Protein -->
+    <circle cx="200" cy="220" r="40" fill="#FF9999" stroke="#000000" stroke-width="2" />
+    <text x="200" y="225" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">GSK3B</text>
+    
+    <!-- Arrow from ER Stress to GSK3B (activation) -->
+    <path d="M140 160 L180 200" stroke="#00AA00" stroke-width="2.5" fill="none" marker-end="url(#greenarrow)" />
+    <text x="170" y="190" font-family="Arial" font-size="12" fill="#00AA00" text-anchor="middle">Activates</text>
+    
+    <!-- RICTOR Protein -->
+    <rect x="320" y="190" width="120" height="60" rx="15" ry="15" fill="#B3DFFF" stroke="#000000" stroke-width="2" />
+    <text x="380" y="225" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">RICTOR</text>
+    
+    <!-- Arrow from GSK3B to RICTOR (inhibitory phosphorylation) -->
+    <path d="M240 220 L310 220" stroke="#FF0000" stroke-width="2.5" fill="none" marker-end="url(#redarrow)" />
+    <circle cx="275" y="210" r="12" fill="white" stroke="#FF0000" stroke-width="1.5" />
+    <text x="275" y="214" font-family="Arial" font-size="14" fill="#FF0000" text-anchor="middle" font-weight="bold">P</text>
+    <text x="275" y="190" font-family="Arial" font-size="12" fill="#FF0000" text-anchor="middle">Inhibits</text>
+    
+    <!-- mTOR Protein -->
+    <circle cx="520" cy="220" r="40" fill="#A0D6B4" stroke="#000000" stroke-width="2" />
+    <text x="520" y="225" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">mTOR</text>
+    
+    <!-- mTORC2 Complex -->
+    <ellipse cx="450" cy="300" rx="100" ry="50" fill="#CCFFCC" stroke="#000000" stroke-width="2" />
+    <text x="450" y="300" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">mTORC2</text>
+    <text x="450" y="320" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">TORC2 signaling</text>
+    
+    <!-- Arrows to mTORC2 complex -->
+    <path d="M380 250 L400 280" stroke="#555555" stroke-width="2.5" fill="none" marker-end="url(#blackarrow)" stroke-dasharray="0" />
+    <text x="410" y="275" font-family="Arial" font-size="12" text-anchor="middle">Adaptor</text>
+    
+    <path d="M520 260 L480 280" stroke="#555555" stroke-width="2.5" fill="none" marker-end="url(#blackarrow)" stroke-dasharray="0" />
+    <text x="510" y="275" font-family="Arial" font-size="12" text-anchor="middle">Forms</text>
+    
+    <!-- PDPK1 Protein -->
+    <circle cx="300" cy="400" r="40" fill="#FFD699" stroke="#000000" stroke-width="2" />
+    <text x="300" y="405" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">PDPK1</text>
+    
+    <!-- AKT1 Protein -->
+    <circle cx="600" cy="400" r="40" fill="#D9B3FF" stroke="#000000" stroke-width="2" />
+    <text x="600" y="405" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">AKT1</text>
+    
+    <!-- Arrow from mTORC2 to PDPK1 (activation) -->
+    <path d="M400 340 L330 380" stroke="#00AA00" stroke-width="2.5" fill="none" marker-end="url(#greenarrow)" />
+    <text x="375" y="370" font-family="Arial" font-size="12" fill="#00AA00" text-anchor="middle">Activates</text>
+    
+    <!-- Arrow from PDPK1 to AKT1 (activating phosphorylation) -->
+    <path d="M340 400 L550 400" stroke="#00AA00" stroke-width="2.5" fill="none" marker-end="url(#greenarrow)" />
+    <circle cx="445" y="400" r="12" fill="white" stroke="#00AA00" stroke-width="1.5" />
+    <text x="445" y="405" font-family="Arial" font-size="14" fill="#00AA00" text-anchor="middle" font-weight="bold">P</text>
+    <text x="445" y="385" font-family="Arial" font-size="12" fill="#00AA00" text-anchor="middle">Activates</text>
+    
+    <!-- Pathway Labels -->
+    <rect x="590" y="290" width="160" height="60" rx="10" ry="10" fill="#F0F0F0" stroke="#666666" stroke-width="1" />
+    <text x="670" y="310" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Negative regulation</text>
+    <text x="670" y="330" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">of TORC2 signaling</text>
+    
+    <rect x="590" y="450" width="160" height="50" rx="10" ry="10" fill="#F0F0F0" stroke="#666666" stroke-width="1" />
+    <text x="670" y="470" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">PI3K/AKT</text>
+    <text x="670" y="490" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">signaling</text>
+    
+    <!-- Legend -->
+    <rect x="50" y="470" width="300" height="110" rx="5" ry="5" fill="#EEEEEE" stroke="#000000" stroke-width="1" />
+    <text x="200" y="490" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+    
+    <!-- Legend Items -->
+    <circle cx="80" y="510" r="8" fill="#FF9999" stroke="#000000" stroke-width="1" />
+    <text x="100" y="515" font-family="Arial" font-size="12" text-anchor="start">Kinase protein (GSK3B, mTOR, PDPK1, AKT1)</text>
+    
+    <rect x="70" y="525" width="20" height="10" rx="3" ry="3" fill="#B3DFFF" stroke="#000000" stroke-width="1" />
+    <text x="100" y="535" font-family="Arial" font-size="12" text-anchor="start">Adaptor protein (RICTOR)</text>
+    
+    <line x1="70" y1="550" x2="90" y2="550" stroke="#00AA00" stroke-width="2.5" marker-end="url(#greenarrow)" />
+    <text x="100" y="555" font-family="Arial" font-size="12" text-anchor="start">Activation</text>
+    
+    <line x1="70" y1="570" x2="90" y2="570" stroke="#FF0000" stroke-width="2.5" marker-end="url(#redarrow)" />
+    <text x="100" y="575" font-family="Arial" font-size="12" text-anchor="start">Inhibition</text>
+    
+    <line x1="190" y1="550" x2="210" y2="550" stroke="#555555" stroke-width="2.5" marker-end="url(#blackarrow)" />
+    <text x="235" y="555" font-family="Arial" font-size="12" text-anchor="start">Association</text>
+    
+    <circle cx="200" y="570" r="8" fill="white" stroke="#000000" stroke-width="1" />
+    <text x="200" y="574" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">P</text>
+    <text x="235" y="575" font-family="Arial" font-size="12" text-anchor="start">Phosphorylation</text>
+    
+    <!-- Note -->
+    <text x="400" y="550" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">This pathway illustrates how endoplasmic reticulum stress can modulate</text>
+    <text x="400" y="570" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">mTORC2 signaling through GSK3B-mediated phosphorylation of RICTOR</text>
+    
+    <!-- Defs for arrow markers -->
+    <defs>
+        <marker id="blackarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#555555" />
+        </marker>
+        <marker id="redarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#FF0000" />
+        </marker>
+        <marker id="greenarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#00AA00" />
+        </marker>
+    </defs>
+</svg>

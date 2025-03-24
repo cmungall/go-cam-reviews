@@ -1,0 +1,104 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f9f9f9" />
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">FASL-FAS Interaction Leading to Apoptosis (Human)</text>
+    
+    <!-- Effector Cell -->
+    <path d="M 150,200 C 120,150 120,350 150,300 C 200,350 300,350 350,300 C 380,350 380,150 350,200 C 300,150 200,150 150,200" 
+          fill="#e6f2ff" stroke="#666" stroke-width="2.5" />
+    <text x="250" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Effector Cell</text>
+    
+    <!-- Target Cell -->
+    <path d="M 450,200 C 420,150 420,350 450,300 C 500,350 600,350 650,300 C 680,350 680,150 650,200 C 600,150 500,150 450,200" 
+          fill="#ffe6e6" stroke="#666" stroke-width="2.5" />
+    <text x="550" y="180" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Target Cell</text>
+    
+    <!-- Extracellular Space Label -->
+    <text x="400" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Extracellular Space (GO:0005615)</text>
+    
+    <!-- FASLG molecule -->
+    <circle cx="350" cy="240" r="22" fill="#ffcc99" stroke="#333" stroke-width="2.5" />
+    <text x="350" y="245" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">FASLG</text>
+    <text x="350" y="262" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">P48023</text>
+    
+    <!-- FAS receptor -->
+    <rect x="430" y="228" width="45" height="35" rx="6" ry="6" fill="#99ccff" stroke="#333" stroke-width="2.5" />
+    <text x="452" y="250" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">FAS</text>
+    <text x="452" y="267" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">P25445</text>
+    
+    <!-- Plasma membrane label -->
+    <text x="560" y="220" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Plasma Membrane (GO:0005886)</text>
+    
+    <!-- FADD -->
+    <rect x="490" y="280" width="45" height="35" rx="6" ry="6" fill="#99ff99" stroke="#333" stroke-width="2.5" />
+    <text x="512" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">FADD</text>
+    <text x="512" y="317" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Q13158</text>
+    
+    <!-- CASP8 -->
+    <rect x="570" y="280" width="45" height="35" rx="6" ry="6" fill="#ff9999" stroke="#333" stroke-width="2.5" />
+    <text x="592" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">CASP8</text>
+    <text x="592" y="317" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Q14790</text>
+    
+    <!-- Cytoplasm label -->
+    <text x="550" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Cytoplasm (GO:0005737)</text>
+    
+    <!-- Arrows and interactions -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+        </marker>
+    </defs>
+    
+    <!-- Sequence number circles -->
+    <circle cx="390" y="230" r="12" fill="#ffff99" stroke="#333" stroke-width="1.5" />
+    <text x="390" y="235" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">1</text>
+    
+    <circle cx="485" y="260" r="12" fill="#ffff99" stroke="#333" stroke-width="1.5" />
+    <text x="485" y="265" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">2</text>
+    
+    <circle cx="550" y="295" r="12" fill="#ffff99" stroke="#333" stroke-width="1.5" />
+    <text x="550" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">3</text>
+    
+    <!-- FASLG to FAS binding -->
+    <line x1="372" y1="240" x2="425" y2="240" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <text x="400" y="228" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Cytokine activity</text>
+    
+    <!-- FAS signaling to FADD -->
+    <line x1="475" y1="245" x2="495" y2="275" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <text x="465" y="270" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Receptor signaling</text>
+    
+    <!-- FADD to CASP8 -->
+    <line x1="535" y1="295" x2="565" y2="295" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <text x="550" y="285" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Adaptor activity</text>
+    
+    <!-- Caspase activity leading to apoptosis -->
+    <path d="M 595,315 Q 595,340 550,350" stroke="#333" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+    <text x="575" y="335" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Endopeptidase activity</text>
+    
+    <!-- Apoptosis outcome -->
+    <text x="550" y="360" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Extrinsic Apoptotic Signaling</text>
+    <text x="550" y="380" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">(GO:0008625)</text>
+    
+    <!-- Legend -->
+    <rect x="100" y="400" width="600" height="180" rx="10" ry="10" fill="#f0f0f0" stroke="#666" stroke-width="1.5" />
+    <text x="120" y="425" font-family="Arial" font-size="18" font-weight="bold">Legend:</text>
+    
+    <!-- Legend items -->
+    <circle cx="130" cy="450" r="10" fill="#ffcc99" stroke="#333" stroke-width="1.5" />
+    <text x="155" y="455" font-family="Arial" font-size="14">FASLG (P48023) - Cytokine activity (GO:0005125)</text>
+    
+    <rect x="130" y="470" width="20" height="15" rx="3" ry="3" fill="#99ccff" stroke="#333" stroke-width="1.5" />
+    <text x="155" y="482" font-family="Arial" font-size="14">FAS (P25445) - Signaling receptor activity (GO:0038023)</text>
+    
+    <rect x="130" y="500" width="20" height="15" rx="3" ry="3" fill="#99ff99" stroke="#333" stroke-width="1.5" />
+    <text x="155" y="512" font-family="Arial" font-size="14">FADD (Q13158) - Protein-macromolecule adaptor activity (GO:0030674)</text>
+    
+    <rect x="130" y="530" width="20" height="15" rx="3" ry="3" fill="#ff9999" stroke="#333" stroke-width="1.5" />
+    <text x="155" y="542" font-family="Arial" font-size="14">CASP8 (Q14790) - Cysteine-type endopeptidase activity (GO:0004197)</text>
+    
+    <circle cx="130" cy="560" r="10" fill="#ffff99" stroke="#333" stroke-width="1.5" />
+    <text x="140" y="565" font-family="Arial" font-size="14" font-weight="bold">1</text>
+    <text x="155" y="565" font-family="Arial" font-size="14">Sequential steps in the signaling pathway</text>
+</svg>

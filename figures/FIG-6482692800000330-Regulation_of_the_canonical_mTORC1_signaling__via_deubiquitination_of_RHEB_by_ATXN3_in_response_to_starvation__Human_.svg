@@ -1,0 +1,146 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and title -->
+  <rect width="800" height="650" fill="white"/>
+  <text x="400" y="30" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">Regulation of mTORC1 Signaling via Deubiquitination of RHEB by ATXN3</text>
+  <text x="400" y="55" font-family="Arial" font-size="18" text-anchor="middle" font-style="italic">in Response to Starvation</text>
+  
+  <!-- Cell membrane outline -->
+  <rect x="50" y="100" width="700" height="430" rx="20" ry="20" fill="#f9f9f9" stroke="#666" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Lysosomal membrane -->
+  <ellipse cx="400" cy="250" rx="150" ry="80" fill="#ffe0cc" stroke="#ff9966" stroke-width="3"/>
+  <text x="400" y="250" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Lysosomal Membrane</text>
+  
+  <!-- Cytosolic ribosome -->
+  <rect x="550" y="400" width="120" height="80" rx="5" ry="5" fill="#d1e7dd" stroke="#20c997" stroke-width="2"/>
+  <text x="610" y="445" font-family="Arial" font-size="14" text-anchor="middle">Cytosolic Ribosome</text>
+  
+  <!-- Starvation signal -->
+  <path d="M50,80 L150,80" stroke="#cc0000" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <polygon points="145,75 155,80 145,85" fill="#cc0000"/>
+  <text x="100" y="70" font-family="Arial" font-size="14" text-anchor="middle" fill="#cc0000" font-weight="bold">Starvation Signal</text>
+  
+  <!-- ATXN3 -->
+  <rect x="170" y="120" width="80" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="210" y="140" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">ATXN3</text>
+  
+  <!-- TSC2 -->
+  <rect x="170" y="180" width="80" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="210" y="200" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">TSC2</text>
+  
+  <!-- RHEB -->
+  <rect x="320" y="210" width="80" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="360" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RHEB</text>
+  
+  <!-- mTOR -->
+  <rect x="320" y="270" width="80" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="360" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">mTOR</text>
+  
+  <!-- S6K (RPS6KB1/2) -->
+  <rect x="450" y="310" width="100" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="500" y="330" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RPS6KB1/2</text>
+  
+  <!-- 4E-BP1 -->
+  <rect x="300" y="350" width="80" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="340" y="370" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">EIF4EBP1</text>
+  
+  <!-- RPS6 -->
+  <rect x="550" y="350" width="80" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="590" y="370" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RPS6</text>
+  
+  <!-- eIF4E -->
+  <rect x="200" y="350" width="80" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="240" y="370" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">EIF4E</text>
+  
+  <!-- Arrows and connections -->
+  <!-- Starvation to ATXN3 -->
+  <path d="M150,80 L170,120" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- ATXN3 to RHEB -->
+  <path d="M250,135 L320,210" stroke="#0000cc" stroke-width="2" marker-end="url(#arrowhead_blue)"/>
+  <text x="285" y="160" font-family="Arial" font-size="12" fill="#0000cc" font-weight="bold">Deubiquitination</text>
+  
+  <!-- Starvation to TSC2 -->
+  <path d="M150,80 L170,180" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- TSC2 to RHEB -->
+  <path d="M250,195 L320,210" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead_red)"/>
+  <text x="280" y="190" font-family="Arial" font-size="12" fill="#cc0000" font-weight="bold">GTPase activation</text>
+  
+  <!-- RHEB to mTOR -->
+  <path d="M360,240 L360,270" stroke="#00cc00" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="375" y="255" font-family="Arial" font-size="12" fill="#00cc00" font-weight="bold">Activates</text>
+  
+  <!-- mTOR to S6K -->
+  <path d="M400,285 L450,310" stroke="#00cc00" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="430" y="290" font-family="Arial" font-size="12" fill="#00cc00" font-weight="bold">Phosphorylates</text>
+  
+  <!-- mTOR to 4E-BP1 -->
+  <path d="M360,300 L340,350" stroke="#00cc00" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="320" y="320" font-family="Arial" font-size="12" fill="#00cc00" font-weight="bold">Phosphorylates</text>
+  
+  <!-- S6K to RPS6 -->
+  <path d="M550,325 L570,350" stroke="#00cc00" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="570" y="330" font-family="Arial" font-size="12" fill="#00cc00" font-weight="bold">Phosphorylates</text>
+  
+  <!-- 4E-BP1 to eIF4E -->
+  <path d="M300,365 L280,365" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead_red)"/>
+  <text x="290" y="385" font-family="Arial" font-size="12" fill="#cc0000" font-weight="bold">Represses</text>
+  
+  <!-- RPS6 to Ribosome -->
+  <path d="M590,380 L590,400" stroke="#00cc00" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  
+  <!-- Phosphorylated 4E-BP1 releases eIF4E -->
+  <path d="M340,380 L240,400" stroke="#00cc00" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrowhead_green)"/>
+  <text x="290" y="405" font-family="Arial" font-size="12" fill="#00cc00" font-weight="bold">Releases when phosphorylated</text>
+  
+  <!-- Translation initiation -->
+  <text x="500" y="480" font-family="Arial" font-size="16" font-weight="bold">Translation Initiation</text>
+  <path d="M500,460 L500,490" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Define arrowhead markers with different colors -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+    <marker id="arrowhead_green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00cc00"/>
+    </marker>
+    <marker id="arrowhead_red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000"/>
+    </marker>
+    <marker id="arrowhead_blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0000cc"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="700" height="130" rx="5" ry="5" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="70" y="520" font-family="Arial" font-size="16" font-weight="bold">Legend:</text>
+  
+  <!-- Legend items -->
+  <rect x="70" y="530" width="15" height="15" fill="#ffcc99" stroke="#ff6600" stroke-width="1"/>
+  <text x="95" y="543" font-family="Arial" font-size="14">Protein</text>
+  
+  <path d="M180,537 L210,537" stroke="#00cc00" stroke-width="2" marker-end="url(#arrowhead_green)"/>
+  <text x="230" y="543" font-family="Arial" font-size="14">Activation/Phosphorylation</text>
+  
+  <path d="M350,537 L380,537" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead_red)"/>
+  <text x="400" y="543" font-family="Arial" font-size="14">Inhibition</text>
+  
+  <path d="M480,537 L510,537" stroke="#0000cc" stroke-width="2" marker-end="url(#arrowhead_blue)"/>
+  <text x="530" y="543" font-family="Arial" font-size="14">Deubiquitination</text>
+  
+  <ellipse cx="70" cy="560" rx="10" ry="5" fill="#ffe0cc" stroke="#ff9966" stroke-width="1"/>
+  <text x="95" y="565" font-family="Arial" font-size="14">Cellular Compartment</text>
+  
+  <rect x="180" y="553" width="15" height="15" rx="5" ry="5" fill="#d1e7dd" stroke="#20c997" stroke-width="1"/>
+  <text x="205" y="565" font-family="Arial" font-size="14">Ribosome</text>
+  
+  <!-- Additional descriptions -->
+  <text x="70" y="585" font-family="Arial" font-size="14" font-weight="bold">Key Components:</text>
+  <text x="70" y="605" font-family="Arial" font-size="12">ATXN3: Deubiquitinates RHEB under starvation conditions</text>
+  <text x="70" y="620" font-family="Arial" font-size="12">TSC2: GTPase-activating protein inhibiting RHEB activity</text>
+  <text x="400" y="605" font-family="Arial" font-size="12">RHEB: Small GTPase that activates mTORC1 when GTP-bound</text>
+  <text x="400" y="620" font-family="Arial" font-size="12">mTORC1: Key regulator of protein synthesis and cell growth</text>
+</svg>

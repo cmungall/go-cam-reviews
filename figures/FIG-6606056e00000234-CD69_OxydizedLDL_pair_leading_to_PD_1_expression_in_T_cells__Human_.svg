@@ -1,0 +1,104 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="#f8f8ff" stroke="#333" stroke-width="3"/>
+  
+  <!-- Nucleus -->
+  <ellipse cx="400" cy="350" rx="150" ry="120" fill="#e6e6fa" stroke="#333" stroke-width="2"/>
+  <text x="400" y="350" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">Nucleus</text>
+  
+  <!-- Plasma membrane label -->
+  <text x="400" y="100" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">Plasma membrane</text>
+  
+  <!-- Cell type label -->
+  <text x="400" y="30" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">CD4-positive helper T cell</text>
+  
+  <!-- Extracellular space label -->
+  <text x="150" y="70" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">Extracellular space</text>
+  
+  <!-- Oxidized LDL -->
+  <circle cx="100" cy="150" r="35" fill="#ffcba4" stroke="#333" stroke-width="2"/>
+  <text x="100" y="145" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Oxidized</text>
+  <text x="100" y="165" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">LDL</text>
+  
+  <!-- CD69 -->
+  <rect x="210" y="125" width="70" height="45" fill="#90ee90" stroke="#333" stroke-width="2" rx="5" ry="5"/>
+  <text x="245" y="152" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">CD69</text>
+  <text x="245" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Transmembrane receptor</text>
+  
+  <!-- NFATC1 -->
+  <rect x="320" y="320" width="90" height="45" fill="#87cefa" stroke="#333" stroke-width="2" rx="5" ry="5"/>
+  <text x="365" y="347" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">NFATC1</text>
+  <text x="365" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Transcription factor</text>
+  
+  <!-- NR4A3 -->
+  <rect x="460" y="320" width="90" height="45" fill="#e6a8d7" stroke="#333" stroke-width="2" rx="5" ry="5"/>
+  <text x="505" y="347" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">NR4A3</text>
+  <text x="505" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Transcription activator</text>
+  
+  <!-- PDCD1 (PD-1) -->
+  <rect x="480" y="125" width="70" height="45" fill="#ff9999" stroke="#333" stroke-width="2" rx="5" ry="5"/>
+  <text x="515" y="145" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">PD-1</text>
+  <text x="515" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(PDCD1)</text>
+  <text x="515" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Transmembrane receptor</text>
+  
+  <!-- Binding interaction between CD69 and Oxidized LDL -->
+  <line x1="135" y1="150" x2="210" y2="145" stroke="#d4145a" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="170" y="130" font-family="Arial" font-size="14" font-weight="bold" fill="#d4145a">Binding</text>
+  
+  <!-- Signaling from CD69 to NFATC1 -->
+  <path d="M 245,170 C 245,220 290,280 320,320" stroke="#0066cc" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="245" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc">Signaling</text>
+  
+  <!-- Activation of NR4A3 by NFATC1 -->
+  <line x1="410" y1="342" x2="460" y2="342" stroke="#009933" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="435" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="#009933">Activates</text>
+  
+  <!-- Activation of PD-1 by NFATC1 -->
+  <path d="M 365,320 C 365,260 420,200 480,145" stroke="#009933" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="400" y="230" font-family="Arial" font-size="14" font-weight="bold" fill="#009933">Activates</text>
+  
+  <!-- Process description -->
+  <rect x="450" y="450" width="300" height="60" fill="#fffacd" stroke="#333" stroke-width="2" rx="10" ry="10"/>
+  <text x="600" y="475" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">Negative regulation of</text>
+  <text x="600" y="500" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">inflammatory response</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="550" width="700" height="130" fill="#f8f8f8" stroke="#333" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="575" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#333">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="70" y="590" width="20" height="20" fill="#ffcba4" stroke="#333" stroke-width="1"/>
+  <text x="100" y="605" font-family="Arial" font-size="14" fill="#333">Oxidized LDL (CHEBI:60151) - Ligand</text>
+  
+  <rect x="70" y="620" width="20" height="20" fill="#90ee90" stroke="#333" stroke-width="1"/>
+  <text x="100" y="635" font-family="Arial" font-size="14" fill="#333">CD69 (UniProtKB:Q07108) - Transmembrane receptor</text>
+  
+  <rect x="70" y="650" width="20" height="20" fill="#87cefa" stroke="#333" stroke-width="1"/>
+  <text x="100" y="665" font-family="Arial" font-size="14" fill="#333">NFATC1 (UniProtKB:O95644) - Transcription factor</text>
+  
+  <rect x="370" y="590" width="20" height="20" fill="#e6a8d7" stroke="#333" stroke-width="1"/>
+  <text x="400" y="605" font-family="Arial" font-size="14" fill="#333">NR4A3 (UniProtKB:Q92570) - Transcription activator</text>
+  
+  <rect x="370" y="620" width="20" height="20" fill="#ff9999" stroke="#333" stroke-width="1"/>
+  <text x="400" y="635" font-family="Arial" font-size="14" fill="#333">PD-1/PDCD1 (UniProtKB:Q15116) - Transmembrane receptor</text>
+  
+  <rect x="370" y="650" width="20" height="20" fill="#fffacd" stroke="#333" stroke-width="1"/>
+  <text x="400" y="665" font-family="Arial" font-size="14" fill="#333">Biological process (GO:0050728)</text>
+  
+  <!-- Arrow legend -->
+  <line x1="590" y1="605" x2="620" y2="605" stroke="#d4145a" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="650" y="610" font-family="Arial" font-size="14" fill="#333">Binding interaction</text>
+  
+  <line x1="590" y1="635" x2="620" y2="635" stroke="#009933" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="650" y="640" font-family="Arial" font-size="14" fill="#333">Activation</text>
+  
+  <line x1="590" y1="665" x2="620" y2="665" stroke="#0066cc" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="650" y="670" font-family="Arial" font-size="14" fill="#333">Signaling</text>
+
+  <!-- Definitions for arrowheads -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,114 @@
+<svg width="800" height="640" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell components -->
+  <rect x="0" y="0" width="800" height="640" fill="#f9f9f9"/>
+  
+  <!-- Extracellular Space -->
+  <rect x="0" y="0" width="800" height="150" fill="#e6f7ff" opacity="0.7"/>
+  <text x="20" y="30" font-family="Arial" font-size="18" font-weight="bold" fill="#555">Extracellular Space</text>
+  
+  <!-- Plasma Membrane -->
+  <path d="M0,150 Q400,180 800,150 L800,200 Q400,230 0,200 Z" fill="#b3d9ff"/>
+  <text x="20" y="190" font-family="Arial" font-size="18" font-weight="bold" fill="#555">Plasma Membrane</text>
+  
+  <!-- Cytoplasm -->
+  <rect x="0" y="200" width="800" height="380" fill="#fff2e6" opacity="0.7"/>
+  <text x="20" y="230" font-family="Arial" font-size="18" font-weight="bold" fill="#555">Cytoplasm</text>
+  
+  <!-- IL33 in extracellular space -->
+  <circle cx="400" cy="80" r="30" fill="#ff9980" stroke="#ff3300" stroke-width="2"/>
+  <text x="400" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">IL33</text>
+  
+  <!-- IL1RL1 receptor on plasma membrane -->
+  <rect x="350" y="150" width="40" height="80" rx="5" ry="5" fill="#80b3ff" stroke="#0066ff" stroke-width="2"/>
+  <text x="370" y="200" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000" transform="rotate(-90,370,200)">IL1RL1</text>
+  
+  <!-- IL1RAP coreceptor on plasma membrane -->
+  <rect x="410" y="150" width="40" height="80" rx="5" ry="5" fill="#80b3ff" stroke="#0066ff" stroke-width="2"/>
+  <text x="430" y="200" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000" transform="rotate(-90,430,200)">IL1RAP</text>
+  
+  <!-- MYD88 adaptor protein in cytoplasm -->
+  <polygon points="380,260 420,260 430,290 370,290" fill="#d9b3ff" stroke="#8000ff" stroke-width="2"/>
+  <text x="400" y="280" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">MYD88</text>
+  
+  <!-- IRAK4 kinase -->
+  <rect x="380" y="320" width="60" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff8000" stroke-width="2"/>
+  <text x="410" y="340" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">IRAK4</text>
+  
+  <!-- IRAK1 kinase -->
+  <rect x="380" y="380" width="60" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff8000" stroke-width="2"/>
+  <text x="410" y="400" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">IRAK1</text>
+  
+  <!-- TRAF6 ubiquitin ligase -->
+  <rect x="380" y="440" width="60" height="30" rx="5" ry="5" fill="#b3ffb3" stroke="#33cc33" stroke-width="2"/>
+  <text x="410" y="460" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">TRAF6</text>
+  
+  <!-- MAP3K7 kinase -->
+  <rect x="380" y="500" width="60" height="30" rx="15" ry="15" fill="#ffcc99" stroke="#ff8000" stroke-width="2"/>
+  <text x="410" y="520" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">MAP3K7</text>
+  
+  <!-- Signaling arrows -->
+  <!-- IL33 to receptor -->
+  <path d="M400,110 L400,150" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Receptor to MYD88 -->
+  <path d="M400,230 L400,260" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MYD88 to IRAK4 -->
+  <path d="M400,290 L400,320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- IRAK4 to IRAK1 -->
+  <path d="M410,350 L410,380" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- IRAK1 to TRAF6 -->
+  <path d="M410,410 L410,440" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- TRAF6 to MAP3K7 -->
+  <path d="M410,470 L410,500" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Labels for molecular functions -->
+  <text x="440" y="70" font-family="Arial" font-size="12" fill="#555">Cytokine activity</text>
+  <text x="460" y="190" font-family="Arial" font-size="12" fill="#555">Cytokine receptor activity</text>
+  <text x="440" y="270" font-family="Arial" font-size="12" fill="#555">Molecular adaptor activity</text>
+  <text x="450" y="335" font-family="Arial" font-size="12" fill="#555">Protein S/T kinase activity</text>
+  <text x="450" y="395" font-family="Arial" font-size="12" fill="#555">Protein S/T kinase activity</text>
+  <text x="450" y="455" font-family="Arial" font-size="12" fill="#555">Ubiquitin protein ligase activity</text>
+  <text x="450" y="515" font-family="Arial" font-size="12" fill="#555">MAP kinase activity</text>
+  
+  <!-- Process Title -->
+  <text x="400" y="570" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#000">IL33-Mediated Signaling Pathway (Human)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="580" width="700" height="50" rx="5" ry="5" fill="#f9f9f9" stroke="#555" stroke-width="1"/>
+  
+  <!-- Legend items -->
+  <!-- Cytokine -->
+  <circle cx="80" cy="605" r="10" fill="#ff9980" stroke="#ff3300" stroke-width="2"/>
+  <text x="100" y="610" font-family="Arial" font-size="12" fill="#000">Cytokine</text>
+  
+  <!-- Receptor -->
+  <rect x="170" y="595" width="15" height="20" rx="2" ry="2" fill="#80b3ff" stroke="#0066ff" stroke-width="2"/>
+  <text x="195" y="610" font-family="Arial" font-size="12" fill="#000">Receptor</text>
+  
+  <!-- Adaptor -->
+  <polygon points="265,595 280,595 285,610 260,610" fill="#d9b3ff" stroke="#8000ff" stroke-width="2"/>
+  <text x="295" y="610" font-family="Arial" font-size="12" fill="#000">Adaptor</text>
+  
+  <!-- Kinase -->
+  <rect x="370" y="595" width="30" height="20" rx="10" ry="10" fill="#ffcc99" stroke="#ff8000" stroke-width="2"/>
+  <text x="410" y="610" font-family="Arial" font-size="12" fill="#000">Kinase</text>
+  
+  <!-- Ubiquitin Ligase -->
+  <rect x="470" y="595" width="30" height="20" rx="3" ry="3" fill="#b3ffb3" stroke="#33cc33" stroke-width="2"/>
+  <text x="510" y="610" font-family="Arial" font-size="12" fill="#000">Ubiquitin Ligase</text>
+  
+  <!-- Signaling Direction -->
+  <line x1="600" y1="605" x2="630" y2="605" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="650" y="610" font-family="Arial" font-size="12" fill="#000">Signal Flow</text>
+</svg>

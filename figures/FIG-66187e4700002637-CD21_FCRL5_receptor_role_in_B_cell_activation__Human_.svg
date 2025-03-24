@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with cell components -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="800" height="150" fill="#e6f2ff" opacity="0.7"/>
+  <rect x="0" y="150" width="800" height="450" fill="#f5f5dc" opacity="0.5"/>
+  
+  <!-- Cell membrane -->
+  <path d="M0,150 Q400,170 800,150 Q400,190 0,150" fill="#d6eaf8" stroke="#85c1e9" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">CD21/FCRL5 Receptor Role in B-cell Activation (Human)</text>
+  
+  <!-- Compartment labels -->
+  <text x="720" y="80" text-anchor="end" font-family="Arial" font-size="20" font-style="italic">Extracellular Space</text>
+  <text x="720" y="250" text-anchor="end" font-family="Arial" font-size="20" font-style="italic">Plasma Membrane</text>
+  <text x="720" y="350" text-anchor="end" font-family="Arial" font-size="20" font-style="italic">Cytoplasm</text>
+  
+  <!-- Main Process Label -->
+  <rect x="50" y="500" width="220" height="45" rx="10" ry="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+  <text x="160" y="530" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">B Cell Activation</text>
+  
+  <!-- C3 in extracellular space -->
+  <circle cx="400" cy="100" r="40" fill="#ffcccc" stroke="#e74c3c" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">C3</text>
+  <text x="400" y="120" text-anchor="middle" font-family="Arial" font-size="12">(P01024)</text>
+  
+  <!-- Function label for C3 -->
+  <rect x="480" y="80" width="200" height="35" rx="15" ry="15" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="1"/>
+  <text x="580" y="103" text-anchor="middle" font-family="Arial" font-size="14">Receptor Ligand Activity</text>
+  
+  <!-- Description for C3 -->
+  <text x="400" y="70" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Complement protein</text>
+  
+  <!-- CR2 in membrane -->
+  <rect x="380" y="170" width="80" height="40" rx="5" ry="5" fill="#aed6f1" stroke="#3498db" stroke-width="2"/>
+  <text x="420" y="195" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">CR2</text>
+  <text x="420" y="212" text-anchor="middle" font-family="Arial" font-size="12">(P20023)</text>
+  
+  <!-- Function label for CR2 -->
+  <rect x="480" y="170" width="200" height="35" rx="15" ry="15" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="1"/>
+  <text x="580" y="193" text-anchor="middle" font-family="Arial" font-size="14">Complement Receptor Activity</text>
+  
+  <!-- Description for CR2 -->
+  <text x="490" y="155" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Also known as CD21</text>
+  
+  <!-- FCRL5 in membrane -->
+  <rect x="240" y="220" width="80" height="40" rx="5" ry="5" fill="#aed6f1" stroke="#3498db" stroke-width="2"/>
+  <text x="280" y="245" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">FCRL5</text>
+  <text x="280" y="262" text-anchor="middle" font-family="Arial" font-size="12">(Q96RD9)</text>
+  
+  <!-- Function label for FCRL5 -->
+  <rect x="60" y="220" width="160" height="35" rx="15" ry="15" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="1"/>
+  <text x="140" y="243" text-anchor="middle" font-family="Arial" font-size="14">Coreceptor Activity</text>
+  
+  <!-- Description for FCRL5 -->
+  <text x="280" y="290" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Fc receptor-like protein</text>
+  
+  <!-- BTK in cytoplasm -->
+  <rect x="180" y="330" width="80" height="40" rx="5" ry="5" fill="#d7bde2" stroke="#8e44ad" stroke-width="2"/>
+  <text x="220" y="355" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">BTK</text>
+  <text x="220" y="372" text-anchor="middle" font-family="Arial" font-size="12">(Q06187)</text>
+  
+  <!-- Function label for BTK -->
+  <rect x="90" y="380" width="200" height="35" rx="15" ry="15" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="1"/>
+  <text x="190" y="403" text-anchor="middle" font-family="Arial" font-size="14">Protein Tyrosine Kinase Activity</text>
+  
+  <!-- Description for BTK -->
+  <text x="220" y="423" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Bruton's tyrosine kinase</text>
+  
+  <!-- PLCG2 in cytoplasm -->
+  <rect x="360" y="330" width="80" height="40" rx="5" ry="5" fill="#d7bde2" stroke="#8e44ad" stroke-width="2"/>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">PLCG2</text>
+  <text x="400" y="372" text-anchor="middle" font-family="Arial" font-size="12">(P16885)</text>
+  
+  <!-- Function label for PLCG2 -->
+  <rect x="460" y="330" width="240" height="35" rx="15" ry="15" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="1"/>
+  <text x="580" y="353" text-anchor="middle" font-family="Arial" font-size="14">Phosphatidylinositol Phospholipase C Activity</text>
+  
+  <!-- Description for PLCG2 -->
+  <text x="400" y="390" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Phospholipase C gamma 2</text>
+  
+  <!-- Arrows -->
+  <!-- C3 to CR2 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  <line x1="400" y1="140" x2="400" y2="170" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- CR2 to FCRL5 -->
+  <path d="M380,190 Q330,190 280,220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- FCRL5 to BTK -->
+  <path d="M260,260 Q220,290 220,330" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- FCRL5 to PLCG2 -->
+  <path d="M300,260 Q350,290 390,330" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- Process connections (dotted lines to B Cell Activation) -->
+  <line x1="400" y1="100" x2="80" y2="500" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="420" y1="190" x2="100" y2="500" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="280" y1="240" x2="120" y2="500" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="220" y1="350" x2="140" y2="500" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="400" y1="350" x2="160" y2="500" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- Legend -->
+  <rect x="580" y="410" width="200" height="170" rx="10" ry="10" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="680" y="435" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Legend</text>
+  
+  <circle cx="600" cy="455" r="10" fill="#ffcccc" stroke="#e74c3c" stroke-width="2"/>
+  <text x="680" y="460" text-anchor="middle" font-family="Arial" font-size="14">Extracellular Protein</text>
+  
+  <rect x="590" y="475" width="20" height="20" rx="2" ry="2" fill="#aed6f1" stroke="#3498db" stroke-width="2"/>
+  <text x="680" y="490" text-anchor="middle" font-family="Arial" font-size="14">Membrane Receptor</text>
+  
+  <rect x="590" y="505" width="20" height="20" rx="2" ry="2" fill="#d7bde2" stroke="#8e44ad" stroke-width="2"/>
+  <text x="680" y="520" text-anchor="middle" font-family="Arial" font-size="14">Cytoplasmic Protein</text>
+  
+  <rect x="590" y="535" width="40" height="15" rx="7.5" ry="7.5" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="1"/>
+  <text x="680" y="545" text-anchor="middle" font-family="Arial" font-size="14">Molecular Function</text>
+  
+  <line x1="590" y1="560" x2="630" y2="560" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="680" y="565" text-anchor="middle" font-family="Arial" font-size="14">Part of Process</text>
+</svg>

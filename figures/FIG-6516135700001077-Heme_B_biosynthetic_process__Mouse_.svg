@@ -1,0 +1,268 @@
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background cellular compartments -->
+    <!-- Cytosol - lightest -->
+    <rect x="0" y="0" width="900" height="700" fill="#f0f9ff" />
+    
+    <!-- Mitochondrion outer shape -->
+    <ellipse cx="450" cy="450" rx="400" ry="200" fill="#e6ffe6" stroke="#005500" stroke-width="3" />
+    
+    <!-- Mitochondrial matrix - innermost -->
+    <ellipse cx="450" cy="450" rx="300" ry="130" fill="#d1e7dd" stroke="#005500" stroke-width="3" />
+    
+    <!-- Compartment Labels -->
+    <text x="80" y="60" font-family="Arial" font-size="22" font-weight="bold">CYTOSOL</text>
+    <text x="450" y="340" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">MITOCHONDRIAL INTERMEMBRANE SPACE</text>
+    <text x="450" y="450" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">MITOCHONDRIAL MATRIX</text>
+    
+    <!-- Title of the pathway -->
+    <text x="450" y="40" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle">Heme B Biosynthetic Process (Mouse)</text>
+    
+    <!-- Left side of pathway (cytosolic part) -->
+    
+    <!-- Reaction 1: Alas1 - 5-aminolevulinate synthase (in matrix) -->
+    <rect x="550" y="500" width="140" height="70" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2.5" />
+    <text x="620" y="530" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Alas1</text>
+    <text x="620" y="555" font-family="Arial" font-size="14" text-anchor="middle">5-aminolevulinate synthase</text>
+    
+    <!-- Substrates and products for Alas1 -->
+    <ellipse cx="470" y="480" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="470" y="485" font-family="Arial" font-size="14" text-anchor="middle">succinyl-CoA</text>
+    
+    <ellipse cx="470" y="550" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="470" y="555" font-family="Arial" font-size="14" text-anchor="middle">glycine</text>
+    
+    <ellipse cx="730" y="500" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="730" y="505" font-family="Arial" font-size="14" text-anchor="middle">5-aminolevulinate</text>
+    
+    <ellipse cx="730" y="560" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="730" y="565" font-family="Arial" font-size="14" text-anchor="middle">CoA</text>
+    
+    <!-- Arrows for Alas1 -->
+    <line x1="515" y1="490" x2="550" y2="510" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="515" y1="540" x2="550" y2="530" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="690" y1="510" x2="685" y2="500" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="690" y1="540" x2="695" y2="560" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Transport to cytosol (implicit) -->
+    <path d="M730,500 C800,500 830,250 730,150" fill="none" stroke="#0000ff" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#arrowhead)" />
+    <text x="800" y="330" font-family="Arial" font-size="16" font-style="italic" fill="#0000ff">Transport</text>
+    
+    <!-- Reaction 2: Alad - porphobilinogen synthase (in cytosol) -->
+    <rect x="690" y="120" width="140" height="70" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2.5" />
+    <text x="760" y="150" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Alad</text>
+    <text x="760" y="175" font-family="Arial" font-size="14" text-anchor="middle">porphobilinogen synthase</text>
+    
+    <!-- Substrates and products for Alad -->
+    <ellipse cx="760" y="60" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="760" y="60" font-family="Arial" font-size="14" text-anchor="middle">5-aminolevulinate</text>
+    <text x="760" y="75" font-family="Arial" font-size="12" text-anchor="middle">(2 molecules)</text>
+    
+    <ellipse cx="610" y="155" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="610" y="160" font-family="Arial" font-size="14" text-anchor="middle">porphobilinogen</text>
+    
+    <ellipse cx="610" y="100" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="610" y="105" font-family="Arial" font-size="14" text-anchor="middle">H₂O</text>
+    
+    <ellipse cx="610" y="50" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="610" y="55" font-family="Arial" font-size="14" text-anchor="middle">H⁺</text>
+    
+    <!-- Arrows for Alad -->
+    <line x1="760" y1="85" x2="760" y2="120" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="690" y1="150" x2="655" y2="155" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="690" y1="135" x2="645" y2="100" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="690" y1="125" x2="645" y2="55" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Reaction 3: Hmbs - hydroxymethylbilane synthase (in cytosol) -->
+    <rect x="450" y="120" width="140" height="70" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2.5" />
+    <text x="520" y="150" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Hmbs</text>
+    <text x="520" y="175" font-family="Arial" font-size="14" text-anchor="middle">hydroxymethylbilane synthase</text>
+    
+    <!-- Substrates and products for Hmbs -->
+    <ellipse cx="520" y="60" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="520" y="60" font-family="Arial" font-size="14" text-anchor="middle">porphobilinogen</text>
+    <text x="520" y="75" font-family="Arial" font-size="12" text-anchor="middle">(4 molecules)</text>
+    
+    <ellipse cx="370" y="120" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="370" y="125" font-family="Arial" font-size="14" text-anchor="middle">preuroporphyrinogen</text>
+    
+    <ellipse cx="370" y="180" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="370" y="185" font-family="Arial" font-size="14" text-anchor="middle">NH₄⁺</text>
+    
+    <!-- Arrows for Hmbs -->
+    <line x1="565" y1="85" x2="540" y2="120" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="450" y1="140" x2="415" y2="130" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="450" y1="170" x2="405" y2="180" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Connect Alad to Hmbs -->
+    <line x1="610" y1="155" x2="590" y2="155" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Reaction 4: Uros - uroporphyrinogen-III synthase (in cytosol) -->
+    <rect x="210" y="120" width="140" height="70" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2.5" />
+    <text x="280" y="150" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Uros</text>
+    <text x="280" y="175" font-family="Arial" font-size="14" text-anchor="middle">uroporphyrinogen-III synthase</text>
+    
+    <!-- Substrates and products for Uros - Adjusted position -->
+    <ellipse cx="280" y="60" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="280" y="65" font-family="Arial" font-size="14" text-anchor="middle">preuroporphyrinogen</text>
+    
+    <ellipse cx="130" y="110" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="130" y="115" font-family="Arial" font-size="14" text-anchor="middle">uroporphyrinogen III</text>
+    
+    <ellipse cx="130" y="170" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="130" y="175" font-family="Arial" font-size="14" text-anchor="middle">H₂O</text>
+    
+    <!-- Arrows for Uros - Adjusted position -->
+    <line x1="280" y1="85" x2="280" y2="120" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="210" y1="140" x2="175" y2="120" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="210" y1="160" x2="165" y2="170" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Connect Hmbs to Uros -->
+    <line x1="370" y1="120" x2="350" y2="120" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Reaction 5: Urod - uroporphyrinogen decarboxylase (in cytosol) -->
+    <rect x="110" y="220" width="140" height="70" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2.5" />
+    <text x="180" y="250" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Urod</text>
+    <text x="180" y="275" font-family="Arial" font-size="14" text-anchor="middle">uroporphyrinogen decarboxylase</text>
+    
+    <!-- Substrates and products for Urod -->
+    <ellipse cx="60" y="190" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="60" y="195" font-family="Arial" font-size="14" text-anchor="middle">uroporphyrinogen III</text>
+    
+    <ellipse cx="60" y="320" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="60" y="325" font-family="Arial" font-size="14" text-anchor="middle">coproporphyrinogen III</text>
+    
+    <ellipse cx="200" y="320" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="200" y="320" font-family="Arial" font-size="14" text-anchor="middle">CO₂</text>
+    <text x="200" y="335" font-family="Arial" font-size="12" text-anchor="middle">(4 molecules)</text>
+    
+    <!-- Arrows for Urod -->
+    <line x1="95" y1="215" x2="110" y2="230" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="130" y1="290" x2="95" y2="310" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="210" y1="290" x2="200" y2="300" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Connect Uros to Urod -->
+    <line x1="130" y1="135" x2="95" y2="190" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Transport to mitochondria (implicit) -->
+    <path d="M60,345 C60,380 150,410 270,410" fill="none" stroke="#0000ff" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#arrowhead)" />
+    <text x="150" y="390" font-family="Arial" font-size="16" font-style="italic" fill="#0000ff">Transport</text>
+    
+    <!-- Right side of pathway (mitochondrial part) -->
+    
+    <!-- Reaction 6: Cpox - coproporphyrinogen oxidase (in intermembrane space) - Adjusted position -->
+    <rect x="270" y="380" width="140" height="70" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2.5" />
+    <text x="340" y="410" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Cpox</text>
+    <text x="340" y="435" font-family="Arial" font-size="14" text-anchor="middle">coproporphyrinogen oxidase</text>
+    
+    <!-- Substrates and products for Cpox - Adjusted position -->
+    <ellipse cx="340" y="320" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="340" y="325" font-family="Arial" font-size="14" text-anchor="middle">coproporphyrinogen III</text>
+    
+    <ellipse cx="270" y="320" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="270" y="320" font-family="Arial" font-size="14" text-anchor="middle">O₂</text>
+    <text x="270" y="335" font-family="Arial" font-size="12" text-anchor="middle">(2 molecules)</text>
+    
+    <ellipse cx="180" y="410" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="180" y="415" font-family="Arial" font-size="14" text-anchor="middle">protoporphyrinogen</text>
+    
+    <ellipse cx="180" y="470" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="180" y="470" font-family="Arial" font-size="14" text-anchor="middle">CO₂</text>
+    <text x="180" y="485" font-family="Arial" font-size="12" text-anchor="middle">(2 molecules)</text>
+    
+    <ellipse cx="180" y="530" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="180" y="530" font-family="Arial" font-size="14" text-anchor="middle">H₂O₂</text>
+    <text x="180" y="545" font-family="Arial" font-size="12" text-anchor="middle">(2 molecules)</text>
+    
+    <!-- Arrows for Cpox -->
+    <line x1="340" y1="345" x2="340" y2="380" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="300" y1="340" x2="320" y2="380" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="270" y1="410" x2="225" y2="410" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="270" y1="430" x2="215" y2="470" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="270" y1="440" x2="215" y2="530" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Reaction 7: Ppox - protoporphyrinogen oxidase (in intermembrane space) -->
+    <rect x="270" y="580" width="140" height="70" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2.5" />
+    <text x="340" y="610" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Ppox</text>
+    <text x="340" y="635" font-family="Arial" font-size="14" text-anchor="middle">protoporphyrinogen oxidase</text>
+    
+    <!-- Substrates and products for Ppox -->
+    <ellipse cx="180" y="600" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="180" y="605" font-family="Arial" font-size="14" text-anchor="middle">protoporphyrinogen</text>
+    
+    <ellipse cx="180" y="650" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="180" y="650" font-family="Arial" font-size="14" text-anchor="middle">O₂</text>
+    <text x="180" y="665" font-family="Arial" font-size="12" text-anchor="middle">(3 molecules)</text>
+    
+    <ellipse cx="410" y="580" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="410" y="585" font-family="Arial" font-size="14" text-anchor="middle">protoporphyrin</text>
+    
+    <ellipse cx="410" y="650" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="410" y="650" font-family="Arial" font-size="14" text-anchor="middle">H₂O₂</text>
+    <text x="410" y="665" font-family="Arial" font-size="12" text-anchor="middle">(3 molecules)</text>
+    
+    <!-- Arrows for Ppox -->
+    <line x1="225" y1="600" x2="270" y2="600" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="215" y1="650" x2="270" y2="630" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="410" y1="600" x2="410" y2="580" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="410" y1="630" x2="410" y2="650" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Connect Cpox to Ppox -->
+    <line x1="180" y1="435" x2="180" y2="575" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Reaction 8: Fech - ferrochelatase (in matrix) -->
+    <rect x="450" y="580" width="140" height="70" rx="10" ry="10" fill="#ffcccc" stroke="#990000" stroke-width="2.5" />
+    <text x="520" y="610" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Fech</text>
+    <text x="520" y="635" font-family="Arial" font-size="14" text-anchor="middle">ferrochelatase</text>
+    
+    <!-- Substrates and products for Fech -->
+    <ellipse cx="530" y="520" rx="45" ry="25" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="530" y="525" font-family="Arial" font-size="14" text-anchor="middle">protoporphyrin</text>
+    
+    <ellipse cx="450" y="520" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="450" y="525" font-family="Arial" font-size="14" text-anchor="middle">Fe²⁺</text>
+    
+    <ellipse cx="450" y="480" rx="35" ry="20" fill="#ffffcc" stroke="#666600" stroke-width="1.5" />
+    <text x="450" y="480" font-family="Arial" font-size="14" text-anchor="middle">H⁺</text>
+    <text x="450" y="495" font-family="Arial" font-size="12" text-anchor="middle">(2 molecules)</text>
+    
+    <ellipse cx="390" y="530" rx="45" ry="25" fill="#ffcc99" stroke="#996600" stroke-width="3" />
+    <text x="390" y="535" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">ferroheme b</text>
+    
+    <!-- Arrows for Fech -->
+    <line x1="520" y1="545" x2="520" y2="580" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="465" y1="540" x2="485" y2="580" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="450" y1="580" x2="435" y2="545" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    <line x1="450" y1="600" x2="420" y2="500" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Connect Ppox to Fech -->
+    <line x1="410" y1="555" x2="485" y2="535" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Reaction 9: mFLVCR1/isom2 - heme B transmembrane transporter -->
+    <rect x="320" y="480" width="140" height="70" rx="10" ry="10" fill="#ccccff" stroke="#000066" stroke-width="2.5" />
+    <text x="390" y="505" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">mFLVCR1/isom2</text>
+    <text x="390" y="530" font-family="Arial" font-size="14" text-anchor="middle">heme B transporter</text>
+    
+    <!-- Arrows for transporter -->
+    <line x1="390" y1="530" x2="390" y2="480" stroke="#000000" stroke-width="2.5" marker-end="url(#arrowhead)" />
+    
+    <!-- Final heme output and label -->
+    <text x="390" y="460" font-family="Arial" font-size="20" font-weight="bold" fill="#990000">HEME B</text>
+    
+    <!-- Arrowhead definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+        </marker>
+    </defs>
+    
+    <!-- Legend -->
+    <rect x="20" y="630" width="260" height="60" fill="white" stroke="black" stroke-width="1" />
+    <rect x="30" y="640" width="20" height="10" fill="#ffcccc" stroke="#990000" stroke-width="1" />
+    <text x="60" y="650" font-family="Arial" font-size="14">Enzyme</text>
+    <rect x="30" y="660" width="20" height="10" fill="#ccccff" stroke="#000066" stroke-width="1" />
+    <text x="60" y="670" font-family="Arial" font-size="14">Transporter</text>
+    <line x1="150" y1="645" x2="170" y2="645" stroke="#0000ff" stroke-width="2" stroke-dasharray="5,2" />
+    <text x="180" y="650" font-family="Arial" font-size="14">Transport</text>
+    <ellipse cx="150" y="665" rx="10" ry="6" fill="#ffcc99" stroke="#996600" stroke-width="1.5" />
+    <text x="180" y="670" font-family="Arial" font-size="14">Final Product</text>
+</svg>

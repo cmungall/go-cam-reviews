@@ -1,0 +1,179 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e9ecef" />
+    </linearGradient>
+    
+    <!-- Membrane pattern -->
+    <pattern id="membrane-pattern" patternUnits="userSpaceOnUse" width="60" height="20" patternTransform="rotate(0)">
+      <rect width="60" height="20" fill="#d6e4ff" />
+      <path d="M0,10 Q15,0 30,10 Q45,20 60,10" stroke="#a8c0ff" stroke-width="3" fill="none" />
+    </pattern>
+    
+    <!-- Golgi pattern -->
+    <pattern id="golgi-pattern" patternUnits="userSpaceOnUse" width="40" height="10">
+      <rect width="40" height="10" fill="#ffecd9" />
+      <path d="M0,5 H40" stroke="#ffcb8e" stroke-width="2" stroke-dasharray="3,2" />
+    </pattern>
+    
+    <!-- Chloride ion -->
+    <radialGradient id="chloride-gradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#c4f0ff" />
+      <stop offset="100%" stop-color="#63ceff" />
+    </radialGradient>
+    
+    <!-- GABA molecule -->
+    <radialGradient id="gaba-gradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#e6d4ff" />
+      <stop offset="100%" stop-color="#bf9aff" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Cell boundary -->
+  <rect x="50" y="100" width="700" height="450" rx="20" ry="20" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="8,4" />
+  
+  <!-- Pre and post synaptic membranes -->
+  <rect x="120" y="200" width="20" height="250" fill="url(#membrane-pattern)" stroke="#5a7cc9" stroke-width="2" />
+  <rect x="220" y="200" width="20" height="250" fill="url(#membrane-pattern)" stroke="#5a7cc9" stroke-width="2" />
+  
+  <!-- Synaptic cleft label -->
+  <text x="170" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Synaptic Cleft</text>
+  <text x="170" y="345" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(GO:0043083)</text>
+  
+  <!-- Golgi apparatus -->
+  <path d="M600,150 C650,130 680,150 650,180 C700,200 680,230 630,220 C600,260 550,250 570,210 C520,190 540,150 580,160 C590,120 630,130 600,150" fill="url(#golgi-pattern)" stroke="#ff9d4d" stroke-width="2" />
+  <text x="610" y="190" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Golgi</text>
+  <text x="610" y="205" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">(GO:0000139)</text>
+  
+  <!-- ZDHHC12 in Golgi -->
+  <circle cx="590" cy="190" r="25" fill="#ff9d4d" stroke="#e67700" stroke-width="2" />
+  <text x="590" y="194" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">ZDHHC12</text>
+  
+  <!-- Gephyrin at Golgi -->
+  <rect x="530" y="220" width="50" height="25" rx="5" ry="5" fill="#a8ddb5" stroke="#41ab5d" stroke-width="2" />
+  <text x="555" y="237" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">GPHN</text>
+  
+  <!-- Palmitate addition arrow -->
+  <line x1="570" y1="200" x2="555" y2="220" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="538" y="205" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#333">Palmitoylation</text>
+  <text x="538" y="218" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">(GO:0019706)</text>
+  
+  <!-- Gephyrin transport arrow -->
+  <path d="M530,240 C450,260 390,280 350,320" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  <text x="420" y="260" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#333">Transport to postsynaptic membrane</text>
+  <text x="420" y="273" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">(GO:0097112)</text>
+  
+  <!-- Gephyrin at postsynaptic membrane -->
+  <rect x="280" y="320" width="50" height="25" rx="5" ry="5" fill="#a8ddb5" stroke="#41ab5d" stroke-width="2" />
+  <text x="305" y="337" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">GPHN</text>
+  
+  <!-- GABAAR complex -->
+  <g id="gabaar-channel">
+    <rect x="240" y="240" width="60" height="50" rx="5" ry="5" fill="#e6f5ff" stroke="#4a9dd6" stroke-width="2" />
+    <text x="270" y="260" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">GABAAR</text>
+    <text x="270" y="272" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">(GO:1902711)</text>
+    
+    <!-- GABAAR subunits -->
+    <circle cx="250" cy="245" r="8" fill="#7eb0d5" stroke="#2c7fb8" stroke-width="1" />
+    <text x="250" y="248" text-anchor="middle" font-family="Arial" font-size="7.5" fill="white">α1</text>
+    
+    <circle cx="270" cy="245" r="8" fill="#7eb0d5" stroke="#2c7fb8" stroke-width="1" />
+    <text x="270" y="248" text-anchor="middle" font-family="Arial" font-size="7.5" fill="white">β2</text>
+    
+    <circle cx="290" cy="245" r="8" fill="#7eb0d5" stroke="#2c7fb8" stroke-width="1" />
+    <text x="290" y="248" text-anchor="middle" font-family="Arial" font-size="7.5" fill="white">γ2</text>
+    
+    <circle cx="280" cy="285" r="8" fill="#7eb0d5" stroke="#2c7fb8" stroke-width="1" />
+    <text x="280" y="288" text-anchor="middle" font-family="Arial" font-size="7.5" fill="white">β3</text>
+  </g>
+  
+  <!-- Subunit labels -->
+  <text x="250" y="236" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#333">GABRA1</text>
+  <text x="270" y="236" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#333">GABRB2</text>
+  <text x="290" y="236" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#333">GABRG2</text>
+  <text x="280" y="295" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#333">GABRB3</text>
+  
+  <!-- GPHM to GABAAR clustering -->
+  <line x1="290" y1="320" x2="275" y2="290" stroke="#333" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <text x="317" y="310" text-anchor="start" font-family="Arial" font-size="11" font-weight="bold" fill="#333">Receptor clustering</text>
+  <text x="317" y="322" text-anchor="start" font-family="Arial" font-size="9" fill="#555">(GO:0030674)</text>
+  
+  <!-- GABA and Chloride -->
+  <circle cx="170" cy="280" r="12" fill="url(#gaba-gradient)" stroke="#8a63d2" stroke-width="1" />
+  <text x="170" y="284" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#333">GABA</text>
+  
+  <!-- GABA binding arrow -->
+  <path d="M180,275 Q210,265 240,265" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="210" y="255" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#333">Binding</text>
+  
+  <!-- Postsynaptic membrane label -->
+  <text x="270" y="210" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#333">Postsynaptic membrane</text>
+  <text x="270" y="223" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">(GO:0045211)</text>
+  
+  <!-- Chloride ions going through channel -->
+  <circle cx="170" cy="250" r="8" fill="url(#chloride-gradient)" stroke="#35a7ff" stroke-width="1" />
+  <text x="170" y="253" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#333">Cl-</text>
+  
+  <circle cx="200" cy="260" r="8" fill="url(#chloride-gradient)" stroke="#35a7ff" stroke-width="1" />
+  <text x="200" y="263" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#333">Cl-</text>
+  
+  <circle cx="300" cy="250" r="8" fill="url(#chloride-gradient)" stroke="#35a7ff" stroke-width="1" />
+  <text x="300" y="253" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#333">Cl-</text>
+  
+  <circle cx="320" cy="270" r="8" fill="url(#chloride-gradient)" stroke="#35a7ff" stroke-width="1" />
+  <text x="320" y="273" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#333">Cl-</text>
+  
+  <!-- Chloride flux arrow -->
+  <path d="M300,260 Q320,265 340,270" fill="none" stroke="#35a7ff" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="330" y="250" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#333">Cl- flux</text>
+  <text x="330" y="262" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">(GO:0004890)</text>
+  
+  <!-- Labels for cell compartments -->
+  <text x="120" y="180" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Presynaptic</text>
+  <text x="350" y="180" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Postsynaptic</text>
+  
+  <!-- Synaptic transmission label -->
+  <text x="365" y="390" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">GABAergic synaptic transmission</text>
+  <text x="365" y="405" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">(GO:0051932)</text>
+  
+  <!-- Main labels -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#333">Control of GABAAR Clustering by Gephyrin</text>
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="16" font-style="italic" fill="#555">Human GABAergic Synapse</text>
+  
+  <!-- Legend -->
+  <rect x="550" y="380" width="200" height="160" rx="10" ry="10" fill="white" fill-opacity="0.8" stroke="#adb5bd" stroke-width="1" />
+  <text x="650" y="400" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Legend</text>
+  
+  <circle cx="570" cy="420" r="8" fill="#ff9d4d" stroke="#e67700" stroke-width="1" />
+  <text x="660" y="423" font-family="Arial" font-size="12" fill="#333">ZDHHC12 (Q96GR4)</text>
+  
+  <rect x="562" y="435" width="16" height="10" rx="2" ry="2" fill="#a8ddb5" stroke="#41ab5d" stroke-width="1" />
+  <text x="660" y="443" font-family="Arial" font-size="12" fill="#333">Gephyrin (Q9NQX3)</text>
+  
+  <rect x="562" y="455" width="16" height="10" rx="2" ry="2" fill="#e6f5ff" stroke="#4a9dd6" stroke-width="1" />
+  <text x="660" y="463" font-family="Arial" font-size="12" fill="#333">GABAAR complex</text>
+  
+  <circle cx="570" cy="475" r="6" fill="#7eb0d5" stroke="#2c7fb8" stroke-width="1" />
+  <text x="660" y="478" font-family="Arial" font-size="12" fill="#333">GABAAR subunits</text>
+  
+  <circle cx="570" cy="495" r="6" fill="url(#gaba-gradient)" stroke="#8a63d2" stroke-width="1" />
+  <text x="660" y="498" font-family="Arial" font-size="12" fill="#333">GABA (neurotransmitter)</text>
+  
+  <circle cx="570" cy="515" r="6" fill="url(#chloride-gradient)" stroke="#35a7ff" stroke-width="1" />
+  <text x="660" y="518" font-family="Arial" font-size="12" fill="#333">Chloride ion (Cl-)</text>
+  
+  <path d="M562,530 L578,530" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="660" y="533" font-family="Arial" font-size="12" fill="#333">Transport pathway</text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

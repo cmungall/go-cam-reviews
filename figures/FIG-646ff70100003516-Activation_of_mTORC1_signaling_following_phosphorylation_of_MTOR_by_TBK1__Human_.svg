@@ -1,0 +1,106 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell outline -->
+  <ellipse cx="400" cy="350" rx="380" ry="280" fill="#f8f8f8" stroke="#666" stroke-width="2"/>
+  
+  <!-- Lysosomal membrane -->
+  <ellipse cx="400" cy="300" rx="160" ry="100" fill="#e6e6fa" stroke="#8a2be2" stroke-width="3" stroke-dasharray="5,3"/>
+  <text x="400" y="220" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Lysosomal membrane</text>
+  
+  <!-- Cytosolic ribosome -->
+  <circle cx="550" cy="470" r="60" fill="#ffe4b5" stroke="#daa520" stroke-width="3" stroke-dasharray="5,3"/>
+  <text x="550" y="430" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Cytosolic ribosome</text>
+  
+  <!-- Proteins and their interactions -->
+  <!-- TBK1 (kinase - rectangle) -->
+  <rect x="150" y="230" width="60" height="40" rx="5" fill="#ff9999" stroke="#cc0000" stroke-width="2"/>
+  <text x="180" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">TBK1</text>
+  
+  <!-- MTOR (kinase - rectangle) -->
+  <rect x="300" y="230" width="60" height="40" rx="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="330" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">MTOR</text>
+  
+  <!-- RHEB (activator - diamond) -->
+  <polygon points="400,170 425,195 400,220 375,195" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="400" y="200" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">RHEB</text>
+  
+  <!-- RPS6KB1 (kinase - rectangle) -->
+  <rect x="350" y="320" width="60" height="30" rx="5" fill="#99ff99" stroke="#009900" stroke-width="2"/>
+  <text x="380" y="340" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">RPS6KB1</text>
+  
+  <!-- RPS6KB2 (kinase - rectangle) -->
+  <rect x="430" y="320" width="60" height="30" rx="5" fill="#b3ffb3" stroke="#00cc00" stroke-width="2"/>
+  <text x="460" y="340" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">RPS6KB2</text>
+  
+  <!-- RPS6 (substrate - oval) -->
+  <ellipse cx="550" cy="470" rx="35" ry="25" fill="#ffff99" stroke="#cccc00" stroke-width="2"/>
+  <text x="550" y="475" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">RPS6</text>
+  
+  <!-- Arrows and interactions -->
+  <!-- TBK1 to MTOR -->
+  <line x1="210" y1="250" x2="300" y2="250" stroke="#333" stroke-width="2"/>
+  <polygon points="300,250 290,245 290,255" fill="#333"/>
+  <circle cx="255" y="250" r="10" fill="#ff0000" stroke="none"/>
+  <text x="255" y="254" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  
+  <!-- RHEB to MTOR -->
+  <line x1="385" y1="210" x2="350" y2="230" stroke="#333" stroke-width="2"/>
+  <polygon points="350,230 350,220 340,225" fill="#333"/>
+  <text x="370" y="215" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Activates</text>
+  
+  <!-- MTOR to RPS6KB1/2 -->
+  <line x1="330" y1="270" x2="380" y2="320" stroke="#333" stroke-width="2"/>
+  <polygon points="380,320 370,315 375,325" fill="#333"/>
+  <circle cx="355" y="295" r="10" fill="#ff0000" stroke="none"/>
+  <text x="355" y="299" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  
+  <line x1="360" y1="250" x2="450" y2="320" stroke="#333" stroke-width="2"/>
+  <polygon points="450,320 440,315 445,325" fill="#333"/>
+  <circle cx="405" y="285" r="10" fill="#ff0000" stroke="none"/>
+  <text x="405" y="289" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  
+  <!-- RPS6KB1 to RPS6 -->
+  <line x1="380" y1="350" x2="520" y2="460" stroke="#333" stroke-width="2"/>
+  <polygon points="520,460 510,450 505,460" fill="#333"/>
+  <circle cx="450" y="405" r="10" fill="#ff0000" stroke="none"/>
+  <text x="450" y="409" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  
+  <!-- RPS6KB2 to RPS6 -->
+  <line x1="460" y1="350" x2="530" y2="450" stroke="#333" stroke-width="2"/>
+  <polygon points="530,450 520,440 515,450" fill="#333"/>
+  <circle cx="495" y="400" r="10" fill="#ff0000" stroke="none"/>
+  <text x="495" y="404" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  
+  <!-- Process labels -->
+  <rect x="520" y="520" width="180" height="25" rx="5" fill="#eeeeee" stroke="#666" stroke-width="1"/>
+  <text x="610" y="537" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Cytoplasmic translation</text>
+
+  <rect x="280" y="150" width="240" height="25" rx="5" fill="#eeeeee" stroke="#666" stroke-width="1"/>
+  <text x="400" y="167" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">TORC1 signaling</text>
+  
+  <rect x="50" y="180" width="220" height="25" rx="5" fill="#eeeeee" stroke="#666" stroke-width="1"/>
+  <text x="160" y="197" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Positive regulation of TORC1</text>
+  
+  <rect x="80" y="520" width="280" height="25" rx="5" fill="#eeeeee" stroke="#666" stroke-width="1"/>
+  <text x="220" y="537" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Positive regulation of translational initiation</text>
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#000">Activation of mTORC1 Signaling Following Phosphorylation of MTOR by TBK1</text>
+  <text x="400" y="90" font-family="Arial" font-size="16" text-anchor="middle" fill="#666">(Human)</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="30" width="180" height="130" rx="5" fill="white" stroke="#666" stroke-width="1"/>
+  <text x="120" y="50" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <rect x="40" y="65" width="30" height="20" rx="5" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+  <text x="80" y="80" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Kinase</text>
+  
+  <polygon points="55,95 70,105 55,115 40,105" fill="#ffcc99" stroke="#ff6600" stroke-width="2"/>
+  <text x="80" y="110" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Activator</text>
+  
+  <ellipse cx="55" cy="130" rx="20" ry="15" fill="#ffff99" stroke="#cccc00" stroke-width="2"/>
+  <text x="80" y="135" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Substrate</text>
+  
+  <circle cx="45" y="155" r="10" fill="#ff0000" stroke="none"/>
+  <text x="45" y="159" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  <text x="120" y="158" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Phosphorylation</text>
+</svg>
